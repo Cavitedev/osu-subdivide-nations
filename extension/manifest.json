@@ -22,7 +22,7 @@
             ],
             "resources": [
                 "local_user_regions.js",
-                "flags/ES.json"
+                "flags.json"
             ]
         }
     ],
