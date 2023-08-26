@@ -120,11 +120,40 @@
           flagElement.setAttribute("title", regionName(regionData));
         }
       }
-
-
     }
+  }
 
+  const updateFlagsFriends = () => {
+    friendsList = document.querySelector(".user-list").querySelectorAll(".user-card__details");
 
+    for (item of friendsList){
+      playerNameElement = item.querySelector(".user-card__username");
+      playerName = playerNameElement.textContent.trim()
+      playerId = playerNameElement.getAttribute("href").split("/")[4]
+
+      region = regionFromIDandName(playerId, playerName)
+      if (!region) {
+        continue;
+      }
+  
+      countryCode = region.split("-")[0];
+  
+      let countryRegionsData = loadedCountryRegions[countryCode];
+  
+      if (countryRegionsData) {
+        const regionData = countryRegionsData["regions"][region];
+        if (!regionData) continue;
+        
+        flagElement = item.querySelector(`.${flagClass}`);
+        if (regionData["flag"]) {
+          flagElement.style = styleTMP.replace("$flag", regionData["flag"]);
+        }
+  
+        if (regionData["name"]) {
+          flagElement.setAttribute("title", regionName(regionData));
+        }
+      }
+    }
   }
 
 
@@ -132,13 +161,15 @@
     currentUrl = window.location.href;
     console.log(currentUrl);
 
-    if(currentUrl.startsWith("https://osu.ppy.sh/rankings")){
+    if(currentUrl.includes("/rankings")){
       updateFlagsRankings();
-    } else if (currentUrl.startsWith("https://osu.ppy.sh/users/")){
+    } else if (currentUrl.includes("/users/")){
       const playerId = currentUrl.split("/")[4];
       updateFlagsProfile(playerId); 
-    }else if (currentUrl.startsWith("https://osu.ppy.sh/community/matches/")){
+    }else if (currentUrl.includes("/community/matches/")){
       updateFlagsMatches();
+    }else if (currentUrl.includes("/home/friends")){
+      updateFlagsFriends();
     }
 
 
