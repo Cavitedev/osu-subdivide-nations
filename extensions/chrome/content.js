@@ -23,6 +23,8 @@
         updateFlagsProfile(playerId);
       } else if (location == "matches") {
         updateFlagsMatches();
+      } else if (location == "topics") {
+        updateFlagsTopics();
       }
     }
   });
@@ -94,7 +96,7 @@
   };
 
   const updateFlagsProfile = async (playerId) => {
-    flagElement = document.querySelector(".profile-info__flags");
+    flagElement = document.querySelector(".profile-info");
     await updateFlag(flagElement, playerId);
   };
 
@@ -118,6 +120,18 @@
     for (let item of friendsList) {
       playerNameElement = item.querySelector(".user-card__username");
       playerId = playerNameElement.getAttribute("href").split("/")[4];
+      await updateFlag(item, playerId);
+    }
+  };
+
+  const updateFlagsTopics = async () => {
+    console.log("updateFlagsTopics");
+    posts = document.querySelectorAll(".forum-post-info");
+
+    for (let item of posts) {
+      playerNameElement = item.querySelector(".forum-post-info__row--username");
+      playerId = playerNameElement.getAttribute("data-user-id");
+      console.log(playerId);
       await updateFlag(item, playerId);
     }
   };
