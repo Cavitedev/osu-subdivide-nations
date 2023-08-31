@@ -15,7 +15,6 @@
         if (view == "brick") {
           return;
         }
-
         updateFlagsFriends();
       } else if (location == "rankings") {
         updateFlagsRankings();
@@ -57,19 +56,7 @@
   const styleTMP = "background-image: url('$flag')";
   const flagClass = "flag-country";
 
-  const updateFlagsRankings = async () => {
-    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
-    const idAttr = "data-user-id";
-
-    for (const item of listItems) {
-      let idItem = item.querySelector(`[${idAttr}]`);
-      userId = idItem.getAttribute(idAttr);
-
-      await updateFlagRanking(item, userId);
-    }
-  };
-
-  const updateFlagRanking = async (item, userId) => {
+  const updateFlag = async (item, userId) => {
     playerData = await osuWorldUser(userId);
     if (!playerData || playerData["error"] == unknownUserError) {
       return;
@@ -94,37 +81,21 @@
     }
   };
 
+  const updateFlagsRankings = async () => {
+    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
+    const idAttr = "data-user-id";
+
+    for (const item of listItems) {
+      let idItem = item.querySelector(`[${idAttr}]`);
+      userId = idItem.getAttribute(idAttr);
+
+      await updateFlag(item, userId);
+    }
+  };
+
   const updateFlagsProfile = async (playerId) => {
-    playerName = document
-      .querySelector(".profile-info__name")
-      .querySelector("span")
-      .textContent.trim();
-
-    playerData = await osuWorldUser(playerId);
-    if (!playerData || playerData["error"] == unknownUserError) {
-      return;
-    }
-
-    region = playerData["region_id"];
-    countryCode = playerData["country_id"];
-
-    let countryRegionsData = loadedCountryRegions[countryCode];
-
-    if (countryRegionsData) {
-      const regionData = countryRegionsData["regions"][region];
-      if (!regionData) return;
-
-      flagElement = document
-        .querySelector(".profile-info__flags")
-        .querySelector(`.${flagClass}`);
-      if (regionData["flag"]) {
-        flagElement.style = styleTMP.replace("$flag", regionData["flag"]);
-      }
-
-      if (regionData["name"]) {
-        flagElement.setAttribute("title", regionName(regionData));
-      }
-    }
+    flagElement = document.querySelector(".profile-info__flags");
+    await updateFlag(flagElement, playerId);
   };
 
   const updateFlagsMatches = async () => {
@@ -134,37 +105,8 @@
       playerNameElement = item.querySelector(
         ".mp-history-player-score__username"
       );
-      playerName = playerNameElement.textContent.trim();
       playerId = playerNameElement.getAttribute("href").split("/")[4];
-      {
-        let localItem = item;
-
-        osuWorldUser(playerId).then((playerData) => {
-          if (!playerData || playerData["error"] == unknownUserError) {
-            return;
-          }
-          region = playerData["region_id"];
-          countryCode = playerData["country_id"];
-
-          countryCode = region.split("-")[0];
-
-          let countryRegionsData = loadedCountryRegions[countryCode];
-
-          if (countryRegionsData) {
-            const regionData = countryRegionsData["regions"][region];
-            if (!regionData) return;
-
-            flagElement = localItem.querySelector(`.${flagClass}`);
-            if (regionData["flag"]) {
-              flagElement.style = styleTMP.replace("$flag", regionData["flag"]);
-            }
-
-            if (regionData["name"]) {
-              flagElement.setAttribute("title", regionName(regionData));
-            }
-          }
-        });
-      }
+      await updateFlag(item, playerId);
     }
   };
 
@@ -175,49 +117,8 @@
 
     for (let item of friendsList) {
       playerNameElement = item.querySelector(".user-card__username");
-      playerName = playerNameElement.textContent.trim();
       playerId = playerNameElement.getAttribute("href").split("/")[4];
-
-      let playerData = await osuWorldUser(playerId);
-      if (!playerData || playerData["error"] == unknownUserError) {
-        continue;
-      }
-      region = playerData["region_id"];
-      countryCode = playerData["country_id"];
-
-      let countryRegionsData = loadedCountryRegions[countryCode];
-
-      if (countryRegionsData) {
-        const regionData = countryRegionsData["regions"][region];
-        if (!regionData) continue;
-
-        flagElement = item.querySelector(`.${flagClass}`);
-        if (regionData["flag"]) {
-          flagElement.style = styleTMP.replace("$flag", regionData["flag"]);
-        }
-
-        if (regionData["name"]) {
-          flagElement.setAttribute("title", regionName(regionData));
-        }
-      }
+      await updateFlag(item, playerId);
     }
   };
-
-  const updatePages = () => {
-    currentUrl = window.location.href;
-    console.log(currentUrl);
-
-    if (currentUrl.includes("/rankings")) {
-      // updateFlagsRankings();
-    } else if (currentUrl.includes("/users/")) {
-      const playerId = currentUrl.split("/")[4];
-      updateFlagsProfile(playerId);
-    } else if (currentUrl.includes("/community/matches/")) {
-      updateFlagsMatches();
-    } else if (currentUrl.includes("/home/friends")) {
-      updateFlagsFriends();
-    }
-  };
-
-  updatePages();
 })();
