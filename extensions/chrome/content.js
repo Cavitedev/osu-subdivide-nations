@@ -32,6 +32,12 @@
   const unknownUserError = "unknown_user";
 
   const osuWorldUser = async (id) => {
+
+    if(!id){
+      console.log("id is null")
+      return;
+    }
+
     const url = "https://osuworld.octo.moe/api/users/" + id;
     const options = {
       method: "GET",
