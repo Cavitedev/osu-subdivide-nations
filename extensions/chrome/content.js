@@ -4,13 +4,11 @@
   const respone = await fetch(flagsUrl);
   countryRegionsData = await respone.json();
   loadedCountryRegions = countryRegionsData;
-
   runningId = 0;
 
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     const { type, location, view } = obj;
     if (type == "update_flag") {
-      console.log(location);
 
       if (location == "friends") {
         // No flags
@@ -54,7 +52,6 @@
     });
     await Promise.all([dataPromise, waitPromise]);
     data = await dataPromise;
-    console.log(data);
     return data;
   };
 
@@ -152,7 +149,6 @@
 
   const updateFlagsTopics = async () => {
     const functionId = nextFunctionId();
-    console.log("updateFlagsTopics");
     posts = document.querySelectorAll(".forum-post-info");
 
     for (let item of posts) {
@@ -161,14 +157,12 @@
       }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
-      console.log(playerId);
       await updateFlag(item, playerId);
     }
   };
 
   const init = async () => {
     const url = location.href;
-    console.log(url);
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
     } else if (tab.url.includes("osu.ppy.sh/users")) {
