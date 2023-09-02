@@ -5,6 +5,8 @@
   countryRegionsData = await respone.json();
   loadedCountryRegions = countryRegionsData;
 
+  runningId = 0;
+
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     const { type, location, view } = obj;
     if (type == "update_flag") {
@@ -17,7 +19,7 @@
         }
         updateFlagsFriends();
       } else if (location == "rankings") {
-        updateFlagsRankings();
+        updateFlagsRankings(++runningId);
       } else if (location == "user") {
         const playerId = window.location.href.split("/")[4];
         updateFlagsProfile(playerId);
@@ -32,9 +34,8 @@
   const unknownUserError = "unknown_user";
 
   const osuWorldUser = async (id) => {
-
-    if(!id){
-      console.log("id is null")
+    if (!id) {
+      console.log("id is null");
       return;
     }
 
@@ -89,11 +90,21 @@
     }
   };
 
+  const nextFunctionId = () => {
+    functionId = runningId + 1;
+    runningId++;
+    return functionId;
+  };
+
   const updateFlagsRankings = async () => {
+    const functionId = nextFunctionId();
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
     const idAttr = "data-user-id";
 
     for (const item of listItems) {
+      if (functionId != runningId) {
+        return;
+      }
       let idItem = item.querySelector(`[${idAttr}]`);
       userId = idItem.getAttribute(idAttr);
 
@@ -102,14 +113,19 @@
   };
 
   const updateFlagsProfile = async (playerId) => {
+    const functionId = nextFunctionId();
     flagElement = document.querySelector(".profile-info");
     await updateFlag(flagElement, playerId);
   };
 
   const updateFlagsMatches = async () => {
+    const functionId = nextFunctionId();
     listScores = document.querySelectorAll(".mp-history-player-score__main");
 
     for (item of listScores) {
+      if (functionId != runningId) {
+        return;
+      }
       playerNameElement = item.querySelector(
         ".mp-history-player-score__username"
       );
@@ -119,11 +135,15 @@
   };
 
   const updateFlagsFriends = async () => {
+    const functionId = nextFunctionId();
     friendsList = document
       .querySelector(".user-list")
       .querySelectorAll(".user-card__details");
 
     for (let item of friendsList) {
+      if (functionId != runningId) {
+        return;
+      }
       playerNameElement = item.querySelector(".user-card__username");
       playerId = playerNameElement.getAttribute("href").split("/")[4];
       await updateFlag(item, playerId);
@@ -131,14 +151,42 @@
   };
 
   const updateFlagsTopics = async () => {
+    const functionId = nextFunctionId();
     console.log("updateFlagsTopics");
     posts = document.querySelectorAll(".forum-post-info");
 
     for (let item of posts) {
+      if (functionId != runningId) {
+        return;
+      }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
       console.log(playerId);
       await updateFlag(item, playerId);
     }
   };
+
+  const init = async () => {
+    const url = location.href;
+    console.log(url);
+    if (url.includes("osu.ppy.sh/rankings")) {
+      updateFlagsRankings();
+    } else if (tab.url.includes("osu.ppy.sh/users")) {
+      updateFlagsProfile();
+    } else if (tab.url.includes("osu.ppy.sh/home/friends")) {
+      const queryParameters = tab.url.split("?")[1];
+      const urlParameters = new URLSearchParams(queryParameters);
+      const view = urlParameters.get("view");
+      if (view == "brick") {
+        return;
+      }
+      updateFlagsFriends();
+    } else if (tab.url.includes("osu.ppy.sh/community/matches/")) {
+      updateFlagsMatches();
+    } else if (tab.url.includes("osu.ppy.sh/community/forums/topics/")) {
+      updateFlagsTopics();
+    }
+  };
+
+  await init();
 })();

@@ -20,6 +20,3 @@ Jupyter Notebook to automatically gather and structure data needed somewhere els
 
 Utils code that is used to update the view on pages related to this project
 
-### data
-
-Icon and other misc
