@@ -3,9 +3,9 @@
     "version": "2.3.0",
     "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
     "permissions": ["tabs"],
-
+    "host_permissions": ["https://osuworld.octo.moe/api/*"],
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"]
     },
     "content_scripts": [
         {
@@ -17,6 +17,7 @@
             ]
         }
     ],
+    
     "web_accessible_resources": [
         {
             "matches": [
@@ -27,5 +28,6 @@
             ]
         }
     ],
+
     "manifest_version": 3
 }

@@ -9,7 +9,6 @@
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     const { type, location, view } = obj;
     if (type == "update_flag") {
-
       if (location == "friends") {
         // No flags
         if (view == "brick") {
