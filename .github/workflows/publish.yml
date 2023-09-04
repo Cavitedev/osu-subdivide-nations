@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build_apk:
+  publish_extension:
     permissions: write-all
     environment: production
     runs-on: ubuntu-latest
