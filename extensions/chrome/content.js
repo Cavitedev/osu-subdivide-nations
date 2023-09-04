@@ -28,45 +28,40 @@
     }
   });
 
-  const cacheName = "osu_subdivision";
-  const expireTime = 900000; //15 minutes
+  const expireTime = 50000; //15 minutes
   const expireHeader = "expire-date";
 
-  const expireDateGen = () => Date.now() + expireTime;
+  const genExpireDate = () => Date.now() + expireTime;
+
+  let mutex = Promise.resolve();
 
   const fetchWithCache = async (url) => {
-    return caches.open(cacheName).then(async (cache) => {
-      const cachedResponse = await cache.match(url);
-      if (cachedResponse) {
-        const expireDate = cachedResponse.headers.get(expireHeader);
-        if (expireDate < Date.now()) {
-          console.log("UPDATE");
-          return fetchAndSaveInCache();
-        }
-        return cachedResponse.json();
-      } else {
+    const cachedItemRaw = localStorage.getItem(url);
+    if (cachedItemRaw) {
+      const cachedItem = JSON.parse(cachedItemRaw);
+      const expireDate = cachedItem[expireHeader];
+      if (expireDate < Date.now()) {
+        console.log("UPDATE");
         return fetchAndSaveInCache();
       }
+      cachedItem["cache"] = true;
+      return cachedItem;
+    } else {
+      return fetchAndSaveInCache();
+    }
 
-      function fetchAndSaveInCache() {
-        return fetch(url)
-          .then((res) => {
-            const clonedResponse = res.clone();
-            const newHeaders = new Headers(res.headers);
-            newHeaders.append(expireHeader, expireDateGen());
-            const updatedResponse = new Response(clonedResponse.body, {
-              status: clonedResponse.status,
-              statusText: clonedResponse.statusText,
-              headers: newHeaders,
-            });
-            cache.put(url, updatedResponse);
-            return res.json();
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      }
-    });
+    function fetchAndSaveInCache() {
+      return fetch(url)
+        .then(async (res) => {
+          const jsonResponse = await res.json();
+          jsonResponse[expireHeader] = genExpireDate();
+          localStorage.setItem(url, JSON.stringify(jsonResponse));
+          return jsonResponse;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
 
   const unknownUserError = "unknown_user";
