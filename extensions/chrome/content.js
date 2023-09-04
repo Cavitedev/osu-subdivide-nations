@@ -9,7 +9,6 @@
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     const { type, location, view } = obj;
     if (type == "update_flag") {
-
       if (location == "friends") {
         // No flags
         if (view == "brick") {
@@ -29,6 +28,46 @@
     }
   });
 
+  const cacheName = "osu_subdivision";
+  const expireTime = 10000; //10 seconds
+  const expireHeader = "expire-date";
+
+  const expireDateGen = () => Date.now() + expireTime;
+
+  const fetchWithCache = async (url) => {
+    return caches.open(cacheName).then(async (cache) => {
+      // await cache.delete(url);
+      const cachedResponse = await cache.match(url);
+      if (cachedResponse) {
+        const expireDate = cachedResponse.headers.get(expireHeader);
+        console.log("Saved date:", new Date(expireDate), "Date now ", new Date(Date.now()));
+        if (expireDate < Date.now()) {
+          console.log("UPDATE");
+          return fetchAndSaveInCache();
+        }
+        return cachedResponse.json();
+      } else {
+        return fetchAndSaveInCache();
+      }
+
+      function fetchAndSaveInCache() {
+        return fetch(url)
+          .then((res) => {
+            const jsonResponse = res.clone();
+            const newHeaders = new Headers(jsonResponse.headers);
+            newHeaders.append(expireHeader, expireDateGen());
+            jsonResponse.headers = newHeaders;
+            console.log("Fetch Res:", jsonResponse);
+            cache.put(url, jsonResponse);
+            return res.json();
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    });
+  };
+
   const unknownUserError = "unknown_user";
 
   const osuWorldUser = async (id) => {
@@ -38,20 +77,15 @@
     }
 
     const url = "https://osuworld.octo.moe/api/users/" + id;
-    const options = {
-      method: "GET",
-      cache: "force-cache",
-    };
 
-    let dataPromise = fetch(url, options)
-      .then((response) => response.json())
-      .catch((err) => console.log(err));
+    let dataPromise = fetchWithCache(url);
 
     let waitPromise = new Promise((resolve) => {
       setTimeout(resolve, 200);
     });
     await Promise.all([dataPromise, waitPromise]);
     data = await dataPromise;
+    console.log(data);
     return data;
   };
 
@@ -166,8 +200,7 @@
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
-      const id = url.split('/')[4];
-      console.log(url);
+      const id = url.split("/")[4];
       updateFlagsProfile(id);
     } else if (url.includes("osu.ppy.sh/home/friends")) {
       const queryParameters = url.split("?")[1];
