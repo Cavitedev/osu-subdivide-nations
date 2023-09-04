@@ -3,3 +3,4 @@ firefox.zip
 extensions/chrome_dev/*
 extensions/firefox_dev/*
 data/*
+$schema.json
