@@ -40,6 +40,7 @@
     const url = "https://osuworld.octo.moe/api/users/" + id;
     const options = {
       method: "GET",
+      'Cache-Control': 'max-age=1', 
       cache: "force-cache",
     };
 
