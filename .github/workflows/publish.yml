@@ -27,7 +27,7 @@ jobs:
       - name: Zip Chrome
         run: | 
           cd extensions/chrome_dev
-          zip -r chrome.zip ./extensions/chrome_dev
+          zip -r chrome.zip .
           cd ..
           cd ..
       # Zip Firefox
