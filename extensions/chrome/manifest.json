@@ -27,5 +27,8 @@
             ]
         }
     ],
+    "icons": {
+        "128": "favicon/icon128.png"
+    },
     "manifest_version": 3
 }
