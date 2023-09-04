@@ -17,11 +17,11 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4.0.0
-      - name: Add permissions
-        run: chmod 777 extensions/build_dev.sh 
       - name: Build build folders
         run: |
           cd extensions
+          run: chmod 777 build_dev.sh 
+          run: chmod 777 copy_folder.sh 
           ./build_dev.sh
           cd ..
       - name: Zip Chrome
