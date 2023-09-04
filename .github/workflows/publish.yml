@@ -30,11 +30,18 @@ jobs:
           zip -r chrome.zip .
           cd ..
           cd ..
-      # Zip Firefox
+          
+      - name: Zip Firefox
+        run: | 
+          cd extensions/firefox_dev
+          zip -r firefox.zip .
+          cd ..
+          cd ..
       - name: Browser Platform Publish
         uses: PlasmoHQ/bpp@v3
         with:
           keys: ${{ secrets.BPP_KEYS }}
           chrome-file: "extensions/chrome_dev/chrome.zip"
+          firefox-file: "extensions/firefox_dev/firefox.zip"
           verbose: true
       
