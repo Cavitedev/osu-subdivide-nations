@@ -29,18 +29,16 @@
   });
 
   const cacheName = "osu_subdivision";
-  const expireTime = 10000; //10 seconds
+  const expireTime = 900000; //15 minutes
   const expireHeader = "expire-date";
 
   const expireDateGen = () => Date.now() + expireTime;
 
   const fetchWithCache = async (url) => {
     return caches.open(cacheName).then(async (cache) => {
-      // await cache.delete(url);
       const cachedResponse = await cache.match(url);
       if (cachedResponse) {
         const expireDate = cachedResponse.headers.get(expireHeader);
-        console.log("Saved date:", new Date(expireDate), "Date now ", new Date(Date.now()));
         if (expireDate < Date.now()) {
           console.log("UPDATE");
           return fetchAndSaveInCache();
@@ -53,12 +51,15 @@
       function fetchAndSaveInCache() {
         return fetch(url)
           .then((res) => {
-            const jsonResponse = res.clone();
-            const newHeaders = new Headers(jsonResponse.headers);
+            const clonedResponse = res.clone();
+            const newHeaders = new Headers(res.headers);
             newHeaders.append(expireHeader, expireDateGen());
-            jsonResponse.headers = newHeaders;
-            console.log("Fetch Res:", jsonResponse);
-            cache.put(url, jsonResponse);
+            const updatedResponse = new Response(clonedResponse.body, {
+              status: clonedResponse.status,
+              statusText: clonedResponse.statusText,
+              headers: newHeaders,
+            });
+            cache.put(url, updatedResponse);
             return res.json();
           })
           .catch((error) => {
