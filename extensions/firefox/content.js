@@ -9,7 +9,6 @@
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     const { type, location, view } = obj;
     if (type == "update_flag") {
-
       if (location == "friends") {
         // No flags
         if (view == "brick") {
@@ -29,6 +28,42 @@
     }
   });
 
+  const expireTime = 50000; //15 minutes
+  const expireHeader = "expire-date";
+
+  const genExpireDate = () => Date.now() + expireTime;
+
+  let mutex = Promise.resolve();
+
+  const fetchWithCache = async (url) => {
+    const cachedItemRaw = localStorage.getItem(url);
+    if (cachedItemRaw) {
+      const cachedItem = JSON.parse(cachedItemRaw);
+      const expireDate = cachedItem[expireHeader];
+      if (expireDate < Date.now()) {
+        console.log("UPDATE");
+        return fetchAndSaveInCache();
+      }
+      cachedItem["cache"] = true;
+      return cachedItem;
+    } else {
+      return fetchAndSaveInCache();
+    }
+
+    function fetchAndSaveInCache() {
+      return fetch(url)
+        .then(async (res) => {
+          const jsonResponse = await res.json();
+          jsonResponse[expireHeader] = genExpireDate();
+          localStorage.setItem(url, JSON.stringify(jsonResponse));
+          return jsonResponse;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  };
+
   const unknownUserError = "unknown_user";
 
   const osuWorldUser = async (id) => {
@@ -38,20 +73,15 @@
     }
 
     const url = "https://osuworld.octo.moe/api/users/" + id;
-    const options = {
-      method: "GET",
-      cache: "force-cache",
-    };
 
-    let dataPromise = fetch(url, options)
-      .then((response) => response.json())
-      .catch((err) => console.log(err));
+    let dataPromise = fetchWithCache(url);
 
     let waitPromise = new Promise((resolve) => {
       setTimeout(resolve, 200);
     });
     await Promise.all([dataPromise, waitPromise]);
     data = await dataPromise;
+    console.log(data);
     return data;
   };
 
@@ -166,8 +196,7 @@
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
-      const id = url.split('/')[4];
-      console.log(url);
+      const id = url.split("/")[4];
       updateFlagsProfile(id);
     } else if (url.includes("osu.ppy.sh/home/friends")) {
       const queryParameters = url.split("?")[1];
