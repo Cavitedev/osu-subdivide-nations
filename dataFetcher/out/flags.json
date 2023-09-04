@@ -4208,6 +4208,7 @@
     },
     "ES": {
         "name": "Spain",
+        "nativename": "España",
         "regions": {
             "ES-AN": {
                 "name": "Andalusia",

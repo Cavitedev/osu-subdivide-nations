@@ -9,6 +9,7 @@
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     const { type, location, view } = obj;
     if (type == "update_flag") {
+
       if (location == "friends") {
         // No flags
         if (view == "brick") {
@@ -164,19 +165,21 @@
     const url = location.href;
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
-    } else if (tab.url.includes("osu.ppy.sh/users")) {
-      updateFlagsProfile();
-    } else if (tab.url.includes("osu.ppy.sh/home/friends")) {
-      const queryParameters = tab.url.split("?")[1];
+    } else if (url.includes("osu.ppy.sh/users")) {
+      const id = url.split('/')[4];
+      console.log(url);
+      updateFlagsProfile(id);
+    } else if (url.includes("osu.ppy.sh/home/friends")) {
+      const queryParameters = url.split("?")[1];
       const urlParameters = new URLSearchParams(queryParameters);
       const view = urlParameters.get("view");
       if (view == "brick") {
         return;
       }
       updateFlagsFriends();
-    } else if (tab.url.includes("osu.ppy.sh/community/matches/")) {
+    } else if (url.includes("osu.ppy.sh/community/matches/")) {
       updateFlagsMatches();
-    } else if (tab.url.includes("osu.ppy.sh/community/forums/topics/")) {
+    } else if (url.includes("osu.ppy.sh/community/forums/topics/")) {
       updateFlagsTopics();
     }
   };
