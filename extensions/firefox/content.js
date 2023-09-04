@@ -28,12 +28,10 @@
     }
   });
 
-  const expireTime = 50000; //15 minutes
+  const expireTime = 900000; //15 minutes
   const expireHeader = "expire-date";
 
   const genExpireDate = () => Date.now() + expireTime;
-
-  let mutex = Promise.resolve();
 
   const fetchWithCache = async (url) => {
     const cachedItemRaw = localStorage.getItem(url);
@@ -41,7 +39,6 @@
       const cachedItem = JSON.parse(cachedItemRaw);
       const expireDate = cachedItem[expireHeader];
       if (expireDate < Date.now()) {
-        console.log("UPDATE");
         return fetchAndSaveInCache();
       }
       cachedItem["cache"] = true;
@@ -79,10 +76,18 @@
     let waitPromise = new Promise((resolve) => {
       setTimeout(resolve, 200);
     });
-    await Promise.all([dataPromise, waitPromise]);
-    data = await dataPromise;
-    console.log(data);
-    return data;
+    return await Promise.race([dataPromise, waitPromise]).then(
+      async (result) => {
+        const hasCache = result && result["cache"];
+
+        if (hasCache) {
+          return result;
+        } else {
+          await waitPromise;
+          return await dataPromise;
+        }
+      }
+    );
   };
 
   const regionName = (regionData) => {
