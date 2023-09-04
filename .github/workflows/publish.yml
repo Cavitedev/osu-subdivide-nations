@@ -12,7 +12,20 @@ on:
 jobs:
   build_apk:
     permissions: write-all
-    environment: release
+    environment: production
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4.0.0
+      - name: Build build folders
+        run: ./extensions/build_dev.sh
+      - name: Zip Chrome
+        run: zip -r chrome.zip ./extensions/chrome_dev
+      # Zip Firefox
+      - name: Browser Platform Publish
+        uses: PlasmoHQ/bpp@v3
+        with:
+          keys: ${{ secrets.BPP_KEYS }}
+          chrome-file: "chrome.zip"
+          verbose: true
       
