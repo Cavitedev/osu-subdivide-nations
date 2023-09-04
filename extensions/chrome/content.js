@@ -40,6 +40,7 @@
     const url = "https://osuworld.octo.moe/api/users/" + id;
     const options = {
       method: "GET",
+      'Cache-Control': 'max-age=1', 
       cache: "force-cache",
     };
 
@@ -165,19 +166,21 @@
     const url = location.href;
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
-    } else if (tab.url.includes("osu.ppy.sh/users")) {
-      updateFlagsProfile();
-    } else if (tab.url.includes("osu.ppy.sh/home/friends")) {
-      const queryParameters = tab.url.split("?")[1];
+    } else if (url.includes("osu.ppy.sh/users")) {
+      const id = url.split('/')[4];
+      console.log(url);
+      updateFlagsProfile(id);
+    } else if (url.includes("osu.ppy.sh/home/friends")) {
+      const queryParameters = url.split("?")[1];
       const urlParameters = new URLSearchParams(queryParameters);
       const view = urlParameters.get("view");
       if (view == "brick") {
         return;
       }
       updateFlagsFriends();
-    } else if (tab.url.includes("osu.ppy.sh/community/matches/")) {
+    } else if (url.includes("osu.ppy.sh/community/matches/")) {
       updateFlagsMatches();
-    } else if (tab.url.includes("osu.ppy.sh/community/forums/topics/")) {
+    } else if (url.includes("osu.ppy.sh/community/forums/topics/")) {
       updateFlagsTopics();
     }
   };
