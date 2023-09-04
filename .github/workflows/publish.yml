@@ -20,7 +20,10 @@ jobs:
       - name: Add permissions
         run: chmod 777 extensions/build_dev.sh 
       - name: Build build folders
-        run: ./extensions/build_dev.sh
+        run: |
+          cd extensions
+          ./build_dev.sh
+          cd ..
       - name: Zip Chrome
         run: zip -r chrome.zip ./extensions/chrome_dev
       # Zip Firefox
