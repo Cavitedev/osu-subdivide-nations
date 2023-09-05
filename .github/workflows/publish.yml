@@ -38,6 +38,7 @@ jobs:
         with:
           keys: ${{ secrets.BPP_KEYS }}
           chrome-file: "extensions/chrome_dev/chrome.zip"
+          edge-file: "extensions/chrome_dev/chrome.zip"
           firefox-file: "extensions/firefox_dev/firefox.zip"
           verbose: true
       
