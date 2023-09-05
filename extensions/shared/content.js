@@ -16,7 +16,7 @@
         }
         updateFlagsFriends();
       } else if (location == "rankings") {
-        updateFlagsRankings(++runningId);
+        updateFlagsRankings();
       } else if (location == "user") {
         const playerId = window.location.href.split("/")[4];
         updateFlagsProfile(playerId);
@@ -127,8 +127,19 @@
     runningId++;
     return functionId;
   };
+  let rankingMutationObserver = new MutationObserver((_) => {
+    updateFlagsRankings();
+  });
 
   const updateFlagsRankings = async () => {
+    rankingMutationObserver.disconnect();
+    linkItem = document.querySelector("title");
+    rankingMutationObserver.observe(linkItem, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+
     const functionId = nextFunctionId();
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
     const idAttr = "data-user-id";
