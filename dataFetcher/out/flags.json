@@ -10,117 +10,117 @@
             },
             "AR-U": {
                 "name": "Chubut Province",
-                "nativeName": "Chubut",
+                "nativeName": "Provincia del Chubut",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bandera_de_la_Provincia_del_Chubut.svg"
             },
             "AR-E": {
                 "name": "Entre Ríos Province",
-                "nativeName": "Entre Ríos",
+                "nativeName": "Provincia de Entre Ríos",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bandera_de_la_Provincia_de_Entre_Ríos.svg"
             },
             "AR-Q": {
                 "name": "Neuquén Province",
-                "nativeName": "Neuquén",
+                "nativeName": "Provincia de Neuquén",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bandera_de_la_Provincia_de_Neuquén.svg"
             },
             "AR-R": {
                 "name": "Río Negro Province",
-                "nativeName": "Río Negro",
+                "nativeName": "Provincia de Río Negro",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bandera_de_la_Provincia_del_Río_Negro.svg"
             },
             "AR-Z": {
                 "name": "Santa Cruz Province",
-                "nativeName": "Santa Cruz",
+                "nativeName": "Provincia de Santa Cruz",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bandera_de_la_Provincia_de_Santa_Cruz.svg"
             },
             "AR-V": {
                 "name": "Tierra del Fuego Province",
-                "nativeName": "Tierra del Fuego",
+                "nativeName": "Provincia de Tierra del Fuego",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Bandera_de_la_Provincia_de_Tierra_del_Fuego.svg"
             },
             "AR-A": {
                 "name": "Salta Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Salta",
                 "flag": ""
             },
             "AR-B": {
                 "name": "Buenos Aires Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Buenos Aires",
                 "flag": ""
             },
             "AR-D": {
                 "name": "San Luis Province",
-                "nativeName": "",
+                "nativeName": "Provincia de San Luis",
                 "flag": ""
             },
             "AR-F": {
                 "name": "La Rioja Province",
-                "nativeName": "",
+                "nativeName": "Provincia de La Rioja",
                 "flag": ""
             },
             "AR-G": {
                 "name": "Santiago del Estero Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Santiago del Estero",
                 "flag": ""
             },
             "AR-H": {
                 "name": "Chaco Province",
-                "nativeName": "",
+                "nativeName": "Provincia del Chaco",
                 "flag": ""
             },
             "AR-J": {
                 "name": "San Juan Province",
-                "nativeName": "",
+                "nativeName": "Provincia de San Juan",
                 "flag": ""
             },
             "AR-K": {
                 "name": "Catamarca Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Catamarca",
                 "flag": ""
             },
             "AR-L": {
                 "name": "La Pampa Province",
-                "nativeName": "",
+                "nativeName": "Provincia de La Pampa",
                 "flag": ""
             },
             "AR-M": {
                 "name": "Mendoza Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Mendoza",
                 "flag": ""
             },
             "AR-N": {
                 "name": "Misiones Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Misiones",
                 "flag": ""
             },
             "AR-P": {
                 "name": "Formosa Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Formosa",
                 "flag": ""
             },
             "AR-S": {
                 "name": "Santa Fe Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Santa Fe",
                 "flag": ""
             },
             "AR-T": {
                 "name": "Tucumán Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Tucumán",
                 "flag": ""
             },
             "AR-W": {
                 "name": "Corrientes Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Corrientes",
                 "flag": ""
             },
             "AR-X": {
                 "name": "Córdoba Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Córdoba",
                 "flag": ""
             },
             "AR-Y": {
                 "name": "Jujuy Province",
-                "nativeName": "",
+                "nativeName": "Provincia de Jujuy",
                 "flag": ""
             }
         }
@@ -232,7 +232,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Brest_Voblast,_Belarus.svg"
             },
             "BY-HR": {
-                "name": "Grodno Region",
+                "name": "Hrodna Region",
                 "nativeName": "Гродзенская вобласць",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Hrodna_Voblasts.svg"
             },
@@ -242,12 +242,12 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Minsk_Voblast.svg"
             },
             "BY-MA": {
-                "name": "Mogilev Region",
+                "name": "Mahilyow Region",
                 "nativeName": "Магілёўская вобласць",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Mahilyow_Voblast.svg"
             },
             "BY-VI": {
-                "name": "Vitebsk Region",
+                "name": "Vitsebsk Region",
                 "nativeName": "Віцебская вобласць",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_Vitsebsk_region.svg"
             },
@@ -542,7 +542,7 @@
             },
             "CL-AR": {
                 "name": "Araucanía Region",
-                "nativeName": "Región de la Araucanía",
+                "nativeName": "Región de La Araucanía",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_La_Araucanía_Region.svg"
             },
             "CL-AT": {
@@ -552,7 +552,7 @@
             },
             "CL-AI": {
                 "name": "Aysén Region",
-                "nativeName": "Región Aysén del General Carlos Ibáñez del Campo",
+                "nativeName": "Región de Aysén",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Aysen,_Chile.svg"
             },
             "CL-BI": {
@@ -592,7 +592,7 @@
             },
             "CL-LI": {
                 "name": "O'Higgins Region",
-                "nativeName": "Región del Libertador General Bernardo O'Higgins",
+                "nativeName": "Región de O'Higgins",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_O'Higgins_Region,_Chile.svg"
             },
             "CL-TA": {
@@ -601,18 +601,18 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Tarapaca,_Chile.svg"
             },
             "CL-VS": {
-                "name": "Valparaíso Region",
+                "name": "Valparaiso Region",
                 "nativeName": "Región de Valparaíso",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Valparaiso_Region,_Chile.svg"
             },
             "CL-AP": {
                 "name": "Arica and Parinacota Region",
-                "nativeName": "",
+                "nativeName": "Región de Arica y Parinacota",
                 "flag": ""
             },
             "CL-MA": {
                 "name": "Region of Magallanes and Chilean Antarctica",
-                "nativeName": "",
+                "nativeName": "Región de Magallanes y la Antártica Chilena",
                 "flag": ""
             }
         }
@@ -783,7 +783,7 @@
         "nativeName": "Suomi",
         "regions": {
             "FI-01": {
-                "name": "Åland",
+                "name": "Åland Islands",
                 "nativeName": "Landskapet Åland",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_Åland.svg"
             },
@@ -919,7 +919,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Flag_of_the_Region_of_Hauts-de-France.svg"
             },
             "FR-IDF": {
-                "name": "Île-de-France",
+                "name": "Ile-de-France",
                 "nativeName": "Île-de-France",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/IDF_flag.svg"
             },
@@ -1051,7 +1051,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Bali.svg"
             },
             "ID-BB": {
-                "name": "Bangka Belitung Islands",
+                "name": "Bangka-Belitung Islands",
                 "nativeName": "Kepulauan Bangka Belitung",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Flag_of_Bangka-Belitung.svg"
             },
@@ -1206,7 +1206,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Yogyakarta.svg"
             },
             "ID-JK": {
-                "name": "Jakarta",
+                "name": "Special Capital Region of Jakarta",
                 "nativeName": "Daerah Khusus Ibukota Jakarta",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Jakarta_(vectorised).svg"
             },
@@ -1242,7 +1242,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/90/Flag_of_Valle_d'Aosta.svg"
             },
             "IT-36": {
-                "name": "Friuli Venezia Giulia",
+                "name": "Friuli-Venezia Giulia",
                 "nativeName": "Friuli-Venezia Giulia",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/55/Flag_of_Friuli-Venezia_Giulia.svg"
             },
@@ -1398,12 +1398,12 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Hiroshima_Prefecture.svg"
             },
             "JP-01": {
-                "name": "Hokkaido",
+                "name": "Hokkaido Prefecture",
                 "nativeName": "北海道",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/Flag_of_Hokkaido_Prefecture.svg"
             },
             "JP-28": {
-                "name": "Hyōgo Prefecture",
+                "name": "Hyogo Prefecture",
                 "nativeName": "兵庫県",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Hyogo_Prefecture.svg"
             },
@@ -1438,7 +1438,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_Kanagawa_Prefecture.svg"
             },
             "JP-39": {
-                "name": "Kōchi Prefecture",
+                "name": "Kochi Prefecture",
                 "nativeName": "高知県",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Kochi_Prefecture.svg"
             },
@@ -1488,7 +1488,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_Niigata_Prefecture.svg"
             },
             "JP-44": {
-                "name": "Ōita Prefecture",
+                "name": "Oita Prefecture",
                 "nativeName": "大分県",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_Oita_Prefecture.svg"
             },
@@ -1697,162 +1697,162 @@
         "regions": {
             "MX-AGU": {
                 "name": "Aguascalientes",
-                "nativeName": "",
+                "nativeName": "Aguascalientes",
                 "flag": ""
             },
             "MX-BCN": {
                 "name": "Baja California",
-                "nativeName": "",
+                "nativeName": "Baja California",
                 "flag": ""
             },
             "MX-BCS": {
                 "name": "Baja California Sur",
-                "nativeName": "",
+                "nativeName": "Baja California Sur",
                 "flag": ""
             },
             "MX-CAM": {
                 "name": "Campeche",
-                "nativeName": "",
+                "nativeName": "Campeche",
                 "flag": ""
             },
             "MX-CHH": {
                 "name": "Chihuahua",
-                "nativeName": "",
+                "nativeName": "Chihuahua",
                 "flag": ""
             },
             "MX-CHP": {
                 "name": "Chiapas",
-                "nativeName": "",
+                "nativeName": "Chiapas",
                 "flag": ""
             },
             "MX-COA": {
                 "name": "Coahuila",
-                "nativeName": "",
+                "nativeName": "Coahuila",
                 "flag": ""
             },
             "MX-COL": {
                 "name": "Colima",
-                "nativeName": "",
+                "nativeName": "Colima",
                 "flag": ""
             },
             "MX-DUR": {
                 "name": "Durango",
-                "nativeName": "",
+                "nativeName": "Durango",
                 "flag": ""
             },
             "MX-GUA": {
                 "name": "Guanajuato",
-                "nativeName": "",
+                "nativeName": "Guanajuato",
                 "flag": ""
             },
             "MX-GRO": {
                 "name": "Guerrero",
-                "nativeName": "",
+                "nativeName": "Guerrero",
                 "flag": ""
             },
             "MX-HID": {
                 "name": "Hidalgo",
-                "nativeName": "",
+                "nativeName": "Hidalgo",
                 "flag": ""
             },
             "MX-JAL": {
                 "name": "Jalisco",
-                "nativeName": "",
+                "nativeName": "Jalisco",
                 "flag": ""
             },
             "MX-CMX": {
                 "name": "Mexico City",
-                "nativeName": "",
+                "nativeName": "Ciudad de México",
                 "flag": ""
             },
             "MX-MIC": {
                 "name": "Michoacán",
-                "nativeName": "",
+                "nativeName": "Michoacán",
                 "flag": ""
             },
             "MX-MOR": {
                 "name": "Morelos",
-                "nativeName": "",
+                "nativeName": "Morelos",
                 "flag": ""
             },
             "MX-NAY": {
                 "name": "Nayarit",
-                "nativeName": "",
+                "nativeName": "Nayarit",
                 "flag": ""
             },
             "MX-NLE": {
                 "name": "Nuevo León",
-                "nativeName": "",
+                "nativeName": "Nuevo León",
                 "flag": ""
             },
             "MX-OAX": {
                 "name": "Oaxaca",
-                "nativeName": "",
+                "nativeName": "Oaxaca",
                 "flag": ""
             },
             "MX-PUE": {
                 "name": "Puebla",
-                "nativeName": "",
+                "nativeName": "Puebla",
                 "flag": ""
             },
             "MX-QUE": {
                 "name": "Querétaro",
-                "nativeName": "",
+                "nativeName": "Querétaro",
                 "flag": ""
             },
             "MX-ROO": {
                 "name": "Quintana Roo",
-                "nativeName": "",
+                "nativeName": "Quintana Roo",
                 "flag": ""
             },
             "MX-SLP": {
                 "name": "San Luis Potosi",
-                "nativeName": "",
+                "nativeName": "San Luis Potosí",
                 "flag": ""
             },
             "MX-SIN": {
                 "name": "Sinaloa",
-                "nativeName": "",
+                "nativeName": "Sinaloa",
                 "flag": ""
             },
             "MX-SON": {
                 "name": "Sonora",
-                "nativeName": "",
+                "nativeName": "Sonora",
                 "flag": ""
             },
             "MX-MEX": {
                 "name": "State of Mexico",
-                "nativeName": "",
+                "nativeName": "Estado de México",
                 "flag": ""
             },
             "MX-TAB": {
                 "name": "Tabasco",
-                "nativeName": "",
+                "nativeName": "Tabasco",
                 "flag": ""
             },
             "MX-TAM": {
                 "name": "Tamaulipas",
-                "nativeName": "",
+                "nativeName": "Tamaulipas",
                 "flag": ""
             },
             "MX-TLA": {
                 "name": "Tlaxcala",
-                "nativeName": "",
+                "nativeName": "Tlaxcala",
                 "flag": ""
             },
             "MX-VER": {
                 "name": "Veracruz",
-                "nativeName": "",
+                "nativeName": "Veracruz",
                 "flag": ""
             },
             "MX-YUC": {
                 "name": "Yucatán",
-                "nativeName": "",
+                "nativeName": "Yucatán",
                 "flag": ""
             },
             "MX-ZAC": {
                 "name": "Zacatecas",
-                "nativeName": "",
+                "nativeName": "Zacatecas",
                 "flag": ""
             }
         }
@@ -1872,7 +1872,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Flevoland.svg"
             },
             "NL-FR": {
-                "name": "Friesland",
+                "name": "Frisia",
                 "nativeName": "Fryslân",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Frisian_flag.svg"
             },
@@ -1928,128 +1928,128 @@
         "nativeName": "Piruw",
         "regions": {
             "PE-AMA": {
-                "name": "Department of Amazonas",
+                "name": "Amazonas",
                 "nativeName": "Amazonas",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Amazonas_bandera.png/164px-Amazonas_bandera.png"
             },
             "PE-ANC": {
-                "name": "Department of Ancash",
+                "name": "Ancash",
                 "nativeName": "Ancash",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Bandera_Ancash.png/150px-Bandera_Ancash.png"
             },
             "PE-APU": {
-                "name": "Department of Apurímac",
+                "name": "Apurímac",
                 "nativeName": "Apurímac",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bandera_Región_Apurimac.svg"
             },
             "PE-ARE": {
-                "name": "Department of Arequipa",
+                "name": "Arequipa",
                 "nativeName": "Arequipa",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bandera_de_Arequipa.svg"
             },
             "PE-AYA": {
-                "name": "Department of Ayacucho",
+                "name": "Ayacucho",
                 "nativeName": "Ayacucho",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Ayacucho.svg"
             },
             "PE-CAJ": {
-                "name": "Department of Cajamarca",
+                "name": "Cajamarca",
                 "nativeName": "Cajamarca",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bandera_de_Cajamarca.svg"
             },
             "PE-CAL": {
                 "name": "Constitutional Province of Callao",
-                "nativeName": "Callao",
+                "nativeName": "Constitutional Province of Callao",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/Bandera_del_Callao.svg"
             },
             "PE-HUV": {
-                "name": "Department of Huancavelica",
+                "name": "Huancavelica",
                 "nativeName": "Huancavelica",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Huancavelica.svg"
             },
             "PE-HUC": {
-                "name": "Department of Huánuco",
+                "name": "Huánuco",
                 "nativeName": "Huánuco",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Huánuco.svg"
             },
             "PE-ICA": {
-                "name": "Department of Ica",
+                "name": "Ica",
                 "nativeName": "Ica",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandera_Región_Ica.png/167px-Bandera_Región_Ica.png"
             },
             "PE-JUN": {
-                "name": "Department of Junín",
+                "name": "Junín",
                 "nativeName": "Junín",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Junin.svg"
             },
             "PE-LAL": {
-                "name": "Department of La Libertad",
+                "name": "La Libertad",
                 "nativeName": "La Libertad",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bandera_de_La_Libertad_Peru.svg"
             },
             "PE-LAM": {
-                "name": "Department of Lambayeque",
+                "name": "Lambayeque",
                 "nativeName": "Lambayeque",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Lambayeque_Department.svg"
             },
             "PE-LIM": {
-                "name": "Department of Lima",
+                "name": "Lima",
                 "nativeName": "Lima",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/23/Lima_region_flag.svg"
             },
             "PE-LOR": {
-                "name": "Department of Loreto",
+                "name": "Loreto",
                 "nativeName": "Loreto",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bandera_Región_Loreto.png/150px-Bandera_Región_Loreto.png"
             },
             "PE-MDD": {
-                "name": "Department of Madre de Dios",
+                "name": "Madre de Dios",
                 "nativeName": "Madre de Dios",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Madre_de_Dios_Department.svg"
             },
             "PE-MOQ": {
-                "name": "Department of Moquegua",
+                "name": "Moquegua",
                 "nativeName": "Moquegua",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bandera_de_Moquegua.svg"
             },
             "PE-PAS": {
-                "name": "Department of Pasco",
+                "name": "Pasco",
                 "nativeName": "Pasco",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_Pasco_Department.svg"
             },
             "PE-PIU": {
-                "name": "Department of Piura",
+                "name": "Piura",
                 "nativeName": "Piura",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Bandera_de_la_región_de_Piura.svg"
             },
             "PE-PUN": {
-                "name": "Department of Puno",
+                "name": "Puno",
                 "nativeName": "Puno",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandera_Región_Puno.png/150px-Bandera_Región_Puno.png"
             },
             "PE-SAM": {
-                "name": "Department of San Martín",
+                "name": "San Martín",
                 "nativeName": "San Martín",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandera_Región_San_Martín.png/150px-Bandera_Región_San_Martín.png"
             },
             "PE-TAC": {
-                "name": "Department of Tacna",
+                "name": "Tacna",
                 "nativeName": "Tacna",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Tacna.svg"
             },
             "PE-TUM": {
-                "name": "Department of Tumbes",
+                "name": "Tumbes",
                 "nativeName": "Tumbes",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Bandera_de_Tumbes.svg"
             },
             "PE-UCA": {
-                "name": "Department of Ucayali",
+                "name": "Ucayali",
                 "nativeName": "Ucayali",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bandera_de_Ucayali.svg"
             },
             "PE-CUS": {
                 "name": "Cusco",
-                "nativeName": "",
+                "nativeName": "Cusco",
                 "flag": ""
             }
         }
@@ -2165,7 +2165,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/POL_województwo_małopolskie_flag.svg"
             },
             "PL-10": {
-                "name": "Łódź Voivodeship",
+                "name": "Łódzkie Voivodeship",
                 "nativeName": "województwo łódzkie",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/POL_województwo_łódzkie_1_flag.svg"
             },
@@ -2215,7 +2215,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/POL_województwo_podkarpackie_flag.svg"
             },
             "PL-26": {
-                "name": "Świętokrzyskie Voivodeship",
+                "name": "Holy Cross Voivodeship",
                 "nativeName": "województwo świętokrzyskie",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/69/POL_województwo_świętokrzyskie_flag.svg"
             },
@@ -2463,22 +2463,22 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Aragon.svg"
             },
             "ES-AS": {
-                "name": "Asturias",
-                "nativeName": "Asturias / Asturies",
+                "name": "Principality of Asturias",
+                "nativeName": "Principado de Asturias",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Asturias.svg"
             },
             "ES-PV": {
                 "name": "Basque Country",
-                "nativeName": "Euskadi",
+                "nativeName": "País Vasco",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_the_Basque_Country.svg"
             },
             "ES-CN": {
                 "name": "Canary Islands",
-                "nativeName": "Canarias",
+                "nativeName": "Islas Canarias",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_the_Canary_Islands.svg"
             },
             "ES-CM": {
-                "name": "Castilla–La Mancha",
+                "name": "Castile-La Mancha",
                 "nativeName": "Castilla-La Mancha",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Castile-La_Mancha.svg"
             },
@@ -2489,7 +2489,7 @@
             },
             "ES-CT": {
                 "name": "Catalonia",
-                "nativeName": "Catalunya",
+                "nativeName": "Cataluña",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg"
             },
             "ES-EX": {
@@ -2518,13 +2518,13 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_Region_of_Murcia.svg"
             },
             "ES-NC": {
-                "name": "Navarre",
-                "nativeName": "Navarra - Nafarroa",
+                "name": "Chartered Community of Navarre",
+                "nativeName": "Comunidad Foral de Navarra",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bandera_de_Navarra.svg"
             },
             "ES-VC": {
                 "name": "Valencian Community",
-                "nativeName": "Comunitat Valenciana",
+                "nativeName": "Comunidad Valenciana",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_the_Valencian_Community_(2x3).svg"
             },
             "ES-CE": {
@@ -2539,12 +2539,12 @@
             },
             "ES-PM": {
                 "name": "Balearic Islands",
-                "nativeName": "",
+                "nativeName": "Islas Baleares",
                 "flag": ""
             },
             "ES-CB": {
                 "name": "Cantabria",
-                "nativeName": "",
+                "nativeName": "Cantabria",
                 "flag": ""
             }
         }
@@ -2665,12 +2665,12 @@
         "nativeName": "Mueang Thai",
         "regions": {
             "TH-37": {
-                "name": "Amnat Charoen province",
+                "name": "Amnat Charoen Province",
                 "nativeName": "จังหวัดอำนาจเจริญ",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_Amnatcharoen_Province.png/150px-Flag_Amnatcharoen_Province.png"
             },
             "TH-15": {
-                "name": "Ang Thong province",
+                "name": "Ang Thong Province",
                 "nativeName": "จังหวัดอ่างทอง",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ang_Thong_Flag.png/151px-Ang_Thong_Flag.png"
             },
@@ -2680,372 +2680,372 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Bangkok.svg"
             },
             "TH-38": {
-                "name": "Bueng Kan province",
+                "name": "Bueng Kan Province",
                 "nativeName": "จังหวัดบึงกาฬ",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Bueng_Kan_Province.png/156px-Flag_of_Bueng_Kan_Province.png"
             },
             "TH-31": {
-                "name": "Buriram province",
+                "name": "Buri Ram Province",
                 "nativeName": "จังหวัดบุรีรัมย์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_Buriram_Province.png/150px-Flag_Buriram_Province.png"
             },
             "TH-24": {
-                "name": "Chachoengsao province",
+                "name": "Chachoengsao Province",
                 "nativeName": "จังหวัดฉะเชิงเทรา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chachoengsao_Flag.png/151px-Chachoengsao_Flag.png"
             },
             "TH-18": {
-                "name": "Chai Nat province",
+                "name": "Chai Nat Province",
                 "nativeName": "จังหวัดชัยนาท",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Chai_Nat_Flag.png/150px-Chai_Nat_Flag.png"
             },
             "TH-36": {
-                "name": "Chaiyaphum province",
+                "name": "Chaiyaphum Province",
                 "nativeName": "จังหวัดชัยภูมิ",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Chaiyaphum_Flag.png/151px-Chaiyaphum_Flag.png"
             },
             "TH-22": {
-                "name": "Chanthaburi province",
+                "name": "Chanthaburi Province",
                 "nativeName": "จังหวัดจันทบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Flag_of_Chanthaburi_Province.jpg/140px-Flag_of_Chanthaburi_Province.jpg"
             },
             "TH-50": {
-                "name": "Chiang Mai province",
+                "name": "Chiang Mai Province",
                 "nativeName": "จังหวัดเชียงใหม่",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flag_Chiang_Mai_Province.png/150px-Flag_Chiang_Mai_Province.png"
             },
             "TH-57": {
-                "name": "Chiang Rai province",
+                "name": "Chiang Rai Province",
                 "nativeName": "จังหวัดเชียงราย",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chiangrai_Flag.png/150px-Chiangrai_Flag.png"
             },
             "TH-20": {
-                "name": "Chonburi province",
+                "name": "Chon Buri Province",
                 "nativeName": "จังหวัดชลบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_Chon_Buri_Province.png/150px-Flag_Chon_Buri_Province.png"
             },
             "TH-86": {
-                "name": "Chumphon province",
+                "name": "Chumphon Province",
                 "nativeName": "จังหวัดชุมพร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Chumphon_Flag.png/151px-Chumphon_Flag.png"
             },
             "TH-46": {
-                "name": "Kalasin province",
+                "name": "Kalasin Province",
                 "nativeName": "จังหวัดกาฬสินธุ์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flag_Karasin_Province.png/150px-Flag_Karasin_Province.png"
             },
             "TH-62": {
-                "name": "Kamphaeng Phet province",
+                "name": "Kamphaeng Phet Province",
                 "nativeName": "จังหวัดกำแพงเพชร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_Kamphaeng_Phet_Province.png/150px-Flag_Kamphaeng_Phet_Province.png"
             },
             "TH-71": {
-                "name": "Kanchanaburi province",
+                "name": "Kanchanaburi Province",
                 "nativeName": "จังหวัดกาญจนบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Kanchanaburi_Flag.png/151px-Kanchanaburi_Flag.png"
             },
             "TH-40": {
-                "name": "Khon Kaen province",
+                "name": "Khon Kaen Province",
                 "nativeName": "จังหวัดขอนแก่น",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Khon_Kaen_Flag.png/151px-Khon_Kaen_Flag.png"
             },
             "TH-81": {
-                "name": "Krabi province",
+                "name": "Krabi Province",
                 "nativeName": "จังหวัดกระบี่",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/ธงกระบี่.png/150px-ธงกระบี่.png"
             },
             "TH-52": {
-                "name": "Lampang province",
+                "name": "Lampang Province",
                 "nativeName": "จังหวัดลำปาง",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_Lampang_Province.png/150px-Flag_of_Lampang_Province.png"
             },
             "TH-51": {
-                "name": "Lamphun province",
+                "name": "Lamphun Province",
                 "nativeName": "จังหวัดลำพูน",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Lamphun_provincial_flag.png/150px-Lamphun_provincial_flag.png"
             },
             "TH-42": {
-                "name": "Loei province",
+                "name": "Loei Province",
                 "nativeName": "จังหวัดเลย",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loei_Flag.png/151px-Loei_Flag.png"
             },
             "TH-16": {
-                "name": "Lopburi province",
+                "name": "Lop Buri Province",
                 "nativeName": "จังหวัดลพบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_Lop_Buri_Province.png/150px-Flag_Lop_Buri_Province.png"
             },
             "TH-58": {
-                "name": "Mae Hong Son province",
+                "name": "Mae Hong Son Province",
                 "nativeName": "จังหวัดแม่ฮ่องสอน",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_Mae_Hong_Son_Province.png/150px-Flag_Mae_Hong_Son_Province.png"
             },
             "TH-44": {
-                "name": "Maha Sarakham province",
+                "name": "Maha Sarakham Province",
                 "nativeName": "จังหวัดมหาสารคาม",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Mahasarakham_PV_Flag.png/150px-Mahasarakham_PV_Flag.png"
             },
             "TH-49": {
-                "name": "Mukdahan province",
+                "name": "Mukdahan Province",
                 "nativeName": "จังหวัดมุกดาหาร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_Mokdahan_Province.png/150px-Flag_Mokdahan_Province.png"
             },
             "TH-26": {
-                "name": "Nakhon Nayok province",
+                "name": "Nakhon Nayok Province",
                 "nativeName": "จังหวัดนครนายก",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ธงนครนายก.png/150px-ธงนครนายก.png"
             },
             "TH-73": {
-                "name": "Nakhon Pathom province",
+                "name": "Nakhon Pathom Province",
                 "nativeName": "จังหวัดนครปฐม",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_Nakhon_Pathom_Province.png/150px-Flag_Nakhon_Pathom_Province.png"
             },
             "TH-48": {
-                "name": "Nakhon Phanom province",
+                "name": "Nakhon Phanom Province",
                 "nativeName": "จังหวัดนครพนม",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/40/Flag_of_Nakhon_Phanom_Province.svg"
             },
             "TH-30": {
-                "name": "Nakhon Ratchasima province",
+                "name": "Nakhon Ratchasima Province",
                 "nativeName": "จังหวัดนครราชสีมา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Nakhon_Ratchasima_Flag.png/151px-Nakhon_Ratchasima_Flag.png"
             },
             "TH-60": {
-                "name": "Nakhon Sawan province",
+                "name": "Nakhon Sawan Province",
                 "nativeName": "จังหวัดนครสวรรค์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Nakhon_Sawan_Flag.png/150px-Nakhon_Sawan_Flag.png"
             },
             "TH-80": {
-                "name": "Nakhon Si Thammarat province",
+                "name": "Nakhon Si Thammarat Province",
                 "nativeName": "จังหวัดนครศรีธรรมราช",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flag_Nakhon_Si_Thammarat_Province.png/150px-Flag_Nakhon_Si_Thammarat_Province.png"
             },
             "TH-55": {
-                "name": "Nan province",
+                "name": "Nan Province",
                 "nativeName": "จังหวัดน่าน",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/ธงประจำจังหวัดน่าน.svg"
             },
             "TH-96": {
-                "name": "Narathiwat province",
+                "name": "Narathiwat Province",
                 "nativeName": "จังหวัดนราธิวาส",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_Naratiwat_Province.png/150px-Flag_Naratiwat_Province.png"
             },
             "TH-39": {
-                "name": "Nong Bua Lamphu province",
+                "name": "Nǭngbūa Lamphū",
                 "nativeName": "จังหวัดหนองบัวลำภู",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Nong_Bua_Lam_Phu_Flag.png/151px-Nong_Bua_Lam_Phu_Flag.png"
             },
             "TH-43": {
-                "name": "Nong Khai province",
+                "name": "Nong Khai Province",
                 "nativeName": "จังหวัดหนองคาย",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_Nong_Khai_Province.png/150px-Flag_Nong_Khai_Province.png"
             },
             "TH-12": {
-                "name": "Nonthaburi province",
+                "name": "Nonthaburi Province",
                 "nativeName": "จังหวัดนนทบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/ธงจังหวัดนนทบุรี.svg"
             },
             "TH-13": {
-                "name": "Pathum Thani province",
+                "name": "Pathum Thani Province",
                 "nativeName": "จังหวัดปทุมธานี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Pathum_Thani_Flag.png/151px-Pathum_Thani_Flag.png"
             },
             "TH-94": {
-                "name": "Pattani province",
+                "name": "Pattani Province",
                 "nativeName": "จังหวัดปัตตานี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pattani_Flag.png/151px-Pattani_Flag.png"
             },
             "TH-82": {
-                "name": "Phang Nga province",
+                "name": "Phang-nga Province",
                 "nativeName": "จังหวัดพังงา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Phangnga_Flag.png/150px-Phangnga_Flag.png"
             },
             "TH-93": {
-                "name": "Phatthalung province",
+                "name": "Phatthalung Province",
                 "nativeName": "จังหวัดพัทลุง",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Phatthalung_Flag.png/151px-Phatthalung_Flag.png"
             },
             "TH-56": {
-                "name": "Phayao province",
+                "name": "Phayao Province",
                 "nativeName": "จังหวัดพะเยา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Phayao_flag.svg"
             },
             "TH-67": {
-                "name": "Phetchabun province",
+                "name": "Phetchabun Province",
                 "nativeName": "จังหวัดเพชรบูรณ์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Flag_Phetchabun_Province.png/150px-Flag_Phetchabun_Province.png"
             },
             "TH-76": {
-                "name": "Phetchaburi province",
+                "name": "Phetchaburi Province",
                 "nativeName": "จังหวัดเพชรบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Flag_Petchaburi_Province.png/150px-Flag_Petchaburi_Province.png"
             },
             "TH-66": {
-                "name": "Phichit province",
+                "name": "Phichit Province",
                 "nativeName": "จังหวัดพิจิตร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Phichit_Flag.png/151px-Phichit_Flag.png"
             },
             "TH-65": {
-                "name": "Phitsanulok province",
+                "name": "Phitsanulok Province",
                 "nativeName": "จังหวัดพิษณุโลก",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Pitsanulok_flag.svg"
             },
             "TH-14": {
-                "name": "Phra Nakhon Si Ayutthaya province",
+                "name": "Phra Nakhon Si Ayutthaya Province",
                 "nativeName": "จังหวัดพระนครศรีอยุธยา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Phra_Nakhon_Si_Ayutthaya_Province.svg"
             },
             "TH-54": {
-                "name": "Phrae province",
+                "name": "Phrae Province",
                 "nativeName": "จังหวัดแพร่",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/ธงแพร่.png/151px-ธงแพร่.png"
             },
             "TH-83": {
-                "name": "Phuket province",
+                "name": "Phuket Province",
                 "nativeName": "จังหวัดภูเก็ต",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Phuket_Flag.png/151px-Phuket_Flag.png"
             },
             "TH-25": {
-                "name": "Prachinburi province",
+                "name": "Prachin Buri Province",
                 "nativeName": "จังหวัดปราจีนบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flag_of_Prachin_Buri_Province.jpg/150px-Flag_of_Prachin_Buri_Province.jpg"
             },
             "TH-77": {
-                "name": "Prachuap Khiri Khan province",
+                "name": "Prachuap Khiri Khan Province",
                 "nativeName": "จังหวัดประจวบคีรีขันธ์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Prachuap_Khiri_Khan_Flag.png/150px-Prachuap_Khiri_Khan_Flag.png"
             },
             "TH-85": {
-                "name": "Ranong province",
+                "name": "Ranong Province",
                 "nativeName": "จังหวัดระนอง",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flag_Ranong_Province.png/150px-Flag_Ranong_Province.png"
             },
             "TH-70": {
-                "name": "Ratchaburi province",
+                "name": "Ratchaburi Province",
                 "nativeName": "จังหวัดราชบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ratchaburi_Flag.png/151px-Ratchaburi_Flag.png"
             },
             "TH-21": {
-                "name": "Rayong province",
+                "name": "Rayong Province",
                 "nativeName": "จังหวัดระยอง",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Rayong_Flag.png/150px-Rayong_Flag.png"
             },
             "TH-45": {
-                "name": "Roi Et province",
+                "name": "Roi Et Province",
                 "nativeName": "จังหวัดร้อยเอ็ด",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Flag_Roi-Et_Province.png/150px-Flag_Roi-Et_Province.png"
             },
             "TH-27": {
-                "name": "Sa Kaeo province",
+                "name": "Sa Kaeo Province",
                 "nativeName": "จังหวัดสระแก้ว",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Sa_Kaeo_Flag.png/150px-Sa_Kaeo_Flag.png"
             },
             "TH-47": {
-                "name": "Sakon Nakhon province",
+                "name": "Sakon Nakhon Province",
                 "nativeName": "จังหวัดสกลนคร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_Sakon_Nakhon_Province.png/150px-Flag_Sakon_Nakhon_Province.png"
             },
             "TH-11": {
-                "name": "Samut Prakan province",
+                "name": "Samut Prakan Province",
                 "nativeName": "จังหวัดสมุทรปราการ",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_Samut_Prakan_Province.png/150px-Flag_Samut_Prakan_Province.png"
             },
             "TH-74": {
-                "name": "Samut Sakhon province",
+                "name": "Samut Sakhon Province",
                 "nativeName": "จังหวัดสมุทรสาคร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_Samut_Sakhon_Province.png/150px-Flag_Samut_Sakhon_Province.png"
             },
             "TH-75": {
-                "name": "Samut Songkhram province",
+                "name": "Samut Songkhram Province",
                 "nativeName": "จังหวัดสมุทรสงคราม",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_Samut_Songkhram_Province.png/150px-Flag_Samut_Songkhram_Province.png"
             },
             "TH-19": {
-                "name": "Saraburi province",
+                "name": "Saraburi Province",
                 "nativeName": "จังหวัดสระบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Provincial_Flag_of_Saraburi.svg"
             },
             "TH-91": {
-                "name": "Satun province",
+                "name": "Satun Province",
                 "nativeName": "จังหวัดสตูล",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Satun_Flag.png/150px-Satun_Flag.png"
             },
             "TH-17": {
-                "name": "Sing Buri province",
+                "name": "Sing Buri Province",
                 "nativeName": "จังหวัดสิงห์บุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Flag_of_Sing_Buri_Province.png/150px-Flag_of_Sing_Buri_Province.png"
             },
             "TH-33": {
-                "name": "Sisaket province",
+                "name": "Si Sa Ket Province",
                 "nativeName": "จังหวัดศรีสะเกษ",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Si_Sa_Ket_Flag.png/150px-Si_Sa_Ket_Flag.png"
             },
             "TH-90": {
-                "name": "Songkhla province",
+                "name": "Songkhla Province",
                 "nativeName": "จังหวัดสงขลา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flag_Songkhla_Province.png/150px-Flag_Songkhla_Province.png"
             },
             "TH-64": {
-                "name": "Sukhothai province",
+                "name": "Sukhothai Province",
                 "nativeName": "จังหวัดสุโขทัย",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_Sukhothai_Province.svg"
             },
             "TH-72": {
-                "name": "Suphan Buri province",
+                "name": "Suphan Buri Province",
                 "nativeName": "จังหวัดสุพรรณบุรี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_Suphan_Buri_Province.png/150px-Flag_Suphan_Buri_Province.png"
             },
             "TH-84": {
-                "name": "Surat Thani province",
+                "name": "Surat Thani Province",
                 "nativeName": "จังหวัดสุราษฎร์ธานี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Suratthani_provincial_flag.png/150px-Suratthani_provincial_flag.png"
             },
             "TH-32": {
-                "name": "Surin province",
+                "name": "Surin Province",
                 "nativeName": "จังหวัดสุรินทร์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Surin_Flag.png/151px-Surin_Flag.png"
             },
             "TH-63": {
-                "name": "Tak province",
+                "name": "Tak Province",
                 "nativeName": "จังหวัดตาก",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tak_Flag.png/151px-Tak_Flag.png"
             },
             "TH-92": {
-                "name": "Trang province",
+                "name": "Trang Province",
                 "nativeName": "จังหวัดตรัง",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Trang_Flag.png/151px-Trang_Flag.png"
             },
             "TH-23": {
-                "name": "Trat province",
+                "name": "Trat Province",
                 "nativeName": "จังหวัดตราด",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Trat_Flag.png/151px-Trat_Flag.png"
             },
             "TH-34": {
-                "name": "Ubon Ratchathani province",
+                "name": "Ubon Ratchathani Province",
                 "nativeName": "จังหวัดอุบลราชธานี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ubon_Ratchathani_Province_Flags.svg"
             },
             "TH-41": {
-                "name": "Udon Thani province",
+                "name": "Udon Thani Province",
                 "nativeName": "จังหวัดอุดรธานี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Udon_Thani_Flag.png/151px-Udon_Thani_Flag.png"
             },
             "TH-61": {
-                "name": "Uthai Thani province",
+                "name": "Uthai Thani Province",
                 "nativeName": "จังหวัดอุทัยธานี",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Uthai_Thani_Flag.png/150px-Uthai_Thani_Flag.png"
             },
             "TH-53": {
-                "name": "Uttaradit province",
+                "name": "Uttaradit Province",
                 "nativeName": "จังหวัดอุตรดิตถ์",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Flag_Uttaradit_Province.png/150px-Flag_Uttaradit_Province.png"
             },
             "TH-95": {
-                "name": "Yala province",
+                "name": "Yala Province",
                 "nativeName": "จังหวัดยะลา",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yala_Flag_2.png/150px-Yala_Flag_2.png"
             },
             "TH-35": {
-                "name": "Yasothon province",
+                "name": "Yasothon Province",
                 "nativeName": "จังหวัดยโสธร",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Yasothon_Flag.png/151px-Yasothon_Flag.png"
             }
