@@ -1,6 +1,7 @@
 {
     "AR": {
         "name": "Argentina",
+        "nativeName": "Argentina",
         "regions": {
             "AR-C": {
                 "name": "Buenos Aires",
@@ -41,6 +42,7 @@
     },
     "AU": {
         "name": "Australia",
+        "nativeName": "Australia",
         "regions": {
             "AU-NSW": {
                 "name": "New South Wales",
@@ -86,6 +88,7 @@
     },
     "AT": {
         "name": "Austria",
+        "nativeName": "Österreich",
         "regions": {
             "AT-1": {
                 "name": "Burgenland",
@@ -136,6 +139,7 @@
     },
     "BY": {
         "name": "Belarus",
+        "nativeName": "Bielaruś",
         "regions": {
             "BY-BR": {
                 "name": "Brest Region",
@@ -166,10 +170,12 @@
     },
     "BE": {
         "name": "Bolivia",
+        "nativeName": "Wuliwya",
         "regions": {}
     },
     "BR": {
         "name": "Brazil",
+        "nativeName": "Brasil",
         "regions": {
             "BR-AC": {
                 "name": "Acre",
@@ -300,6 +306,7 @@
     },
     "CA": {
         "name": "Canada",
+        "nativeName": "Canada",
         "regions": {
             "CA-AB": {
                 "name": "Alberta",
@@ -370,6 +377,7 @@
     },
     "CL": {
         "name": "Chile",
+        "nativeName": "Chile",
         "regions": {
             "CL-AN": {
                 "name": "Antofagasta Region",
@@ -445,10 +453,12 @@
     },
     "CN": {
         "name": "China",
+        "nativeName": "Zhōngguó 中国",
         "regions": {}
     },
     "FI": {
         "name": "Finland",
+        "nativeName": "Suomi",
         "regions": {
             "FI-01": {
                 "name": "Åland",
@@ -514,6 +524,7 @@
     },
     "FR": {
         "name": "France",
+        "nativeName": "France",
         "regions": {
             "FR-ARA": {
                 "name": "Auvergne-Rhône-Alpes",
@@ -584,6 +595,7 @@
     },
     "DE": {
         "name": "Germany",
+        "nativeName": "Deutschland",
         "regions": {
             "DE-BW": {
                 "name": "Baden-Württemberg",
@@ -664,6 +676,7 @@
     },
     "ID": {
         "name": "Indonesia",
+        "nativeName": "Indonesia",
         "regions": {
             "ID-AC": {
                 "name": "Aceh",
@@ -839,6 +852,7 @@
     },
     "IT": {
         "name": "Italy",
+        "nativeName": "Italia",
         "regions": {
             "IT-23": {
                 "name": "Aosta Valley",
@@ -944,6 +958,7 @@
     },
     "JP": {
         "name": "Japan",
+        "nativeName": "Nippon 日本",
         "regions": {
             "JP-23": {
                 "name": "Aichi Prefecture",
@@ -1184,10 +1199,12 @@
     },
     "LV": {
         "name": "Latvia",
+        "nativeName": "Latvija",
         "regions": {}
     },
     "MY": {
         "name": "Malaysia",
+        "nativeName": "Mǎláixīyà 马来西亚",
         "regions": {
             "MY-01": {
                 "name": "Johor",
@@ -1268,10 +1285,12 @@
     },
     "MX": {
         "name": "Moldova",
+        "nativeName": "Moldova",
         "regions": {}
     },
     "NL": {
         "name": "Netherlands",
+        "nativeName": "Nederland",
         "regions": {
             "NL-DR": {
                 "name": "Drenthe",
@@ -1337,6 +1356,7 @@
     },
     "PE": {
         "name": "Peru",
+        "nativeName": "Piruw",
         "regions": {
             "PE-AMA": {
                 "name": "Department of Amazonas",
@@ -1462,10 +1482,12 @@
     },
     "PH": {
         "name": "Philippines",
+        "nativeName": "Philippines",
         "regions": {}
     },
     "PL": {
         "name": "Poland",
+        "nativeName": "Polska",
         "regions": {
             "PL-30": {
                 "name": "Greater Poland Voivodeship",
@@ -1551,11 +1573,13 @@
     },
     "RO": {
         "name": "Russia",
+        "nativeName": "Rossiâ Россия",
         "regions": {}
     },
     "ES": {
         "name": "Spain",
         "nativename": "España",
+        "nativeName": "España",
         "regions": {
             "ES-AN": {
                 "name": "Andalusia",
@@ -1646,6 +1670,7 @@
     },
     "SE": {
         "name": "Sweden",
+        "nativeName": "Sverige",
         "regions": {
             "SE-K": {
                 "name": "Blekinge County",
@@ -1756,6 +1781,7 @@
     },
     "TH": {
         "name": "Thailand",
+        "nativeName": "Mueang Thai",
         "regions": {
             "TH-37": {
                 "name": "Amnat Charoen province",
@@ -2146,6 +2172,7 @@
     },
     "UA": {
         "name": "Ukraine",
+        "nativeName": "Ukraїna Україна",
         "regions": {
             "UA-71": {
                 "name": "Cherkasy Oblast",
