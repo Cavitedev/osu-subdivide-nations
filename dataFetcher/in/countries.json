@@ -767,7 +767,7 @@
         "intermediate-region-code": ""
     },
     {
-        "name": "Czechia",
+        "name": "Czech Republic",
         "alpha-2": "CZ",
         "alpha-3": "CZE",
         "country-code": "203",
@@ -1547,7 +1547,7 @@
         "intermediate-region-code": ""
     },
     {
-        "name": "Korea, Republic of",
+        "name": "South Korea",
         "alpha-2": "KR",
         "alpha-3": "KOR",
         "country-code": "410",
@@ -1872,7 +1872,7 @@
         "intermediate-region-code": "013"
     },
     {
-        "name": "Micronesia (Federated States of)",
+        "name": "Federated States of Micronesia",
         "alpha-2": "FM",
         "alpha-3": "FSM",
         "country-code": "583",
