@@ -18,8 +18,7 @@
       } else if (location == "rankings") {
         updateFlagsRankings();
       } else if (location == "user") {
-        const playerId = window.location.href.split("/")[4];
-        updateFlagsProfile(playerId);
+        updateFlagsProfile();
       } else if (location == "matches") {
         updateFlagsMatches();
       } else if (location == "topics") {
@@ -155,8 +154,23 @@
     }
   };
 
-  const updateFlagsProfile = async (playerId) => {
-    const functionId = nextFunctionId();
+  let profileMutationObserver = new MutationObserver((_) => {
+    updateFlagsProfile();
+  });
+
+  const updateFlagsProfile = async () => {
+    const url = location.href;
+    const playerId = url.split("/")[4];
+
+    profileMutationObserver.disconnect();
+    linkItem = document.querySelector("title");
+    profileMutationObserver.observe(linkItem, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+
+    nextFunctionId();
     flagElement = document.querySelector(".profile-info");
     await updateFlag(flagElement, playerId);
   };
@@ -212,8 +226,7 @@
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
-      const id = url.split("/")[4];
-      updateFlagsProfile(id);
+      updateFlagsProfile();
     } else if (url.includes("osu.ppy.sh/home/friends")) {
       const queryParameters = url.split("?")[1];
       const urlParameters = new URLSearchParams(queryParameters);
