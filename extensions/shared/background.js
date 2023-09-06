@@ -1,5 +1,7 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  // console.log(`url changed to ${tab.url} changeInfo: ${changeInfo.status}`);
+  console.log(
+    `url changed to ${tab.url} changeInfo: ${changeInfo.status} ${Date.now()}`
+  );
 
   if (changeInfo.status === "complete") {
     if (tab.url.includes("osu.ppy.sh/community/matches/")) {
