@@ -36,91 +36,6 @@
                 "name": "Tierra del Fuego Province",
                 "nativeName": "Tierra del Fuego",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Bandera_de_la_Provincia_de_Tierra_del_Fuego.svg"
-            },
-            "AR-A": {
-                "name": "Salta Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-B": {
-                "name": "Buenos Aires Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-D": {
-                "name": "San Luis Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-F": {
-                "name": "La Rioja Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-G": {
-                "name": "Santiago del Estero Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-H": {
-                "name": "Chaco Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-J": {
-                "name": "San Juan Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-K": {
-                "name": "Catamarca Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-L": {
-                "name": "La Pampa Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-M": {
-                "name": "Mendoza Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-N": {
-                "name": "Misiones Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-P": {
-                "name": "Formosa Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-S": {
-                "name": "Santa Fe Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-T": {
-                "name": "Tucumán Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-W": {
-                "name": "Corrientes Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-X": {
-                "name": "Córdoba Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "AR-Y": {
-                "name": "Jujuy Province",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
@@ -246,73 +161,12 @@
                 "name": "Vitebsk Region",
                 "nativeName": "Віцебская вобласць",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_Vitsebsk_region.svg"
-            },
-            "BY-HO": {
-                "name": "Homyel Region",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
     "BE": {
         "name": "Bolivia",
-        "regions": {
-            "BE-VAN": {
-                "name": "Antwerp",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-BRU": {
-                "name": "Brussels-Capital",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-VOV": {
-                "name": "East Flanders",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-VBR": {
-                "name": "Flemish Brabant",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-WHT": {
-                "name": "Hainaut",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-VLI": {
-                "name": "Limburg",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-WLG": {
-                "name": "Liège",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-WLX": {
-                "name": "Luxembourg",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-WNA": {
-                "name": "Namur",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-WBR": {
-                "name": "Walloon Brabant",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BE-VWV": {
-                "name": "West Flanders",
-                "nativeName": "",
-                "flag": ""
-            }
-        }
+        "regions": {}
     },
     "BR": {
         "name": "Brazil",
@@ -441,16 +295,6 @@
                 "name": "Federal District",
                 "nativeName": "Distrito Federal",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bandeira_do_Distrito_Federal_(Brasil).svg"
-            },
-            "BR-RN": {
-                "name": "Rio Grande do Norte",
-                "nativeName": "",
-                "flag": ""
-            },
-            "BR-RS": {
-                "name": "Rio Grande do Sul",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
@@ -596,178 +440,12 @@
                 "name": "Valparaíso Region",
                 "nativeName": "Región de Valparaíso",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Valparaiso_Region,_Chile.svg"
-            },
-            "CL-AP": {
-                "name": "Arica and Parinacota Region",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CL-MA": {
-                "name": "Region of Magallanes and Chilean Antarctica",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
     "CN": {
         "name": "China",
-        "regions": {
-            "CN-AH": {
-                "name": "Anhui",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-BJ": {
-                "name": "Beijing",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-CQ": {
-                "name": "Chongqing",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-FJ": {
-                "name": "Fujian",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-GS": {
-                "name": "Gansu",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-GD": {
-                "name": "Guangdong Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-GX": {
-                "name": "Guangxi",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-GZ": {
-                "name": "Guizhou",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-HI": {
-                "name": "Hainan Province",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-HE": {
-                "name": "Hebei",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-HL": {
-                "name": "Heilongjiang",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-HA": {
-                "name": "Henan",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-HB": {
-                "name": "Hubei",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-HN": {
-                "name": "Hunan",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-NM": {
-                "name": "Inner Mongolia",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-JS": {
-                "name": "Jiangsu",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-JX": {
-                "name": "Jiangxi",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-JL": {
-                "name": "Jilin",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-LN": {
-                "name": "Liaoning",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-NX": {
-                "name": "Ningxia",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-QH": {
-                "name": "Qinghai",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-SN": {
-                "name": "Shaanxi",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-SD": {
-                "name": "Shandong",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-SH": {
-                "name": "Shanghai",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-SX": {
-                "name": "Shanxi",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-SC": {
-                "name": "Sichuan",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-TJ": {
-                "name": "Tianjin",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-XZ": {
-                "name": "Tibet",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-XJ": {
-                "name": "Xinjiang",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-YN": {
-                "name": "Yunnan",
-                "nativeName": "",
-                "flag": ""
-            },
-            "CN-ZJ": {
-                "name": "Zhejiang",
-                "nativeName": "",
-                "flag": ""
-            }
-        }
+        "regions": {}
     },
     "FI": {
         "name": "Finland",
@@ -831,41 +509,6 @@
                 "name": "Uusimaa",
                 "nativeName": "Uusimaa",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_Uusimaa.svg"
-            },
-            "FI-02": {
-                "name": "South Karelia",
-                "nativeName": "",
-                "flag": ""
-            },
-            "FI-09": {
-                "name": "Kymenlaakso",
-                "nativeName": "",
-                "flag": ""
-            },
-            "FI-10": {
-                "name": "Lapland",
-                "nativeName": "",
-                "flag": ""
-            },
-            "FI-11": {
-                "name": "Pirkanmaa",
-                "nativeName": "",
-                "flag": ""
-            },
-            "FI-12": {
-                "name": "Ostrobothnia",
-                "nativeName": "",
-                "flag": ""
-            },
-            "FI-14": {
-                "name": "North Ostrobothnia",
-                "nativeName": "",
-                "flag": ""
-            },
-            "FI-19": {
-                "name": "Southwest Finland",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
@@ -1016,11 +659,6 @@
                 "name": "Thuringia",
                 "nativeName": "Thüringen",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Thuringia.svg"
-            },
-            "DE-BY": {
-                "name": "Bavaria",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
@@ -1196,26 +834,6 @@
                 "name": "Jakarta",
                 "nativeName": "Daerah Khusus Ibukota Jakarta",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Jakarta_(vectorised).svg"
-            },
-            "ID-PT": {
-                "name": "Central Papua",
-                "nativeName": "",
-                "flag": ""
-            },
-            "ID-MA": {
-                "name": "Maluku Islands",
-                "nativeName": "",
-                "flag": ""
-            },
-            "ID-PS": {
-                "name": "South Papua",
-                "nativeName": "",
-                "flag": ""
-            },
-            "ID-PSW": {
-                "name": "Southwest Papua",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
@@ -1566,28 +1184,7 @@
     },
     "LV": {
         "name": "Latvia",
-        "regions": {
-            "K": {
-                "name": "Courland",
-                "nativeName": "",
-                "flag": ""
-            },
-            "L": {
-                "name": "Latgale",
-                "nativeName": "",
-                "flag": ""
-            },
-            "V": {
-                "name": "Vidzeme",
-                "nativeName": "",
-                "flag": ""
-            },
-            "Z": {
-                "name": "Zemgale",
-                "nativeName": "",
-                "flag": ""
-            }
-        }
+        "regions": {}
     },
     "MY": {
         "name": "Malaysia",
@@ -1666,178 +1263,12 @@
                 "name": "Putrajaya",
                 "nativeName": "Putrajaya",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Putrajaya.svg"
-            },
-            "MY-14": {
-                "name": "Kuala Lumpur",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
     "MX": {
         "name": "Moldova",
-        "regions": {
-            "MX-AGU": {
-                "name": "Aguascalientes",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-BCN": {
-                "name": "Baja California",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-BCS": {
-                "name": "Baja California Sur",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-CAM": {
-                "name": "Campeche",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-CHH": {
-                "name": "Chihuahua",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-CHP": {
-                "name": "Chiapas",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-COA": {
-                "name": "Coahuila",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-COL": {
-                "name": "Colima",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-DUR": {
-                "name": "Durango",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-GUA": {
-                "name": "Guanajuato",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-GRO": {
-                "name": "Guerrero",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-HID": {
-                "name": "Hidalgo",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-JAL": {
-                "name": "Jalisco",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-CMX": {
-                "name": "Mexico City",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-MIC": {
-                "name": "Michoacán",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-MOR": {
-                "name": "Morelos",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-NAY": {
-                "name": "Nayarit",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-NLE": {
-                "name": "Nuevo León",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-OAX": {
-                "name": "Oaxaca",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-PUE": {
-                "name": "Puebla",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-QUE": {
-                "name": "Querétaro",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-ROO": {
-                "name": "Quintana Roo",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-SLP": {
-                "name": "San Luis Potosi",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-SIN": {
-                "name": "Sinaloa",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-SON": {
-                "name": "Sonora",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-MEX": {
-                "name": "State of Mexico",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-TAB": {
-                "name": "Tabasco",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-TAM": {
-                "name": "Tamaulipas",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-TLA": {
-                "name": "Tlaxcala",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-VER": {
-                "name": "Veracruz",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-YUC": {
-                "name": "Yucatán",
-                "nativeName": "",
-                "flag": ""
-            },
-            "MX-ZAC": {
-                "name": "Zacatecas",
-                "nativeName": "",
-                "flag": ""
-            }
-        }
+        "regions": {}
     },
     "NL": {
         "name": "Netherlands",
@@ -2026,103 +1457,12 @@
                 "name": "Department of Ucayali",
                 "nativeName": "Ucayali",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bandera_de_Ucayali.svg"
-            },
-            "PE-CUS": {
-                "name": "Cusco",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
     "PH": {
         "name": "Philippines",
-        "regions": {
-            "PH-14": {
-                "name": "Bangsamoro",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-05": {
-                "name": "Bicol Region",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-02": {
-                "name": "Cagayan Valley",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-40": {
-                "name": "Calabarzon",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-13": {
-                "name": "Caraga",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-03": {
-                "name": "Central Luzon",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-07": {
-                "name": "Central Visayas",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-15": {
-                "name": "Cordillera Administrative Region",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-11": {
-                "name": "Davao Region",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-08": {
-                "name": "Eastern Visayas",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-01": {
-                "name": "Ilocos Region",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-00": {
-                "name": "Metro Manila",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-41": {
-                "name": "Mimaropa",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-10": {
-                "name": "Northern Mindanao",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-12": {
-                "name": "Soccsksargen",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-06": {
-                "name": "Western Visayas",
-                "nativeName": "",
-                "flag": ""
-            },
-            "PH-09": {
-                "name": "Zamboanga Peninsula",
-                "nativeName": "",
-                "flag": ""
-            }
-        }
+        "regions": {}
     },
     "PL": {
         "name": "Poland",
@@ -2211,218 +1551,7 @@
     },
     "RO": {
         "name": "Russia",
-        "regions": {
-            "RO-AB": {
-                "name": "Alba County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-AR": {
-                "name": "Arad County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-AG": {
-                "name": "Argeș County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BC": {
-                "name": "Bacău County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BH": {
-                "name": "Bihor County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BN": {
-                "name": "Bistrița-Năsăud County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BT": {
-                "name": "Botoșani County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BV": {
-                "name": "Brașov County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BR": {
-                "name": "Brăila County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-B": {
-                "name": "București",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-BZ": {
-                "name": "Buzău County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-CS": {
-                "name": "Caraș-Severin County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-CJ": {
-                "name": "Cluj County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-CT": {
-                "name": "Constanța County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-CV": {
-                "name": "Covasna County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-CL": {
-                "name": "Călărași County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-DJ": {
-                "name": "Dolj County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-DB": {
-                "name": "Dâmbovița County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-GL": {
-                "name": "Galați County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-GR": {
-                "name": "Giurgiu County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-GJ": {
-                "name": "Gorj County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-HR": {
-                "name": "Harghita County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-HD": {
-                "name": "Hunedoara County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-IL": {
-                "name": "Ialomița County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-IS": {
-                "name": "Iași County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-IF": {
-                "name": "Ilfov County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-MM": {
-                "name": "Maramureș County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-MH": {
-                "name": "Mehedinți County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-MS": {
-                "name": "Mureș County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-NT": {
-                "name": "Neamț County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-OT": {
-                "name": "Olt County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-PH": {
-                "name": "Prahova County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-SM": {
-                "name": "Satu Mare County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-SB": {
-                "name": "Sibiu County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-SV": {
-                "name": "Suceava County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-SJ": {
-                "name": "Sălaj County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-TR": {
-                "name": "Teleorman County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-TM": {
-                "name": "Timiș County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-TL": {
-                "name": "Tulcea County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-VS": {
-                "name": "Vaslui County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-VN": {
-                "name": "Vrancea County",
-                "nativeName": "",
-                "flag": ""
-            },
-            "RO-VL": {
-                "name": "Vâlcea County",
-                "nativeName": "",
-                "flag": ""
-            }
-        }
+        "regions": {}
     },
     "ES": {
         "name": "Spain",
@@ -2512,16 +1641,6 @@
                 "name": "Melilla",
                 "nativeName": "Melilla",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Melilla.svg"
-            },
-            "ES-PM": {
-                "name": "Balearic Islands",
-                "nativeName": "",
-                "flag": ""
-            },
-            "ES-CB": {
-                "name": "Cantabria",
-                "nativeName": "",
-                "flag": ""
             }
         }
     },
@@ -3147,11 +2266,6 @@
                 "name": "Autonomous Republic of Crimea",
                 "nativeName": "Автономна Республіка Крим",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Crimea.svg"
-            },
-            "UA-23": {
-                "name": "Zaporizhia Oblast",
-                "nativeName": "",
-                "flag": ""
             }
         }
     }
