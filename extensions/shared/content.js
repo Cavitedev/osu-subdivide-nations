@@ -7,6 +7,8 @@
   runningId = 0;
 
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
+    disconnectObservers();
+
     const { type, location, view } = obj;
     if (type == "update_flag") {
       if (location == "friends") {
@@ -18,8 +20,7 @@
       } else if (location == "rankings") {
         updateFlagsRankings();
       } else if (location == "user") {
-        const playerId = window.location.href.split("/")[4];
-        updateFlagsProfile(playerId);
+        updateFlagsProfile();
       } else if (location == "matches") {
         updateFlagsMatches();
       } else if (location == "topics") {
@@ -98,6 +99,7 @@
   const flagClass = "flag-country";
 
   const updateFlag = async (item, userId) => {
+    if (!item) return;
     playerData = await osuWorldUser(userId);
     if (!playerData || playerData["error"] == unknownUserError) {
       return;
@@ -127,12 +129,19 @@
     runningId++;
     return functionId;
   };
+
+  const disconnectObservers = () => {
+    rankingMutationObserver.disconnect();
+    profileMutationObserver.disconnect();
+  };
+
   let rankingMutationObserver = new MutationObserver((_) => {
     updateFlagsRankings();
   });
 
   const updateFlagsRankings = async () => {
-    rankingMutationObserver.disconnect();
+    const functionId = nextFunctionId();
+
     linkItem = document.querySelector("title");
     rankingMutationObserver.observe(linkItem, {
       attributes: true,
@@ -140,7 +149,6 @@
       subtree: true,
     });
 
-    const functionId = nextFunctionId();
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
     const idAttr = "data-user-id";
 
@@ -150,13 +158,28 @@
       }
       let idItem = item.querySelector(`[${idAttr}]`);
       userId = idItem.getAttribute(idAttr);
-
       await updateFlag(item, userId);
     }
   };
 
-  const updateFlagsProfile = async (playerId) => {
-    const functionId = nextFunctionId();
+  let profileMutationObserver = new MutationObserver((_) => {
+    updateFlagsProfile();
+  });
+
+  const updateFlagsProfile = async () => {
+    nextFunctionId();
+
+    const url = location.href;
+    const playerId = url.split("/")[4];
+
+    profileMutationObserver.disconnect();
+    linkItem = document.querySelector("title");
+    profileMutationObserver.observe(linkItem, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+
     flagElement = document.querySelector(".profile-info");
     await updateFlag(flagElement, playerId);
   };
@@ -212,8 +235,7 @@
     if (url.includes("osu.ppy.sh/rankings")) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
-      const id = url.split("/")[4];
-      updateFlagsProfile(id);
+      updateFlagsProfile();
     } else if (url.includes("osu.ppy.sh/home/friends")) {
       const queryParameters = url.split("?")[1];
       const urlParameters = new URLSearchParams(queryParameters);

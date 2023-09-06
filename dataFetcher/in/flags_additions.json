@@ -1,0 +1,29 @@
+{
+    "BY": {
+        "regions": {
+            "BY-HO": {
+                "nativeName": "Гомельская вобласць",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Homyel_Voblast.svg"
+            }
+        }
+    },
+    "ES": {
+        "regions": {
+            "ES-PM": {
+                "name": "Balearic Islands",
+                "nativeName": "Islas Baleares",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
+            },
+            "ES-CB": {
+                "name": "Cantabria",
+                "nativeName": "Cantabria",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg"
+            },
+            "ES-RI": {
+                "name": "La Rioja",
+                "nativeName": "La Rioja",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg"
+            }
+        }
+    }
+}
