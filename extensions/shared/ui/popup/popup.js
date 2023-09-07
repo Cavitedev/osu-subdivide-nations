@@ -1,4 +1,10 @@
-import { fetchWithCache } from "../../tools.js";
+import {
+  fetchWithCache,
+  setLanguage,
+  getLanguage,
+  systemDefaultCode,
+  nativeLanguageCode,
+} from "../../tools.js";
 
 const updateTitle = () => {
   const title = chrome.runtime.getManifest().name;
@@ -15,10 +21,10 @@ const addSupportedLanguages = async () => {
   const optionTemplate = `<option value="$value">$name</option>`;
   let selectsHtml = "";
   selectsHtml += optionTemplate
-    .replace("$value", "def")
+    .replace("$value", systemDefaultCode)
     .replace("$name", "System Default");
   selectsHtml += optionTemplate
-    .replace("$value", "nat")
+    .replace("$value", nativeLanguageCode)
     .replace("$name", "Native Language");
 
   const osuWorldLanguages = await availableLanguagesOsuWorld();
@@ -29,10 +35,9 @@ const addSupportedLanguages = async () => {
   }
   selectElement.innerHTML = selectsHtml;
 
-  const currentValue = localStorage.getItem("reg-lang");
-  if (currentValue) {
-    selectElement.value = currentValue;
-  }
+  let currentValue = await getLanguage();
+
+  selectElement.value = currentValue;
 };
 
 const availableLanguagesOsuWorld = async () => {
@@ -40,14 +45,12 @@ const availableLanguagesOsuWorld = async () => {
   return fetchWithCache(
     "https://osuworld.octo.moe/locales/languages.json",
     86400000
-  );
+  ).then((res) => res["data"]);
 };
 
-
-
-const onLanguageUpdate = (event) => {
+const onLanguageUpdate = async (event) => {
   const value = event.target.value;
-  localStorage.setItem("reg-lang", value);
+  await setLanguage(value);
 };
 
 const init = () => {

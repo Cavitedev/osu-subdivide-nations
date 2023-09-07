@@ -6,6 +6,9 @@
         "tabs",
         "storage"
     ],
+    "storage": {
+        "managed_schema": "schema.json"
+    },
     "background": {
         "service_worker": "background.js"
     },

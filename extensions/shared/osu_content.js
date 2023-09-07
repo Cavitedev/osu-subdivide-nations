@@ -4,7 +4,6 @@
   //Import Tools
   const src = chrome.runtime.getURL("tools.js");
   const tools = await import(src);
-  console.log(tools.fetchWithCache);
 
   // Import Flags
   const flagsUrl = chrome.runtime.getURL(`flags.json`);
@@ -62,7 +61,7 @@
         const hasCache = result && result["cache"];
 
         if (hasCache) {
-          return result;
+          return result["data"];
         } else {
           await waitPromise;
           return await dataPromise;
@@ -71,8 +70,18 @@
     );
   };
 
-  const regionName = (regionData) => {
-    return regionData["name"];
+  const regionName = async (countryCode, regionCode, regionData) => {
+    const regionsOsuWorld = await tools.getRegionNamesLocale();
+
+    const regionName = regionsOsuWorld?.["data"]?.[countryCode]?.[regionCode];
+    const defaultName = regionData["name"];
+    const nativeName = regionData["nativeName"];
+
+    if (regionsOsuWorld["lang"] === tools.nativeLanguageCode) {
+      return Promise.resolve(nativeName ?? defaultName);
+    } else {
+      return Promise.resolve(regionName ?? defaultName);
+    }
   };
 
   const styleTMP = "background-image: url('$flag')";
@@ -99,7 +108,10 @@
       }
 
       if (regionData["name"]) {
-        flagElement.setAttribute("title", regionName(regionData));
+        flagElement.setAttribute(
+          "title",
+          await regionName(countryCode, region, regionData)
+        );
       }
     }
   };
