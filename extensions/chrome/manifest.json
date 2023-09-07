@@ -15,7 +15,7 @@
                 "https://osu.ppy.sh/*"
             ],
             "js": [
-                "content.js"
+                "osu_content.js"
             ]
         }
     ],
@@ -25,7 +25,8 @@
                 "https://osu.ppy.sh/*"
             ],
             "resources": [
-                "flags.json"
+                "flags.json",
+                "tools.js"
             ]
         }
     ],

@@ -1,43 +1,18 @@
-osuWorldLanguages = {
-  BE: "Беларуская",
-  CA: "català",
-  DE: "Deutsch",
-  EL: "Ελληνικά",
-  EN: "English",
-  "ES-ES": "español",
-  FI: "Suomi",
-  FR: "français",
-  ID: "Bahasa Indonesia",
-  IT: "Italiano",
-  JA: "日本語",
-  KO: "한국어",
-  MS: "Melayu",
-  NL: "Nederlands",
-  PL: "polski",
-  "PT-BR": "Português (Brazil)",
-  RU: "Русский",
-  SR: "српски",
-  "SV-SE": "Svenska",
-  TR: "Türkçe",
-  UK: "Українська",
-  VI: "Tiếng Việt",
-  "ZH-CN": "简体中文",
-  "ZH-TW": "繁體中文（台灣）",
-};
+import { fetchWithCache } from "../../tools.js";
 
 const updateTitle = () => {
-  title = chrome.runtime.getManifest().name;
-  version = " v" + chrome.runtime.getManifest().version;
+  const title = chrome.runtime.getManifest().name;
+  const version = " v" + chrome.runtime.getManifest().version;
 
   document.querySelector("#header .title").innerHTML = title;
   document.querySelector("#header .version").innerHTML = version;
 };
 
 const addSupportedLanguages = async () => {
-  selectElement = document.querySelector("#region-languages-select");
+  const selectElement = document.querySelector("#region-languages-select");
   selectElement.addEventListener("change", onLanguageUpdate);
 
-  optionTemplate = `<option value="$value">$name</option>`;
+  const optionTemplate = `<option value="$value">$name</option>`;
   let selectsHtml = "";
   selectsHtml += optionTemplate
     .replace("$value", "def")
@@ -46,6 +21,7 @@ const addSupportedLanguages = async () => {
     .replace("$value", "nat")
     .replace("$name", "Native Language");
 
+  const osuWorldLanguages = await availableLanguagesOsuWorld();
   for (const [key, value] of Object.entries(osuWorldLanguages)) {
     selectsHtml += optionTemplate
       .replace("$value", key)
@@ -53,14 +29,24 @@ const addSupportedLanguages = async () => {
   }
   selectElement.innerHTML = selectsHtml;
 
-  currentValue = localStorage.getItem("reg-lang");
+  const currentValue = localStorage.getItem("reg-lang");
   if (currentValue) {
     selectElement.value = currentValue;
   }
 };
 
+const availableLanguagesOsuWorld = async () => {
+  // 1 day cache
+  return fetchWithCache(
+    "https://osuworld.octo.moe/locales/languages.json",
+    86400000
+  );
+};
+
+
+
 const onLanguageUpdate = (event) => {
-  value = event.target.value;
+  const value = event.target.value;
   localStorage.setItem("reg-lang", value);
 };
 
