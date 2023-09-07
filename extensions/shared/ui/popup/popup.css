@@ -1,12 +1,93 @@
-body,
-html {
-  height: auto;
-}
-
 body {
+  font-family: Torus, Inter, Helvetica Neue, Tahoma, Arial,
+    Hiragino Kaku Gothic ProN, Meiryo, Microsoft YaHei, Apple SD Gothic Neo,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: #18171c;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 400px;
-  border: 6px solid #fff;
+}
+
+.page-options,
+.page-links {
+  padding: 8px;
+}
+
+#header {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #5639ac;
+}
+
+#header .title {
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+#header .divider {
+  border: none; /* Remove the default border */
+  border-top: 2px solid #8c66ff;
+}
+
+#header .version,
+.copyright {
+  color: #eee;
+}
+
+#header .subdiv {
+  display: flex;
+  justify-content: space-between; /* This will space the items evenly along the horizontal axis */
+  align-items: center; /* This will vertically center the items within the container */
+}
+
+#header a {
+  color: #fff;
+}
+
+html {
+  height: auto;
+}
+
+.page-options {
+  background-color: #2e293d;
+}
+
+.dropdown {
+  color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Add some spacing between label and select */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.language-option-label {
+  display: block;
+  margin: 0; /* Remove any default margin */
+}
+
+#region-languages-select {
+  background-color: #24222a;
+  color: #ddd;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-inv {
+  filter: invert(1);
 }

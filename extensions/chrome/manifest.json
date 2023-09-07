@@ -1,6 +1,6 @@
 {
     "name": "osu! subdivide nations",
-    "version": "2.4.3",
+    "version": "2.5.0",
     "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
     "permissions": [
         "tabs",
@@ -31,6 +31,12 @@
     ],
     "icons": {
         "128": "favicon/icon128.png"
+    },
+    "action": {
+        "default_popup": "ui/popup/popup.html",
+        "default_icon": {
+            "128": "favicon/icon128.png"
+        }
     },
     "manifest_version": 3
 }

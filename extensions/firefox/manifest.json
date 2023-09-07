@@ -1,6 +1,6 @@
 {
     "name": "osu! subdivide nations",
-    "version": "2.4.3",
+    "version": "2.5.0",
     "browser_specific_settings": {
         "gecko": {
             "id": "cavitedev@gmail.com",
@@ -42,6 +42,12 @@
     ],
     "icons": {
         "128": "favicon/icon128.png"
+    },
+    "action": {
+        "default_popup": "ui/popup/popup.html",
+        "default_icon": {
+            "128": "favicon/icon128.png"
+        }
     },
     "manifest_version": 3
 }
