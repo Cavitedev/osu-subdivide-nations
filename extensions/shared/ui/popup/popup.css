@@ -92,3 +92,18 @@ html {
 .icon-inv {
   filter: invert(1);
 }
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background: #d2d2d2;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e293d;
+}
