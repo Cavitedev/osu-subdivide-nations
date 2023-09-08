@@ -56,18 +56,20 @@
     let waitPromise = new Promise((resolve) => {
       setTimeout(resolve, 200);
     });
-    return await Promise.race([dataPromise, waitPromise]).then(
-      async (result) => {
+    return await Promise.race([dataPromise, waitPromise])
+      .then(async (result) => {
         const hasCache = result && result["cache"];
 
         if (hasCache) {
-          return result["data"];
+          return result;
         } else {
           await waitPromise;
           return await dataPromise;
         }
-      }
-    );
+      })
+      .then((result) => {
+        return result["data"];
+      });
   };
 
   const regionName = async (countryCode, regionCode, regionData) => {
