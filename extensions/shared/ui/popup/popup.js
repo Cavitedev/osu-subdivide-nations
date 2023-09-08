@@ -45,7 +45,12 @@ const availableLanguagesOsuWorld = async () => {
   return fetchWithCache(
     "https://osuworld.octo.moe/locales/languages.json",
     86400000
-  ).then((res) => res["data"]);
+  ).then((res) => {
+    const data = res["data"];
+    const languageKeys = Object.keys(data);
+    chrome.storage.local.set({ availableLanguages: languageKeys });
+    return data;
+  });
 };
 
 const onLanguageUpdate = async (event) => {
