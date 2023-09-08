@@ -47,10 +47,33 @@ export const systemDefaultCode = "DEF";
 export const nativeLanguageCode = "NAT";
 const availableLanguaesKey = "availableLanguages";
 
+export const availableLanguagesOsuWorld = async () => {
+  // 1 day cache
+  return fetchWithCache(
+    "https://osuworld.octo.moe/locales/languages.json",
+    86400000
+  ).then((res) => {
+    const data = res["data"];
+    const languageKeys = Object.keys(data);
+    chrome.storage.local.set({ availableLanguages: languageKeys });
+    return data;
+  });
+};
+
 const getSupportedSystemLanguage = async () => {
-  const availableLanguagesStorage = await chrome.storage.local.get([
+  let availableLanguagesStorage = await chrome.storage.local.get([
     availableLanguaesKey,
   ]);
+  //If it does not exist yet
+  if (
+    Object.keys(availableLanguagesStorage).length === 0 &&
+    availableLanguagesStorage.constructor === Object
+  ) {
+    const availableLanguages = await availableLanguagesOsuWorld();
+    availableLanguagesStorage = {
+      [availableLanguaesKey]: Object.keys(availableLanguages),
+    };
+  }
 
   const availableLanguages = availableLanguagesStorage[availableLanguaesKey];
 
@@ -91,12 +114,9 @@ export const getLanguage = async () => {
 export const getActiveLanguage = async () => {
   const lang = await getLanguage();
   if (lang === systemDefaultCode) {
-    //Test this
     const sysLang = await getSupportedSystemLanguage();
-    console.log(sysLang);
     return sysLang;
   }
-
   return lang;
 };
 
