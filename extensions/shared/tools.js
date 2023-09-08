@@ -121,7 +121,9 @@ export const getActiveLanguage = async () => {
 };
 
 export const setLanguage = async (lang) => {
-  const previousLang = await chrome.storage.sync.get([langKey]);
+  const previousLang = await chrome.storage.sync.get([langKey]).catch(() => {
+    console.log(e);
+  });
   if (previousLang == lang) return;
   await chrome.storage.sync.set({ [langKey]: lang });
 
