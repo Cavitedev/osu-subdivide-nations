@@ -15,7 +15,11 @@
   chrome.runtime.onMessage.addListener((obj, sender, respone) => {
     disconnectObservers();
 
-    const { type, location, view } = obj;
+    const { type, location, view, action } = obj;
+    if (action && action == "osu_flag_refresh") {
+      init();
+    }
+
     if (type == "update_flag") {
       if (location == "friends") {
         // No flags

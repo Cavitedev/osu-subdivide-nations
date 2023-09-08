@@ -124,6 +124,12 @@ export const setLanguage = async (lang) => {
   const previousLang = await chrome.storage.sync.get([langKey]);
   if (previousLang == lang) return;
   await chrome.storage.sync.set({ [langKey]: lang });
+
+  chrome.tabs.query({}, function (tabs) {
+    for (let i = 0; i < tabs.length; i++) {
+      chrome.tabs.sendMessage(tabs[i].id, { action: "osu_flag_refresh" });
+    }
+  });
 };
 
 const eightHours = 28800000;
