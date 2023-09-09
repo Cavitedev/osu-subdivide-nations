@@ -45,7 +45,7 @@ const regionsUrl =
 
 export const systemDefaultCode = "DEF";
 export const nativeLanguageCode = "NAT";
-const availableLanguaesKey = "availableLanguages";
+const availableLanguagesKey = "availableLanguages";
 
 export const availableLanguagesOsuWorld = async () => {
   // 1 day cache
@@ -62,7 +62,7 @@ export const availableLanguagesOsuWorld = async () => {
 
 const getSupportedSystemLanguage = async () => {
   let availableLanguagesStorage = await chrome.storage.local.get([
-    availableLanguaesKey,
+    availableLanguagesKey,
   ]);
   //If it does not exist yet
   if (
@@ -71,11 +71,11 @@ const getSupportedSystemLanguage = async () => {
   ) {
     const availableLanguages = await availableLanguagesOsuWorld();
     availableLanguagesStorage = {
-      [availableLanguaesKey]: Object.keys(availableLanguages),
+      [availableLanguagesKey]: Object.keys(availableLanguages),
     };
   }
 
-  const availableLanguages = availableLanguagesStorage[availableLanguaesKey];
+  const availableLanguages = availableLanguagesStorage[availableLanguagesKey];
 
   const currLang = navigator.language.toUpperCase();
   if (availableLanguages.includes(currLang)) {
