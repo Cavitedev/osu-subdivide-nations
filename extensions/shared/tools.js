@@ -105,8 +105,8 @@ const getSupportedSystemLanguage = async () => {
 export const getLanguage = async () => {
   let lang = await chrome.storage.sync.get([langKey]);
   if (Object.keys(lang).length === 0 && lang.constructor === Object) {
-    lang = systemDefaultCode;
-    setLanguage(lang);
+    setLanguage(systemDefaultCode);
+    return systemDefaultCode;
   }
   return lang[langKey];
 };
