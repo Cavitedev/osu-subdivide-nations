@@ -256,7 +256,14 @@
     const playerId = url.split("/")[4];
 
     profileMutationObserver.disconnect();
-    linkItem = document.querySelector("head");
+    let linkItem = document.querySelector("head");
+    profileMutationObserver.observe(linkItem, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+
+    linkItem = document.querySelector("title");
     profileMutationObserver.observe(linkItem, {
       attributes: true,
       childList: true,
