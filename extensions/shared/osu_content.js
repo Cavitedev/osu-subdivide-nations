@@ -90,8 +90,11 @@
     }
   };
 
-  const styleTMP = "background-image: url('$flag')";
+  const flagStyle = "background-image: url('$flag')";
+  const flagStyleWithMargin = flagStyle + "; margin-left: 4px";
   const flagClass = "flag-country";
+  const noFlag =
+    "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
   const updateFlag = async (item, userId) => {
     if (!item) return;
@@ -99,26 +102,40 @@
     if (!playerData || playerData["error"] == unknownUserError) {
       return;
     }
-    region = playerData["region_id"];
+    flagElements = item.querySelectorAll(`.${flagClass}`);
+    if (!flagElements || flagElements.length != 1) return;
+
     countryCode = playerData["country_id"];
+    regionCode = playerData["region_id"];
 
     let countryRegionsData = loadedCountryRegions[countryCode];
 
     if (countryRegionsData) {
-      const regionData = countryRegionsData["regions"][region];
+      const regionData = countryRegionsData["regions"][regionCode];
       if (!regionData) return;
 
-      flagElement = item.querySelector(`.${flagClass}`);
-      if (regionData["flag"]) {
-        flagElement.style = styleTMP.replace("$flag", regionData["flag"]);
+      flagElement = flagElements[0];
+      flagParent = flagElement.parentElement;
+
+      flagParentClone = flagParent.cloneNode(true);
+      flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
+
+      flag = regionData["flag"];
+      if (!flag || flag === "") {
+        flag = noFlag;
       }
+      flagElementClone.style = flagStyleWithMargin.replace("$flag", flag);
 
       if (regionData["name"]) {
-        flagElement.setAttribute(
+        flagElementClone.setAttribute(
           "title",
-          await regionName(countryCode, region, regionData)
+          await regionName(countryCode, regionCode, regionData)
         );
       }
+      flagParent.parentElement.insertBefore(
+        flagParentClone,
+        flagParent.nextSibling ?? flagParent
+      );
     }
   };
 
