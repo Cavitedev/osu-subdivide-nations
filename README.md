@@ -15,6 +15,7 @@ Data provided by [osuworld](https://osuworld.octo.moe/)
 - [Profile](https://osu.ppy.sh/users/4871211/fruits)
 - [Friends](https://osu.ppy.sh/home/friends)
 - [Forum](https://osu.ppy.sh/community/forums/topics/1686524?n=3)
+- [Beatmap](https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628)
 
 ## Inner Projects
 

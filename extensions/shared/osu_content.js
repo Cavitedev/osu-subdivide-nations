@@ -16,25 +16,27 @@
     disconnectObservers();
 
     const { type, location, view, action } = obj;
-    if (action && action == "osu_flag_refresh") {
+    if (action && action === "osu_flag_refresh") {
       init();
     }
 
-    if (type == "update_flag") {
-      if (location == "friends") {
+    if (type === "update_flag") {
+      if (location === "friends") {
         // No flags
-        if (view == "brick") {
+        if (view === "brick") {
           return;
         }
         updateFlagsFriends();
-      } else if (location == "rankings") {
+      } else if (location === "rankings") {
         updateFlagsRankings();
-      } else if (location == "user") {
+      } else if (location === "user") {
         updateFlagsProfile();
-      } else if (location == "matches") {
+      } else if (location === "matches") {
         updateFlagsMatches();
-      } else if (location == "topics") {
+      } else if (location === "topics") {
         updateFlagsTopics();
+      } else if (location === "beatmapsets") {
+        updateFlagsBeatmapsets();
       }
     }
   });
@@ -96,7 +98,7 @@
   const noFlag =
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
-  const updateFlag = async (item, userId) => {
+  const updateFlag = async (item, userId, insertInside = false) => {
     if (!item) return;
     playerData = await osuWorldUser(userId);
     if (!playerData || playerData["error"] == unknownUserError) {
@@ -132,10 +134,14 @@
           await regionName(countryCode, regionCode, regionData)
         );
       }
-      flagParent.parentElement.insertBefore(
-        flagParentClone,
-        flagParent.nextSibling ?? flagParent
-      );
+
+      let insertParent = insertInside ? flagParent : flagParent.parentElement;
+
+      if (flagParent.nextSibling) {
+        insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+      } else {
+        insertParent.appendChild(flagParentClone);
+      }
     }
   };
 
@@ -148,6 +154,7 @@
   const disconnectObservers = () => {
     rankingMutationObserver.disconnect();
     profileMutationObserver.disconnect();
+    beatmapsetMutationObserver.disconnect();
   };
 
   let rankingMutationObserver = new MutationObserver((_) => {
@@ -174,6 +181,38 @@
       let idItem = item.querySelector(`[${idAttr}]`);
       userId = idItem.getAttribute(idAttr);
       await updateFlag(item, userId);
+    }
+  };
+
+  let beatmapsetMutationObserver = new MutationObserver((_) => {
+    updateFlagsBeatmapsets();
+  });
+
+  const updateFlagsBeatmapsets = async () => {
+    const functionId = nextFunctionId();
+
+    linkItem = document.querySelector(".beatmapset-scoreboard__main");
+    beatmapsetMutationObserver.observe(linkItem, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+
+    console.log("updateFlagsBeatmapsets");
+    rankingTable = document.querySelector(".beatmap-scoreboard-table__body");
+    if (!rankingTable) {
+      return;
+    }
+    const items = rankingTable.children;
+    for (let item of items) {
+      if (functionId != runningId) {
+        return;
+      }
+      playerNameElement = item.querySelector(
+        ".beatmap-scoreboard-table__cell-content--user-link"
+      );
+      playerId = playerNameElement.getAttribute("data-user-id");
+      await updateFlag(item, playerId, true);
     }
   };
 
@@ -217,6 +256,7 @@
 
   const updateFlagsFriends = async () => {
     const functionId = nextFunctionId();
+
     friendsList = document
       .querySelector(".user-list")
       .querySelectorAll(".user-card__details");
@@ -263,6 +303,8 @@
       updateFlagsMatches();
     } else if (url.includes("osu.ppy.sh/community/forums/topics/")) {
       updateFlagsTopics();
+    } else if (url.includes("osu.ppy.sh/beatmapsets/")) {
+      updateFlagsBeatmapsets();
     }
   };
 
