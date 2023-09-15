@@ -98,7 +98,7 @@
   const noFlag =
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
-  const updateFlag = async (item, userId, insertInside = false) => {
+  const updateFlag = async (item, userId, addDiv = false) => {
     if (!item) return;
     playerData = await osuWorldUser(userId);
     if (!playerData || playerData["error"] == unknownUserError) {
@@ -135,12 +135,25 @@
         );
       }
 
-      let insertParent = insertInside ? flagParent : flagParent.parentElement;
+      const insertParent = flagParent.parentElement;
 
-      if (flagParent.nextSibling) {
-        insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+      if (addDiv) {
+        const flagsDiv = document.createElement("div");
+        flagsDiv.appendChild(flagParent);
+        insertParent.appendChild(flagsDiv);
+        flagsDiv.setAttribute("class", flagParent.getAttribute("class"));
+        flagParent.removeAttribute("class");
+        flagParentClone.removeAttribute("class");
+        flagParent.style = "display: inline-block";
+        flagParentClone.style = "display: inline-block";
+
+        flagsDiv.appendChild(flagParentClone);
       } else {
-        insertParent.appendChild(flagParentClone);
+        if (flagParent.nextSibling) {
+          insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+        } else {
+          insertParent.appendChild(flagParentClone);
+        }
       }
     }
   };
@@ -191,27 +204,43 @@
   const updateFlagsBeatmapsets = async () => {
     const functionId = nextFunctionId();
 
-    linkItem = document.querySelector(".beatmapset-scoreboard__main");
+    const linkItem = document.querySelector(".beatmapset-scoreboard__main");
     beatmapsetMutationObserver.observe(linkItem, {
       attributes: true,
       childList: true,
       subtree: true,
     });
 
-    console.log("updateFlagsBeatmapsets");
-    rankingTable = document.querySelector(".beatmap-scoreboard-table__body");
+    const topScoreElement = document.querySelector(
+      ".beatmap-score-top__user-box"
+    );
+    if (!topScoreElement) {
+      return;
+    }
+    const topScoreUserElement = topScoreElement.querySelector(
+      ".beatmap-score-top__username"
+    );
+    const topScoreUserId = topScoreUserElement.getAttribute("data-user-id");
+    if (topScoreUserId) {
+      await updateFlag(topScoreElement, topScoreUserId, true);
+    }
+
+    const rankingTable = document.querySelector(
+      ".beatmap-scoreboard-table__body"
+    );
     if (!rankingTable) {
       return;
     }
+
     const items = rankingTable.children;
     for (let item of items) {
       if (functionId != runningId) {
         return;
       }
-      playerNameElement = item.querySelector(
+      const playerNameElement = item.querySelector(
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
-      playerId = playerNameElement.getAttribute("data-user-id");
+      const playerId = playerNameElement?.getAttribute("data-user-id");
       await updateFlag(item, playerId, true);
     }
   };
