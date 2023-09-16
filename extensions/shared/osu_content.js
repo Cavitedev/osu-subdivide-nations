@@ -12,11 +12,12 @@
   loadedCountryRegions = countryRegionsData;
   runningId = 0;
 
-  chrome.runtime.onMessage.addListener((obj, sender, respone) => {
+  chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
     disconnectObservers();
 
     const { type, location, view, action } = obj;
     if (action && action === "osu_flag_refresh") {
+      await refreshOverlays();
       init();
     }
 
@@ -174,8 +175,6 @@
   };
 
   let profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
-    console.log(mutations);
-
     const addedNodesCount = mutations.reduce(
       (total, mutation) =>
         mutation.type === "childList"
@@ -185,7 +184,6 @@
     );
 
     if (addedNodesCount > 2) {
-      console.log("addedNodesCount > 2");
       updateFlagsProfileCardOverlay(mutations[0].target);
     }
   });
@@ -193,7 +191,6 @@
   let profileCardOverlayObserver = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
       for (const addedNode of mutation.addedNodes) {
-        console.log(addedNode);
         const card = addedNode.querySelector(".user-card");
         if (card) {
           profileCardOverlayFinishObserver.observe(card, {
@@ -212,6 +209,15 @@
     const userId = idFromProfileUrl(nameElement.getAttribute("href"));
     console.log(userId);
     await updateFlag(card, userId);
+  };
+
+  const refreshOverlays = async () => {
+    const overlays = document.querySelectorAll(
+      ".user-card .user-card__details"
+    );
+    for (const overlay of overlays) {
+      await updateFlagsProfileCardOverlay(overlay);
+    }
   };
 
   const nextFunctionId = () => {
