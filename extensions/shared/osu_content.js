@@ -46,7 +46,7 @@
     return url.split("/")[4];
   };
 
-  const expireTime = 900000; //15 minutes
+  const expireTime = 1800000; //30 minutes
 
   const fetchWithCache = async (url) => {
     return tools.fetchWithCache(url, expireTime);
