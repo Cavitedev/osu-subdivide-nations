@@ -276,9 +276,9 @@
 
     const linkItem = document.querySelector(".beatmapset-scoreboard__main");
     beatmapsetMutationObserver.observe(linkItem, {
-      attributes: true,
+      attributes: false,
       childList: true,
-      subtree: true,
+      subtree: false,
     });
 
     const topScoreElement = document.querySelector(
