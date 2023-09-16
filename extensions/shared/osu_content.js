@@ -122,7 +122,7 @@
       let flagParentClone = flagParent.cloneNode(true);
       let flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
 
-      const flag = regionData["flag"];
+      let flag = regionData["flag"];
       if (!flag || flag === "") {
         flag = noFlag;
       }
