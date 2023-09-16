@@ -190,9 +190,9 @@
 
     linkItem = document.querySelector("title");
     rankingMutationObserver.observe(linkItem, {
-      attributes: true,
+      attributes: false,
       childList: true,
-      subtree: true,
+      subtree: false,
     });
 
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
@@ -269,16 +269,16 @@
     profileMutationObserver.disconnect();
     let linkItem = document.querySelector("head");
     profileMutationObserver.observe(linkItem, {
-      attributes: true,
+      attributes: false,
       childList: true,
-      subtree: true,
+      subtree: false,
     });
 
     linkItem = document.querySelector("title");
     profileMutationObserver.observe(linkItem, {
-      attributes: true,
+      attributes: false,
       childList: true,
-      subtree: true,
+      subtree: false,
     });
 
     flagElement = document.querySelector(".profile-info");
