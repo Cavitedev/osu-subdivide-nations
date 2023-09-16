@@ -41,6 +41,10 @@
     }
   });
 
+  const idFromProfileUrl = (url) => {
+    return url.split("/")[4];
+  };
+
   const expireTime = 900000; //15 minutes
 
   const fetchWithCache = async (url) => {
@@ -169,9 +173,58 @@
     }
   };
 
+  let profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
+    console.log(mutations);
+
+    const addedNodesCount = mutations.reduce(
+      (total, mutation) =>
+        mutation.type === "childList"
+          ? total + mutation.addedNodes.length
+          : total,
+      0
+    );
+
+    if (addedNodesCount > 2) {
+      console.log("addedNodesCount > 2");
+      updateFlagsProfileCardOverlay(mutations[0].target);
+    }
+  });
+
+  let profileCardOverlayObserver = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const addedNode of mutation.addedNodes) {
+        console.log(addedNode);
+        const card = addedNode.querySelector(".user-card");
+        if (card) {
+          profileCardOverlayFinishObserver.observe(card, {
+            attributes: false,
+            childList: true,
+            subtree: true,
+          });
+          return;
+        }
+      }
+    }
+  });
+
+  const updateFlagsProfileCardOverlay = async (card) => {
+    const nameElement = card.querySelector(".user-card__username");
+    const userId = idFromProfileUrl(nameElement.getAttribute("href"));
+    console.log(userId);
+    await updateFlag(card, userId);
+  };
+
   const nextFunctionId = () => {
     functionId = runningId + 1;
     runningId++;
+    profileCardOverlayObserver.disconnect();
+
+    profileCardOverlayObserver.observe(document.querySelector("body"), {
+      attributes: false,
+      childList: true,
+      subtree: false,
+    });
+
     return functionId;
   };
 
@@ -179,6 +232,7 @@
     rankingMutationObserver.disconnect();
     profileMutationObserver.disconnect();
     beatmapsetMutationObserver.disconnect();
+    profileCardOverlayObserver.disconnect();
   };
 
   let rankingMutationObserver = new MutationObserver((_) => {
@@ -264,7 +318,7 @@
     nextFunctionId();
 
     const url = location.href;
-    const playerId = url.split("/")[4];
+    const playerId = idFromProfileUrl(url);
 
     profileMutationObserver.disconnect();
     let linkItem = document.querySelector("head");
@@ -303,7 +357,7 @@
       playerNameElement = item.querySelector(
         ".mp-history-player-score__username"
       );
-      playerId = playerNameElement.getAttribute("href").split("/")[4];
+      playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
       await updateFlag(item, playerId);
     }
   };
@@ -320,7 +374,7 @@
         return;
       }
       playerNameElement = item.querySelector(".user-card__username");
-      playerId = playerNameElement.getAttribute("href").split("/")[4];
+      playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
       await updateFlag(item, playerId);
     }
   };
