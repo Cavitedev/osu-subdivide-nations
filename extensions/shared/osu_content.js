@@ -207,7 +207,6 @@
   const updateFlagsProfileCardOverlay = async (card) => {
     const nameElement = card.querySelector(".user-card__username");
     const userId = idFromProfileUrl(nameElement.getAttribute("href"));
-    console.log(userId);
     await updateFlag(card, userId);
   };
 
