@@ -78,7 +78,7 @@
       });
   };
 
-  const regionName = async (countryCode, regionCode, regionData) => {
+  const getRegionName = async (countryCode, regionCode, regionData) => {
     const regionsOsuWorld = await tools.getRegionNamesLocale();
 
     const regionName = regionsOsuWorld?.["data"]?.[countryCode]?.[regionCode];
@@ -104,8 +104,8 @@
     if (!playerData || playerData["error"] == unknownUserError) {
       return;
     }
-    flagElements = item.querySelectorAll(`.${flagClass}`);
-    if (!flagElements || flagElements.length != 1) return;
+    let flagElements = item.querySelectorAll(`.${flagClass}`);
+    if (!flagElements || flagElements.length == 0) return;
 
     countryCode = playerData["country_id"];
     regionCode = playerData["region_id"];
@@ -116,45 +116,56 @@
       const regionData = countryRegionsData["regions"][regionCode];
       if (!regionData) return;
 
-      flagElement = flagElements[0];
-      flagParent = flagElement.parentElement;
+      let flagElement = flagElements[0];
+      let flagParent = flagElement.parentElement;
 
-      flagParentClone = flagParent.cloneNode(true);
-      flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
+      let flagParentClone = flagParent.cloneNode(true);
+      let flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
 
-      flag = regionData["flag"];
+      const flag = regionData["flag"];
       if (!flag || flag === "") {
         flag = noFlag;
       }
       flagElementClone.style = flagStyleWithMargin.replace("$flag", flag);
-
+      const regionName = await getRegionName(
+        countryCode,
+        regionCode,
+        regionData
+      );
       if (regionData["name"]) {
-        flagElementClone.setAttribute(
-          "title",
-          await regionName(countryCode, regionCode, regionData)
-        );
+        flagElementClone.setAttribute("title", regionName);
       }
 
       const insertParent = flagParent.parentElement;
 
-      if (addDiv) {
-        const flagsDiv = document.createElement("div");
-        flagsDiv.appendChild(flagParent);
-        insertParent.appendChild(flagsDiv);
-        flagsDiv.setAttribute("class", flagParent.getAttribute("class"));
-        flagParent.removeAttribute("class");
-        flagParentClone.removeAttribute("class");
-        flagParent.style = "display: inline-block";
-        flagParentClone.style = "display: inline-block";
-
-        flagsDiv.appendChild(flagParentClone);
+      // Check again if flag is already added
+      flagElements = item.querySelectorAll(`.${flagClass}`);
+      if (flagElements.length > 1) {
+        // Update
+        flagElements[1].replaceWith(flagElementClone);
       } else {
-        if (flagParent.nextSibling) {
-          insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+        // Add
+        if (addDiv) {
+          const flagsDiv = document.createElement("div");
+          flagsDiv.appendChild(flagParent);
+          insertParent.appendChild(flagsDiv);
+          flagsDiv.setAttribute("class", flagParent.getAttribute("class"));
+          flagParent.removeAttribute("class");
+          flagParentClone.removeAttribute("class");
+          flagParent.style = "display: inline-block";
+          flagParentClone.style = "display: inline-block";
+
+          flagsDiv.appendChild(flagParentClone);
         } else {
-          insertParent.appendChild(flagParentClone);
+          if (flagParent.nextSibling) {
+            insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+          } else {
+            insertParent.appendChild(flagParentClone);
+          }
         }
       }
+
+      return regionName;
     }
   };
 
@@ -271,7 +282,14 @@
     });
 
     flagElement = document.querySelector(".profile-info");
-    await updateFlag(flagElement, playerId);
+    const regionName = await updateFlag(flagElement, playerId);
+    if (regionName) {
+      const countryNameElement = flagElement.querySelector(
+        ".profile-info__flag-text"
+      );
+      countryNameElement.textContent =
+        countryNameElement.textContent.split(" / ")[0] + ` / ${regionName}`;
+    }
   };
 
   const updateFlagsMatches = async () => {
