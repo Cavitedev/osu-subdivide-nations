@@ -1,6 +1,6 @@
 # Osu Subdivision Flags
 
-This project aims to display the regional flags of players on the website and it's region name through an extension.
+This project aims to display the regional flags of players on the website and its region name through an extension.
 
 Feedback and contact in [Discord](https://discord.gg/YjH34wpadx)
 
@@ -34,4 +34,3 @@ Jupyter Notebook to automatically gather and structure data needed somewhere els
 ### console
 
 Utils code that is used to update the view on pages related to this project
-
