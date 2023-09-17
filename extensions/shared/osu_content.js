@@ -353,7 +353,11 @@
       const rankingType = location.pathname.split("/")[3];
       const filter = urlParams.get("filter");
 
-      if (regionData && rankingType === "performance" && (!filter || filter === "all")) {
+      if (
+        regionData &&
+        rankingType === "performance" &&
+        (!filter || filter === "all")
+      ) {
         const page = urlParams.get("page");
         const mode = location.pathname.split("/")[2];
         return regionalRanking(
@@ -421,7 +425,11 @@
     const allOption = templateOption.cloneNode(true);
     optionsParent.appendChild(allOption);
 
-    const regionNames = await getRegionNames(countryCode);
+    let regionNames = await getRegionNames(countryCode);
+
+    const keyValueArray = Object.entries(regionNames);
+    keyValueArray.sort((a, b) => a[1].localeCompare(b[1]));
+    regionNames = Object.fromEntries(keyValueArray);
 
     for (const key in regionNames) {
       const value = regionNames[key];
