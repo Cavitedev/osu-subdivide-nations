@@ -475,23 +475,30 @@
     // Already Updated
     if (regionParam) return;
 
-    for (const pagination of paginations) {
-      const htmlTemplates = [
-        '<li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>',
-        '<li class="pagination-v2__item"><a class="pagination-v2__link" href="https://osu.ppy.sh/rankings/fruits/performance?country=ES&amp;page=4#scores">4</a></li>',
-        '<li class="pagination-v2__item"> <span class="pagination-v2__link">...</span></li>',
-      ].map((html) => {
-        const template = document.createElement("div");
-        template.innerHTML = html;
-        return template.firstChild;
-      });
-      const activePageTemplate = htmlTemplates[0];
-      const inactivePageTemplate = htmlTemplates[1];
-      const dotsTemplate = htmlTemplates[2];
+    const htmlTemplates = [
+      '<li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>',
+      '<li class="pagination-v2__item"><a class="pagination-v2__link" href="https://osu.ppy.sh/rankings/fruits/performance?country=ES&amp;page=4#scores">4</a></li>',
+      '<li class="pagination-v2__item"> <span class="pagination-v2__link">...</span></li>',
+      '<a class="pagination-v2__link pagination-v2__link--quick" href="https://osu.ppy.sh/rankings/fruits/performance?country=US&amp;page=2#scores"> <span class="hidden-xs"> next </span> <i class="fas fa-angle-right"></i> </a>',
+      '<span class="pagination-v2__link pagination-v2__link--quick pagination-v2__link--disabled"> <i class="fas fa-angle-left"></i> <span class="hidden-xs"> prev </span> </span>',
+    ].map((html) => {
+      const template = document.createElement("div");
+      template.innerHTML = html;
+      return template.firstChild;
+    });
 
-      const linkInactive = inactivePageTemplate.querySelector(
-        ".pagination-v2__link"
-      );
+    const activePageTemplate = htmlTemplates[0];
+    const inactivePageTemplate = htmlTemplates[1];
+    const dotsTemplate = htmlTemplates[2];
+
+    const enabledArrow = htmlTemplates[3];
+    const disabledArrow = htmlTemplates[4];
+
+    for (const templateWithLink of [
+      inactivePageTemplate,
+      enabledArrow.parentElement,
+    ]) {
+      const linkInactive = templateWithLink.querySelector("[href]");
       const href = linkInactive.getAttribute("href");
 
       let updatedHref = tools.addOrReplaceQueryParam(
@@ -505,16 +512,19 @@
         "country",
         countryCode
       );
-
       updatedHref = updatedHref.replace("fruits", osuMode);
+
       linkInactive.setAttribute("href", updatedHref);
+    }
+
+    for (const pagination of paginations) {
+      // Fix pages
 
       const pages = pagination.querySelector(".pagination-v2__col--pages");
 
       const oldPages = pages.querySelectorAll(".pagination-v2__item");
       oldPages.forEach((page) => page.remove());
 
-      // First page
       let addingPage = 1;
       do {
         var page = pageToAdd(
@@ -530,6 +540,26 @@
         }
         addingPage++;
       } while (page);
+
+      // Fix arrows
+
+      const oldArrows = pagination.querySelectorAll(
+        ".pagination-v2__link--quick"
+      );
+
+      const leftArrow =
+        currentPage > 1
+          ? enabledArrow.cloneNode(true)
+          : disabledArrow.cloneNode(true);
+      leftArrow.querySelector(".hidden-xs").textContent = "prev";
+      oldArrows[0].replaceWith(leftArrow);
+
+      const rightArrow =
+        currentPage < totalPages
+          ? enabledArrow.cloneNode(true)
+          : disabledArrow.cloneNode(true);
+      rightArrow.querySelector(".hidden-xs").textContent = "next";
+      oldArrows[1].replaceWith(rightArrow);
     }
   };
 
