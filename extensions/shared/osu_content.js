@@ -351,6 +351,8 @@
     regionCode,
     osuPage = 1
   ) => {
+    initRegionalRanking(countryCode, regionCode);
+
     if (!osuPage) osuPage = 1;
     const pagesToCheck = tools.convertToGroupsOf5(osuPage);
 
@@ -382,12 +384,29 @@
 
       // First iteration
       if (page === pagesToCheck[0]) {
-        updateRankingPagination(Math.ceil(totalPages / 5));
+        updateRankingPagination(osuPage, Math.ceil(totalPages / 5), regionCode);
       }
     }
 
     for (let i = listItems.length - 1; i >= replaceIndex; i--) {
       listItems[i].remove();
+    }
+  };
+
+  const initRegionalRanking = (countryCode, regionCode) => {
+    const modes = document.querySelectorAll(".game-mode [href]");
+    for (const mode of modes) {
+      const href = mode.getAttribute("href");
+      const updatedHref = tools.addOrReplaceQueryParam(
+        href,
+        "region",
+        regionCode
+      );
+
+      // Already fixed
+      if (href === updatedHref) return;
+
+      mode.setAttribute("href", updatedHref);
     }
   };
 
@@ -423,7 +442,7 @@
     row.classList.remove("ranking-page-table__row--inactive");
   };
 
-  const updateRankingPagination = (totalPages) => {
+  const updateRankingPagination = (currentPage, totalPages, regionCode) => {
     const paginations = document.querySelectorAll(".pagination-v2");
 
     if (totalPages === 1) {
@@ -435,17 +454,46 @@
         ".pagination-v2__col--pages"
       ).children;
 
-      if (totalPages < 5) {
-        pages[4]?.remove();
+      // Last page
+      const lastPage = pages[pages.length - 1];
+      if (totalPages < currentPage) {
+        lastPage?.remove();
+      } else {
+        const link = lastPage.querySelector(".pagination-v2__link");
+        link.textContent = totalPages;
+        const href = link.getAttribute("href");
+
+        if (href) {
+          let updatedHref = tools.addOrReplaceQueryParam(
+            href,
+            "region",
+            regionCode
+          );
+          updatedHref = tools.addOrReplaceQueryParam(
+            updatedHref,
+            "page",
+            totalPages
+          );
+
+          link.setAttribute("href", updatedHref);
+        }
       }
 
       for (var i = 4; i >= 1; i--) {
+        const page = pages[i - 1];
         if (i > totalPages) {
-          pages[i - 1]?.remove();
+          page?.remove();
           continue;
         }
-
-        pages[i - 1].querySelector(".pagination-v2__link").textContent = i;
+        const link = page.querySelector(".pagination-v2__link");
+        link.textContent = i;
+        const href = link.getAttribute("href");
+        if (href) {
+          link.setAttribute(
+            "href",
+            tools.addOrReplaceQueryParam(href, "region", regionCode)
+          );
+        }
       }
     }
   };
