@@ -274,3 +274,16 @@ export const addOrReplaceQueryParam = (url, paramName, paramValue) => {
 
   return urlObj.toString();
 };
+
+export const removeQueryParam = (url, paramName) => {
+  const urlObj = new URL(url);
+  const searchParams = new URLSearchParams(urlObj.search);
+
+  // Add or replace the parameter
+  searchParams.delete(paramName);
+
+  // Update the URL with the modified parameters
+  urlObj.search = searchParams.toString();
+
+  return urlObj.toString();
+}

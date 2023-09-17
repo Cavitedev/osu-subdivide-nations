@@ -405,7 +405,7 @@
 
     const originalDropdown = document.querySelector(".ranking-filter--full");
     // May not be loaded yet
-    if(!originalDropdown) return;
+    if (!originalDropdown) return;
     const cloneDropdown = originalDropdown.cloneNode(true);
 
     cloneDropdown.setAttribute("id", "cavitedev_region_dropdown");
@@ -438,6 +438,9 @@
       "country",
       countryCode
     );
+
+    const allLink = tools.removeQueryParam(baseRanking, "region");
+    templateOption.setAttribute("href", allLink);
 
     const allText = templateOption.textContent;
 
