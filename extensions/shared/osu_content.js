@@ -291,7 +291,6 @@
         .querySelector(".user-search-card__col--username")
         .getAttribute("href")
     );
-    console.log("updateSearchCard " + userId);
     await addFlagUser(card, userId, true);
   };
 
@@ -306,14 +305,16 @@
       subtree: false,
     });
 
-    updateFlagMobileSearchObserver.observe(
-      document.querySelector(".mobile-menu__item--search > .quick-search"),
-      {
+    const mobileMenu = document.querySelector(
+      ".mobile-menu__item--search > .quick-search"
+    );
+    if (mobileMenu) {
+      updateFlagMobileSearchObserver.observe(mobileMenu, {
         attributes: false,
         childList: true,
         subtree: false,
-      }
-    );
+      });
+    }
 
     return functionId;
   };
