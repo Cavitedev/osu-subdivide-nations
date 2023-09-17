@@ -1,10 +1,9 @@
 {
     "name": "osu! subdivide nations",
-    "version": "2.6.0",
+    "version": "2.6.1",
     "browser_specific_settings": {
         "gecko": {
-            "id": "cavitedev@gmail.com",
-            "strict_min_version": "109.0"
+            "id": "cavitedev@gmail.com"
         }
     },
     "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
