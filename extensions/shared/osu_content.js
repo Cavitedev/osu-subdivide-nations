@@ -150,20 +150,21 @@
         flagElements[1].replaceWith(flagElementClone);
       } else {
         // Add
+        const sibling = flagParent.nextSibling;
         if (addDiv) {
           const flagsDiv = document.createElement("div");
           flagsDiv.appendChild(flagParent);
-          insertParent.appendChild(flagsDiv);
+          flagsDiv.appendChild(flagParentClone);
           flagsDiv.setAttribute("class", flagParent.getAttribute("class"));
           flagParent.removeAttribute("class");
           flagParentClone.removeAttribute("class");
           flagParent.style = "display: inline-block";
           flagParentClone.style = "display: inline-block";
 
-          flagsDiv.appendChild(flagParentClone);
+          insertParent.insertBefore(flagsDiv, sibling);
         } else {
-          if (flagParent.nextSibling) {
-            insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+          if (sibling) {
+            insertParent.insertBefore(flagParentClone, sibling);
           } else {
             insertParent.appendChild(flagParentClone);
           }
@@ -174,7 +175,7 @@
     }
   };
 
-  let profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
+  const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
     const addedNodesCount = mutations.reduce(
       (total, mutation) =>
         mutation.type === "childList"
@@ -188,7 +189,7 @@
     }
   });
 
-  let profileCardOverlayObserver = new MutationObserver((mutations) => {
+  const bodyObserver = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
       for (const addedNode of mutation.addedNodes) {
         const card = addedNode.querySelector(".user-card");
@@ -199,6 +200,15 @@
             subtree: true,
           });
           return;
+        }
+
+        const search = addedNode.querySelector(".quick-search");
+        if (search) {
+          updateFlagSearchObserver.observe(search, {
+            attributes: false,
+            childList: true,
+            subtree: false,
+          });
         }
       }
     }
@@ -219,16 +229,86 @@
     }
   };
 
-  const nextFunctionId = () => {
-    functionId = runningId + 1;
-    runningId++;
-    profileCardOverlayObserver.disconnect();
+  const refreshSearch = async (mutations) => {
+    for (const mutation of mutations) {
+      for (const addedNode of mutation.addedNodes) {
+        if (addedNode.getAttribute("data-section") === "user") {
+          await updateSearchCard(addedNode);
+        }
+      }
+    }
+  };
 
-    profileCardOverlayObserver.observe(document.querySelector("body"), {
+  const updateFlagSearchRefreshObserver = new MutationObserver(
+    async (mutations) => {
+      return refreshSearch(mutations);
+    }
+  );
+  const updateFlagMobileSearchRefreshObserver = new MutationObserver(
+    async (mutations) => {
+      return refreshSearch(mutations);
+    }
+  );
+
+  const firstSearch = async (mutations, mobile) => {
+    const addedNode = mutations[0].addedNodes[0];
+    if (!addedNode) return;
+
+    const userCards = addedNode.querySelectorAll("[data-section=user]");
+    if (!userCards || userCards.length === 0) return;
+
+    (mobile
+      ? updateFlagMobileSearchRefreshObserver
+      : updateFlagSearchRefreshObserver
+    ).observe(userCards[0].parentElement, {
       attributes: false,
       childList: true,
       subtree: false,
     });
+
+    for (const userCard of userCards) {
+      await updateSearchCard(userCard);
+    }
+  };
+
+  const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
+    return firstSearch(mutations, false);
+  });
+
+  const updateFlagMobileSearchObserver = new MutationObserver(
+    async (mutations) => {
+      return firstSearch(mutations, true);
+    }
+  );
+
+  const updateSearchCard = async (card) => {
+    const userId = idFromProfileUrl(
+      card
+        .querySelector(".user-search-card__col--username")
+        .getAttribute("href")
+    );
+    await updateFlag(card, userId, true);
+  };
+
+  const nextFunctionId = () => {
+    functionId = runningId + 1;
+    runningId++;
+    bodyObserver.disconnect();
+
+    bodyObserver.observe(document.querySelector("body"), {
+      attributes: false,
+      childList: true,
+      subtree: false,
+    });
+
+    updateFlagMobileSearchObserver.observe(
+      document.querySelector(".mobile-menu__item--search > .quick-search"),
+      {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      }
+    );
 
     return functionId;
   };
@@ -237,7 +317,8 @@
     rankingMutationObserver.disconnect();
     profileMutationObserver.disconnect();
     beatmapsetMutationObserver.disconnect();
-    profileCardOverlayObserver.disconnect();
+    bodyObserver.disconnect();
+    // updateFlagSearchObserver.disconnect();
   };
 
   let rankingMutationObserver = new MutationObserver((_) => {
