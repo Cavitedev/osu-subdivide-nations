@@ -17,7 +17,8 @@
 
     const { type, location, view, action } = obj;
     if (action && action === "osu_flag_refresh") {
-      await refreshOverlays();
+      await updateRegionsDropdown();
+      refreshOverlays();
       init();
     }
 
@@ -382,6 +383,19 @@
     }
   };
 
+  const updateRegionsDropdown = async () => {
+    const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
+    if (!addedDropdown) return;
+
+    const queryString = location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const regionUrlParam = urlParams.get("region");
+    const countryUrlParam = urlParams.get("country");
+
+    addedDropdown.remove();
+    addRegionsDropdown(countryUrlParam, regionUrlParam);
+  };
+
   const addRegionsDropdown = async (countryCode, regionCode) => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
     if (addedDropdown) return;
@@ -447,6 +461,8 @@
     cloneDropdown.querySelector(
       ".select-options__select .u-ellipsis-overflow"
     ).textContent = regionNames[regionCode] ?? allText;
+
+    if (document.querySelector("#cavitedev_region_dropdown")) return;
 
     originalDropdown.parentElement.appendChild(cloneDropdown);
   };
