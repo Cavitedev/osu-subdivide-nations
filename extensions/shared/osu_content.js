@@ -205,9 +205,9 @@
           });
           return;
         }
-
         const search = addedNode.querySelector(".quick-search");
         if (search) {
+          firstSearch(search, false);
           updateFlagSearchObserver.observe(search, {
             attributes: false,
             childList: true,
@@ -254,8 +254,7 @@
     }
   );
 
-  const firstSearch = async (mutations, mobile) => {
-    const addedNode = mutations[0].addedNodes[0];
+  const firstSearch = async (addedNode, mobile) => {
     if (!addedNode) return;
 
     const userCards = addedNode.querySelectorAll("[data-section=user]");
@@ -276,12 +275,15 @@
   };
 
   const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
-    return firstSearch(mutations, false);
+    console.log("updateFlagSearchObserver");
+    console.log(mutations);
+
+    return firstSearch(mutations[0].addedNodes[0], false);
   });
 
   const updateFlagMobileSearchObserver = new MutationObserver(
     async (mutations) => {
-      return firstSearch(mutations, true);
+      return firstSearch(mutations[0].addedNodes[0], true);
     }
   );
 
