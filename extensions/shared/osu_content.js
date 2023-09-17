@@ -353,7 +353,7 @@
       const rankingType = location.pathname.split("/")[3];
       const filter = urlParams.get("filter");
 
-      if (regionData && rankingType === "performance" && !filter) {
+      if (regionData && rankingType === "performance" && (!filter || filter === "all")) {
         const page = urlParams.get("page");
         const mode = location.pathname.split("/")[2];
         return regionalRanking(
