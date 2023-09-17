@@ -404,6 +404,8 @@
     if (addedDropdown) return;
 
     const originalDropdown = document.querySelector(".ranking-filter--full");
+    // May not be loaded yet
+    if(!originalDropdown) return;
     const cloneDropdown = originalDropdown.cloneNode(true);
 
     cloneDropdown.setAttribute("id", "cavitedev_region_dropdown");
