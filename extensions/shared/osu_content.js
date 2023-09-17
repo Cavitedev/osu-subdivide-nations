@@ -52,6 +52,27 @@
 
   const unknownUserError = "unknown_user";
 
+  const getRegionNames = async (countryCode) => {
+    const regionsOsuWorld = await tools.getRegionNamesLocale();
+
+    const regionNamesOsuWorld = regionsOsuWorld?.["data"]?.[countryCode];
+    const localeRegions = loadedCountryRegions[countryCode]?.["regions"];
+
+    const defaultNames = {};
+    const nativeNames = {};
+    for (const key in localeRegions) {
+      const value = localeRegions[key];
+      defaultNames[key] = value["name"];
+      nativeNames[key] = value["nativeName"];
+    }
+
+    if (regionsOsuWorld["lang"] === tools.nativeLanguageCode) {
+      return Promise.resolve(nativeNames ?? defaultNames);
+    } else {
+      return Promise.resolve(regionNamesOsuWorld ?? defaultNames);
+    }
+  };
+
   const getRegionName = async (countryCode, regionCode, regionData) => {
     const regionsOsuWorld = await tools.getRegionNamesLocale();
 
@@ -322,9 +343,11 @@
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
     const regionUrlParam = urlParams.get("region");
+    const countryUrlParam = urlParams.get("country");
+
+    addRegionsDropdown(countryUrlParam, regionUrlParam);
 
     if (regionUrlParam) {
-      const countryUrlParam = urlParams.get("country");
       const regionData =
         loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
       const rankingType = location.pathname.split("/")[3];
@@ -353,6 +376,68 @@
       userId = idItem.getAttribute(rankingIdAttr);
       await addFlagUser(item, userId);
     }
+  };
+
+  const addRegionsDropdown = async (countryCode, regionCode) => {
+    const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
+    if (addedDropdown) return;
+
+    const originalDropdown = document.querySelector(".ranking-filter--full");
+    const cloneDropdown = originalDropdown.cloneNode(true);
+
+    cloneDropdown.setAttribute("id", "cavitedev_region_dropdown");
+    cloneDropdown.querySelector(".ranking-filter__title").textContent =
+      "Region";
+
+    const predefinedAnchor = cloneDropdown.querySelector(
+      ".select-options__select .select-options__option"
+    );
+    const selectDiv = cloneDropdown.querySelector(".select-options");
+
+    predefinedAnchor.addEventListener("click", function (event) {
+      event.preventDefault();
+      selectDiv.classList.toggle("select-options--selecting");
+    });
+
+    // Options
+    const optionsParent = cloneDropdown.querySelector(
+      ".select-options__selector"
+    );
+    const templateOption = optionsParent.firstChild.cloneNode(true);
+
+    while (optionsParent.firstChild) {
+      optionsParent.removeChild(optionsParent.firstChild);
+    }
+
+    // All
+    const baseRanking = tools.addOrReplaceQueryParam(
+      templateOption.getAttribute("href"),
+      "country",
+      countryCode
+    );
+    const allOption = templateOption.cloneNode(true);
+    optionsParent.appendChild(allOption);
+
+    const regionNames = await getRegionNames(countryCode);
+
+    for (const key in regionNames) {
+      const value = regionNames[key];
+      const updatedRanking = tools.addOrReplaceQueryParam(
+        baseRanking,
+        "region",
+        key
+      );
+      const clonedOption = templateOption.cloneNode(true);
+      clonedOption.setAttribute("href", updatedRanking);
+      clonedOption.textContent = value;
+      optionsParent.appendChild(clonedOption);
+    }
+
+    cloneDropdown.querySelector(
+      ".select-options__select .u-ellipsis-overflow"
+    ).textContent = regionNames[regionCode];
+
+    originalDropdown.parentElement.appendChild(cloneDropdown);
   };
 
   const regionalRanking = async (
@@ -470,19 +555,25 @@
     const paginations = document.querySelectorAll(".pagination-v2");
 
     if (totalPages === 1) {
+      while (paginations.firstChild) {
+        paginations.removeChild(paginations.firstChild);
+      }
       paginations.forEach((pagination) => pagination.remove());
     }
 
     const firstLink = paginations[0]
-      .querySelector("a.pagination-v2__link")
+      ?.querySelector("a.pagination-v2__link")
       ?.getAttribute("href");
 
-    const urlObj = new URL(firstLink);
-    const searchParams = new URLSearchParams(urlObj.search);
-    const regionParam = searchParams.get("region");
+    // If there was pagination
+    if (firstLink) {
+      const urlObj = new URL(firstLink);
+      const searchParams = new URLSearchParams(urlObj.search);
+      const regionParam = searchParams.get("region");
 
-    // Already Updated
-    if (regionParam) return;
+      // Already Updated
+      if (regionParam) return;
+    }
 
     const htmlTemplates = [
       '<li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>',
