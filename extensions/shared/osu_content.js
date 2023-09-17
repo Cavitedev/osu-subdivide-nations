@@ -383,10 +383,6 @@
     if (addedDropdown) return;
 
     const originalDropdown = document.querySelector(".ranking-filter--full");
-
-    // Remove regions from original dropdown
-    removeRegionOptionInDropdown(originalDropdown);
-
     const cloneDropdown = originalDropdown.cloneNode(true);
 
     cloneDropdown.setAttribute("id", "cavitedev_region_dropdown");
@@ -445,21 +441,6 @@
     ).textContent = regionNames[regionCode] ?? allText;
 
     originalDropdown.parentElement.appendChild(cloneDropdown);
-  };
-  const removeRegionOptionInDropdown = (dropdown) => {
-    const optionsParent = dropdown.querySelector(".select-options__selector");
-    for (const option of optionsParent.children) {
-      const href = option.getAttribute("href");
-      if (!href.includes("region")) {
-        return;
-      }
-
-      const hrefUrl = new URL(href);
-      const searchParams = new URLSearchParams(hrefUrl.search);
-      searchParams.delete("region");
-      hrefUrl.search = searchParams.toString();
-      option.setAttribute("href", hrefUrl.toString());
-    }
   };
 
   const regionalRanking = async (
