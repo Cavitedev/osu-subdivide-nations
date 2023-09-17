@@ -101,6 +101,15 @@
       if (regionData["name"]) {
         flagElementClone.setAttribute("title", regionName);
       }
+      const href = flagParentClone.getAttribute("href");
+      if (href) {
+        const updatedHref = tools.addOrReplaceQueryParam(
+          href,
+          "region",
+          regionCode
+        );
+        flagParentClone.setAttribute("href", updatedHref);
+      }
 
       const insertParent = flagParent.parentElement;
 
