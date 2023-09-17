@@ -2,7 +2,13 @@ const expireHeader = "expire-date";
 
 const genExpireDate = (expireTime) => Date.now() + expireTime;
 
+let pendingRequests = {};
+
 export const fetchWithCache = async (url, expireTime) => {
+  if (pendingRequests[url]) {
+    return pendingRequests[url];
+  }
+
   const cachedItemRaw = localStorage.getItem(url);
   if (cachedItemRaw) {
     const cachedItem = JSON.parse(cachedItemRaw);
@@ -13,7 +19,11 @@ export const fetchWithCache = async (url, expireTime) => {
     cachedItem["cache"] = true;
     return cachedItem;
   } else {
-    return fetchAndSaveInCache();
+    const fetchPromise = fetchAndSaveInCache();
+    pendingRequests[url] = fetchPromise;
+    const result = await fetchPromise;
+    delete pendingRequests[url];
+    return result;
   }
 
   function fetchAndSaveInCache() {
