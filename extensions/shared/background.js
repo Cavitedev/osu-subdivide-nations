@@ -20,6 +20,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         type: "update_flag",
         location: "rankings",
       });
+    } else if (tab.url.includes("osu.ppy.sh/beatmapsets/")) {
+      chrome.tabs.sendMessage(tabId, {
+        type: "update_flag",
+        location: "beatmapsets",
+      });
     }
   }
   if (changeInfo.status === "complete" || changeInfo.status === undefined) {

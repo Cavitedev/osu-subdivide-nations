@@ -2,7 +2,13 @@ const expireHeader = "expire-date";
 
 const genExpireDate = (expireTime) => Date.now() + expireTime;
 
+let pendingRequests = {};
+
 export const fetchWithCache = async (url, expireTime) => {
+  if (pendingRequests[url]) {
+    return pendingRequests[url];
+  }
+
   const cachedItemRaw = localStorage.getItem(url);
   if (cachedItemRaw) {
     const cachedItem = JSON.parse(cachedItemRaw);
@@ -13,7 +19,11 @@ export const fetchWithCache = async (url, expireTime) => {
     cachedItem["cache"] = true;
     return cachedItem;
   } else {
-    return fetchAndSaveInCache();
+    const fetchPromise = fetchAndSaveInCache();
+    pendingRequests[url] = fetchPromise;
+    const result = await fetchPromise;
+    delete pendingRequests[url];
+    return result;
   }
 
   function fetchAndSaveInCache() {
@@ -30,6 +40,74 @@ export const fetchWithCache = async (url, expireTime) => {
         console.log(error);
       });
   }
+};
+
+const userDataExpireTime = 1800000; //30 minutes
+
+const fetchWithMinimumWaitTime = async (dataPromise, waitTime) => {
+  const waitPromise = new Promise((resolve) => {
+    setTimeout(resolve, waitTime);
+  });
+
+  return Promise.race([dataPromise, waitPromise])
+    .then(async (result) => {
+      const hasCache = result && result["cache"];
+
+      if (hasCache) {
+        return result;
+      } else {
+        await waitPromise;
+        return await dataPromise;
+      }
+    })
+    .then((result) => {
+      return result["data"];
+    });
+};
+
+export const osuWorldUser = async (id) => {
+  if (!id) {
+    console.log("id is null");
+    return;
+  }
+
+  const url = "https://osuworld.octo.moe/api/users/" + id;
+
+  let dataPromise = fetchWithCache(url, userDataExpireTime);
+  return fetchWithMinimumWaitTime(dataPromise, 200);
+};
+
+// Modes: osu, taiko, fruits, mania
+const regionRankingUrl =
+  "https://osuworld.octo.moe/api/{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
+
+export const osuWorldCountryRegionRanking = async (
+  countryCode,
+  regionCode,
+  mode = "osu",
+  page = 1
+) => {
+  if (!countryCode || !regionCode) {
+    console.log("countryCode or regionCode is null");
+    return;
+  }
+
+  const url = regionRankingUrl
+    .replace("{{country-code}}", countryCode)
+    .replace("{{country-region-code}}", regionCode)
+    .replace("{{mode}}", mode)
+    .replace("{{page}}", page);
+
+  return fetchWithCache(url, userDataExpireTime).then((result) => {
+    return result["data"];
+  });
+  // return fetchWithMinimumWaitTime(dataPromise, 200);
+};
+
+const profileUrl = "https://osu.ppy.sh/users/{{user-id}/{{mode}}";
+export const buildProfileUrl = (id, mode = "osu") => {
+  const url = profileUrl.replace("{{user-id}}", id).replace("{{mode}}", mode);
+  return url;
 };
 
 const langKey = "lang";
@@ -174,3 +252,38 @@ export const getRegionNamesLocale = async () => {
   }
   return regions;
 };
+
+// Utils
+
+export const convertToGroupsOf5 = (number) => {
+  const groupSize = 5;
+  const start = (number - 1) * groupSize + 1;
+
+  return Array.from({ length: groupSize }, (_, index) => start + index);
+};
+
+export const addOrReplaceQueryParam = (url, paramName, paramValue) => {
+  const urlObj = new URL(url);
+  const searchParams = new URLSearchParams(urlObj.search);
+
+  // Add or replace the parameter
+  searchParams.set(paramName, paramValue);
+
+  // Update the URL with the modified parameters
+  urlObj.search = searchParams.toString();
+
+  return urlObj.toString();
+};
+
+export const removeQueryParam = (url, paramName) => {
+  const urlObj = new URL(url);
+  const searchParams = new URLSearchParams(urlObj.search);
+
+  // Add or replace the parameter
+  searchParams.delete(paramName);
+
+  // Update the URL with the modified parameters
+  urlObj.search = searchParams.toString();
+
+  return urlObj.toString();
+}

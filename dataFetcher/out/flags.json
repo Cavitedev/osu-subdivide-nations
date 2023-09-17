@@ -778,6 +778,177 @@
             }
         }
     },
+    "CO": {
+        "name": "Colombia",
+        "nativeName": "Colombia",
+        "regions": {
+            "CO-DC": {
+                "name": "Bogotá",
+                "nativeName": "Bogotá, Distrito Capital",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Bogotá.svg"
+            },
+            "CO-AMA": {
+                "name": "Amazonas",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-ANT": {
+                "name": "Antioquia",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-ARA": {
+                "name": "Arauca",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-ATL": {
+                "name": "Atlántico",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-BOL": {
+                "name": "Bolívar",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-BOY": {
+                "name": "Boyacá",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CAL": {
+                "name": "Caldas",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CAQ": {
+                "name": "Caquetá",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CAS": {
+                "name": "Casanare",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CAU": {
+                "name": "Cauca",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CES": {
+                "name": "Cesar",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CHO": {
+                "name": "Chocó",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-COR": {
+                "name": "Córdoba",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-CUN": {
+                "name": "Cundinamarca",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-GUA": {
+                "name": "Guainía",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-GUV": {
+                "name": "Guaviare",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-HUI": {
+                "name": "Huila",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-LAG": {
+                "name": "La Guajira",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-MAG": {
+                "name": "Magdalena",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-MET": {
+                "name": "Meta",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-NAR": {
+                "name": "Nariño",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-NSA": {
+                "name": "Norte de Santander",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-PUT": {
+                "name": "Putumayo",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-QUI": {
+                "name": "Quindío",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-RIS": {
+                "name": "Risaralda",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-SAN": {
+                "name": "Santander",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-SAP": {
+                "name": "San Andrés and Providencia",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-SUC": {
+                "name": "Sucre",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-TOL": {
+                "name": "Tolima",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-VAC": {
+                "name": "Valle del Cauca",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-VAU": {
+                "name": "Vaupés",
+                "nativeName": "",
+                "flag": ""
+            },
+            "CO-VID": {
+                "name": "Vichada",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
     "CZ": {
         "name": "Czech Republic",
         "regions": {
@@ -1106,6 +1277,112 @@
             },
             "DE-BY": {
                 "name": "Bavaria",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
+    "HU": {
+        "name": "Hungary",
+        "nativeName": "Magyarország",
+        "regions": {
+            "HU-BU": {
+                "name": "Budapest",
+                "nativeName": "Budapest",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Flag_of_Budapest_(2011-).svg"
+            },
+            "HU-BA": {
+                "name": "Baranya",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-BZ": {
+                "name": "Borsod-Abaúj-Zemplén",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-BK": {
+                "name": "Bács-Kiskun",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-BE": {
+                "name": "Békés",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-CS": {
+                "name": "Csongrád-Csanád",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-FE": {
+                "name": "Fejér",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-GS": {
+                "name": "Győr-Moson-Sopron",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-HB": {
+                "name": "Hajdú-Bihar",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-HE": {
+                "name": "Heves",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-JN": {
+                "name": "Jász-Nagykun-Szolnok",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-KE": {
+                "name": "Komárom-Esztergom",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-NO": {
+                "name": "Nógrád",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-PE": {
+                "name": "Pest",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-SO": {
+                "name": "Somogy",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-SZ": {
+                "name": "Szabolcs-Szatmár-Bereg",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-TO": {
+                "name": "Tolna",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-VA": {
+                "name": "Vas",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-VE": {
+                "name": "Veszprém",
+                "nativeName": "",
+                "flag": ""
+            },
+            "HU-ZA": {
+                "name": "Zala",
                 "nativeName": "",
                 "flag": ""
             }
@@ -2089,6 +2366,67 @@
             }
         }
     },
+    "NO": {
+        "name": "Norway",
+        "nativeName": "Norge",
+        "regions": {
+            "NO-15": {
+                "name": "Møre og Romsdal",
+                "nativeName": "Møre og Romsdal",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Møre_og_Romsdal.svg"
+            },
+            "NO-18": {
+                "name": "Nordland",
+                "nativeName": "Nordland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Flag_of_Nordland.svg"
+            },
+            "NO-03": {
+                "name": "Oslo",
+                "nativeName": "Oslo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Oslo.svg"
+            },
+            "NO-11": {
+                "name": "Rogaland",
+                "nativeName": "Rogaland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Rogaland.svg"
+            },
+            "NO-50": {
+                "name": "Trøndelag",
+                "nativeName": "Trøndelag",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Nord-Trøndelag.svg"
+            },
+            "NO-38": {
+                "name": "Vestfold og Telemark",
+                "nativeName": "Vestfold og Telemark",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Vestfold_and_Telemark.svg"
+            },
+            "NO-30": {
+                "name": "Viken",
+                "nativeName": "",
+                "flag": ""
+            },
+            "NO-34": {
+                "name": "Innlandet",
+                "nativeName": "",
+                "flag": ""
+            },
+            "NO-42": {
+                "name": "Agder",
+                "nativeName": "",
+                "flag": ""
+            },
+            "NO-46": {
+                "name": "Vestland",
+                "nativeName": "",
+                "flag": ""
+            },
+            "NO-54": {
+                "name": "Troms og Finnmark",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
     "PE": {
         "name": "Peru",
         "nativeName": "Piruw",
@@ -2394,6 +2732,47 @@
                 "name": "West Pomeranian Voivodeship",
                 "nativeName": "województwo zachodniopomorskie",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/37/POL_województwo_zachodniopomorskie_flag.svg"
+            }
+        }
+    },
+    "PT": {
+        "name": "Portugal",
+        "nativeName": "Portugal",
+        "regions": {
+            "PT11": {
+                "name": "North",
+                "nativeName": "",
+                "flag": ""
+            },
+            "PT15": {
+                "name": "Algarve",
+                "nativeName": "",
+                "flag": ""
+            },
+            "PT16": {
+                "name": "Central Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "PT17": {
+                "name": "Lisbon Metropolitan Area",
+                "nativeName": "",
+                "flag": ""
+            },
+            "PT18": {
+                "name": "Alentejo",
+                "nativeName": "",
+                "flag": ""
+            },
+            "PT20": {
+                "name": "Azores",
+                "nativeName": "",
+                "flag": ""
+            },
+            "PT30": {
+                "name": "Madeira",
+                "nativeName": "",
+                "flag": ""
             }
         }
     },
