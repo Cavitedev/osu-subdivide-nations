@@ -848,7 +848,7 @@
         ".mp-history-player-score__username"
       );
       playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-      await addFlagUser(item, playerId);
+      await addFlagUser(item, playerId, true);
     }
   };
 
