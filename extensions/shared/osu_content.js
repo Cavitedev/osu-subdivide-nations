@@ -46,42 +46,11 @@
     return url.split("/")[4];
   };
 
-  const expireTime = 1800000; //30 minutes
-
-  const fetchWithCache = async (url) => {
-    return tools.fetchWithCache(url, expireTime);
+  const osuWorldUser = async (url) => {
+    return tools.osuWorldUser(url);
   };
 
   const unknownUserError = "unknown_user";
-
-  const osuWorldUser = async (id) => {
-    if (!id) {
-      console.log("id is null");
-      return;
-    }
-
-    const url = "https://osuworld.octo.moe/api/users/" + id;
-
-    let dataPromise = fetchWithCache(url);
-
-    let waitPromise = new Promise((resolve) => {
-      setTimeout(resolve, 200);
-    });
-    return await Promise.race([dataPromise, waitPromise])
-      .then(async (result) => {
-        const hasCache = result && result["cache"];
-
-        if (hasCache) {
-          return result;
-        } else {
-          await waitPromise;
-          return await dataPromise;
-        }
-      })
-      .then((result) => {
-        return result["data"];
-      });
-  };
 
   const getRegionName = async (countryCode, regionCode, regionData) => {
     const regionsOsuWorld = await tools.getRegionNamesLocale();
@@ -103,17 +72,9 @@
   const noFlag =
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
-  const updateFlag = async (item, userId, addDiv = false) => {
-    if (!item) return;
-    playerData = await osuWorldUser(userId);
-    if (!playerData || playerData["error"] == unknownUserError) {
-      return;
-    }
+  const addFlag = async (item, countryCode, regionCode, addDiv = false) => {
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length == 0) return;
-
-    countryCode = playerData["country_id"];
-    regionCode = playerData["region_id"];
 
     let countryRegionsData = loadedCountryRegions[countryCode];
 
@@ -175,6 +136,18 @@
     }
   };
 
+  const addFlagUser = async (item, userId, addDiv = false) => {
+    if (!item) return;
+    playerData = await osuWorldUser(userId);
+    if (!playerData || playerData["error"] == unknownUserError) {
+      return;
+    }
+
+    countryCode = playerData["country_id"];
+    regionCode = playerData["region_id"];
+    return addFlag(item, countryCode, regionCode, addDiv);
+  };
+
   const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
     const addedNodesCount = mutations.reduce(
       (total, mutation) =>
@@ -217,7 +190,7 @@
   const updateFlagsProfileCardOverlay = async (card) => {
     const nameElement = card.querySelector(".user-card__username");
     const userId = idFromProfileUrl(nameElement.getAttribute("href"));
-    await updateFlag(card, userId);
+    await addFlagUser(card, userId);
   };
 
   const refreshOverlays = async () => {
@@ -287,7 +260,8 @@
         .querySelector(".user-search-card__col--username")
         .getAttribute("href")
     );
-    await updateFlag(card, userId, true);
+    console.log("updateSearchCard " + userId);
+    await addFlagUser(card, userId, true);
   };
 
   const nextFunctionId = () => {
@@ -318,12 +292,13 @@
     profileMutationObserver.disconnect();
     beatmapsetMutationObserver.disconnect();
     bodyObserver.disconnect();
-    // updateFlagSearchObserver.disconnect();
   };
 
   let rankingMutationObserver = new MutationObserver((_) => {
     updateFlagsRankings();
   });
+
+  const rankingIdAttr = "data-user-id";
 
   const updateFlagsRankings = async () => {
     const functionId = nextFunctionId();
@@ -335,16 +310,143 @@
       subtree: false,
     });
 
+    const queryString = location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const regionUrlParam = urlParams.get("region");
+
+    if (regionUrlParam) {
+      const countryUrlParam = urlParams.get("country");
+      const regionData =
+        loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
+      const rankingType = location.pathname.split("/")[3];
+      if (regionData && rankingType === "performance") {
+        const page = urlParams.get("page");
+        const mode = location.pathname.split("/")[2];
+        return regionalRanking(
+          functionId,
+          mode,
+          countryUrlParam,
+          regionUrlParam,
+          page
+        );
+      }
+    }
+
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
-    const idAttr = "data-user-id";
 
     for (const item of listItems) {
       if (functionId != runningId) {
         return;
       }
-      let idItem = item.querySelector(`[${idAttr}]`);
-      userId = idItem.getAttribute(idAttr);
-      await updateFlag(item, userId);
+      let idItem = item.querySelector(`[${rankingIdAttr}]`);
+      userId = idItem.getAttribute(rankingIdAttr);
+      await addFlagUser(item, userId);
+    }
+  };
+
+  const regionalRanking = async (
+    functionId,
+    mode,
+    countryCode,
+    regionCode,
+    osuPage = 1
+  ) => {
+    if (!osuPage) osuPage = 1;
+    const pagesToCheck = tools.convertToGroupsOf5(osuPage);
+
+    let totalPages;
+    let replaceIndex = 0;
+
+    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
+
+    for (const page of pagesToCheck) {
+      if (functionId != runningId) return;
+      if (page > totalPages) break;
+
+      const results = await tools.osuWorldCountryRegionRanking(
+        countryCode,
+        regionCode,
+        mode,
+        page
+      );
+      console.log(results);
+
+      for (const player of results["top"]) {
+        const row = listItems[replaceIndex];
+        updateRankingRow(row, player);
+        await addFlag(row, countryCode, regionCode);
+        replaceIndex++;
+      }
+
+      totalPages = results["pages"];
+
+      // First iteration
+      if (page === pagesToCheck[0]) {
+        updateRankingPagination(Math.ceil(totalPages / 5));
+      }
+    }
+
+    for (let i = listItems.length - 1; i >= replaceIndex; i--) {
+      listItems[i].remove();
+    }
+  };
+
+  const updateRankingRow = async (row, playerData) => {
+    const cells = row.children;
+    const flagAndNameCell = cells[1];
+
+    const { id, username, mode, pp } = playerData;
+
+    const nameElement = flagAndNameCell.querySelector(`[${rankingIdAttr}]`);
+    nameElement.setAttribute(rankingIdAttr, id);
+    nameElement.setAttribute("href", tools.buildProfileUrl(id, mode));
+    nameElement.textContent = username;
+
+    const accCell = cells[2];
+    accCell.textContent = "";
+
+    const playcountCell = cells[3];
+    playcountCell.textContent = "";
+
+    const performanceCell = cells[4];
+    performanceCell.textContent = Math.round(pp);
+
+    const ssCell = cells[5];
+    ssCell.textContent = "";
+
+    const sCell = cells[6];
+    sCell.textContent = "";
+
+    const aCell = cells[7];
+    aCell.textContent = "";
+
+    row.classList.remove("ranking-page-table__row--inactive");
+  };
+
+  const updateRankingPagination = (totalPages) => {
+    const paginations = document.querySelectorAll(".pagination-v2");
+
+    if (totalPages === 1) {
+      paginations.forEach((pagination) => pagination.remove());
+    }
+
+    for (const pagination of paginations) {
+      const pages = pagination.querySelector(
+        ".pagination-v2__col--pages"
+      ).children;
+
+      if (totalPages < 5) {
+        pages[4]?.remove();
+      }
+
+      for (var i = 4; i >= 1; i--) {
+        if (i > totalPages) {
+          pages[i - 1]?.remove();
+          continue;
+        }
+
+        pages[i - 1].querySelector(".pagination-v2__link").textContent = i;
+      }
     }
   };
 
@@ -373,7 +475,7 @@
     );
     const topScoreUserId = topScoreUserElement.getAttribute("data-user-id");
     if (topScoreUserId) {
-      await updateFlag(topScoreElement, topScoreUserId, true);
+      await addFlagUser(topScoreElement, topScoreUserId, true);
     }
 
     const rankingTable = document.querySelector(
@@ -392,7 +494,7 @@
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
       const playerId = playerNameElement?.getAttribute("data-user-id");
-      await updateFlag(item, playerId, true);
+      await addFlagUser(item, playerId, true);
     }
   };
 
@@ -422,7 +524,7 @@
     });
 
     flagElement = document.querySelector(".profile-info");
-    const regionName = await updateFlag(flagElement, playerId);
+    const regionName = await addFlagUser(flagElement, playerId);
     if (regionName) {
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
@@ -444,7 +546,7 @@
         ".mp-history-player-score__username"
       );
       playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-      await updateFlag(item, playerId);
+      await addFlagUser(item, playerId);
     }
   };
 
@@ -461,7 +563,7 @@
       }
       playerNameElement = item.querySelector(".user-card__username");
       playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-      await updateFlag(item, playerId);
+      await addFlagUser(item, playerId);
     }
   };
 
@@ -475,7 +577,7 @@
       }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
-      await updateFlag(item, playerId);
+      await addFlagUser(item, playerId);
     }
   };
 
