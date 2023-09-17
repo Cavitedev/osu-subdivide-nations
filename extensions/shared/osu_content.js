@@ -319,7 +319,9 @@
       const regionData =
         loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
       const rankingType = location.pathname.split("/")[3];
-      if (regionData && rankingType === "performance") {
+      const filter = urlParams.get("filter");
+
+      if (regionData && rankingType === "performance" && !filter) {
         const page = urlParams.get("page");
         const mode = location.pathname.split("/")[2];
         return regionalRanking(
@@ -346,7 +348,7 @@
 
   const regionalRanking = async (
     functionId,
-    mode,
+    osuMode,
     countryCode,
     regionCode,
     osuPage = 1
@@ -354,6 +356,8 @@
     initRegionalRanking(countryCode, regionCode);
 
     if (!osuPage) osuPage = 1;
+    osuPage = parseInt(osuPage);
+
     const pagesToCheck = tools.convertToGroupsOf5(osuPage);
 
     let totalPages;
@@ -368,10 +372,9 @@
       const results = await tools.osuWorldCountryRegionRanking(
         countryCode,
         regionCode,
-        mode,
+        osuMode,
         page
       );
-      console.log(results);
 
       for (const player of results["top"]) {
         const row = listItems[replaceIndex];
@@ -384,7 +387,13 @@
 
       // First iteration
       if (page === pagesToCheck[0]) {
-        updateRankingPagination(osuPage, Math.ceil(totalPages / 5), regionCode);
+        updateRankingPagination(
+          osuPage,
+          Math.ceil(totalPages / 5),
+          osuMode,
+          countryCode,
+          regionCode
+        );
       }
     }
 
@@ -442,59 +451,147 @@
     row.classList.remove("ranking-page-table__row--inactive");
   };
 
-  const updateRankingPagination = (currentPage, totalPages, regionCode) => {
+  const updateRankingPagination = (
+    currentPage,
+    totalPages,
+    osuMode,
+    countryCode,
+    regionCode
+  ) => {
     const paginations = document.querySelectorAll(".pagination-v2");
 
     if (totalPages === 1) {
       paginations.forEach((pagination) => pagination.remove());
     }
 
+    const firstLink = paginations[0]
+      .querySelector("a.pagination-v2__link")
+      ?.getAttribute("href");
+
+    const urlObj = new URL(firstLink);
+    const searchParams = new URLSearchParams(urlObj.search);
+    const regionParam = searchParams.get("region");
+
+    // Already Updated
+    if (regionParam) return;
+
     for (const pagination of paginations) {
-      const pages = pagination.querySelector(
-        ".pagination-v2__col--pages"
-      ).children;
+      const htmlTemplates = [
+        '<li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>',
+        '<li class="pagination-v2__item"><a class="pagination-v2__link" href="https://osu.ppy.sh/rankings/fruits/performance?country=ES&amp;page=4#scores">4</a></li>',
+        '<li class="pagination-v2__item"> <span class="pagination-v2__link">...</span></li>',
+      ].map((html) => {
+        const template = document.createElement("div");
+        template.innerHTML = html;
+        return template.firstChild;
+      });
+      const activePageTemplate = htmlTemplates[0];
+      const inactivePageTemplate = htmlTemplates[1];
+      const dotsTemplate = htmlTemplates[2];
 
-      // Last page
-      const lastPage = pages[pages.length - 1];
-      if (totalPages < currentPage) {
-        lastPage?.remove();
-      } else {
-        const link = lastPage.querySelector(".pagination-v2__link");
-        link.textContent = totalPages;
-        const href = link.getAttribute("href");
+      const linkInactive = inactivePageTemplate.querySelector(
+        ".pagination-v2__link"
+      );
+      const href = linkInactive.getAttribute("href");
 
-        if (href) {
-          let updatedHref = tools.addOrReplaceQueryParam(
-            href,
-            "region",
-            regionCode
-          );
-          updatedHref = tools.addOrReplaceQueryParam(
-            updatedHref,
-            "page",
-            totalPages
-          );
+      let updatedHref = tools.addOrReplaceQueryParam(
+        href,
+        "region",
+        regionCode
+      );
 
-          link.setAttribute("href", updatedHref);
+      updatedHref = tools.addOrReplaceQueryParam(
+        updatedHref,
+        "country",
+        countryCode
+      );
+
+      updatedHref = updatedHref.replace("fruits", osuMode);
+      linkInactive.setAttribute("href", updatedHref);
+
+      const pages = pagination.querySelector(".pagination-v2__col--pages");
+
+      const oldPages = pages.querySelectorAll(".pagination-v2__item");
+      oldPages.forEach((page) => page.remove());
+
+      // First page
+      let addingPage = 1;
+      do {
+        var page = pageToAdd(
+          addingPage,
+          currentPage,
+          totalPages,
+          activePageTemplate,
+          inactivePageTemplate,
+          dotsTemplate
+        );
+        if (page) {
+          pages.appendChild(page);
         }
-      }
+        addingPage++;
+      } while (page);
+    }
+  };
 
-      for (var i = 4; i >= 1; i--) {
-        const page = pages[i - 1];
-        if (i > totalPages) {
-          page?.remove();
-          continue;
-        }
-        const link = page.querySelector(".pagination-v2__link");
-        link.textContent = i;
-        const href = link.getAttribute("href");
-        if (href) {
-          link.setAttribute(
-            "href",
-            tools.addOrReplaceQueryParam(href, "region", regionCode)
-          );
-        }
-      }
+  const pageToAdd = (
+    addingPage,
+    currentPage,
+    totalPages,
+    activePageTemplate,
+    inactivePageTemplate,
+    dotsTemplate
+  ) => {
+    const useLeftDots = totalPages > 5 && currentPage >= 5;
+    const useRightDots = totalPages > 5 && totalPages - currentPage >= 4;
+    const paginationElementsCount = Math.min(
+      totalPages,
+      Math.max(7, 5 + (useLeftDots ? 2 : 0) + (useRightDots ? 2 : 0))
+    );
+
+    if (addingPage > paginationElementsCount) {
+      return null;
+    }
+
+    if (addingPage === currentPage) {
+      const node = activePageTemplate.cloneNode(true);
+      updatePagePagination(node, addingPage);
+      return node;
+    }
+
+    if (useLeftDots && addingPage === 1) {
+      const node = inactivePageTemplate.cloneNode(true);
+      updatePagePagination(node, 1);
+      return node;
+    }
+
+    if (useLeftDots && addingPage === paginationElementsCount) {
+      const node = inactivePageTemplate.cloneNode(true);
+      updatePagePagination(node, totalPages);
+      return node;
+    }
+
+    if (
+      (useLeftDots && addingPage === 2) ||
+      (useRightDots && addingPage === paginationElementsCount - 1)
+    ) {
+      const node = dotsTemplate.cloneNode(true);
+      return node;
+    }
+
+    const node = inactivePageTemplate.cloneNode(true);
+    updatePagePagination(node, addingPage);
+    return node;
+  };
+
+  const updatePagePagination = (paginationItem, page) => {
+    const link = paginationItem.querySelector(".pagination-v2__link");
+    link.textContent = page;
+    const href = link.getAttribute("href");
+    if (href) {
+      link.setAttribute(
+        "href",
+        tools.addOrReplaceQueryParam(href, "page", page)
+      );
     }
   };
 

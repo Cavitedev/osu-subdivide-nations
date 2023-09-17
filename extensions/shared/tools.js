@@ -261,3 +261,16 @@ export const convertToGroupsOf5 = (number) => {
 
   return Array.from({ length: groupSize }, (_, index) => start + index);
 };
+
+export const addOrReplaceQueryParam = (url, paramName, paramValue) => {
+  const urlObj = new URL(url);
+  const searchParams = new URLSearchParams(urlObj.search);
+
+  // Add or replace the parameter
+  searchParams.set(paramName, paramValue);
+
+  // Update the URL with the modified parameters
+  urlObj.search = searchParams.toString();
+
+  return urlObj.toString();
+};
