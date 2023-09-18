@@ -4397,5 +4397,615 @@
                 "flag": ""
             }
         }
+    },
+    "KZ": {
+        "name": "Kazakhstan",
+        "regions": {
+            "KZ-10": {
+                "name": "Abay Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-11": {
+                "name": "Akmola Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-19": {
+                "name": "Almaty Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-75": {
+                "name": "Almaty",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-15": {
+                "name": "Aqtöbe region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-71": {
+                "name": "Astana",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-23": {
+                "name": "Atyrau Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-63": {
+                "name": "East Kazakhstan Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-31": {
+                "name": "Jambyl Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-33": {
+                "name": "Jetisu Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-35": {
+                "name": "Karaganda Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-39": {
+                "name": "Kostanay Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-43": {
+                "name": "Kyzylorda Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-47": {
+                "name": "Mangystau Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-59": {
+                "name": "North Kazakhstan Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-55": {
+                "name": "Pavlodar Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-79": {
+                "name": "Shymkent",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-61": {
+                "name": "Turkistan Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-62": {
+                "name": "Ulytau Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "KZ-27": {
+                "name": "West Kazakhstan Region",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
+    "SG": {
+        "name": "Singapore",
+        "regions": {
+            "SG-01": {
+                "name": "Central Singapore",
+                "nativeName": "",
+                "flag": ""
+            },
+            "SG-02": {
+                "name": "Northeast Singapore",
+                "nativeName": "",
+                "flag": ""
+            },
+            "SG-03": {
+                "name": "Northwest Singapore",
+                "nativeName": "",
+                "flag": ""
+            },
+            "SG-04": {
+                "name": "Southeast Singapore",
+                "nativeName": "",
+                "flag": ""
+            },
+            "SG-05": {
+                "name": "Southwest Singapore",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
+    "TR": {
+        "name": "Turkey",
+        "regions": {
+            "TR-EGE": {
+                "name": "Aegean Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TR-KAR": {
+                "name": "Black Sea Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TR-ICA": {
+                "name": "Central Anatolia Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TR-DOA": {
+                "name": "Eastern Anatolia Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TR-MRM": {
+                "name": "Marmara Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TR-AKD": {
+                "name": "Mediterranean Region",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TR-GUA": {
+                "name": "Southeastern Anatolia Region",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
+    "TW": {
+        "name": "Taiwan",
+        "regions": {
+            "TW-CHA": {
+                "name": "Changhua County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-CYQ": {
+                "name": "Chiayi County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-CYI": {
+                "name": "Chiayi",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-HSQ": {
+                "name": "Hsinchu County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-HSZ": {
+                "name": "Hsinchu",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-HUA": {
+                "name": "Hualien County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-KHH": {
+                "name": "Kaohsiung",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-KEE": {
+                "name": "Keelung",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-KIN": {
+                "name": "Kinmen",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-LIE": {
+                "name": "Lienchiang County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-MIA": {
+                "name": "Miaoli County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-NAN": {
+                "name": "Nantou County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-NWT": {
+                "name": "New Taipei",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-PEN": {
+                "name": "Penghu",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-PIF": {
+                "name": "Pingtung County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-TXG": {
+                "name": "Taichung",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-TNN": {
+                "name": "Tainan",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-TPE": {
+                "name": "Taipei",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-TTT": {
+                "name": "Taitung County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-TAO": {
+                "name": "Taoyuan City",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-ILA": {
+                "name": "Yilan County",
+                "nativeName": "",
+                "flag": ""
+            },
+            "TW-YUN": {
+                "name": "Yunlin County",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
+    },
+    "VN": {
+        "name": "Vietnam",
+        "regions": {
+            "VN-44": {
+                "name": "An Giang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-43": {
+                "name": "Bà Rịa - Vũng Tàu Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-57": {
+                "name": "Bình Dương Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-58": {
+                "name": "Bình Phước Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-40": {
+                "name": "Bình Thuận Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-31": {
+                "name": "Bình Định Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-55": {
+                "name": "Bạc Liêu Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-54": {
+                "name": "Bắc Giang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-53": {
+                "name": "Bắc Kạn Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-56": {
+                "name": "Bắc Ninh province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-50": {
+                "name": "Bến Tre Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-04": {
+                "name": "Cao Bằng Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-59": {
+                "name": "Cà Mau Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-CT": {
+                "name": "Cần Thơ",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-30": {
+                "name": "Gia Lai Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-14": {
+                "name": "Hoà Bình province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-03": {
+                "name": "Hà Giang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-63": {
+                "name": "Hà Nam Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-HN": {
+                "name": "Hà Nội",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-23": {
+                "name": "Hà Tĩnh Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-66": {
+                "name": "Hưng Yên Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-61": {
+                "name": "Hải Dương Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-HP": {
+                "name": "Hải Phòng",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-73": {
+                "name": "Hậu Giang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-SG": {
+                "name": "Hồ Chí Minh City",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-34": {
+                "name": "Khánh Hòa Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-47": {
+                "name": "Kiên Giang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-28": {
+                "name": "Kon Tum Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-01": {
+                "name": "Lai Châu Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-41": {
+                "name": "Long An Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-02": {
+                "name": "Lào Cai Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-35": {
+                "name": "Lâm Đồng Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-09": {
+                "name": "Lạng Sơn Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-67": {
+                "name": "Nam Định Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-22": {
+                "name": "Nghệ An Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-18": {
+                "name": "Ninh Bình Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-36": {
+                "name": "Ninh Thuận Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-68": {
+                "name": "Phú Thọ Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-32": {
+                "name": "Phú Yên Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-24": {
+                "name": "Quảng Bình Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-27": {
+                "name": "Quảng Nam Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-29": {
+                "name": "Quảng Ngãi Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-13": {
+                "name": "Quảng Ninh Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-25": {
+                "name": "Quảng Trị Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-52": {
+                "name": "Sóc Trăng Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-05": {
+                "name": "Sơn La Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-21": {
+                "name": "Thanh Hoá Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-20": {
+                "name": "Thái Bình Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-69": {
+                "name": "Thái Nguyên Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-26": {
+                "name": "Thừa Thiên Huế Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-46": {
+                "name": "Tiền Giang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-51": {
+                "name": "Trà Vinh Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-07": {
+                "name": "Tuyên Quang Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-37": {
+                "name": "Tây Ninh Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-49": {
+                "name": "Vĩnh Long Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-70": {
+                "name": "Vĩnh Phúc Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-06": {
+                "name": "Yên Bái Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-71": {
+                "name": "Điện Biên Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-DN": {
+                "name": "Đà Nẵng",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-33": {
+                "name": "Đăk Lăk Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-72": {
+                "name": "Đăk Nông Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-39": {
+                "name": "Đồng Nai Province",
+                "nativeName": "",
+                "flag": ""
+            },
+            "VN-45": {
+                "name": "Đồng Tháp Province",
+                "nativeName": "",
+                "flag": ""
+            }
+        }
     }
 }
