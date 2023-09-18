@@ -782,20 +782,22 @@
       });
     }
 
-    const topScoreElement = document.querySelector(
+    const topScoreElements = document.querySelectorAll(
       ".beatmap-score-top__user-box"
     );
-    if (!topScoreElement) {
+    if (!topScoreElements) {
       return;
     }
-    const topScoreUserElement = topScoreElement.querySelector(
-      ".beatmap-score-top__username"
-    );
-    const topScoreUserId = topScoreUserElement.getAttribute("data-user-id");
-    if (topScoreUserId) {
-      await addFlagUser(topScoreElement, topScoreUserId, true);
+    for (const topScoreElement of topScoreElements) {
+      const topScoreUserElement = topScoreElement.querySelector(
+        ".beatmap-score-top__username"
+      );
+      const topScoreUserId = topScoreUserElement.getAttribute("data-user-id");
+      if (topScoreUserId) {
+        await addFlagUser(topScoreElement, topScoreUserId, true);
+      }
     }
-
+    
     const rankingTable = document.querySelector(
       ".beatmap-scoreboard-table__body"
     );
