@@ -104,7 +104,7 @@ export const osuWorldCountryRegionRanking = async (
   // return fetchWithMinimumWaitTime(dataPromise, 200);
 };
 
-const profileUrl = "https://osu.ppy.sh/users/{{user-id}/{{mode}}";
+const profileUrl = "https://osu.ppy.sh/users/{{user-id}}/{{mode}}";
 export const buildProfileUrl = (id, mode = "osu") => {
   const url = profileUrl.replace("{{user-id}}", id).replace("{{mode}}", mode);
   return url;
