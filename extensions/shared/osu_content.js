@@ -123,7 +123,17 @@
       if (regionData["name"]) {
         flagElementClone.setAttribute("title", regionName);
       }
-      const href = flagParentClone.getAttribute("href");
+      let href = flagParentClone.getAttribute("href");
+      if (!href) {
+        const hrefCandidate = flagParent.parentElement.getAttribute("href");
+        if (hrefCandidate && hrefCandidate.includes("performance")) {
+          href = hrefCandidate;
+          const anchorParent = document.createElement("a");
+          anchorParent.appendChild(flagParentClone);
+          flagParentClone = anchorParent;
+        }
+      }
+
       if (href) {
         const updatedHref = tools.addOrReplaceQueryParam(
           href,
@@ -797,7 +807,7 @@
         await addFlagUser(topScoreElement, topScoreUserId, true);
       }
     }
-    
+
     const rankingTable = document.querySelector(
       ".beatmap-scoreboard-table__body"
     );
