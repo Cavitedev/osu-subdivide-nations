@@ -1,6 +1,12 @@
+# IDE
+.idea/*
+.code/*
+
+# build archive
 chrome.zip
 firefox.zip
 
+# build version
 extensions/chrome_dev/*
 extensions/firefox_dev/*
 data/*
