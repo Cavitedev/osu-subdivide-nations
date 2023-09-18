@@ -95,6 +95,7 @@
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
   const addFlag = async (item, countryCode, regionCode, addDiv = false) => {
+    if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length == 0) return;
 
@@ -559,7 +560,9 @@
   };
 
   const updateRankingRow = async (row, playerData) => {
-    const cells = row.children;
+    const cells = row?.children;
+    //Not loaded yet
+    if (!cells) return;
     const flagAndNameCell = cells[1];
 
     const { id, username, mode, pp } = playerData;
