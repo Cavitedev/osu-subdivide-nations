@@ -414,7 +414,26 @@
 
   const addRegionsDropdown = async (countryCode, regionCode) => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
-    if (addedDropdown) return;
+    let regionNames = await getRegionNames(countryCode);
+    const regionNamesKeys = Object.entries(regionNames)
+      .sort((
+        [key1, value1], [key2, value2]) => value1.localeCompare(value2)
+      );
+
+    regionNames = Object.fromEntries(regionNamesKeys);
+
+    // remove dropdown if country isn't supported by osu!world
+    if (!Object.keys(regionNames).length) {
+      if (addedDropdown) {
+        addedDropdown.remove();
+      }
+
+      return;
+    }
+
+    if (addedDropdown) {
+      return;
+    }
 
     const originalDropdown = document.querySelector(".ranking-filter--full");
     // May not be loaded yet
@@ -459,12 +478,6 @@
 
     const allOption = templateOption.cloneNode(true);
     optionsParent.appendChild(allOption);
-
-    let regionNames = await getRegionNames(countryCode);
-
-    const keyValueArray = Object.entries(regionNames);
-    keyValueArray.sort((a, b) => a[1].localeCompare(b[1]));
-    regionNames = Object.fromEntries(keyValueArray);
 
     for (const key in regionNames) {
       const value = regionNames[key];
