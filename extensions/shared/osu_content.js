@@ -30,7 +30,8 @@
         }
         updateFlagsFriends();
       } else if (location === "rankings") {
-        updateFlagsRankings();
+        // Only observer as ranking doesn't updated immediately
+        addRankingObserver();
       } else if (location === "user") {
         updateFlagsProfile();
       } else if (location === "matches") {
@@ -342,15 +343,19 @@
 
   const rankingIdAttr = "data-user-id";
 
-  const updateFlagsRankings = async () => {
-    const functionId = nextFunctionId();
-
+  const addRankingObserver = () => {
     linkItem = document.querySelector("title");
     rankingMutationObserver.observe(linkItem, {
       attributes: false,
       childList: true,
       subtree: false,
     });
+  };
+
+  const updateFlagsRankings = async () => {
+    const functionId = nextFunctionId();
+
+    addRankingObserver();
 
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
