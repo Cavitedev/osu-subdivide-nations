@@ -30,7 +30,8 @@
         }
         updateFlagsFriends();
       } else if (location === "rankings") {
-        updateFlagsRankings();
+        // Only observer as ranking doesn't updated immediately
+        addRankingObserver();
       } else if (location === "user") {
         updateFlagsProfile();
       } else if (location === "matches") {
@@ -95,6 +96,7 @@
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
   const addFlag = async (item, countryCode, regionCode, addDiv = false) => {
+    if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length == 0) return;
 
@@ -123,7 +125,17 @@
       if (regionData["name"]) {
         flagElementClone.setAttribute("title", regionName);
       }
-      const href = flagParentClone.getAttribute("href");
+      let href = flagParentClone.getAttribute("href");
+      if (!href) {
+        const hrefCandidate = flagParent.parentElement.getAttribute("href");
+        if (hrefCandidate && hrefCandidate.includes("performance")) {
+          href = hrefCandidate;
+          const anchorParent = document.createElement("a");
+          anchorParent.appendChild(flagParentClone);
+          flagParentClone = anchorParent;
+        }
+      }
+
       if (href) {
         const updatedHref = tools.addOrReplaceQueryParam(
           href,
@@ -275,9 +287,6 @@
   };
 
   const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
-    console.log("updateFlagSearchObserver");
-    console.log(mutations);
-
     return firstSearch(mutations[0].addedNodes[0], false);
   });
 
@@ -334,15 +343,19 @@
 
   const rankingIdAttr = "data-user-id";
 
-  const updateFlagsRankings = async () => {
-    const functionId = nextFunctionId();
-
+  const addRankingObserver = () => {
     linkItem = document.querySelector("title");
     rankingMutationObserver.observe(linkItem, {
       attributes: false,
       childList: true,
       subtree: false,
     });
+  };
+
+  const updateFlagsRankings = async () => {
+    const functionId = nextFunctionId();
+
+    addRankingObserver();
 
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -549,7 +562,9 @@
   };
 
   const updateRankingRow = async (row, playerData) => {
-    const cells = row.children;
+    const cells = row?.children;
+    //Not loaded yet
+    if (!cells) return;
     const flagAndNameCell = cells[1];
 
     const { id, username, mode, pp } = playerData;
@@ -797,7 +812,7 @@
         await addFlagUser(topScoreElement, topScoreUserId, true);
       }
     }
-    
+
     const rankingTable = document.querySelector(
       ".beatmap-scoreboard-table__body"
     );
