@@ -768,11 +768,19 @@
     const functionId = nextFunctionId();
 
     const linkItem = document.querySelector(".beatmapset-scoreboard__main");
-    beatmapsetMutationObserver.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
+    if (linkItem) {
+      beatmapsetMutationObserver.observe(linkItem, {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      });
+    } else {
+      beatmapsetMutationObserver.observe(document.querySelector("title"), {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      });
+    }
 
     const topScoreElement = document.querySelector(
       ".beatmap-score-top__user-box"
