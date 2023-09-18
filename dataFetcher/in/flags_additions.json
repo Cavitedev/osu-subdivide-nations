@@ -84,5 +84,35 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_West_Flanders.svg"
             }
         }
+    },
+    "SG": {
+        "name": "Singapore",
+        "regions": {
+            "SG-01": {
+                "name": "Central Singapore",
+                "nativeName": "Central Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215418"
+            },
+            "SG-02": {
+                "name": "Northeast Singapore",
+                "nativeName": "Northeast Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215655"
+            },
+            "SG-03": {
+                "name": "Northwest Singapore",
+                "nativeName": "Northwest Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215625"
+            },
+            "SG-04": {
+                "name": "Southeast Singapore",
+                "nativeName": "Southeast Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215512"
+            },
+            "SG-05": {
+                "name": "Southwest Singapore",
+                "nativeName": "Southwest Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215841"
+            }
+        }
     }
 }
