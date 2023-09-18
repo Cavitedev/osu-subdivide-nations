@@ -286,9 +286,6 @@
   };
 
   const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
-    console.log("updateFlagSearchObserver");
-    console.log(mutations);
-
     return firstSearch(mutations[0].addedNodes[0], false);
   });
 
