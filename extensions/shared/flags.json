@@ -10,117 +10,117 @@
             },
             "AR-U": {
                 "name": "Chubut Province",
-                "nativeName": "Provincia del Chubut",
+                "nativeName": "Chubut",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bandera_de_la_Provincia_del_Chubut.svg"
             },
             "AR-E": {
                 "name": "Entre Ríos Province",
-                "nativeName": "Provincia de Entre Ríos",
+                "nativeName": "Entre Ríos",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bandera_de_la_Provincia_de_Entre_Ríos.svg"
             },
             "AR-Q": {
                 "name": "Neuquén Province",
-                "nativeName": "Provincia de Neuquén",
+                "nativeName": "Neuquén",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bandera_de_la_Provincia_de_Neuquén.svg"
             },
             "AR-R": {
                 "name": "Río Negro Province",
-                "nativeName": "Provincia de Río Negro",
+                "nativeName": "Río Negro",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bandera_de_la_Provincia_del_Río_Negro.svg"
             },
             "AR-Z": {
                 "name": "Santa Cruz Province",
-                "nativeName": "Provincia de Santa Cruz",
+                "nativeName": "Santa Cruz",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bandera_de_la_Provincia_de_Santa_Cruz.svg"
             },
             "AR-V": {
                 "name": "Tierra del Fuego Province",
-                "nativeName": "Provincia de Tierra del Fuego",
+                "nativeName": "Tierra del Fuego",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Bandera_de_la_Provincia_de_Tierra_del_Fuego.svg"
             },
             "AR-A": {
                 "name": "Salta Province",
-                "nativeName": "Provincia de Salta",
+                "nativeName": "Salta",
                 "flag": ""
             },
             "AR-B": {
                 "name": "Buenos Aires Province",
-                "nativeName": "Provincia de Buenos Aires",
+                "nativeName": "Buenos Aires",
                 "flag": ""
             },
             "AR-D": {
                 "name": "San Luis Province",
-                "nativeName": "Provincia de San Luis",
+                "nativeName": "San Luis",
                 "flag": ""
             },
             "AR-F": {
                 "name": "La Rioja Province",
-                "nativeName": "Provincia de La Rioja",
+                "nativeName": "La Rioja",
                 "flag": ""
             },
             "AR-G": {
                 "name": "Santiago del Estero Province",
-                "nativeName": "Provincia de Santiago del Estero",
+                "nativeName": "Santiago del Estero",
                 "flag": ""
             },
             "AR-H": {
                 "name": "Chaco Province",
-                "nativeName": "Provincia del Chaco",
+                "nativeName": "Chaco",
                 "flag": ""
             },
             "AR-J": {
                 "name": "San Juan Province",
-                "nativeName": "Provincia de San Juan",
+                "nativeName": "San Juan",
                 "flag": ""
             },
             "AR-K": {
                 "name": "Catamarca Province",
-                "nativeName": "Provincia de Catamarca",
+                "nativeName": "Catamarca",
                 "flag": ""
             },
             "AR-L": {
                 "name": "La Pampa Province",
-                "nativeName": "Provincia de La Pampa",
+                "nativeName": "La Pampa",
                 "flag": ""
             },
             "AR-M": {
                 "name": "Mendoza Province",
-                "nativeName": "Provincia de Mendoza",
+                "nativeName": "Mendoza",
                 "flag": ""
             },
             "AR-N": {
                 "name": "Misiones Province",
-                "nativeName": "Provincia de Misiones",
+                "nativeName": "Misiones",
                 "flag": ""
             },
             "AR-P": {
                 "name": "Formosa Province",
-                "nativeName": "Provincia de Formosa",
+                "nativeName": "Formosa",
                 "flag": ""
             },
             "AR-S": {
                 "name": "Santa Fe Province",
-                "nativeName": "Provincia de Santa Fe",
+                "nativeName": "Santa Fe",
                 "flag": ""
             },
             "AR-T": {
                 "name": "Tucumán Province",
-                "nativeName": "Provincia de Tucumán",
+                "nativeName": "Tucumán",
                 "flag": ""
             },
             "AR-W": {
                 "name": "Corrientes Province",
-                "nativeName": "Provincia de Corrientes",
+                "nativeName": "Corrientes",
                 "flag": ""
             },
             "AR-X": {
                 "name": "Córdoba Province",
-                "nativeName": "Provincia de Córdoba",
+                "nativeName": "Córdoba",
                 "flag": ""
             },
             "AR-Y": {
                 "name": "Jujuy Province",
-                "nativeName": "Provincia de Jujuy",
+                "nativeName": "Jujuy",
                 "flag": ""
             }
         }
@@ -264,58 +264,58 @@
         "regions": {
             "BE-VAN": {
                 "name": "Antwerp",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Antwerpen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Antwerp.svg"
             },
             "BE-BRU": {
                 "name": "Brussels-Capital",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Gewest",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Brussels-Capital_Region.svg"
             },
             "BE-VOV": {
                 "name": "East Flanders",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Oost-Vlaanderen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Flag_of_Oost-Vlaanderen.svg"
             },
             "BE-VBR": {
                 "name": "Flemish Brabant",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Vlaams-Brabant",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Flemish_Brabant.svg"
             },
             "BE-WHT": {
                 "name": "Hainaut",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Hainaut",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Hainaut.svg"
             },
             "BE-VLI": {
                 "name": "Limburg",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Limburg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Limburg_(Belgium).svg"
             },
             "BE-WLG": {
                 "name": "Liège",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Liège",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Province_of_Liège.svg"
             },
             "BE-WLX": {
                 "name": "Luxembourg",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Luxembourg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Official_flag_of_the_Province_of_Luxembourg.svg"
             },
             "BE-WNA": {
                 "name": "Namur",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "BE-WNA",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namur_Province.svg"
             },
             "BE-WBR": {
                 "name": "Walloon Brabant",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Brabant wallon",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Drapeau_Province_BE_Brabant_Wallon.svg"
             },
             "BE-VWV": {
                 "name": "West Flanders",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "West-Vlaanderen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_West_Flanders.svg"
             }
         }
     },
@@ -542,7 +542,7 @@
             },
             "CL-AR": {
                 "name": "Araucanía Region",
-                "nativeName": "Región de La Araucanía",
+                "nativeName": "Región de la Araucanía",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_La_Araucanía_Region.svg"
             },
             "CL-AT": {
@@ -552,7 +552,7 @@
             },
             "CL-AI": {
                 "name": "Aysén Region",
-                "nativeName": "Región de Aysén",
+                "nativeName": "Región Aysén del General Carlos Ibáñez del Campo",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Aysen,_Chile.svg"
             },
             "CL-BI": {
@@ -592,7 +592,7 @@
             },
             "CL-LI": {
                 "name": "O'Higgins Region",
-                "nativeName": "Región de O'Higgins",
+                "nativeName": "Región del Libertador General Bernardo O'Higgins",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_O'Higgins_Region,_Chile.svg"
             },
             "CL-TA": {
@@ -612,7 +612,7 @@
             },
             "CL-MA": {
                 "name": "Region of Magallanes and Chilean Antarctica",
-                "nativeName": "Región de Magallanes y la Antártica Chilena",
+                "nativeName": "Región de Magallanes y de la Antártica Chilena",
                 "flag": ""
             }
         }
@@ -623,157 +623,157 @@
         "regions": {
             "CN-AH": {
                 "name": "Anhui",
-                "nativeName": "",
+                "nativeName": "安徽省",
                 "flag": ""
             },
             "CN-BJ": {
                 "name": "Beijing",
-                "nativeName": "",
+                "nativeName": "北京市",
                 "flag": ""
             },
             "CN-CQ": {
                 "name": "Chongqing",
-                "nativeName": "",
+                "nativeName": "重庆市",
                 "flag": ""
             },
             "CN-FJ": {
                 "name": "Fujian",
-                "nativeName": "",
+                "nativeName": "福建省",
                 "flag": ""
             },
             "CN-GS": {
                 "name": "Gansu",
-                "nativeName": "",
+                "nativeName": "甘肃省",
                 "flag": ""
             },
             "CN-GD": {
                 "name": "Guangdong Province",
-                "nativeName": "",
+                "nativeName": "广东省",
                 "flag": ""
             },
             "CN-GX": {
                 "name": "Guangxi",
-                "nativeName": "",
+                "nativeName": "广西壮族自治区",
                 "flag": ""
             },
             "CN-GZ": {
                 "name": "Guizhou",
-                "nativeName": "",
+                "nativeName": "贵州省",
                 "flag": ""
             },
             "CN-HI": {
                 "name": "Hainan Province",
-                "nativeName": "",
+                "nativeName": "海南省",
                 "flag": ""
             },
             "CN-HE": {
                 "name": "Hebei",
-                "nativeName": "",
+                "nativeName": "河北省",
                 "flag": ""
             },
             "CN-HL": {
                 "name": "Heilongjiang",
-                "nativeName": "",
+                "nativeName": "黑龙江省",
                 "flag": ""
             },
             "CN-HA": {
                 "name": "Henan",
-                "nativeName": "",
+                "nativeName": "河南省",
                 "flag": ""
             },
             "CN-HB": {
                 "name": "Hubei",
-                "nativeName": "",
+                "nativeName": "湖北省",
                 "flag": ""
             },
             "CN-HN": {
                 "name": "Hunan",
-                "nativeName": "",
+                "nativeName": "湖南省",
                 "flag": ""
             },
             "CN-NM": {
                 "name": "Inner Mongolia",
-                "nativeName": "",
+                "nativeName": "内蒙古自治区 ᠦᠪᠦᠷ ᠮᠣᠩᠭᠤᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠣ ᠣᠷᠣᠨ",
                 "flag": ""
             },
             "CN-JS": {
                 "name": "Jiangsu",
-                "nativeName": "",
+                "nativeName": "江苏省",
                 "flag": ""
             },
             "CN-JX": {
                 "name": "Jiangxi",
-                "nativeName": "",
+                "nativeName": "江西省",
                 "flag": ""
             },
             "CN-JL": {
                 "name": "Jilin",
-                "nativeName": "",
+                "nativeName": "吉林省",
                 "flag": ""
             },
             "CN-LN": {
                 "name": "Liaoning",
-                "nativeName": "",
+                "nativeName": "辽宁省",
                 "flag": ""
             },
             "CN-NX": {
                 "name": "Ningxia",
-                "nativeName": "",
+                "nativeName": "宁夏回族自治区",
                 "flag": ""
             },
             "CN-QH": {
                 "name": "Qinghai",
-                "nativeName": "",
+                "nativeName": "青海省",
                 "flag": ""
             },
             "CN-SN": {
                 "name": "Shaanxi",
-                "nativeName": "",
+                "nativeName": "陕西省",
                 "flag": ""
             },
             "CN-SD": {
                 "name": "Shandong",
-                "nativeName": "",
+                "nativeName": "山东省",
                 "flag": ""
             },
             "CN-SH": {
                 "name": "Shanghai",
-                "nativeName": "",
+                "nativeName": "上海市",
                 "flag": ""
             },
             "CN-SX": {
                 "name": "Shanxi",
-                "nativeName": "",
+                "nativeName": "山西省",
                 "flag": ""
             },
             "CN-SC": {
                 "name": "Sichuan",
-                "nativeName": "",
+                "nativeName": "四川省",
                 "flag": ""
             },
             "CN-TJ": {
                 "name": "Tianjin",
-                "nativeName": "",
+                "nativeName": "天津市",
                 "flag": ""
             },
             "CN-XZ": {
                 "name": "Tibet",
-                "nativeName": "",
+                "nativeName": "西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།",
                 "flag": ""
             },
             "CN-XJ": {
                 "name": "Xinjiang",
-                "nativeName": "",
+                "nativeName": "新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی",
                 "flag": ""
             },
             "CN-YN": {
                 "name": "Yunnan",
-                "nativeName": "",
+                "nativeName": "云南省",
                 "flag": ""
             },
             "CN-ZJ": {
                 "name": "Zhejiang",
-                "nativeName": "",
+                "nativeName": "浙江省",
                 "flag": ""
             }
         }
@@ -789,162 +789,162 @@
             },
             "CO-AMA": {
                 "name": "Amazonas",
-                "nativeName": "",
+                "nativeName": "Amazonas",
                 "flag": ""
             },
             "CO-ANT": {
                 "name": "Antioquia",
-                "nativeName": "",
+                "nativeName": "Antioquia",
                 "flag": ""
             },
             "CO-ARA": {
                 "name": "Arauca",
-                "nativeName": "",
+                "nativeName": "Arauca",
                 "flag": ""
             },
             "CO-ATL": {
                 "name": "Atlántico",
-                "nativeName": "",
+                "nativeName": "Atlántico",
                 "flag": ""
             },
             "CO-BOL": {
                 "name": "Bolívar",
-                "nativeName": "",
+                "nativeName": "Bolívar",
                 "flag": ""
             },
             "CO-BOY": {
                 "name": "Boyacá",
-                "nativeName": "",
+                "nativeName": "Boyacá",
                 "flag": ""
             },
             "CO-CAL": {
                 "name": "Caldas",
-                "nativeName": "",
+                "nativeName": "Caldas",
                 "flag": ""
             },
             "CO-CAQ": {
                 "name": "Caquetá",
-                "nativeName": "",
+                "nativeName": "Caquetá",
                 "flag": ""
             },
             "CO-CAS": {
                 "name": "Casanare",
-                "nativeName": "",
+                "nativeName": "Casanare",
                 "flag": ""
             },
             "CO-CAU": {
                 "name": "Cauca",
-                "nativeName": "",
+                "nativeName": "Cauca",
                 "flag": ""
             },
             "CO-CES": {
                 "name": "Cesar",
-                "nativeName": "",
+                "nativeName": "Cesar",
                 "flag": ""
             },
             "CO-CHO": {
                 "name": "Chocó",
-                "nativeName": "",
+                "nativeName": "Chocó",
                 "flag": ""
             },
             "CO-COR": {
                 "name": "Córdoba",
-                "nativeName": "",
+                "nativeName": "Córdoba",
                 "flag": ""
             },
             "CO-CUN": {
                 "name": "Cundinamarca",
-                "nativeName": "",
+                "nativeName": "Cundinamarca",
                 "flag": ""
             },
             "CO-GUA": {
                 "name": "Guainía",
-                "nativeName": "",
+                "nativeName": "Guainía",
                 "flag": ""
             },
             "CO-GUV": {
                 "name": "Guaviare",
-                "nativeName": "",
+                "nativeName": "Guaviare",
                 "flag": ""
             },
             "CO-HUI": {
                 "name": "Huila",
-                "nativeName": "",
+                "nativeName": "Huila",
                 "flag": ""
             },
             "CO-LAG": {
                 "name": "La Guajira",
-                "nativeName": "",
+                "nativeName": "La Guajira",
                 "flag": ""
             },
             "CO-MAG": {
                 "name": "Magdalena",
-                "nativeName": "",
+                "nativeName": "Magdalena",
                 "flag": ""
             },
             "CO-MET": {
                 "name": "Meta",
-                "nativeName": "",
+                "nativeName": "Meta",
                 "flag": ""
             },
             "CO-NAR": {
                 "name": "Nariño",
-                "nativeName": "",
+                "nativeName": "Nariño",
                 "flag": ""
             },
             "CO-NSA": {
                 "name": "Norte de Santander",
-                "nativeName": "",
+                "nativeName": "Norte de Santander",
                 "flag": ""
             },
             "CO-PUT": {
                 "name": "Putumayo",
-                "nativeName": "",
+                "nativeName": "Putumayo",
                 "flag": ""
             },
             "CO-QUI": {
                 "name": "Quindío",
-                "nativeName": "",
+                "nativeName": "Quindío",
                 "flag": ""
             },
             "CO-RIS": {
                 "name": "Risaralda",
-                "nativeName": "",
+                "nativeName": "Risaralda",
                 "flag": ""
             },
             "CO-SAN": {
                 "name": "Santander",
-                "nativeName": "",
+                "nativeName": "Santander",
                 "flag": ""
             },
             "CO-SAP": {
                 "name": "San Andrés and Providencia",
-                "nativeName": "",
+                "nativeName": "Archipelago of Saint Andrew, Providence and Saint Catherine",
                 "flag": ""
             },
             "CO-SUC": {
                 "name": "Sucre",
-                "nativeName": "",
+                "nativeName": "Sucre",
                 "flag": ""
             },
             "CO-TOL": {
                 "name": "Tolima",
-                "nativeName": "",
+                "nativeName": "Tolima",
                 "flag": ""
             },
             "CO-VAC": {
                 "name": "Valle del Cauca",
-                "nativeName": "",
+                "nativeName": "Valle del Cauca",
                 "flag": ""
             },
             "CO-VAU": {
                 "name": "Vaupés",
-                "nativeName": "",
+                "nativeName": "Vaupés",
                 "flag": ""
             },
             "CO-VID": {
                 "name": "Vichada",
-                "nativeName": "",
+                "nativeName": "Vichada",
                 "flag": ""
             }
         }
@@ -974,52 +974,52 @@
             },
             "CZ-31": {
                 "name": "South Bohemia",
-                "nativeName": "",
+                "nativeName": "Jihočeský kraj",
                 "flag": ""
             },
             "CZ-64": {
                 "name": "South Moravia",
-                "nativeName": "",
+                "nativeName": "Jihomoravský kraj",
                 "flag": ""
             },
             "CZ-41": {
                 "name": "Karlovy Vary",
-                "nativeName": "",
+                "nativeName": "Karlovarský kraj",
                 "flag": ""
             },
             "CZ-52": {
                 "name": "Hradec Králové",
-                "nativeName": "",
+                "nativeName": "Královéhradecký kraj",
                 "flag": ""
             },
             "CZ-51": {
                 "name": "Liberec",
-                "nativeName": "",
+                "nativeName": "Liberecký kraj",
                 "flag": ""
             },
             "CZ-80": {
                 "name": "Moravia-Silesia",
-                "nativeName": "",
+                "nativeName": "Moravskoslezský kraj",
                 "flag": ""
             },
             "CZ-71": {
                 "name": "Olomouc",
-                "nativeName": "",
+                "nativeName": "Olomoucký kraj",
                 "flag": ""
             },
             "CZ-32": {
                 "name": "Plzeň",
-                "nativeName": "",
+                "nativeName": "Plzeňský kraj",
                 "flag": ""
             },
             "CZ-20": {
                 "name": "Central Bohemia",
-                "nativeName": "",
+                "nativeName": "Středočeský kraj",
                 "flag": ""
             },
             "CZ-42": {
                 "name": "Ústí nad Labem",
-                "nativeName": "",
+                "nativeName": "Ústecký kraj",
                 "flag": ""
             }
         }
@@ -1090,37 +1090,37 @@
             },
             "FI-02": {
                 "name": "South Karelia",
-                "nativeName": "",
+                "nativeName": "Etelä-Karjala",
                 "flag": ""
             },
             "FI-09": {
                 "name": "Kymenlaakso",
-                "nativeName": "",
+                "nativeName": "Kymenlaakso",
                 "flag": ""
             },
             "FI-10": {
                 "name": "Lapland",
-                "nativeName": "",
+                "nativeName": "Lappi",
                 "flag": ""
             },
             "FI-11": {
                 "name": "Pirkanmaa",
-                "nativeName": "",
+                "nativeName": "Pirkanmaa",
                 "flag": ""
             },
             "FI-12": {
                 "name": "Ostrobothnia",
-                "nativeName": "",
+                "nativeName": "Österbotten",
                 "flag": ""
             },
             "FI-14": {
                 "name": "North Ostrobothnia",
-                "nativeName": "",
+                "nativeName": "Pohjois-Pohjanmaa",
                 "flag": ""
             },
             "FI-19": {
                 "name": "Southwest Finland",
-                "nativeName": "",
+                "nativeName": "Varsinais-Suomi",
                 "flag": ""
             }
         }
@@ -1277,7 +1277,7 @@
             },
             "DE-BY": {
                 "name": "Bavaria",
-                "nativeName": "",
+                "nativeName": "Bayern",
                 "flag": ""
             }
         }
@@ -1293,97 +1293,97 @@
             },
             "HU-BA": {
                 "name": "Baranya",
-                "nativeName": "",
+                "nativeName": "Baranya vármegye",
                 "flag": ""
             },
             "HU-BZ": {
                 "name": "Borsod-Abaúj-Zemplén",
-                "nativeName": "",
+                "nativeName": "Borsod-Abaúj-Zemplén vármegye",
                 "flag": ""
             },
             "HU-BK": {
                 "name": "Bács-Kiskun",
-                "nativeName": "",
+                "nativeName": "Bács-Kiskun vármegye",
                 "flag": ""
             },
             "HU-BE": {
                 "name": "Békés",
-                "nativeName": "",
+                "nativeName": "Békés vármegye",
                 "flag": ""
             },
             "HU-CS": {
                 "name": "Csongrád-Csanád",
-                "nativeName": "",
+                "nativeName": "Csongrád-Csanád vármegye",
                 "flag": ""
             },
             "HU-FE": {
                 "name": "Fejér",
-                "nativeName": "",
+                "nativeName": "Fejér vármegye",
                 "flag": ""
             },
             "HU-GS": {
                 "name": "Győr-Moson-Sopron",
-                "nativeName": "",
+                "nativeName": "Győr-Moson-Sopron vármegye",
                 "flag": ""
             },
             "HU-HB": {
                 "name": "Hajdú-Bihar",
-                "nativeName": "",
+                "nativeName": "Hajdú-Bihar vármegye",
                 "flag": ""
             },
             "HU-HE": {
                 "name": "Heves",
-                "nativeName": "",
+                "nativeName": "Heves vármegye",
                 "flag": ""
             },
             "HU-JN": {
                 "name": "Jász-Nagykun-Szolnok",
-                "nativeName": "",
+                "nativeName": "Jász-Nagykun-Szolnok vármegye",
                 "flag": ""
             },
             "HU-KE": {
                 "name": "Komárom-Esztergom",
-                "nativeName": "",
+                "nativeName": "Komárom-Esztergom vármegye",
                 "flag": ""
             },
             "HU-NO": {
                 "name": "Nógrád",
-                "nativeName": "",
+                "nativeName": "Nógrád vármegye",
                 "flag": ""
             },
             "HU-PE": {
                 "name": "Pest",
-                "nativeName": "",
+                "nativeName": "Pest vármegye",
                 "flag": ""
             },
             "HU-SO": {
                 "name": "Somogy",
-                "nativeName": "",
+                "nativeName": "Somogy vármegye",
                 "flag": ""
             },
             "HU-SZ": {
                 "name": "Szabolcs-Szatmár-Bereg",
-                "nativeName": "",
+                "nativeName": "Szabolcs-Szatmár-Bereg vármegye",
                 "flag": ""
             },
             "HU-TO": {
                 "name": "Tolna",
-                "nativeName": "",
+                "nativeName": "Tolna vármegye",
                 "flag": ""
             },
             "HU-VA": {
                 "name": "Vas",
-                "nativeName": "",
+                "nativeName": "Vas vármegye",
                 "flag": ""
             },
             "HU-VE": {
                 "name": "Veszprém",
-                "nativeName": "",
+                "nativeName": "Veszprém vármegye",
                 "flag": ""
             },
             "HU-ZA": {
                 "name": "Zala",
-                "nativeName": "",
+                "nativeName": "Zala vármegye",
                 "flag": ""
             }
         }
@@ -1564,22 +1564,22 @@
             },
             "ID-PT": {
                 "name": "Central Papua",
-                "nativeName": "",
+                "nativeName": "Papua Tengah",
                 "flag": ""
             },
             "ID-MA": {
                 "name": "Maluku Islands",
-                "nativeName": "",
+                "nativeName": "Maluku",
                 "flag": ""
             },
             "ID-PS": {
                 "name": "South Papua",
-                "nativeName": "",
+                "nativeName": "Papua Selatan",
                 "flag": ""
             },
             "ID-PSW": {
                 "name": "Southwest Papua",
-                "nativeName": "",
+                "nativeName": "Papua Barat Daya",
                 "flag": ""
             }
         }
@@ -2017,7 +2017,7 @@
             },
             "KR-50": {
                 "name": "Sejong",
-                "nativeName": "",
+                "nativeName": "세종",
                 "flag": ""
             }
         }
@@ -2028,22 +2028,22 @@
         "regions": {
             "K": {
                 "name": "Courland",
-                "nativeName": "",
+                "nativeName": "Kurzeme",
                 "flag": ""
             },
             "L": {
                 "name": "Latgale",
-                "nativeName": "",
+                "nativeName": "Latgale",
                 "flag": ""
             },
             "V": {
                 "name": "Vidzeme",
-                "nativeName": "",
+                "nativeName": "Vidzeme",
                 "flag": ""
             },
             "Z": {
                 "name": "Zemgale",
-                "nativeName": "",
+                "nativeName": "Zemgale",
                 "flag": ""
             }
         }
@@ -2402,27 +2402,27 @@
             },
             "NO-30": {
                 "name": "Viken",
-                "nativeName": "",
+                "nativeName": "Viken",
                 "flag": ""
             },
             "NO-34": {
                 "name": "Innlandet",
-                "nativeName": "",
+                "nativeName": "Innlandet",
                 "flag": ""
             },
             "NO-42": {
                 "name": "Agder",
-                "nativeName": "",
+                "nativeName": "Agder",
                 "flag": ""
             },
             "NO-46": {
                 "name": "Vestland",
-                "nativeName": "",
+                "nativeName": "Vestland",
                 "flag": ""
             },
             "NO-54": {
                 "name": "Troms og Finnmark",
-                "nativeName": "",
+                "nativeName": "Troms og Finnmark",
                 "flag": ""
             }
         }
@@ -2463,7 +2463,7 @@
             },
             "PE-CAL": {
                 "name": "Constitutional Province of Callao",
-                "nativeName": "Constitutional Province of Callao",
+                "nativeName": "Callao",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/Bandera_del_Callao.svg"
             },
             "PE-HUV": {
@@ -2564,87 +2564,87 @@
         "regions": {
             "PH-14": {
                 "name": "Bangsamoro",
-                "nativeName": "",
+                "nativeName": "Bangsamoro",
                 "flag": ""
             },
             "PH-05": {
                 "name": "Bicol Region",
-                "nativeName": "",
+                "nativeName": "Bicol Region",
                 "flag": ""
             },
             "PH-02": {
                 "name": "Cagayan Valley",
-                "nativeName": "",
+                "nativeName": "Cagayan Valley",
                 "flag": ""
             },
             "PH-40": {
                 "name": "Calabarzon",
-                "nativeName": "",
+                "nativeName": "Calabarzon",
                 "flag": ""
             },
             "PH-13": {
                 "name": "Caraga",
-                "nativeName": "",
+                "nativeName": "Caraga",
                 "flag": ""
             },
             "PH-03": {
                 "name": "Central Luzon",
-                "nativeName": "",
+                "nativeName": "Central Luzon",
                 "flag": ""
             },
             "PH-07": {
                 "name": "Central Visayas",
-                "nativeName": "",
+                "nativeName": "Central Visayas",
                 "flag": ""
             },
             "PH-15": {
                 "name": "Cordillera Administrative Region",
-                "nativeName": "",
+                "nativeName": "Cordillera Administrative Region",
                 "flag": ""
             },
             "PH-11": {
                 "name": "Davao Region",
-                "nativeName": "",
+                "nativeName": "Davao Region",
                 "flag": ""
             },
             "PH-08": {
                 "name": "Eastern Visayas",
-                "nativeName": "",
+                "nativeName": "Eastern Visayas",
                 "flag": ""
             },
             "PH-01": {
                 "name": "Ilocos Region",
-                "nativeName": "",
+                "nativeName": "Ilocos Region",
                 "flag": ""
             },
             "PH-00": {
                 "name": "Metro Manila",
-                "nativeName": "",
+                "nativeName": "Metro Manila",
                 "flag": ""
             },
             "PH-41": {
                 "name": "Mimaropa",
-                "nativeName": "",
+                "nativeName": "Mimaropa",
                 "flag": ""
             },
             "PH-10": {
                 "name": "Northern Mindanao",
-                "nativeName": "",
+                "nativeName": "Northern Mindanao",
                 "flag": ""
             },
             "PH-12": {
                 "name": "Soccsksargen",
-                "nativeName": "",
+                "nativeName": "Soccsksargen",
                 "flag": ""
             },
             "PH-06": {
                 "name": "Western Visayas",
-                "nativeName": "",
+                "nativeName": "Western Visayas",
                 "flag": ""
             },
             "PH-09": {
                 "name": "Zamboanga Peninsula",
-                "nativeName": "",
+                "nativeName": "Zamboanga Peninsula",
                 "flag": ""
             }
         }
@@ -2766,12 +2766,12 @@
             },
             "PT20": {
                 "name": "Azores",
-                "nativeName": "",
+                "nativeName": "Açores",
                 "flag": ""
             },
             "PT30": {
                 "name": "Madeira",
-                "nativeName": "",
+                "nativeName": "Madeira",
                 "flag": ""
             }
         }
@@ -2787,207 +2787,207 @@
             },
             "RO-AB": {
                 "name": "Alba County",
-                "nativeName": "",
+                "nativeName": "Alba",
                 "flag": ""
             },
             "RO-AR": {
                 "name": "Arad County",
-                "nativeName": "",
+                "nativeName": "Arad",
                 "flag": ""
             },
             "RO-AG": {
                 "name": "Argeș County",
-                "nativeName": "",
+                "nativeName": "Argeș",
                 "flag": ""
             },
             "RO-BC": {
                 "name": "Bacău County",
-                "nativeName": "",
+                "nativeName": "Bacău",
                 "flag": ""
             },
             "RO-BH": {
                 "name": "Bihor County",
-                "nativeName": "",
+                "nativeName": "Bihor",
                 "flag": ""
             },
             "RO-BN": {
                 "name": "Bistrița-Năsăud County",
-                "nativeName": "",
+                "nativeName": "Bistrița-Năsăud",
                 "flag": ""
             },
             "RO-BT": {
                 "name": "Botoșani County",
-                "nativeName": "",
+                "nativeName": "Botoșani",
                 "flag": ""
             },
             "RO-BV": {
                 "name": "Brașov County",
-                "nativeName": "",
+                "nativeName": "Brașov",
                 "flag": ""
             },
             "RO-BR": {
                 "name": "Brăila County",
-                "nativeName": "",
+                "nativeName": "Brăila",
                 "flag": ""
             },
             "RO-BZ": {
                 "name": "Buzău County",
-                "nativeName": "",
+                "nativeName": "Buzău",
                 "flag": ""
             },
             "RO-CS": {
                 "name": "Caraș-Severin County",
-                "nativeName": "",
+                "nativeName": "Caraș-Severin",
                 "flag": ""
             },
             "RO-CJ": {
                 "name": "Cluj County",
-                "nativeName": "",
+                "nativeName": "Cluj",
                 "flag": ""
             },
             "RO-CT": {
                 "name": "Constanța County",
-                "nativeName": "",
+                "nativeName": "Constanța",
                 "flag": ""
             },
             "RO-CV": {
                 "name": "Covasna County",
-                "nativeName": "",
+                "nativeName": "Covasna",
                 "flag": ""
             },
             "RO-CL": {
                 "name": "Călărași County",
-                "nativeName": "",
+                "nativeName": "Călărași",
                 "flag": ""
             },
             "RO-DJ": {
                 "name": "Dolj County",
-                "nativeName": "",
+                "nativeName": "Dolj",
                 "flag": ""
             },
             "RO-DB": {
                 "name": "Dâmbovița County",
-                "nativeName": "",
+                "nativeName": "Dâmbovița",
                 "flag": ""
             },
             "RO-GL": {
                 "name": "Galați County",
-                "nativeName": "",
+                "nativeName": "Galați",
                 "flag": ""
             },
             "RO-GR": {
                 "name": "Giurgiu County",
-                "nativeName": "",
+                "nativeName": "Giurgiu",
                 "flag": ""
             },
             "RO-GJ": {
                 "name": "Gorj County",
-                "nativeName": "",
+                "nativeName": "Gorj",
                 "flag": ""
             },
             "RO-HR": {
                 "name": "Harghita County",
-                "nativeName": "",
+                "nativeName": "Harghita",
                 "flag": ""
             },
             "RO-HD": {
                 "name": "Hunedoara County",
-                "nativeName": "",
+                "nativeName": "Hunedoara",
                 "flag": ""
             },
             "RO-IL": {
                 "name": "Ialomița County",
-                "nativeName": "",
+                "nativeName": "Ialomița",
                 "flag": ""
             },
             "RO-IS": {
                 "name": "Iași County",
-                "nativeName": "",
+                "nativeName": "Iași",
                 "flag": ""
             },
             "RO-IF": {
                 "name": "Ilfov County",
-                "nativeName": "",
+                "nativeName": "Ilfov",
                 "flag": ""
             },
             "RO-MM": {
                 "name": "Maramureș County",
-                "nativeName": "",
+                "nativeName": "Maramureș",
                 "flag": ""
             },
             "RO-MH": {
                 "name": "Mehedinți County",
-                "nativeName": "",
+                "nativeName": "Mehedinți",
                 "flag": ""
             },
             "RO-MS": {
                 "name": "Mureș County",
-                "nativeName": "",
+                "nativeName": "Mureș",
                 "flag": ""
             },
             "RO-NT": {
                 "name": "Neamț County",
-                "nativeName": "",
+                "nativeName": "Neamț",
                 "flag": ""
             },
             "RO-OT": {
                 "name": "Olt County",
-                "nativeName": "",
+                "nativeName": "Olt",
                 "flag": ""
             },
             "RO-PH": {
                 "name": "Prahova County",
-                "nativeName": "",
+                "nativeName": "Prahova",
                 "flag": ""
             },
             "RO-SM": {
                 "name": "Satu Mare County",
-                "nativeName": "",
+                "nativeName": "Satu Mare",
                 "flag": ""
             },
             "RO-SB": {
                 "name": "Sibiu County",
-                "nativeName": "",
+                "nativeName": "Sibiu",
                 "flag": ""
             },
             "RO-SV": {
                 "name": "Suceava County",
-                "nativeName": "",
+                "nativeName": "Suceava",
                 "flag": ""
             },
             "RO-SJ": {
                 "name": "Sălaj County",
-                "nativeName": "",
+                "nativeName": "Sălaj",
                 "flag": ""
             },
             "RO-TR": {
                 "name": "Teleorman County",
-                "nativeName": "",
+                "nativeName": "Teleorman",
                 "flag": ""
             },
             "RO-TM": {
                 "name": "Timiș County",
-                "nativeName": "",
+                "nativeName": "Timiș",
                 "flag": ""
             },
             "RO-TL": {
                 "name": "Tulcea County",
-                "nativeName": "",
+                "nativeName": "Tulcea",
                 "flag": ""
             },
             "RO-VS": {
                 "name": "Vaslui County",
-                "nativeName": "",
+                "nativeName": "Vaslui",
                 "flag": ""
             },
             "RO-VN": {
                 "name": "Vrancea County",
-                "nativeName": "",
+                "nativeName": "Vrancea",
                 "flag": ""
             },
             "RO-VL": {
                 "name": "Vâlcea County",
-                "nativeName": "",
+                "nativeName": "Vâlcea",
                 "flag": ""
             }
         }
@@ -3419,17 +3419,17 @@
             },
             "ES-AS": {
                 "name": "Asturias",
-                "nativeName": "Principado de Asturias",
+                "nativeName": "Asturias / Asturies",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Asturias.svg"
             },
             "ES-PV": {
                 "name": "Basque Country",
-                "nativeName": "País Vasco",
+                "nativeName": "Euskadi",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_the_Basque_Country.svg"
             },
             "ES-CN": {
                 "name": "Canary Islands",
-                "nativeName": "Islas Canarias",
+                "nativeName": "Canarias",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_the_Canary_Islands.svg"
             },
             "ES-CM": {
@@ -3444,7 +3444,7 @@
             },
             "ES-CT": {
                 "name": "Catalonia",
-                "nativeName": "Cataluña",
+                "nativeName": "Catalunya",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg"
             },
             "ES-EX": {
@@ -3469,12 +3469,12 @@
             },
             "ES-NC": {
                 "name": "Navarre",
-                "nativeName": "Comunidad Foral de Navarra",
+                "nativeName": "Navarra - Nafarroa",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bandera_de_Navarra.svg"
             },
             "ES-VC": {
                 "name": "Valencian Community",
-                "nativeName": "Comunidad Valenciana",
+                "nativeName": "Comunitat Valenciana",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_the_Valencian_Community_(2x3).svg"
             },
             "ES-CE": {
@@ -3489,7 +3489,7 @@
             },
             "ES-PM": {
                 "name": "Balearic Islands",
-                "nativeName": "Islas Baleares",
+                "nativeName": "Illes Balears",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
             },
             "ES-CB": {
@@ -4132,7 +4132,7 @@
             },
             "UA-23": {
                 "name": "Zaporizhia Oblast",
-                "nativeName": "",
+                "nativeName": "Запорізька область",
                 "flag": ""
             }
         }
@@ -4393,7 +4393,7 @@
             },
             "US-WADC": {
                 "name": "Washington, D.C.",
-                "nativeName": "",
+                "nativeName": "Washington",
                 "flag": ""
             }
         }
@@ -4403,102 +4403,102 @@
         "regions": {
             "KZ-10": {
                 "name": "Abay Region",
-                "nativeName": "",
+                "nativeName": "Абай облысы",
                 "flag": ""
             },
             "KZ-11": {
                 "name": "Akmola Region",
-                "nativeName": "",
+                "nativeName": "Ақмола облысы",
                 "flag": ""
             },
             "KZ-19": {
                 "name": "Almaty Region",
-                "nativeName": "",
+                "nativeName": "Алматы облысы",
                 "flag": ""
             },
             "KZ-75": {
                 "name": "Almaty",
-                "nativeName": "",
+                "nativeName": "Алматы",
                 "flag": ""
             },
             "KZ-15": {
                 "name": "Aqtöbe region",
-                "nativeName": "",
+                "nativeName": "Ақтөбе облысы",
                 "flag": ""
             },
             "KZ-71": {
                 "name": "Astana",
-                "nativeName": "",
+                "nativeName": "Астана",
                 "flag": ""
             },
             "KZ-23": {
                 "name": "Atyrau Region",
-                "nativeName": "",
+                "nativeName": "Атырау облысы",
                 "flag": ""
             },
             "KZ-63": {
                 "name": "East Kazakhstan Region",
-                "nativeName": "",
+                "nativeName": "Шығыс Қазақстан облысы",
                 "flag": ""
             },
             "KZ-31": {
                 "name": "Jambyl Region",
-                "nativeName": "",
+                "nativeName": "Жамбыл облысы",
                 "flag": ""
             },
             "KZ-33": {
                 "name": "Jetisu Region",
-                "nativeName": "",
+                "nativeName": "Жетісу облысы",
                 "flag": ""
             },
             "KZ-35": {
                 "name": "Karaganda Region",
-                "nativeName": "",
+                "nativeName": "Қарағанды облысы",
                 "flag": ""
             },
             "KZ-39": {
                 "name": "Kostanay Region",
-                "nativeName": "",
+                "nativeName": "Қостанай облысы",
                 "flag": ""
             },
             "KZ-43": {
                 "name": "Kyzylorda Region",
-                "nativeName": "",
+                "nativeName": "Қызылорда облысы",
                 "flag": ""
             },
             "KZ-47": {
                 "name": "Mangystau Region",
-                "nativeName": "",
+                "nativeName": "Маңғыстау облысы",
                 "flag": ""
             },
             "KZ-59": {
                 "name": "North Kazakhstan Region",
-                "nativeName": "",
+                "nativeName": "Солтүстік Қазақстан облысы",
                 "flag": ""
             },
             "KZ-55": {
                 "name": "Pavlodar Region",
-                "nativeName": "",
+                "nativeName": "Павлодар облысы",
                 "flag": ""
             },
             "KZ-79": {
                 "name": "Shymkent",
-                "nativeName": "",
+                "nativeName": "Шымкент",
                 "flag": ""
             },
             "KZ-61": {
                 "name": "Turkistan Region",
-                "nativeName": "",
+                "nativeName": "Түркістан облысы",
                 "flag": ""
             },
             "KZ-62": {
                 "name": "Ulytau Region",
-                "nativeName": "",
+                "nativeName": "Ұлытау облысы",
                 "flag": ""
             },
             "KZ-27": {
                 "name": "West Kazakhstan Region",
-                "nativeName": "",
+                "nativeName": "Батыс Қазақстан облысы",
                 "flag": ""
             }
         }
@@ -4508,28 +4508,28 @@
         "regions": {
             "SG-01": {
                 "name": "Central Singapore",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Central Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215418"
             },
             "SG-02": {
                 "name": "Northeast Singapore",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Northeast Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215655"
             },
             "SG-03": {
                 "name": "Northwest Singapore",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Northwest Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215625"
             },
             "SG-04": {
                 "name": "Southeast Singapore",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Southeast Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215512"
             },
             "SG-05": {
                 "name": "Southwest Singapore",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Southwest Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215841"
             }
         }
     },
@@ -4538,37 +4538,37 @@
         "regions": {
             "TR-EGE": {
                 "name": "Aegean Region",
-                "nativeName": "",
+                "nativeName": "Ege Bölgesi",
                 "flag": ""
             },
             "TR-KAR": {
                 "name": "Black Sea Region",
-                "nativeName": "",
+                "nativeName": "Karadeniz Bölgesi",
                 "flag": ""
             },
             "TR-ICA": {
                 "name": "Central Anatolia Region",
-                "nativeName": "",
+                "nativeName": "İç Anadolu Bölgesi",
                 "flag": ""
             },
             "TR-DOA": {
                 "name": "Eastern Anatolia Region",
-                "nativeName": "",
+                "nativeName": "Doğu Anadolu Bölgesi",
                 "flag": ""
             },
             "TR-MRM": {
                 "name": "Marmara Region",
-                "nativeName": "",
+                "nativeName": "Marmara Bölgesi",
                 "flag": ""
             },
             "TR-AKD": {
                 "name": "Mediterranean Region",
-                "nativeName": "",
+                "nativeName": "Akdeniz Bölgesi",
                 "flag": ""
             },
             "TR-GUA": {
                 "name": "Southeastern Anatolia Region",
-                "nativeName": "",
+                "nativeName": "Güneydoğu Anadolu Bölgesi",
                 "flag": ""
             }
         }
@@ -4578,112 +4578,112 @@
         "regions": {
             "TW-CHA": {
                 "name": "Changhua County",
-                "nativeName": "",
+                "nativeName": "彰化縣",
                 "flag": ""
             },
             "TW-CYQ": {
                 "name": "Chiayi County",
-                "nativeName": "",
+                "nativeName": "嘉義縣",
                 "flag": ""
             },
             "TW-CYI": {
                 "name": "Chiayi",
-                "nativeName": "",
+                "nativeName": "嘉義市",
                 "flag": ""
             },
             "TW-HSQ": {
                 "name": "Hsinchu County",
-                "nativeName": "",
+                "nativeName": "新竹縣",
                 "flag": ""
             },
             "TW-HSZ": {
                 "name": "Hsinchu",
-                "nativeName": "",
+                "nativeName": "新竹市",
                 "flag": ""
             },
             "TW-HUA": {
                 "name": "Hualien County",
-                "nativeName": "",
+                "nativeName": "花蓮縣",
                 "flag": ""
             },
             "TW-KHH": {
                 "name": "Kaohsiung",
-                "nativeName": "",
+                "nativeName": "高雄市",
                 "flag": ""
             },
             "TW-KEE": {
                 "name": "Keelung",
-                "nativeName": "",
+                "nativeName": "基隆市",
                 "flag": ""
             },
             "TW-KIN": {
                 "name": "Kinmen",
-                "nativeName": "",
+                "nativeName": "金門縣",
                 "flag": ""
             },
             "TW-LIE": {
                 "name": "Lienchiang County",
-                "nativeName": "",
+                "nativeName": "連江縣",
                 "flag": ""
             },
             "TW-MIA": {
                 "name": "Miaoli County",
-                "nativeName": "",
+                "nativeName": "苗栗縣",
                 "flag": ""
             },
             "TW-NAN": {
                 "name": "Nantou County",
-                "nativeName": "",
+                "nativeName": "南投縣",
                 "flag": ""
             },
             "TW-NWT": {
                 "name": "New Taipei",
-                "nativeName": "",
+                "nativeName": "新北市",
                 "flag": ""
             },
             "TW-PEN": {
                 "name": "Penghu",
-                "nativeName": "",
+                "nativeName": "澎湖縣",
                 "flag": ""
             },
             "TW-PIF": {
                 "name": "Pingtung County",
-                "nativeName": "",
+                "nativeName": "屏東縣",
                 "flag": ""
             },
             "TW-TXG": {
                 "name": "Taichung",
-                "nativeName": "",
+                "nativeName": "臺中市",
                 "flag": ""
             },
             "TW-TNN": {
                 "name": "Tainan",
-                "nativeName": "",
+                "nativeName": "臺南市",
                 "flag": ""
             },
             "TW-TPE": {
                 "name": "Taipei",
-                "nativeName": "",
+                "nativeName": "臺北市",
                 "flag": ""
             },
             "TW-TTT": {
                 "name": "Taitung County",
-                "nativeName": "",
+                "nativeName": "臺東縣",
                 "flag": ""
             },
             "TW-TAO": {
                 "name": "Taoyuan City",
-                "nativeName": "",
+                "nativeName": "桃園市",
                 "flag": ""
             },
             "TW-ILA": {
                 "name": "Yilan County",
-                "nativeName": "",
+                "nativeName": "宜蘭縣",
                 "flag": ""
             },
             "TW-YUN": {
                 "name": "Yunlin County",
-                "nativeName": "",
+                "nativeName": "雲林縣",
                 "flag": ""
             }
         }
@@ -4693,317 +4693,317 @@
         "regions": {
             "VN-44": {
                 "name": "An Giang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh An Giang",
                 "flag": ""
             },
             "VN-43": {
                 "name": "Bà Rịa - Vũng Tàu Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bà Rịa - Vũng Tàu",
                 "flag": ""
             },
             "VN-57": {
                 "name": "Bình Dương Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bình Dương",
                 "flag": ""
             },
             "VN-58": {
                 "name": "Bình Phước Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bình Phước",
                 "flag": ""
             },
             "VN-40": {
                 "name": "Bình Thuận Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bình Thuận",
                 "flag": ""
             },
             "VN-31": {
                 "name": "Bình Định Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bình Định",
                 "flag": ""
             },
             "VN-55": {
                 "name": "Bạc Liêu Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bạc Liêu",
                 "flag": ""
             },
             "VN-54": {
                 "name": "Bắc Giang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bắc Giang",
                 "flag": ""
             },
             "VN-53": {
                 "name": "Bắc Kạn Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bắc Kạn",
                 "flag": ""
             },
             "VN-56": {
                 "name": "Bắc Ninh province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bắc Ninh",
                 "flag": ""
             },
             "VN-50": {
                 "name": "Bến Tre Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Bến Tre",
                 "flag": ""
             },
             "VN-04": {
                 "name": "Cao Bằng Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Cao Bằng",
                 "flag": ""
             },
             "VN-59": {
                 "name": "Cà Mau Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Cà Mau",
                 "flag": ""
             },
             "VN-CT": {
                 "name": "Cần Thơ",
-                "nativeName": "",
+                "nativeName": "Thành phố Cần Thơ",
                 "flag": ""
             },
             "VN-30": {
                 "name": "Gia Lai Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Gia Lai",
                 "flag": ""
             },
             "VN-14": {
                 "name": "Hoà Bình province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hòa Bình",
                 "flag": ""
             },
             "VN-03": {
                 "name": "Hà Giang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hà Giang",
                 "flag": ""
             },
             "VN-63": {
                 "name": "Hà Nam Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hà Nam",
                 "flag": ""
             },
             "VN-HN": {
                 "name": "Hà Nội",
-                "nativeName": "",
+                "nativeName": "Thành phố Hà Nội",
                 "flag": ""
             },
             "VN-23": {
                 "name": "Hà Tĩnh Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hà Tĩnh",
                 "flag": ""
             },
             "VN-66": {
                 "name": "Hưng Yên Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hưng Yên",
                 "flag": ""
             },
             "VN-61": {
                 "name": "Hải Dương Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hải Dương",
                 "flag": ""
             },
             "VN-HP": {
                 "name": "Hải Phòng",
-                "nativeName": "",
+                "nativeName": "Thành phố Hải Phòng",
                 "flag": ""
             },
             "VN-73": {
                 "name": "Hậu Giang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Hậu Giang",
                 "flag": ""
             },
             "VN-SG": {
                 "name": "Hồ Chí Minh City",
-                "nativeName": "",
+                "nativeName": "Thành phố Hồ Chí Minh",
                 "flag": ""
             },
             "VN-34": {
                 "name": "Khánh Hòa Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Khánh Hòa",
                 "flag": ""
             },
             "VN-47": {
                 "name": "Kiên Giang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Kiên Giang",
                 "flag": ""
             },
             "VN-28": {
                 "name": "Kon Tum Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Kon Tum",
                 "flag": ""
             },
             "VN-01": {
                 "name": "Lai Châu Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Lai Châu",
                 "flag": ""
             },
             "VN-41": {
                 "name": "Long An Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Long An",
                 "flag": ""
             },
             "VN-02": {
                 "name": "Lào Cai Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Lào Cai",
                 "flag": ""
             },
             "VN-35": {
                 "name": "Lâm Đồng Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Lâm Đồng",
                 "flag": ""
             },
             "VN-09": {
                 "name": "Lạng Sơn Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Lạng Sơn",
                 "flag": ""
             },
             "VN-67": {
                 "name": "Nam Định Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Nam Định",
                 "flag": ""
             },
             "VN-22": {
                 "name": "Nghệ An Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Nghệ An",
                 "flag": ""
             },
             "VN-18": {
                 "name": "Ninh Bình Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Ninh Bình",
                 "flag": ""
             },
             "VN-36": {
                 "name": "Ninh Thuận Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Ninh Thuận",
                 "flag": ""
             },
             "VN-68": {
                 "name": "Phú Thọ Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Phú Thọ",
                 "flag": ""
             },
             "VN-32": {
                 "name": "Phú Yên Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Phú Yên",
                 "flag": ""
             },
             "VN-24": {
                 "name": "Quảng Bình Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Quảng Bình",
                 "flag": ""
             },
             "VN-27": {
                 "name": "Quảng Nam Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Quảng Nam",
                 "flag": ""
             },
             "VN-29": {
                 "name": "Quảng Ngãi Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Quảng Ngãi",
                 "flag": ""
             },
             "VN-13": {
                 "name": "Quảng Ninh Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Quảng Ninh",
                 "flag": ""
             },
             "VN-25": {
                 "name": "Quảng Trị Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Quảng Trị",
                 "flag": ""
             },
             "VN-52": {
                 "name": "Sóc Trăng Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Sóc Trăng",
                 "flag": ""
             },
             "VN-05": {
                 "name": "Sơn La Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Sơn La",
                 "flag": ""
             },
             "VN-21": {
                 "name": "Thanh Hoá Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Thanh Hóa",
                 "flag": ""
             },
             "VN-20": {
                 "name": "Thái Bình Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Thái Bình",
                 "flag": ""
             },
             "VN-69": {
                 "name": "Thái Nguyên Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Thái Nguyên",
                 "flag": ""
             },
             "VN-26": {
                 "name": "Thừa Thiên Huế Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Thừa Thiên Huế",
                 "flag": ""
             },
             "VN-46": {
                 "name": "Tiền Giang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Tiền Giang",
                 "flag": ""
             },
             "VN-51": {
                 "name": "Trà Vinh Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Trà Vinh",
                 "flag": ""
             },
             "VN-07": {
                 "name": "Tuyên Quang Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Tuyên Quang",
                 "flag": ""
             },
             "VN-37": {
                 "name": "Tây Ninh Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Tây Ninh",
                 "flag": ""
             },
             "VN-49": {
                 "name": "Vĩnh Long Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Vĩnh Long",
                 "flag": ""
             },
             "VN-70": {
                 "name": "Vĩnh Phúc Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Vĩnh Phúc",
                 "flag": ""
             },
             "VN-06": {
                 "name": "Yên Bái Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Yên Bái",
                 "flag": ""
             },
             "VN-71": {
                 "name": "Điện Biên Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Điện Biên",
                 "flag": ""
             },
             "VN-DN": {
                 "name": "Đà Nẵng",
-                "nativeName": "",
+                "nativeName": "Thành phố Đà Nẵng",
                 "flag": ""
             },
             "VN-33": {
                 "name": "Đăk Lăk Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Đăk Lăk",
                 "flag": ""
             },
             "VN-72": {
                 "name": "Đăk Nông Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Đăk Nông",
                 "flag": ""
             },
             "VN-39": {
                 "name": "Đồng Nai Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Đồng Nai",
                 "flag": ""
             },
             "VN-45": {
                 "name": "Đồng Tháp Province",
-                "nativeName": "",
+                "nativeName": "Tỉnh Đồng Tháp",
                 "flag": ""
             }
         }

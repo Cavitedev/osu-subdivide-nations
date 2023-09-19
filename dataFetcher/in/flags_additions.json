@@ -10,19 +10,85 @@
     "ES": {
         "regions": {
             "ES-PM": {
-                "name": "Balearic Islands",
-                "nativeName": "Islas Baleares",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
             },
             "ES-CB": {
-                "name": "Cantabria",
-                "nativeName": "Cantabria",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg"
             },
             "ES-RI": {
-                "name": "La Rioja",
-                "nativeName": "La Rioja",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg"
+            }
+        }
+    },
+    "BE": {
+        "regions": {
+            "BE-VAN": {
+                "nativeName": "Antwerpen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Antwerp.svg"
+            },
+            "BE-BRU": {
+                "nativeName": "Gewest",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Brussels-Capital_Region.svg"
+            },
+            "BE-VOV": {
+                "nativeName": "Oost-Vlaanderen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Flag_of_Oost-Vlaanderen.svg"
+            },
+            "BE-VBR": {
+                "nativeName": "Vlaams-Brabant",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Flemish_Brabant.svg"
+            },
+            "BE-WHT": {
+                "nativeName": "Hainaut",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Hainaut.svg"
+            },
+            "BE-VLI": {
+                "nativeName": "Limburg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Limburg_%28Belgium%29.svg"
+            },
+            "BE-WLG": {
+                "nativeName": "Liège",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Province_of_Li%C3%A8ge.svg"
+            },
+            "BE-WLX": {
+                "nativeName": "Luxembourg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Official_flag_of_the_Province_of_Luxembourg.svg"
+            },
+            "BE-WNA": {
+                "nativeName": "BE-WNA",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namur_Province.svg"
+            },
+            "BE-WBR": {
+                "nativeName": "Brabant wallon",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Drapeau_Province_BE_Brabant_Wallon.svg"
+            },
+            "BE-VWV": {
+                "nativeName": "West-Vlaanderen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_West_Flanders.svg"
+            }
+        }
+    },
+    "SG": {
+        "regions": {
+            "SG-01": {
+                "nativeName": "Central Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215418"
+            },
+            "SG-02": {
+                "nativeName": "Northeast Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215655"
+            },
+            "SG-03": {
+                "nativeName": "Northwest Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215625"
+            },
+            "SG-04": {
+                "nativeName": "Southeast Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215512"
+            },
+            "SG-05": {
+                "nativeName": "Southwest Singapore",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215841"
             }
         }
     }
