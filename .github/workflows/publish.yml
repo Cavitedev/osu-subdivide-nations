@@ -3,7 +3,7 @@ name: Build extensions and upload them
 on:
   push:
     branches:
-      - main
+      - release
 
 jobs:
   publish_extension:
