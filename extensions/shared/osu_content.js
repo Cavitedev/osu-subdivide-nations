@@ -415,10 +415,9 @@
   const addRegionsDropdown = async (countryCode, regionCode) => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
     let regionNames = await getRegionNames(countryCode);
-    const regionNamesKeys = Object.entries(regionNames)
-      .sort((
-        [key1, value1], [key2, value2]) => value1.localeCompare(value2)
-      );
+    const regionNamesKeys = Object.entries(regionNames).sort(
+      ([key1, value1], [key2, value2]) => value1.localeCompare(value2)
+    );
 
     regionNames = Object.fromEntries(regionNamesKeys);
 
@@ -882,20 +881,84 @@
     }
   };
 
+  const gameBeingPlayedMutationObserver = new MutationObserver(
+    async (mutations) => {
+      for (const mutation of mutations) {
+        for (const addedNode of mutation.addedNodes) {
+          const score = addedNode.querySelector(
+            ".mp-history-player-score__main"
+          );
+          if (score) {
+            await updateFlagInMatchScore(score);
+          }
+        }
+      }
+    }
+  );
+
+  let lobbyPlayingMutationObserver = new MutationObserver((mutations) => {
+    const addedScores = mutations[mutations.length - 1].addedNodes[0];
+    if (!addedScores) return;
+
+    const matchPlay = addedScores.querySelector(
+      ".mp-history-game__player-scores"
+    );
+    if (matchPlay) {
+      gameBeingPlayedMutationObserver.observe(matchPlay, {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      });
+    }
+  });
+
   const updateFlagsMatches = async () => {
     const functionId = nextFunctionId();
-    listScores = document.querySelectorAll(".mp-history-player-score__main");
 
+    const linkItem = document.querySelector(".mp-history-content");
+    if (linkItem) {
+      lobbyPlayingMutationObserver.observe(linkItem, {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      });
+    }
+
+    watchPlayingGame();
+    updateFlagsInMatchPlay(document, functionId);
+  };
+
+  const watchPlayingGame = () => {
+    const gamesPlayed = document.querySelectorAll(".mp-history-game");
+    if (!gamesPlayed || gamesPlayed.length === 0) return;
+    const lastGame = gamesPlayed[gamesPlayed.length - 1];
+    if (!lastGame) return;
+    const scores = lastGame.querySelector(".mp-history-game__player-scores");
+    if (scores && scores.children.length === 0) {
+      gameBeingPlayedMutationObserver.observe(scores, {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      });
+    }
+  };
+
+  const updateFlagsInMatchPlay = async (scores, functionId) => {
+    listScores = scores.querySelectorAll(".mp-history-player-score__main");
     for (item of listScores) {
       if (functionId != runningId) {
         return;
       }
-      playerNameElement = item.querySelector(
-        ".mp-history-player-score__username"
-      );
-      playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-      await addFlagUser(item, playerId, true);
+      await updateFlagInMatchScore(item);
     }
+  };
+
+  const updateFlagInMatchScore = async (item) => {
+    playerNameElement = item.querySelector(
+      ".mp-history-player-score__username"
+    );
+    playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
+    await addFlagUser(item, playerId, true);
   };
 
   const updateFlagsFriends = async () => {
