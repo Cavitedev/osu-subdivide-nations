@@ -951,6 +951,7 @@
     },
     "CZ": {
         "name": "Czech Republic",
+        "nativeName": "Česko",
         "regions": {
             "CZ-53": {
                 "name": "Pardubice",
@@ -975,52 +976,52 @@
             "CZ-31": {
                 "name": "South Bohemia",
                 "nativeName": "Jihočeský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_South_Bohemian_Region.svg"
             },
             "CZ-64": {
                 "name": "South Moravia",
                 "nativeName": "Jihomoravský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_South_Moravian_Region.svg"
             },
             "CZ-41": {
                 "name": "Karlovy Vary",
                 "nativeName": "Karlovarský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Karlovy_Vary_Region.svg"
             },
             "CZ-52": {
                 "name": "Hradec Králové",
                 "nativeName": "Královéhradecký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Hradec_Kralove_Region.svg"
             },
             "CZ-51": {
                 "name": "Liberec",
                 "nativeName": "Liberecký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Liberec_Region.svg"
             },
             "CZ-80": {
                 "name": "Moravia-Silesia",
                 "nativeName": "Moravskoslezský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Moravian-Silesian_Region.svg"
             },
             "CZ-71": {
                 "name": "Olomouc",
                 "nativeName": "Olomoucký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Olomouc_Region.svg"
             },
             "CZ-32": {
                 "name": "Plzeň",
                 "nativeName": "Plzeňský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Plzen_Region.svg"
             },
             "CZ-20": {
                 "name": "Central Bohemia",
                 "nativeName": "Středočeský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Central_Bohemian_Region.svg"
             },
             "CZ-42": {
                 "name": "Ústí nad Labem",
                 "nativeName": "Ústecký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Usti_nad_Labem_Region.svg"
             }
         }
     },
@@ -1091,37 +1092,37 @@
             "FI-02": {
                 "name": "South Karelia",
                 "nativeName": "Etelä-Karjala",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Etelä-Karjala.vaakuna.svg"
             },
             "FI-09": {
                 "name": "Kymenlaakso",
                 "nativeName": "Kymenlaakso",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kymenlaakson_maakunnan_vaakuna.svg"
             },
             "FI-10": {
                 "name": "Lapland",
                 "nativeName": "Lappi",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Lapin_maakunnan_vaakuna.svg"
             },
             "FI-11": {
                 "name": "Pirkanmaa",
                 "nativeName": "Pirkanmaa",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Pirkanmaa.svg"
             },
             "FI-12": {
                 "name": "Ostrobothnia",
                 "nativeName": "Österbotten",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pohjanmaan_maakunnan_vaakuna.svg"
             },
             "FI-14": {
                 "name": "North Ostrobothnia",
                 "nativeName": "Pohjois-Pohjanmaa",
-                "flag": ""
+                "flag": "https://en.wikipedia.org/wiki/North_Ostrobothnia#/media/File:Pohjois-Pohjanmaan_vaakuna.svg"
             },
             "FI-19": {
                 "name": "Southwest Finland",
                 "nativeName": "Varsinais-Suomi",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varsinais-Suomen.vaakuna.svg"
             }
         }
     },
@@ -1278,7 +1279,7 @@
             "DE-BY": {
                 "name": "Bavaria",
                 "nativeName": "Bayern",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Bavaria_(striped).svg"
             }
         }
     },
@@ -1294,97 +1295,97 @@
             "HU-BA": {
                 "name": "Baranya",
                 "nativeName": "Baranya vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Baranya_County.svg/128px-Flag_of_Baranya_County.svg.png"
             },
             "HU-BZ": {
                 "name": "Borsod-Abaúj-Zemplén",
                 "nativeName": "Borsod-Abaúj-Zemplén vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FLAG-Borsod-Abaúj-Zemplén-megye.svg/128px-FLAG-Borsod-Abaúj-Zemplén-megye.svg.png"
             },
             "HU-BK": {
                 "name": "Bács-Kiskun",
                 "nativeName": "Bács-Kiskun vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Bács-Kiskun_County.svg/128px-Flag_of_Bács-Kiskun_County.svg.png"
             },
             "HU-BE": {
                 "name": "Békés",
                 "nativeName": "Békés vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FLAG-Békés-megye.svg/128px-FLAG-Békés-megye.svg.png"
             },
             "HU-CS": {
                 "name": "Csongrád-Csanád",
                 "nativeName": "Csongrád-Csanád vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Flag_of_Csongrad-Csanad_megye.svg/128px-Flag_of_Csongrad-Csanad_megye.svg.png"
             },
             "HU-FE": {
                 "name": "Fejér",
                 "nativeName": "Fejér vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/FLAG-Fejér-megye.svg/128px-FLAG-Fejér-megye.svg.png"
             },
             "HU-GS": {
                 "name": "Győr-Moson-Sopron",
                 "nativeName": "Győr-Moson-Sopron vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/FLAG-Gyor-Moson-Sopron-megye.svg/128px-FLAG-Gyor-Moson-Sopron-megye.svg.png"
             },
             "HU-HB": {
                 "name": "Hajdú-Bihar",
                 "nativeName": "Hajdú-Bihar vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/FLAG-Hajdú-Bihar-megye.svg/128px-FLAG-Hajdú-Bihar-megye.svg.png"
             },
             "HU-HE": {
                 "name": "Heves",
                 "nativeName": "Heves vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/FLAG-Heves-megye.svg/500px-FLAG-Heves-megye.svg.png"
             },
             "HU-JN": {
                 "name": "Jász-Nagykun-Szolnok",
                 "nativeName": "Jász-Nagykun-Szolnok vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/FLAG-Jasz-Nagykun-Szolnok.svg/320px-FLAG-Jasz-Nagykun-Szolnok.svg.png"
             },
             "HU-KE": {
                 "name": "Komárom-Esztergom",
                 "nativeName": "Komárom-Esztergom vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/FLAG-Komárom-Esztergom-megye.svg/128px-FLAG-Komárom-Esztergom-megye.svg.png"
             },
             "HU-NO": {
                 "name": "Nógrád",
                 "nativeName": "Nógrád vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/FLAG-Nograd.svg/128px-FLAG-Nograd.svg.png"
             },
             "HU-PE": {
                 "name": "Pest",
                 "nativeName": "Pest vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FLAG-Pest-megye.svg/128px-FLAG-Pest-megye.svg.png"
             },
             "HU-SO": {
                 "name": "Somogy",
                 "nativeName": "Somogy vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/FLAG-Somogy-megye.svg/128px-FLAG-Somogy-megye.svg.png"
             },
             "HU-SZ": {
                 "name": "Szabolcs-Szatmár-Bereg",
                 "nativeName": "Szabolcs-Szatmár-Bereg vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Flag-Szabolcs-Szatmar-Bereg-megye.svg/128px-Flag-Szabolcs-Szatmar-Bereg-megye.svg.png"
             },
             "HU-TO": {
                 "name": "Tolna",
                 "nativeName": "Tolna vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FLAG-Tolna-megye.svg/128px-FLAG-Tolna-megye.svg.png"
             },
             "HU-VA": {
                 "name": "Vas",
                 "nativeName": "Vas vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/FLAG-Vas-megye.svg/128px-FLAG-Vas-megye.svg.png"
             },
             "HU-VE": {
                 "name": "Veszprém",
                 "nativeName": "Veszprém vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FLAG-Veszprém-megye.svg/128px-FLAG-Veszprém-megye.svg.png"
             },
             "HU-ZA": {
                 "name": "Zala",
                 "nativeName": "Zala vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/FLAG-Zala-megye.svg/128px-FLAG-Zala-megye.svg.png"
             }
         }
     },
@@ -2206,7 +2207,7 @@
             "MX-CMX": {
                 "name": "Mexico",
                 "nativeName": "Ciudad de México",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_the_State_of_Mexico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Mexico_City,_Mexico.svg"
             },
             "MX-MIC": {
                 "name": "Michoacán",
@@ -2296,7 +2297,7 @@
             "MX-MEX": {
                 "name": "State of Mexico",
                 "nativeName": "Estado de México",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_the_State_of_Mexico.svg"
             }
         }
     },
@@ -2553,8 +2554,8 @@
             },
             "PE-CUS": {
                 "name": "Cusco",
-                "nativeName": "Cusco",
-                "flag": ""
+                "nativeName": "Cuzco",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_(2021).svg"
             }
         }
     },
@@ -4400,6 +4401,7 @@
     },
     "KZ": {
         "name": "Kazakhstan",
+        "nativeName": "Қазақстан",
         "regions": {
             "KZ-10": {
                 "name": "Abay Region",
@@ -4505,6 +4507,7 @@
     },
     "SG": {
         "name": "Singapore",
+        "nativeName": "Singapore",
         "regions": {
             "SG-01": {
                 "name": "Central Singapore",
@@ -4535,10 +4538,11 @@
     },
     "TR": {
         "name": "Turkey",
+        "nativeName": "Türkiye",
         "regions": {
             "TR-EGE": {
                 "name": "Aegean Region",
-                "nativeName": "Ege Bölgesi",
+                "nativeName": "Ege Mahallesi",
                 "flag": ""
             },
             "TR-KAR": {
@@ -4691,6 +4695,7 @@
     },
     "VN": {
         "name": "Vietnam",
+        "nativeName": "Việt Nam",
         "regions": {
             "VN-44": {
                 "name": "An Giang Province",
