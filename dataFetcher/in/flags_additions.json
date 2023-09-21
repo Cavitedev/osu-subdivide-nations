@@ -62,6 +62,16 @@
             }
         }
     },
+    "CL": {
+        "regions": {
+            "CL-AP": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Arica_y_Parinacota%2C_Chile.svg"
+            },
+            "CL-MA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes%2C_Chile.svg"
+            }
+        }
+    },
     "CN": {
         "name": "China",
         "nativeName": "中国",
