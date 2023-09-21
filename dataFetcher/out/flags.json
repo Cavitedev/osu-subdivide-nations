@@ -51,7 +51,7 @@
             "AR-D": {
                 "name": "San Luis Province",
                 "nativeName": "San Luis",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg//128px-Bandera_de_la_Provincia_de_San_Luis.svg.png"
             },
             "AR-F": {
                 "name": "La Rioja Province",
@@ -81,12 +81,12 @@
             "AR-L": {
                 "name": "La Pampa Province",
                 "nativeName": "La Pampa",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Bandera_de_la_Provincia_de_La_Pampa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bandera_de_la_Provincia_de_La_Pampa.svg//128px-Bandera_de_la_Provincia_de_La_Pampa.svg.png"
             },
             "AR-M": {
                 "name": "Mendoza Province",
                 "nativeName": "Mendoza",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg//128px-Bandera_de_la_Provincia_de_Mendoza.svg.png"
             },
             "AR-N": {
                 "name": "Misiones Province",
@@ -254,7 +254,7 @@
             "BY-HO": {
                 "name": "Homyel Region",
                 "nativeName": "Гомельская вобласць",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Homyel_Voblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Homyel_Voblast.svg//128px-Flag_of_Homyel_Voblast.svg.png"
             }
         }
     },
@@ -855,7 +855,7 @@
             "CO-CUN": {
                 "name": "Cundinamarca",
                 "nativeName": "Cundinamarca",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Cundinamarca.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Cundinamarca.svg//128px-Flag_of_Cundinamarca.svg.png"
             },
             "CO-GUA": {
                 "name": "Guainía",
@@ -865,7 +865,7 @@
             "CO-GUV": {
                 "name": "Guaviare",
                 "nativeName": "Guaviare",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Guaviare.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Guaviare.svg//128px-Flag_of_Guaviare.svg.png"
             },
             "CO-HUI": {
                 "name": "Huila",
@@ -925,7 +925,7 @@
             "CO-SUC": {
                 "name": "Sucre",
                 "nativeName": "Sucre",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Sucre_(Colombia).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Flag_of_Sucre_(Colombia).svg//128px-Flag_of_Sucre_(Colombia).svg.png"
             },
             "CO-TOL": {
                 "name": "Tolima",
@@ -951,7 +951,6 @@
     },
     "CZ": {
         "name": "Czech Republic",
-        "nativeName": "Česko",
         "regions": {
             "CZ-53": {
                 "name": "Pardubice",
@@ -976,32 +975,32 @@
             "CZ-31": {
                 "name": "South Bohemia",
                 "nativeName": "Jihočeský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_South_Bohemian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_South_Bohemian_Region.svg//128px-Flag_of_South_Bohemian_Region.svg.png"
             },
             "CZ-64": {
                 "name": "South Moravia",
                 "nativeName": "Jihomoravský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_South_Moravian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_South_Moravian_Region.svg//128px-Flag_of_South_Moravian_Region.svg.png"
             },
             "CZ-41": {
                 "name": "Karlovy Vary",
                 "nativeName": "Karlovarský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Karlovy_Vary_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Karlovy_Vary_Region.svg//128px-Flag_of_Karlovy_Vary_Region.svg.png"
             },
             "CZ-52": {
                 "name": "Hradec Králové",
                 "nativeName": "Královéhradecký kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Hradec_Kralove_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Hradec_Kralove_Region.svg//128px-Flag_of_Hradec_Kralove_Region.svg.png"
             },
             "CZ-51": {
                 "name": "Liberec",
                 "nativeName": "Liberecký kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Liberec_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Liberec_Region.svg//128px-Flag_of_Liberec_Region.svg.png"
             },
             "CZ-80": {
                 "name": "Moravia-Silesia",
                 "nativeName": "Moravskoslezský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Moravian-Silesian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Moravian-Silesian_Region.svg//128px-Flag_of_Moravian-Silesian_Region.svg.png"
             },
             "CZ-71": {
                 "name": "Olomouc",
@@ -1011,19 +1010,20 @@
             "CZ-32": {
                 "name": "Plzeň",
                 "nativeName": "Plzeňský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Plzen_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Plzen_Region.svg//128px-Flag_of_Plzen_Region.svg.png"
             },
             "CZ-20": {
                 "name": "Central Bohemia",
                 "nativeName": "Středočeský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Central_Bohemian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Central_Bohemian_Region.svg//128px-Flag_of_Central_Bohemian_Region.svg.png"
             },
             "CZ-42": {
                 "name": "Ústí nad Labem",
                 "nativeName": "Ústecký kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Usti_nad_Labem_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_Usti_nad_Labem_Region.svg//128px-Flag_of_Usti_nad_Labem_Region.svg.png"
             }
-        }
+        },
+        "nativeName": "Česko"
     },
     "FI": {
         "name": "Finland",
@@ -1566,22 +1566,22 @@
             "ID-PT": {
                 "name": "Central Papua",
                 "nativeName": "Papua Tengah",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Central_Papua_Province.svg/128px-Flag_of_Central_Papua_Province.svg.png"
             },
             "ID-MA": {
                 "name": "Maluku Islands",
                 "nativeName": "Maluku",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_Maluku.svg/128px-Flag_of_Maluku.svg.png"
             },
             "ID-PS": {
                 "name": "South Papua",
                 "nativeName": "Papua Selatan",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_South_Papua_Province.svg/128px-Flag_of_South_Papua_Province.svg.png"
             },
             "ID-PSW": {
                 "name": "Southwest Papua",
                 "nativeName": "Papua Barat Daya",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Southwest_Papua.svg/128px-Flag_of_Southwest_Papua.svg.png"
             }
         }
     },
@@ -2207,7 +2207,7 @@
             "MX-CMX": {
                 "name": "Mexico",
                 "nativeName": "Ciudad de México",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Mexico_City,_Mexico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Coat_of_arms_of_Mexico_City,_Mexico.svg//128px-Coat_of_arms_of_Mexico_City,_Mexico.svg.png"
             },
             "MX-MIC": {
                 "name": "Michoacán",
@@ -2297,7 +2297,7 @@
             "MX-MEX": {
                 "name": "State of Mexico",
                 "nativeName": "Estado de México",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_the_State_of_Mexico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_the_State_of_Mexico.svg//128px-Flag_of_the_State_of_Mexico.svg.png"
             }
         }
     },
@@ -3496,12 +3496,12 @@
             "ES-CB": {
                 "name": "Cantabria",
                 "nativeName": "Cantabria",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_(Official).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Cantabria_(Official).svg//128px-Flag_of_Cantabria_(Official).svg.png"
             },
             "ES-RI": {
                 "name": "La Rioja",
                 "nativeName": "La Rioja",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg//128px-Flag_of_La_Rioja_(with_coat_of_arms).svg.png"
             }
         }
     },
@@ -4613,7 +4613,7 @@
             "TW-KHH": {
                 "name": "Kaohsiung",
                 "nativeName": "高雄市",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Kaohsiung_City.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_Kaohsiung_City.svg//128px-Flag_of_Kaohsiung_City.svg.png"
             },
             "TW-KEE": {
                 "name": "Keelung",
@@ -4638,7 +4638,7 @@
             "TW-NAN": {
                 "name": "Nantou County",
                 "nativeName": "南投縣",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Nantou_County.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Nantou_County.svg//128px-Flag_of_Nantou_County.svg.png"
             },
             "TW-NWT": {
                 "name": "New Taipei",

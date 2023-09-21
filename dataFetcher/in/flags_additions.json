@@ -8,7 +8,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bandera_de_la_Provincia_de_Buenos_Aires.svg"
             },
             "AR-D": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg//128px-Bandera_de_la_Provincia_de_San_Luis.svg.png"
             },
             "AR-F": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bandera_de_la_Provincia_de_La_Rioja.svg"
@@ -26,10 +26,10 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bandera_de_la_Provincia_de_Catamarca.svg"
             },
             "AR-L": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Bandera_de_la_Provincia_de_La_Pampa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bandera_de_la_Provincia_de_La_Pampa.svg//128px-Bandera_de_la_Provincia_de_La_Pampa.svg.png"
             },
             "AR-M": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg//128px-Bandera_de_la_Provincia_de_Mendoza.svg.png"
             },
             "AR-N": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Misiones.svg"
@@ -41,13 +41,13 @@
                 "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Santa_Fe.svg"
             },
             "AR-T": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Tucum%C3%A1n.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Tucumán.svg"
             },
             "AR-W": {
                 "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Corrientes.svg"
             },
             "AR-X": {
-                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_C%C3%B3rdoba_2014.svg"
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Córdoba_2014.svg"
             },
             "AR-Y": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bandera_de_la_Provincia_de_Jujuy.svg"
@@ -58,17 +58,17 @@
         "regions": {
             "BY-HO": {
                 "nativeName": "Гомельская вобласць",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Homyel_Voblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Homyel_Voblast.svg//128px-Flag_of_Homyel_Voblast.svg.png"
             }
         }
     },
     "CL": {
         "regions": {
             "CL-AP": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Arica_y_Parinacota%2C_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Arica_y_Parinacota,_Chile.svg"
             },
             "CL-MA": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes%2C_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes,_Chile.svg"
             }
         }
     },
@@ -257,11 +257,11 @@
             },
             "BE-VLI": {
                 "nativeName": "Limburg",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Limburg_%28Belgium%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Limburg_(Belgium).svg"
             },
             "BE-WLG": {
                 "nativeName": "Liège",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Province_of_Li%C3%A8ge.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Province_of_Liège.svg"
             },
             "BE-WLX": {
                 "nativeName": "Luxembourg",
@@ -287,7 +287,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Bogotá.svg"
             },
             "CO-AMA": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Amazonas_%28Colombia%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Amazonas_(Colombia).svg"
             },
             "CO-ANT": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Flag_of_Antioquia_Department.svg"
@@ -296,19 +296,19 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Arauca.svg"
             },
             "CO-ATL": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Atl%C3%A1ntico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Atlántico.svg"
             },
             "CO-BOL": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Bol%C3%ADvar_%28Colombia%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Bolívar_(Colombia).svg"
             },
             "CO-BOY": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Boyac%C3%A1_Department.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Boyacá_Department.svg"
             },
             "CO-CAL": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_Caldas.svg"
             },
             "CO-CAQ": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_Caquet%C3%A1.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_Caquetá.svg"
             },
             "CO-CAS": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Casanare.svg"
@@ -320,19 +320,19 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Cesar.svg"
             },
             "CO-CHO": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Choc%C3%B3.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Chocó.svg"
             },
             "CO-COR": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_C%C3%B3rdoba.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Córdoba.svg"
             },
             "CO-CUN": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Cundinamarca.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Cundinamarca.svg//128px-Flag_of_Cundinamarca.svg.png"
             },
             "CO-GUA": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Guain%C3%ADa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Guainía.svg"
             },
             "CO-GUV": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Guaviare.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Guaviare.svg//128px-Flag_of_Guaviare.svg.png"
             },
             "CO-HUI": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_Huila.svg"
@@ -347,7 +347,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_Meta.svg"
             },
             "CO-NAR": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Nari%C3%B1o.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Nariño.svg"
             },
             "CO-NSA": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Norte_de_Santander.svg"
@@ -356,7 +356,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_Putumayo.svg"
             },
             "CO-QUI": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Quind%C3%ADo.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Quindío.svg"
             },
             "CO-RIS": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Risaralda.svg"
@@ -365,10 +365,10 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Santander_Department.svg"
             },
             "CO-SAP": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_San_Andr%C3%A9s_y_Providencia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_San_Andrés_y_Providencia.svg"
             },
             "CO-SUC": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Sucre_%28Colombia%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Flag_of_Sucre_(Colombia).svg//128px-Flag_of_Sucre_(Colombia).svg.png"
             },
             "CO-TOL": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Tolima.svg"
@@ -377,7 +377,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Valle_del_Cauca.svg"
             },
             "CO-VAU": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Vaup%C3%A9s.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Vaupés.svg"
             },
             "CO-VID": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Vichada.svg"
@@ -388,41 +388,41 @@
         "nativeName": "Česko",
         "regions": {
             "CZ-31": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_South_Bohemian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_South_Bohemian_Region.svg//128px-Flag_of_South_Bohemian_Region.svg.png"
             },
             "CZ-64": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_South_Moravian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_South_Moravian_Region.svg//128px-Flag_of_South_Moravian_Region.svg.png"
             },
             "CZ-41": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Karlovy_Vary_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Karlovy_Vary_Region.svg//128px-Flag_of_Karlovy_Vary_Region.svg.png"
             },
             "CZ-52": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Hradec_Kralove_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Hradec_Kralove_Region.svg//128px-Flag_of_Hradec_Kralove_Region.svg.png"
             },
             "CZ-51": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Liberec_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Liberec_Region.svg//128px-Flag_of_Liberec_Region.svg.png"
             },
             "CZ-80": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Moravian-Silesian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Moravian-Silesian_Region.svg//128px-Flag_of_Moravian-Silesian_Region.svg.png"
             },
             "CZ-71": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Olomouc_Region.svg"
             },
             "CZ-32": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Plzen_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Plzen_Region.svg//128px-Flag_of_Plzen_Region.svg.png"
             },
             "CZ-20": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Central_Bohemian_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Central_Bohemian_Region.svg//128px-Flag_of_Central_Bohemian_Region.svg.png"
             },
             "CZ-42": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Usti_nad_Labem_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_Usti_nad_Labem_Region.svg//128px-Flag_of_Usti_nad_Labem_Region.svg.png"
             }
         }
     },
     "DE": {
         "regions": {
             "DE-BY": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Bavaria_%28striped%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Bavaria_(striped).svg"
             }
         }
     },
@@ -433,10 +433,10 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
             },
             "ES-CB": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Cantabria_(Official).svg//128px-Flag_of_Cantabria_(Official).svg.png"
             },
             "ES-RI": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg//128px-Flag_of_La_Rioja_(with_coat_of_arms).svg.png"
             }
         }
     },
@@ -445,7 +445,7 @@
         "nativeName": "Suomi",
         "regions": {
             "FI-02": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Etel%C3%A4-Karjala.vaakuna.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Etelä-Karjala.vaakuna.svg"
             },
             "FI-09": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kymenlaakson_maakunnan_vaakuna.svg"
@@ -479,17 +479,17 @@
             "HU-BZ": {
                 "name": "Borsod-Abaúj-Zemplén",
                 "nativeName": "Borsod-Abaúj-Zemplén vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FLAG-Borsod-Aba%C3%BAj-Zempl%C3%A9n-megye.svg/128px-FLAG-Borsod-Aba%C3%BAj-Zempl%C3%A9n-megye.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FLAG-Borsod-Abaúj-Zemplén-megye.svg/128px-FLAG-Borsod-Abaúj-Zemplén-megye.svg.png"
             },
             "HU-BK": {
                 "name": "Bács-Kiskun",
                 "nativeName": "Bács-Kiskun vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_B%C3%A1cs-Kiskun_County.svg/128px-Flag_of_B%C3%A1cs-Kiskun_County.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Bács-Kiskun_County.svg/128px-Flag_of_Bács-Kiskun_County.svg.png"
             },
             "HU-BE": {
                 "name": "Békés",
                 "nativeName": "Békés vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FLAG-B%C3%A9k%C3%A9s-megye.svg/128px-FLAG-B%C3%A9k%C3%A9s-megye.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FLAG-Békés-megye.svg/128px-FLAG-Békés-megye.svg.png"
             },
             "HU-CS": {
                 "name": "Csongrád-Csanád",
@@ -499,7 +499,7 @@
             "HU-FE": {
                 "name": "Fejér",
                 "nativeName": "Fejér vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/FLAG-Fej%C3%A9r-megye.svg/128px-FLAG-Fej%C3%A9r-megye.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/FLAG-Fejér-megye.svg/128px-FLAG-Fejér-megye.svg.png"
             },
             "HU-GS": {
                 "name": "Győr-Moson-Sopron",
@@ -509,7 +509,7 @@
             "HU-HB": {
                 "name": "Hajdú-Bihar",
                 "nativeName": "Hajdú-Bihar vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/FLAG-Hajd%C3%BA-Bihar-megye.svg/128px-FLAG-Hajd%C3%BA-Bihar-megye.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/FLAG-Hajdú-Bihar-megye.svg/128px-FLAG-Hajdú-Bihar-megye.svg.png"
             },
             "HU-HE": {
                 "name": "Heves",
@@ -524,7 +524,7 @@
             "HU-KE": {
                 "name": "Komárom-Esztergom",
                 "nativeName": "Komárom-Esztergom vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/FLAG-Kom%C3%A1rom-Esztergom-megye.svg/128px-FLAG-Kom%C3%A1rom-Esztergom-megye.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/FLAG-Komárom-Esztergom-megye.svg/128px-FLAG-Komárom-Esztergom-megye.svg.png"
             },
             "HU-NO": {
                 "name": "Nógrád",
@@ -559,12 +559,30 @@
             "HU-VE": {
                 "name": "Veszprém",
                 "nativeName": "Veszprém vármegye",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FLAG-Veszpr%C3%A9m-megye.svg/128px-FLAG-Veszpr%C3%A9m-megye.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FLAG-Veszprém-megye.svg/128px-FLAG-Veszprém-megye.svg.png"
             },
             "HU-ZA": {
                 "name": "Zala",
                 "nativeName": "Zala vármegye",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/FLAG-Zala-megye.svg/128px-FLAG-Zala-megye.svg.png"
+            }
+        }
+    },
+    "ID": {
+        "name": "Indonesia",
+        "nativeName": "Indonesia",
+        "regions": {
+            "ID-PT": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Central_Papua_Province.svg/128px-Flag_of_Central_Papua_Province.svg.png"
+            },
+            "ID-MA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_Maluku.svg/128px-Flag_of_Maluku.svg.png"
+            },
+            "ID-PS": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_South_Papua_Province.svg/128px-Flag_of_South_Papua_Province.svg.png"
+            },
+            "ID-PSW": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Southwest_Papua.svg/128px-Flag_of_Southwest_Papua.svg.png"
             }
         }
     },
@@ -575,12 +593,12 @@
             "MX-CMX": {
                 "name": "Mexico",
                 "nativeName": "Ciudad de México",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Mexico_City%2C_Mexico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Coat_of_arms_of_Mexico_City,_Mexico.svg//128px-Coat_of_arms_of_Mexico_City,_Mexico.svg.png"
             },
             "MX-MEX": {
                 "name": "State of Mexico",
                 "nativeName": "Estado de México",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_the_State_of_Mexico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_the_State_of_Mexico.svg//128px-Flag_of_the_State_of_Mexico.svg.png"
             }
         }
     },
@@ -590,7 +608,7 @@
         "regions": {
             "PE-CUS": {
                 "nativeName": "Cuzco",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_%282021%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_(2021).svg"
             }
         }
     },
@@ -639,23 +657,23 @@
         "regions": {
             "SG-01": {
                 "nativeName": "Central Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region%2C_Singapore.png"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region,_Singapore.png"
             },
             "SG-02": {
                 "nativeName": "Northeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region%2C_Singapore.png"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region,_Singapore.png"
             },
             "SG-03": {
                 "nativeName": "Northwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region%2C_Singapore.png"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region,_Singapore.png"
             },
             "SG-04": {
                 "nativeName": "Southeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region%2C_Singapore.png"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region,_Singapore.png"
             },
             "SG-05": {
                 "nativeName": "Southwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region%2C_Singapore.png"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region,_Singapore.png"
             }
         }
     },
@@ -681,7 +699,7 @@
             "TW-HSQ": {
                 "name": "Hsinchu County",
                 "nativeName": "新竹縣",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Hsinchu_County_%28since_2019%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Hsinchu_County_(since_2019).svg"
             },
             "TW-HSZ": {
                 "name": "Hsinchu",
@@ -696,7 +714,7 @@
             "TW-KHH": {
                 "name": "Kaohsiung",
                 "nativeName": "高雄市",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Kaohsiung_City.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_Kaohsiung_City.svg//128px-Flag_of_Kaohsiung_City.svg.png"
             },
             "TW-KEE": {
                 "name": "Keelung",
@@ -721,7 +739,7 @@
             "TW-NAN": {
                 "name": "Nantou County",
                 "nativeName": "南投縣",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Nantou_County.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Nantou_County.svg//128px-Flag_of_Nantou_County.svg.png"
             },
             "TW-NWT": {
                 "name": "New Taipei",
@@ -756,7 +774,7 @@
             "TW-TTT": {
                 "name": "Taitung County",
                 "nativeName": "臺東縣",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Taitung_County_%28before_2015%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Taitung_County_(before_2015).svg"
             },
             "TW-TAO": {
                 "name": "Taoyuan City",
@@ -787,55 +805,55 @@
         "regions": {
             "VN-44": {
                 "nativeName": "Tỉnh An Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/d/da/Logo_t%E1%BB%89nh_An_Giang.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/d/da/Logo_tỉnh_An_Giang.png"
             },
             "VN-43": {
                 "nativeName": "Tỉnh Bà Rịa - Vũng Tàu",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/6/65/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%A0_R%E1%BB%8Ba_%E2%80%93_V%C5%A9ng_T%C3%A0u.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/6/65/Biểu_trưng_tỉnh_Bà_Rịa_–_Vũng_Tàu.png"
             },
             "VN-57": {
                 "nativeName": "Tỉnh Bình Dương",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/ca/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%ACnh_D%C6%B0%C6%A1ng.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%ACnh_D%C6%B0%C6%A1ng.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/ca/Biểu_trưng_tỉnh_Bình_Dương.svg/800px-Biểu_trưng_tỉnh_Bình_Dương.svg.png"
             },
             "VN-58": {
                 "nativeName": "Tỉnh Bình Phước",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/b/bd/Logo_t%E1%BB%89nh_B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc_%28m%E1%BB%9Bi%29.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/b/bd/Logo_tỉnh_Bình_Phước_(mới).png"
             },
             "VN-40": {
                 "nativeName": "Tỉnh Bình Thuận",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/a0/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%ACnh_Thu%E1%BA%ADn.svg/225px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%ACnh_Thu%E1%BA%ADn.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/a0/Biểu_trưng_tỉnh_Bình_Thuận.svg/225px-Biểu_trưng_tỉnh_Bình_Thuận.svg.png"
             },
             "VN-31": {
                 "nativeName": "Tỉnh Bình Định",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/9/99/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%ACnh_%C4%90%E1%BB%8Bnh.svg/225px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%C3%ACnh_%C4%90%E1%BB%8Bnh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/9/99/Biểu_trưng_tỉnh_Bình_Định.svg/225px-Biểu_trưng_tỉnh_Bình_Định.svg.png"
             },
             "VN-55": {
                 "nativeName": "Tỉnh Bạc Liêu",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/79/Logo_t%E1%BB%89nh_B%E1%BA%A1c_Li%C3%AAu.svg/800px-Logo_t%E1%BB%89nh_B%E1%BA%A1c_Li%C3%AAu.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/79/Logo_tỉnh_Bạc_Liêu.svg/800px-Logo_tỉnh_Bạc_Liêu.svg.png"
             },
             "VN-54": {
                 "nativeName": "Tỉnh Bắc Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/d/d2/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%AFc_Giang.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%AFc_Giang.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/d/d2/Biểu_trưng_tỉnh_Bắc_Giang.svg/800px-Biểu_trưng_tỉnh_Bắc_Giang.svg.png"
             },
             "VN-53": {
                 "nativeName": "Tỉnh Bắc Kạn",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/64/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%AFc_K%E1%BA%A1n.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%AFc_K%E1%BA%A1n.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/64/Biểu_trưng_tỉnh_Bắc_Kạn.svg/800px-Biểu_trưng_tỉnh_Bắc_Kạn.svg.png"
             },
             "VN-56": {
                 "nativeName": "Tỉnh Bắc Ninh",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2b/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%AFc_Ninh.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%AFc_Ninh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2b/Biểu_trưng_tỉnh_Bắc_Ninh.svg/800px-Biểu_trưng_tỉnh_Bắc_Ninh.svg.png"
             },
             "VN-50": {
                 "nativeName": "Tỉnh Bến Tre",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/0/0d/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%BFn_Tre.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_B%E1%BA%BFn_Tre.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/0/0d/Biểu_trưng_tỉnh_Bến_Tre.svg/800px-Biểu_trưng_tỉnh_Bến_Tre.svg.png"
             },
             "VN-04": {
                 "nativeName": "Tỉnh Cao Bằng",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/1/17/Logo_t%E1%BB%89nh_Cao_B%E1%BA%B1ng.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/1/17/Logo_tỉnh_Cao_Bằng.png"
             },
             "VN-59": {
                 "nativeName": "Tỉnh Cà Mau",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/9/96/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_C%C3%A0_Mau.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_C%C3%A0_Mau.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/9/96/Biểu_trưng_tỉnh_Cà_Mau.svg/800px-Biểu_trưng_tỉnh_Cà_Mau.svg.png"
             },
             "VN-CT": {
                 "nativeName": "Thành phố Cần Thơ",
@@ -843,19 +861,19 @@
             },
             "VN-30": {
                 "nativeName": "Tỉnh Gia Lai",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Logo_t%E1%BB%89nh_Gia_Lai.svg/800px-Logo_t%E1%BB%89nh_Gia_Lai.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Logo_tỉnh_Gia_Lai.svg/800px-Logo_tỉnh_Gia_Lai.svg.png"
             },
             "VN-14": {
                 "nativeName": "Tỉnh Hòa Bình",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/f/f6/Logo_t%E1%BB%89nh_Ho%C3%A0_B%C3%ACnh.svg/800px-Logo_t%E1%BB%89nh_Ho%C3%A0_B%C3%ACnh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/f/f6/Logo_tỉnh_Hoà_Bình.svg/800px-Logo_tỉnh_Hoà_Bình.svg.png"
             },
             "VN-03": {
                 "nativeName": "Tỉnh Hà Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/2/22/Logo_Du_l%E1%BB%8Bch_H%C3%A0_Giang.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/2/22/Logo_Du_lịch_Hà_Giang.png"
             },
             "VN-63": {
                 "nativeName": "Tỉnh Hà Nam",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/a5/Logo_t%E1%BB%89nh_H%C3%A0_Nam.svg/800px-Logo_t%E1%BB%89nh_H%C3%A0_Nam.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/a5/Logo_tỉnh_Hà_Nam.svg/800px-Logo_tỉnh_Hà_Nam.svg.png"
             },
             "VN-HN": {
                 "nativeName": "Thành phố Hà Nội",
@@ -863,15 +881,15 @@
             },
             "VN-23": {
                 "nativeName": "Tỉnh Hà Tĩnh",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/9/96/Logo_t%E1%BB%89nh_H%C3%A0_T%C4%A9nh.svg/800px-Logo_t%E1%BB%89nh_H%C3%A0_T%C4%A9nh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/9/96/Logo_tỉnh_Hà_Tĩnh.svg/800px-Logo_tỉnh_Hà_Tĩnh.svg.png"
             },
             "VN-66": {
                 "nativeName": "Tỉnh Hưng Yên",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/72/Logo_H%C6%B0ng_Y%C3%AAn.svg/800px-Logo_H%C6%B0ng_Y%C3%AAn.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/72/Logo_Hưng_Yên.svg/800px-Logo_Hưng_Yên.svg.png"
             },
             "VN-61": {
                 "nativeName": "Tỉnh Hải Dương",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/77/Logo_t%E1%BB%89nh_H%E1%BA%A3i_D%C6%B0%C6%A1ng.svg/1024px-Logo_t%E1%BB%89nh_H%E1%BA%A3i_D%C6%B0%C6%A1ng.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/77/Logo_tỉnh_Hải_Dương.svg/1024px-Logo_tỉnh_Hải_Dương.svg.png"
             },
             "VN-HP": {
                 "nativeName": "Thành phố Hải Phòng",
@@ -879,11 +897,11 @@
             },
             "VN-73": {
                 "nativeName": "Tỉnh Hậu Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/9/94/Logo_t%E1%BB%89nh_H%E1%BA%ADu_Giang.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/9/94/Logo_tỉnh_Hậu_Giang.png"
             },
             "VN-SG": {
                 "nativeName": "Thành phố Hồ Chí Minh",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/1/12/Bi%E1%BB%83u_tr%C6%B0ng_c%E1%BB%A7a_TP_HCM.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_c%E1%BB%A7a_TP_HCM.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/1/12/Biểu_trưng_của_TP_HCM.svg/800px-Biểu_trưng_của_TP_HCM.svg.png"
             },
             "VN-34": {
                 "nativeName": "Tỉnh Khánh Hòa",
@@ -891,15 +909,15 @@
             },
             "VN-47": {
                 "nativeName": "Tỉnh Kiên Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/c/c6/Logo_t%E1%BB%89nh_Ki%C3%AAn_Giang.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/c/c6/Logo_tỉnh_Kiên_Giang.png"
             },
             "VN-28": {
                 "nativeName": "Tỉnh Kon Tum",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4a/Logo_t%E1%BB%89nh_Kon_Tum.svG/800px-Logo_t%E1%BB%89nh_Kon_Tum.svG.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4a/Logo_tỉnh_Kon_Tum.svG/800px-Logo_tỉnh_Kon_Tum.svG.png"
             },
             "VN-01": {
                 "nativeName": "Tỉnh Lai Châu",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/0/0e/Logo_t%E1%BB%89nh_Lai_Ch%C3%A2u.png/225px-Logo_t%E1%BB%89nh_Lai_Ch%C3%A2u.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/0/0e/Logo_tỉnh_Lai_Châu.png/225px-Logo_tỉnh_Lai_Châu.png"
             },
             "VN-41": {
                 "nativeName": "Tỉnh Long An",
@@ -907,43 +925,43 @@
             },
             "VN-02": {
                 "nativeName": "Tỉnh Lào Cai",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/3/3d/Logo_t%E1%BB%89nh_L%C3%A0o_Cai.svg/800px-Logo_t%E1%BB%89nh_L%C3%A0o_Cai.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/3/3d/Logo_tỉnh_Lào_Cai.svg/800px-Logo_tỉnh_Lào_Cai.svg.png"
             },
             "VN-35": {
                 "nativeName": "Tỉnh Lâm Đồng",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/3/32/Logo_t%E1%BB%89nh_L%C3%A2m_%C4%90%E1%BB%93ng_%28kh%C3%B4ng_ch%C3%ADnh_th%E1%BB%A9c%29.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/3/32/Logo_tỉnh_Lâm_Đồng_(không_chính_thức).png"
             },
             "VN-09": {
                 "nativeName": "Tỉnh Lạng Sơn",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/6/65/Logo_t%E1%BB%89nh_L%E1%BA%A1ng_S%C6%A1n.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/6/65/Logo_tỉnh_Lạng_Sơn.png"
             },
             "VN-67": {
                 "nativeName": "Tỉnh Nam Định",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/f/ff/Logo_t%E1%BB%89nh_Nam_%C4%90%E1%BB%8Bnh.svg/800px-Logo_t%E1%BB%89nh_Nam_%C4%90%E1%BB%8Bnh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/f/ff/Logo_tỉnh_Nam_Định.svg/800px-Logo_tỉnh_Nam_Định.svg.png"
             },
             "VN-22": {
                 "nativeName": "Tỉnh Nghệ An",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/8/8c/Logo_t%E1%BB%89nh_Ngh%E1%BB%87_An.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/8/8c/Logo_tỉnh_Nghệ_An.png"
             },
             "VN-18": {
                 "nativeName": "Tỉnh Ninh Bình",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/cc/Logo_t%E1%BB%89nh_Ninh_B%C3%ACnh.svg/800px-Logo_t%E1%BB%89nh_Ninh_B%C3%ACnh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/cc/Logo_tỉnh_Ninh_Bình.svg/800px-Logo_tỉnh_Ninh_Bình.svg.png"
             },
             "VN-36": {
                 "nativeName": "Tỉnh Ninh Thuận",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/41/Logo_t%E1%BB%89nh_Ninh_Thu%E1%BA%ADn.svg/800px-Logo_t%E1%BB%89nh_Ninh_Thu%E1%BA%ADn.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/41/Logo_tỉnh_Ninh_Thuận.svg/800px-Logo_tỉnh_Ninh_Thuận.svg.png"
             },
             "VN-68": {
                 "nativeName": "Tỉnh Phú Thọ",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/5f/Logo_t%E1%BB%89nh_Ph%C3%BA_Th%E1%BB%8D.svg/800px-Logo_t%E1%BB%89nh_Ph%C3%BA_Th%E1%BB%8D.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/5f/Logo_tỉnh_Phú_Thọ.svg/800px-Logo_tỉnh_Phú_Thọ.svg.png"
             },
             "VN-32": {
                 "nativeName": "Tỉnh Phú Yên",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/65/Logo_t%E1%BB%89nh_Ph%C3%BA_Y%C3%AAn.svg/800px-Logo_t%E1%BB%89nh_Ph%C3%BA_Y%C3%AAn.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/65/Logo_tỉnh_Phú_Yên.svg/800px-Logo_tỉnh_Phú_Yên.svg.png"
             },
             "VN-24": {
                 "nativeName": "Tỉnh Quảng Bình",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/d/d7/Logo_t%E1%BB%89nh_Qu%E1%BA%A3ng_B%C3%ACnh_%28kh%C3%B4ng_ch%C3%ADnh_th%E1%BB%A9c%29.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/d/d7/Logo_tỉnh_Quảng_Bình_(không_chính_thức).png"
             },
             "VN-27": {
                 "nativeName": "Tỉnh Quảng Nam",
@@ -955,23 +973,23 @@
             },
             "VN-13": {
                 "nativeName": "Tỉnh Quảng Ninh",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/c/c2/Logo_t%E1%BB%89nh_Qu%E1%BA%A3ng_Ninh_%28kh%C3%B4ng_ch%C3%ADnh_th%E1%BB%A9c%29.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/c/c2/Logo_tỉnh_Quảng_Ninh_(không_chính_thức).png"
             },
             "VN-25": {
                 "nativeName": "Tỉnh Quảng Trị",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/af/Logo_t%E1%BB%89nh_Qu%E1%BA%A3ng_Tr%E1%BB%8B.svg/800px-Logo_t%E1%BB%89nh_Qu%E1%BA%A3ng_Tr%E1%BB%8B.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/af/Logo_tỉnh_Quảng_Trị.svg/800px-Logo_tỉnh_Quảng_Trị.svg.png"
             },
             "VN-52": {
                 "nativeName": "Tỉnh Sóc Trăng",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/af/Logo_t%E1%BB%89nh_S%C3%B3c_Tr%C4%83ng.svg/800px-Logo_t%E1%BB%89nh_S%C3%B3c_Tr%C4%83ng.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/a/af/Logo_tỉnh_Sóc_Trăng.svg/800px-Logo_tỉnh_Sóc_Trăng.svg.png"
             },
             "VN-05": {
                 "nativeName": "Tỉnh Sơn La",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/b/bf/Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_S%C6%A1n_La.svg/800px-Bi%E1%BB%83u_tr%C6%B0ng_t%E1%BB%89nh_S%C6%A1n_La.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/b/bf/Biểu_trưng_tỉnh_Sơn_La.svg/800px-Biểu_trưng_tỉnh_Sơn_La.svg.png"
             },
             "VN-21": {
                 "nativeName": "Tỉnh Thanh Hóa",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_t%E1%BB%89nh_Thanh_H%C3%B3a.svg/800px-Logo_t%E1%BB%89nh_Thanh_H%C3%B3a.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_tỉnh_Thanh_Hóa.svg/800px-Logo_tỉnh_Thanh_Hóa.svg.png"
             },
             "VN-20": {
                 "nativeName": "Tỉnh Thái Bình",
@@ -979,43 +997,43 @@
             },
             "VN-69": {
                 "nativeName": "Tỉnh Thái Nguyên",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/c7/Logo_t%E1%BB%89nh_Th%C3%A1i_Nguy%C3%AAn.svg/800px-Logo_t%E1%BB%89nh_Th%C3%A1i_Nguy%C3%AAn.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/c7/Logo_tỉnh_Thái_Nguyên.svg/800px-Logo_tỉnh_Thái_Nguyên.svg.png"
             },
             "VN-26": {
                 "nativeName": "Tỉnh Thừa Thiên Huế",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2a/Logo_th%C3%A0nh_ph%E1%BB%91_Hu%E1%BA%BF.svg/800px-Logo_th%C3%A0nh_ph%E1%BB%91_Hu%E1%BA%BF.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2a/Logo_thành_phố_Huế.svg/800px-Logo_thành_phố_Huế.svg.png"
             },
             "VN-46": {
                 "nativeName": "Tỉnh Tiền Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4e/Logo_t%E1%BB%89nh_Ti%E1%BB%81n_Giang.svg/800px-Logo_t%E1%BB%89nh_Ti%E1%BB%81n_Giang.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4e/Logo_tỉnh_Tiền_Giang.svg/800px-Logo_tỉnh_Tiền_Giang.svg.png"
             },
             "VN-51": {
                 "nativeName": "Tỉnh Trà Vinh",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_t%E1%BB%89nh_Tr%C3%A0_Vinh.svg/800px-Logo_t%E1%BB%89nh_Tr%C3%A0_Vinh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_tỉnh_Trà_Vinh.svg/800px-Logo_tỉnh_Trà_Vinh.svg.png"
             },
             "VN-07": {
                 "nativeName": "Tỉnh Tuyên Quang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/3/32/Logo_t%E1%BB%89nh_Tuy%C3%AAn_Quang.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/3/32/Logo_tỉnh_Tuyên_Quang.png"
             },
             "VN-37": {
                 "nativeName": "Tỉnh Tây Ninh",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/3/35/Logo_t%E1%BB%89nh_T%C3%A2y_Ninh.svg/800px-Logo_t%E1%BB%89nh_T%C3%A2y_Ninh.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/3/35/Logo_tỉnh_Tây_Ninh.svg/800px-Logo_tỉnh_Tây_Ninh.svg.png"
             },
             "VN-49": {
                 "nativeName": "Tỉnh Vĩnh Long",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/7d/Logo_t%E1%BB%89nh_V%C4%A9nh_Long.svg/800px-Logo_t%E1%BB%89nh_V%C4%A9nh_Long.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/7d/Logo_tỉnh_Vĩnh_Long.svg/800px-Logo_tỉnh_Vĩnh_Long.svg.png"
             },
             "VN-70": {
                 "nativeName": "Tỉnh Vĩnh Phúc",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/b/bd/Logo_t%E1%BB%89nh_V%C4%A9nh_Ph%C3%BAc.svg/800px-Logo_t%E1%BB%89nh_V%C4%A9nh_Ph%C3%BAc.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/b/bd/Logo_tỉnh_Vĩnh_Phúc.svg/800px-Logo_tỉnh_Vĩnh_Phúc.svg.png"
             },
             "VN-06": {
                 "nativeName": "Tỉnh Yên Bái",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_t%E1%BB%89nh_Y%C3%AAn_B%C3%A1i.svg/800px-Logo_t%E1%BB%89nh_Y%C3%AAn_B%C3%A1i.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_tỉnh_Yên_Bái.svg/800px-Logo_tỉnh_Yên_Bái.svg.png"
             },
             "VN-71": {
                 "nativeName": "Tỉnh Điện Biên",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6f/Logo_t%E1%BB%89nh_%C4%90i%E1%BB%87n_Bi%C3%AAn.svg/800px-Logo_t%E1%BB%89nh_%C4%90i%E1%BB%87n_Bi%C3%AAn.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6f/Logo_tỉnh_Điện_Biên.svg/800px-Logo_tỉnh_Điện_Biên.svg.png"
             },
             "VN-DN": {
                 "nativeName": "Thành phố Đà Nẵng",
@@ -1023,11 +1041,11 @@
             },
             "VN-33": {
                 "nativeName": "Tỉnh Đăk Lăk",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2b/Logo_t%E1%BB%89nh_%C4%90%E1%BA%AFk_L%E1%BA%AFk.svg/800px-Logo_t%E1%BB%89nh_%C4%90%E1%BA%AFk_L%E1%BA%AFk.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2b/Logo_tỉnh_Đắk_Lắk.svg/800px-Logo_tỉnh_Đắk_Lắk.svg.png"
             },
             "VN-72": {
                 "nativeName": "Tỉnh Đăk Nông",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/27/Logo_t%E1%BB%89nh_%C4%90%E1%BA%AFk_N%C3%B4ng.svg/800px-Logo_t%E1%BB%89nh_%C4%90%E1%BA%AFk_N%C3%B4ng.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/27/Logo_tỉnh_Đắk_Nông.svg/800px-Logo_tỉnh_Đắk_Nông.svg.png"
             },
             "VN-39": {
                 "nativeName": "Tỉnh Đồng Nai",
@@ -1035,7 +1053,7 @@
             },
             "VN-45": {
                 "nativeName": "Tỉnh Đồng Tháp",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/71/Logo_t%E1%BB%89nh_%C4%90%E1%BB%93ng_Th%C3%A1p.svg/800px-Logo_t%E1%BB%89nh_%C4%90%E1%BB%93ng_Th%C3%A1p.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/vi/thumb/7/71/Logo_tỉnh_Đồng_Tháp.svg/800px-Logo_tỉnh_Đồng_Tháp.svg.png"
             }
         }
     }
