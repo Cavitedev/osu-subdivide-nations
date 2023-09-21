@@ -463,6 +463,122 @@
             }
         }
     },
+    "TW": {
+        "name": "Taiwan",
+        "nativeName": "台灣",
+        "regions": {
+            "TW-CHA": {
+                "name": "Changhua County",
+                "nativeName": "彰化縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_Changhua_County.svg"
+            },
+            "TW-CYQ": {
+                "name": "Chiayi County",
+                "nativeName": "嘉義縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Chiayi_County.svg"
+            },
+            "TW-CYI": {
+                "name": "Chiayi",
+                "nativeName": "嘉義市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Chiayi_City.svg"
+            },
+            "TW-HSQ": {
+                "name": "Hsinchu County",
+                "nativeName": "新竹縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Hsinchu_County_%28since_2019%29.svg"
+            },
+            "TW-HSZ": {
+                "name": "Hsinchu",
+                "nativeName": "新竹市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Hsinchu_City.svg"
+            },
+            "TW-HUA": {
+                "name": "Hualien County",
+                "nativeName": "花蓮縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flag_of_Hualien_County.svg"
+            },
+            "TW-KHH": {
+                "name": "Kaohsiung",
+                "nativeName": "高雄市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Kaohsiung_City.svg"
+            },
+            "TW-KEE": {
+                "name": "Keelung",
+                "nativeName": "基隆市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Flag_of_Keelung_City.svg"
+            },
+            "TW-KIN": {
+                "name": "Kinmen",
+                "nativeName": "金門縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Kinmen_County.svg"
+            },
+            "TW-LIE": {
+                "name": "Lienchiang County",
+                "nativeName": "連江縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Lienchiang_County.svg"
+            },
+            "TW-MIA": {
+                "name": "Miaoli County",
+                "nativeName": "苗栗縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_Miaoli_County.svg"
+            },
+            "TW-NAN": {
+                "name": "Nantou County",
+                "nativeName": "南投縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Nantou_County.svg"
+            },
+            "TW-NWT": {
+                "name": "New Taipei",
+                "nativeName": "新北市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_New_Taipei_City.svg"
+            },
+            "TW-PEN": {
+                "name": "Penghu",
+                "nativeName": "澎湖縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Penghu_County.svg"
+            },
+            "TW-PIF": {
+                "name": "Pingtung County",
+                "nativeName": "屏東縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Flag_of_Pingtung_County.svg"
+            },
+            "TW-TXG": {
+                "name": "Taichung",
+                "nativeName": "臺中市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Taichung_City.svg"
+            },
+            "TW-TNN": {
+                "name": "Tainan",
+                "nativeName": "臺南市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Tainan_City.svg"
+            },
+            "TW-TPE": {
+                "name": "Taipei",
+                "nativeName": "臺北市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Taipei_City.svg"
+            },
+            "TW-TTT": {
+                "name": "Taitung County",
+                "nativeName": "臺東縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Taitung_County_%28before_2015%29.svg"
+            },
+            "TW-TAO": {
+                "name": "Taoyuan City",
+                "nativeName": "桃園市",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Taoyuan_City.svg"
+            },
+            "TW-ILA": {
+                "name": "Yilan County",
+                "nativeName": "宜蘭縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Yilan_County.svg"
+            },
+            "TW-YUN": {
+                "name": "Yunlin County",
+                "nativeName": "雲林縣",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Yunlin_County.svg"
+            }
+        }
+    },
     "US": {
         "regions": {
             "US-WADC": {
