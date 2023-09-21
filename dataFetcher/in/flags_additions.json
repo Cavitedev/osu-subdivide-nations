@@ -7,16 +7,164 @@
             }
         }
     },
-    "ES": {
+    "CN": {
+        "name": "China",
+        "nativeName": "中国",
         "regions": {
-            "ES-PM": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
+            "CN-AH": {
+                "name": "Anhui",
+                "nativeName": "安徽省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-AH.png"
             },
-            "ES-CB": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg"
+            "CN-BJ": {
+                "name": "Beijing",
+                "nativeName": "北京市",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-BJ.png"
             },
-            "ES-RI": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg"
+            "CN-CQ": {
+                "name": "Chongqing",
+                "nativeName": "重庆市",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-CQ.png"
+            },
+            "CN-FJ": {
+                "name": "Fujian",
+                "nativeName": "福建省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-FJ.png"
+            },
+            "CN-GS": {
+                "name": "Gansu",
+                "nativeName": "甘肃省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GS.png"
+            },
+            "CN-GD": {
+                "name": "Guangdong Province",
+                "nativeName": "广东省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GD.png"
+            },
+            "CN-GX": {
+                "name": "Guangxi",
+                "nativeName": "广西壮族自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GX.png"
+            },
+            "CN-GZ": {
+                "name": "Guizhou",
+                "nativeName": "贵州省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GZ.png"
+            },
+            "CN-HI": {
+                "name": "Hainan Province",
+                "nativeName": "海南省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HI.png"
+            },
+            "CN-HE": {
+                "name": "Hebei",
+                "nativeName": "河北省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HE.png"
+            },
+            "CN-HL": {
+                "name": "Heilongjiang",
+                "nativeName": "黑龙江省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HL.png"
+            },
+            "CN-HA": {
+                "name": "Henan",
+                "nativeName": "河南省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HA.png"
+            },
+            "CN-HB": {
+                "name": "Hubei",
+                "nativeName": "湖北省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HB.png"
+            },
+            "CN-HN": {
+                "name": "Hunan",
+                "nativeName": "湖南省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HN.png"
+            },
+            "CN-NM": {
+                "name": "Inner Mongolia",
+                "nativeName": "内蒙古自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-NM.png"
+            },
+            "CN-JS": {
+                "name": "Jiangsu",
+                "nativeName": "江苏省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-JS.png"
+            },
+            "CN-JX": {
+                "name": "Jiangxi",
+                "nativeName": "江西省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-JX.png"
+            },
+            "CN-JL": {
+                "name": "Jilin",
+                "nativeName": "吉林省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-JL.png"
+            },
+            "CN-LN": {
+                "name": "Liaoning",
+                "nativeName": "辽宁省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-LN.png"
+            },
+            "CN-NX": {
+                "name": "Ningxia",
+                "nativeName": "宁夏回族自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-NX.png"
+            },
+            "CN-QH": {
+                "name": "Qinghai",
+                "nativeName": "青海省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-QH.png"
+            },
+            "CN-SN": {
+                "name": "Shaanxi",
+                "nativeName": "陕西省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SN.png"
+            },
+            "CN-SD": {
+                "name": "Shandong",
+                "nativeName": "山东省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SD.png"
+            },
+            "CN-SH": {
+                "name": "Shanghai",
+                "nativeName": "上海市",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SH.png"
+            },
+            "CN-SX": {
+                "name": "Shanxi",
+                "nativeName": "山西省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SX.png"
+            },
+            "CN-SC": {
+                "name": "Sichuan",
+                "nativeName": "四川省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SC.png"
+            },
+            "CN-TJ": {
+                "name": "Tianjin",
+                "nativeName": "天津市",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-TJ.png"
+            },
+            "CN-XZ": {
+                "name": "Tibet",
+                "nativeName": "西藏自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-XZ.png"
+            },
+            "CN-XJ": {
+                "name": "Xinjiang",
+                "nativeName": "新疆维吾尔自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-XJ.png"
+            },
+            "CN-YN": {
+                "name": "Yunnan",
+                "nativeName": "云南省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-YN.png"
+            },
+            "CN-ZJ": {
+                "name": "Zhejiang",
+                "nativeName": "浙江省",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-ZJ.png"
             }
         }
     },
@@ -65,6 +213,61 @@
             "BE-VWV": {
                 "nativeName": "West-Vlaanderen",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_West_Flanders.svg"
+            }
+        }
+    },
+    "ES": {
+        "nativeName": "Españita",
+        "regions": {
+            "ES-PM": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
+            },
+            "ES-CB": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg"
+            },
+            "ES-RI": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg"
+            }
+        }
+    },
+    "PT": {
+        "name": "Portugal",
+        "nativeName": "Portugal",
+        "regions": {
+            "PT11": {
+                "name": "North Region",
+                "nativeName": "Norte",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT11.png"
+            },
+            "PT15": {
+                "name": "Algarve",
+                "nativeName": "Algarve",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT15.png"
+            },
+            "PT16": {
+                "name": "Central Region",
+                "nativeName": "Centro",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT16.png"
+            },
+            "PT17": {
+                "name": "Lisbon Metropolitan Area",
+                "nativeName": "Lisboa e Vale do Tejo",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT17.png"
+            },
+            "PT18": {
+                "name": "Alentejo",
+                "nativeName": "Alentejo",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT18.png"
+            },
+            "PT20": {
+                "name": "Azores",
+                "nativeName": "Açores",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_the_Azores.svg"
+            },
+            "PT30": {
+                "name": "Madeira",
+                "nativeName": "Madeira",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Madeira.svg"
             }
         }
     },
