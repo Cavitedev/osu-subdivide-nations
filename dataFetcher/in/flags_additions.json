@@ -398,6 +398,22 @@
             }
         }
     },
+    "MX": {
+        "name": "Mexico",
+        "nativeName": "Mēxihco",
+        "regions": {
+            "MX-CMX": {
+                "name": "Mexico",
+                "nativeName": "Ciudad de México",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_Mexico_City%2C_Mexico.svg"
+            },
+            "MX-MEX": {
+                "name": "State of Mexico",
+                "nativeName": "Estado de México",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_the_State_of_Mexico.svg"
+            }
+        }
+    },
     "PT": {
         "name": "Portugal",
         "nativeName": "Portugal",
