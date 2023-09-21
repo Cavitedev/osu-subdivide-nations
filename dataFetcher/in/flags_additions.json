@@ -1,4 +1,59 @@
 {
+    "AR": {
+        "regions": {
+            "AR-A": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_la_Provincia_de_Salta.svg"
+            },
+            "AR-B": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bandera_de_la_Provincia_de_Buenos_Aires.svg"
+            },
+            "AR-D": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg"
+            },
+            "AR-F": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bandera_de_la_Provincia_de_La_Rioja.svg"
+            },
+            "AR-G": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/Bandera_de_la_Provincia_de_Santiago_del_Estero.svg"
+            },
+            "AR-H": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bandera_de_la_Provincia_del_Chaco.svg"
+            },
+            "AR-J": {
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_the_San_Juan_Province.svg"
+            },
+            "AR-K": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bandera_de_la_Provincia_de_Catamarca.svg"
+            },
+            "AR-L": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Bandera_de_la_Provincia_de_La_Pampa.svg"
+            },
+            "AR-M": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg"
+            },
+            "AR-N": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Misiones.svg"
+            },
+            "AR-P": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bandera_de_la_Provincia_de_Formosa.svg"
+            },
+            "AR-S": {
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Santa_Fe.svg"
+            },
+            "AR-T": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Tucum%C3%A1n.svg"
+            },
+            "AR-W": {
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Corrientes.svg"
+            },
+            "AR-X": {
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_C%C3%B3rdoba_2014.svg"
+            },
+            "AR-Y": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bandera_de_la_Provincia_de_Jujuy.svg"
+            }
+        }
+    },
     "BY": {
         "regions": {
             "BY-HO": {
