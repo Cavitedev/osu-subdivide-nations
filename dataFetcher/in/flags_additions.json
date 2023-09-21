@@ -414,6 +414,16 @@
             }
         }
     },
+    "PE": {
+        "name": "Peru",
+        "nativeName": "Piruw",
+        "regions": {
+            "PE-CUS": {
+                "nativeName": "Cuzco",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_%282021%29.svg"
+            }
+        }
+    },
     "PT": {
         "name": "Portugal",
         "nativeName": "Portugal",
