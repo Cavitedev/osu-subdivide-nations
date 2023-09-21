@@ -281,6 +281,109 @@
             }
         }
     },
+    "CO": {
+        "regions": {
+            "CO-DC": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Bogotá.svg"
+            },
+            "CO-AMA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Amazonas_%28Colombia%29.svg"
+            },
+            "CO-ANT": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Flag_of_Antioquia_Department.svg"
+            },
+            "CO-ARA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Arauca.svg"
+            },
+            "CO-ATL": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Atl%C3%A1ntico.svg"
+            },
+            "CO-BOL": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Bol%C3%ADvar_%28Colombia%29.svg"
+            },
+            "CO-BOY": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Boyac%C3%A1_Department.svg"
+            },
+            "CO-CAL": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_Caldas.svg"
+            },
+            "CO-CAQ": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_Caquet%C3%A1.svg"
+            },
+            "CO-CAS": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Casanare.svg"
+            },
+            "CO-CAU": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Cauca.svg"
+            },
+            "CO-CES": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Cesar.svg"
+            },
+            "CO-CHO": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Choc%C3%B3.svg"
+            },
+            "CO-COR": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_C%C3%B3rdoba.svg"
+            },
+            "CO-CUN": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Cundinamarca.svg"
+            },
+            "CO-GUA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Guain%C3%ADa.svg"
+            },
+            "CO-GUV": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Guaviare.svg"
+            },
+            "CO-HUI": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_Huila.svg"
+            },
+            "CO-LAG": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_La_Guajira.svg"
+            },
+            "CO-MAG": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Magdalena.svg"
+            },
+            "CO-MET": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_Meta.svg"
+            },
+            "CO-NAR": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Nari%C3%B1o.svg"
+            },
+            "CO-NSA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Norte_de_Santander.svg"
+            },
+            "CO-PUT": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_Putumayo.svg"
+            },
+            "CO-QUI": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Quind%C3%ADo.svg"
+            },
+            "CO-RIS": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Risaralda.svg"
+            },
+            "CO-SAN": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Santander_Department.svg"
+            },
+            "CO-SAP": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_San_Andr%C3%A9s_y_Providencia.svg"
+            },
+            "CO-SUC": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Sucre_%28Colombia%29.svg"
+            },
+            "CO-TOL": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Tolima.svg"
+            },
+            "CO-VAC": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Valle_del_Cauca.svg"
+            },
+            "CO-VAU": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Vaup%C3%A9s.svg"
+            },
+            "CO-VID": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Vichada.svg"
+            }
+        }
+    },
     "ES": {
         "nativeName": "Españita",
         "regions": {
