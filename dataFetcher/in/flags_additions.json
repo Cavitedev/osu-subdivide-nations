@@ -398,6 +398,33 @@
             }
         }
     },
+    "FI": {
+        "name": "Finland",
+        "nativeName": "Suomi",
+        "regions": {
+            "FI-02": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Etel%C3%A4-Karjala.vaakuna.svg"
+            },
+            "FI-09": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kymenlaakson_maakunnan_vaakuna.svg"
+            },
+            "FI-10": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Lapin_maakunnan_vaakuna.svg"
+            },
+            "FI-11": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Pirkanmaa.svg"
+            },
+            "FI-12": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pohjanmaan_maakunnan_vaakuna.svg"
+            },
+            "FI-14": {
+                "flag": "https://en.wikipedia.org/wiki/North_Ostrobothnia#/media/File:Pohjois-Pohjanmaan_vaakuna.svg"
+            },
+            "FI-19": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varsinais-Suomen.vaakuna.svg"
+            }
+        }
+    },
     "MX": {
         "name": "Mexico",
         "nativeName": "Mēxihco",
