@@ -72,23 +72,23 @@
         "regions": {
             "SG-01": {
                 "nativeName": "Central Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215418"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region%2C_Singapore.png"
             },
             "SG-02": {
                 "nativeName": "Northeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215655"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region%2C_Singapore.png"
             },
             "SG-03": {
                 "nativeName": "Northwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215625"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region%2C_Singapore.png"
             },
             "SG-04": {
                 "nativeName": "Southeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215512"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region%2C_Singapore.png"
             },
             "SG-05": {
                 "nativeName": "Southwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region%2C_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215841"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region%2C_Singapore.png"
             }
         }
     },
