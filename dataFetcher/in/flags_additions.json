@@ -384,6 +384,41 @@
             }
         }
     },
+    "CZ": {
+        "nativeName": "Česko",
+        "regions": {
+            "CZ-31": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_South_Bohemian_Region.svg"
+            },
+            "CZ-64": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_South_Moravian_Region.svg"
+            },
+            "CZ-41": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Karlovy_Vary_Region.svg"
+            },
+            "CZ-52": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Hradec_Kralove_Region.svg"
+            },
+            "CZ-51": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Liberec_Region.svg"
+            },
+            "CZ-80": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Moravian-Silesian_Region.svg"
+            },
+            "CZ-71": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Olomouc_Region.svg"
+            },
+            "CZ-32": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Plzen_Region.svg"
+            },
+            "CZ-20": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Central_Bohemian_Region.svg"
+            },
+            "CZ-42": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Usti_nad_Labem_Region.svg"
+            }
+        }
+    },
     "ES": {
         "nativeName": "Españita",
         "regions": {
