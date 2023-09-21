@@ -12,6 +12,12 @@ Data provided by [osuworld](https://osuworld.octo.moe/)
 - [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/osu-subdivide-nations/)
 - [Microsoft edge add-ons (chrome)](https://microsoftedge.microsoft.com/addons/detail/osu-subdivide-nations/mdbdfpbifeapmnkolpbcppeibblipjal)
 
+## Flags
+
+You can add missing flags by creating a pull request or by sending the proposed changes over [Discord](https://discord.gg/YjH34wpadx)
+
+
+
 ## Supported Websites
 
 ### Osu! Website
