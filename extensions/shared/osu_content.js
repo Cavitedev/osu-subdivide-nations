@@ -556,6 +556,8 @@
     }
   };
 
+  const removeColsRegionalRanking = [7, 6, 5, 3, 2];
+
   const initRegionalRanking = (countryCode, regionCode) => {
     const modes = document.querySelectorAll(".game-mode [href]");
     for (const mode of modes) {
@@ -570,6 +572,13 @@
       if (href === updatedHref) return;
 
       mode.setAttribute("href", updatedHref);
+    }
+
+    const headerRow = document.querySelector(".ranking-page-table>thead>tr");
+    const headers = headerRow.children;
+
+    for (const index of removeColsRegionalRanking) {
+      headers[index].remove();
     }
   };
 
@@ -586,23 +595,12 @@
     nameElement.setAttribute("href", tools.buildProfileUrl(id, mode));
     nameElement.textContent = username;
 
-    const accCell = cells[2];
-    accCell.textContent = "";
-
-    const playcountCell = cells[3];
-    playcountCell.textContent = "";
-
     const performanceCell = cells[4];
     performanceCell.textContent = Math.round(pp);
 
-    const ssCell = cells[5];
-    ssCell.textContent = "";
-
-    const sCell = cells[6];
-    sCell.textContent = "";
-
-    const aCell = cells[7];
-    aCell.textContent = "";
+    for (const index of removeColsRegionalRanking) {
+      cells[index].remove();
+    }
 
     row.classList.remove("ranking-page-table__row--inactive");
   };
