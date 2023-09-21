@@ -16,6 +16,8 @@ Data provided by [osuworld](https://osuworld.octo.moe/)
 
 ### Osu! Website
 
+These are some examples of websites the extension is applied
+
 - [Matches](https://osu.ppy.sh/community/matches/110067650)
 - [Rankings](https://osu.ppy.sh/rankings/osu/performance?country=ES)
 - [Profile](https://osu.ppy.sh/users/4871211/fruits)
