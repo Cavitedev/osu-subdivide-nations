@@ -89,7 +89,8 @@
     }
   };
 
-  const flagStyle = 'background-image: url($flag)';
+  // Quotes needed for special characters
+  const flagStyle = 'background-image: url("$flag")';
   const flagStyleWithMargin = flagStyle + "; margin-left: 4px";
   const flagClass = "flag-country";
   const noFlag =
