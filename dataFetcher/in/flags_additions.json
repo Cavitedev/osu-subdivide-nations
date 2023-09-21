@@ -295,6 +295,14 @@
             }
         }
     },
+    "US": {
+        "regions": {
+            "US-WADC": {
+                "nativeName": "Washington, D.C.",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
+            }
+        }
+    },
     "VN": {
         "regions": {
             "VN-44": {
