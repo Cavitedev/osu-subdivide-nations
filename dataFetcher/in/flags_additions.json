@@ -467,6 +467,107 @@
             }
         }
     },
+    "HU": {
+        "name": "Hungary",
+        "nativeName": "Magyarország",
+        "regions": {
+            "HU-BA": {
+                "name": "Baranya",
+                "nativeName": "Baranya vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Baranya_County.svg/128px-Flag_of_Baranya_County.svg.png"
+            },
+            "HU-BZ": {
+                "name": "Borsod-Abaúj-Zemplén",
+                "nativeName": "Borsod-Abaúj-Zemplén vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FLAG-Borsod-Aba%C3%BAj-Zempl%C3%A9n-megye.svg/128px-FLAG-Borsod-Aba%C3%BAj-Zempl%C3%A9n-megye.svg.png"
+            },
+            "HU-BK": {
+                "name": "Bács-Kiskun",
+                "nativeName": "Bács-Kiskun vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_B%C3%A1cs-Kiskun_County.svg/128px-Flag_of_B%C3%A1cs-Kiskun_County.svg.png"
+            },
+            "HU-BE": {
+                "name": "Békés",
+                "nativeName": "Békés vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FLAG-B%C3%A9k%C3%A9s-megye.svg/128px-FLAG-B%C3%A9k%C3%A9s-megye.svg.png"
+            },
+            "HU-CS": {
+                "name": "Csongrád-Csanád",
+                "nativeName": "Csongrád-Csanád vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Flag_of_Csongrad-Csanad_megye.svg/128px-Flag_of_Csongrad-Csanad_megye.svg.png"
+            },
+            "HU-FE": {
+                "name": "Fejér",
+                "nativeName": "Fejér vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/FLAG-Fej%C3%A9r-megye.svg/128px-FLAG-Fej%C3%A9r-megye.svg.png"
+            },
+            "HU-GS": {
+                "name": "Győr-Moson-Sopron",
+                "nativeName": "Győr-Moson-Sopron vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/FLAG-Gyor-Moson-Sopron-megye.svg/128px-FLAG-Gyor-Moson-Sopron-megye.svg.png"
+            },
+            "HU-HB": {
+                "name": "Hajdú-Bihar",
+                "nativeName": "Hajdú-Bihar vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/FLAG-Hajd%C3%BA-Bihar-megye.svg/128px-FLAG-Hajd%C3%BA-Bihar-megye.svg.png"
+            },
+            "HU-HE": {
+                "name": "Heves",
+                "nativeName": "Heves vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/FLAG-Heves-megye.svg/500px-FLAG-Heves-megye.svg.png"
+            },
+            "HU-JN": {
+                "name": "Jász-Nagykun-Szolnok",
+                "nativeName": "Jász-Nagykun-Szolnok vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/FLAG-Jasz-Nagykun-Szolnok.svg/320px-FLAG-Jasz-Nagykun-Szolnok.svg.png"
+            },
+            "HU-KE": {
+                "name": "Komárom-Esztergom",
+                "nativeName": "Komárom-Esztergom vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/FLAG-Kom%C3%A1rom-Esztergom-megye.svg/128px-FLAG-Kom%C3%A1rom-Esztergom-megye.svg.png"
+            },
+            "HU-NO": {
+                "name": "Nógrád",
+                "nativeName": "Nógrád vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/FLAG-Nograd.svg/128px-FLAG-Nograd.svg.png"
+            },
+            "HU-PE": {
+                "name": "Pest",
+                "nativeName": "Pest vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FLAG-Pest-megye.svg/128px-FLAG-Pest-megye.svg.png"
+            },
+            "HU-SO": {
+                "name": "Somogy",
+                "nativeName": "Somogy vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/FLAG-Somogy-megye.svg/128px-FLAG-Somogy-megye.svg.png"
+            },
+            "HU-SZ": {
+                "name": "Szabolcs-Szatmár-Bereg",
+                "nativeName": "Szabolcs-Szatmár-Bereg vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Flag-Szabolcs-Szatmar-Bereg-megye.svg/128px-Flag-Szabolcs-Szatmar-Bereg-megye.svg.png"
+            },
+            "HU-TO": {
+                "name": "Tolna",
+                "nativeName": "Tolna vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FLAG-Tolna-megye.svg/128px-FLAG-Tolna-megye.svg.png"
+            },
+            "HU-VA": {
+                "name": "Vas",
+                "nativeName": "Vas vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/FLAG-Vas-megye.svg/128px-FLAG-Vas-megye.svg.png"
+            },
+            "HU-VE": {
+                "name": "Veszprém",
+                "nativeName": "Veszprém vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FLAG-Veszpr%C3%A9m-megye.svg/128px-FLAG-Veszpr%C3%A9m-megye.svg.png"
+            },
+            "HU-ZA": {
+                "name": "Zala",
+                "nativeName": "Zala vármegye",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/FLAG-Zala-megye.svg/128px-FLAG-Zala-megye.svg.png"
+            }
+        }
+    },
     "MX": {
         "name": "Mexico",
         "nativeName": "Mēxihco",
