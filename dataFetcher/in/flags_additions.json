@@ -419,6 +419,13 @@
             }
         }
     },
+    "DE": {
+        "regions": {
+            "DE-BY": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Bavaria_%28striped%29.svg"
+            }
+        }
+    },
     "ES": {
         "nativeName": "Españita",
         "regions": {
