@@ -15,7 +15,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         type: "update_flag",
         location: "topics",
       });
-    } else if (tab.url.includes("osu.ppy.sh/rankings")) {
+    } else if (
+      tab.url.includes("osu.ppy.sh/rankings") ||
+      tab.url.includes("osu.ppy.sh/multiplayer/rooms") ||
+      tab.url.includes("osu.ppy.sh/rankings/kudosu")
+    ) {
       chrome.tabs.sendMessage(tabId, {
         type: "update_flag",
         location: "rankings",

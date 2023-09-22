@@ -6,7 +6,7 @@
             "AR-C": {
                 "name": "Buenos Aires",
                 "nativeName": "Buenos Aires",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Bandera_de_la_Ciudad_de_Buenos_Aires.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Bandera_de_la_Ciudad_de_Buenos_Aires.svg//128px-Bandera_de_la_Ciudad_de_Buenos_Aires.svg.png"
             },
             "AR-U": {
                 "name": "Chubut Province",
@@ -41,87 +41,87 @@
             "AR-A": {
                 "name": "Salta Province",
                 "nativeName": "Salta",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_la_Provincia_de_Salta.svg"
             },
             "AR-B": {
                 "name": "Buenos Aires Province",
                 "nativeName": "Buenos Aires",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bandera_de_la_Provincia_de_Buenos_Aires.svg"
             },
             "AR-D": {
                 "name": "San Luis Province",
                 "nativeName": "San Luis",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg//128px-Bandera_de_la_Provincia_de_San_Luis.svg.png"
             },
             "AR-F": {
                 "name": "La Rioja Province",
                 "nativeName": "La Rioja",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bandera_de_la_Provincia_de_La_Rioja.svg"
             },
             "AR-G": {
                 "name": "Santiago del Estero Province",
                 "nativeName": "Santiago del Estero",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/Bandera_de_la_Provincia_de_Santiago_del_Estero.svg"
             },
             "AR-H": {
                 "name": "Chaco Province",
                 "nativeName": "Chaco",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bandera_de_la_Provincia_del_Chaco.svg"
             },
             "AR-J": {
                 "name": "San Juan Province",
                 "nativeName": "San Juan",
-                "flag": ""
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_the_San_Juan_Province.svg"
             },
             "AR-K": {
                 "name": "Catamarca Province",
                 "nativeName": "Catamarca",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bandera_de_la_Provincia_de_Catamarca.svg"
             },
             "AR-L": {
                 "name": "La Pampa Province",
                 "nativeName": "La Pampa",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bandera_de_la_Provincia_de_La_Pampa.svg//128px-Bandera_de_la_Provincia_de_La_Pampa.svg.png"
             },
             "AR-M": {
                 "name": "Mendoza Province",
                 "nativeName": "Mendoza",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Bandera_de_la_Provincia_de_Mendoza.svg//128px-Bandera_de_la_Provincia_de_Mendoza.svg.png"
             },
             "AR-N": {
                 "name": "Misiones Province",
                 "nativeName": "Misiones",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Misiones.svg"
             },
             "AR-P": {
                 "name": "Formosa Province",
                 "nativeName": "Formosa",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bandera_de_la_Provincia_de_Formosa.svg"
             },
             "AR-S": {
                 "name": "Santa Fe Province",
                 "nativeName": "Santa Fe",
-                "flag": ""
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Santa_Fe.svg"
             },
             "AR-T": {
                 "name": "Tucumán Province",
                 "nativeName": "Tucumán",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_la_Provincia_de_Tucumán.svg"
             },
             "AR-W": {
                 "name": "Corrientes Province",
                 "nativeName": "Corrientes",
-                "flag": ""
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Corrientes.svg"
             },
             "AR-X": {
                 "name": "Córdoba Province",
                 "nativeName": "Córdoba",
-                "flag": ""
+                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Córdoba_2014.svg"
             },
             "AR-Y": {
                 "name": "Jujuy Province",
                 "nativeName": "Jujuy",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bandera_de_la_Provincia_de_Jujuy.svg"
             }
         }
     },
@@ -178,7 +178,7 @@
             "AT-1": {
                 "name": "Burgenland",
                 "nativeName": "Burgenland",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_Burgenland_(state).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Flag_of_Burgenland_(state).svg//128px-Flag_of_Burgenland_(state).svg.png"
             },
             "AT-2": {
                 "name": "Carinthia",
@@ -198,7 +198,7 @@
             "AT-6": {
                 "name": "Styria",
                 "nativeName": "Steiermark",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Flag_of_Styria_(state).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flag_of_Styria_(state).svg//128px-Flag_of_Styria_(state).svg.png"
             },
             "AT-7": {
                 "name": "Tyrol",
@@ -239,7 +239,7 @@
             "BY-MI": {
                 "name": "Minsk Region",
                 "nativeName": "Мінская вобласць",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Minsk_Voblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flag_of_Minsk_Voblast.svg//128px-Flag_of_Minsk_Voblast.svg.png"
             },
             "BY-MA": {
                 "name": "Mogilev Region",
@@ -254,7 +254,7 @@
             "BY-HO": {
                 "name": "Homyel Region",
                 "nativeName": "Гомельская вобласць",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Homyel_Voblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Homyel_Voblast.svg//128px-Flag_of_Homyel_Voblast.svg.png"
             }
         }
     },
@@ -331,7 +331,7 @@
             "BR-AL": {
                 "name": "Alagoas",
                 "nativeName": "Alagoas",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bandeira_de_Alagoas.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg//128px-Bandeira_de_Alagoas.svg.png"
             },
             "BR-AP": {
                 "name": "Amapá",
@@ -396,7 +396,7 @@
             "BR-PR": {
                 "name": "Paraná",
                 "nativeName": "Paraná",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bandeira_do_Paraná.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paraná.svg//128px-Bandeira_do_Paraná.svg.png"
             },
             "BR-PE": {
                 "name": "Pernambuco",
@@ -411,17 +411,17 @@
             "BR-RJ": {
                 "name": "Rio de Janeiro",
                 "nativeName": "Rio de Janeiro",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg//128px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png"
             },
             "BR-RN": {
                 "name": "Rio Grande do Norte",
                 "nativeName": "Rio Grande do Norte",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Bandeira_do_Rio_Grande_do_Norte.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg//128px-Bandeira_do_Rio_Grande_do_Norte.svg.png"
             },
             "BR-RS": {
                 "name": "Rio Grande do Sul",
                 "nativeName": "Rio Grande do Sul",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Bandeira_do_Rio_Grande_do_Sul.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg//128px-Bandeira_do_Rio_Grande_do_Sul.svg.png"
             },
             "BR-RO": {
                 "name": "Rondônia",
@@ -502,7 +502,7 @@
             "CA-PE": {
                 "name": "Prince Edward Island",
                 "nativeName": "Prince Edward Island",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_Prince_Edward_Island.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_Prince_Edward_Island.svg//128px-Flag_of_Prince_Edward_Island.svg.png"
             },
             "CA-QC": {
                 "name": "Quebec",
@@ -538,12 +538,12 @@
             "CL-AN": {
                 "name": "Antofagasta Region",
                 "nativeName": "Región de Antofagasta",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Flag_of_Antofagasta_Region,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Flag_of_Antofagasta_Region,_Chile.svg//128px-Flag_of_Antofagasta_Region,_Chile.svg.png"
             },
             "CL-AR": {
                 "name": "Araucanía Region",
                 "nativeName": "Región de la Araucanía",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_La_Araucanía_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_La_Araucanía_Region.svg//128px-Flag_of_La_Araucanía_Region.svg.png"
             },
             "CL-AT": {
                 "name": "Atacama Region",
@@ -558,7 +558,7 @@
             "CL-BI": {
                 "name": "Biobío Region",
                 "nativeName": "Región del Biobío",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Flag_of_Biobío_Region,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Biobío_Region,_Chile.svg//128px-Flag_of_Biobío_Region,_Chile.svg.png"
             },
             "CL-CO": {
                 "name": "Coquimbo Region",
@@ -588,7 +588,7 @@
             "CL-NB": {
                 "name": "Ñuble Region",
                 "nativeName": "Región de Ñuble",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Ñuble_Region,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Ñuble_Region,_Chile.svg//128px-Flag_of_Ñuble_Region,_Chile.svg.png"
             },
             "CL-LI": {
                 "name": "O'Higgins Region",
@@ -598,183 +598,183 @@
             "CL-TA": {
                 "name": "Tarapacá Region",
                 "nativeName": "Región de Tarapacá",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Tarapaca,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Flag_of_Tarapaca,_Chile.svg//128px-Flag_of_Tarapaca,_Chile.svg.png"
             },
             "CL-VS": {
                 "name": "Valparaíso Region",
                 "nativeName": "Región de Valparaíso",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Valparaiso_Region,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_Valparaiso_Region,_Chile.svg//128px-Flag_of_Valparaiso_Region,_Chile.svg.png"
             },
             "CL-AP": {
                 "name": "Arica and Parinacota Region",
                 "nativeName": "Región de Arica y Parinacota",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Arica_y_Parinacota,_Chile.svg"
             },
             "CL-MA": {
                 "name": "Region of Magallanes and Chilean Antarctica",
                 "nativeName": "Región de Magallanes y de la Antártica Chilena",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes,_Chile.svg"
             }
         }
     },
     "CN": {
         "name": "China",
-        "nativeName": "Zhōngguó 中国",
+        "nativeName": "中国",
         "regions": {
             "CN-AH": {
                 "name": "Anhui",
                 "nativeName": "安徽省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-AH.png"
             },
             "CN-BJ": {
                 "name": "Beijing",
                 "nativeName": "北京市",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-BJ.png"
             },
             "CN-CQ": {
                 "name": "Chongqing",
                 "nativeName": "重庆市",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-CQ.png"
             },
             "CN-FJ": {
                 "name": "Fujian",
                 "nativeName": "福建省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-FJ.png"
             },
             "CN-GS": {
                 "name": "Gansu",
                 "nativeName": "甘肃省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GS.png"
             },
             "CN-GD": {
                 "name": "Guangdong Province",
                 "nativeName": "广东省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GD.png"
             },
             "CN-GX": {
                 "name": "Guangxi",
                 "nativeName": "广西壮族自治区",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GX.png"
             },
             "CN-GZ": {
                 "name": "Guizhou",
                 "nativeName": "贵州省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-GZ.png"
             },
             "CN-HI": {
                 "name": "Hainan Province",
                 "nativeName": "海南省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HI.png"
             },
             "CN-HE": {
                 "name": "Hebei",
                 "nativeName": "河北省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HE.png"
             },
             "CN-HL": {
                 "name": "Heilongjiang",
                 "nativeName": "黑龙江省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HL.png"
             },
             "CN-HA": {
                 "name": "Henan",
                 "nativeName": "河南省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HA.png"
             },
             "CN-HB": {
                 "name": "Hubei",
                 "nativeName": "湖北省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HB.png"
             },
             "CN-HN": {
                 "name": "Hunan",
                 "nativeName": "湖南省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-HN.png"
             },
             "CN-NM": {
                 "name": "Inner Mongolia",
-                "nativeName": "内蒙古自治区 ᠦᠪᠦᠷ ᠮᠣᠩᠭᠤᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠣ ᠣᠷᠣᠨ",
-                "flag": ""
+                "nativeName": "内蒙古自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-NM.png"
             },
             "CN-JS": {
                 "name": "Jiangsu",
                 "nativeName": "江苏省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-JS.png"
             },
             "CN-JX": {
                 "name": "Jiangxi",
                 "nativeName": "江西省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-JX.png"
             },
             "CN-JL": {
                 "name": "Jilin",
                 "nativeName": "吉林省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-JL.png"
             },
             "CN-LN": {
                 "name": "Liaoning",
                 "nativeName": "辽宁省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-LN.png"
             },
             "CN-NX": {
                 "name": "Ningxia",
                 "nativeName": "宁夏回族自治区",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-NX.png"
             },
             "CN-QH": {
                 "name": "Qinghai",
                 "nativeName": "青海省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-QH.png"
             },
             "CN-SN": {
                 "name": "Shaanxi",
                 "nativeName": "陕西省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SN.png"
             },
             "CN-SD": {
                 "name": "Shandong",
                 "nativeName": "山东省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SD.png"
             },
             "CN-SH": {
                 "name": "Shanghai",
                 "nativeName": "上海市",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SH.png"
             },
             "CN-SX": {
                 "name": "Shanxi",
                 "nativeName": "山西省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SX.png"
             },
             "CN-SC": {
                 "name": "Sichuan",
                 "nativeName": "四川省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-SC.png"
             },
             "CN-TJ": {
                 "name": "Tianjin",
                 "nativeName": "天津市",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-TJ.png"
             },
             "CN-XZ": {
                 "name": "Tibet",
-                "nativeName": "西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།",
-                "flag": ""
+                "nativeName": "西藏自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-XZ.png"
             },
             "CN-XJ": {
                 "name": "Xinjiang",
-                "nativeName": "新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی",
-                "flag": ""
+                "nativeName": "新疆维吾尔自治区",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-XJ.png"
             },
             "CN-YN": {
                 "name": "Yunnan",
                 "nativeName": "云南省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-YN.png"
             },
             "CN-ZJ": {
                 "name": "Zhejiang",
                 "nativeName": "浙江省",
-                "flag": ""
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/cn/CN-ZJ.png"
             }
         }
     },
@@ -790,173 +790,168 @@
             "CO-AMA": {
                 "name": "Amazonas",
                 "nativeName": "Amazonas",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Amazonas_(Colombia).svg"
             },
             "CO-ANT": {
                 "name": "Antioquia",
                 "nativeName": "Antioquia",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Flag_of_Antioquia_Department.svg"
             },
             "CO-ARA": {
                 "name": "Arauca",
                 "nativeName": "Arauca",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Arauca.svg"
             },
             "CO-ATL": {
                 "name": "Atlántico",
                 "nativeName": "Atlántico",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Atlántico.svg"
             },
             "CO-BOL": {
                 "name": "Bolívar",
                 "nativeName": "Bolívar",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Bolívar_(Colombia).svg"
             },
             "CO-BOY": {
                 "name": "Boyacá",
                 "nativeName": "Boyacá",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Boyacá_Department.svg"
             },
             "CO-CAL": {
                 "name": "Caldas",
                 "nativeName": "Caldas",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_Caldas.svg"
             },
             "CO-CAQ": {
                 "name": "Caquetá",
                 "nativeName": "Caquetá",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_Caquetá.svg"
             },
             "CO-CAS": {
                 "name": "Casanare",
                 "nativeName": "Casanare",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Casanare.svg"
             },
             "CO-CAU": {
                 "name": "Cauca",
                 "nativeName": "Cauca",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Cauca.svg"
             },
             "CO-CES": {
                 "name": "Cesar",
                 "nativeName": "Cesar",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Cesar.svg"
             },
             "CO-CHO": {
                 "name": "Chocó",
                 "nativeName": "Chocó",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Chocó.svg"
             },
             "CO-COR": {
                 "name": "Córdoba",
                 "nativeName": "Córdoba",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Córdoba.svg"
             },
             "CO-CUN": {
                 "name": "Cundinamarca",
                 "nativeName": "Cundinamarca",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Cundinamarca.svg//128px-Flag_of_Cundinamarca.svg.png"
             },
             "CO-GUA": {
                 "name": "Guainía",
                 "nativeName": "Guainía",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Guainía.svg"
             },
             "CO-GUV": {
                 "name": "Guaviare",
                 "nativeName": "Guaviare",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Guaviare.svg//128px-Flag_of_Guaviare.svg.png"
             },
             "CO-HUI": {
                 "name": "Huila",
                 "nativeName": "Huila",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_Huila.svg"
             },
             "CO-LAG": {
                 "name": "La Guajira",
                 "nativeName": "La Guajira",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_La_Guajira.svg"
             },
             "CO-MAG": {
                 "name": "Magdalena",
                 "nativeName": "Magdalena",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Magdalena.svg"
             },
             "CO-MET": {
                 "name": "Meta",
                 "nativeName": "Meta",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_Meta.svg"
             },
             "CO-NAR": {
                 "name": "Nariño",
                 "nativeName": "Nariño",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Nariño.svg"
             },
             "CO-NSA": {
                 "name": "Norte de Santander",
                 "nativeName": "Norte de Santander",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Norte_de_Santander.svg"
             },
             "CO-PUT": {
                 "name": "Putumayo",
                 "nativeName": "Putumayo",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_Putumayo.svg"
             },
             "CO-QUI": {
                 "name": "Quindío",
                 "nativeName": "Quindío",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Quindío.svg"
             },
             "CO-RIS": {
                 "name": "Risaralda",
                 "nativeName": "Risaralda",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Risaralda.svg"
             },
             "CO-SAN": {
                 "name": "Santander",
                 "nativeName": "Santander",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Santander_Department.svg"
             },
             "CO-SAP": {
                 "name": "San Andrés and Providencia",
                 "nativeName": "Archipelago of Saint Andrew, Providence and Saint Catherine",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_San_Andrés_y_Providencia.svg"
             },
             "CO-SUC": {
                 "name": "Sucre",
                 "nativeName": "Sucre",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Flag_of_Sucre_(Colombia).svg//128px-Flag_of_Sucre_(Colombia).svg.png"
             },
             "CO-TOL": {
                 "name": "Tolima",
                 "nativeName": "Tolima",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Tolima.svg"
             },
             "CO-VAC": {
                 "name": "Valle del Cauca",
                 "nativeName": "Valle del Cauca",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Valle_del_Cauca.svg"
             },
             "CO-VAU": {
                 "name": "Vaupés",
                 "nativeName": "Vaupés",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Vaupés.svg"
             },
             "CO-VID": {
                 "name": "Vichada",
                 "nativeName": "Vichada",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Vichada.svg"
             }
         }
     },
     "CZ": {
         "name": "Czech Republic",
         "regions": {
-            "CZ-53": {
-                "name": "Pardubice",
-                "nativeName": "Pardubický kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Pardubice_Region.svg"
-            },
             "CZ-10": {
                 "name": "Prague",
                 "nativeName": "Hlavní město Praha",
@@ -965,64 +960,70 @@
             "CZ-63": {
                 "name": "Vysočina",
                 "nativeName": "Kraj Vysočina",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/14/Flag_of_Vysocina_Region.svg"
-            },
-            "CZ-72": {
-                "name": "Zlín",
-                "nativeName": "Zlínský kraj",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Zlin_Region.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Flag_of_Vysocina_Region.svg//128px-Flag_of_Vysocina_Region.svg.png"
             },
             "CZ-31": {
                 "name": "South Bohemia",
                 "nativeName": "Jihočeský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_South_Bohemian_Region.svg//128px-Flag_of_South_Bohemian_Region.svg.png"
             },
             "CZ-64": {
                 "name": "South Moravia",
                 "nativeName": "Jihomoravský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_South_Moravian_Region.svg//128px-Flag_of_South_Moravian_Region.svg.png"
             },
             "CZ-41": {
                 "name": "Karlovy Vary",
                 "nativeName": "Karlovarský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Karlovy_Vary_Region.svg//128px-Flag_of_Karlovy_Vary_Region.svg.png"
             },
             "CZ-52": {
                 "name": "Hradec Králové",
                 "nativeName": "Královéhradecký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Hradec_Kralove_Region.svg//128px-Flag_of_Hradec_Kralove_Region.svg.png"
             },
             "CZ-51": {
                 "name": "Liberec",
                 "nativeName": "Liberecký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Liberec_Region.svg//128px-Flag_of_Liberec_Region.svg.png"
             },
             "CZ-80": {
                 "name": "Moravia-Silesia",
                 "nativeName": "Moravskoslezský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Moravian-Silesian_Region.svg//128px-Flag_of_Moravian-Silesian_Region.svg.png"
             },
             "CZ-71": {
                 "name": "Olomouc",
                 "nativeName": "Olomoucký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Olomouc_Region.svg"
+            },
+            "CZ-53": {
+                "name": "Pardubice",
+                "nativeName": "Pardubický kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_Pardubice.svg"
             },
             "CZ-32": {
                 "name": "Plzeň",
                 "nativeName": "Plzeňský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Plzen_Region.svg//128px-Flag_of_Plzen_Region.svg.png"
             },
             "CZ-20": {
                 "name": "Central Bohemia",
                 "nativeName": "Středočeský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Central_Bohemian_Region.svg//128px-Flag_of_Central_Bohemian_Region.svg.png"
             },
             "CZ-42": {
                 "name": "Ústí nad Labem",
                 "nativeName": "Ústecký kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_Usti_nad_Labem_Region.svg//128px-Flag_of_Usti_nad_Labem_Region.svg.png"
+            },
+            "CZ-72": {
+                "name": "Zlín",
+                "nativeName": "Zlínský kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Zlin.svg"
             }
-        }
+        },
+        "nativeName": "Česko"
     },
     "FI": {
         "name": "Finland",
@@ -1091,37 +1092,37 @@
             "FI-02": {
                 "name": "South Karelia",
                 "nativeName": "Etelä-Karjala",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Etelä-Karjala.vaakuna.svg"
             },
             "FI-09": {
                 "name": "Kymenlaakso",
                 "nativeName": "Kymenlaakso",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kymenlaakson_maakunnan_vaakuna.svg"
             },
             "FI-10": {
                 "name": "Lapland",
                 "nativeName": "Lappi",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Lapin_maakunnan_vaakuna.svg"
             },
             "FI-11": {
                 "name": "Pirkanmaa",
                 "nativeName": "Pirkanmaa",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Pirkanmaa.svg"
             },
             "FI-12": {
                 "name": "Ostrobothnia",
                 "nativeName": "Österbotten",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pohjanmaan_maakunnan_vaakuna.svg"
             },
             "FI-14": {
                 "name": "North Ostrobothnia",
                 "nativeName": "Pohjois-Pohjanmaa",
-                "flag": ""
+                "flag": "https://en.wikipedia.org/wiki/North_Ostrobothnia#/media/File:Pohjois-Pohjanmaan_vaakuna.svg"
             },
             "FI-19": {
                 "name": "Southwest Finland",
                 "nativeName": "Varsinais-Suomi",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varsinais-Suomen.vaakuna.svg"
             }
         }
     },
@@ -1137,7 +1138,7 @@
             "FR-BFC": {
                 "name": "Bourgogne-Franche-Comté",
                 "nativeName": "Bourgogne-Franche-Comté",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_the_region_Bourgogne-Franche-Comté.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_the_region_Bourgogne-Franche-Comté.svg//128px-Flag_of_the_region_Bourgogne-Franche-Comté.svg.png"
             },
             "FR-BRE": {
                 "name": "Brittany",
@@ -1253,7 +1254,7 @@
             "DE-SL": {
                 "name": "Saarland",
                 "nativeName": "Saarland",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Saarland.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Saarland.svg//128px-Flag_of_Saarland.svg.png"
             },
             "DE-SN": {
                 "name": "Saxony",
@@ -1278,7 +1279,7 @@
             "DE-BY": {
                 "name": "Bavaria",
                 "nativeName": "Bayern",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Bavaria_(striped).svg"
             }
         }
     },
@@ -1289,102 +1290,102 @@
             "HU-BU": {
                 "name": "Budapest",
                 "nativeName": "Budapest",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Flag_of_Budapest_(2011-).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Flag_of_Budapest_(2011-).svg//128px-Flag_of_Budapest_(2011-).svg.png"
             },
             "HU-BA": {
                 "name": "Baranya",
                 "nativeName": "Baranya vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Baranya_County.svg/128px-Flag_of_Baranya_County.svg.png"
             },
             "HU-BZ": {
                 "name": "Borsod-Abaúj-Zemplén",
                 "nativeName": "Borsod-Abaúj-Zemplén vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FLAG-Borsod-Abaúj-Zemplén-megye.svg/128px-FLAG-Borsod-Abaúj-Zemplén-megye.svg.png"
             },
             "HU-BK": {
                 "name": "Bács-Kiskun",
                 "nativeName": "Bács-Kiskun vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Bács-Kiskun_County.svg/128px-Flag_of_Bács-Kiskun_County.svg.png"
             },
             "HU-BE": {
                 "name": "Békés",
                 "nativeName": "Békés vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FLAG-Békés-megye.svg/128px-FLAG-Békés-megye.svg.png"
             },
             "HU-CS": {
                 "name": "Csongrád-Csanád",
                 "nativeName": "Csongrád-Csanád vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Flag_of_Csongrad-Csanad_megye.svg/128px-Flag_of_Csongrad-Csanad_megye.svg.png"
             },
             "HU-FE": {
                 "name": "Fejér",
                 "nativeName": "Fejér vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/FLAG-Fejér-megye.svg/128px-FLAG-Fejér-megye.svg.png"
             },
             "HU-GS": {
                 "name": "Győr-Moson-Sopron",
                 "nativeName": "Győr-Moson-Sopron vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/FLAG-Gyor-Moson-Sopron-megye.svg/128px-FLAG-Gyor-Moson-Sopron-megye.svg.png"
             },
             "HU-HB": {
                 "name": "Hajdú-Bihar",
                 "nativeName": "Hajdú-Bihar vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/FLAG-Hajdú-Bihar-megye.svg/128px-FLAG-Hajdú-Bihar-megye.svg.png"
             },
             "HU-HE": {
                 "name": "Heves",
                 "nativeName": "Heves vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/FLAG-Heves-megye.svg/500px-FLAG-Heves-megye.svg.png"
             },
             "HU-JN": {
                 "name": "Jász-Nagykun-Szolnok",
                 "nativeName": "Jász-Nagykun-Szolnok vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/FLAG-Jasz-Nagykun-Szolnok.svg/320px-FLAG-Jasz-Nagykun-Szolnok.svg.png"
             },
             "HU-KE": {
                 "name": "Komárom-Esztergom",
                 "nativeName": "Komárom-Esztergom vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/FLAG-Komárom-Esztergom-megye.svg/128px-FLAG-Komárom-Esztergom-megye.svg.png"
             },
             "HU-NO": {
                 "name": "Nógrád",
                 "nativeName": "Nógrád vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/FLAG-Nograd.svg/128px-FLAG-Nograd.svg.png"
             },
             "HU-PE": {
                 "name": "Pest",
                 "nativeName": "Pest vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FLAG-Pest-megye.svg/128px-FLAG-Pest-megye.svg.png"
             },
             "HU-SO": {
                 "name": "Somogy",
                 "nativeName": "Somogy vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/FLAG-Somogy-megye.svg/128px-FLAG-Somogy-megye.svg.png"
             },
             "HU-SZ": {
                 "name": "Szabolcs-Szatmár-Bereg",
                 "nativeName": "Szabolcs-Szatmár-Bereg vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Flag-Szabolcs-Szatmar-Bereg-megye.svg/128px-Flag-Szabolcs-Szatmar-Bereg-megye.svg.png"
             },
             "HU-TO": {
                 "name": "Tolna",
                 "nativeName": "Tolna vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FLAG-Tolna-megye.svg/128px-FLAG-Tolna-megye.svg.png"
             },
             "HU-VA": {
                 "name": "Vas",
                 "nativeName": "Vas vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/FLAG-Vas-megye.svg/128px-FLAG-Vas-megye.svg.png"
             },
             "HU-VE": {
                 "name": "Veszprém",
                 "nativeName": "Veszprém vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FLAG-Veszprém-megye.svg/128px-FLAG-Veszprém-megye.svg.png"
             },
             "HU-ZA": {
                 "name": "Zala",
                 "nativeName": "Zala vármegye",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/FLAG-Zala-megye.svg/128px-FLAG-Zala-megye.svg.png"
             }
         }
     },
@@ -1395,17 +1396,17 @@
             "ID-AC": {
                 "name": "Aceh",
                 "nativeName": "Aceh",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Aceh,_Indonesia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Aceh,_Indonesia.svg//128px-Flag_of_Aceh,_Indonesia.svg.png"
             },
             "ID-BA": {
                 "name": "Bali",
                 "nativeName": "Bali",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Bali.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Flag_of_Bali.svg//128px-Flag_of_Bali.svg.png"
             },
             "ID-BB": {
                 "name": "Bangka Belitung Islands",
                 "nativeName": "Kepulauan Bangka Belitung",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Flag_of_Bangka-Belitung.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Flag_of_Bangka-Belitung.svg//128px-Flag_of_Bangka-Belitung.svg.png"
             },
             "ID-BT": {
                 "name": "Banten",
@@ -1415,12 +1416,12 @@
             "ID-BE": {
                 "name": "Bengkulu",
                 "nativeName": "Bengkulu",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Bengkulu.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Bengkulu.svg//128px-Flag_of_Bengkulu.svg.png"
             },
             "ID-JT": {
                 "name": "Central Java",
                 "nativeName": "Jawa Tengah",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_Central_Java.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_Central_Java.svg//128px-Flag_of_Central_Java.svg.png"
             },
             "ID-KT": {
                 "name": "Central Kalimantan",
@@ -1435,7 +1436,7 @@
             "ID-JI": {
                 "name": "East Java",
                 "nativeName": "Jawa Timur",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Flag_of_East_Java.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Flag_of_East_Java.svg//128px-Flag_of_East_Java.svg.png"
             },
             "ID-KI": {
                 "name": "East Kalimantan",
@@ -1445,7 +1446,7 @@
             "ID-NT": {
                 "name": "East Nusa Tenggara",
                 "nativeName": "Nusa Tenggara Timur",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Flag_of_East_Nusa_Tenggara.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flag_of_East_Nusa_Tenggara.svg//128px-Flag_of_East_Nusa_Tenggara.svg.png"
             },
             "ID-GO": {
                 "name": "Gorontalo",
@@ -1465,7 +1466,7 @@
             "ID-LA": {
                 "name": "Lampung",
                 "nativeName": "Lampung",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Lampung.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Lampung.svg//128px-Flag_of_Lampung.svg.png"
             },
             "ID-KU": {
                 "name": "North Kalimantan",
@@ -1480,12 +1481,12 @@
             "ID-SA": {
                 "name": "North Sulawesi",
                 "nativeName": "Sulawesi Utara",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_North_Sulawesi.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_North_Sulawesi.svg//128px-Flag_of_North_Sulawesi.svg.png"
             },
             "ID-SU": {
                 "name": "North Sumatra",
                 "nativeName": "Sumatera Utara",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_North_Sumatra.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_North_Sumatra.svg//128px-Flag_of_North_Sumatra.svg.png"
             },
             "ID-PA": {
                 "name": "Papua",
@@ -1495,7 +1496,7 @@
             "ID-RI": {
                 "name": "Riau",
                 "nativeName": "Riau",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_Riau.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Flag_of_Riau.svg//128px-Flag_of_Riau.svg.png"
             },
             "ID-KR": {
                 "name": "Riau Islands",
@@ -1505,7 +1506,7 @@
             "ID-SG": {
                 "name": "Southeast Sulawesi",
                 "nativeName": "Sulawesi Tenggara",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Southeast_Sulawesi.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Flag_of_Southeast_Sulawesi.svg//128px-Flag_of_Southeast_Sulawesi.svg.png"
             },
             "ID-KS": {
                 "name": "South Kalimantan",
@@ -1515,12 +1516,12 @@
             "ID-SN": {
                 "name": "South Sulawesi",
                 "nativeName": "Sulawesi Selatan",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_South_Sulawesi.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_South_Sulawesi.svg//128px-Flag_of_South_Sulawesi.svg.png"
             },
             "ID-SS": {
                 "name": "South Sumatra",
                 "nativeName": "Sumatera Selatan",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_South_Sumatra_(vectorised).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_South_Sumatra_(vectorised).svg//128px-Flag_of_South_Sumatra_(vectorised).svg.png"
             },
             "ID-JB": {
                 "name": "West Java",
@@ -1530,12 +1531,12 @@
             "ID-KB": {
                 "name": "West Kalimantan",
                 "nativeName": "Kalimantan Barat",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Flag_of_West_Kalimantan.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Flag_of_West_Kalimantan.svg//128px-Flag_of_West_Kalimantan.svg.png"
             },
             "ID-NB": {
                 "name": "West Nusa Tenggara",
                 "nativeName": "Nusa Tenggara Barat",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_West_Nusa_Tenggara.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_West_Nusa_Tenggara.svg//128px-Flag_of_West_Nusa_Tenggara.svg.png"
             },
             "ID-PB": {
                 "name": "West Papua",
@@ -1555,32 +1556,32 @@
             "ID-YO": {
                 "name": "Special Region of Yogyakarta",
                 "nativeName": "Daerah Istimewa Yogyakarta",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Yogyakarta.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Flag_of_Yogyakarta.svg//128px-Flag_of_Yogyakarta.svg.png"
             },
             "ID-JK": {
                 "name": "Jakarta",
                 "nativeName": "Daerah Khusus Ibukota Jakarta",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Jakarta_(vectorised).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_Jakarta_(vectorised).svg//128px-Flag_of_Jakarta_(vectorised).svg.png"
             },
             "ID-PT": {
                 "name": "Central Papua",
                 "nativeName": "Papua Tengah",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Central_Papua_Province.svg/128px-Flag_of_Central_Papua_Province.svg.png"
             },
             "ID-MA": {
                 "name": "Maluku Islands",
                 "nativeName": "Maluku",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_Maluku.svg/128px-Flag_of_Maluku.svg.png"
             },
             "ID-PS": {
                 "name": "South Papua",
                 "nativeName": "Papua Selatan",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_South_Papua_Province.svg/128px-Flag_of_South_Papua_Province.svg.png"
             },
             "ID-PSW": {
                 "name": "Southwest Papua",
                 "nativeName": "Papua Barat Daya",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Southwest_Papua.svg/128px-Flag_of_Southwest_Papua.svg.png"
             }
         }
     },
@@ -1596,7 +1597,7 @@
             "IT-36": {
                 "name": "Friuli Venezia Giulia",
                 "nativeName": "Friuli-Venezia Giulia",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/55/Flag_of_Friuli-Venezia_Giulia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Flag_of_Friuli-Venezia_Giulia.svg//128px-Flag_of_Friuli-Venezia_Giulia.svg.png"
             },
             "IT-88": {
                 "name": "Sardinia",
@@ -1606,7 +1607,7 @@
             "IT-82": {
                 "name": "Sicily",
                 "nativeName": "Sicilia",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Sicilian_Flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Sicilian_Flag.svg//128px-Sicilian_Flag.svg.png"
             },
             "IT-32": {
                 "name": "Trentino-Alto Adige/Südtirol",
@@ -1646,7 +1647,7 @@
             "IT-62": {
                 "name": "Lazio",
                 "nativeName": "Lazio",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Flag_of_Lazio.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Flag_of_Lazio.svg//128px-Flag_of_Lazio.svg.png"
             },
             "IT-42": {
                 "name": "Liguria",
@@ -1676,7 +1677,7 @@
             "IT-52": {
                 "name": "Tuscany",
                 "nativeName": "Toscana",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Tuscany.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Tuscany.svg//128px-Flag_of_Tuscany.svg.png"
             },
             "IT-55": {
                 "name": "Umbria",
@@ -1686,7 +1687,7 @@
             "IT-34": {
                 "name": "Veneto",
                 "nativeName": "Veneto",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Flag_of_Veneto.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Flag_of_Veneto.svg//128px-Flag_of_Veneto.svg.png"
             }
         }
     },
@@ -1933,7 +1934,7 @@
     },
     "KR": {
         "name": "South Korea",
-        "nativeName": "Hanguk 한국 Namhan 남한",
+        "nativeName": "한국,남한",
         "regions": {
             "KR-11": {
                 "name": "Seoul",
@@ -2018,7 +2019,7 @@
             "KR-50": {
                 "name": "Sejong",
                 "nativeName": "세종",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Sejong_City.svg"
             }
         }
     },
@@ -2029,22 +2030,22 @@
             "K": {
                 "name": "Courland",
                 "nativeName": "Kurzeme",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Courland_(state).svg"
             },
             "L": {
                 "name": "Latgale",
                 "nativeName": "Latgale",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Official_flag_of_Latgale.svg"
             },
             "V": {
                 "name": "Vidzeme",
                 "nativeName": "Vidzeme",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Coat_of_arms_of_Vidzeme.svg//128px-Coat_of_arms_of_Vidzeme.svg.png"
             },
             "Z": {
                 "name": "Zemgale",
                 "nativeName": "Zemgale",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Coat_of_arms_of_Zemgale.svg"
             }
         }
     },
@@ -2130,7 +2131,7 @@
             "MY-16": {
                 "name": "Putrajaya",
                 "nativeName": "Putrajaya",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Putrajaya.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Putrajaya.svg//128px-Flag_of_Putrajaya.svg.png"
             }
         }
     },
@@ -2141,7 +2142,7 @@
             "MX-AGU": {
                 "name": "Aguascalientes",
                 "nativeName": "Aguascalientes",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Aguascalientes.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Aguascalientes.svg//128px-Flag_of_Aguascalientes.svg.png"
             },
             "MX-BCN": {
                 "name": "Baja California",
@@ -2156,37 +2157,37 @@
             "MX-CAM": {
                 "name": "Campeche",
                 "nativeName": "Campeche",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_Campeche.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_Campeche.svg//128px-Flag_of_Campeche.svg.png"
             },
             "MX-CHP": {
                 "name": "Chiapas",
                 "nativeName": "Chiapas",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Chiapas.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Chiapas.svg//128px-Flag_of_Chiapas.svg.png"
             },
             "MX-CHH": {
                 "name": "Chihuahua",
                 "nativeName": "Chihuahua",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Chihuahua.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Chihuahua.svg//128px-Flag_of_Chihuahua.svg.png"
             },
             "MX-COA": {
                 "name": "Coahuila",
                 "nativeName": "Coahuila",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Coahuila.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flag_of_Coahuila.svg//128px-Flag_of_Coahuila.svg.png"
             },
             "MX-COL": {
                 "name": "Colima",
                 "nativeName": "Colima",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_Colima.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Flag_of_Colima.svg//128px-Flag_of_Colima.svg.png"
             },
             "MX-DUR": {
                 "name": "Durango",
                 "nativeName": "Durango",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Durango.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Flag_of_Durango.svg//128px-Flag_of_Durango.svg.png"
             },
             "MX-GUA": {
                 "name": "Guanajuato",
                 "nativeName": "Guanajuato",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_Guanajuato.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Flag_of_Guanajuato.svg//128px-Flag_of_Guanajuato.svg.png"
             },
             "MX-GRO": {
                 "name": "Guerrero",
@@ -2196,7 +2197,7 @@
             "MX-HID": {
                 "name": "Hidalgo",
                 "nativeName": "Hidalgo",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Hidalgo.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Hidalgo.svg//128px-Flag_of_Hidalgo.svg.png"
             },
             "MX-JAL": {
                 "name": "Jalisco",
@@ -2206,12 +2207,12 @@
             "MX-CMX": {
                 "name": "Mexico",
                 "nativeName": "Ciudad de México",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_the_State_of_Mexico.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Coat_of_arms_of_Mexico_City,_Mexico.svg//128px-Coat_of_arms_of_Mexico_City,_Mexico.svg.png"
             },
             "MX-MIC": {
                 "name": "Michoacán",
                 "nativeName": "Michoacán",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Michoacan.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Flag_of_Michoacan.svg//128px-Flag_of_Michoacan.svg.png"
             },
             "MX-MOR": {
                 "name": "Morelos",
@@ -2221,27 +2222,27 @@
             "MX-NAY": {
                 "name": "Nayarit",
                 "nativeName": "Nayarit",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Nayarit.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Flag_of_Nayarit.svg//128px-Flag_of_Nayarit.svg.png"
             },
             "MX-NLE": {
                 "name": "Nuevo León",
                 "nativeName": "Nuevo León",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/Flag_of_Nuevo_Leon.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Flag_of_Nuevo_Leon.svg//128px-Flag_of_Nuevo_Leon.svg.png"
             },
             "MX-OAX": {
                 "name": "Oaxaca",
                 "nativeName": "Oaxaca",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_Oaxaca.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Flag_of_Oaxaca.svg//128px-Flag_of_Oaxaca.svg.png"
             },
             "MX-PUE": {
                 "name": "Puebla",
                 "nativeName": "Puebla",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Flag_of_Puebla.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Puebla.svg//128px-Flag_of_Puebla.svg.png"
             },
             "MX-QUE": {
                 "name": "Querétaro",
                 "nativeName": "Querétaro",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Queretaro.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_Queretaro.svg//128px-Flag_of_Queretaro.svg.png"
             },
             "MX-ROO": {
                 "name": "Quintana Roo",
@@ -2251,17 +2252,17 @@
             "MX-SLP": {
                 "name": "San Luis Potosí",
                 "nativeName": "San Luis Potosí",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_San_Luis_Potosi.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_San_Luis_Potosi.svg//128px-Flag_of_San_Luis_Potosi.svg.png"
             },
             "MX-SIN": {
                 "name": "Sinaloa",
                 "nativeName": "Sinaloa",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Flag_of_Sinaloa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Flag_of_Sinaloa.svg//128px-Flag_of_Sinaloa.svg.png"
             },
             "MX-SON": {
                 "name": "Sonora",
                 "nativeName": "Sonora",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/69/Flag_of_Sonora.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_of_Sonora.svg//128px-Flag_of_Sonora.svg.png"
             },
             "MX-TAB": {
                 "name": "Tabasco",
@@ -2271,17 +2272,17 @@
             "MX-TAM": {
                 "name": "Tamaulipas",
                 "nativeName": "Tamaulipas",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Tamaulipas.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Tamaulipas.svg//128px-Flag_of_Tamaulipas.svg.png"
             },
             "MX-TLA": {
                 "name": "Tlaxcala",
                 "nativeName": "Tlaxcala",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_Tlaxcala.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_Tlaxcala.svg//128px-Flag_of_Tlaxcala.svg.png"
             },
             "MX-VER": {
                 "name": "Veracruz",
                 "nativeName": "Veracruz",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Veracruz.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Veracruz.svg//128px-Flag_of_Veracruz.svg.png"
             },
             "MX-YUC": {
                 "name": "Yucatán",
@@ -2291,12 +2292,12 @@
             "MX-ZAC": {
                 "name": "Zacatecas",
                 "nativeName": "Zacatecas",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Zacatecas.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Zacatecas.svg//128px-Flag_of_Zacatecas.svg.png"
             },
             "MX-MEX": {
                 "name": "State of Mexico",
                 "nativeName": "Estado de México",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_the_State_of_Mexico.svg//128px-Flag_of_the_State_of_Mexico.svg.png"
             }
         }
     },
@@ -2362,7 +2363,7 @@
             "NL-ZE": {
                 "name": "Zeeland",
                 "nativeName": "Zeeland",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Zeeland.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Zeeland.svg//128px-Flag_of_Zeeland.svg.png"
             }
         }
     },
@@ -2373,57 +2374,57 @@
             "NO-15": {
                 "name": "Møre og Romsdal",
                 "nativeName": "Møre og Romsdal",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Møre_og_Romsdal.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Møre_og_Romsdal_våpen.svg"
             },
             "NO-18": {
                 "name": "Nordland",
                 "nativeName": "Nordland",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Flag_of_Nordland.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nordland_våpen.svg"
             },
             "NO-03": {
                 "name": "Oslo",
                 "nativeName": "Oslo",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Oslo.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Oslo_komm.svg"
             },
             "NO-11": {
                 "name": "Rogaland",
                 "nativeName": "Rogaland",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Rogaland.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rogaland_våpen.svg"
             },
             "NO-50": {
                 "name": "Trøndelag",
                 "nativeName": "Trøndelag",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Nord-Trøndelag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Trøndelag_våpen.svg"
             },
             "NO-38": {
                 "name": "Vestfold og Telemark",
                 "nativeName": "Vestfold og Telemark",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Vestfold_and_Telemark.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Vestfold_og_Telemark_våpen.svg"
             },
             "NO-30": {
                 "name": "Viken",
                 "nativeName": "Viken",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_våpen.svg"
             },
             "NO-34": {
                 "name": "Innlandet",
                 "nativeName": "Innlandet",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_våpen.svg"
             },
             "NO-42": {
                 "name": "Agder",
                 "nativeName": "Agder",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/25/Agder_våpen.svg"
             },
             "NO-46": {
                 "name": "Vestland",
                 "nativeName": "Vestland",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_våpen.svg"
             },
             "NO-54": {
                 "name": "Troms og Finnmark",
                 "nativeName": "Troms og Finnmark",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Troms_og_Finnmark_våpen.svg"
             }
         }
     },
@@ -2444,12 +2445,12 @@
             "PE-APU": {
                 "name": "Department of Apurímac",
                 "nativeName": "Apurímac",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bandera_Región_Apurimac.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bandera_Región_Apurimac.svg//128px-Bandera_Región_Apurimac.svg.png"
             },
             "PE-ARE": {
                 "name": "Department of Arequipa",
                 "nativeName": "Arequipa",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bandera_de_Arequipa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandera_de_Arequipa.svg//128px-Bandera_de_Arequipa.svg.png"
             },
             "PE-AYA": {
                 "name": "Department of Ayacucho",
@@ -2459,12 +2460,12 @@
             "PE-CAJ": {
                 "name": "Department of Cajamarca",
                 "nativeName": "Cajamarca",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bandera_de_Cajamarca.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bandera_de_Cajamarca.svg//128px-Bandera_de_Cajamarca.svg.png"
             },
             "PE-CAL": {
                 "name": "Constitutional Province of Callao",
                 "nativeName": "Callao",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/Bandera_del_Callao.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bandera_del_Callao.svg//128px-Bandera_del_Callao.svg.png"
             },
             "PE-HUV": {
                 "name": "Department of Huancavelica",
@@ -2539,7 +2540,7 @@
             "PE-TAC": {
                 "name": "Department of Tacna",
                 "nativeName": "Tacna",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Tacna.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Flag_of_Tacna.svg//128px-Flag_of_Tacna.svg.png"
             },
             "PE-TUM": {
                 "name": "Department of Tumbes",
@@ -2549,12 +2550,12 @@
             "PE-UCA": {
                 "name": "Department of Ucayali",
                 "nativeName": "Ucayali",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bandera_de_Ucayali.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Bandera_de_Ucayali.svg//128px-Bandera_de_Ucayali.svg.png"
             },
             "PE-CUS": {
                 "name": "Cusco",
-                "nativeName": "Cusco",
-                "flag": ""
+                "nativeName": "Cuzco",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_(2021).svg"
             }
         }
     },
@@ -2716,7 +2717,7 @@
             "PL-18": {
                 "name": "Subcarpathian Voivodeship",
                 "nativeName": "województwo podkarpackie",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/POL_województwo_podkarpackie_flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/POL_województwo_podkarpackie_flag.svg//128px-POL_województwo_podkarpackie_flag.svg.png"
             },
             "PL-26": {
                 "name": "Świętokrzyskie Voivodeship",
@@ -2740,39 +2741,39 @@
         "nativeName": "Portugal",
         "regions": {
             "PT11": {
-                "name": "North",
-                "nativeName": "",
-                "flag": ""
+                "name": "North Region",
+                "nativeName": "Norte",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT11.png"
             },
             "PT15": {
                 "name": "Algarve",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Algarve",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT15.png"
             },
             "PT16": {
                 "name": "Central Region",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Centro",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT16.png"
             },
             "PT17": {
                 "name": "Lisbon Metropolitan Area",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Lisboa e Vale do Tejo",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT17.png"
             },
             "PT18": {
                 "name": "Alentejo",
-                "nativeName": "",
-                "flag": ""
+                "nativeName": "Alentejo",
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/pt/PT18.png"
             },
             "PT20": {
                 "name": "Azores",
                 "nativeName": "Açores",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_the_Azores.svg"
             },
             "PT30": {
                 "name": "Madeira",
                 "nativeName": "Madeira",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Madeira.svg"
             }
         }
     },
@@ -2783,7 +2784,7 @@
             "RO-B": {
                 "name": "Bucharest",
                 "nativeName": "București",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/55/ROU_Bucharest_Flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ROU_Bucharest_Flag.svg//128px-ROU_Bucharest_Flag.svg.png"
             },
             "RO-AB": {
                 "name": "Alba County",
@@ -3104,7 +3105,7 @@
             "RU-ALT": {
                 "name": "Altai Krai",
                 "nativeName": "Алтайский край",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Altai_Krai.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Altai_Krai.svg//128px-Flag_of_Altai_Krai.svg.png"
             },
             "RU-ZAB": {
                 "name": "Zabaykalsky Krai",
@@ -3119,12 +3120,12 @@
             "RU-KDA": {
                 "name": "Krasnodar Krai",
                 "nativeName": "Краснодарский край",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_Krasnodar_Krai.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_Krasnodar_Krai.svg//128px-Flag_of_Krasnodar_Krai.svg.png"
             },
             "RU-KYA": {
                 "name": "Krasnoyarsk Krai",
                 "nativeName": "Красноярский край",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_Krasnoyarsk_Krai.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_Krasnoyarsk_Krai.svg//128px-Flag_of_Krasnoyarsk_Krai.svg.png"
             },
             "RU-PER": {
                 "name": "Perm Krai",
@@ -3139,7 +3140,7 @@
             "RU-STA": {
                 "name": "Stavropol Krai",
                 "nativeName": "Ставропольский край",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Stavropol_Krai.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Stavropol_Krai.svg//128px-Flag_of_Stavropol_Krai.svg.png"
             },
             "RU-KHA": {
                 "name": "Khabarovsk Krai",
@@ -3154,17 +3155,17 @@
             "RU-ARK": {
                 "name": "Arkhangelsk Oblast",
                 "nativeName": "Архангельская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Arkhangelsk_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Flag_of_Arkhangelsk_Oblast.svg//128px-Flag_of_Arkhangelsk_Oblast.svg.png"
             },
             "RU-AST": {
                 "name": "Astrakhan Oblast",
                 "nativeName": "Астраханская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Astrakhan_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Flag_of_Astrakhan_Oblast.svg//128px-Flag_of_Astrakhan_Oblast.svg.png"
             },
             "RU-BEL": {
                 "name": "Belgorod Oblast",
                 "nativeName": "Белгородская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_Belgorod_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Flag_of_Belgorod_Oblast.svg//128px-Flag_of_Belgorod_Oblast.svg.png"
             },
             "RU-BRY": {
                 "name": "Bryansk Oblast",
@@ -3184,7 +3185,7 @@
             "RU-VLG": {
                 "name": "Vologda Oblast",
                 "nativeName": "Вологодская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Vologda_oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_Vologda_oblast.svg//128px-Flag_of_Vologda_oblast.svg.png"
             },
             "RU-VOR": {
                 "name": "Voronezh Oblast",
@@ -3194,7 +3195,7 @@
             "RU-IVA": {
                 "name": "Ivanovo Oblast",
                 "nativeName": "Ивановская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Ivanovo_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Ivanovo_Oblast.svg//128px-Flag_of_Ivanovo_Oblast.svg.png"
             },
             "RU-IRK": {
                 "name": "Irkutsk Oblast",
@@ -3214,7 +3215,7 @@
             "RU-KEM": {
                 "name": "Kemerovo Oblast",
                 "nativeName": "Кемеровская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Kemerovo_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Kemerovo_Oblast.svg//128px-Flag_of_Kemerovo_Oblast.svg.png"
             },
             "RU-KIR": {
                 "name": "Kirov Oblast",
@@ -3224,7 +3225,7 @@
             "RU-KOS": {
                 "name": "Kostroma Oblast",
                 "nativeName": "Костромская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Kostroma_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Kostroma_Oblast.svg//128px-Flag_of_Kostroma_Oblast.svg.png"
             },
             "RU-KGN": {
                 "name": "Kurgan Oblast",
@@ -3234,7 +3235,7 @@
             "RU-KRS": {
                 "name": "Kursk Oblast",
                 "nativeName": "Курская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Kursk_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Flag_of_Kursk_Oblast.svg//128px-Flag_of_Kursk_Oblast.svg.png"
             },
             "RU-LEN": {
                 "name": "Leningrad Oblast",
@@ -3254,7 +3255,7 @@
             "RU-MOS": {
                 "name": "Moscow Oblast",
                 "nativeName": "Московская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Moscow_oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Moscow_oblast.svg//128px-Flag_of_Moscow_oblast.svg.png"
             },
             "RU-MUR": {
                 "name": "Murmansk Oblast",
@@ -3284,17 +3285,17 @@
             "RU-ORE": {
                 "name": "Orenburg Oblast",
                 "nativeName": "Оренбургская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Flag_of_Orenburg_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Flag_of_Orenburg_Oblast.svg//128px-Flag_of_Orenburg_Oblast.svg.png"
             },
             "RU-ORL": {
                 "name": "Oryol Oblast",
                 "nativeName": "Орловская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Oryol_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Oryol_Oblast.svg//128px-Flag_of_Oryol_Oblast.svg.png"
             },
             "RU-PNZ": {
                 "name": "Penza Oblast",
                 "nativeName": "Пензенская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Penza_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Penza_Oblast.svg//128px-Flag_of_Penza_Oblast.svg.png"
             },
             "RU-PSK": {
                 "name": "Pskov Oblast",
@@ -3314,12 +3315,12 @@
             "RU-SAM": {
                 "name": "Samara Oblast",
                 "nativeName": "Самарская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Samara_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_Samara_Oblast.svg//128px-Flag_of_Samara_Oblast.svg.png"
             },
             "RU-SAR": {
                 "name": "Saratov Oblast",
                 "nativeName": "Саратовская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Flag_of_Saratov_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Saratov_Oblast.svg//128px-Flag_of_Saratov_Oblast.svg.png"
             },
             "RU-SAK": {
                 "name": "Sakhalin Oblast",
@@ -3339,7 +3340,7 @@
             "RU-TAM": {
                 "name": "Tambov Oblast",
                 "nativeName": "Тамбовская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Tambov_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Flag_of_Tambov_Oblast.svg//128px-Flag_of_Tambov_Oblast.svg.png"
             },
             "RU-TVE": {
                 "name": "Tver Oblast",
@@ -3349,7 +3350,7 @@
             "RU-TOM": {
                 "name": "Tomsk Oblast",
                 "nativeName": "Томская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Tomsk_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_Tomsk_Oblast.svg//128px-Flag_of_Tomsk_Oblast.svg.png"
             },
             "RU-TUL": {
                 "name": "Tula Oblast",
@@ -3405,17 +3406,17 @@
     },
     "ES": {
         "name": "Spain",
-        "nativeName": "España",
+        "nativeName": "Españita",
         "regions": {
             "ES-AN": {
                 "name": "Andalusia",
                 "nativeName": "Andalucía",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Andalucía.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Andalucía.svg//128px-Flag_of_Andalucía.svg.png"
             },
             "ES-AR": {
                 "name": "Aragon",
                 "nativeName": "Aragón",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Aragon.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_Aragon.svg//128px-Flag_of_Aragon.svg.png"
             },
             "ES-AS": {
                 "name": "Asturias",
@@ -3430,7 +3431,12 @@
             "ES-CN": {
                 "name": "Canary Islands",
                 "nativeName": "Canarias",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_the_Canary_Islands.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Flag_of_the_Canary_Islands.svg//128px-Flag_of_the_Canary_Islands.svg.png"
+            },
+            "ES-CB": {
+                "name": "Cantabria",
+                "nativeName": "Cantabria",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Cantabria_(Official).svg//128px-Flag_of_Cantabria_(Official).svg.png"
             },
             "ES-CM": {
                 "name": "Castilla–La Mancha",
@@ -3450,7 +3456,7 @@
             "ES-EX": {
                 "name": "Extremadura",
                 "nativeName": "Extremadura",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Extremadura,_Spain_(with_coat_of_arms).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_Extremadura,_Spain_(with_coat_of_arms).svg//128px-Flag_of_Extremadura,_Spain_(with_coat_of_arms).svg.png"
             },
             "ES-GA": {
                 "name": "Galicia",
@@ -3470,7 +3476,7 @@
             "ES-NC": {
                 "name": "Navarre",
                 "nativeName": "Navarra - Nafarroa",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bandera_de_Navarra.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bandera_de_Navarra.svg//128px-Bandera_de_Navarra.svg.png"
             },
             "ES-VC": {
                 "name": "Valencian Community",
@@ -3485,22 +3491,17 @@
             "ES-ML": {
                 "name": "Melilla",
                 "nativeName": "Melilla",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Melilla.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Melilla.svg//128px-Flag_of_Melilla.svg.png"
             },
             "ES-PM": {
                 "name": "Balearic Islands",
                 "nativeName": "Illes Balears",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
             },
-            "ES-CB": {
-                "name": "Cantabria",
-                "nativeName": "Cantabria",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_(Official).svg"
-            },
             "ES-RI": {
                 "name": "La Rioja",
                 "nativeName": "La Rioja",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg//128px-Flag_of_La_Rioja_(with_coat_of_arms).svg.png"
             }
         }
     },
@@ -3536,7 +3537,7 @@
             "SE-Z": {
                 "name": "Jämtland County",
                 "nativeName": "Jämtlands län",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jämtlands_län_vapenflagga.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jämtlands_län_vapenflagga.svg//128px-Jämtlands_län_vapenflagga.svg.png"
             },
             "SE-F": {
                 "name": "Jönköping County",
@@ -3601,7 +3602,7 @@
             "SE-O": {
                 "name": "Västra Götaland County",
                 "nativeName": "Västra Götalands län",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/26/Västra_Götalands_län_vapenflagga.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Västra_Götalands_län_vapenflagga.svg//128px-Västra_Götalands_län_vapenflagga.svg.png"
             },
             "SE-T": {
                 "name": "Örebro County",
@@ -3632,7 +3633,7 @@
             "TH-10": {
                 "name": "Bangkok",
                 "nativeName": "กรุงเทพมหานคร",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Bangkok.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_Bangkok.svg//128px-Flag_of_Bangkok.svg.png"
             },
             "TH-38": {
                 "name": "Bueng Kan province",
@@ -3757,7 +3758,7 @@
             "TH-48": {
                 "name": "Nakhon Phanom province",
                 "nativeName": "จังหวัดนครพนม",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/40/Flag_of_Nakhon_Phanom_Province.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Flag_of_Nakhon_Phanom_Province.svg//128px-Flag_of_Nakhon_Phanom_Province.svg.png"
             },
             "TH-30": {
                 "name": "Nakhon Ratchasima province",
@@ -3777,7 +3778,7 @@
             "TH-55": {
                 "name": "Nan province",
                 "nativeName": "จังหวัดน่าน",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/ธงประจำจังหวัดน่าน.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/ธงประจำจังหวัดน่าน.svg//128px-ธงประจำจังหวัดน่าน.svg.png"
             },
             "TH-96": {
                 "name": "Narathiwat province",
@@ -3797,7 +3798,7 @@
             "TH-12": {
                 "name": "Nonthaburi province",
                 "nativeName": "จังหวัดนนทบุรี",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/ธงจังหวัดนนทบุรี.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/ธงจังหวัดนนทบุรี.svg//128px-ธงจังหวัดนนทบุรี.svg.png"
             },
             "TH-13": {
                 "name": "Pathum Thani province",
@@ -3822,7 +3823,7 @@
             "TH-56": {
                 "name": "Phayao province",
                 "nativeName": "จังหวัดพะเยา",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Phayao_flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phayao_flag.svg//128px-Phayao_flag.svg.png"
             },
             "TH-67": {
                 "name": "Phetchabun province",
@@ -3842,7 +3843,7 @@
             "TH-65": {
                 "name": "Phitsanulok province",
                 "nativeName": "จังหวัดพิษณุโลก",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Pitsanulok_flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Pitsanulok_flag.svg//128px-Pitsanulok_flag.svg.png"
             },
             "TH-14": {
                 "name": "Phra Nakhon Si Ayutthaya province",
@@ -3917,7 +3918,7 @@
             "TH-19": {
                 "name": "Saraburi province",
                 "nativeName": "จังหวัดสระบุรี",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Provincial_Flag_of_Saraburi.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Provincial_Flag_of_Saraburi.svg//128px-Provincial_Flag_of_Saraburi.svg.png"
             },
             "TH-91": {
                 "name": "Satun province",
@@ -3942,7 +3943,7 @@
             "TH-64": {
                 "name": "Sukhothai province",
                 "nativeName": "จังหวัดสุโขทัย",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_Sukhothai_Province.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_Sukhothai_Province.svg//128px-Flag_of_Sukhothai_Province.svg.png"
             },
             "TH-72": {
                 "name": "Suphan Buri province",
@@ -3977,7 +3978,7 @@
             "TH-34": {
                 "name": "Ubon Ratchathani province",
                 "nativeName": "จังหวัดอุบลราชธานี",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Ubon_Ratchathani_Province_Flags.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ubon_Ratchathani_Province_Flags.svg//128px-Ubon_Ratchathani_Province_Flags.svg.png"
             },
             "TH-41": {
                 "name": "Udon Thani province",
@@ -4013,7 +4014,7 @@
             "UA-71": {
                 "name": "Cherkasy Oblast",
                 "nativeName": "Черкаська область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Cherkasy_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Cherkasy_Oblast.svg//128px-Flag_of_Cherkasy_Oblast.svg.png"
             },
             "UA-74": {
                 "name": "Chernihiv Oblast",
@@ -4028,7 +4029,7 @@
             "UA-12": {
                 "name": "Dnipropetrovsk Oblast",
                 "nativeName": "Дніпропетровська область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Dnipropetrovsk_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Dnipropetrovsk_Oblast.svg//128px-Flag_of_Dnipropetrovsk_Oblast.svg.png"
             },
             "UA-14": {
                 "name": "Donetsk Oblast",
@@ -4063,12 +4064,12 @@
             "UA-32": {
                 "name": "Kyiv Oblast",
                 "nativeName": "Київська область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_Kyiv_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Flag_of_Kyiv_Oblast.svg//128px-Flag_of_Kyiv_Oblast.svg.png"
             },
             "UA-09": {
                 "name": "Luhansk Oblast",
                 "nativeName": "Луганська область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Luhansk_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Luhansk_Oblast.svg//128px-Flag_of_Luhansk_Oblast.svg.png"
             },
             "UA-46": {
                 "name": "Lviv Oblast",
@@ -4078,7 +4079,7 @@
             "UA-48": {
                 "name": "Mykolaiv Oblast",
                 "nativeName": "Миколаївська область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Flag_of_Mykolaiv_Oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Flag_of_Mykolaiv_Oblast.svg//128px-Flag_of_Mykolaiv_Oblast.svg.png"
             },
             "UA-51": {
                 "name": "Odesa Oblast",
@@ -4108,7 +4109,7 @@
             "UA-05": {
                 "name": "Vinnytsia Oblast",
                 "nativeName": "Вінницька область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Prapor_Vinnytskoyi_oblasti.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Prapor_Vinnytskoyi_oblasti.svg//128px-Prapor_Vinnytskoyi_oblasti.svg.png"
             },
             "UA-07": {
                 "name": "Volyn Oblast",
@@ -4133,7 +4134,7 @@
             "UA-23": {
                 "name": "Zaporizhia Oblast",
                 "nativeName": "Запорізька область",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Flag_of_Zaporizhia_Oblast.svg//128px-Flag_of_Zaporizhia_Oblast.svg.png"
             }
         }
     },
@@ -4164,7 +4165,7 @@
             "US-CA": {
                 "name": "California",
                 "nativeName": "California",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg//128px-Flag_of_California.svg.png"
             },
             "US-CO": {
                 "name": "Colorado",
@@ -4174,17 +4175,17 @@
             "US-CT": {
                 "name": "Connecticut",
                 "nativeName": "Connecticut",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_Connecticut.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Connecticut.svg//128px-Flag_of_Connecticut.svg.png"
             },
             "US-DE": {
                 "name": "Delaware",
                 "nativeName": "Delaware",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Flag_of_Delaware.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flag_of_Delaware.svg//128px-Flag_of_Delaware.svg.png"
             },
             "US-FL": {
                 "name": "Florida",
                 "nativeName": "Florida",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Florida.svg//128px-Flag_of_Florida.svg.png"
             },
             "US-GA": {
                 "name": "Georgia",
@@ -4199,12 +4200,12 @@
             "US-ID": {
                 "name": "Idaho",
                 "nativeName": "Idaho",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Idaho.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Idaho.svg//128px-Flag_of_Idaho.svg.png"
             },
             "US-IL": {
                 "name": "Illinois",
                 "nativeName": "Illinois",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Illinois.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Illinois.svg//128px-Flag_of_Illinois.svg.png"
             },
             "US-IN": {
                 "name": "Indiana",
@@ -4214,27 +4215,27 @@
             "US-IA": {
                 "name": "Iowa",
                 "nativeName": "Iowa",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Iowa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Iowa.svg//128px-Flag_of_Iowa.svg.png"
             },
             "US-KS": {
                 "name": "Kansas",
                 "nativeName": "Kansas",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Kansas.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Kansas.svg//128px-Flag_of_Kansas.svg.png"
             },
             "US-KY": {
                 "name": "Kentucky",
                 "nativeName": "Kentucky",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Kentucky.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_Kentucky.svg//128px-Flag_of_Kentucky.svg.png"
             },
             "US-LA": {
                 "name": "Louisiana",
                 "nativeName": "Louisiana",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_Louisiana.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Flag_of_Louisiana.svg//128px-Flag_of_Louisiana.svg.png"
             },
             "US-ME": {
                 "name": "Maine",
                 "nativeName": "Maine",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_the_State_of_Maine.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_the_State_of_Maine.svg//128px-Flag_of_the_State_of_Maine.svg.png"
             },
             "US-MD": {
                 "name": "Maryland",
@@ -4244,17 +4245,17 @@
             "US-MA": {
                 "name": "Massachusetts",
                 "nativeName": "Massachusetts",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Massachusetts.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg//128px-Flag_of_Massachusetts.svg.png"
             },
             "US-MI": {
                 "name": "Michigan",
                 "nativeName": "Michigan",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Michigan.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Michigan.svg//128px-Flag_of_Michigan.svg.png"
             },
             "US-MN": {
                 "name": "Minnesota",
                 "nativeName": "Minnesota",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Minnesota.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Minnesota.svg//128px-Flag_of_Minnesota.svg.png"
             },
             "US-MS": {
                 "name": "Mississippi",
@@ -4264,7 +4265,7 @@
             "US-MO": {
                 "name": "Missouri",
                 "nativeName": "Missouri",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Missouri.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Missouri.svg//128px-Flag_of_Missouri.svg.png"
             },
             "US-MT": {
                 "name": "Montana",
@@ -4274,22 +4275,22 @@
             "US-NE": {
                 "name": "Nebraska",
                 "nativeName": "Nebraska",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Nebraska.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flag_of_Nebraska.svg//128px-Flag_of_Nebraska.svg.png"
             },
             "US-NV": {
                 "name": "Nevada",
                 "nativeName": "Nevada",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Nevada.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Flag_of_Nevada.svg//128px-Flag_of_Nevada.svg.png"
             },
             "US-NH": {
                 "name": "New Hampshire",
                 "nativeName": "New Hampshire",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_New_Hampshire.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_New_Hampshire.svg//128px-Flag_of_New_Hampshire.svg.png"
             },
             "US-NJ": {
                 "name": "New Jersey",
                 "nativeName": "New Jersey",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_New_Jersey.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_New_Jersey.svg//128px-Flag_of_New_Jersey.svg.png"
             },
             "US-NM": {
                 "name": "New Mexico",
@@ -4299,7 +4300,7 @@
             "US-NY": {
                 "name": "New York",
                 "nativeName": "New York",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_New_York.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_New_York.svg//128px-Flag_of_New_York.svg.png"
             },
             "US-NC": {
                 "name": "North Carolina",
@@ -4309,7 +4310,7 @@
             "US-ND": {
                 "name": "North Dakota",
                 "nativeName": "North Dakota",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Flag_of_North_Dakota.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Flag_of_North_Dakota.svg//128px-Flag_of_North_Dakota.svg.png"
             },
             "US-OH": {
                 "name": "Ohio",
@@ -4324,12 +4325,12 @@
             "US-OR": {
                 "name": "Oregon",
                 "nativeName": "Oregon",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Oregon.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Oregon.svg//128px-Flag_of_Oregon.svg.png"
             },
             "US-PA": {
                 "name": "Pennsylvania",
                 "nativeName": "Pennsylvania",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Pennsylvania.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Pennsylvania.svg//128px-Flag_of_Pennsylvania.svg.png"
             },
             "US-RI": {
                 "name": "Rhode Island",
@@ -4344,7 +4345,7 @@
             "US-SD": {
                 "name": "South Dakota",
                 "nativeName": "South Dakota",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_South_Dakota.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_South_Dakota.svg//128px-Flag_of_South_Dakota.svg.png"
             },
             "US-TN": {
                 "name": "Tennessee",
@@ -4359,47 +4360,48 @@
             "US-UT": {
                 "name": "Utah",
                 "nativeName": "Utah",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Utah.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Utah.svg//128px-Flag_of_Utah.svg.png"
             },
             "US-VT": {
                 "name": "Vermont",
                 "nativeName": "Vermont",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Vermont.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Vermont.svg//128px-Flag_of_Vermont.svg.png"
             },
             "US-VA": {
                 "name": "Virginia",
                 "nativeName": "Virginia",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Virginia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Virginia.svg//128px-Flag_of_Virginia.svg.png"
             },
             "US-WA": {
                 "name": "Washington",
                 "nativeName": "Washington",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Washington.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Washington.svg//128px-Flag_of_Washington.svg.png"
             },
             "US-WV": {
                 "name": "West Virginia",
                 "nativeName": "West Virginia",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/Flag_of_West_Virginia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_West_Virginia.svg//128px-Flag_of_West_Virginia.svg.png"
             },
             "US-WI": {
                 "name": "Wisconsin",
                 "nativeName": "Wisconsin",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/Flag_of_Wisconsin.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_Wisconsin.svg//128px-Flag_of_Wisconsin.svg.png"
             },
             "US-WY": {
                 "name": "Wyoming",
                 "nativeName": "Wyoming",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Wyoming.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Wyoming.svg//128px-Flag_of_Wyoming.svg.png"
             },
             "US-WADC": {
                 "name": "Washington, D.C.",
-                "nativeName": "Washington",
-                "flag": ""
+                "nativeName": "Washington, D.C.",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
             }
         }
     },
     "KZ": {
         "name": "Kazakhstan",
+        "nativeName": "Қазақстан",
         "regions": {
             "KZ-10": {
                 "name": "Abay Region",
@@ -4505,40 +4507,42 @@
     },
     "SG": {
         "name": "Singapore",
+        "nativeName": "Singapore",
         "regions": {
             "SG-01": {
                 "name": "Central Singapore",
                 "nativeName": "Central Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215418"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region,_Singapore.png"
             },
             "SG-02": {
                 "name": "Northeast Singapore",
                 "nativeName": "Northeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215655"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region,_Singapore.png"
             },
             "SG-03": {
                 "name": "Northwest Singapore",
                 "nativeName": "Northwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215625"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region,_Singapore.png"
             },
             "SG-04": {
                 "name": "Southeast Singapore",
                 "nativeName": "Southeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215512"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region,_Singapore.png"
             },
             "SG-05": {
                 "name": "Southwest Singapore",
                 "nativeName": "Southwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region,_Singapore.png/revision/latest/scale-to-width-down/150?cb=20230826215841"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region,_Singapore.png"
             }
         }
     },
     "TR": {
         "name": "Turkey",
+        "nativeName": "Türkiye",
         "regions": {
             "TR-EGE": {
                 "name": "Aegean Region",
-                "nativeName": "Ege Bölgesi",
+                "nativeName": "Ege Mahallesi",
                 "flag": ""
             },
             "TR-KAR": {
@@ -4579,117 +4583,119 @@
             "TW-CHA": {
                 "name": "Changhua County",
                 "nativeName": "彰化縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Flag_of_Changhua_County.svg"
             },
             "TW-CYQ": {
                 "name": "Chiayi County",
                 "nativeName": "嘉義縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Chiayi_County.svg"
             },
             "TW-CYI": {
                 "name": "Chiayi",
                 "nativeName": "嘉義市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Chiayi_City.svg"
             },
             "TW-HSQ": {
                 "name": "Hsinchu County",
                 "nativeName": "新竹縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Hsinchu_County_(since_2019).svg"
             },
             "TW-HSZ": {
                 "name": "Hsinchu",
                 "nativeName": "新竹市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Hsinchu_City.svg"
             },
             "TW-HUA": {
                 "name": "Hualien County",
                 "nativeName": "花蓮縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flag_of_Hualien_County.svg"
             },
             "TW-KHH": {
                 "name": "Kaohsiung",
                 "nativeName": "高雄市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_Kaohsiung_City.svg//128px-Flag_of_Kaohsiung_City.svg.png"
             },
             "TW-KEE": {
                 "name": "Keelung",
                 "nativeName": "基隆市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Flag_of_Keelung_City.svg"
             },
             "TW-KIN": {
                 "name": "Kinmen",
                 "nativeName": "金門縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Kinmen_County.svg"
             },
             "TW-LIE": {
                 "name": "Lienchiang County",
                 "nativeName": "連江縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Lienchiang_County.svg"
             },
             "TW-MIA": {
                 "name": "Miaoli County",
                 "nativeName": "苗栗縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_Miaoli_County.svg"
             },
             "TW-NAN": {
                 "name": "Nantou County",
                 "nativeName": "南投縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Nantou_County.svg//128px-Flag_of_Nantou_County.svg.png"
             },
             "TW-NWT": {
                 "name": "New Taipei",
                 "nativeName": "新北市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_New_Taipei_City.svg"
             },
             "TW-PEN": {
                 "name": "Penghu",
                 "nativeName": "澎湖縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Penghu_County.svg"
             },
             "TW-PIF": {
                 "name": "Pingtung County",
                 "nativeName": "屏東縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Flag_of_Pingtung_County.svg"
             },
             "TW-TXG": {
                 "name": "Taichung",
                 "nativeName": "臺中市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Taichung_City.svg"
             },
             "TW-TNN": {
                 "name": "Tainan",
                 "nativeName": "臺南市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Tainan_City.svg"
             },
             "TW-TPE": {
                 "name": "Taipei",
                 "nativeName": "臺北市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Taipei_City.svg"
             },
             "TW-TTT": {
                 "name": "Taitung County",
                 "nativeName": "臺東縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Taitung_County_(before_2015).svg"
             },
             "TW-TAO": {
                 "name": "Taoyuan City",
                 "nativeName": "桃園市",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Taoyuan_City.svg"
             },
             "TW-ILA": {
                 "name": "Yilan County",
                 "nativeName": "宜蘭縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Yilan_County.svg"
             },
             "TW-YUN": {
                 "name": "Yunlin County",
                 "nativeName": "雲林縣",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Yunlin_County.svg"
             }
-        }
+        },
+        "nativeName": "台灣"
     },
     "VN": {
         "name": "Vietnam",
+        "nativeName": "Việt Nam",
         "regions": {
             "VN-44": {
                 "name": "An Giang Province",

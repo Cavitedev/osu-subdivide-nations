@@ -6,9 +6,23 @@ Feedback and contact in [Discord](https://discord.gg/YjH34wpadx)
 
 Data provided by [osuworld](https://osuworld.octo.moe/)
 
+## Download
+
+- [Chrome extension](https://chrome.google.com/webstore/detail/ehdehfcjlmekjdolbbmjgokdfeoocccd)
+- [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/osu-subdivide-nations/)
+- [Microsoft edge add-ons (chrome)](https://microsoftedge.microsoft.com/addons/detail/osu-subdivide-nations/mdbdfpbifeapmnkolpbcppeibblipjal)
+
+## Flags
+
+You can add missing flags by creating a pull request or by sending the proposed changes over [Discord](https://discord.gg/YjH34wpadx)
+
+
+
 ## Supported Websites
 
 ### Osu! Website
+
+These are some examples of websites the extension is applied
 
 - [Matches](https://osu.ppy.sh/community/matches/110067650)
 - [Rankings](https://osu.ppy.sh/rankings/osu/performance?country=ES)
@@ -23,9 +37,7 @@ Data provided by [osuworld](https://osuworld.octo.moe/)
 
 Folder with all the extensions related to this project
 
-#### chrome
-
-Extension for Chrome based browsers
+Code in shared folder needs to be copied alongisde the chrome/firefox manifest into another folder (e.g chrome_dev) before loading it
 
 ### dataFetcher
 

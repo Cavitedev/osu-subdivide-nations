@@ -28,12 +28,12 @@
         if (view === "brick") {
           return;
         }
-        updateFlagsFriends();
+        observeFriendsPage();
       } else if (location === "rankings") {
         // Only observer as ranking doesn't updated immediately
-        addRankingObserver();
+        observeRankingPage();
       } else if (location === "user") {
-        updateFlagsProfile();
+        observerProfilePage();
       } else if (location === "matches") {
         updateFlagsMatches();
       } else if (location === "topics") {
@@ -89,13 +89,106 @@
     }
   };
 
-  const flagStyle = 'background-image: url("$flag")';
-  const flagStyleWithMargin = flagStyle + "; margin-left: 4px";
+  // Quotes needed for special characters
+  const flagStyle = 'background-image: url("$flag"); background-size: contain';
+  const marginLeftStyle = "margin-left: 4px";
+  const flagStyleWithMargin = flagStyle + ";" + marginLeftStyle;
   const flagClass = "flag-country";
   const noFlag =
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
-  const addFlag = async (item, countryCode, regionCode, addDiv = false) => {
+  const removeRegionalFlag = (item) => {
+    if (!item) return;
+    let flagElements = item.querySelectorAll(`.${flagClass}`);
+    if (!flagElements || flagElements.length < 2) return;
+    flagElements[1].style = "height: 0px; width: 0px;";
+  };
+
+  const addFlag = (
+    item,
+    addDiv = false,
+    addMargin = true,
+    superParentClone = false
+  ) => {
+    if (!item) return;
+    let flagElements = item.querySelectorAll(`.${flagClass}`);
+    if (!flagElements || flagElements.length != 1) return;
+
+    let flagElement = flagElements[0];
+    let flagParent = flagElement.parentElement;
+
+    let flagParentClone = flagParent.cloneNode(true);
+    let flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
+
+    flagElementClone.style = addMargin ? marginLeftStyle : "";
+
+    flagElementClone.removeAttribute("title");
+    flagElementClone.removeAttribute("href");
+
+    let href = flagParentClone.getAttribute("href");
+    if (!href) {
+      const hrefCandidate = flagParent.parentElement.getAttribute("href");
+      if (hrefCandidate && hrefCandidate.includes("performance")) {
+        href = hrefCandidate;
+        const anchorParent = document.createElement("a");
+        anchorParent.appendChild(flagParentClone);
+        flagParentClone = anchorParent;
+      }
+    }
+
+    let insertParent = flagParent.parentElement;
+
+    // Check again if flag is already added
+    flagElements = item.querySelectorAll(`.${flagClass}`);
+    if (flagElements.length > 1) {
+      // Update
+      flagElements[1].replaceWith(flagElementClone);
+    } else {
+      // Add
+      let sibling = flagParent.nextSibling;
+      if (addDiv) {
+        const flagsDiv = document.createElement("div");
+        flagsDiv.appendChild(flagParent);
+        flagsDiv.appendChild(flagParentClone);
+
+        const classAttr = flagParent.getAttribute("class");
+        if (classAttr) {
+          flagsDiv.setAttribute("class", classAttr);
+          flagParent.removeAttribute("class");
+          flagParentClone.removeAttribute("class");
+        }
+
+        flagParent.style = "display: inline-block";
+        flagParentClone.style = "display: inline-block";
+        flagParentClone = flagsDiv;
+      }
+
+      if (superParentClone) {
+        const superParent = insertParent.cloneNode(false);
+        superParent.appendChild(flagParentClone);
+        flagParentClone = superParent;
+        sibling = insertParent.nextSibling;
+        insertParent = insertParent.parentElement;
+        // insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+      }
+
+      insertParent.insertBefore(flagParentClone, sibling);
+      // else {
+      //   if (sibling) {
+      //     insertParent.insertBefore(flagParentClone, sibling);
+      //   } else {
+      //     insertParent.appendChild(flagParentClone);
+      //   }
+      // }
+    }
+  };
+
+  const updateRegionalFlag = async (
+    item,
+    countryCode,
+    regionCode,
+    addMargin = true
+  ) => {
     if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length == 0) return;
@@ -106,80 +199,44 @@
       const regionData = countryRegionsData["regions"][regionCode];
       if (!regionData) return;
 
-      let flagElement = flagElements[0];
-      let flagParent = flagElement.parentElement;
+      let flagElement = flagElements[1];
+      if (!flagElement) return;
 
-      let flagParentClone = flagParent.cloneNode(true);
-      let flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
+      let originalFlagElement = flagElements[0];
 
       let flag = regionData["flag"];
       if (!flag || flag === "") {
         flag = noFlag;
       }
-      flagElementClone.style = flagStyleWithMargin.replace("$flag", flag);
+      flagElement.style = (addMargin ? flagStyleWithMargin : flagStyle).replace(
+        "$flag",
+        flag
+      );
       const regionName = await getRegionName(
         countryCode,
         regionCode,
         regionData
       );
       if (regionData["name"]) {
-        flagElementClone.setAttribute("title", regionName);
-      }
-      let href = flagParentClone.getAttribute("href");
-      if (!href) {
-        const hrefCandidate = flagParent.parentElement.getAttribute("href");
-        if (hrefCandidate && hrefCandidate.includes("performance")) {
-          href = hrefCandidate;
-          const anchorParent = document.createElement("a");
-          anchorParent.appendChild(flagParentClone);
-          flagParentClone = anchorParent;
-        }
+        flagElement.setAttribute("title", regionName);
       }
 
-      if (href) {
+      const flagParent = flagElement.parentElement;
+      if (flagParent.nodeName === "A") {
+        let href = originalFlagElement.parentElement.getAttribute("href");
         const updatedHref = tools.addOrReplaceQueryParam(
           href,
           "region",
           regionCode
         );
-        flagParentClone.setAttribute("href", updatedHref);
+
+        flagParent.setAttribute("href", updatedHref);
       }
-
-      const insertParent = flagParent.parentElement;
-
-      // Check again if flag is already added
-      flagElements = item.querySelectorAll(`.${flagClass}`);
-      if (flagElements.length > 1) {
-        // Update
-        flagElements[1].replaceWith(flagElementClone);
-      } else {
-        // Add
-        const sibling = flagParent.nextSibling;
-        if (addDiv) {
-          const flagsDiv = document.createElement("div");
-          flagsDiv.appendChild(flagParent);
-          flagsDiv.appendChild(flagParentClone);
-          flagsDiv.setAttribute("class", flagParent.getAttribute("class"));
-          flagParent.removeAttribute("class");
-          flagParentClone.removeAttribute("class");
-          flagParent.style = "display: inline-block";
-          flagParentClone.style = "display: inline-block";
-
-          insertParent.insertBefore(flagsDiv, sibling);
-        } else {
-          if (sibling) {
-            insertParent.insertBefore(flagParentClone, sibling);
-          } else {
-            insertParent.appendChild(flagParentClone);
-          }
-        }
-      }
-
       return regionName;
     }
   };
 
-  const addFlagUser = async (item, userId, addDiv = false) => {
+  const updateFlagUser = async (item, userId, addMargin = true) => {
     if (!item) return;
     playerData = await osuWorldUser(userId);
     if (!playerData || playerData["error"] == unknownUserError) {
@@ -188,7 +245,7 @@
 
     countryCode = playerData["country_id"];
     regionCode = playerData["region_id"];
-    return addFlag(item, countryCode, regionCode, addDiv);
+    return updateRegionalFlag(item, countryCode, regionCode, addMargin);
   };
 
   const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
@@ -233,7 +290,11 @@
   const updateFlagsProfileCardOverlay = async (card) => {
     const nameElement = card.querySelector(".user-card__username");
     const userId = idFromProfileUrl(nameElement.getAttribute("href"));
-    await addFlagUser(card, userId);
+    addFlag(card, true);
+    const regionAdded = await updateFlagUser(card, userId);
+    if (!regionAdded) {
+      removeRegionalFlag(card);
+    }
   };
 
   const refreshOverlays = async () => {
@@ -246,6 +307,14 @@
   };
 
   const refreshSearch = async (mutations) => {
+    for (const mutation of mutations) {
+      for (const addedNode of mutation.addedNodes) {
+        if (addedNode.getAttribute("data-section") === "user") {
+          addFlag(addedNode, true);
+        }
+      }
+    }
+
     for (const mutation of mutations) {
       for (const addedNode of mutation.addedNodes) {
         if (addedNode.getAttribute("data-section") === "user") {
@@ -282,6 +351,10 @@
     });
 
     for (const userCard of userCards) {
+      await addFlag(userCard, true);
+    }
+
+    for (const userCard of userCards) {
       await updateSearchCard(userCard);
     }
   };
@@ -302,7 +375,7 @@
         .querySelector(".user-search-card__col--username")
         .getAttribute("href")
     );
-    await addFlagUser(card, userId, true);
+    await updateFlagUser(card, userId);
   };
 
   const nextFunctionId = () => {
@@ -343,7 +416,7 @@
 
   const rankingIdAttr = "data-user-id";
 
-  const addRankingObserver = () => {
+  const observeRankingPage = () => {
     linkItem = document.querySelector("title");
     rankingMutationObserver.observe(linkItem, {
       attributes: false,
@@ -352,10 +425,35 @@
     });
   };
 
+  const addLinkToFlag = (item) => {
+    const flags = item.querySelectorAll(`.${flagClass}`);
+
+    if (!flags || flags.length != 1) {
+      return;
+    }
+
+    const anchorParent = document.createElement("div");
+    const parent = flags[0].parentElement;
+    anchorParent.appendChild(flags[0]);
+    parent.insertBefore(anchorParent, parent.firstChild);
+  };
+
   const updateFlagsRankings = async () => {
+    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
+
+    const url = location.href;
+    if (
+      url.includes("osu.ppy.sh/multiplayer/rooms") ||
+      url.includes("osu.ppy.sh/rankings/kudosu") ||
+      (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
+    ) {
+      for (const item of listItems) {
+        addLinkToFlag(item);
+      }
+    }
     const functionId = nextFunctionId();
 
-    addRankingObserver();
+    observeRankingPage();
 
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -387,7 +485,9 @@
       }
     }
 
-    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
+    for (const item of listItems) {
+      addFlag(item, true);
+    }
 
     for (const item of listItems) {
       if (functionId != runningId) {
@@ -395,7 +495,8 @@
       }
       let idItem = item.querySelector(`[${rankingIdAttr}]`);
       userId = idItem.getAttribute(rankingIdAttr);
-      await addFlagUser(item, userId);
+
+      await updateFlagUser(item, userId);
     }
   };
 
@@ -519,6 +620,10 @@
 
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
+    for (const row of listItems) {
+      addFlag(row);
+    }
+
     for (const page of pagesToCheck) {
       if (functionId != runningId) return;
       if (page > totalPages) break;
@@ -533,7 +638,7 @@
       for (const player of results["top"]) {
         const row = listItems[replaceIndex];
         updateRankingRow(row, player);
-        await addFlag(row, countryCode, regionCode);
+        await updateRegionalFlag(row, countryCode, regionCode);
         replaceIndex++;
       }
 
@@ -556,7 +661,7 @@
     }
   };
 
-  const removeColsRegionalRanking = [7, 6, 5, 3, 2];
+  const removeColsRegionalRanking = [7, 6, 5, 3];
 
   const initRegionalRanking = (countryCode, regionCode) => {
     const modes = document.querySelectorAll(".game-mode [href]");
@@ -580,6 +685,8 @@
     for (const index of removeColsRegionalRanking) {
       headers[index].remove();
     }
+
+    headers[2].textContent = "Rank";
   };
 
   const updateRankingRow = async (row, playerData) => {
@@ -588,7 +695,7 @@
     if (!cells) return;
     const flagAndNameCell = cells[1];
 
-    const { id, username, mode, pp } = playerData;
+    const { id, username, rank, mode, pp } = playerData;
 
     const nameElement = flagAndNameCell.querySelector(`[${rankingIdAttr}]`);
     nameElement.setAttribute(rankingIdAttr, id);
@@ -601,6 +708,8 @@
     for (const index of removeColsRegionalRanking) {
       cells[index].remove();
     }
+
+    cells[2].textContent = "#" + rank;
 
     row.classList.remove("ranking-page-table__row--inactive");
   };
@@ -813,13 +922,18 @@
     if (!topScoreElements) {
       return;
     }
+
+    for (const topScoreElement of topScoreElements) {
+      addFlag(topScoreElement, true);
+    }
+
     for (const topScoreElement of topScoreElements) {
       const topScoreUserElement = topScoreElement.querySelector(
         ".beatmap-score-top__username"
       );
       const topScoreUserId = topScoreUserElement.getAttribute("data-user-id");
       if (topScoreUserId) {
-        await addFlagUser(topScoreElement, topScoreUserId, true);
+        await updateFlagUser(topScoreElement, topScoreUserId, true);
       }
     }
 
@@ -832,6 +946,10 @@
 
     const items = rankingTable.children;
     for (let item of items) {
+      addFlag(item, true);
+    }
+
+    for (let item of items) {
       if (functionId != runningId) {
         return;
       }
@@ -839,7 +957,7 @@
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
       const playerId = playerNameElement?.getAttribute("data-user-id");
-      await addFlagUser(item, playerId, true);
+      await updateFlagUser(item, playerId, true);
     }
   };
 
@@ -847,29 +965,24 @@
     updateFlagsProfile();
   });
 
-  const updateFlagsProfile = async () => {
-    nextFunctionId();
-
-    const url = location.href;
-    const playerId = idFromProfileUrl(url);
-
-    profileMutationObserver.disconnect();
-    let linkItem = document.querySelector("head");
-    profileMutationObserver.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-
+  const observerProfilePage = () => {
     linkItem = document.querySelector("title");
     profileMutationObserver.observe(linkItem, {
       attributes: false,
       childList: true,
       subtree: false,
     });
+  };
+
+  const updateFlagsProfile = async () => {
+    nextFunctionId();
+
+    const url = location.href;
+    const playerId = idFromProfileUrl(url);
 
     flagElement = document.querySelector(".profile-info");
-    const regionName = await addFlagUser(flagElement, playerId);
+    addFlag(flagElement);
+    const regionName = await updateFlagUser(flagElement, playerId);
     if (regionName) {
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
@@ -943,6 +1056,11 @@
 
   const updateFlagsInMatchPlay = async (scores, functionId) => {
     listScores = scores.querySelectorAll(".mp-history-player-score__main");
+
+    for (item of listScores) {
+      addFlag(item, true);
+    }
+
     for (item of listScores) {
       if (functionId != runningId) {
         return;
@@ -956,7 +1074,19 @@
       ".mp-history-player-score__username"
     );
     playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-    await addFlagUser(item, playerId, true);
+    await updateFlagUser(item, playerId);
+  };
+
+  const updateFlagsFriendsObserver = new MutationObserver((_) => {
+    updateFlagsFriends();
+  });
+
+  const observeFriendsPage = () => {
+    updateFlagsFriendsObserver.observe(document.querySelector("title"), {
+      attributes: false,
+      childList: true,
+      subtree: false,
+    });
   };
 
   const updateFlagsFriends = async () => {
@@ -967,12 +1097,15 @@
       .querySelectorAll(".user-card__details");
 
     for (let item of friendsList) {
+      addFlag(item);
+    }
+    for (let item of friendsList) {
       if (functionId != runningId) {
         return;
       }
       playerNameElement = item.querySelector(".user-card__username");
       playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-      await addFlagUser(item, playerId);
+      await updateFlagUser(item, playerId);
     }
   };
 
@@ -981,18 +1114,28 @@
     posts = document.querySelectorAll(".forum-post-info");
 
     for (let item of posts) {
+      addFlag(item, false, false, true);
+    }
+    for (let item of posts) {
       if (functionId != runningId) {
         return;
       }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
-      await addFlagUser(item, playerId);
+      const addedRegion = await updateFlagUser(item, playerId, false);
+      // if (!addedRegion) {
+      //   removeRegionalFlag(item);
+      // }
     }
   };
 
   const init = async () => {
     const url = location.href;
-    if (url.includes("osu.ppy.sh/rankings")) {
+    if (
+      url.includes("osu.ppy.sh/rankings") ||
+      url.includes("osu.ppy.sh/multiplayer/rooms") ||
+      url.includes("osu.ppy.sh/rankings/kudosu")
+    ) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
       updateFlagsProfile();
