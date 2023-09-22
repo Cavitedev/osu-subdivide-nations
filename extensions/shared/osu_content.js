@@ -150,9 +150,14 @@
         const flagsDiv = document.createElement("div");
         flagsDiv.appendChild(flagParent);
         flagsDiv.appendChild(flagParentClone);
-        flagsDiv.setAttribute("class", flagParent.getAttribute("class"));
-        flagParent.removeAttribute("class");
-        flagParentClone.removeAttribute("class");
+
+        const classAttr = flagParent.getAttribute("class");
+        if (classAttr) {
+          flagsDiv.setAttribute("class", classAttr);
+          flagParent.removeAttribute("class");
+          flagParentClone.removeAttribute("class");
+        }
+
         flagParent.style = "display: inline-block";
         flagParentClone.style = "display: inline-block";
         insertParent.insertBefore(flagsDiv, sibling);
@@ -216,15 +221,16 @@
         flagElement.setAttribute("title", regionName);
       }
 
-      if (flagElement.nodeName === "A") {
-        let href = originalFlagElement.getAttribute("href");
+      const flagParent = flagElement.parentElement;
+      if (flagParent.nodeName === "A") {
+        let href = originalFlagElement.parentElement.getAttribute("href");
         const updatedHref = tools.addOrReplaceQueryParam(
           href,
           "region",
           regionCode
         );
 
-        flagElement.setAttribute("href", updatedHref);
+        flagParent.setAttribute("href", updatedHref);
       }
       return regionName;
     }
