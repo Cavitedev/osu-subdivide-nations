@@ -28,10 +28,10 @@
         if (view === "brick") {
           return;
         }
-        updateFlagsFriends();
+        observeFriendsPage();
       } else if (location === "rankings") {
         // Only observer as ranking doesn't updated immediately
-        addRankingObserver();
+        observeRankingPage();
       } else if (location === "user") {
         updateFlagsProfile();
       } else if (location === "matches") {
@@ -376,7 +376,7 @@
 
   const rankingIdAttr = "data-user-id";
 
-  const addRankingObserver = () => {
+  const observeRankingPage = () => {
     linkItem = document.querySelector("title");
     rankingMutationObserver.observe(linkItem, {
       attributes: false,
@@ -388,7 +388,7 @@
   const updateFlagsRankings = async () => {
     const functionId = nextFunctionId();
 
-    addRankingObserver();
+    observeRankingPage();
 
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -1017,6 +1017,18 @@
     );
     playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
     await updateFlagUser(item, playerId);
+  };
+
+  const updateFlagsFriendsObserver = new MutationObserver((_) => {
+    updateFlagsFriends();
+  });
+
+  const observeFriendsPage = () => {
+    updateFlagsFriendsObserver.observe(document.querySelector("title"), {
+      attributes: false,
+      childList: true,
+      subtree: false,
+    });
   };
 
   const updateFlagsFriends = async () => {
