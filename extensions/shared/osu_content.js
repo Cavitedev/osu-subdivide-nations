@@ -385,8 +385,32 @@
     });
   };
 
+  const addLinkToFlag = (item) => {
+    const flags = item.querySelectorAll(`.${flagClass}`);
+
+    if (!flags || flags.length != 1) {
+      return;
+    }
+
+    const anchorParent = document.createElement("div");
+    const parent = flags[0].parentElement;
+    anchorParent.appendChild(flags[0]);
+    parent.insertBefore(anchorParent, parent.firstChild);
+  };
+
   const updateFlagsRankings = async () => {
-    if (!location.href.includes("osu.ppy.sh/rankings")) return;
+    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
+
+    const url = location.href;
+    if (
+      url.includes("osu.ppy.sh/multiplayer/rooms") ||
+      url.includes("osu.ppy.sh/rankings/kudosu")
+    ) {
+      for (const item of listItems) {
+        addLinkToFlag(item);
+      }
+    }
+    // if (!location.href.includes("osu.ppy.sh/rankings")) return;
 
     const functionId = nextFunctionId();
 
@@ -421,8 +445,6 @@
         );
       }
     }
-
-    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
     for (const item of listItems) {
       addFlag(item, true);
@@ -905,13 +927,6 @@
   });
 
   const observerProfilePage = () => {
-    // let linkItem = document.querySelector("head");
-    // profileMutationObserver.observe(linkItem, {
-    //   attributes: false,
-    //   childList: true,
-    //   subtree: false,
-    // });
-
     linkItem = document.querySelector("title");
     profileMutationObserver.observe(linkItem, {
       attributes: false,
@@ -1074,7 +1089,11 @@
 
   const init = async () => {
     const url = location.href;
-    if (url.includes("osu.ppy.sh/rankings")) {
+    if (
+      url.includes("osu.ppy.sh/rankings") ||
+      url.includes("osu.ppy.sh/multiplayer/rooms") ||
+      url.includes("osu.ppy.sh/rankings/kudosu")
+    ) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
       updateFlagsProfile();
