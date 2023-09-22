@@ -160,7 +160,7 @@
 
         flagParent.style = "display: inline-block";
         flagParentClone.style = "display: inline-block";
-        insertParent.insertBefore(flagsDiv, sibling);
+        flagParentClone = flagsDiv;
       }
 
       if (superParentClone) {
