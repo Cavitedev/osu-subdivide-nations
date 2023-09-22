@@ -110,8 +110,8 @@
 
     flagElementClone.style = marginLeftStyle;
 
-    flagElement.removeAttribute("title");
-    flagElement.removeAttribute("href");
+    flagElementClone.removeAttribute("title");
+    flagElementClone.removeAttribute("href");
 
     let href = flagParentClone.getAttribute("href");
     if (!href) {
