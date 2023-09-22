@@ -636,22 +636,59 @@
         "name": "Norway",
         "nativeName": "Norge",
         "regions": {
+            "NO-15": {
+                "name": "Møre og Romsdal",
+                "nativeName": "Møre og Romsdal",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_M%C3%B8re_og_Romsdal.svg"
+            },
+            "NO-18": {
+                "name": "Nordland",
+                "nativeName": "Nordland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Flag_of_Nordland.svg"
+            },
             "NO-03": {
-                "flag": "https://en.wikipedia.org/wiki/Oslo#/media/File:Oslo_komm.svg"
+                "name": "Oslo",
+                "nativeName": "Oslo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Oslo.svg"
+            },
+            "NO-11": {
+                "name": "Rogaland",
+                "nativeName": "Rogaland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Rogaland.svg"
+            },
+            "NO-50": {
+                "name": "Trøndelag",
+                "nativeName": "Trøndelag",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Nord-Tr%C3%B8ndelag.svg"
+            },
+            "NO-38": {
+                "name": "Vestfold og Telemark",
+                "nativeName": "Vestfold og Telemark",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Vestfold_and_Telemark.svg"
             },
             "NO-30": {
+                "name": "Viken",
+                "nativeName": "Viken",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_våpen.svg"
             },
             "NO-34": {
+                "name": "Innlandet",
+                "nativeName": "Innlandet",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_våpen.svg"
             },
             "NO-42": {
+                "name": "Agder",
+                "nativeName": "Agder",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Agder.png"
             },
             "NO-46": {
+                "name": "Vestland",
+                "nativeName": "Vestland",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_våpen.svg"
             },
             "NO-54": {
+                "name": "Troms og Finnmark",
+                "nativeName": "Troms og Finnmark",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Troms_og_Finnmark_våpen.svg"
             }
         }
