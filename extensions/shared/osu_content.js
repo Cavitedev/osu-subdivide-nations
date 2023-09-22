@@ -989,6 +989,8 @@
       );
       countryNameElement.textContent =
         countryNameElement.textContent.split(" / ")[0] + ` / ${regionName}`;
+    } else {
+      removeRegionalFlag(flagElement);
     }
   };
 
