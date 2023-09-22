@@ -387,6 +387,9 @@
     "CZ": {
         "nativeName": "Česko",
         "regions": {
+            "CZ-53": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_Pardubice.svg"
+            },
             "CZ-31": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_South_Bohemian_Region.svg//128px-Flag_of_South_Bohemian_Region.svg.png"
             },
@@ -407,6 +410,9 @@
             },
             "CZ-71": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Olomouc_Region.svg"
+            },
+            "CZ-72": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Zlin.svg"
             },
             "CZ-32": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Plzen_Region.svg//128px-Flag_of_Plzen_Region.svg.png"
