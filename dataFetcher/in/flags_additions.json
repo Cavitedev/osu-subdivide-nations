@@ -590,9 +590,23 @@
         "nativeName": "한국,남한",
         "regions": {
             "KR-50": {
-                "name": "Sejong",
-                "nativeName": "세종",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Sejong_City.svg"
+            }
+        }
+    },
+    "LV": {
+        "regions": {
+            "K": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Courland_%28state%29.svg"
+            },
+            "L": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Official_flag_of_Latgale.svg"
+            },
+            "V": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Coat_of_arms_of_Vidzeme.svg"
+            },
+            "Z": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Coat_of_arms_of_Zemgale.svg"
             }
         }
     },
