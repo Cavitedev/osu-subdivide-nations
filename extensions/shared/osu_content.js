@@ -33,7 +33,7 @@
         // Only observer as ranking doesn't updated immediately
         observeRankingPage();
       } else if (location === "user") {
-        updateFlagsProfile();
+        observerProfilePage();
       } else if (location === "matches") {
         updateFlagsMatches();
       } else if (location === "topics") {
@@ -904,18 +904,13 @@
     updateFlagsProfile();
   });
 
-  const updateFlagsProfile = async () => {
-    nextFunctionId();
-
-    const url = location.href;
-    const playerId = idFromProfileUrl(url);
-
-    let linkItem = document.querySelector("head");
-    profileMutationObserver.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
+  const observerProfilePage = () => {
+    // let linkItem = document.querySelector("head");
+    // profileMutationObserver.observe(linkItem, {
+    //   attributes: false,
+    //   childList: true,
+    //   subtree: false,
+    // });
 
     linkItem = document.querySelector("title");
     profileMutationObserver.observe(linkItem, {
@@ -923,6 +918,13 @@
       childList: true,
       subtree: false,
     });
+  };
+
+  const updateFlagsProfile = async () => {
+    nextFunctionId();
+
+    const url = location.href;
+    const playerId = idFromProfileUrl(url);
 
     flagElement = document.querySelector(".profile-info");
     addFlag(flagElement);
