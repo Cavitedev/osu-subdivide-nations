@@ -1000,7 +1000,7 @@
             "CZ-53": {
                 "name": "Pardubice",
                 "nativeName": "Pardubický kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_Pardubice.svg"
             },
             "CZ-32": {
                 "name": "Plzeň",
@@ -1020,7 +1020,7 @@
             "CZ-72": {
                 "name": "Zlín",
                 "nativeName": "Zlínský kraj",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Zlin.svg"
             }
         },
         "nativeName": "Česko"
@@ -2030,7 +2030,7 @@
             "K": {
                 "name": "Courland",
                 "nativeName": "Kurzeme",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Courland_%28state%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Courland_(state).svg"
             },
             "L": {
                 "name": "Latgale",
@@ -2040,7 +2040,7 @@
             "V": {
                 "name": "Vidzeme",
                 "nativeName": "Vidzeme",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Coat_of_arms_of_Vidzeme.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Coat_of_arms_of_Vidzeme.svg//128px-Coat_of_arms_of_Vidzeme.svg.png"
             },
             "Z": {
                 "name": "Zemgale",
@@ -2404,12 +2404,12 @@
             "NO-30": {
                 "name": "Viken",
                 "nativeName": "Viken",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_v%C3%A5pen.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_våpen.svg"
             },
             "NO-34": {
                 "name": "Innlandet",
                 "nativeName": "Innlandet",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_v%C3%A5pen.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_våpen.svg"
             },
             "NO-42": {
                 "name": "Agder",
@@ -2419,12 +2419,12 @@
             "NO-46": {
                 "name": "Vestland",
                 "nativeName": "Vestland",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_v%C3%A5pen.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_våpen.svg"
             },
             "NO-54": {
                 "name": "Troms og Finnmark",
                 "nativeName": "Troms og Finnmark",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Troms_og_Finnmark_v%C3%A5pen.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Troms_og_Finnmark_våpen.svg"
             }
         }
     },
@@ -4134,7 +4134,7 @@
             "UA-23": {
                 "name": "Zaporizhia Oblast",
                 "nativeName": "Запорізька область",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Flag_of_Zaporizhia_Oblast.svg//128px-Flag_of_Zaporizhia_Oblast.svg.png"
             }
         }
     },
