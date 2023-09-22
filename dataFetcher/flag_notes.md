@@ -1,5 +1,10 @@
 # Flag notes
 
+## Jupyter Notebooks
+
+- **flags_fetcher** Creates flags_raw and flags_codes from wikipedia data
+- **flag_additions_optimize** Optimizes the flag_additions file
+- **flags_solver Combines** Combines both documents to create the final file 
 
 ## China
 
