@@ -97,6 +97,13 @@
   const noFlag =
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
+  const removeRegionalFlag = (item) => {
+    if (!item) return;
+    let flagElements = item.querySelectorAll(`.${flagClass}`);
+    if (!flagElements || flagElements.length < 2) return;
+    flagElements[1].style = "height: 0px; width: 0px;";
+  };
+
   const addFlag = (item, addDiv = false) => {
     if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
@@ -254,7 +261,10 @@
     const nameElement = card.querySelector(".user-card__username");
     const userId = idFromProfileUrl(nameElement.getAttribute("href"));
     addFlag(card, true);
-    await updateFlagUser(card, userId);
+    const regionAdded = await updateFlagUser(card, userId);
+    if (!regionAdded) {
+      removeRegionalFlag(card);
+    }
   };
 
   const refreshOverlays = async () => {
@@ -411,8 +421,6 @@
         addLinkToFlag(item);
       }
     }
-    // if (!location.href.includes("osu.ppy.sh/rankings")) return;
-
     const functionId = nextFunctionId();
 
     observeRankingPage();
@@ -1084,7 +1092,10 @@
       }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
-      await updateFlagUser(item, playerId);
+      const addedRegion = await updateFlagUser(item, playerId);
+      if (!addedRegion) {
+        removeRegionalFlag(item);
+      }
     }
   };
 
