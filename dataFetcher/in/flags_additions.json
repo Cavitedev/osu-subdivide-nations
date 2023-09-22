@@ -844,6 +844,13 @@
             }
         }
     },
+    "UA": {
+        "regions": {
+            "UA-23": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Zaporizhia_Oblast.svg"
+            }
+        }
+    },
     "US": {
         "regions": {
             "US-WADC": {
