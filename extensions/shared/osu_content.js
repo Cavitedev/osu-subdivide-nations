@@ -90,7 +90,7 @@
   };
 
   // Quotes needed for special characters
-  const flagStyle = 'background-image: url("$flag")';
+  const flagStyle = 'background-image: url("$flag"); background-size: contain';
   const flagStyleWithMargin = flagStyle + "; margin-left: 4px";
   const flagClass = "flag-country";
   const noFlag =
