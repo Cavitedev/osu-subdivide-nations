@@ -557,7 +557,7 @@
     }
   };
 
-  const removeColsRegionalRanking = [7, 6, 5, 3, 2];
+  const removeColsRegionalRanking = [7, 6, 5, 3];
 
   const initRegionalRanking = (countryCode, regionCode) => {
     const modes = document.querySelectorAll(".game-mode [href]");
@@ -581,6 +581,8 @@
     for (const index of removeColsRegionalRanking) {
       headers[index].remove();
     }
+
+    headers[2].textContent = "Rank";
   };
 
   const updateRankingRow = async (row, playerData) => {
@@ -589,7 +591,7 @@
     if (!cells) return;
     const flagAndNameCell = cells[1];
 
-    const { id, username, mode, pp } = playerData;
+    const { id, username, rank, mode, pp } = playerData;
 
     const nameElement = flagAndNameCell.querySelector(`[${rankingIdAttr}]`);
     nameElement.setAttribute(rankingIdAttr, id);
@@ -602,6 +604,8 @@
     for (const index of removeColsRegionalRanking) {
       cells[index].remove();
     }
+
+    cells[2].textContent = "#" + rank;
 
     row.classList.remove("ranking-page-table__row--inactive");
   };
