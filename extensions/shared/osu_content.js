@@ -104,7 +104,12 @@
     flagElements[1].style = "height: 0px; width: 0px;";
   };
 
-  const addFlag = (item, addDiv = false) => {
+  const addFlag = (
+    item,
+    addDiv = false,
+    addMargin = true,
+    superParentClone = false
+  ) => {
     if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length != 1) return;
@@ -115,7 +120,7 @@
     let flagParentClone = flagParent.cloneNode(true);
     let flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
 
-    flagElementClone.style = marginLeftStyle;
+    flagElementClone.style = addMargin ? marginLeftStyle : "";
 
     flagElementClone.removeAttribute("title");
     flagElementClone.removeAttribute("href");
@@ -131,7 +136,7 @@
       }
     }
 
-    const insertParent = flagParent.parentElement;
+    let insertParent = flagParent.parentElement;
 
     // Check again if flag is already added
     flagElements = item.querySelectorAll(`.${flagClass}`);
@@ -140,7 +145,7 @@
       flagElements[1].replaceWith(flagElementClone);
     } else {
       // Add
-      const sibling = flagParent.nextSibling;
+      let sibling = flagParent.nextSibling;
       if (addDiv) {
         const flagsDiv = document.createElement("div");
         flagsDiv.appendChild(flagParent);
@@ -150,19 +155,35 @@
         flagParentClone.removeAttribute("class");
         flagParent.style = "display: inline-block";
         flagParentClone.style = "display: inline-block";
-
         insertParent.insertBefore(flagsDiv, sibling);
-      } else {
-        if (sibling) {
-          insertParent.insertBefore(flagParentClone, sibling);
-        } else {
-          insertParent.appendChild(flagParentClone);
-        }
       }
+
+      if (superParentClone) {
+        const superParent = insertParent.cloneNode(false);
+        superParent.appendChild(flagParentClone);
+        flagParentClone = superParent;
+        sibling = insertParent.nextSibling;
+        insertParent = insertParent.parentElement;
+        // insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
+      }
+
+      insertParent.insertBefore(flagParentClone, sibling);
+      // else {
+      //   if (sibling) {
+      //     insertParent.insertBefore(flagParentClone, sibling);
+      //   } else {
+      //     insertParent.appendChild(flagParentClone);
+      //   }
+      // }
     }
   };
 
-  const updateRegionalFlag = async (item, countryCode, regionCode) => {
+  const updateRegionalFlag = async (
+    item,
+    countryCode,
+    regionCode,
+    addMargin = true
+  ) => {
     if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length == 0) return;
@@ -182,7 +203,10 @@
       if (!flag || flag === "") {
         flag = noFlag;
       }
-      flagElement.style = flagStyleWithMargin.replace("$flag", flag);
+      flagElement.style = (addMargin ? flagStyleWithMargin : flagStyle).replace(
+        "$flag",
+        flag
+      );
       const regionName = await getRegionName(
         countryCode,
         regionCode,
@@ -206,7 +230,7 @@
     }
   };
 
-  const updateFlagUser = async (item, userId) => {
+  const updateFlagUser = async (item, userId, addMargin = true) => {
     if (!item) return;
     playerData = await osuWorldUser(userId);
     if (!playerData || playerData["error"] == unknownUserError) {
@@ -215,7 +239,7 @@
 
     countryCode = playerData["country_id"];
     regionCode = playerData["region_id"];
-    return updateRegionalFlag(item, countryCode, regionCode);
+    return updateRegionalFlag(item, countryCode, regionCode, addMargin);
   };
 
   const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
@@ -1084,7 +1108,7 @@
     posts = document.querySelectorAll(".forum-post-info");
 
     for (let item of posts) {
-      addFlag(item);
+      addFlag(item, false, false, true);
     }
     for (let item of posts) {
       if (functionId != runningId) {
@@ -1092,10 +1116,10 @@
       }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
-      const addedRegion = await updateFlagUser(item, playerId);
-      if (!addedRegion) {
-        removeRegionalFlag(item);
-      }
+      const addedRegion = await updateFlagUser(item, playerId, false);
+      // if (!addedRegion) {
+      //   removeRegionalFlag(item);
+      // }
     }
   };
 
