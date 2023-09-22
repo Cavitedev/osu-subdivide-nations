@@ -404,7 +404,8 @@
     const url = location.href;
     if (
       url.includes("osu.ppy.sh/multiplayer/rooms") ||
-      url.includes("osu.ppy.sh/rankings/kudosu")
+      url.includes("osu.ppy.sh/rankings/kudosu") ||
+      (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
     ) {
       for (const item of listItems) {
         addLinkToFlag(item);
