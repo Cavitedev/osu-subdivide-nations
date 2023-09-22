@@ -386,6 +386,8 @@
   };
 
   const updateFlagsRankings = async () => {
+    if (!location.href.includes("osu.ppy.sh/rankings")) return;
+
     const functionId = nextFunctionId();
 
     observeRankingPage();
@@ -423,7 +425,7 @@
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
     for (const item of listItems) {
-      addFlag(item);
+      addFlag(item, true);
     }
 
     for (const item of listItems) {
