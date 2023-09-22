@@ -924,7 +924,7 @@
     }
 
     for (const topScoreElement of topScoreElements) {
-      addFlag(topScoreElement);
+      addFlag(topScoreElement, true);
     }
 
     for (const topScoreElement of topScoreElements) {
@@ -946,7 +946,7 @@
 
     const items = rankingTable.children;
     for (let item of items) {
-      addFlag(item);
+      addFlag(item, true);
     }
 
     for (let item of items) {
