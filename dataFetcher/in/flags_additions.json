@@ -586,6 +586,16 @@
             }
         }
     },
+    "KR": {
+        "nativeName": "한국,남한",
+        "regions": {
+            "KR-50": {
+                "name": "Sejong",
+                "nativeName": "세종",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Sejong_City.svg"
+            }
+        }
+    },
     "MX": {
         "name": "Mexico",
         "nativeName": "Mēxihco",
