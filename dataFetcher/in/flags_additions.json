@@ -626,6 +626,27 @@
             }
         }
     },
+    "NO": {
+        "name": "Norway",
+        "nativeName": "Norge",
+        "regions": {
+            "NO-30": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_v%C3%A5pen.svg"
+            },
+            "NO-34": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_v%C3%A5pen.svg"
+            },
+            "NO-42": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Agder.png"
+            },
+            "NO-46": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_v%C3%A5pen.svg"
+            },
+            "NO-54": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Troms_og_Finnmark_v%C3%A5pen.svg"
+            }
+        }
+    },
     "PE": {
         "name": "Peru",
         "nativeName": "Piruw",
