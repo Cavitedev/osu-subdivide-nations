@@ -996,6 +996,17 @@
             ".mp-history-player-score__main"
           );
           if (score) {
+            addFlag(score, true);
+          }
+        }
+      }
+
+      for (const mutation of mutations) {
+        for (const addedNode of mutation.addedNodes) {
+          const score = addedNode.querySelector(
+            ".mp-history-player-score__main"
+          );
+          if (score) {
             await updateFlagInMatchScore(score);
           }
         }
