@@ -181,8 +181,16 @@ const getSupportedSystemLanguage = async () => {
 };
 
 export const getLanguage = async () => {
-  let lang = await chrome.storage.sync.get([langKey]);
-  if (Object.keys(lang).length === 0 && lang.constructor === Object) {
+  let lang;
+  try {
+    lang = await chrome.storage.sync.get([langKey]);
+  } catch (e) {
+    lang = null;
+  }
+  if (
+    !lang ||
+    (Object.keys(lang).length === 0 && lang.constructor === Object)
+  ) {
     setLanguage(systemDefaultCode);
     return systemDefaultCode;
   }
@@ -203,7 +211,11 @@ export const setLanguage = async (lang) => {
     console.log(e);
   });
   if (previousLang == lang) return;
-  await chrome.storage.sync.set({ [langKey]: lang });
+  try{
+    await chrome.storage.sync.set({ [langKey]: lang });
+  }catch(e){
+    // Extension invalidated. It doesn't matter too much
+  }
 
   chrome.tabs.query({}, function (tabs) {
     for (let i = 0; i < tabs.length; i++) {
