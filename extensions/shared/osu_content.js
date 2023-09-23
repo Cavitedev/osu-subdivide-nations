@@ -45,6 +45,8 @@
         updateFlagsTopics();
       } else if (location === "beatmapsets") {
         updateFlagsBeatmapsets();
+      } else if (location === "overlays") {
+        refreshOverlays();
       }
     }
   });
@@ -1166,6 +1168,9 @@
       updateFlagsTopics();
     } else if (url.includes("osu.ppy.sh/beatmapsets/")) {
       updateFlagsBeatmapsets();
+    } else if (url.includes("osu.ppy.sh/scores")) {
+      // The flag appears in a card same as overlays
+      refreshOverlays();
     }
   };
 
