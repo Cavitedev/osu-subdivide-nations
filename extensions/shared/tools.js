@@ -211,9 +211,9 @@ export const setLanguage = async (lang) => {
     console.log(e);
   });
   if (previousLang == lang) return;
-  try{
+  try {
     await chrome.storage.sync.set({ [langKey]: lang });
-  }catch(e){
+  } catch (e) {
     // Extension invalidated. It doesn't matter too much
   }
 
@@ -309,3 +309,7 @@ export const removeQueryParam = (url, paramName) => {
     return url;
   }
 };
+
+export function isNumber(value) {
+  return !isNaN(parseFloat(value)) && isFinite(value);
+}
