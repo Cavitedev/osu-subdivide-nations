@@ -221,9 +221,15 @@
         flagElement.setAttribute("title", regionName);
       }
 
-      const flagParent = flagElement.parentElement;
+      let flagParent = flagElement.parentElement;
+      let originalParent = originalFlagElement.parentElement;
+      if (flagParent.nodeName != "A") {
+        flagParent = flagParent.parentElement;
+        originalParent = originalParent.parentElement;
+      }
+
       if (flagParent.nodeName === "A") {
-        let href = originalFlagElement.parentElement.getAttribute("href");
+        let href = originalParent.getAttribute("href");
         const updatedHref = tools.addOrReplaceQueryParam(
           href,
           "region",
@@ -968,6 +974,7 @@
   });
 
   const updateFlagsProfile = async () => {
+    console.log("updateFlagsProfile");
     const url = location.href;
     const playerId = idFromProfileUrl(url);
     if (!tools.isNumber(playerId)) {
