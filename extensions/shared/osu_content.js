@@ -33,13 +33,20 @@
         // Only observer as ranking doesn't updated immediately
         observeRankingPage();
       } else if (location === "user") {
-        observerProfilePage();
+        profileMutationObserver.observe(document.querySelector("title"), {
+          childList: true,
+          subtree: false,
+        });
+
+        updateFlagsProfile();
       } else if (location === "matches") {
         updateFlagsMatches();
       } else if (location === "topics") {
         updateFlagsTopics();
       } else if (location === "beatmapsets") {
         updateFlagsBeatmapsets();
+      } else if (location === "overlays") {
+        refreshOverlays();
       }
     }
   });
@@ -173,13 +180,6 @@
       }
 
       insertParent.insertBefore(flagParentClone, sibling);
-      // else {
-      //   if (sibling) {
-      //     insertParent.insertBefore(flagParentClone, sibling);
-      //   } else {
-      //     insertParent.appendChild(flagParentClone);
-      //   }
-      // }
     }
   };
 
@@ -242,7 +242,6 @@
     if (!playerData || playerData["error"] == unknownUserError) {
       return;
     }
-
     countryCode = playerData["country_id"];
     regionCode = playerData["region_id"];
     return updateRegionalFlag(item, countryCode, regionCode, addMargin);
@@ -964,21 +963,18 @@
   let profileMutationObserver = new MutationObserver((_) => {
     updateFlagsProfile();
   });
-
-  const observerProfilePage = () => {
-    linkItem = document.querySelector("title");
-    profileMutationObserver.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-  };
+  let profileMutationObserverInit = new MutationObserver((_) => {
+    updateFlagsProfile();
+  });
 
   const updateFlagsProfile = async () => {
-    nextFunctionId();
-
     const url = location.href;
     const playerId = idFromProfileUrl(url);
+    if (!tools.isNumber(playerId)) {
+      return;
+    }
+
+    nextFunctionId();
 
     flagElement = document.querySelector(".profile-info");
     addFlag(flagElement);
@@ -989,11 +985,24 @@
       );
       countryNameElement.textContent =
         countryNameElement.textContent.split(" / ")[0] + ` / ${regionName}`;
+    } else {
+      removeRegionalFlag(flagElement);
     }
   };
 
   const gameBeingPlayedMutationObserver = new MutationObserver(
     async (mutations) => {
+      for (const mutation of mutations) {
+        for (const addedNode of mutation.addedNodes) {
+          const score = addedNode.querySelector(
+            ".mp-history-player-score__main"
+          );
+          if (score) {
+            addFlag(score, true);
+          }
+        }
+      }
+
       for (const mutation of mutations) {
         for (const addedNode of mutation.addedNodes) {
           const score = addedNode.querySelector(
@@ -1122,10 +1131,7 @@
       }
       playerNameElement = item.querySelector(".forum-post-info__row--username");
       playerId = playerNameElement.getAttribute("data-user-id");
-      const addedRegion = await updateFlagUser(item, playerId, false);
-      // if (!addedRegion) {
-      //   removeRegionalFlag(item);
-      // }
+      updateFlagUser(item, playerId, false);
     }
   };
 
@@ -1138,6 +1144,15 @@
     ) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
+      linkItem = document.querySelector(
+        "body > div.osu-layout__section.osu-layout__section--full > div"
+      );
+      profileMutationObserverInit.observe(linkItem, {
+        attributes: false,
+        childList: true,
+        subtree: false,
+      });
+
       updateFlagsProfile();
     } else if (url.includes("osu.ppy.sh/home/friends")) {
       const queryParameters = url.split("?")[1];
@@ -1153,6 +1168,9 @@
       updateFlagsTopics();
     } else if (url.includes("osu.ppy.sh/beatmapsets/")) {
       updateFlagsBeatmapsets();
+    } else if (url.includes("osu.ppy.sh/scores")) {
+      // The flag appears in a card same as overlays
+      refreshOverlays();
     }
   };
 
