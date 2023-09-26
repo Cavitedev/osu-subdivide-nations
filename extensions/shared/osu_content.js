@@ -979,7 +979,6 @@
   });
 
   const updateFlagsProfile = async () => {
-    console.log("updateFlagsProfile");
     const url = location.href;
     const playerId = idFromProfileUrl(url);
     if (!tools.isNumber(playerId)) {
