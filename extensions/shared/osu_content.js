@@ -448,7 +448,7 @@
 
     const url = location.href;
 
-    if (url.includes("country")) {
+    if (url.includes("/country")) {
       return;
     }
 
