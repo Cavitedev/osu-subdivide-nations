@@ -447,6 +447,11 @@
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
     const url = location.href;
+
+    if (url.includes("country")) {
+      return;
+    }
+
     if (
       url.includes("osu.ppy.sh/multiplayer/rooms") ||
       url.includes("osu.ppy.sh/rankings/kudosu") ||
