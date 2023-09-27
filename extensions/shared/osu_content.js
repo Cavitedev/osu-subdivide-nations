@@ -718,8 +718,7 @@
     for (const index of removeColsRegionalRanking) {
       cells[index].remove();
     }
-
-    cells[2].textContent = "#" + rank;
+    cells[2].textContent = "#" + rank.toLocaleString();
 
     row.classList.remove("ranking-page-table__row--inactive");
   };
