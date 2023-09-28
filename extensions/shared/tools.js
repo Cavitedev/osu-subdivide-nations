@@ -30,6 +30,13 @@ export const fetchWithCache = async (url, expireTime) => {
     return fetch(url)
       .then(async (res) => {
         const jsonResponse = await res.json();
+        if (!jsonResponse)
+          return {
+            error: {
+              code: noData,
+              url: url,
+            },
+          };
         let cachedResponse = {};
         cachedResponse["data"] = jsonResponse;
         cachedResponse[expireHeader] = genExpireDate(expireTime);
@@ -37,8 +44,26 @@ export const fetchWithCache = async (url, expireTime) => {
         return cachedResponse;
       })
       .catch((error) => {
-        console.log(error);
+        return { error: { code: "cannot_fetch ", url: url } };
       });
+  }
+};
+
+export const unknownUserError = "unknown_user";
+const cannotFetchError = "cannot_fetch";
+const noData = "no_data";
+
+export const fetchErrorToText = (error) => {
+  if (!error?.error?.code) return "";
+  switch (error.error.code) {
+    case unknownUserError:
+      return "Unknown user " + error.userId;
+    case cannotFetchError:
+      return "Cannot fetch " + error.url;
+    case noData:
+      return "No data for " + error.url;
+    default:
+      return "Unknown error";
   }
 };
 
@@ -52,7 +77,10 @@ const fetchWithMinimumWaitTime = async (dataPromise, waitTime) => {
   return Promise.race([dataPromise, waitPromise])
     .then(async (result) => {
       const hasCache = result && result["cache"];
-
+      const hasError = result && result["error"];
+      if (hasError) {
+        return result;
+      }
       if (hasCache) {
         return result;
       } else {
@@ -61,7 +89,7 @@ const fetchWithMinimumWaitTime = async (dataPromise, waitTime) => {
       }
     })
     .then((result) => {
-      return result["data"];
+      return result;
     });
 };
 
@@ -101,7 +129,6 @@ export const osuWorldCountryRegionRanking = async (
   return fetchWithCache(url, userDataExpireTime).then((result) => {
     return result["data"];
   });
-  // return fetchWithMinimumWaitTime(dataPromise, 200);
 };
 
 const profileUrl = "https://osu.ppy.sh/users/{{user-id}}/{{mode}}";

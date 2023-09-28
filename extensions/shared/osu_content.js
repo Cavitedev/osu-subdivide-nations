@@ -59,8 +59,6 @@
     return tools.osuWorldUser(url);
   };
 
-  const unknownUserError = "unknown_user";
-
   const getRegionNames = async (countryCode) => {
     const regionsOsuWorld = await tools.getRegionNamesLocale();
 
@@ -244,8 +242,18 @@
 
   const updateFlagUser = async (item, userId, addMargin = true) => {
     if (!item) return;
-    playerData = await osuWorldUser(userId);
-    if (!playerData || playerData["error"] == unknownUserError) {
+    playerOsuWorld = await osuWorldUser(userId);
+    if (playerOsuWorld.error) {
+      if (playerOsuWorld.error === tools.unknownUserError) {
+        return;
+      }
+      const textError = tools.fetchErrorToText(playerOsuWorld);
+      console.log(textError);
+      removeRegionalFlag(item);
+      return;
+    }
+    const playerData = playerOsuWorld.data;
+    if(!playerData){
       return;
     }
     countryCode = playerData["country_id"];
