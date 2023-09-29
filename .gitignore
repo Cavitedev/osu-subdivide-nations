@@ -12,3 +12,5 @@ extensions/firefox_dev/*
 data/*
 
 credentials/*
+darkReader/
+node_modules/*

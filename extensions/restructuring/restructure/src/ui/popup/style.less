@@ -1,0 +1,231 @@
+@import "../theme";
+@import "../shared";
+
+@popup-content-width: 15rem;
+@popup-content-height: 30rem;
+@popup-content-padding: 1rem;
+
+@import "./components/custom-settings-toggle/style";
+@import "./components/engine-switch/style";
+@import "./components/filter-settings/style";
+@import "./components/font-settings/style";
+@import "./components/header/style";
+@import "./components/loader/style";
+@import "./components/more-settings/style";
+@import "./components/news/style";
+@import "./components/site-list-settings/style";
+@import "./components/site-toggle/style";
+
+body {
+    align-items: stretch;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    height: @popup-content-height;
+    margin: 0 auto;
+    padding: @popup-content-padding;
+    position: relative;
+    width: @popup-content-width;
+}
+
+.header {
+    flex: none;
+}
+
+.tab-panel {
+    flex: auto;
+    margin-top: @indent-large;
+}
+
+footer {
+    align-items: stretch;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: @indent-large;
+
+    p {
+        margin: 0 0 @size-border 0;
+        text-align: center;
+        white-space: pre;
+    }
+}
+
+.footer-links {
+    align-items: stretch;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    margin-bottom: @indent-small;
+
+    &__link {
+        color: @color-fore;
+        line-height: @size-text-normal-height;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    > :not(:first-child) {
+        margin-left: @indent-small;
+    }
+}
+
+.footer-buttons {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 100%;
+
+    > * {
+        flex: auto;
+    }
+
+    > :not(:first-child) {
+        margin-left: @indent-small;
+    }
+}
+
+.donate-link {
+    align-items: center;
+    background-color: @color-control-active;
+    color: @color-control-fore;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    transition: all @time-fast;
+
+    &:hover {
+        box-shadow: 0 0 @indent-large @color-control-active;
+    }
+
+    &__text {
+        font-weight: bold;
+        line-height: @size-control-inner;
+        transform: skewX(-10deg);
+    }
+}
+
+.dev-tools-button {
+    overflow: visible;
+    position: relative;
+}
+
+.ext-disabled {
+    .site-toggle--disabled {
+        opacity: 1;
+    }
+
+    .header__site-toggle,
+    .tab-panel {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .tab-panel__tab--active {
+        pointer-events: none;
+    }
+}
+
+.mobile-link {
+    align-items: center;
+    background-color: @color-control-back;
+    border: @size-border solid @color-border;
+    border-bottom-left-radius: @size-text-normal-height;
+    border-top-left-radius: @size-text-normal-height;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: @indent-large;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+
+    &__icon {
+        background-image: url('../assets/images/mobile-icon-40x64.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0.4375rem;
+        display: inline-block;
+        flex: none;
+        height: 2.8rem;
+        left: -@size-border;
+        overflow: hidden;
+        position: absolute;
+        width: 1.75rem;
+    }
+    &__text {
+        color: @color-control-fore;
+        flex: auto;
+        font-weight: bold;
+        height: @size-text-normal-height * 2;
+        line-height: @size-text-normal-height;
+        margin: @size-border 1rem @size-border 2rem;
+        text-align: center;
+        overflow: hidden;
+
+        &::after {
+            content: " →";
+            font-weight: bold;
+        }
+    }
+
+    &:hover {
+        background-color: @color-control-hover;
+    }
+
+    &:hover &__icon {
+        box-shadow: 0 0 0.5rem @color-fore;
+    }
+
+    &:active {
+        background-color: @color-control-active;
+    }
+}
+
+.footer-help-link {
+    color: @color-control-fore;
+    font-weight: bold;
+
+    &::after {
+        background-color: @color-control-active;
+        border-radius: 50%;
+        content: "?";
+        display: inline-block;
+        height: @size-text-normal-height;
+        margin-left: 0.125rem;
+        width: @size-text-normal-height;
+    }
+}
+
+//
+// Make popup borders the same
+// across platforms and browser versions
+
+body {
+    border: 2px solid white;
+}
+
+html:not(.mobile):not(.preview) body {
+    height: @popup-content-height + 4rem;
+}
+
+.overlay {
+    height: calc(100% - 4px);
+    left: 2px;
+    top: 2px;
+    width: calc(100% - 4px);
+}
+
+@import "./body/style";
