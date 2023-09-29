@@ -10,6 +10,8 @@ import {isFirefox} from '../utils/platform';
 import {emulateColorScheme, isSystemDarkModeEnabled} from '../utils/media-query';
 import {setNewsForTesting} from './newsmaker';
 
+console.log("Hola");
+
 type TestMessage = {
     type: 'getManifest';
     id: number;
@@ -52,13 +54,9 @@ type TestMessage = {
 };
 
 // Start extension
-const extension = Extension.start();
+console.log("Hola");
 
-const welcome = `  /''''\\
- (0)==(0)
-/__||||__\\
-Welcome to Dark Reader!`;
-console.log(welcome);
+const extension = Extension.start();
 
 declare const __DEBUG__: boolean;
 declare const __WATCH__: boolean;
@@ -91,6 +89,8 @@ if (__CHROMIUM_MV3__) {
         }
     });
 }
+
+// End extension
 
 if (__WATCH__) {
     const PORT = __PORT__;
@@ -188,13 +188,6 @@ if (__TEST__) {
             }));
 
             switch (type) {
-                case 'changeSettings':
-                    Extension.changeSettings(message.data);
-                    respond();
-                    break;
-                case 'collectData':
-                    Extension.collectData().then(respond);
-                    break;
                 case 'getManifest': {
                     const data = chrome.runtime.getManifest();
                     respond(data);

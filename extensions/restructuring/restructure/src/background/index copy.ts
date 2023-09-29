@@ -188,13 +188,6 @@ if (__TEST__) {
             }));
 
             switch (type) {
-                case 'changeSettings':
-                    Extension.changeSettings(message.data);
-                    respond();
-                    break;
-                case 'collectData':
-                    Extension.collectData().then(respond);
-                    break;
                 case 'getManifest': {
                     const data = chrome.runtime.getManifest();
                     respond(data);
