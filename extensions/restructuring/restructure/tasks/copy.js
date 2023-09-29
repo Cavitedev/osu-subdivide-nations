@@ -24,15 +24,7 @@ const copyEntries = [
         src: 'icons/**/*.*',
         reloadType: reload.FULL,
     },
-    {
-        src: 'ui/assets/**/*.*',
-        reloadType: reload.UI,
-    },
-    {
-        src: 'ui/popup/compatibility.js',
-        reloadType: reload.UI,
-        platforms: [PLATFORM.CHROMIUM_MV2],
-    },
+
 ];
 
 const paths = copyEntries.map((entry) => entry.src).map((path) => `${srcDir}/${path}`);

@@ -57,24 +57,7 @@ const copyEntries = [
         reloadType: reload.FULL,
         platforms: [PLATFORM.CHROMIUM_MV2, PLATFORM.FIREFOX_MV2, PLATFORM.THUNDERBIRD],
     },
-    {
-        title: 'Dark Reader settings',
-        dest: 'ui/popup/index.html',
-        args: [true, true, true],
-        reloadType: reload.UI,
-    },
-    {
-        title: 'Dark Reader developer tools',
-        dest: 'ui/devtools/index.html',
-        args: [false, true, false],
-        reloadType: reload.UI,
-    },
-    {
-        title: 'Dark Reader CSS editor',
-        dest: 'ui/stylesheet-editor/index.html',
-        args: [false, true, false],
-        reloadType: reload.UI,
-    },
+    
 ];
 
 async function writeEntry({dest, title, args}, {debug, platform}) {

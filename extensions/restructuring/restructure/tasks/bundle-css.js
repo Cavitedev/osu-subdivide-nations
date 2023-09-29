@@ -16,18 +16,7 @@ const {getDestDir, PLATFORM, rootPath} = paths;
 
 /** @type {CSSEntry[]} */
 const cssEntries = [
-    {
-        src: 'src/ui/devtools/style.less',
-        dest: 'ui/devtools/style.css',
-    },
-    {
-        src: 'src/ui/popup/style.less',
-        dest: 'ui/popup/style.css',
-    },
-    {
-        src: 'src/ui/stylesheet-editor/style.less',
-        dest: 'ui/stylesheet-editor/style.css',
-    },
+
 ];
 
 /** @type {string[]} */

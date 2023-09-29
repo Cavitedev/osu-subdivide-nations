@@ -52,21 +52,8 @@ const jsEntries = [
         reloadType: reload.FULL,
         platform: PLATFORM.CHROMIUM_MV3,
     },
-    {
-        src: 'src/ui/devtools/index.tsx',
-        dest: 'ui/devtools/index.js',
-        reloadType: reload.UI,
-    },
-    {
-        src: 'src/ui/popup/index.tsx',
-        dest: 'ui/popup/index.js',
-        reloadType: reload.UI,
-    },
-    {
-        src: 'src/ui/stylesheet-editor/index.tsx',
-        dest: 'ui/stylesheet-editor/index.js',
-        reloadType: reload.UI,
-    },
+
+
 ];
 
 const rollupPluginCache = {};
@@ -86,28 +73,18 @@ function getRollupPluginInstance(name, key, create) {
     return rollupPluginCache[name][key].instance;
 }
 
-function freeRollupPluginInstance(name, key) {
-    if (rollupPluginCache[name] && rollupPluginCache[name][key]) {
-        rollupPluginCache[name][key].count--;
-        if (rollupPluginCache[name][key].count === 0) {
-            rollupPluginCache[name][key] = null;
-        }
-    }
-}
+
 
 async function bundleJS(/** @type {JSEntry} */entry, platform, debug, watch, log, test) {
     const {src, dest} = entry;
     const rollupPluginTypesctiptInstanceKey = `${platform}-${debug}`;
-    const rollupPluginReplaceInstanceKey = `${platform}-${debug}-${watch}-${entry.src === 'src/ui/popup/index.tsx'}`;
 
     const destination = typeof dest === 'string' ? dest : dest(platform);
     let replace = {};
     switch (platform) {
         case PLATFORM.FIREFOX_MV2:
         case PLATFORM.THUNDERBIRD:
-            if (entry.src === 'src/ui/popup/index.tsx') {
-                break;
-            }
+
             replace = {
                 'chrome.fontSettings.getFontList': `chrome['font' + 'Settings']['get' + 'Font' + 'List']`,
                 'chrome.fontSettings': `chrome['font' + 'Settings']`,
@@ -185,10 +162,6 @@ async function bundleJS(/** @type {JSEntry} */entry, platform, debug, watch, log
         ].filter(Boolean),
     });
     // TODO(anton): remove this once Firefox supports tab.eval() via WebDriver BiDi
-    freeRollupPluginInstance('removeEval', '');
-    freeRollupPluginInstance('nodeResolve', '');
-    freeRollupPluginInstance('typesctipt', rollupPluginTypesctiptInstanceKey);
-    freeRollupPluginInstance('replace', rollupPluginReplaceInstanceKey);
     entry.watchFiles = bundle.watchFiles;
     await bundle.write({
         file: `${getDestDir({debug, platform})}/${destination}`,
