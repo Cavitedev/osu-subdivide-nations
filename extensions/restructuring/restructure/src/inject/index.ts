@@ -12,7 +12,7 @@ import {generateUID} from '../utils/uid';
 declare const __DEBUG__: boolean;
 declare const __TEST__: boolean;
 
-console.log("Hola3");
+console.log("Hola4");
 
 let unloaded = false;
 
