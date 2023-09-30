@@ -47,12 +47,6 @@ async function build() {
   await runEsbuild(`./${outdir}/chromium`, "src/manifest_chromium.json");
   await runEsbuild(`./${outdir}/firefox`, "src/manifest_firefox.json");
 
-  // await fs.copy(tmp_dir);
-  // await fs.copy(tmp_dir, `./${outdir}/firefox`);
-
-  // await copyFiles([{ src: "", dst: "manifest.json" }], `./${outdir}/chromium`);
-
-  // await fs.remove(tmp_dir);
 
   console.log("Build success");
 }
