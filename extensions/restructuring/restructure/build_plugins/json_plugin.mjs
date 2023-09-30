@@ -9,7 +9,6 @@ export default (options = {}) => ({
 
       // Resolve the path to the JSON file
       const jsonFilePath = path.resolve(args.resolveDir, args.path);
-      console.log("Resolve", jsonFilePath);
 
       try {
         // Read the JSON file

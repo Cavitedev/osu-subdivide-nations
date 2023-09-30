@@ -23,7 +23,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     minify: !watch,
     loader: { '.json': 'copy' },
     plugins: [
-      json_plugin(),
+      ...(watch ? [] : [json_plugin()]),
       copy({
         assets: {
           from: ["./src/assets/**"],
