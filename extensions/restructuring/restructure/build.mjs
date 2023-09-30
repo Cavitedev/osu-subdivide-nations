@@ -1,7 +1,6 @@
 import esbuild from "esbuild";
 import fs from "fs-extra";
 import { copy } from "esbuild-plugin-copy";
-import { refreshChrome } from "./build_plugins/refresh_chrome.mjs";
 
 const outdir = "build";
 
@@ -9,7 +8,7 @@ async function deleteOldDir() {
   await fs.remove(outdir);
 }
 
-async function runEsbuild(buildPath, manifestPath, autoRefreshChrome = false) {
+async function runEsbuild(buildPath, manifestPath) {
   return esbuild.context({
     entryPoints: ["src/content-script/osu_content.ts"],
     bundle: true,
@@ -27,7 +26,6 @@ async function runEsbuild(buildPath, manifestPath, autoRefreshChrome = false) {
           to: ["./manifest.json"],
         },
       }),
-      ...(autoRefreshChrome ? [refreshChrome] : []),
     ],
   });
 }
@@ -37,7 +35,6 @@ async function build() {
   const chromeBuild = await runEsbuild(
     `./${outdir}/chromium`,
     "src/manifest_chromium.json",
-    true
   );
   const firefoxBuild = await runEsbuild(
     `./${outdir}/firefox`,
