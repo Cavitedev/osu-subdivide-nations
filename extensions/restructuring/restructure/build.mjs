@@ -14,6 +14,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     entryPoints: ["src/content-script/osu_content.ts"],
     bundle: true,
     outdir: buildPath,
+    minify: !watch,
     plugins: [
       copy({
         assets: {
