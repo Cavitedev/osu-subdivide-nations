@@ -9,7 +9,7 @@ async function deleteOldDir() {
   await fs.remove(outdir);
 }
 
-async function runEsbuild(buildPath, manifestPath) {
+async function runEsbuild(buildPath, manifestPath, autoRefreshChrome = false) {
   return esbuild.context({
     entryPoints: ["src/content-script/osu_content.ts"],
     bundle: true,
@@ -27,20 +27,25 @@ async function runEsbuild(buildPath, manifestPath) {
           to: ["./manifest.json"],
         },
       }),
-      refreshChrome,
+      ...(autoRefreshChrome ? [refreshChrome] : []),
     ],
   });
 }
 
-
 async function build() {
   await deleteOldDir();
-  const chromeBuild =  await runEsbuild(`./${outdir}/chromium`, "src/manifest_chromium.json");
-  const firefoxBuild = await runEsbuild(`./${outdir}/firefox`, "src/manifest_firefox.json");
+  const chromeBuild = await runEsbuild(
+    `./${outdir}/chromium`,
+    "src/manifest_chromium.json",
+    true
+  );
+  const firefoxBuild = await runEsbuild(
+    `./${outdir}/firefox`,
+    "src/manifest_firefox.json"
+  );
   console.log("Build success");
   chromeBuild.watch();
   await firefoxBuild.watch();
-
 }
 
 build();
