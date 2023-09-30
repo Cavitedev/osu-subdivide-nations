@@ -14,6 +14,8 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     entryPoints: [
       "src/content-script/osu_content.ts",
       "src/content-script/wybin_content.ts",
+      "src/ui/popup/popup.ts",
+      "src/ui/popup/popup.css",
     ],
     bundle: true,
     outdir: buildPath,
@@ -23,6 +25,15 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
         assets: {
           from: ["./src/assets/**"],
           to: ["./assets"],
+        },
+      }),
+      copy({
+        globbyOptions: {
+          ignore: ["**/*.ts", "**/*.css"],
+        },
+        assets: {
+          from: ["./src/ui/**"],
+          to: ["./ui"],
         },
       }),
       copy({

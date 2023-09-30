@@ -2,14 +2,14 @@
     "name": "osu! subdivide nations",
     "version": "2.7.7",
     "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
-    "permissions": [],
+    "permissions": ["storage", "tabs"],
     "content_scripts": [
         {
             "matches": [
                 "https://osu.ppy.sh/*"
             ],
             "js": [
-                "osu_content.js"
+                "content-script/osu_content.js"
             ]
         }
     ],
