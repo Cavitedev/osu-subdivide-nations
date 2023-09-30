@@ -1,66 +1,32 @@
 {
-    "manifest_version": 2,
-    "name": "Dark Reader",
-    "version": "4.9.66",
-    "author": "Alexander Shutau",
-    "description": "__MSG_extension_description__",
-    "default_locale": "en",
-    "browser_action": {
-        "default_title": "Dark Reader",
-        "default_icon": {
-            "38": "icons/dr_active_38.png",
-            "19": "icons/dr_active_19.png"
-        },
-        "default_popup": "ui/popup/index.html"
-    },
-    "icons": {
-        "16": "icons/dr_16.png",
-        "48": "icons/dr_48.png",
-        "128": "icons/dr_128.png"
-    },
-    "background": {
-        "persistent": true,
-        "page": "background/index.html"
-    },
+    "name": "osu! subdivide nations",
+    "version": "2.7.7",
+    "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
+    "permissions": [],
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "https://osu.ppy.sh/*"
             ],
             "js": [
-                "inject/fallback.js",
-                "inject/index.js"
-            ],
-            "run_at": "document_start",
-            "all_frames": true,
-            "match_about_blank": true
+                "osu_content.js"
+            ]
         }
     ],
-    "permissions": [
-        "alarms",
-        "fontSettings",
-        "storage",
-        "tabs",
-        "<all_urls>"
-    ],
-    "optional_permissions": [
-        "contextMenus"
-    ],
-    "commands": {
-        "toggle": {
-            "suggested_key": {
-                "default": "Alt+Shift+D"
-            },
-            "description": "__MSG_toggle_extension__"
-        },
-        "addSite": {
-            "suggested_key": {
-                "default": "Alt+Shift+A"
-            },
-            "description": "__MSG_toggle_current_site__"
-        },
-        "switchEngine": {
-            "description": "__MSG_theme_generation_mode__"
+    "icons": {
+        "128": "favicon/icon128.png",
+        "48": "favicon/icon48.png",
+        "32": "favicon/icon32.png",
+        "16": "favicon/icon16.png"
+    },
+    "action": {
+        "default_popup": "ui/popup/popup.html",
+        "default_icon": {
+            "128": "favicon/icon128.png",
+            "48": "favicon/icon48.png",
+            "32": "favicon/icon32.png",
+            "16": "favicon/icon16.png"
         }
-    }
+    },
+    "manifest_version": 3
 }

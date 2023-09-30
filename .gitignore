@@ -13,4 +13,4 @@ data/*
 
 credentials/*
 darkReader/
-node_modules/*
+node_modules/
