@@ -1,15 +1,21 @@
 {
-    "compilerOptions": {
-      "lib": ["dom", "dom.iterable", "esnext"],
-      "module": "esnext",
-      "target": "es2018",
-      "allowJs": true,
-      "esModuleInterop": true,
-      "jsx": "react-jsx",
-      "noEmit": true,
-      "skipLibCheck": true,
-      "strict": true,
-      "moduleResolution": "node"
-    }
+  "compilerOptions": {
+    "target": "ES2020",
+    "baseUrl": "",
+    "module": "ES2020",
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+    "moduleResolution": "node",
+    "lib": ["ES2022", "Dom", "DOM.Iterable"],
+    "types": ["chrome"],
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./src", "./node_modules/@types"]
   }
-  
+}

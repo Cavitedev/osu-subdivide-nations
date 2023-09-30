@@ -11,7 +11,10 @@ async function deleteOldDir() {
 
 async function runEsbuild({ buildPath, manifestPath, watch = false }) {
   const esbuildOptions = {
-    entryPoints: ["src/content-script/osu_content.ts"],
+    entryPoints: [
+      "src/content-script/osu_content.ts",
+      "src/content-script/wybin_content.ts",
+    ],
     bundle: true,
     outdir: buildPath,
     minify: !watch,
