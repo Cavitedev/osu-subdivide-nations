@@ -4,6 +4,7 @@
 
 # build archive
 chrome.zip
+chromium.zip
 firefox.zip
 
 # build version

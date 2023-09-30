@@ -1,3 +1,4 @@
+import archiver from "archiver";
 import esbuild from "esbuild";
 import fs from "fs-extra";
 import { copy } from "esbuild-plugin-copy";
@@ -34,6 +35,16 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     : esbuild.build(esbuildOptions);
 }
 
+async function zipFolder(dir) {
+  const output = fs.createWriteStream(`${dir}.zip`);
+  const archive = archiver("zip", {
+    zlib: { level: 9 },
+  });
+  archive.pipe(output);
+  archive.directory(dir, false);
+  await archive.finalize();
+}
+
 async function build() {
   const args = process.argv.slice(2);
 
@@ -54,12 +65,20 @@ async function build() {
       manifestPath: "src/manifest_chromium.json",
       watch: isWatch,
     });
-  } else if (isFirefox) {
+
+    if (!isWatch) {
+      zipFolder(`${outdir}/chromium`);
+    }
+  }
+  if (isFirefox) {
     firefoxBuild = await runEsbuild({
       buildPath: `./${outdir}/firefox`,
       manifestPath: "src/manifest_firefox.json",
       watch: isWatch,
     });
+    if (!isWatch) {
+      zipFolder(`${outdir}/firefox`);
+    }
   }
 
   console.log("Build success");
