@@ -2,6 +2,7 @@ import archiver from "archiver";
 import esbuild from "esbuild";
 import fs from "fs-extra";
 import { copy } from "esbuild-plugin-copy";
+import json_plugin from "./build_plugins/json_plugin.mjs";
 
 const outdir = "build";
 
@@ -12,15 +13,17 @@ async function deleteOldDir() {
 async function runEsbuild({ buildPath, manifestPath, watch = false }) {
   const esbuildOptions = {
     entryPoints: [
+      "src/flags.json",
       "src/content-script/osu_content.ts",
-      "src/content-script/wybin_content.ts",
       "src/ui/popup/popup.ts",
       "src/ui/popup/popup.css",
     ],
     bundle: true,
     outdir: buildPath,
     minify: !watch,
+    loader: { '.json': 'copy' },
     plugins: [
+      json_plugin(),
       copy({
         assets: {
           from: ["./src/assets/**"],
