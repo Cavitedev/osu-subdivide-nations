@@ -944,7 +944,8 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     }
   );
 
-  let lobbyPlayingMutationObserver = new MutationObserver((mutations) => {
+  let matchesObserver = new MutationObserver((mutations) => {
+    updateFlagsMatches();
     const addedScores = mutations[mutations.length - 1].addedNodes[0];
     if (!addedScores) return;
 
@@ -961,17 +962,16 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
   });
 
   const updateFlagsMatches = async () => {
-    const functionId = nextFunctionId();
+    const functionId = nextFunctionId();  
 
-    const linkItem = document.querySelector(".mp-history-content");
+    const linkItem = document.querySelector(".js-react--mp-history");
     if (linkItem) {
-      lobbyPlayingMutationObserver.observe(linkItem, {
+      matchesObserver.observe(linkItem, {
         attributes: false,
         childList: true,
         subtree: false,
       });
     }
-Document
     watchPlayingGame();
     updateFlagsInMatchPlay(document, functionId);
   };
