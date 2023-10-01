@@ -4,6 +4,7 @@ import { isNumber } from "@src/utils/utils";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./ranking";
 import { updateFlagsBeatmapsets } from "./beatmapset";
+import { updateFlagsFriends } from "./friends";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -35,7 +36,7 @@ export const nextFunctionId = () => {
 };
 
 
-const idFromProfileUrl = (url: string) => {
+export const idFromProfileUrl = (url: string) => {
   return url.split("/")[4];
 };
 
@@ -269,45 +270,6 @@ const updateFlagInMatchScore = async (item: HTMLElement) => {
 };
 
 
-const setActualFriendsObserver = new MutationObserver((mutations) => {
-  console.log(mutations);
-  updateFlagsFriends();
-  setActualFriendsObserver.disconnect();
-});
-
-const updateFlagsFriendsObserver = new MutationObserver((mutations) => {
-  updateFlagsFriends();
-});
-
-const updateFlagsFriends = async () => {
-  const functionId = nextFunctionId();
-
-
-  const allFriendsElement = document.querySelector(".t-changelog-stream--all");
-  if (allFriendsElement) {
-  updateFlagsFriendsObserver.observe(document.querySelector(".t-changelog-stream--all")!, {
-    attributes: true,
-    attributeFilter: ['href']
-  });
-}else{
-  setActualFriendsObserver.observe(document.querySelector(".js-react--friends-index")!, {
-    childList: true,
-  });
-  return;
-}
-
-  const friendsList = document
-    .querySelector(".user-list")!.querySelectorAll(".user-card__details");
-
-  for (let item of friendsList) {
-    if (functionId != runningId) {
-      return;
-    }
-    const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
-    const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-    await addFlagUser(item as HTMLElement, playerId, true, true);
-  }
-};
 
 const updateFlagsTopics = async () => {
   const functionId = nextFunctionId();
