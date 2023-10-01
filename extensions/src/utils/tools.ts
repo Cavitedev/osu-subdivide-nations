@@ -43,6 +43,7 @@ export interface IosuWorldRegionalPlayerData{
 }
 
 export interface IosuWorldRegionalRankingSuccess{
+  pages: number,
   top: [
     IosuWorldRegionalPlayerData
   ]

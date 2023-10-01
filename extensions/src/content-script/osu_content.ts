@@ -437,8 +437,8 @@ import * as tools from "../utils/tools";
     const functionId = nextFunctionId();
 
 
-    regionsInRanking(functionId);
-
+    const isRegionRanking = await regionsInRanking(functionId);
+    if(isRegionRanking) return;
 
     for (const item of listItems) {
       addFlag(item as HTMLElement, true);
@@ -455,7 +455,7 @@ import * as tools from "../utils/tools";
     }
   };
 
-  const regionsInRanking = (functionId: number) => {
+  const regionsInRanking = async (functionId: number) : Promise<boolean> => {
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
     const regionUrlParam = urlParams.get("region");
@@ -464,30 +464,28 @@ import * as tools from "../utils/tools";
 
     const rankingType = location.pathname.split("/")[3];
     const filter = urlParams.get("filter");
-    console.log(rankingType);
     
     if (rankingType === "performance" &&
         (!filter || filter === "all") 
         && countryUrlParam) {
       addRegionsDropdown(countryUrlParam, regionUrlParam);
-      if(!regionUrlParam) return;
+      if(!regionUrlParam) return false;
       const regionData =
         loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
-      if (
-        regionData &&
-        rankingType === "performance" 
-      ) {
+      if (regionData) {
         const page = urlParams.get("page");
         const mode = location.pathname.split("/")[2];
-        return regionalRanking(
+        await regionalRanking(
           functionId,
           mode,
           countryUrlParam,
           regionUrlParam,
           page != null ? parseInt(page) : 1
         );
+        return true;
       }
     }
+    return false;
   }
 
   const updateRegionsDropdown = async () => {
@@ -711,13 +709,11 @@ import * as tools from "../utils/tools";
     countryCode: string,
     regionCode: string
   ) => {
-    const paginations = document.querySelectorAll(".pagination-v2");
+    const paginations = document.querySelectorAll(".pagination-v2") as NodeListOf<HTMLElement> ;
 
     if (totalPages === 1) {
-      while (paginations[0]) {
-        paginations[0].parentNode?.removeChild(paginations[0]);
-      }
       paginations.forEach((pagination) => pagination.remove());
+      return;
     }
 
     const firstLink = paginations[0]
