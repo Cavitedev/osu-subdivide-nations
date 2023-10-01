@@ -13,41 +13,12 @@ import * as tools from "../utils/tools";
   let runningId = 0;
 
   chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
-    disconnectObservers();
 
-    const { type, location, view, action } = obj;
+    const {  action } = obj;
     if (action && action === "osu_flag_refresh") {
       await updateRegionsDropdown();
       refreshOverlays();
       init();
-    }
-
-    if (type === "update_flag") {
-      if (location === "friends") {
-        // No flags
-        if (view === "brick") {
-          return;
-        }
-        observeFriendsPage();
-      } else if (location === "rankings") {
-        // Only observer as ranking doesn't updated immediately
-        observeRankingPage();
-      } else if (location === "user") {
-        profileMutationObserver.observe(document.querySelector("title")!, {
-          childList: true,
-          subtree: false,
-        });
-
-        updateFlagsProfile();
-      } else if (location === "matches") {
-        updateFlagsMatches();
-      } else if (location === "topics") {
-        updateFlagsTopics();
-      } else if (location === "beatmapsets") {
-        updateFlagsBeatmapsets();
-      } else if (location === "overlays") {
-        refreshOverlays();
-      }
     }
   });
 
@@ -439,14 +410,7 @@ import * as tools from "../utils/tools";
 
   const rankingIdAttr = "data-user-id";
 
-  const observeRankingPage = () => {
-    const linkItem = document.querySelector("title")!;
-    rankingMutationObserver.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-  };
+
 
   const addLinkToFlag = (item: HTMLElement) => {
     const flags = item.querySelectorAll(`.${flagClass}`);
@@ -481,7 +445,6 @@ import * as tools from "../utils/tools";
     }
     const functionId = nextFunctionId();
 
-    observeRankingPage();
 
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -934,13 +897,7 @@ import * as tools from "../utils/tools";
         childList: true,
         subtree: false,
       });
-    } else {
-      beatmapsetMutationObserver.observe(document.querySelector("title")!, {
-        attributes: false,
-        childList: true,
-        subtree: false,
-      });
-    }
+    } 
 
     const topScoreElements = document.querySelectorAll(
       ".beatmap-score-top__user-box"
@@ -1113,17 +1070,12 @@ Document
     await updateFlagUser(item, playerId);
   };
 
+  // TODO link another observe
   const updateFlagsFriendsObserver = new MutationObserver((_) => {
     updateFlagsFriends();
   });
 
-  const observeFriendsPage = () => {
-    updateFlagsFriendsObserver.observe(document.querySelector("title")!, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-  };
+
 
   const updateFlagsFriends = async () => {
     const functionId = nextFunctionId();
@@ -1161,8 +1113,17 @@ Document
     }
   };
 
+  const reloadMutationObserver = new MutationObserver((_) => {
+    init();
+  });
+
   const init = async () => {
+    reloadMutationObserver.observe(document.querySelector("title")!, {
+      childList: true,
+    });
+
     const url = location.href;
+    
     if (
       url.includes("osu.ppy.sh/rankings") ||
       url.includes("osu.ppy.sh/multiplayer/rooms") ||
@@ -1199,6 +1160,7 @@ Document
       refreshOverlays();
     }
   };
+  
 
   await init();
 })();
