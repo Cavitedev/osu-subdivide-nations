@@ -33,6 +33,24 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
     "https://osuworld.octo.moe/locales/{{lang-code}}/regions.json";
     
 
+    export const getCountryName = async (countryCode: string ) => {
+      const countryNamesLocale = await getCountryNamesLocale();
+
+      const localeCountry = (await countryRegionsLocalData)[countryCode];
+
+
+      const defaultName = localeCountry.name;
+      const nativeName = localeCountry.nativeName;
+
+      if ("lang" in countryNamesLocale && countryNamesLocale["lang"] === nativeLanguageCode) {
+        return Promise.resolve(nativeName ?? defaultName);
+      } else if(!("lang" in countryNamesLocale)) {
+        const countryNameOsuWorld = countryNamesLocale["data"]?.[countryCode];
+        return Promise.resolve(countryNameOsuWorld ?? defaultName);
+      }
+      return Promise.resolve(defaultName);
+    }
+
     export const getRegionNames = async (countryCode: string ) => {
     const regionsOsuWorld = await getRegionNamesLocale();
 
@@ -71,7 +89,7 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
     return Promise.resolve(defaultName);
   };
   
-  export const langToRightUpperCases = (lang: string) => {
+   const langToRightUpperCases = (lang: string) => {
     const splitLang = lang.split("-");
     if (splitLang.length === 2) {
       return splitLang[0].toLowerCase() + "-" + splitLang[1].toUpperCase();

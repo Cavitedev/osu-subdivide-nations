@@ -31,12 +31,18 @@ export const updateFlagsProfile = async () => {
       return;
     }
     addScoreRank();
-    const regionName = await addFlagUser(flagElement as HTMLElement, playerId);
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId)!;
+    if(!flagResult) return;
+    const {countryName, regionName} = flagResult;
+
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
       )!;
-      countryNameElement.textContent =
-        countryNameElement.textContent?.split(" / ")[0] + ` / ${regionName}` ?? regionName;
+
+      const originalCountry = countryNameElement.textContent?.split(" / ")[0];
+      const replaceText = `${countryName ? countryName : originalCountry}${regionName? " / ":""}${regionName}`
+
+      countryNameElement.textContent = replaceText;
   
   };
 
