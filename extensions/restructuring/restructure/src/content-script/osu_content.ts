@@ -1070,8 +1070,7 @@ Document
     await updateFlagUser(item, playerId);
   };
 
-  // TODO link another observe
-  const updateFlagsFriendsObserver = new MutationObserver((_) => {
+  const updateFlagsFriendsObserver = new MutationObserver((mutations) => {
     updateFlagsFriends();
   });
 
@@ -1079,6 +1078,11 @@ Document
 
   const updateFlagsFriends = async () => {
     const functionId = nextFunctionId();
+
+    updateFlagsFriendsObserver.observe(document.querySelector(".t-changelog-stream--all")!, {
+      attributes: true,
+      attributeFilter: ['href']
+    });
 
     const friendsList = document
       .querySelector(".user-list")!.querySelectorAll(".user-card__details");
