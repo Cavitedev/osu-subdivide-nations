@@ -1,8 +1,13 @@
-import { IfetchResponse, expireHeader, fetchWithCache, loadFromCache } from "./fetchUtils";
+import { IfetchResponse, fetchWithCache } from "./fetchUtils";
 
 
 interface Ilanguages {
   [key:string]: string
+}
+
+interface Icountries {
+  [key:string]: string, 
+  lang:never
 }
 
 interface Iregions {[key: string]:{[key:string]:string}, lang:never}
@@ -172,32 +177,26 @@ export interface IregionData{
   
   
   
-  export const getCountryNamesLocale = async () => {
+  export const getCountryNamesLocale = async (): Promise<IfetchResponse<Icountries> | {lang:string}> => {
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode)
       return Promise.resolve({ lang: nativeLanguageCode });
   
-    const countries = loadFromCache(countriesKey) as IfetchResponse<object> | null;
-    if (!countries || (countries[expireHeader] && countries[expireHeader] < Date.now())  ) {
-      return fetchWithCache(
+
+    return fetchWithCache(
         countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
         eightHours
-      );
-    }
-    return countries;
+    ) as Promise<IfetchResponse<Icountries>>;
+
   };
   
   export const getRegionNamesLocale = async (): Promise<IfetchResponse<Iregions> | {lang:string}> => {
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode)
       return Promise.resolve({ lang: nativeLanguageCode });
-  
-    const regions = loadFromCache(regionsKey) as IfetchResponse<Iregions> | undefined;
-    if (!regions || (regions[expireHeader] && regions[expireHeader] < Date.now())) {
+
       return fetchWithCache(
         regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
         eightHours
-      ).then((res) => {return res as IfetchResponse<Iregions>});
-    }
-    return regions;
+      ) as Promise<IfetchResponse<Iregions>>;
   };
