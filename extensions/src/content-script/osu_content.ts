@@ -1,97 +1,70 @@
+import { osuWorldUser, unknownUserError, fetchErrorToText, osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/fetchUtils";
+import { getRegionNamesLocale, nativeLanguageCode, IregionData } from "@src/utils/language";
+import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber } from "@src/utils/utils";
+
+
 (async () => {
   // Imports
-
-  //Import Tools
-  const src = chrome.runtime.getURL("tools.js");
-  const tools = await import(src);
 
   // Import Flags
   const flagsUrl = chrome.runtime.getURL(`flags.json`);
   const respone = await fetch(flagsUrl);
-  countryRegionsData = await respone.json();
-  loadedCountryRegions = countryRegionsData;
-  runningId = 0;
+  const countryRegionsData = await respone.json();
+  const loadedCountryRegions = countryRegionsData;
+  let runningId = 0;
 
   chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
-    disconnectObservers();
 
-    const { type, location, view, action } = obj;
+    const {  action } = obj;
     if (action && action === "osu_flag_refresh") {
       await updateRegionsDropdown();
       refreshOverlays();
       init();
     }
-
-    if (type === "update_flag") {
-      if (location === "friends") {
-        // No flags
-        if (view === "brick") {
-          return;
-        }
-        observeFriendsPage();
-      } else if (location === "rankings") {
-        // Only observer as ranking doesn't updated immediately
-        observeRankingPage();
-      } else if (location === "user") {
-        profileMutationObserver.observe(document.querySelector("title"), {
-          childList: true,
-          subtree: false,
-        });
-
-        updateFlagsProfile();
-      } else if (location === "matches") {
-        updateFlagsMatches();
-      } else if (location === "topics") {
-        updateFlagsTopics();
-      } else if (location === "beatmapsets") {
-        updateFlagsBeatmapsets();
-      } else if (location === "overlays") {
-        refreshOverlays();
-      }
-    }
   });
 
-  const idFromProfileUrl = (url) => {
+  const idFromProfileUrl = (url: string) => {
     return url.split("/")[4];
   };
 
-  const osuWorldUser = async (url) => {
-    return tools.osuWorldUser(url);
-  };
 
-  const getRegionNames = async (countryCode) => {
-    const regionsOsuWorld = await tools.getRegionNamesLocale();
 
-    const regionNamesOsuWorld = regionsOsuWorld?.["data"]?.[countryCode];
+  const getRegionNames = async (countryCode: string) => {
+    const regionsOsuWorld = await getRegionNamesLocale();
+
+
     const localeRegions = loadedCountryRegions[countryCode]?.["regions"];
 
-    const defaultNames = {};
-    const nativeNames = {};
+    const defaultNames: {[key:string]: string} = {};
+    const nativeNames: {[key:string]: string} = {};
     for (const key in localeRegions) {
       const value = localeRegions[key];
       defaultNames[key] = value["name"];
       nativeNames[key] = value["nativeName"];
     }
 
-    if (regionsOsuWorld["lang"] === tools.nativeLanguageCode) {
+    if ("lang" in regionsOsuWorld && regionsOsuWorld["lang"] === nativeLanguageCode) {
       return Promise.resolve(nativeNames ?? defaultNames);
-    } else {
+    } else if(!("lang" in regionsOsuWorld)) {
+      const regionNamesOsuWorld = regionsOsuWorld["data"]?.[countryCode];
       return Promise.resolve(regionNamesOsuWorld ?? defaultNames);
     }
+    return Promise.resolve(defaultNames);
   };
 
-  const getRegionName = async (countryCode, regionCode, regionData) => {
-    const regionsOsuWorld = await tools.getRegionNamesLocale();
+  const getRegionName = async (countryCode:string, regionCode:string, regionData: IregionData) => {
+    const regionsOsuWorld = await getRegionNamesLocale();
 
-    const regionName = regionsOsuWorld?.["data"]?.[countryCode]?.[regionCode];
     const defaultName = regionData["name"];
     const nativeName = regionData["nativeName"];
 
-    if (regionsOsuWorld["lang"] === tools.nativeLanguageCode) {
+    if ("lang" in regionsOsuWorld && regionsOsuWorld["lang"] === nativeLanguageCode) {
       return Promise.resolve(nativeName ?? defaultName);
-    } else {
+    } else if(!("lang" in regionsOsuWorld)){
+      const regionName = regionsOsuWorld?.["data"]?.[countryCode]?.[regionCode];
       return Promise.resolve(regionName ?? defaultName);
     }
+    return Promise.resolve(defaultName);
   };
 
   // Quotes needed for special characters
@@ -102,15 +75,15 @@
   const noFlag =
     "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
 
-  const removeRegionalFlag = (item) => {
+  const removeRegionalFlag = (item: HTMLElement) => {
     if (!item) return;
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length < 2) return;
-    flagElements[1].style = "height: 0px; width: 0px;";
+    flagElements[1].setAttribute("style", "height: 0px; width: 0px;");
   };
 
   const addFlag = (
-    item,
+    item: HTMLElement,
     addDiv = false,
     addMargin = true,
     superParentClone = false
@@ -120,19 +93,19 @@
     if (!flagElements || flagElements.length != 1) return;
 
     let flagElement = flagElements[0];
-    let flagParent = flagElement.parentElement;
+    let flagParent = flagElement.parentElement!;
 
-    let flagParentClone = flagParent.cloneNode(true);
-    let flagElementClone = flagParentClone.querySelector(`.${flagClass}`);
+    let flagParentClone = flagParent.cloneNode(true) as HTMLElement;
+    let flagElementClone = flagParentClone.querySelector(`.${flagClass}`)!;
 
-    flagElementClone.style = addMargin ? marginLeftStyle : "";
+    flagElementClone.setAttribute("style", addMargin ? marginLeftStyle : "");
 
     flagElementClone.removeAttribute("title");
     flagElementClone.removeAttribute("href");
 
     let href = flagParentClone.getAttribute("href");
     if (!href) {
-      const hrefCandidate = flagParent.parentElement.getAttribute("href");
+      const hrefCandidate = flagParent.parentElement!.getAttribute("href");
       if (hrefCandidate && hrefCandidate.includes("performance")) {
         href = hrefCandidate;
         const anchorParent = document.createElement("a");
@@ -141,7 +114,7 @@
       }
     }
 
-    let insertParent = flagParent.parentElement;
+    let insertParent = flagParent.parentElement!;
 
     // Check again if flag is already added
     flagElements = item.querySelectorAll(`.${flagClass}`);
@@ -163,17 +136,17 @@
           flagParentClone.removeAttribute("class");
         }
 
-        flagParent.style = "display: inline-block";
-        flagParentClone.style = "display: inline-block";
+        flagParent.setAttribute("style", "display: inline-block");
+        flagParentClone.setAttribute("style", "display: inline-block");
         flagParentClone = flagsDiv;
       }
 
       if (superParentClone) {
-        const superParent = insertParent.cloneNode(false);
+        const superParent = insertParent.cloneNode(false) as HTMLElement;
         superParent.appendChild(flagParentClone);
         flagParentClone = superParent;
         sibling = insertParent.nextSibling;
-        insertParent = insertParent.parentElement;
+        insertParent = insertParent.parentElement!;
         // insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
       }
 
@@ -182,9 +155,9 @@
   };
 
   const updateRegionalFlag = async (
-    item,
-    countryCode,
-    regionCode,
+    item: HTMLElement,
+    countryCode: string,
+    regionCode: string,
     addMargin = true
   ) => {
     if (!item) return;
@@ -197,7 +170,7 @@
       const regionData = countryRegionsData["regions"][regionCode];
       if (!regionData) return;
 
-      let flagElement = flagElements[1];
+      let flagElement = flagElements[1] as HTMLElement;
       if (!flagElement) return;
 
       let originalFlagElement = flagElements[0];
@@ -206,10 +179,11 @@
       if (!flag || flag === "") {
         flag = noFlag;
       }
-      flagElement.style = (addMargin ? flagStyleWithMargin : flagStyle).replace(
+      flagElement.setAttribute("style", (addMargin ? flagStyleWithMargin : flagStyle).replace(
         "$flag",
         flag
-      );
+      ));
+
       const regionName = await getRegionName(
         countryCode,
         regionCode,
@@ -219,16 +193,16 @@
         flagElement.setAttribute("title", regionName);
       }
 
-      let flagParent = flagElement.parentElement;
+      let flagParent = flagElement.parentElement!;
       let originalParent = originalFlagElement.parentElement;
-      if (flagParent.nodeName != "A") {
-        flagParent = flagParent.parentElement;
-        originalParent = originalParent.parentElement;
+      if (flagParent!.nodeName != "A") {
+        flagParent = flagParent!.parentElement!;
+        originalParent = originalParent!.parentElement;
       }
 
-      if (flagParent.nodeName === "A") {
-        let href = originalParent.getAttribute("href");
-        const updatedHref = tools.addOrReplaceQueryParam(
+      if (flagParent!.nodeName === "A") {
+        let href = originalParent!.getAttribute("href")!;
+        const updatedHref = addOrReplaceQueryParam(
           href,
           "region",
           regionCode
@@ -240,14 +214,14 @@
     }
   };
 
-  const updateFlagUser = async (item, userId, addMargin = true) => {
+  const updateFlagUser = async (item: HTMLElement, userId: string, addMargin = true) => {
     if (!item) return;
-    playerOsuWorld = await osuWorldUser(userId);
+    const playerOsuWorld = await osuWorldUser(userId);
     if (playerOsuWorld.error) {
-      if (playerOsuWorld.error === tools.unknownUserError) {
+      if (playerOsuWorld.error.code === unknownUserError) {
         return;
       }
-      const textError = tools.fetchErrorToText(playerOsuWorld);
+      const textError = fetchErrorToText(playerOsuWorld);
       console.log(textError);
       removeRegionalFlag(item);
       return;
@@ -256,8 +230,12 @@
     if(!playerData){
       return;
     }
-    countryCode = playerData["country_id"];
-    regionCode = playerData["region_id"];
+    if("error" in playerData){
+      return;
+    }
+
+    const countryCode = playerData["country_id"];
+    const regionCode = playerData["region_id"];
     return updateRegionalFlag(item, countryCode, regionCode, addMargin);
   };
 
@@ -271,14 +249,14 @@
     );
 
     if (addedNodesCount > 2) {
-      updateFlagsProfileCardOverlay(mutations[0].target);
+      updateFlagsProfileCardOverlay(mutations[0].target as HTMLElement);
     }
   });
 
   const bodyObserver = new MutationObserver((mutations) => {
     for (const mutation of mutations) {
-      for (const addedNode of mutation.addedNodes) {
-        const card = addedNode.querySelector(".user-card");
+      for (const addedNode  of mutation.addedNodes) {
+        const card = (addedNode as HTMLElement).querySelector(".user-card");
         if (card) {
           profileCardOverlayFinishObserver.observe(card, {
             attributes: false,
@@ -287,9 +265,9 @@
           });
           return;
         }
-        const search = addedNode.querySelector(".quick-search");
+        const search = (addedNode as HTMLElement).querySelector(".quick-search");
         if (search) {
-          firstSearch(search, false);
+          firstSearch(search as HTMLElement, false);
           updateFlagSearchObserver.observe(search, {
             attributes: false,
             childList: true,
@@ -300,9 +278,9 @@
     }
   });
 
-  const updateFlagsProfileCardOverlay = async (card) => {
-    const nameElement = card.querySelector(".user-card__username");
-    const userId = idFromProfileUrl(nameElement.getAttribute("href"));
+  const updateFlagsProfileCardOverlay = async (card: HTMLElement) => {
+    const nameElement = card.querySelector(".user-card__username")!;
+    const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
     addFlag(card, true);
     const regionAdded = await updateFlagUser(card, userId);
     if (!regionAdded) {
@@ -315,23 +293,28 @@
       ".user-card .user-card__details"
     );
     for (const overlay of overlays) {
-      await updateFlagsProfileCardOverlay(overlay);
+      await updateFlagsProfileCardOverlay(overlay as HTMLElement);
     }
   };
 
-  const refreshSearch = async (mutations) => {
+  const refreshSearch = async (mutations: MutationRecord[]) => {
     for (const mutation of mutations) {
       for (const addedNode of mutation.addedNodes) {
-        if (addedNode.getAttribute("data-section") === "user") {
-          addFlag(addedNode, true);
+        if(addedNode instanceof HTMLElement){
+          if (addedNode.getAttribute("data-section") === "user") {
+            addFlag(addedNode, true);
+          }
         }
+
       }
     }
 
     for (const mutation of mutations) {
       for (const addedNode of mutation.addedNodes) {
+        if(addedNode instanceof HTMLElement){
         if (addedNode.getAttribute("data-section") === "user") {
           await updateSearchCard(addedNode);
+        }
         }
       }
     }
@@ -348,7 +331,7 @@
     }
   );
 
-  const firstSearch = async (addedNode, mobile) => {
+  const firstSearch = async (addedNode: HTMLElement, mobile: boolean) => {
     if (!addedNode) return;
 
     const userCards = addedNode.querySelectorAll("[data-section=user]");
@@ -357,46 +340,45 @@
     (mobile
       ? updateFlagMobileSearchRefreshObserver
       : updateFlagSearchRefreshObserver
-    ).observe(userCards[0].parentElement, {
+    ).observe(userCards[0].parentElement!, {
       attributes: false,
       childList: true,
       subtree: false,
     });
 
     for (const userCard of userCards) {
-      await addFlag(userCard, true);
+      addFlag(userCard as HTMLElement, true);
     }
 
     for (const userCard of userCards) {
-      await updateSearchCard(userCard);
+      await updateSearchCard(userCard as HTMLElement);
     }
   };
 
   const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
-    return firstSearch(mutations[0].addedNodes[0], false);
+    return firstSearch(mutations[0].addedNodes[0] as HTMLElement, false);
   });
 
   const updateFlagMobileSearchObserver = new MutationObserver(
     async (mutations) => {
-      return firstSearch(mutations[0].addedNodes[0], true);
+      return firstSearch(mutations[0].addedNodes[0] as HTMLElement, true);
     }
   );
 
-  const updateSearchCard = async (card) => {
+  const updateSearchCard = async (card:HTMLElement) => {
     const userId = idFromProfileUrl(
       card
-        .querySelector(".user-search-card__col--username")
-        .getAttribute("href")
+        .querySelector(".user-search-card__col--username")!.getAttribute("href")!
     );
     await updateFlagUser(card, userId);
   };
 
   const nextFunctionId = () => {
-    functionId = runningId + 1;
+    const functionId = runningId + 1;
     runningId++;
     bodyObserver.disconnect();
 
-    bodyObserver.observe(document.querySelector("body"), {
+    bodyObserver.observe(document.querySelector("body")!, {
       attributes: false,
       childList: true,
       subtree: false,
@@ -416,29 +398,13 @@
     return functionId;
   };
 
-  const disconnectObservers = () => {
-    rankingMutationObserver.disconnect();
-    profileMutationObserver.disconnect();
-    beatmapsetMutationObserver.disconnect();
-    bodyObserver.disconnect();
-  };
 
-  let rankingMutationObserver = new MutationObserver((_) => {
-    updateFlagsRankings();
-  });
+
+
 
   const rankingIdAttr = "data-user-id";
 
-  const observeRankingPage = () => {
-    linkItem = document.querySelector("title");
-    rankingMutationObserver.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-  };
-
-  const addLinkToFlag = (item) => {
+  const addLinkToFlag = (item: HTMLElement) => {
     const flags = item.querySelectorAll(`.${flagClass}`);
 
     if (!flags || flags.length != 1) {
@@ -446,7 +412,7 @@
     }
 
     const anchorParent = document.createElement("div");
-    const parent = flags[0].parentElement;
+    const parent = flags[0].parentElement!;
     anchorParent.appendChild(flags[0]);
     parent.insertBefore(anchorParent, parent.firstChild);
   };
@@ -466,57 +432,62 @@
       (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
     ) {
       for (const item of listItems) {
-        addLinkToFlag(item);
+        addLinkToFlag(item as HTMLElement);
       }
     }
     const functionId = nextFunctionId();
 
-    observeRankingPage();
 
-    const queryString = location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const regionUrlParam = urlParams.get("region");
-    const countryUrlParam = urlParams.get("country");
-
-    addRegionsDropdown(countryUrlParam, regionUrlParam);
-
-    if (regionUrlParam) {
-      const regionData =
-        loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
-      const rankingType = location.pathname.split("/")[3];
-      const filter = urlParams.get("filter");
-
-      if (
-        regionData &&
-        rankingType === "performance" &&
-        (!filter || filter === "all")
-      ) {
-        const page = urlParams.get("page");
-        const mode = location.pathname.split("/")[2];
-        return regionalRanking(
-          functionId,
-          mode,
-          countryUrlParam,
-          regionUrlParam,
-          page
-        );
-      }
-    }
+    const isRegionRanking = await regionsInRanking(functionId);
+    if(isRegionRanking) return;
 
     for (const item of listItems) {
-      addFlag(item, true);
+      addFlag(item as HTMLElement, true);
     }
 
     for (const item of listItems) {
       if (functionId != runningId) {
         return;
       }
-      let idItem = item.querySelector(`[${rankingIdAttr}]`);
-      userId = idItem.getAttribute(rankingIdAttr);
+      let idItem = item.querySelector(`[${rankingIdAttr}]`)!;
+      const userId = idItem.getAttribute(rankingIdAttr)!;
 
-      await updateFlagUser(item, userId);
+      await updateFlagUser(item as HTMLElement, userId);
     }
   };
+
+  const regionsInRanking = async (functionId: number) : Promise<boolean> => {
+    const queryString = location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const regionUrlParam = urlParams.get("region");
+    const countryUrlParam = urlParams.get("country");
+
+
+    const rankingType = location.pathname.split("/")[3];
+    const filter = urlParams.get("filter");
+    
+    if (rankingType === "performance" &&
+        (!filter || filter === "all") 
+        && countryUrlParam) {
+      addRegionsDropdown(countryUrlParam, regionUrlParam);
+      if(!regionUrlParam) return false;
+      const regionData =
+        loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
+      if (regionData) {
+        const page = urlParams.get("page");
+        const mode = location.pathname.split("/")[2];
+        await regionalRanking(
+          functionId,
+          mode,
+          countryUrlParam,
+          regionUrlParam,
+          page != null ? parseInt(page) : 1
+        );
+        return true;
+      }
+    }
+    return false;
+  }
 
   const updateRegionsDropdown = async () => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
@@ -528,10 +499,11 @@
     const countryUrlParam = urlParams.get("country");
 
     addedDropdown.remove();
+    if(!countryUrlParam || !regionUrlParam) return;
     addRegionsDropdown(countryUrlParam, regionUrlParam);
   };
 
-  const addRegionsDropdown = async (countryCode, regionCode) => {
+  const addRegionsDropdown = async (countryCode: string, regionCode: string | null) => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
     let regionNames = await getRegionNames(countryCode);
     const regionNamesKeys = Object.entries(regionNames).sort(
@@ -556,16 +528,16 @@
     const originalDropdown = document.querySelector(".ranking-filter--full");
     // May not be loaded yet
     if (!originalDropdown) return;
-    const cloneDropdown = originalDropdown.cloneNode(true);
+    const cloneDropdown = originalDropdown.cloneNode(true) as HTMLElement;
 
     cloneDropdown.setAttribute("id", "cavitedev_region_dropdown");
-    cloneDropdown.querySelector(".ranking-filter__title").textContent =
+    cloneDropdown.querySelector(".ranking-filter__title")!.textContent =
       "Region";
 
     const predefinedAnchor = cloneDropdown.querySelector(
       ".select-options__select .select-options__option"
-    );
-    const selectDiv = cloneDropdown.querySelector(".select-options");
+    )!;
+    const selectDiv = cloneDropdown.querySelector(".select-options")!;
 
     predefinedAnchor.addEventListener("click", function (event) {
       event.preventDefault();
@@ -575,21 +547,21 @@
     // Options
     const optionsParent = cloneDropdown.querySelector(
       ".select-options__selector"
-    );
-    const templateOption = optionsParent.firstChild.cloneNode(true);
+    )!;
+    const templateOption = optionsParent!.firstChild!.cloneNode(true) as HTMLElement;
 
-    while (optionsParent.firstChild) {
-      optionsParent.removeChild(optionsParent.firstChild);
+    while (optionsParent!.firstChild) {
+      optionsParent!.removeChild(optionsParent!.firstChild);
     }
 
     // All
-    const baseRanking = tools.addOrReplaceQueryParam(
-      templateOption.getAttribute("href"),
+    const baseRanking = addOrReplaceQueryParam(
+      templateOption.getAttribute("href")!,
       "country",
       countryCode
     );
 
-    const allLink = tools.removeQueryParam(baseRanking, "region");
+    const allLink = removeQueryParam(baseRanking, "region");
     templateOption.setAttribute("href", allLink);
 
     const allText = templateOption.textContent;
@@ -599,39 +571,39 @@
 
     for (const key in regionNames) {
       const value = regionNames[key];
-      const updatedRanking = tools.addOrReplaceQueryParam(
+      const updatedRanking = addOrReplaceQueryParam(
         baseRanking,
         "region",
         key
       );
-      const clonedOption = templateOption.cloneNode(true);
+      const clonedOption = templateOption.cloneNode(true) as HTMLElement;
       clonedOption.setAttribute("href", updatedRanking);
       clonedOption.textContent = value;
       optionsParent.appendChild(clonedOption);
     }
 
+    const selectedRegionName = regionCode != null ? regionNames[regionCode] ?? allText : allText;
     cloneDropdown.querySelector(
       ".select-options__select .u-ellipsis-overflow"
-    ).textContent = regionNames[regionCode] ?? allText;
+    )!.textContent = selectedRegionName;
 
     if (document.querySelector("#cavitedev_region_dropdown")) return;
 
-    originalDropdown.parentElement.appendChild(cloneDropdown);
+    originalDropdown.parentElement!.appendChild(cloneDropdown);
   };
 
   const regionalRanking = async (
-    functionId,
-    osuMode,
-    countryCode,
-    regionCode,
+    functionId: number,
+    osuMode: string,
+    countryCode: string,
+    regionCode: string,
     osuPage = 1
   ) => {
-    initRegionalRanking(countryCode, regionCode);
+    initRegionalRanking(regionCode);
 
     if (!osuPage) osuPage = 1;
-    osuPage = parseInt(osuPage);
 
-    const pagesToCheck = tools.convertToGroupsOf5(osuPage);
+    const pagesToCheck = convertToGroupsOf5(osuPage);
 
     let totalPages;
     let replaceIndex = 0;
@@ -639,14 +611,14 @@
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
     for (const row of listItems) {
-      addFlag(row);
+      addFlag(row as HTMLElement);
     }
 
     for (const page of pagesToCheck) {
       if (functionId != runningId) return;
       if (page > totalPages) break;
 
-      const results = await tools.osuWorldCountryRegionRanking(
+      const results = await osuWorldCountryRegionRanking(
         countryCode,
         regionCode,
         osuMode,
@@ -654,9 +626,9 @@
       );
 
       for (const player of results["top"]) {
-        const row = listItems[replaceIndex];
+        const row = listItems[replaceIndex] as HTMLElement;
         updateRankingRow(row, player);
-        await updateRegionalFlag(row, countryCode, regionCode);
+        await updateRegionalFlag(row as HTMLElement, countryCode, regionCode);
         replaceIndex++;
       }
 
@@ -681,11 +653,11 @@
 
   const removeColsRegionalRanking = [7, 6, 5, 3];
 
-  const initRegionalRanking = (countryCode, regionCode) => {
+  const initRegionalRanking = ( regionCode: string) => {
     const modes = document.querySelectorAll(".game-mode [href]");
     for (const mode of modes) {
-      const href = mode.getAttribute("href");
-      const updatedHref = tools.addOrReplaceQueryParam(
+      const href = mode.getAttribute("href")!;
+      const updatedHref = addOrReplaceQueryParam(
         href,
         "region",
         regionCode
@@ -697,7 +669,7 @@
       mode.setAttribute("href", updatedHref);
     }
 
-    const headerRow = document.querySelector(".ranking-page-table>thead>tr");
+    const headerRow = document.querySelector(".ranking-page-table>thead>tr")!;
     const headers = headerRow.children;
 
     for (const index of removeColsRegionalRanking) {
@@ -707,7 +679,7 @@
     headers[2].textContent = "Rank";
   };
 
-  const updateRankingRow = async (row, playerData) => {
+  const updateRankingRow = async (row:HTMLElement, playerData: IosuWorldRegionalPlayerData) => {
     const cells = row?.children;
     //Not loaded yet
     if (!cells) return;
@@ -715,13 +687,13 @@
 
     const { id, username, rank, mode, pp } = playerData;
 
-    const nameElement = flagAndNameCell.querySelector(`[${rankingIdAttr}]`);
-    nameElement.setAttribute(rankingIdAttr, id);
-    nameElement.setAttribute("href", tools.buildProfileUrl(id, mode));
+    const nameElement = flagAndNameCell.querySelector(`[${rankingIdAttr}]`)!;
+    nameElement.setAttribute(rankingIdAttr, id.toString());
+    nameElement.setAttribute("href", buildProfileUrl(id.toString(), mode));
     nameElement.textContent = username;
 
     const performanceCell = cells[4];
-    performanceCell.textContent = Math.round(pp);
+    performanceCell.textContent = Math.round(pp).toLocaleString();
 
     for (const index of removeColsRegionalRanking) {
       cells[index].remove();
@@ -732,19 +704,17 @@
   };
 
   const updateRankingPagination = (
-    currentPage,
-    totalPages,
-    osuMode,
-    countryCode,
-    regionCode
+    currentPage: number,
+    totalPages: number,
+    osuMode: string,
+    countryCode: string,
+    regionCode: string
   ) => {
-    const paginations = document.querySelectorAll(".pagination-v2");
+    const paginations = document.querySelectorAll(".pagination-v2") as NodeListOf<HTMLElement> ;
 
     if (totalPages === 1) {
-      while (paginations.firstChild) {
-        paginations.removeChild(paginations.firstChild);
-      }
       paginations.forEach((pagination) => pagination.remove());
+      return;
     }
 
     const firstLink = paginations[0]
@@ -773,27 +743,26 @@
       return template.firstChild;
     });
 
-    const activePageTemplate = htmlTemplates[0];
-    const inactivePageTemplate = htmlTemplates[1];
-    const dotsTemplate = htmlTemplates[2];
-
-    const enabledArrow = htmlTemplates[3];
-    const disabledArrow = htmlTemplates[4];
+    const activePageTemplate = htmlTemplates[0]! as HTMLElement;
+    const inactivePageTemplate = htmlTemplates[1]! as HTMLElement;
+    const dotsTemplate = htmlTemplates[2]! as HTMLElement;
+    const enabledArrow = htmlTemplates[3]! as HTMLElement;
+    const disabledArrow = htmlTemplates[4]! as HTMLElement;
 
     for (const templateWithLink of [
       inactivePageTemplate,
       enabledArrow.parentElement,
     ]) {
-      const linkInactive = templateWithLink.querySelector("[href]");
-      const href = linkInactive.getAttribute("href");
+      const linkInactive = (templateWithLink as HTMLElement).querySelector("[href]")!;
+      const href = linkInactive.getAttribute("href")!;
 
-      let updatedHref = tools.addOrReplaceQueryParam(
+      let updatedHref = addOrReplaceQueryParam(
         href,
         "region",
         regionCode
       );
 
-      updatedHref = tools.addOrReplaceQueryParam(
+      updatedHref = addOrReplaceQueryParam(
         updatedHref,
         "country",
         countryCode
@@ -806,7 +775,7 @@
     for (const pagination of paginations) {
       // Fix pages
 
-      const pages = pagination.querySelector(".pagination-v2__col--pages");
+      const pages = pagination.querySelector(".pagination-v2__col--pages")!;
 
       const oldPages = pages.querySelectorAll(".pagination-v2__item");
       oldPages.forEach((page) => page.remove());
@@ -834,28 +803,28 @@
       );
 
       const leftArrow =
-        currentPage > 1
+        (currentPage > 1
           ? enabledArrow.cloneNode(true)
-          : disabledArrow.cloneNode(true);
-      leftArrow.querySelector(".hidden-xs").textContent = "prev";
+          : disabledArrow.cloneNode(true)) as HTMLElement;
+      leftArrow.querySelector(".hidden-xs")!.textContent = "prev";
       oldArrows[0].replaceWith(leftArrow);
 
       const rightArrow =
-        currentPage < totalPages
+        (currentPage < totalPages
           ? enabledArrow.cloneNode(true)
-          : disabledArrow.cloneNode(true);
-      rightArrow.querySelector(".hidden-xs").textContent = "next";
+          : disabledArrow.cloneNode(true)) as HTMLElement;
+      rightArrow.querySelector(".hidden-xs")!.textContent = "next";
       oldArrows[1].replaceWith(rightArrow);
     }
   };
 
   const pageToAdd = (
-    addingPage,
-    currentPage,
-    totalPages,
-    activePageTemplate,
-    inactivePageTemplate,
-    dotsTemplate
+    addingPage: number,
+    currentPage: number,
+    totalPages: number,
+    activePageTemplate: HTMLElement,
+    inactivePageTemplate: HTMLElement,
+    dotsTemplate: HTMLElement
   ) => {
     const useLeftDots = totalPages > 5 && currentPage >= 5;
     const useRightDots = totalPages > 5 && totalPages - currentPage >= 4;
@@ -870,19 +839,19 @@
 
     if (addingPage === currentPage) {
       const node = activePageTemplate.cloneNode(true);
-      updatePagePagination(node, addingPage);
+      updatePagePagination(node as HTMLElement, addingPage);
       return node;
     }
 
     if (useLeftDots && addingPage === 1) {
       const node = inactivePageTemplate.cloneNode(true);
-      updatePagePagination(node, 1);
+      updatePagePagination(node as HTMLElement, 1);
       return node;
     }
 
     if (useLeftDots && addingPage === paginationElementsCount) {
       const node = inactivePageTemplate.cloneNode(true);
-      updatePagePagination(node, totalPages);
+      updatePagePagination(node as HTMLElement, totalPages);
       return node;
     }
 
@@ -895,18 +864,18 @@
     }
 
     const node = inactivePageTemplate.cloneNode(true);
-    updatePagePagination(node, addingPage);
+    updatePagePagination(node as HTMLElement, addingPage);
     return node;
   };
 
-  const updatePagePagination = (paginationItem, page) => {
-    const link = paginationItem.querySelector(".pagination-v2__link");
-    link.textContent = page;
+  const updatePagePagination = (paginationItem:HTMLElement, page: number) => {
+    const link = paginationItem.querySelector(".pagination-v2__link")!;
+    link.textContent = page.toString();
     const href = link.getAttribute("href");
     if (href) {
       link.setAttribute(
         "href",
-        tools.addOrReplaceQueryParam(href, "page", page)
+        addOrReplaceQueryParam(href, "page", page.toString())
       );
     }
   };
@@ -925,13 +894,7 @@
         childList: true,
         subtree: false,
       });
-    } else {
-      beatmapsetMutationObserver.observe(document.querySelector("title"), {
-        attributes: false,
-        childList: true,
-        subtree: false,
-      });
-    }
+    } 
 
     const topScoreElements = document.querySelectorAll(
       ".beatmap-score-top__user-box"
@@ -941,16 +904,16 @@
     }
 
     for (const topScoreElement of topScoreElements) {
-      addFlag(topScoreElement, true);
+      addFlag(topScoreElement as HTMLElement, true);
     }
 
     for (const topScoreElement of topScoreElements) {
       const topScoreUserElement = topScoreElement.querySelector(
         ".beatmap-score-top__username"
       );
-      const topScoreUserId = topScoreUserElement.getAttribute("data-user-id");
+      const topScoreUserId = (topScoreUserElement as HTMLElement).getAttribute("data-user-id");
       if (topScoreUserId) {
-        await updateFlagUser(topScoreElement, topScoreUserId, true);
+        await updateFlagUser(topScoreElement as HTMLElement, topScoreUserId, true);
       }
     }
 
@@ -963,7 +926,7 @@
 
     const items = rankingTable.children;
     for (let item of items) {
-      addFlag(item, true);
+      addFlag(item as HTMLElement, true);
     }
 
     for (let item of items) {
@@ -973,14 +936,11 @@
       const playerNameElement = item.querySelector(
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
-      const playerId = playerNameElement?.getAttribute("data-user-id");
-      await updateFlagUser(item, playerId, true);
+      const playerId = playerNameElement?.getAttribute("data-user-id")!;
+      await updateFlagUser(item  as HTMLElement, playerId, true);
     }
   };
 
-  let profileMutationObserver = new MutationObserver((_) => {
-    updateFlagsProfile();
-  });
   let profileMutationObserverInit = new MutationObserver((_) => {
     updateFlagsProfile();
   });
@@ -988,23 +948,23 @@
   const updateFlagsProfile = async () => {
     const url = location.href;
     const playerId = idFromProfileUrl(url);
-    if (!tools.isNumber(playerId)) {
+    if (!isNumber(playerId)) {
       return;
     }
 
     nextFunctionId();
 
-    flagElement = document.querySelector(".profile-info");
-    addFlag(flagElement);
-    const regionName = await updateFlagUser(flagElement, playerId);
+    const flagElement = document.querySelector(".profile-info")!;
+    addFlag(flagElement as HTMLElement);
+    const regionName = await updateFlagUser(flagElement as HTMLElement, playerId);
     if (regionName) {
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
-      );
+      )!;
       countryNameElement.textContent =
-        countryNameElement.textContent.split(" / ")[0] + ` / ${regionName}`;
+        countryNameElement.textContent?.split(" / ")[0] + ` / ${regionName}` ?? regionName;
     } else {
-      removeRegionalFlag(flagElement);
+      removeRegionalFlag(flagElement as HTMLElement);
     }
   };
 
@@ -1012,22 +972,22 @@
     async (mutations) => {
       for (const mutation of mutations) {
         for (const addedNode of mutation.addedNodes) {
-          const score = addedNode.querySelector(
+          const score = (addedNode as HTMLElement).querySelector(
             ".mp-history-player-score__main"
           );
           if (score) {
-            addFlag(score, true);
+            addFlag(score as HTMLElement, true);
           }
         }
       }
 
       for (const mutation of mutations) {
         for (const addedNode of mutation.addedNodes) {
-          const score = addedNode.querySelector(
+          const score = (addedNode as HTMLElement).querySelector(
             ".mp-history-player-score__main"
           );
           if (score) {
-            await updateFlagInMatchScore(score);
+            await updateFlagInMatchScore(score as HTMLElement);
           }
         }
       }
@@ -1038,7 +998,7 @@
     const addedScores = mutations[mutations.length - 1].addedNodes[0];
     if (!addedScores) return;
 
-    const matchPlay = addedScores.querySelector(
+    const matchPlay = (addedScores as HTMLElement).querySelector(
       ".mp-history-game__player-scores"
     );
     if (matchPlay) {
@@ -1061,7 +1021,7 @@
         subtree: false,
       });
     }
-
+Document
     watchPlayingGame();
     updateFlagsInMatchPlay(document, functionId);
   };
@@ -1081,80 +1041,89 @@
     }
   };
 
-  const updateFlagsInMatchPlay = async (scores, functionId) => {
-    listScores = scores.querySelectorAll(".mp-history-player-score__main");
+  const updateFlagsInMatchPlay = async (scores: ParentNode, functionId: number) => {
+    const listScores = scores.querySelectorAll(".mp-history-player-score__main");
 
-    for (item of listScores) {
-      addFlag(item, true);
+    for (const item of listScores) {
+      addFlag(item as HTMLElement, true);
     }
 
-    for (item of listScores) {
+    for (const item of listScores) {
       if (functionId != runningId) {
         return;
       }
-      await updateFlagInMatchScore(item);
+      await updateFlagInMatchScore(item as HTMLElement);
     }
   };
 
-  const updateFlagInMatchScore = async (item) => {
-    playerNameElement = item.querySelector(
+  const updateFlagInMatchScore = async (item: HTMLElement) => {
+    const playerNameElement = item.querySelector(
       ".mp-history-player-score__username"
-    );
-    playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
+    ) as HTMLElement;
+    const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
     await updateFlagUser(item, playerId);
   };
 
-  const updateFlagsFriendsObserver = new MutationObserver((_) => {
+  const updateFlagsFriendsObserver = new MutationObserver((mutations) => {
     updateFlagsFriends();
   });
 
-  const observeFriendsPage = () => {
-    updateFlagsFriendsObserver.observe(document.querySelector("title"), {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-  };
+
 
   const updateFlagsFriends = async () => {
     const functionId = nextFunctionId();
 
-    friendsList = document
-      .querySelector(".user-list")
-      .querySelectorAll(".user-card__details");
+    updateFlagsFriendsObserver.observe(document.querySelector(".t-changelog-stream--all")!, {
+      attributes: true,
+      attributeFilter: ['href']
+    });
+
+    const friendsList = document
+      .querySelector(".user-list")!.querySelectorAll(".user-card__details");
 
     for (let item of friendsList) {
-      addFlag(item);
+      addFlag(item as HTMLElement);
     }
     for (let item of friendsList) {
       if (functionId != runningId) {
         return;
       }
-      playerNameElement = item.querySelector(".user-card__username");
-      playerId = idFromProfileUrl(playerNameElement.getAttribute("href"));
-      await updateFlagUser(item, playerId);
+      const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
+      const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
+      await updateFlagUser(item as HTMLElement, playerId);
     }
   };
 
   const updateFlagsTopics = async () => {
     const functionId = nextFunctionId();
-    posts = document.querySelectorAll(".forum-post-info");
+   const  posts = document.querySelectorAll(".forum-post-info");
 
     for (let item of posts) {
-      addFlag(item, false, false, true);
+      addFlag(item as HTMLElement, false, false, true);
     }
     for (let item of posts) {
       if (functionId != runningId) {
         return;
       }
-      playerNameElement = item.querySelector(".forum-post-info__row--username");
-      playerId = playerNameElement.getAttribute("data-user-id");
-      updateFlagUser(item, playerId, false);
+      const playerNameElement = item.querySelector(".forum-post-info__row--username") as HTMLElement;
+      const playerId = playerNameElement.getAttribute("data-user-id")!;
+      updateFlagUser(item as HTMLElement, playerId, false);
     }
   };
 
+  const reloadMutationObserver = new MutationObserver((_) => {
+    init();
+  });
+
   const init = async () => {
+    reloadMutationObserver.observe(document.querySelector("title")!, {
+      childList: true,
+    });
+    //Invalidate previous executions
+    nextFunctionId();
+
     const url = location.href;
+    
     if (
       url.includes("osu.ppy.sh/rankings") ||
       url.includes("osu.ppy.sh/multiplayer/rooms") ||
@@ -1162,9 +1131,9 @@
     ) {
       updateFlagsRankings();
     } else if (url.includes("osu.ppy.sh/users")) {
-      linkItem = document.querySelector(
+      const linkItem = document.querySelector(
         "body > div.osu-layout__section.osu-layout__section--full > div"
-      );
+      ) as HTMLElement;
       profileMutationObserverInit.observe(linkItem, {
         attributes: false,
         childList: true,
@@ -1191,6 +1160,7 @@
       refreshOverlays();
     }
   };
+  
 
   await init();
 })();
