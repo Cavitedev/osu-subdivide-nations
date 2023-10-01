@@ -1125,6 +1125,8 @@ Document
     reloadMutationObserver.observe(document.querySelector("title")!, {
       childList: true,
     });
+    //Invalidate previous executions
+    nextFunctionId();
 
     const url = location.href;
     
