@@ -397,20 +397,11 @@ import * as tools from "../utils/tools";
     return functionId;
   };
 
-  const disconnectObservers = () => {
-    rankingMutationObserver.disconnect();
-    profileMutationObserver.disconnect();
-    beatmapsetMutationObserver.disconnect();
-    bodyObserver.disconnect();
-  };
 
-  let rankingMutationObserver = new MutationObserver((_) => {
-    updateFlagsRankings();
-  });
+
+
 
   const rankingIdAttr = "data-user-id";
-
-
 
   const addLinkToFlag = (item: HTMLElement) => {
     const flags = item.querySelectorAll(`.${flagClass}`);
@@ -446,35 +437,8 @@ import * as tools from "../utils/tools";
     const functionId = nextFunctionId();
 
 
-    const queryString = location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const regionUrlParam = urlParams.get("region");
-    const countryUrlParam = urlParams.get("country");
+    regionsInRanking(functionId);
 
-    
-    if (regionUrlParam && countryUrlParam) {
-      addRegionsDropdown(countryUrlParam, regionUrlParam);
-      const regionData =
-        loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
-      const rankingType = location.pathname.split("/")[3];
-      const filter = urlParams.get("filter");
-
-      if (
-        regionData &&
-        rankingType === "performance" &&
-        (!filter || filter === "all")
-      ) {
-        const page = urlParams.get("page");
-        const mode = location.pathname.split("/")[2];
-        return regionalRanking(
-          functionId,
-          mode,
-          countryUrlParam,
-          regionUrlParam,
-          page != null ? parseInt(page) : 1
-        );
-      }
-    }
 
     for (const item of listItems) {
       addFlag(item as HTMLElement, true);
@@ -491,6 +455,41 @@ import * as tools from "../utils/tools";
     }
   };
 
+  const regionsInRanking = (functionId: number) => {
+    const queryString = location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const regionUrlParam = urlParams.get("region");
+    const countryUrlParam = urlParams.get("country");
+
+
+    const rankingType = location.pathname.split("/")[3];
+    const filter = urlParams.get("filter");
+    console.log(rankingType);
+    
+    if (rankingType === "performance" &&
+        (!filter || filter === "all") 
+        && countryUrlParam) {
+      addRegionsDropdown(countryUrlParam, regionUrlParam);
+      if(!regionUrlParam) return;
+      const regionData =
+        loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
+      if (
+        regionData &&
+        rankingType === "performance" 
+      ) {
+        const page = urlParams.get("page");
+        const mode = location.pathname.split("/")[2];
+        return regionalRanking(
+          functionId,
+          mode,
+          countryUrlParam,
+          regionUrlParam,
+          page != null ? parseInt(page) : 1
+        );
+      }
+    }
+  }
+
   const updateRegionsDropdown = async () => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
     if (!addedDropdown) return;
@@ -505,7 +504,7 @@ import * as tools from "../utils/tools";
     addRegionsDropdown(countryUrlParam, regionUrlParam);
   };
 
-  const addRegionsDropdown = async (countryCode: string, regionCode: string) => {
+  const addRegionsDropdown = async (countryCode: string, regionCode: string | null) => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
     let regionNames = await getRegionNames(countryCode);
     const regionNamesKeys = Object.entries(regionNames).sort(
@@ -584,9 +583,10 @@ import * as tools from "../utils/tools";
       optionsParent.appendChild(clonedOption);
     }
 
+    const selectedRegionName = regionCode != null ? regionNames[regionCode] ?? allText : allText;
     cloneDropdown.querySelector(
       ".select-options__select .u-ellipsis-overflow"
-    )!.textContent = regionNames[regionCode] ?? allText;
+    )!.textContent = selectedRegionName;
 
     if (document.querySelector("#cavitedev_region_dropdown")) return;
 
@@ -944,9 +944,6 @@ import * as tools from "../utils/tools";
     }
   };
 
-  let profileMutationObserver = new MutationObserver((_) => {
-    updateFlagsProfile();
-  });
   let profileMutationObserverInit = new MutationObserver((_) => {
     updateFlagsProfile();
   });

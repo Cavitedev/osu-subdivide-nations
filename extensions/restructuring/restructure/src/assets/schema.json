@@ -1,8 +1,0 @@
-{
-    "type": "object",
-    "properties": {
-        "lang": {
-            "type": "string"
-        }
-    }
-}
