@@ -917,9 +917,10 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       return;
     }
 
-    nextFunctionId();
-
-    const flagElement = document.querySelector(".profile-info")!;
+    const flagElement = document.querySelector(".profile-info");
+    if (!flagElement) {
+      return;
+    }
     const regionName = await addFlagUser(flagElement as HTMLElement, playerId);
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
