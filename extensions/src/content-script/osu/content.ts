@@ -27,8 +27,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     return url.split("/")[4];
   };
 
- 
-
   // Quotes needed for special characters
   const flagStyle = 'background-image: url("$flag"); background-size: contain';
   const marginLeftStyle = "margin-left: 4px";
@@ -44,13 +42,23 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     flagElements[1].setAttribute("style", "height: 0px; width: 0px;");
   };
 
-  const addFlag = (
+  const addRegionalFlag = async (
     item: HTMLElement,
+    countryCode: string,
+    regionCode: string,
     addDiv = false,
     addMargin = true,
     superParentClone = false
   ) => {
     if (!item) return;
+
+    let countryRegionsData = (await countryRegionsLocalData)[countryCode];
+
+    if (!countryRegionsData) return;
+
+    const regionData = countryRegionsData["regions"][regionCode];
+    if (!regionData) return;
+
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length != 1) return;
 
@@ -60,10 +68,25 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     let flagParentClone = flagParent.cloneNode(true) as HTMLElement;
     let flagElementClone = flagParentClone.querySelector(`.${flagClass}`)!;
 
-    flagElementClone.setAttribute("style", addMargin ? marginLeftStyle : "");
+    let flag = regionData["flag"];
+    if (!flag || flag === "") {
+      flag = noFlag;
+    }
 
-    flagElementClone.removeAttribute("title");
-    flagElementClone.removeAttribute("href");
+    flagElementClone.setAttribute("style", (addMargin ? flagStyleWithMargin : flagStyle).replace(
+      "$flag",
+      flag
+    ));
+
+    const regionName = await getRegionName(
+      countryCode,
+      regionCode,
+      regionData
+    );
+    if (regionData["name"]) {
+      flagElementClone.setAttribute("title", regionName);
+    }
+
 
     let href = flagParentClone.getAttribute("href");
     if (!href) {
@@ -114,69 +137,70 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
 
       insertParent.insertBefore(flagParentClone, sibling);
     }
+    return regionName;
   };
 
-  const updateRegionalFlag = async (
-    item: HTMLElement,
-    countryCode: string,
-    regionCode: string,
-    addMargin = true
-  ) => {
-    if (!item) return;
-    let flagElements = item.querySelectorAll(`.${flagClass}`);
-    if (!flagElements || flagElements.length == 0) return;
+  // const updateRegionalFlag = async (
+  //   item: HTMLElement,
+  //   countryCode: string,
+  //   regionCode: string,
+  //   addMargin = true
+  // ) => {
+  //   if (!item) return;
+  //   let flagElements = item.querySelectorAll(`.${flagClass}`);
+  //   if (!flagElements || flagElements.length == 0) return;
 
-    let countryRegionsData = (await countryRegionsLocalData)[countryCode];
+  //   let countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
-    if (countryRegionsData) {
-      const regionData = countryRegionsData["regions"][regionCode];
-      if (!regionData) return;
+  //   if (countryRegionsData) {
+  //     const regionData = countryRegionsData["regions"][regionCode];
+  //     if (!regionData) return;
 
-      let flagElement = flagElements[1] as HTMLElement;
-      if (!flagElement) return;
+  //     let flagElement = flagElements[1] as HTMLElement;
+  //     if (!flagElement) return;
 
-      let originalFlagElement = flagElements[0];
+  //     let originalFlagElement = flagElements[0];
 
-      let flag = regionData["flag"];
-      if (!flag || flag === "") {
-        flag = noFlag;
-      }
-      flagElement.setAttribute("style", (addMargin ? flagStyleWithMargin : flagStyle).replace(
-        "$flag",
-        flag
-      ));
+  //     let flag = regionData["flag"];
+  //     if (!flag || flag === "") {
+  //       flag = noFlag;
+  //     }
+  //     flagElement.setAttribute("style", (addMargin ? flagStyleWithMargin : flagStyle).replace(
+  //       "$flag",
+  //       flag
+  //     ));
 
-      const regionName = await getRegionName(
-        countryCode,
-        regionCode,
-        regionData
-      );
-      if (regionData["name"]) {
-        flagElement.setAttribute("title", regionName);
-      }
+  //     const regionName = await getRegionName(
+  //       countryCode,
+  //       regionCode,
+  //       regionData
+  //     );
+  //     if (regionData["name"]) {
+  //       flagElement.setAttribute("title", regionName);
+  //     }
 
-      let flagParent = flagElement.parentElement!;
-      let originalParent = originalFlagElement.parentElement;
-      if (flagParent!.nodeName != "A") {
-        flagParent = flagParent!.parentElement!;
-        originalParent = originalParent!.parentElement;
-      }
+  //     let flagParent = flagElement.parentElement!;
+  //     let originalParent = originalFlagElement.parentElement;
+  //     if (flagParent!.nodeName != "A") {
+  //       flagParent = flagParent!.parentElement!;
+  //       originalParent = originalParent!.parentElement;
+  //     }
 
-      if (flagParent!.nodeName === "A") {
-        let href = originalParent!.getAttribute("href")!;
-        const updatedHref = addOrReplaceQueryParam(
-          href,
-          "region",
-          regionCode
-        );
+  //     if (flagParent!.nodeName === "A") {
+  //       let href = originalParent!.getAttribute("href")!;
+  //       const updatedHref = addOrReplaceQueryParam(
+  //         href,
+  //         "region",
+  //         regionCode
+  //       );
 
-        flagParent.setAttribute("href", updatedHref);
-      }
-      return regionName;
-    }
-  };
+  //       flagParent.setAttribute("href", updatedHref);
+  //     }
+  //     return regionName;
+  //   }
+  // };
 
-  const updateFlagUser = async (item: HTMLElement, userId: string, addMargin = true) => {
+  const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
     if (!item) return;
     const playerOsuWorld = await osuWorldUser(userId);
     if (playerOsuWorld.error) {
@@ -198,7 +222,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
 
     const countryCode = playerData["country_id"];
     const regionCode = playerData["region_id"];
-    return updateRegionalFlag(item, countryCode, regionCode, addMargin);
+    return addRegionalFlag(item, countryCode, regionCode, addDiv, addMargin, addSuperParentClone);
   };
 
   const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
@@ -243,8 +267,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
   const updateFlagsProfileCardOverlay = async (card: HTMLElement) => {
     const nameElement = card.querySelector(".user-card__username")!;
     const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
-    addFlag(card, true);
-    const regionAdded = await updateFlagUser(card, userId);
+    const regionAdded = await addFlagUser(card, userId);
     if (!regionAdded) {
       removeRegionalFlag(card);
     }
@@ -260,16 +283,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
   };
 
   const refreshSearch = async (mutations: MutationRecord[]) => {
-    for (const mutation of mutations) {
-      for (const addedNode of mutation.addedNodes) {
-        if(addedNode instanceof HTMLElement){
-          if (addedNode.getAttribute("data-section") === "user") {
-            addFlag(addedNode, true);
-          }
-        }
 
-      }
-    }
 
     for (const mutation of mutations) {
       for (const addedNode of mutation.addedNodes) {
@@ -309,10 +323,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     });
 
     for (const userCard of userCards) {
-      addFlag(userCard as HTMLElement, true);
-    }
-
-    for (const userCard of userCards) {
       await updateSearchCard(userCard as HTMLElement);
     }
   };
@@ -332,7 +342,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       card
         .querySelector(".user-search-card__col--username")!.getAttribute("href")!
     );
-    await updateFlagUser(card, userId);
+    await addFlagUser(card, userId, true);
   };
 
   const nextFunctionId = () => {
@@ -403,9 +413,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     const isRegionRanking = await regionsInRanking(functionId);
     if(isRegionRanking) return;
 
-    for (const item of listItems) {
-      addFlag(item as HTMLElement, true);
-    }
 
     for (const item of listItems) {
       if (functionId != runningId) {
@@ -414,7 +421,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       let idItem = item.querySelector(`[${rankingIdAttr}]`)!;
       const userId = idItem.getAttribute(rankingIdAttr)!;
 
-      await updateFlagUser(item as HTMLElement, userId);
+      await addFlagUser(item as HTMLElement, userId, true, true );
     }
   };
 
@@ -572,10 +579,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
 
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
-    for (const row of listItems) {
-      addFlag(row as HTMLElement);
-    }
-
     for (const page of pagesToCheck) {
       if (functionId != runningId) return;
 
@@ -592,7 +595,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       for (const player of results["top"]) {
         const row = listItems[replaceIndex] as HTMLElement;
         updateRankingRow(row, player);
-        await updateRegionalFlag(row as HTMLElement, countryCode, regionCode);
+        await addRegionalFlag(row as HTMLElement, countryCode, regionCode);
         replaceIndex++;
       }
 
@@ -870,9 +873,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       return;
     }
 
-    for (const topScoreElement of topScoreElements) {
-      addFlag(topScoreElement as HTMLElement, true);
-    }
+
 
     for (const topScoreElement of topScoreElements) {
       const topScoreUserElement = topScoreElement.querySelector(
@@ -880,7 +881,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       );
       const topScoreUserId = (topScoreUserElement as HTMLElement).getAttribute("data-user-id");
       if (topScoreUserId) {
-        await updateFlagUser(topScoreElement as HTMLElement, topScoreUserId, true);
+        await addFlagUser(topScoreElement as HTMLElement, topScoreUserId, true, true);
       }
     }
 
@@ -892,9 +893,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     }
 
     const items = rankingTable.children;
-    for (let item of items) {
-      addFlag(item as HTMLElement, true);
-    }
 
     for (let item of items) {
       if (functionId != runningId) {
@@ -904,7 +902,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
       const playerId = playerNameElement?.getAttribute("data-user-id")!;
-      await updateFlagUser(item  as HTMLElement, playerId, true);
+      await addFlagUser(item  as HTMLElement, playerId, true, true);
     }
   };
 
@@ -922,32 +920,17 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     nextFunctionId();
 
     const flagElement = document.querySelector(".profile-info")!;
-    addFlag(flagElement as HTMLElement);
-    const regionName = await updateFlagUser(flagElement as HTMLElement, playerId);
-    if (regionName) {
+    const regionName = await addFlagUser(flagElement as HTMLElement, playerId);
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
       )!;
       countryNameElement.textContent =
         countryNameElement.textContent?.split(" / ")[0] + ` / ${regionName}` ?? regionName;
-    } else {
-      removeRegionalFlag(flagElement as HTMLElement);
-    }
+ 
   };
 
   const gameBeingPlayedMutationObserver = new MutationObserver(
     async (mutations) => {
-      for (const mutation of mutations) {
-        for (const addedNode of mutation.addedNodes) {
-          const score = (addedNode as HTMLElement).querySelector(
-            ".mp-history-player-score__main"
-          );
-          if (score) {
-            addFlag(score as HTMLElement, true);
-          }
-        }
-      }
-
       for (const mutation of mutations) {
         for (const addedNode of mutation.addedNodes) {
           const score = (addedNode as HTMLElement).querySelector(
@@ -1012,10 +995,6 @@ Document
     const listScores = scores.querySelectorAll(".mp-history-player-score__main");
 
     for (const item of listScores) {
-      addFlag(item as HTMLElement, true);
-    }
-
-    for (const item of listScores) {
       if (functionId != runningId) {
         return;
       }
@@ -1028,53 +1007,61 @@ Document
       ".mp-history-player-score__username"
     ) as HTMLElement;
     const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-    await updateFlagUser(item, playerId);
+    await addFlagUser(item, playerId, true);
   };
+
+
+  const setActualFriendsObserver = new MutationObserver((mutations) => {
+    console.log(mutations);
+    updateFlagsFriends();
+    setActualFriendsObserver.disconnect();
+  });
 
   const updateFlagsFriendsObserver = new MutationObserver((mutations) => {
     updateFlagsFriends();
   });
 
-
-
   const updateFlagsFriends = async () => {
     const functionId = nextFunctionId();
 
+
+    const allFriendsElement = document.querySelector(".t-changelog-stream--all");
+    if (allFriendsElement) {
     updateFlagsFriendsObserver.observe(document.querySelector(".t-changelog-stream--all")!, {
       attributes: true,
       attributeFilter: ['href']
     });
+  }else{
+    setActualFriendsObserver.observe(document.querySelector(".js-react--friends-index")!, {
+      childList: true,
+    });
+    return;
+  }
 
     const friendsList = document
       .querySelector(".user-list")!.querySelectorAll(".user-card__details");
 
-    for (let item of friendsList) {
-      addFlag(item as HTMLElement);
-    }
     for (let item of friendsList) {
       if (functionId != runningId) {
         return;
       }
       const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
       const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-      await updateFlagUser(item as HTMLElement, playerId);
+      await addFlagUser(item as HTMLElement, playerId, true, true);
     }
   };
 
   const updateFlagsTopics = async () => {
     const functionId = nextFunctionId();
    const  posts = document.querySelectorAll(".forum-post-info");
-
-    for (let item of posts) {
-      addFlag(item as HTMLElement, false, false, true);
-    }
+  
     for (let item of posts) {
       if (functionId != runningId) {
         return;
       }
       const playerNameElement = item.querySelector(".forum-post-info__row--username") as HTMLElement;
       const playerId = playerNameElement.getAttribute("data-user-id")!;
-      updateFlagUser(item as HTMLElement, playerId, false);
+      addFlagUser(item as HTMLElement, playerId, false, false, true);
     }
   };
 

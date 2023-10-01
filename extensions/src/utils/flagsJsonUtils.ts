@@ -5,6 +5,8 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
   const flagsUrl = chrome.runtime.getURL(`flags.json`);
   export const countryRegionsLocalData = fetch(flagsUrl).then(res => res.json()) as Promise<IflagsData>;
 
+  
+
   export interface IregionsData{
     [key: string]: IregionData;
   }
