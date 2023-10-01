@@ -4,6 +4,7 @@ import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfile
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
 import { nextFunctionId, runningId } from "./content";
 
+// https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
 const rankingIdAttr = "data-user-id";
 
 export const updateFlagsRankings = async () => {

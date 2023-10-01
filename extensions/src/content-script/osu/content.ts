@@ -3,6 +3,7 @@ import {  addFlagUser } from "@src/utils/flagHtml";
 import { isNumber } from "@src/utils/utils";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./ranking";
+import { updateFlagsBeatmapsets } from "./beatmapset";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -161,67 +162,6 @@ const updateSearchCard = async (card:HTMLElement) => {
 
 
 
-
-let initFlagsBeatmapsetMutationObserver = new MutationObserver((_) => {
-  updateFlagsBeatmapsets();
-  initFlagsBeatmapsetMutationObserver.disconnect();
-});
-let beatmapsetMutationObserver = new MutationObserver((_) => {
-  updateFlagsBeatmapsets();
-});
-
-const updateFlagsBeatmapsets = async () => {
-  const functionId = nextFunctionId();
-  console.log("updateFlagsBeatmapsets");
-
-  const linkItem = document.querySelector(".beatmapset-scoreboard__main");
-  if (linkItem) {
-    beatmapsetMutationObserver.observe(linkItem, {
-      childList: true,
-    });
-  } else{
-    beatmapsetMutationObserver.observe(document.querySelector(".js-react--beatmapset-page")!, {
-      childList: true,
-    });
-  }
-
-  const topScoreElements = document.querySelectorAll(
-    ".beatmap-score-top__user-box"
-  );
-  if (!topScoreElements) {
-    return;
-  }
-
-  for (const topScoreElement of topScoreElements) {
-    const topScoreUserElement = topScoreElement.querySelector(
-      ".beatmap-score-top__username"
-    );
-    const topScoreUserId = (topScoreUserElement as HTMLElement).getAttribute("data-user-id");
-    if (topScoreUserId) {
-      await addFlagUser(topScoreElement as HTMLElement, topScoreUserId, true, true);
-    }
-  }
-
-  const rankingTable = document.querySelector(
-    ".beatmap-scoreboard-table__body"
-  );
-  if (!rankingTable) {
-    return;
-  }
-
-  const items = rankingTable.children;
-
-  for (let item of items) {
-    if (functionId != runningId) {
-      return;
-    }
-    const playerNameElement = item.querySelector(
-      ".beatmap-scoreboard-table__cell-content--user-link"
-    );
-    const playerId = playerNameElement?.getAttribute("data-user-id")!;
-    await addFlagUser(item  as HTMLElement, playerId, true, true  );
-  }
-};
 
 let profileMutationObserverInit = new MutationObserver((_) => {
   updateFlagsProfile();
