@@ -1,5 +1,5 @@
 import { unknownUserError, fetchErrorToText } from "./fetchUtils";
-import { countryRegionsLocalData, getCountryAndRegionName, getCountryName, getRegionName } from "./flagsJsonUtils";
+import { countryRegionsLocalData, getCountryAndRegionName } from "./flagsJsonUtils";
 import { osuWorldUser } from "./osuWorld";
 import { addOrReplaceQueryParam } from "./utils";
 
