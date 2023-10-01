@@ -4,7 +4,7 @@ import {
   getLanguage,
   systemDefaultCode,
   nativeLanguageCode,
-} from "../../tools";
+} from "../../utils/tools";
 
 
 const updateTitle = () => {
