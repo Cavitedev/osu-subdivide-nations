@@ -2,15 +2,64 @@ const expireHeader = "expireDate";
 
 const genExpireDate = (expireTime:number) => Date.now() + expireTime;
 
-let pendingRequests : {[key:string]: Promise<any>} = {};
+let pendingRequests : {[key:string]: Promise<object>} = {};
 
 
-export interface fetchResponse {
-  data?: any;
+
+
+export interface IregionData{
+  name: string;
+  flag:string;
+  nativeName:string
+}
+
+export interface IregionsData{
+  [key: string]: IregionData;
+}
+
+export interface IflagsData {
+  [key: string]: {
+    name: string;
+    nativeName:string
+    regions: IregionsData;
+  };
+}
+
+
+export interface IosuWorldIdSuccess  {
+  id: number,
+  username: string,
+  country_id: string,
+  region_id: string,
+}
+
+export interface IosuWorldRegionalPlayerData{
+  "id": number,
+  "username": string,
+  "mode": string,
+  "rank": number,
+  "pp": number,
+  "status": any
+}
+
+export interface IosuWorldRegionalRankingSuccess{
+  top: [
+    IosuWorldRegionalPlayerData
+  ]
+}
+
+export interface IosuWorldError {
+  error: string
+}
+
+export type osuWorldIdData =  IosuWorldIdSuccess | IosuWorldError 
+
+export interface IfetchResponse<T> {
+  data?: T;
   error?: {
     code: string;
-    url: string;
-    userId: string;
+    url?: string;
+    userId?: string;
   };
   cache?: boolean;
   expireDate?: number;
@@ -28,7 +77,7 @@ const fetchAndSaveInCache = async (url:string, expireTime:number) => {
             url: url,
           },
         };
-      let cachedResponse: fetchResponse = {};
+      let cachedResponse: IfetchResponse<object> = {};
       cachedResponse["data"] = jsonResponse;
       cachedResponse[expireHeader] = genExpireDate(expireTime);
       localStorage.setItem(url, JSON.stringify(cachedResponse));
@@ -71,8 +120,9 @@ export const fetchWithCache = async (url:string, expireTime:number) => {
 export const unknownUserError = "unknown_user";
 const cannotFetchError = "cannot_fetch";
 const noData = "no_data";
+const noId = "no_id";
 
-export const fetchErrorToText = (response: fetchResponse) => {
+export const fetchErrorToText = (response: IfetchResponse<object>) => {
   if (!response?.error?.code) return "";
   const error = response.error;
   switch (error.code) {
@@ -89,10 +139,10 @@ export const fetchErrorToText = (response: fetchResponse) => {
 
 const userDataExpireTime = 1800000; //30 minutes
 
-const fetchWithMinimumWaitTime = async (dataPromise: Promise<fetchResponse>, waitTime: number):Promise<fetchResponse> => {
+const fetchWithMinimumWaitTime = async<T> (dataPromise: Promise<IfetchResponse<T>>, waitTime: number):Promise<IfetchResponse<T>> => {
   const waitPromise = new Promise((resolve) => {
     setTimeout(resolve, waitTime);
-  }) as Promise<fetchResponse>;
+  }) as Promise<IfetchResponse<T>>;
 
   return Promise.race([dataPromise, waitPromise])
     .then(async (result) => {
@@ -109,14 +159,14 @@ const fetchWithMinimumWaitTime = async (dataPromise: Promise<fetchResponse>, wai
       }
     })
     .then((result) => {
-      return result as fetchResponse;
+      return result as IfetchResponse<T>;
     });
 };
 
-export const osuWorldUser = async (id: String) => {
+export const osuWorldUser = async (id: String): Promise<IfetchResponse<osuWorldIdData>> => {
   if (!id) {
     console.log("id is null");
-    return;
+    return { error: { code: noId, userId: id } };
   }
 
   const url = "https://osuworld.octo.moe/api/users/" + id;
@@ -307,7 +357,7 @@ export const getCountryNamesLocale = async () => {
   if (lang === nativeLanguageCode)
     return Promise.resolve({ lang: nativeLanguageCode });
 
-  const countries = localStorage.getItem(countriesKey) as fetchResponse | undefined;
+  const countries = localStorage.getItem(countriesKey) as IfetchResponse<object> | undefined;
   if (!countries || (countries[expireHeader] && countries[expireHeader] < Date.now())  ) {
     return fetchWithCache(
       countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
@@ -317,12 +367,12 @@ export const getCountryNamesLocale = async () => {
   return countries;
 };
 
-export const getRegionNamesLocale = async () => {
+export const getRegionNamesLocale = async (): Promise<IfetchResponse<{[key: string]:{[key:string]:string}, lang:never}> | {lang:string}> => {
   const lang = await getActiveLanguage();
   if (lang === nativeLanguageCode)
     return Promise.resolve({ lang: nativeLanguageCode });
 
-  const regions = localStorage.getItem(regionsKey) as fetchResponse | undefined;
+  const regions = localStorage.getItem(regionsKey) as IfetchResponse<{[key: string]:{[key:string]:string}, lang:never}> | undefined;
   if (!regions || (regions[expireHeader] && regions[expireHeader] < Date.now())) {
     return fetchWithCache(
       regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
