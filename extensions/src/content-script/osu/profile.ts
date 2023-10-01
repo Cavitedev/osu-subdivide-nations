@@ -63,10 +63,15 @@ export const updateFlagsProfile = async () => {
             scoreRankLabel.classList.add("value-display__label");
             scoreRankLabel.innerHTML = "Score Ranking"
             scoreRankElement.append(scoreRankLabel);
+
             let scoreRankValue = document.createElement("div");
             scoreRankValue.classList.add("value-display__value");
             scoreRankElement.append(scoreRankValue);
             let rank = document.createElement("div");
+            const tooltipTitle = highestRankTip(scoreRankInfo);
+            rank.setAttribute("data-html-title", tooltipTitle);
+            rank.setAttribute("title", "");
+
             rank.innerHTML = `#${scoreRank.toLocaleString()}`
             scoreRankValue.append(rank);
 
@@ -76,4 +81,19 @@ export const updateFlagsProfile = async () => {
             }
         }
     }
+}
+
+const highestRankTip = (scoreRankInfo:any) => {
+  const rankHighest = scoreRankInfo[0]["rank_highest"]
+  const date = new Date(rankHighest["updated_at"]);
+
+  const options : Intl.DateTimeFormatOptions = {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric'
+  } ;
+  
+  // Get the formatted date string
+  const formattedDate = date.toLocaleDateString(undefined, options);
+  return `<div>Highest rank: #${rankHighest.rank} on ${formattedDate}</div>`;
 }
