@@ -1,6 +1,7 @@
 import { cleanCacheConditionally } from "@src/utils/cache";
 import { setFlagClass } from "@src/utils/flagHtml";
-import { updateRegionsDropdown, refreshOverlays, init } from "./content";
+import { refreshOverlays, init } from "./content";
+import { updateRegionsDropdown } from "./ranking";
 
 
 export const initConfigure = (flagClass: string)  => {
