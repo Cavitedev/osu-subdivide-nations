@@ -1,5 +1,24 @@
-import { IfetchResponse, availableLanguagesOsuWorld, expireHeader, fetchWithCache } from "./fetchUtils";
+import { IfetchResponse, expireHeader, fetchWithCache, loadFromCache } from "./fetchUtils";
 
+
+interface Ilanguages {
+  [key:string]: string
+}
+
+interface Iregions {[key: string]:{[key:string]:string}, lang:never}
+
+export const availableLanguagesOsuWorld = async (): Promise<Ilanguages> => {
+  // 1 day cache
+  return fetchWithCache(
+    "https://osuworld.octo.moe/locales/languages.json",
+    86400000
+  ).then((res) => {
+    const data = res["data"] as Ilanguages;
+    const languageKeys = Object.keys(data);
+    chrome.storage.local.set({ availableLanguages: languageKeys });
+    return data;
+  });
+};
 
 export interface IregionData{
     name: string;
@@ -18,10 +37,7 @@ export interface IregionData{
       regions: IregionsData;
     };
   }
-  
-  
-  
-  
+
   
   const langKey = "lang";
   const countriesKey = "countries";
@@ -161,7 +177,7 @@ export interface IregionData{
     if (lang === nativeLanguageCode)
       return Promise.resolve({ lang: nativeLanguageCode });
   
-    const countries = localStorage.getItem(countriesKey) as IfetchResponse<object> | undefined;
+    const countries = loadFromCache(countriesKey) as IfetchResponse<object> | null;
     if (!countries || (countries[expireHeader] && countries[expireHeader] < Date.now())  ) {
       return fetchWithCache(
         countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
@@ -171,17 +187,17 @@ export interface IregionData{
     return countries;
   };
   
-  export const getRegionNamesLocale = async (): Promise<IfetchResponse<{[key: string]:{[key:string]:string}, lang:never}> | {lang:string}> => {
+  export const getRegionNamesLocale = async (): Promise<IfetchResponse<Iregions> | {lang:string}> => {
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode)
       return Promise.resolve({ lang: nativeLanguageCode });
   
-    const regions = localStorage.getItem(regionsKey) as IfetchResponse<{[key: string]:{[key:string]:string}, lang:never}> | undefined;
+    const regions = loadFromCache(regionsKey) as IfetchResponse<Iregions> | undefined;
     if (!regions || (regions[expireHeader] && regions[expireHeader] < Date.now())) {
       return fetchWithCache(
         regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
         eightHours
-      );
+      ).then((res) => {return res as IfetchResponse<Iregions>});
     }
     return regions;
   };

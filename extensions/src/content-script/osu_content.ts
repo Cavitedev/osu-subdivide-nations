@@ -1,5 +1,7 @@
-import { osuWorldUser, unknownUserError, fetchErrorToText, osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/fetchUtils";
+
+import { unknownUserError, fetchErrorToText } from "@src/utils/fetchUtils";
 import { getRegionNamesLocale, nativeLanguageCode, IregionData } from "@src/utils/language";
+import { osuWorldUser, osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber } from "@src/utils/utils";
 
 
@@ -616,7 +618,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
 
     for (const page of pagesToCheck) {
       if (functionId != runningId) return;
-      if (page > totalPages) break;
 
       const results = await osuWorldCountryRegionRanking(
         countryCode,
@@ -624,6 +625,9 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
         osuMode,
         page
       );
+      if(!results || "error" in results){
+        return;
+      }
 
       for (const player of results["top"]) {
         const row = listItems[replaceIndex] as HTMLElement;
@@ -644,6 +648,9 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
           regionCode
         );
       }
+
+      if (page >= totalPages) break;
+
     }
 
     for (let i = listItems.length - 1; i >= replaceIndex; i--) {

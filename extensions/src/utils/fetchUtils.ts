@@ -1,39 +1,12 @@
 
 export const expireHeader = "expireDate";
 
-const genExpireDate = (expireTime:number) => Date.now() + expireTime;
-
-let pendingRequests : {[key:string]: Promise<object>} = {};
 
 
-export interface IosuWorldIdSuccess  {
-    id: number,
-    username: string,
-    country_id: string,
-    region_id: string,
-  }
-  
-  export interface IosuWorldRegionalPlayerData{
-    "id": number,
-    "username": string,
-    "mode": string,
-    "rank": number,
-    "pp": number,
-    "status": any
-  }
-  
-  export interface IosuWorldRegionalRankingSuccess{
-    pages: number,
-    top: [
-      IosuWorldRegionalPlayerData
-    ]
-  }
-  
-  export interface IosuWorldError {
-    error: string
-  }
-  
-  export type osuWorldIdData =  IosuWorldIdSuccess | IosuWorldError 
+export interface IFetchError {
+  error: string
+}
+
   
   export interface IfetchResponse<T> {
     data?: T;
@@ -46,9 +19,25 @@ export interface IosuWorldIdSuccess  {
     expireDate?: number;
   }
 
-  
+export const saveInCache = async (url:string, data:object) => {
+  return chrome.storage.local.set({ [url]: data });
+}
 
-const fetchAndSaveInCache = async (url:string, expireTime:number) => {
+export const loadFromCache =async  (url:string): Promise<any | null> => {
+  const storageReturn = await chrome.storage.local.get([url]);
+  if(Object.keys(storageReturn).length === 0){
+    return null;
+  }else{
+    return storageReturn[url];
+  }
+}
+
+
+const genExpireDate = (expireTime:number) => Date.now() + expireTime;
+
+let pendingRequests : {[key:string]: Promise<object>} = {};
+
+const fetchAndSaveInCache = async (url:string, expireTime:number): Promise<IfetchResponse<object>> => {
     return fetch(url)
       .then(async (res) => {
         const jsonResponse = await res.json();
@@ -62,27 +51,23 @@ const fetchAndSaveInCache = async (url:string, expireTime:number) => {
         let cachedResponse: IfetchResponse<object> = {};
         cachedResponse["data"] = jsonResponse;
         cachedResponse[expireHeader] = genExpireDate(expireTime);
-        localStorage.setItem(url, JSON.stringify(cachedResponse));
+        saveInCache(url, cachedResponse);
         return cachedResponse;
       })
-      .catch((error) => {
+      .catch((_) => {
         return { error: { code: "cannot_fetch ", url: url } };
       });
   }
   
-  export const fetchWithCache = async (url:string, expireTime:number) => {
-  
-  
-  
+  export const fetchWithCache = async (url:string, expireTime:number): Promise<IfetchResponse<object>> => {
   
     if (pendingRequests[url] !== undefined) {
       return pendingRequests[url];
     }
   
-    const cachedItemRaw = localStorage.getItem(url);
-    if (cachedItemRaw) {
-      const cachedItem = JSON.parse(cachedItemRaw);
-      const expireDate = cachedItem[expireHeader];
+    const cachedItem = await loadFromCache(url) as IfetchResponse<object> | undefined;
+    if (cachedItem) {
+      const expireDate = cachedItem[expireHeader]!;
       if (expireDate < Date.now()) {
         return fetchAndSaveInCache(url, expireTime);
       }
@@ -96,15 +81,14 @@ const fetchAndSaveInCache = async (url:string, expireTime:number) => {
       return result;
     }
   
-  
   };
   
   export const unknownUserError = "unknown_user";
   const cannotFetchError = "cannot_fetch";
   const noData = "no_data";
-  const noId = "no_id";
+  export const noId = "no_id";
   
-  export const fetchErrorToText = (response: IfetchResponse<object>) => {
+  export const fetchErrorToText = (response: IfetchResponse<object> | undefined) => {
     if (!response?.error?.code) return "";
     const error = response.error;
     switch (error.code) {
@@ -114,14 +98,15 @@ const fetchAndSaveInCache = async (url:string, expireTime:number) => {
         return "Cannot fetch " + error.url;
       case noData:
         return "No data for " + error.url;
+      case noId:
+        return "No player found with ID " + error.userId;
       default:
         return "Unknown error";
     }
   };
   
-  const userDataExpireTime = 1800000; //30 minutes
   
-  const fetchWithMinimumWaitTime = async<T> (dataPromise: Promise<IfetchResponse<T>>, waitTime: number):Promise<IfetchResponse<T>> => {
+  export const fetchWithMinimumWaitTime = async<T> (dataPromise: Promise<IfetchResponse<T>>, waitTime: number):Promise<IfetchResponse<T>> => {
     const waitPromise = new Promise((resolve) => {
       setTimeout(resolve, waitTime);
     }) as Promise<IfetchResponse<T>>;
@@ -145,62 +130,6 @@ const fetchAndSaveInCache = async (url:string, expireTime:number) => {
       });
   };
   
-  export const osuWorldUser = async (id: String): Promise<IfetchResponse<osuWorldIdData>> => {
-    if (!id) {
-      console.log("id is null");
-      return { error: { code: noId, userId: id } };
-    }
-  
-    const url = "https://osuworld.octo.moe/api/users/" + id;
-  
-    let dataPromise = fetchWithCache(url, userDataExpireTime);
-    return fetchWithMinimumWaitTime(dataPromise, 200);
-  };
 
 
   
-// Modes: osu, taiko, fruits, mania
-const regionRankingUrl =
-"https://osuworld.octo.moe/api/{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
-
-export const osuWorldCountryRegionRanking = async (
-countryCode: string,
-regionCode: string,
-mode = "osu",
-page = 1
-) => {
-if (!countryCode || !regionCode) {
-  console.log("countryCode or regionCode is null");
-  return;
-}
-
-const url = regionRankingUrl
-  .replace("{{country-code}}", countryCode)
-  .replace("{{country-region-code}}", regionCode)
-  .replace("{{mode}}", mode)
-  .replace("{{page}}", page.toString());
-
-return fetchWithCache(url, userDataExpireTime).then((result) => {
-  return result["data"];
-});
-};
-
-const profileUrl = "https://osu.ppy.sh/users/{{user-id}}/{{mode}}";
-export const buildProfileUrl = (id: string, mode = "osu") => {
-const url = profileUrl.replace("{{user-id}}", id).replace("{{mode}}", mode);
-return url;
-};
-
-
-export const availableLanguagesOsuWorld = async (): Promise<{[key:string]: string}> => {
-    // 1 day cache
-    return fetchWithCache(
-      "https://osuworld.octo.moe/locales/languages.json",
-      86400000
-    ).then((res) => {
-      const data = res["data"];
-      const languageKeys = Object.keys(data);
-      chrome.storage.local.set({ availableLanguages: languageKeys });
-      return data;
-    });
-  };
