@@ -1,4 +1,5 @@
 
+import { cleanCacheConditionally } from "@src/utils/cache";
 import { unknownUserError, fetchErrorToText } from "@src/utils/fetchUtils";
 import { getRegionNamesLocale, nativeLanguageCode, IregionData } from "@src/utils/language";
 import { osuWorldUser, osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
@@ -6,7 +7,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
 
 
 (async () => {
-  // Imports
+  cleanCacheConditionally();
 
   // Import Flags
   const flagsUrl = chrome.runtime.getURL(`flags.json`);
@@ -1168,6 +1169,6 @@ Document
     }
   };
   
-
   await init();
+
 })();
