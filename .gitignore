@@ -4,6 +4,7 @@
 
 # build archive
 chrome.zip
+chromium.zip
 firefox.zip
 
 # build version
@@ -12,3 +13,6 @@ extensions/firefox_dev/*
 data/*
 
 credentials/*
+darkReader/
+node_modules/
+build/
