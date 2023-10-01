@@ -1,6 +1,7 @@
 import { unknownUserError, fetchErrorToText } from "./fetchUtils";
 import { countryRegionsLocalData, getCountryAndRegionName, getCountryName, getRegionName } from "./flagsJsonUtils";
 import { osuWorldUser } from "./osuWorld";
+import { addOrReplaceQueryParam } from "./utils";
 
 // Quotes needed for special characters
 const flagStyle = 'background-image: url("$flag"); background-size: contain';
@@ -43,10 +44,8 @@ export const addRegionalFlag = async (
 
   let flagElement = flagElements[0];
   let flagParent = flagElement.parentElement!;
-
-  let flagParentClone = flagParent.cloneNode(true) as HTMLElement;
+  let flagParentClone = flagParent.cloneNode(true) as HTMLElement;  
   let flagElementClone = flagParentClone.querySelector(`.${flagClass}`)!;
-
 
   let flag = regionData["flag"];
   if (!flag || flag === "") {
@@ -62,23 +61,10 @@ export const addRegionalFlag = async (
   if(countryName){
     flagElement.setAttribute("title", countryName);
   }
-
-
   if (regionData["name"]) {
     flagElementClone.setAttribute("title", regionName);
   }
 
-
-  let href = flagParentClone.getAttribute("href");
-  if (!href) {
-    const hrefCandidate = flagParent.parentElement!.getAttribute("href");
-    if (hrefCandidate && hrefCandidate.includes("performance")) {
-      href = hrefCandidate;
-      const anchorParent = document.createElement("a");
-      anchorParent.appendChild(flagParentClone);
-      flagParentClone = anchorParent;
-    }
-  }
 
   let insertParent = flagParent.parentElement!;
 
@@ -87,8 +73,32 @@ export const addRegionalFlag = async (
   if (flagElements.length > 1) {
     // Update
     flagElements[1].replaceWith(flagElementClone);
-  } else {
+  } else {    
     // Add
+
+    let href = flagParent.getAttribute("href");
+    console.log(href);
+    if (!href) {
+      const hrefCandidate = flagParent.parentElement!.getAttribute("href");
+      if (hrefCandidate && hrefCandidate.includes("performance")) {
+        href = hrefCandidate;
+        const anchorParent = document.createElement("a");
+        anchorParent.appendChild(flagParentClone);
+        flagParentClone = anchorParent;
+      }
+    }
+  
+    if (flagParentClone.nodeName === "A") {
+      const updatedHref = addOrReplaceQueryParam(
+        href as string,
+        "region",
+        regionCode
+      );
+  
+      flagParentClone.setAttribute("href", updatedHref);
+    }
+
+
     let sibling = flagParent.nextSibling;
     if (addDiv) {
       const flagsDiv = document.createElement("div");
@@ -117,6 +127,10 @@ export const addRegionalFlag = async (
     }
 
     insertParent.insertBefore(flagParentClone, sibling);
+
+
+
+
   }
   return {countryName, regionName};
 };
