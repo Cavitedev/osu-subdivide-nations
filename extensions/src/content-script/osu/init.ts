@@ -11,6 +11,8 @@ export const initConfigure = (flagClass: string)  => {
 setFlagClass(flagClass);
 
 chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
+
+
   const {  action } = obj;
   if (action && action === "osu_flag_refresh") {
     await updateRegionsDropdown();

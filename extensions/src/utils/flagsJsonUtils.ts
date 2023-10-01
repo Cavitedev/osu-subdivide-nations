@@ -32,6 +32,19 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
   const regionsUrl =
     "https://osuworld.octo.moe/locales/{{lang-code}}/regions.json";
     
+    export const getCountryAndRegionName = async (countryCode: string, regionCode:string, regionData: IregionData ) => {
+      const regionNamePromise = getRegionName(
+        countryCode,
+        regionCode,
+        regionData
+      );
+      const countryNamePromise = getCountryName(countryCode);
+      const countryName = await countryNamePromise;
+      const regionName = await regionNamePromise;
+
+      return {countryName, regionName};
+
+    }
 
     export const getCountryName = async (countryCode: string ) => {
       const countryNamesLocale = await getCountryNamesLocale();

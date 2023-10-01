@@ -10,7 +10,6 @@ export const profileMutationObserverInit = new MutationObserver((_) => {
   });
   
 export const updateFlagsProfile = async () => {
-
     const linkItem = document.querySelector(
         "body > div.osu-layout__section.osu-layout__section--full > div"
       ) as HTMLElement;

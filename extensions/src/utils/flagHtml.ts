@@ -1,5 +1,5 @@
 import { unknownUserError, fetchErrorToText } from "./fetchUtils";
-import { countryRegionsLocalData, getCountryName, getRegionName } from "./flagsJsonUtils";
+import { countryRegionsLocalData, getCountryAndRegionName, getCountryName, getRegionName } from "./flagsJsonUtils";
 import { osuWorldUser } from "./osuWorld";
 
 // Quotes needed for special characters
@@ -40,7 +40,6 @@ export const addRegionalFlag = async (
   if (!regionData) return;
 
   let flagElements = item.querySelectorAll(`.${flagClass}`);
-  if (!flagElements || flagElements.length != 1) return;
 
   let flagElement = flagElements[0];
   let flagParent = flagElement.parentElement!;
@@ -59,18 +58,12 @@ export const addRegionalFlag = async (
     flag
   ));
 
-  const regionNamePromise = getRegionName(
-    countryCode,
-    regionCode,
-    regionData
-  );
-  const countryNamePromise = getCountryName(countryCode);
-  const countryName = await countryNamePromise;
+  const {countryName, regionName} =await getCountryAndRegionName(countryCode, regionCode, regionData);
   if(countryName){
     flagElement.setAttribute("title", countryName);
   }
 
-  const regionName = await regionNamePromise;
+
   if (regionData["name"]) {
     flagElementClone.setAttribute("title", regionName);
   }
