@@ -1,7 +1,7 @@
 
 import { cleanCacheConditionally } from "@src/utils/cache";
 import { unknownUserError, fetchErrorToText } from "@src/utils/fetchUtils";
-import { getRegionNamesLocale, nativeLanguageCode, IregionData } from "@src/utils/language";
+import { countryRegionsLocalData, getRegionName, getRegionNames } from "@src/utils/flagsJsonUtils";
 import { osuWorldUser, osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber } from "@src/utils/utils";
 
@@ -10,8 +10,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
   cleanCacheConditionally();
 
   // Import Flags
-  const flagsUrl = chrome.runtime.getURL(`flags.json`);
-  const countryRegionsLocalData = fetch(flagsUrl).then(res => res.json());
+
   let runningId = 0;
 
   chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
@@ -28,45 +27,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     return url.split("/")[4];
   };
 
-
-
-  const getRegionNames = async (countryCode: string) => {
-    const regionsOsuWorld = await getRegionNamesLocale();
-
-
-    const localeRegions = (await countryRegionsLocalData)[countryCode]?.["regions"];
-
-    const defaultNames: {[key:string]: string} = {};
-    const nativeNames: {[key:string]: string} = {};
-    for (const key in localeRegions) {
-      const value = localeRegions[key];
-      defaultNames[key] = value["name"];
-      nativeNames[key] = value["nativeName"];
-    }
-
-    if ("lang" in regionsOsuWorld && regionsOsuWorld["lang"] === nativeLanguageCode) {
-      return Promise.resolve(nativeNames ?? defaultNames);
-    } else if(!("lang" in regionsOsuWorld)) {
-      const regionNamesOsuWorld = regionsOsuWorld["data"]?.[countryCode];
-      return Promise.resolve(regionNamesOsuWorld ?? defaultNames);
-    }
-    return Promise.resolve(defaultNames);
-  };
-
-  const getRegionName = async (countryCode:string, regionCode:string, regionData: IregionData) => {
-    const regionsOsuWorld = await getRegionNamesLocale();
-
-    const defaultName = regionData["name"];
-    const nativeName = regionData["nativeName"];
-
-    if ("lang" in regionsOsuWorld && regionsOsuWorld["lang"] === nativeLanguageCode) {
-      return Promise.resolve(nativeName ?? defaultName);
-    } else if(!("lang" in regionsOsuWorld)){
-      const regionName = regionsOsuWorld?.["data"]?.[countryCode]?.[regionCode];
-      return Promise.resolve(regionName ?? defaultName);
-    }
-    return Promise.resolve(defaultName);
-  };
+ 
 
   // Quotes needed for special characters
   const flagStyle = 'background-image: url("$flag"); background-size: contain';

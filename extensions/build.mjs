@@ -14,14 +14,14 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
   const esbuildOptions = {
     entryPoints: [
       "src/flags.json",
-      "src/content-script/osu_content.ts",
+      "src/content-script/osu/content.ts",
       "src/ui/popup/popup.ts",
       "src/ui/popup/popup.css",
     ],
     bundle: true,
     outdir: buildPath,
     minify: !watch,
-    loader: { '.json': 'copy' },
+    loader: { ".json": "copy" },
     plugins: [
       ...(watch ? [] : [json_plugin()]),
       copy({

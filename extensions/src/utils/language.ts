@@ -1,16 +1,11 @@
-import { IfetchResponse, fetchWithCache } from "./fetchUtils";
+import { fetchWithCache } from "./fetchUtils";
 
 
 interface Ilanguages {
   [key:string]: string
 }
 
-interface Icountries {
-  [key:string]: string, 
-  lang:never
-}
 
-interface Iregions {[key: string]:{[key:string]:string}, lang:never}
 
 export const availableLanguagesOsuWorld = async (): Promise<Ilanguages> => {
   // 1 day cache
@@ -31,27 +26,13 @@ export interface IregionData{
     nativeName:string
   }
   
-  export interface IregionsData{
-    [key: string]: IregionData;
-  }
-  
-  export interface IflagsData {
-    [key: string]: {
-      name: string;
-      nativeName:string
-      regions: IregionsData;
-    };
-  }
+
 
   
   const langKey = "lang";
-  
   const defaultLang = "EN";
   
-  const countryUrl =
-    "https://osuworld.octo.moe/locales/{{lang-code}}/countries.json";
-  const regionsUrl =
-    "https://osuworld.octo.moe/locales/{{lang-code}}/regions.json";
+
   
   export const systemDefaultCode = "DEF";
   export const nativeLanguageCode = "NAT";
@@ -162,39 +143,4 @@ export interface IregionData{
     return RegExp(`^${pattern}`).test(url);
   }
   
-  const eightHours = 28800000;
   
-  const langToRightUpperCases = (lang: string) => {
-    const splitLang = lang.split("-");
-    if (splitLang.length === 2) {
-      return splitLang[0].toLowerCase() + "-" + splitLang[1].toUpperCase();
-    }
-    const lowerCaseLang = lang.toLowerCase();
-    return lowerCaseLang;
-  };
-  
-  
-  
-  export const getCountryNamesLocale = async (): Promise<IfetchResponse<Icountries> | {lang:string}> => {
-    const lang = await getActiveLanguage();
-    if (lang === nativeLanguageCode)
-      return Promise.resolve({ lang: nativeLanguageCode });
-  
-
-    return fetchWithCache(
-        countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        eightHours
-    ) as Promise<IfetchResponse<Icountries>>;
-
-  };
-  
-  export const getRegionNamesLocale = async (): Promise<IfetchResponse<Iregions> | {lang:string}> => {
-    const lang = await getActiveLanguage();
-    if (lang === nativeLanguageCode)
-      return Promise.resolve({ lang: nativeLanguageCode });
-
-      return fetchWithCache(
-        regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        eightHours
-      ) as Promise<IfetchResponse<Iregions>>;
-  };

@@ -15,7 +15,6 @@ const lastCacheCleanKey = "lastCacheClean";
 
 export const cleanCacheConditionally = async () => {
     const lastClean = await loadFromCache(lastCacheCleanKey);
-    console.log(lastClean);
     if(!lastClean || lastClean.expire < Date.now()){
         await chrome.storage.local.clear();
         await saveInCache(lastCacheCleanKey, {expire: Date.now() + 604800000}); // 7 days
