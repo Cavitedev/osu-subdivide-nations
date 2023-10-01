@@ -11,9 +11,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
 
   // Import Flags
   const flagsUrl = chrome.runtime.getURL(`flags.json`);
-  const respone = await fetch(flagsUrl);
-  const countryRegionsData = await respone.json();
-  const loadedCountryRegions = countryRegionsData;
+  const countryRegionsLocalData = fetch(flagsUrl).then(res => res.json());
   let runningId = 0;
 
   chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
@@ -36,7 +34,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     const regionsOsuWorld = await getRegionNamesLocale();
 
 
-    const localeRegions = loadedCountryRegions[countryCode]?.["regions"];
+    const localeRegions = (await countryRegionsLocalData)[countryCode]?.["regions"];
 
     const defaultNames: {[key:string]: string} = {};
     const nativeNames: {[key:string]: string} = {};
@@ -167,7 +165,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     let flagElements = item.querySelectorAll(`.${flagClass}`);
     if (!flagElements || flagElements.length == 0) return;
 
-    let countryRegionsData = loadedCountryRegions[countryCode];
+    let countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
     if (countryRegionsData) {
       const regionData = countryRegionsData["regions"][regionCode];
@@ -475,7 +473,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
       addRegionsDropdown(countryUrlParam, regionUrlParam);
       if(!regionUrlParam) return false;
       const regionData =
-        loadedCountryRegions[countryUrlParam]?.["regions"]?.[regionUrlParam];
+      (await countryRegionsLocalData)[countryUrlParam]?.["regions"]?.[regionUrlParam];
       if (regionData) {
         const page = urlParams.get("page");
         const mode = location.pathname.split("/")[2];
