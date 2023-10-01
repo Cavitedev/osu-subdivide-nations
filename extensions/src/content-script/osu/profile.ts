@@ -10,7 +10,6 @@ export const profileMutationObserverInit = new MutationObserver((_) => {
   });
   
 export const updateFlagsProfile = async () => {
-
     const linkItem = document.querySelector(
         "body > div.osu-layout__section.osu-layout__section--full > div"
       ) as HTMLElement;
@@ -30,11 +29,71 @@ export const updateFlagsProfile = async () => {
     if (!flagElement) {
       return;
     }
-    const regionName = await addFlagUser(flagElement as HTMLElement, playerId);
+    addScoreRank();
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
+    if(!flagResult) return;
+    const {countryName, regionName} = flagResult;
+
       const countryNameElement = flagElement.querySelector(
         ".profile-info__flag-text"
       )!;
-      countryNameElement.textContent =
-        countryNameElement.textContent?.split(" / ")[0] + ` / ${regionName}` ?? regionName;
+
+      const originalCountry = countryNameElement.textContent?.split(" / ")[0];
+      const replaceText = `${countryName ? countryName : originalCountry}${regionName? " / ":""}${regionName}`
+
+      countryNameElement.textContent = replaceText;
   
   };
+
+  let scoreRankVisible = false
+  async function addScoreRank() {
+    const ranksElement = document.querySelector(".profile-detail__values");
+    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
+
+    if (!modesElement) {
+        return;
+    }
+
+    if (ranksElement) {
+        const path = window.location.pathname.split("/")
+        const userId = path[2]
+        const mode = modesElement.dataset.mode
+        const scoreRankInfo = await (await fetch(`https://score.respektive.pw/u/${userId}?mode=${mode}`)).json();
+        const scoreRank = scoreRankInfo[0].rank
+
+        if (scoreRank != 0) {
+            let scoreRankElement = document.createElement("div");
+            scoreRankElement.classList.add("value-display", "value-display--rank");
+            let scoreRankLabel = document.createElement("div");
+            scoreRankLabel.classList.add("value-display__label");
+            scoreRankLabel.innerHTML = "Score Ranking"
+            scoreRankElement.append(scoreRankLabel);
+
+            let scoreRankValue = document.createElement("div");
+            scoreRankValue.classList.add("value-display__value");
+            scoreRankElement.append(scoreRankValue);
+            let rank = document.createElement("div");
+            const tooltipTitle = highestRankTip(scoreRankInfo);
+            rank.setAttribute("data-html-title", tooltipTitle);
+            rank.setAttribute("title", "");
+
+            rank.innerHTML = `#${scoreRank.toLocaleString()}`
+            scoreRankValue.append(rank);
+
+            if (!scoreRankVisible) {
+                ranksElement.append(scoreRankElement);
+                scoreRankVisible = true
+            }
+        }
+    }
+}
+
+const highestRankTip = (scoreRankInfo:any) => {
+  const rankHighest = scoreRankInfo[0]["rank_highest"]
+  const date = new Date(rankHighest["updated_at"]);
+
+
+  // Get the formatted date string
+  const formattedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium' }).format(date);
+  return `<div>Highest rank: #${rankHighest.rank} on ${formattedDate}</div>`;
+}
