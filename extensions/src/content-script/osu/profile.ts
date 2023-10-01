@@ -92,13 +92,8 @@ const highestRankTip = (scoreRankInfo:any) => {
   const rankHighest = scoreRankInfo[0]["rank_highest"]
   const date = new Date(rankHighest["updated_at"]);
 
-  const options : Intl.DateTimeFormatOptions = {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric'
-  } ;
-  
+
   // Get the formatted date string
-  const formattedDate = date.toLocaleDateString(undefined, options);
+  const formattedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium' }).format(date);
   return `<div>Highest rank: #${rankHighest.rank} on ${formattedDate}</div>`;
 }
