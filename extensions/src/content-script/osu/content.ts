@@ -6,6 +6,7 @@ import { updateFlagsRankings } from "./ranking";
 import { updateFlagsBeatmapsets } from "./beatmapset";
 import { updateFlagsFriends } from "./friends";
 import { updateFlagsMatches } from "./match";
+import { updateFlagsProfile } from "./profile";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -165,33 +166,6 @@ const updateSearchCard = async (card:HTMLElement) => {
 
 
 
-let profileMutationObserverInit = new MutationObserver((_) => {
-  updateFlagsProfile();
-});
-
-const updateFlagsProfile = async () => {
-  const url = location.href;
-  const playerId = idFromProfileUrl(url);
-  if (!isNumber(playerId)) {
-    return;
-  }
-
-  const flagElement = document.querySelector(".profile-info");
-  if (!flagElement) {
-    return;
-  }
-  const regionName = await addFlagUser(flagElement as HTMLElement, playerId);
-    const countryNameElement = flagElement.querySelector(
-      ".profile-info__flag-text"
-    )!;
-    countryNameElement.textContent =
-      countryNameElement.textContent?.split(" / ")[0] + ` / ${regionName}` ?? regionName;
-
-};
-
-
-
-
 const updateFlagsTopics = async () => {
   const functionId = nextFunctionId();
  const  posts = document.querySelectorAll(".forum-post-info");
@@ -227,15 +201,6 @@ export const init = async () => {
   ) {
     updateFlagsRankings();
   } else if (url.includes("osu.ppy.sh/users")) {
-    const linkItem = document.querySelector(
-      "body > div.osu-layout__section.osu-layout__section--full > div"
-    ) as HTMLElement;
-    profileMutationObserverInit.observe(linkItem, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-
     updateFlagsProfile();
   } else if (url.includes("osu.ppy.sh/home/friends")) {
     const queryParameters = url.split("?")[1];
