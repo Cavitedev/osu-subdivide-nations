@@ -850,21 +850,28 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     }
   };
 
+  let initFlagsBeatmapsetMutationObserver = new MutationObserver((_) => {
+    updateFlagsBeatmapsets();
+    initFlagsBeatmapsetMutationObserver.disconnect();
+  });
   let beatmapsetMutationObserver = new MutationObserver((_) => {
     updateFlagsBeatmapsets();
   });
 
   const updateFlagsBeatmapsets = async () => {
     const functionId = nextFunctionId();
+    console.log("updateFlagsBeatmapsets");
 
     const linkItem = document.querySelector(".beatmapset-scoreboard__main");
     if (linkItem) {
       beatmapsetMutationObserver.observe(linkItem, {
-        attributes: false,
         childList: true,
-        subtree: false,
       });
-    } 
+    } else{
+      beatmapsetMutationObserver.observe(document.querySelector(".js-react--beatmapset-page")!, {
+        childList: true,
+      });
+    }
 
     const topScoreElements = document.querySelectorAll(
       ".beatmap-score-top__user-box"
@@ -872,8 +879,6 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
     if (!topScoreElements) {
       return;
     }
-
-
 
     for (const topScoreElement of topScoreElements) {
       const topScoreUserElement = topScoreElement.querySelector(
@@ -902,7 +907,7 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
       const playerId = playerNameElement?.getAttribute("data-user-id")!;
-      await addFlagUser(item  as HTMLElement, playerId, true, true);
+      await addFlagUser(item  as HTMLElement, playerId, true, true  );
     }
   };
 
