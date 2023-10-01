@@ -45,8 +45,6 @@ export interface IregionData{
 
   
   const langKey = "lang";
-  const countriesKey = "countries";
-  const regionsKey = "regions";
   
   const defaultLang = "EN";
   
