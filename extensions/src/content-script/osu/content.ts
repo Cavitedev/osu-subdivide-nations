@@ -7,6 +7,7 @@ import { updateFlagsBeatmapsets } from "./beatmapset";
 import { updateFlagsFriends } from "./friends";
 import { updateFlagsMatches } from "./match";
 import { updateFlagsProfile } from "./profile";
+import { updateFlagsTopics } from "./topics";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -161,31 +162,12 @@ const updateSearchCard = async (card:HTMLElement) => {
 };
 
 
-
-
-
-
-
-const updateFlagsTopics = async () => {
-  const functionId = nextFunctionId();
- const  posts = document.querySelectorAll(".forum-post-info");
-
-  for (let item of posts) {
-    if (functionId != runningId) {
-      return;
-    }
-    const playerNameElement = item.querySelector(".forum-post-info__row--username") as HTMLElement;
-    const playerId = playerNameElement.getAttribute("data-user-id")!;
-    addFlagUser(item as HTMLElement, playerId, false, false, true);
-  }
-};
-
 const reloadMutationObserver = new MutationObserver((_) => {
-  init();
+  exec();
 });
 
 
-export const init = async () => {
+export const exec = async () => {
   reloadMutationObserver.observe(document.querySelector("title")!, {
     childList: true,
   });
@@ -223,11 +205,6 @@ export const init = async () => {
 };
 
 (async () => {
-
-  // Import Flags
-  
-  
-  await init();
-
+  await exec();
 })();
 

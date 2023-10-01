@@ -1,6 +1,6 @@
 import { cleanCacheConditionally } from "@src/utils/cache";
 import { setFlagClass } from "@src/utils/flagHtml";
-import { refreshOverlays, init } from "./content";
+import { refreshOverlays, exec } from "./content";
 import { updateRegionsDropdown } from "./ranking";
 
 
@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
   if (action && action === "osu_flag_refresh") {
     await updateRegionsDropdown();
     refreshOverlays();
-    init();
+    exec();
   }
 });
 }
