@@ -598,7 +598,7 @@ import * as tools from "../utils/tools";
     regionCode: string,
     osuPage = 1
   ) => {
-    initRegionalRanking(countryCode, regionCode);
+    initRegionalRanking(regionCode);
 
     if (!osuPage) osuPage = 1;
 
@@ -652,7 +652,7 @@ import * as tools from "../utils/tools";
 
   const removeColsRegionalRanking = [7, 6, 5, 3];
 
-  const initRegionalRanking = (countryCode: string, regionCode: string) => {
+  const initRegionalRanking = ( regionCode: string) => {
     const modes = document.querySelectorAll(".game-mode [href]");
     for (const mode of modes) {
       const href = mode.getAttribute("href")!;
