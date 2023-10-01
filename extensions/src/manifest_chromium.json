@@ -9,7 +9,7 @@
                 "https://osu.ppy.sh/*"
             ],
             "js": [
-                "content-script/osu_content.js"
+                "content-script/osu/content.js"
             ]
         }
     ],

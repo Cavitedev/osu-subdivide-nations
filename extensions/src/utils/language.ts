@@ -1,5 +1,24 @@
-import { IfetchResponse, availableLanguagesOsuWorld, expireHeader, fetchWithCache } from "./fetchUtils";
+import { fetchWithCache } from "./fetchUtils";
 
+
+interface Ilanguages {
+  [key:string]: string
+}
+
+
+
+export const availableLanguagesOsuWorld = async (): Promise<Ilanguages> => {
+  // 1 day cache
+  return fetchWithCache(
+    "https://osuworld.octo.moe/locales/languages.json",
+    86400000
+  ).then((res) => {
+    const data = res["data"] as Ilanguages;
+    const languageKeys = Object.keys(data);
+    chrome.storage.local.set({ availableLanguages: languageKeys });
+    return data;
+  });
+};
 
 export interface IregionData{
     name: string;
@@ -7,32 +26,13 @@ export interface IregionData{
     nativeName:string
   }
   
-  export interface IregionsData{
-    [key: string]: IregionData;
-  }
-  
-  export interface IflagsData {
-    [key: string]: {
-      name: string;
-      nativeName:string
-      regions: IregionsData;
-    };
-  }
-  
-  
-  
-  
+
+
   
   const langKey = "lang";
-  const countriesKey = "countries";
-  const regionsKey = "regions";
-  
   const defaultLang = "EN";
   
-  const countryUrl =
-    "https://osuworld.octo.moe/locales/{{lang-code}}/countries.json";
-  const regionsUrl =
-    "https://osuworld.octo.moe/locales/{{lang-code}}/regions.json";
+
   
   export const systemDefaultCode = "DEF";
   export const nativeLanguageCode = "NAT";
@@ -143,45 +143,4 @@ export interface IregionData{
     return RegExp(`^${pattern}`).test(url);
   }
   
-  const eightHours = 28800000;
   
-  const langToRightUpperCases = (lang: string) => {
-    const splitLang = lang.split("-");
-    if (splitLang.length === 2) {
-      return splitLang[0].toLowerCase() + "-" + splitLang[1].toUpperCase();
-    }
-    const lowerCaseLang = lang.toLowerCase();
-    return lowerCaseLang;
-  };
-  
-  
-  
-  export const getCountryNamesLocale = async () => {
-    const lang = await getActiveLanguage();
-    if (lang === nativeLanguageCode)
-      return Promise.resolve({ lang: nativeLanguageCode });
-  
-    const countries = localStorage.getItem(countriesKey) as IfetchResponse<object> | undefined;
-    if (!countries || (countries[expireHeader] && countries[expireHeader] < Date.now())  ) {
-      return fetchWithCache(
-        countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        eightHours
-      );
-    }
-    return countries;
-  };
-  
-  export const getRegionNamesLocale = async (): Promise<IfetchResponse<{[key: string]:{[key:string]:string}, lang:never}> | {lang:string}> => {
-    const lang = await getActiveLanguage();
-    if (lang === nativeLanguageCode)
-      return Promise.resolve({ lang: nativeLanguageCode });
-  
-    const regions = localStorage.getItem(regionsKey) as IfetchResponse<{[key: string]:{[key:string]:string}, lang:never}> | undefined;
-    if (!regions || (regions[expireHeader] && regions[expireHeader] < Date.now())) {
-      return fetchWithCache(
-        regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        eightHours
-      );
-    }
-    return regions;
-  };

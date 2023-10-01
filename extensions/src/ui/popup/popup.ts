@@ -1,5 +1,4 @@
-import { availableLanguagesOsuWorld } from "@src/utils/fetchUtils";
-import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage } from "@src/utils/language";
+import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availableLanguagesOsuWorld } from "@src/utils/language";
 
 
 
