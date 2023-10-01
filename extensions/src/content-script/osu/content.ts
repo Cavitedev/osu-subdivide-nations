@@ -267,10 +267,8 @@ import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5, isNumber 
   const updateFlagsProfileCardOverlay = async (card: HTMLElement) => {
     const nameElement = card.querySelector(".user-card__username")!;
     const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
-    const regionAdded = await addFlagUser(card, userId);
-    if (!regionAdded) {
-      removeRegionalFlag(card);
-    }
+    await addFlagUser(card, userId, true, true);
+
   };
 
   const refreshOverlays = async () => {
