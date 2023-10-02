@@ -84,9 +84,7 @@ async function build() {
       watch: isWatch,
     });
 
-    if (!isWatch) {
-      zipFolder(`${outdir}/chromium`);
-    }
+    zipFolder(`${outdir}/chromium`);
   }
   if (isFirefox) {
     firefoxBuild = await runEsbuild({
@@ -94,9 +92,8 @@ async function build() {
       manifestPath: "src/manifest_firefox.json",
       watch: isWatch,
     });
-    if (!isWatch) {
-      zipFolder(`${outdir}/firefox`);
-    }
+    ç;
+    zipFolder(`${outdir}/firefox`);
   }
 
   console.log("Build success");
