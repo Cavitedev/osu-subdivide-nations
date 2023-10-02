@@ -77,7 +77,6 @@ export const addRegionalFlag = async (
     // Add
 
     let href = flagParent.getAttribute("href");
-    console.log(href);
     if (!href) {
       const hrefCandidate = flagParent.parentElement!.getAttribute("href");
       if (hrefCandidate && hrefCandidate.includes("performance")) {
@@ -152,6 +151,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = fa
     return;
   }
   if("error" in playerData){
+    console.log("no player data");
     return;
   }
 
