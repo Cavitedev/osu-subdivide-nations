@@ -28,6 +28,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = fa
     const countryName = await updateCountryNameFlag(item);
     return {countryName};
   }
+  return resultNames;
 };
 
 const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false): Promise<regionAndFlag> => {
