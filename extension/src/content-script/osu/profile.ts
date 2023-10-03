@@ -39,7 +39,7 @@ export const updateFlagsProfile = async () => {
       )!;
 
       const originalCountry = countryNameElement.textContent?.split(" / ")[0];
-      const replaceText = `${countryName ? countryName : originalCountry}${regionName? " / ":""}${regionName}`
+      const replaceText = `${countryName ? countryName : originalCountry}${regionName? ` / ${regionName}`:""}`
 
       countryNameElement.textContent = replaceText;
   
