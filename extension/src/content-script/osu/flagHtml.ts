@@ -19,7 +19,7 @@ export const setFlagClass = (flagClassParam:string) =>{
 
 
 export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
-  const resultNames = _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone);
+  const resultNames = await _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone);
   if(!resultNames){
     const countryName = await updateCountryNameFlag(item);
     return {countryName};
@@ -168,6 +168,7 @@ export const addRegionalFlag = async (
 
 
 const updateCountryNameFlag = async (item: HTMLElement) => {
+
 
   const flagElement = item.querySelector(`.${flagClass}`);
   if (!flagElement) return;
