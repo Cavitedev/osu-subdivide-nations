@@ -17,8 +17,12 @@ export const setFlagClass = (flagClassParam:string) =>{
     flagClass = flagClassParam;
 }
 
+type regionAndFlag = {
+  countryName?: string;
+  regionName?: string ;
+} | undefined;
 
-export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
+export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false): Promise<regionAndFlag> => {
   const resultNames = await _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone);
   if(!resultNames){
     const countryName = await updateCountryNameFlag(item);
@@ -26,7 +30,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = fa
   }
 };
 
-const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
+const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false): Promise<regionAndFlag> => {
   if (!item) return;
   const playerOsuWorld = await osuWorldUser(userId);
   if (playerOsuWorld.error) {
@@ -173,7 +177,7 @@ const updateCountryNameFlag = async (item: HTMLElement) => {
   const flagElement = item.querySelector(`.${flagClass}`);
   if (!flagElement) return;
 
-  const osuCountryName = flagElement.getAttribute("title");
+  const osuCountryName = flagElement.getAttribute("original-title") ?? flagElement.getAttribute("title");
   if (!osuCountryName) return;
 
   const countryCode = osuNameToCode(osuCountryName!);
@@ -181,7 +185,7 @@ const updateCountryNameFlag = async (item: HTMLElement) => {
 
   const countryName = await getCountryName(countryCode)
   if(!countryName) return;
-
+  flagElement.setAttribute("original-title", osuCountryName);
   flagElement.setAttribute("title", countryName);
   return countryName;
 

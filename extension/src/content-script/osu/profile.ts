@@ -46,7 +46,7 @@ export const updateFlagsProfile = async () => {
   const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
   if (!flagResult) return;
   const { countryName, regionName } = flagResult;
-
+  console.log(countryName, regionName);
   const countryNameElement = flagElement.querySelector(
     ".profile-info__flag-text"
   )!;
@@ -86,7 +86,6 @@ async function addScoreRank(functionId: number) {
   if(functionId !== runningId) return;
 
   const scoreRank = scoreRankInfo[0].rank;
-  console.log(scoreRankInfo);
   if (scoreRank != 0) {
     let scoreRankElement = document.createElement("div");
     scoreRankElement.classList.add("respektiveScore");
