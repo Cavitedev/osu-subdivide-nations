@@ -1,5 +1,5 @@
 
-import {  addFlagUser } from "@src/utils/flagHtml";
+import {  addFlagUser } from "@src/content-script/osu/flagHtml";
 import { isNumber } from "@src/utils/utils";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./ranking";

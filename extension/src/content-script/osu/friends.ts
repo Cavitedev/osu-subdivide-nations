@@ -1,4 +1,4 @@
-import { addFlagUser } from "@src/utils/flagHtml";
+import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
 
 // https://osu.ppy.sh/home/friends

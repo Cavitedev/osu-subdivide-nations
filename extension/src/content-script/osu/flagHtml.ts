@@ -1,7 +1,8 @@
-import { unknownUserError, fetchErrorToText } from "./fetchUtils";
-import { countryRegionsLocalData, getCountryAndRegionName } from "./flagsJsonUtils";
-import { osuWorldUser } from "./osuWorld";
-import { addOrReplaceQueryParam } from "./utils";
+import { unknownUserError, fetchErrorToText } from "../../utils/fetchUtils";
+import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
+import { osuWorldUser } from "../../utils/osuWorld";
+import { addOrReplaceQueryParam } from "../../utils/utils";
+import osuNameToCode from "./osuNameToCode";
 
 // Quotes needed for special characters
 const flagStyle = 'background-image: url("$flag"); background-size: auto 100%';
@@ -15,6 +16,37 @@ export let flagClass: string | null = null;
 export const setFlagClass = (flagClassParam:string) =>{
     flagClass = flagClassParam;
 }
+
+
+export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
+  const resultNames = _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone);
+  if(!resultNames){
+    const countryName = await updateCountryNameFlag(item);
+    return {countryName};
+  }
+};
+
+const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
+  if (!item) return;
+  const playerOsuWorld = await osuWorldUser(userId);
+  if (playerOsuWorld.error) {
+    if (playerOsuWorld.error.code === unknownUserError) {
+      return;
+    }
+    const textError = fetchErrorToText(playerOsuWorld);
+    console.log(textError);
+    removeRegionalFlag(item);
+    return;
+  }
+  const playerData = playerOsuWorld.data;
+  if(!playerData || "error" in playerData){
+    return;
+  }
+
+  const countryCode = playerData["country_id"];
+  const regionCode = playerData["region_id"];
+  return addRegionalFlag(item, countryCode, regionCode, addDiv, addMargin, addSuperParentClone);
+};
 
 export const removeRegionalFlag = (item: HTMLElement) => {
   if (!item) return;
@@ -32,6 +64,7 @@ export const addRegionalFlag = async (
   superParentClone = false
 ) => {
   if (!item) return;
+
 
   let countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
@@ -57,10 +90,7 @@ export const addRegionalFlag = async (
     flag
   ));
 
-  const {countryName, regionName} =await getCountryAndRegionName(countryCode, regionCode, regionData);
-  if(countryName){
-    flagElement.setAttribute("title", countryName);
-  }
+  const regionName =await getRegionName(countryCode, regionCode, regionData);
   if (regionData["name"]) {
     flagElementClone.setAttribute("title", regionName);
   }
@@ -131,30 +161,28 @@ export const addRegionalFlag = async (
 
 
   }
+
+  const countryName = await updateCountryNameFlag(item);;
   return {countryName, regionName};
 };
 
-export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false) => {
-  if (!item) return;
-  const playerOsuWorld = await osuWorldUser(userId);
-  if (playerOsuWorld.error) {
-    if (playerOsuWorld.error.code === unknownUserError) {
-      return;
-    }
-    const textError = fetchErrorToText(playerOsuWorld);
-    console.log(textError);
-    removeRegionalFlag(item);
-    return;
-  }
-  const playerData = playerOsuWorld.data;
-  if(!playerData){
-    return;
-  }
-  if("error" in playerData){
-    return;
-  }
 
-  const countryCode = playerData["country_id"];
-  const regionCode = playerData["region_id"];
-  return addRegionalFlag(item, countryCode, regionCode, addDiv, addMargin, addSuperParentClone);
-};
+const updateCountryNameFlag = async (item: HTMLElement) => {
+
+  const flagElement = item.querySelector(`.${flagClass}`);
+  if (!flagElement) return;
+
+  const osuCountryName = flagElement.getAttribute("title");
+  if (!osuCountryName) return;
+
+  const countryCode = osuNameToCode(osuCountryName!);
+  if(!countryCode) return;
+
+  const countryName = await getCountryName(countryCode)
+  if(!countryName) return;
+
+  flagElement.setAttribute("title", countryName);
+  return countryName;
+
+}
+

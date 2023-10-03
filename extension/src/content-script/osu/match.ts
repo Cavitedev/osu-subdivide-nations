@@ -1,7 +1,7 @@
 
 // https://osu.ppy.sh/community/matches/110067650
 
-import { addFlagUser } from "@src/utils/flagHtml";
+import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
 
 export const updateFlagsMatches = async () => {
