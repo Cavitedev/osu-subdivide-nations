@@ -4,7 +4,7 @@ import { osuWorldUser } from "./osuWorld";
 import { addOrReplaceQueryParam } from "./utils";
 
 // Quotes needed for special characters
-const flagStyle = 'background-image: url("$flag"); background-size: contain';
+const flagStyle = 'background-image: url("$flag"); background-size: auto 100%';
 const marginLeftStyle = "margin-left: 4px";
 const flagStyleWithMargin = flagStyle + ";" + marginLeftStyle;
 const noFlag =
