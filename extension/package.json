@@ -1,0 +1,41 @@
+{
+  "name": "osu_subdivide_nations",
+  "version": "1.0.0",
+  "description": "Updates national flags into regional flags in Osu! website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:chromium": "node build.mjs --chromium",
+    "build:firefox": "node build.mjs --firefox",
+    "watch": "node build.mjs --watch",
+    "watch:chromium": "node build.mjs --chromium --watch",
+    "watch:firefox": "node build.mjs --firefox --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cavitedev/osu-subdivide-nations.git"
+  },
+  "keywords": [
+    "osu",
+    "osu!",
+    "osuWorld",
+    "subdivide"
+  ],
+  "author": "Cavitedev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.246",
+    "@types/fs-extra": "^11.0.2",
+    "archiver": "^6.0.1",
+    "esbuild": "^0.19.4",
+    "esbuild-plugin-copy": "^2.1.1",
+    "eslint": "^8.50.0",
+    "fs-extra": "^11.1.1",
+    "jsonminify": "^0.4.2",
+    "typescript": "^5.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Cavitedev/osu-subdivide-nations/issues"
+  },
+  "homepage": "https://github.com/Cavitedev/osu-subdivide-nations#readme"
+}

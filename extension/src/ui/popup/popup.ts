@@ -1,21 +1,17 @@
-import {
-  availableLanguagesOsuWorld,
-  setLanguage,
-  getLanguage,
-  systemDefaultCode,
-  nativeLanguageCode,
-} from "../../tools.js";
+import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availableLanguagesOsuWorld } from "@src/utils/language";
+
+
 
 const updateTitle = () => {
   const title = chrome.runtime.getManifest().name;
   const version = " v" + chrome.runtime.getManifest().version;
 
-  document.querySelector("#header .title").innerHTML = title;
-  document.querySelector("#header .version").innerHTML = version;
+  document.querySelector("#header .title")!.innerHTML = title;
+  document.querySelector("#header .version")!.innerHTML = version;
 };
 
 const addSupportedLanguages = async () => {
-  const selectElement = document.querySelector("#region-languages-select");
+  const selectElement = document.querySelector("#region-languages-select") as HTMLSelectElement;
   selectElement.addEventListener("change", onLanguageUpdate);
 
   const optionTemplate = `<option value="$value">$name</option>`;
@@ -40,8 +36,8 @@ const addSupportedLanguages = async () => {
   selectElement.value = currentValue;
 };
 
-const onLanguageUpdate = async (event) => {
-  const value = event.target.value;
+const onLanguageUpdate = async (event: Event) => {
+  const value = (event!.target as HTMLSelectElement).value;
   await setLanguage(value);
 };
 

@@ -14,31 +14,19 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v4.0.0
       - name: Build build folders
-        run: |
-          cd extensions
-          chmod 777 build_dev.sh 
-          chmod 777 copy_folder.sh 
-          ./build_dev.sh
-          cd ..
-      - name: Zip Chrome
-        run: | 
-          cd extensions/chrome_dev
-          zip -r chrome.zip .
-          cd ..
-          cd ..
-          
-      - name: Zip Firefox
-        run: | 
-          cd extensions/firefox_dev
-          zip -r firefox.zip .
-          cd ..
-          cd ..
+        run: cd extensions
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.8.1
+      - name: Install dependencies
+        run: npm install
+      - name: Compile
+        run: npm run build
       - name: Browser Platform Publish
         uses: PlasmoHQ/bpp@v3
         with:
           keys: ${{ secrets.BPP_KEYS }}
-          chrome-file: "extensions/chrome_dev/chrome.zip"
-          edge-file: "extensions/chrome_dev/chrome.zip"
-          firefox-file: "extensions/firefox_dev/firefox.zip"
+          chrome-file: "build/chromium.zip"
+          edge-file: "build/chromium.zip"
+          firefox-file: "build/firefox.zip"
           verbose: true
       
