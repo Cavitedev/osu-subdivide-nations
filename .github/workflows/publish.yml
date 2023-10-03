@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4.0.0
-      - name: Build build folders
-        run: cd extensions
+      - name: Go extension folder
+        run: cd extension
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.8.1
       - name: Install dependencies
