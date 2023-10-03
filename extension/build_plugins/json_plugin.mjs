@@ -33,7 +33,8 @@ export default (options = {}) => ({
       console.log(args.path);
       return {
         contents: args.pluginData.json,
-        loader: args.path.includes("flags")?  "copy": "json",
+        loader: args.path.includes("flags")?  "copy" : "json",
+        resolveDir: path.dirname(args.path),
       };
     });
   },
