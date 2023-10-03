@@ -6,6 +6,7 @@
 chrome.zip
 chromium.zip
 firefox.zip
+extension.zip
 
 # build version
 extensions/chrome_dev/*

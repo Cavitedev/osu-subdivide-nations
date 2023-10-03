@@ -1,99 +1,123 @@
-
 // https://osu.ppy.sh/users/4871211/fruits
 
 import { addFlagUser } from "@src/utils/flagHtml";
 import { isNumber } from "@src/utils/utils";
-import { idFromProfileUrl } from "./content";
+import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
+import { fetchWithCache } from "@src/utils/fetchUtils";
+
+type TRespektiveScore = [{
+  rank: number;
+  user_id: number;
+  username: string;
+  score: number;
+  rank_highest: {
+    rank: number;
+    updated_at: string;
+  }
+}
+];
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
-    updateFlagsProfile();
-  });
-  
+  updateFlagsProfile();
+});
+
 export const updateFlagsProfile = async () => {
-    const linkItem = document.querySelector(
-        "body > div.osu-layout__section.osu-layout__section--full > div"
-      ) as HTMLElement;
-      profileMutationObserverInit.observe(linkItem, {
-        attributes: false,
-        childList: true,
-        subtree: false,
-      });
+  const functionId = nextFunctionId();
+  const linkItem = document.querySelector(
+    "body > div.osu-layout__section.osu-layout__section--full > div"
+  ) as HTMLElement;
+  profileMutationObserverInit.observe(linkItem, {
+    attributes: false,
+    childList: true,
+    subtree: false,
+  });
 
-    const url = location.href;
-    const playerId = idFromProfileUrl(url);
-    if (!isNumber(playerId)) {
-      return;
-    }
-  
-    const flagElement = document.querySelector(".profile-info");
-    if (!flagElement) {
-      return;
-    }
-    addScoreRank();
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
-    if(!flagResult) return;
-    const {countryName, regionName} = flagResult;
+  const url = location.href;
+  const playerId = idFromProfileUrl(url);
+  if (!isNumber(playerId)) {
+    return;
+  }
 
-      const countryNameElement = flagElement.querySelector(
-        ".profile-info__flag-text"
-      )!;
+  const flagElement = document.querySelector(".profile-info");
+  if (!flagElement) {
+    return;
+  }
+  addScoreRank(functionId);
+  const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
+  if (!flagResult) return;
+  const { countryName, regionName } = flagResult;
 
-      const originalCountry = countryNameElement.textContent?.split(" / ")[0];
-      const replaceText = `${countryName ? countryName : originalCountry}${regionName? ` / ${regionName}`:""}`
+  const countryNameElement = flagElement.querySelector(
+    ".profile-info__flag-text"
+  )!;
 
-      countryNameElement.textContent = replaceText;
-  
-  };
+  const originalCountry = countryNameElement.textContent?.split(" / ")[0];
+  const replaceText = `${countryName ? countryName : originalCountry}${
+    regionName ? ` / ${regionName}` : ""
+  }`;
 
-  let scoreRankVisible = false
-  async function addScoreRank() {
-    const ranksElement = document.querySelector(".profile-detail__values");
-    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
+  countryNameElement.textContent = replaceText;
+};
 
-    if (!modesElement) {
-        return;
-    }
 
-    if (ranksElement) {
-        const path = window.location.pathname.split("/")
-        const userId = path[2]
-        const mode = modesElement.dataset.mode
-        const scoreRankInfo = await (await fetch(`https://score.respektive.pw/u/${userId}?mode=${mode}`)).json();
-        const scoreRank = scoreRankInfo[0].rank
+const scoreDataExpire = 1800000; //30 minutes
 
-        if (scoreRank != 0) {
-            let scoreRankElement = document.createElement("div");
-            scoreRankElement.classList.add("value-display", "value-display--rank");
-            let scoreRankLabel = document.createElement("div");
-            scoreRankLabel.classList.add("value-display__label");
-            scoreRankLabel.innerHTML = "Score Ranking"
-            scoreRankElement.append(scoreRankLabel);
+async function addScoreRank(functionId: number) {
+  const ranksElement = document.querySelector(
+    ".profile-detail__values"
+  ) as HTMLElement;
+  const modesElement = document.querySelector(
+    ".game-mode-link--active"
+  ) as HTMLElement;
 
-            let scoreRankValue = document.createElement("div");
-            scoreRankValue.classList.add("value-display__value");
-            scoreRankElement.append(scoreRankValue);
-            let rank = document.createElement("div");
-            const tooltipTitle = highestRankTip(scoreRankInfo);
-            rank.setAttribute("data-html-title", tooltipTitle);
-            rank.setAttribute("title", "");
+  if (!modesElement) {
+    return;
+  }
+  const previousScoreSet = ranksElement.querySelector(".respektiveScore");
+  if (previousScoreSet) return;
 
-            rank.innerHTML = `#${scoreRank.toLocaleString()}`
-            scoreRankValue.append(rank);
+  const path = window.location.pathname.split("/");
+  const userId = path[2];
+  const mode = modesElement.dataset.mode;
+  const scoreRankInfo =  (
+    await fetchWithCache(`https://score.respektive.pw/u/${userId}?mode=${mode}`, scoreDataExpire)
+  ).data as TRespektiveScore;
 
-            if (!scoreRankVisible) {
-                ranksElement.append(scoreRankElement);
-                scoreRankVisible = true
-            }
-        }
-    }
+  if(functionId !== runningId) return;
+
+  const scoreRank = scoreRankInfo[0].rank;
+  console.log(scoreRankInfo);
+  if (scoreRank != 0) {
+    let scoreRankElement = document.createElement("div");
+    scoreRankElement.classList.add("respektiveScore");
+    scoreRankElement.classList.add("value-display", "value-display--rank");
+    let scoreRankLabel = document.createElement("div");
+    scoreRankLabel.classList.add("value-display__label");
+    scoreRankLabel.innerHTML = "Score Ranking";
+    scoreRankElement.append(scoreRankLabel);
+
+    let scoreRankValue = document.createElement("div");
+    scoreRankValue.classList.add("value-display__value");
+    scoreRankElement.append(scoreRankValue);
+    let rank = document.createElement("div");
+    const tooltipTitle = highestRankTip(scoreRankInfo);
+    rank.setAttribute("data-html-title", tooltipTitle);
+    rank.setAttribute("title", "");
+
+    rank.innerHTML = `#${scoreRank.toLocaleString()}`;
+    scoreRankValue.append(rank);
+
+    ranksElement.append(scoreRankElement);
+  }
 }
 
-const highestRankTip = (scoreRankInfo:any) => {
-  const rankHighest = scoreRankInfo[0]["rank_highest"]
+const highestRankTip = (scoreRankInfo: any) => {
+  const rankHighest = scoreRankInfo[0]["rank_highest"];
   const date = new Date(rankHighest["updated_at"]);
 
-
   // Get the formatted date string
-  const formattedDate = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium' }).format(date);
+  const formattedDate = new Intl.DateTimeFormat("en-GB", {
+    dateStyle: "medium",
+  }).format(date);
   return `<div>Highest rank: #${rankHighest.rank} on ${formattedDate}</div>`;
-}
+};
