@@ -13,20 +13,20 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4.0.0
-      - name: Go extension folder
-        run: cd extension
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.8.1
       - name: Install dependencies
+        working-directory: ./extension
         run: npm install
       - name: Compile
+        working-directory: ./extension
         run: npm run build
       - name: Browser Platform Publish
         uses: PlasmoHQ/bpp@v3
         with:
           keys: ${{ secrets.BPP_KEYS }}
-          chrome-file: "build/chromium.zip"
-          edge-file: "build/chromium.zip"
-          firefox-file: "build/firefox.zip"
+          chrome-file: "extension/build/chromium.zip"
+          edge-file: "extension/build/chromium.zip"
+          firefox-file: "extension/build/firefox.zip"
           verbose: true
       
