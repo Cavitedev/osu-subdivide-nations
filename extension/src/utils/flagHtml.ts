@@ -151,7 +151,6 @@ export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = fa
     return;
   }
   if("error" in playerData){
-    console.log("no player data");
     return;
   }
 
