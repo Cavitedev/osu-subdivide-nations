@@ -6,7 +6,6 @@ interface Ilanguages {
 }
 
 
-
 export const availableLanguagesOsuWorld = async (): Promise<Ilanguages> => {
   // 1 day cache
   return fetchWithCache(

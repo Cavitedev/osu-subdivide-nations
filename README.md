@@ -33,7 +33,7 @@ These are some examples of websites the extension is applied
 
 ## Inner Projects
 
-### extensions
+### extension
 
 Folder with all the extensions related to this project
 

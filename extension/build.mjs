@@ -83,7 +83,6 @@ async function build() {
       manifestPath: "src/manifest_chromium.json",
       watch: isWatch,
     });
-
     if (!isWatch) {
       zipFolder(`${outdir}/chromium`);
     }
