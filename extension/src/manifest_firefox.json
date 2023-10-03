@@ -1,6 +1,6 @@
 {
     "name": "osu! subdivide nations",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
     "browser_specific_settings": {
         "gecko": {
