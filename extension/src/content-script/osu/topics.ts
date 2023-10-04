@@ -1,6 +1,6 @@
 // https://osu.ppy.sh/community/forums/topics/1686524?n=3
 
-import { addFlagUser } from "@src/utils/flagHtml";
+import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { nextFunctionId, runningId } from "./content";
 
 export const updateFlagsTopics = async () => {

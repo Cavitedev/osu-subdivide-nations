@@ -18,5 +18,5 @@ darkReader/
 node_modules/
 build/
 
-chrome-win64/
-osu_ranking.html
+
+dataFetcher/translations/out/

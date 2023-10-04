@@ -1,4 +1,4 @@
-import { addFlagUser } from "@src/utils/flagHtml";
+import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { nextFunctionId, runningId } from "./content";
 
 // https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628

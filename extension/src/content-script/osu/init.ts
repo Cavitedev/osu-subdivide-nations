@@ -1,5 +1,5 @@
 import { cleanCacheConditionally } from "@src/utils/cache";
-import { setFlagClass } from "@src/utils/flagHtml";
+import { setFlagClass } from "@src/content-script/osu/flagHtml";
 import { refreshOverlays, exec } from "./content";
 import { updateRegionsDropdown } from "./ranking";
 

@@ -28,11 +28,13 @@ export default (options = {}) => ({
       }
     });
 
-    build.onLoad({ filter: /.*/, namespace: "json-plugin" }, async (args) => {
+    build.onLoad({ filter: /\.json$/, namespace: "json-plugin" }, async (args) => {
       // Emit the minified JSON content as a module
+      console.log(args.path);
       return {
         contents: args.pluginData.json,
-        loader: "copy",
+        loader: args.path.includes("flags")?  "copy" : "json",
+        resolveDir: path.dirname(args.path),
       };
     });
   },
