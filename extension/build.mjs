@@ -90,7 +90,7 @@ async function build() {
   if (isFirefox) {
     firefoxBuild = await runEsbuild({
       buildPath: `./${outdir}/firefox`,
-      manifestPath: "src/manifest_firefox.json",
+      manifestPath: "src/manifest_firefox_v2.json",
       watch: isWatch,
     });
     if (!isWatch) {
