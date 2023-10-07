@@ -112,24 +112,55 @@ html {
   align-items: center;
 }
 
-.cache-message {
-  color: #8c66ff;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .div-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Define the animation */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Apply the animation to the text */
+.animated-text {
+  animation: fadeInText 5s ease-in-out; 
+}
+
+.hidden {
+  display: none;
+}
+
+#cache-message {
+  color: #8c66ff;
+  font-size: 1rem;
+  height: max-content;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#cache-message-div{
+  height: 20px
+}
 /*Button*/
-
-
 
 .btn {
   position: relative;
@@ -144,7 +175,6 @@ html {
   color: #ecf0f1;
   transition: background-color 0.3s;
 }
-
 
 .btn:hover {
   background-color: #5639ac;

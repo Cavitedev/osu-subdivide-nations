@@ -1,4 +1,4 @@
-import { cleanInvalidatedCache } from '@src/utils/cache';
+import { cleanCache, cleanInvalidatedCache } from '@src/utils/cache';
 import { lastAvailableLanguages } from './../../utils/language';
 import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availableLanguagesOsuWorld, Ilanguages } from "@src/utils/language";
 
@@ -59,10 +59,25 @@ const onLanguageUpdate = async (event: Event) => {
   await setLanguage(value);
 };
 
+const addCacheButtonBehavior = () => {
+  const button = document.querySelector("#cache-button") as HTMLButtonElement;
+  const cacheMessage = document.querySelector("#cache-message") as HTMLDivElement;
+
+  button.addEventListener("click", async (e) => {
+    await cleanCache();
+    cacheMessage.classList.remove("hidden");
+    cacheMessage.classList.add("animated-text");
+    setTimeout(() => {
+      cacheMessage.classList.add("hidden");
+    }, 5000);
+  });
+}
+
 const init = () => {
   console.log("pop up init");
   updateTitle();
   addSupportedLanguages();
+  addCacheButtonBehavior();
   cleanInvalidatedCache();
 };
 
