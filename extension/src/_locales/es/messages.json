@@ -1,4 +1,7 @@
 {
+    "created_by": {
+        "message": "desarrollado por"
+    },
     "clean_cache": {
         "message": "Limpiar Cache"
     },

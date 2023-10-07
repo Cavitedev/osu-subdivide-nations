@@ -5,11 +5,14 @@ import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availa
 
 
 const updateTitle = () => {
+  (document.querySelector("#created-by") as HTMLElement)!.innerText = chrome.i18n.getMessage("created_by");
+
   const title = chrome.runtime.getManifest().name;
   const version = " v" + chrome.runtime.getManifest().version;
 
   document.querySelector("#header .title")!.innerHTML = title;
   document.querySelector("#header .version")!.innerHTML = version;
+  
 };
 
 const addSupportedLanguages = async () => {

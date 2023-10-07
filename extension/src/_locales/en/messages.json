@@ -1,4 +1,8 @@
 {
+    "created_by": {
+        "message": "created by",
+        "description": "created by Cavitedev. After this goes the name of the developer who created/developed this"
+    },
     "clean_cache": {
         "message": "Clean Cache",
         "description": "Button name that cleans the cache (local storage with fetch data)"
@@ -7,7 +11,7 @@
         "message": "Cache has been cleaned",
         "description": "Message displayed when the cache is cleaned"
     },
-    "regions_language":{
+    "regions_language": {
         "message": "Regions Language:",
         "description": "Label for changing the language displayed for the country and region names. It doesn't have any effect in other UI elements."
     }
