@@ -18,6 +18,7 @@ export interface IFetchError {
     };
     cache?: boolean;
     expireDate?: number;
+    preserve?: boolean;
   }
 
 
@@ -26,7 +27,7 @@ const genExpireDate = (expireTime:number) => Date.now() + expireTime;
 
 let pendingRequests : {[key:string]: Promise<object>} = {};
 
-const fetchAndSaveInCache = async (url:string, expireTime:number): Promise<IfetchResponse<object>> => {
+const fetchAndSaveInCache = async (url:string, expireTime:number, preserve = false): Promise<IfetchResponse<object>> => {
     return fetch(url)
       .then(async (res) => {
         const jsonResponse = await res.json();
@@ -40,6 +41,9 @@ const fetchAndSaveInCache = async (url:string, expireTime:number): Promise<Ifetc
         let cachedResponse: IfetchResponse<object> = {};
         cachedResponse["data"] = jsonResponse;
         cachedResponse[expireHeader] = genExpireDate(expireTime);
+        if(preserve){
+          cachedResponse["preserve"] = true;
+        }
         saveInCache(url, cachedResponse);
         return cachedResponse;
       })
@@ -48,7 +52,14 @@ const fetchAndSaveInCache = async (url:string, expireTime:number): Promise<Ifetc
       });
   }
   
-  export const fetchWithCache = async (url:string, expireTime:number): Promise<IfetchResponse<object>> => {
+  /**
+   * 
+   * @param url Url to fetch
+   * @param expireTime Time in milliseconds to expire the cache
+   * @param preserve Whether the cache should be cleaned or not
+   * @returns 
+   */
+  export const fetchWithCache = async (url:string, expireTime:number, preserve:boolean = false): Promise<IfetchResponse<object>> => {
   
     if (pendingRequests[url] !== undefined) {
       return pendingRequests[url];
@@ -58,12 +69,12 @@ const fetchAndSaveInCache = async (url:string, expireTime:number): Promise<Ifetc
     if (cachedItem) {
       const expireDate = cachedItem[expireHeader]!;
       if (expireDate < Date.now()) {
-        return fetchAndSaveInCache(url, expireTime);
+        return fetchAndSaveInCache(url, expireTime, preserve);
       }
       cachedItem["cache"] = true;
       return cachedItem;
     } else {
-      const fetchPromise = fetchAndSaveInCache(url, expireTime);
+      const fetchPromise = fetchAndSaveInCache(url, expireTime, preserve);
       pendingRequests[url] = fetchPromise;
       const result = await fetchPromise;
       delete pendingRequests[url];

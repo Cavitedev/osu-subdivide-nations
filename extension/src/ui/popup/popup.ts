@@ -60,6 +60,7 @@ const onLanguageUpdate = async (event: Event) => {
 };
 
 const init = () => {
+  console.log("pop up init");
   updateTitle();
   addSupportedLanguages();
   cleanInvalidatedCache();

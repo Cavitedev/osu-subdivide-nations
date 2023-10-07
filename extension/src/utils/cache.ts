@@ -22,9 +22,12 @@ export const cleanInvalidatedCacheConditionally = async () => {
 }
 
 export const cleanInvalidatedCache = async () => {
+  console.log("clean cache");
      chrome.storage.local.get((items) => {
       const now = Date.now();
-      const cleanKeys = Object.entries(items).filter(([key, value]) => value.expireDate < now).map(([key,value]) => key)
+      const itemEntries = Object.entries(items);
+      if(itemEntries.length === 0) return;
+      const cleanKeys = itemEntries.filter(([key, value]) => value.expireDate < now && !value?.preserve).map(([key,value]) => key)
       chrome.storage.local.remove(cleanKeys);
     })
 
