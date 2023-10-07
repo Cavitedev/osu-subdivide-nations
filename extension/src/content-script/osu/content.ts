@@ -7,6 +7,7 @@ import { updateFlagsFriends } from "./friends";
 import { updateFlagsMatches } from "./match";
 import { updateFlagsProfile } from "./profile";
 import { updateFlagsTopics } from "./topics";
+import { updateLanguageToOsuLanguage } from "./osuLanguage";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -170,6 +171,7 @@ export const exec = async () => {
   reloadMutationObserver.observe(document.querySelector("title")!, {
     childList: true,
   });
+  updateLanguageToOsuLanguage();
   //Invalidate previous executions
   nextFunctionId();
 
@@ -206,4 +208,8 @@ export const exec = async () => {
 (async () => {
   await exec();
 })();
+
+function updateContentLanguageToOsu() {
+  throw new Error("Function not implemented.");
+}
 

@@ -5,11 +5,7 @@ import { loadLanguage } from '@src/utils/languagesChrome';
 
 const nameToCode = jsonNameToCode as Ilanguages;
 
-export const watchOsuLanguage = () => {
-    updateContentLanguageToOsu(); 
-}
-
-const updateContentLanguageToOsu = async () =>{
+export const updateLanguageToOsuLanguage = async () =>{
     const buttonWithLanguage = document.querySelector('[data-click-menu-target="nav-mobile-locale"]');
     const language = buttonWithLanguage?.textContent?.trim();
     if(language){

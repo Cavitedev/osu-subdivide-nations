@@ -2,7 +2,6 @@ import { cleanInvalidatedCacheConditionally } from "@src/utils/cache";
 import { setFlagClass } from "@src/content-script/osu/flagHtml";
 import { refreshOverlays, exec } from "./content";
 import { updateRegionsDropdown } from "./ranking";
-import { watchOsuLanguage } from "./osuLanguage";
 
 
 export const initConfigure = (flagClass: string)  => {
@@ -10,7 +9,6 @@ export const initConfigure = (flagClass: string)  => {
     
     setFlagClass(flagClass);
     
-    watchOsuLanguage();
 chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
 
 
