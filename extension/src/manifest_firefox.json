@@ -23,7 +23,8 @@
                 "https://osu.ppy.sh/*"
             ],
             "js": [
-                "content-script/osu/content.js"
+                "content-script/osu/content.js",
+                "_locales/**/*"
             ]
         }
     ],

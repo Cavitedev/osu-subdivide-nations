@@ -7,10 +7,13 @@ import { updateFlagsFriends } from "./friends";
 import { updateFlagsMatches } from "./match";
 import { updateFlagsProfile } from "./profile";
 import { updateFlagsTopics } from "./topics";
+import { loadLanguage } from "@src/utils/languagesChrome";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
 export let runningId = 0;
+
+loadLanguage("ef");
 
 export const nextFunctionId = () => {
   const functionId = runningId + 1;
