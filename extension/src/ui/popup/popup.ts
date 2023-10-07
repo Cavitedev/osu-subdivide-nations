@@ -1,3 +1,4 @@
+import { cleanInvalidatedCache } from '@src/utils/cache';
 import { lastAvailableLanguages } from './../../utils/language';
 import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availableLanguagesOsuWorld, Ilanguages } from "@src/utils/language";
 
@@ -61,6 +62,7 @@ const onLanguageUpdate = async (event: Event) => {
 const init = () => {
   updateTitle();
   addSupportedLanguages();
+  cleanInvalidatedCache();
 };
 
 init();

@@ -1,6 +1,5 @@
 
 import {  addFlagUser } from "@src/content-script/osu/flagHtml";
-import { isNumber } from "@src/utils/utils";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./ranking";
 import { updateFlagsBeatmapsets } from "./beatmapset";
@@ -11,7 +10,6 @@ import { updateFlagsTopics } from "./topics";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
-
 export let runningId = 0;
 
 export const nextFunctionId = () => {

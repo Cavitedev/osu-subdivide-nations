@@ -11,12 +11,21 @@ export const saveInCache = async (url:string, data:object) => {
     }
   }
   
-const lastCacheCleanKey = "lastCacheClean";
 
-export const cleanCacheConditionally = async () => {
-    const lastClean = await loadFromCache(lastCacheCleanKey);
-    if(!lastClean || lastClean.expire < Date.now()){
-        await chrome.storage.local.clear();
-        await saveInCache(lastCacheCleanKey, {expire: Date.now() + 604800000}); // 7 days
+export const cleanInvalidatedCacheConditionally = async () => {
+
+    const bytesThresholdClean = 4000000; // 4MB
+    const storage = await chrome.storage.local.getBytesInUse();
+    if(storage > bytesThresholdClean){
+        await cleanInvalidatedCache();
     }
+}
+
+export const cleanInvalidatedCache = async () => {
+     chrome.storage.local.get((items) => {
+      const now = Date.now();
+      const cleanKeys = Object.entries(items).filter(([key, value]) => value.expireDate < now).map(([key,value]) => key)
+      chrome.storage.local.remove(cleanKeys);
+    })
+
 }
