@@ -46,7 +46,6 @@ export const updateFlagsProfile = async () => {
   const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
   if (!flagResult) return;
   const { countryName, regionName } = flagResult;
-  console.log(countryName, regionName);
   const countryNameElement = flagElement.querySelector(
     ".profile-info__flag-text"
   )!;
