@@ -1,4 +1,5 @@
-import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availableLanguagesOsuWorld } from "@src/utils/language";
+import { lastAvailableLanguages } from './../../utils/language';
+import { systemDefaultCode, nativeLanguageCode, getLanguage, setLanguage, availableLanguagesOsuWorld, Ilanguages } from "@src/utils/language";
 
 
 
@@ -14,6 +15,24 @@ const addSupportedLanguages = async () => {
   const selectElement = document.querySelector("#region-languages-select") as HTMLSelectElement;
   selectElement.addEventListener("change", onLanguageUpdate);
 
+  getLanguage().then(lang => {
+    selectElement.value = lang;
+  })
+
+  let cachedLanguages = await lastAvailableLanguages();
+  if(cachedLanguages) {
+      fillSelectLanguages(cachedLanguages.data!, selectElement);
+      if(!cachedLanguages.expired) {
+        return;
+      }
+  } 
+
+  const osuWorldLanguages = await availableLanguagesOsuWorld();
+  fillSelectLanguages(osuWorldLanguages, selectElement);
+};
+
+
+const fillSelectLanguages = (osuWorldLanguages: Ilanguages,  selectElement: HTMLSelectElement) => {
   const optionTemplate = `<option value="$value">$name</option>`;
   let selectsHtml = "";
   selectsHtml += optionTemplate
@@ -23,18 +42,16 @@ const addSupportedLanguages = async () => {
     .replace("$value", nativeLanguageCode)
     .replace("$name", "Native Language");
 
-  const osuWorldLanguages = await availableLanguagesOsuWorld();
+
   for (const [key, value] of Object.entries(osuWorldLanguages)) {
     selectsHtml += optionTemplate
       .replace("$value", key)
       .replace("$name", value);
   }
   selectElement.innerHTML = selectsHtml;
+  return selectsHtml;
+}
 
-  let currentValue = await getLanguage();
-
-  selectElement.value = currentValue;
-};
 
 const onLanguageUpdate = async (event: Event) => {
   const value = (event!.target as HTMLSelectElement).value;
@@ -47,3 +64,4 @@ const init = () => {
 };
 
 init();
+

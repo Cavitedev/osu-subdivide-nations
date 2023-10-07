@@ -1,15 +1,28 @@
-import { fetchWithCache } from "./fetchUtils";
+import { loadFromCache } from "./cache";
+import { IfetchResponse, fetchWithCache } from "./fetchUtils";
 
 
-interface Ilanguages {
+export interface Ilanguages {
   [key:string]: string
 }
 
+const languagesUrl = "https://osuworld.octo.moe/locales/languages.json";
+
+export const lastAvailableLanguages = async () => {
+  const cacheLanguages = await loadFromCache(languagesUrl) as IfetchResponse<Ilanguages> | undefined;
+  if(cacheLanguages) {
+    return {
+      data: cacheLanguages.data,
+      expired: cacheLanguages.expireDate! < Date.now()
+    };
+  }
+  return null;
+}
 
 export const availableLanguagesOsuWorld = async (): Promise<Ilanguages> => {
   // 1 day cache
   return fetchWithCache(
-    "https://osuworld.octo.moe/locales/languages.json",
+    "languagesUrl",
     86400000
   ).then((res) => {
     const data = res["data"] as Ilanguages;
