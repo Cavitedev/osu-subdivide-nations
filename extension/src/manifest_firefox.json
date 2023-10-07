@@ -13,7 +13,8 @@
         "storage"
     ],  
     "host_permissions": [
-        "https://osuworld.octo.moe/api/*"
+        "https://osuworld.octo.moe/api/*",
+        "https://score.respektive.pw/*"
     ],
     "content_scripts": [
         {
