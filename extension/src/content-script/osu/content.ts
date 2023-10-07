@@ -208,8 +208,3 @@ export const exec = async () => {
 (async () => {
   await exec();
 })();
-
-function updateContentLanguageToOsu() {
-  throw new Error("Function not implemented.");
-}
-
