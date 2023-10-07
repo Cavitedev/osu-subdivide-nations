@@ -65,7 +65,6 @@ html {
   gap: 10px; /* Add some spacing between label and select */
   display: flex;
   align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
 }
 
 .language-option-label {
@@ -107,15 +106,13 @@ html {
   background: #2e293d;
 }
 
-/*Cache*/
-.clean-cache {
-  align-items: center;
-}
 
-.div-flex {
+
+.cache-div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 10px 4px 10px;
 }
 
 /* Define the animation */
@@ -152,9 +149,9 @@ html {
   font-size: 1rem;
   height: max-content;
   font-weight: 500;
-  margin: 0;
+  margin: 0 0 0 8px;
   padding: 0;
-  text-align: center;
+  flex: 1 1 auto;
 }
 
 #cache-message-div{
@@ -167,7 +164,6 @@ html {
   display: block;
   overflow: hidden;
   border-width: 0;
-  margin-bottom: 8px;
   outline: none;
   border-radius: 8px;
   box-shadow: rgba(34, 27, 35, 0.1) 0 1px 0;
