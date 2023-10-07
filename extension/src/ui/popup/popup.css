@@ -106,8 +106,6 @@ html {
   background: #2e293d;
 }
 
-
-
 .cache-div {
   display: flex;
   justify-content: flex-start;
@@ -122,9 +120,9 @@ html {
     opacity: 0;
     transform: translateY(10px);
   }
-  10%{
+  10% {
     opacity: 0.8;
-    }
+  }
   20% {
     opacity: 1;
     transform: translateY(0);
@@ -141,12 +139,10 @@ html {
 
 /* Apply the animation to the text */
 .animated-text {
-  animation: fadeInText 5s ease-in-out; 
-}
-
-.hidden {
+  animation: fadeInText 5s ease-in-out;
   display: none;
 }
+
 
 #cache-message {
   color: #8c66ff;
@@ -157,7 +153,6 @@ html {
   padding: 0;
   flex: 1 1 auto;
 }
-
 
 /*Button*/
 

@@ -67,11 +67,11 @@ const addCacheButtonBehavior = () => {
     await cleanCache();
     if(!cacheMessage.classList.contains("hidden")) {return;}
 
-    cacheMessage.classList.remove("hidden");
+    cacheMessage.style.display = "block";
     cacheMessage.classList.add("animated-text");
     setTimeout(() => {
-      cacheMessage.classList.add("hidden");
-    }, 5000);
+      cacheMessage.style.display = "none";
+    }, 4950);
   });
 }
 
