@@ -44,10 +44,10 @@ const fillSelectLanguages = (osuWorldLanguages: Ilanguages,  selectElement: HTML
   let selectsHtml = "";
   selectsHtml += optionTemplate
     .replace("$value", systemDefaultCode)
-    .replace("$name", "System Default");
+    .replace("$name", chrome.i18n.getMessage("system_default"));
   selectsHtml += optionTemplate
     .replace("$value", nativeLanguageCode)
-    .replace("$name", "Native Language");
+    .replace("$name", chrome.i18n.getMessage("native_language"));
 
 
   for (const [key, value] of Object.entries(osuWorldLanguages)) {

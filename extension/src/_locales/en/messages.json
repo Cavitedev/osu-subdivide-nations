@@ -3,6 +3,14 @@
         "message": "created by",
         "description": "created by Cavitedev. After this goes the name of the developer who created/developed this"
     },
+    "system_default":{
+        "message": "System Default",
+        "description": "Language used in the browser"
+    },
+    "native_language":{
+        "message": "Native Language",
+        "description": "Local language used for countries and regions"
+    },
     "clean_cache": {
         "message": "Clean Cache",
         "description": "Button name that cleans the cache (local storage with fetch data)"
