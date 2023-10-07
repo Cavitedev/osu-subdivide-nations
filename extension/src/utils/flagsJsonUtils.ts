@@ -112,7 +112,7 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
   };
   
   
-  const eightHours = 28800000;
+  const languagesCacheTime = 216000000 // 60 hours;
   
   export const getCountryNamesLocale = async (): Promise<IfetchResponse<Icountries> | {lang:string}> => {
     const lang = await getActiveLanguage();
@@ -122,7 +122,7 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
 
     return fetchWithCache(
         countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        eightHours
+        languagesCacheTime
     ) as Promise<IfetchResponse<Icountries>>;
 
   };
@@ -134,6 +134,6 @@ import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
 
       return fetchWithCache(
         regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        eightHours
+        languagesCacheTime
       ) as Promise<IfetchResponse<Iregions>>;
   };
