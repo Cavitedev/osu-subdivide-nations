@@ -13,6 +13,9 @@ const updateTitle = () => {
 };
 
 const addSupportedLanguages = async () => {
+  const languagesLabel = document.querySelector("#language-option-label") as HTMLDivElement;
+  languagesLabel.innerText = chrome.i18n.getMessage("regions_language");
+
   const selectElement = document.querySelector("#region-languages-select") as HTMLSelectElement;
   selectElement.addEventListener("change", onLanguageUpdate);
 
@@ -61,10 +64,10 @@ const onLanguageUpdate = async (event: Event) => {
 
 const addCacheButtonBehavior = () => {
   const button = document.querySelector("#cache-button") as HTMLButtonElement;
-
   button.querySelector("span")!.textContent = chrome.i18n.getMessage("clean_cache");
 
   const cacheMessage = document.querySelector("#cache-message") as HTMLDivElement;
+  cacheMessage.textContent = chrome.i18n.getMessage("cache_cleaned");
 
   button.addEventListener("click", async (e) => {
     await cleanCache();

@@ -2,5 +2,13 @@
     "clean_cache": {
         "message": "Clean Cache",
         "description": "Button name that cleans the cache (local storage with fetch data)"
+    },
+    "cache_cleaned": {
+        "message": "Cache has been cleaned",
+        "description": "Message displayed when the cache is cleaned"
+    },
+    "regions_language":{
+        "message": "Regions Language:",
+        "description": "Label for changing the language displayed for the country and region names. It doesn't have any effect in other UI elements."
     }
 }

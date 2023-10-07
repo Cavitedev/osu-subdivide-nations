@@ -1,5 +1,11 @@
 {
     "clean_cache": {
         "message": "Limpiar Cache"
+    },
+    "cache_cleaned": {
+        "message": "Se ha limpiado la cache"
+    },
+    "regions_language":{
+        "message": "Idioma de las regiones:"
     }
 }

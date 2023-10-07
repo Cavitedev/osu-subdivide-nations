@@ -67,7 +67,7 @@ html {
   align-items: center; /* Center items vertically */
 }
 
-.language-option-label {
+#language-option-label {
   display: block;
   margin: 0; /* Remove any default margin */
 }
