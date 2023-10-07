@@ -49,7 +49,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
   };
 
   return watch
-    ? esbuild.context(esbuildOptions)
+    ? (await esbuild.context(esbuildOptions)).watch()
     : esbuild.build(esbuildOptions);
 }
 

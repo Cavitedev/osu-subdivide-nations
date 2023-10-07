@@ -1,5 +1,6 @@
 body {
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", Arial, Helvetica,
+    sans-serif;
   font-size: 16px;
   line-height: 1.25;
   color: #fff;
@@ -104,4 +105,82 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #2e293d;
+}
+
+/*Cache*/
+.clean-cache {
+  align-items: center;
+}
+
+.cache-message {
+  color: #8c66ff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.div-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Button*/
+
+
+
+.btn {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-width: 0;
+  margin-bottom: 8px;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: rgba(34, 27, 35, 0.1) 0 1px 0;
+  background-color: #704ae0;
+  color: #ecf0f1;
+  transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+  background-color: #5639ac;
+  outline: none;
+}
+.btn > * {
+  position: relative;
+}
+.btn span {
+  display: block;
+  font-size: 16px;
+  padding: 4px 8px;
+  font-weight: 400;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: rgb(222 205 233 / 8%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+.btn:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
 }
