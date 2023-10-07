@@ -65,6 +65,8 @@ const addCacheButtonBehavior = () => {
 
   button.addEventListener("click", async (e) => {
     await cleanCache();
+    if(!cacheMessage.classList.contains("hidden")) {return;}
+
     cacheMessage.classList.remove("hidden");
     cacheMessage.classList.add("animated-text");
     setTimeout(() => {
