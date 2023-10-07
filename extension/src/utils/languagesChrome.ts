@@ -4,7 +4,12 @@ type TLanguagesData = {
         description?: string;
     };
 }
+let secondaryLanguagePromise: Promise<TLanguagesData> | null = null;
 let secondaryLoadedLanguage: TLanguagesData | null | undefined = null;
+
+export const waitLastLanguageIsLoaded = async () => {
+    await secondaryLanguagePromise;
+}
 
 export const getLocMsg = (key:string, substitutions: string | string[] | undefined) => {
     if(secondaryLoadedLanguage && secondaryLoadedLanguage[key]) {
@@ -17,8 +22,8 @@ export const getLocMsg = (key:string, substitutions: string | string[] | undefin
 export const loadLanguage = async (lang:string) => {
     console.log("lng");
     const languageFile = chrome.runtime.getURL(`_locales/${lang}/messages.json`);
-
-    secondaryLoadedLanguage = (await fetch(languageFile).then(res => res.json()).catch(e => {return null})) as TLanguagesData | undefined;
+    secondaryLanguagePromise = fetch(languageFile).then(res => res.json()).catch(e => {return null})
+    secondaryLoadedLanguage = await secondaryLanguagePromise;
 }
 
 export const unloadLanguage = () => {
