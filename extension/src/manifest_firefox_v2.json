@@ -14,7 +14,7 @@
         "https://osuworld.octo.moe/api/*",
         "https://score.respektive.pw/*"
     ],  
-
+    "default_locale": "en",
     "content_scripts": [
         {
             "matches": [

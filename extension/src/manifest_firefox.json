@@ -12,6 +12,7 @@
         "tabs",
         "storage"
     ],  
+    "default_locale": "en",
     "host_permissions": [
         "https://osuworld.octo.moe/api/*",
         "https://score.respektive.pw/*"

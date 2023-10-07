@@ -1,0 +1,6 @@
+{
+    "clean_cache": {
+        "message": "Clean Cache",
+        "description": "Button name that cleans the cache (local storage with fetch data)"
+    }
+}

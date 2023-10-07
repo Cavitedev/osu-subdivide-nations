@@ -61,6 +61,9 @@ const onLanguageUpdate = async (event: Event) => {
 
 const addCacheButtonBehavior = () => {
   const button = document.querySelector("#cache-button") as HTMLButtonElement;
+
+  button.querySelector("span")!.textContent = chrome.i18n.getMessage("clean_cache");
+
   const cacheMessage = document.querySelector("#cache-message") as HTMLDivElement;
 
   button.addEventListener("click", async (e) => {

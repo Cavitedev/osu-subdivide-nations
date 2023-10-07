@@ -21,13 +21,18 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     bundle: true,
     outdir: buildPath,
     minify: !watch,
-    // loader: { ".json": "copy" },
     plugins: [
       json_plugin(),
       copy({
         assets: {
           from: ["./src/assets/**"],
           to: ["./assets"],
+        },
+      }),
+      copy({
+        assets: {
+          from: ["./src/_locales/**"],
+          to: ["./_locales"],
         },
       }),
       copy({
