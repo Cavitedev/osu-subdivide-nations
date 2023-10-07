@@ -15,6 +15,7 @@ export interface IFetchError {
       code: string;
       url?: string;
       userId?: string;
+      mode?: string;
     };
     cache?: boolean;
     expireDate?: number;
@@ -87,6 +88,7 @@ const fetchAndSaveInCache = async (url:string, expireTime:number, preserve = fal
   const cannotFetchError = "cannot_fetch";
   const noData = "no_data";
   export const noId = "no_id";
+  export const noMode = "no_mode";
   
   export const fetchErrorToText = (response: IfetchResponse<object> | undefined) => {
     if (!response?.error?.code) return "";
@@ -100,6 +102,8 @@ const fetchAndSaveInCache = async (url:string, expireTime:number, preserve = fal
         return "No data for " + error.url;
       case noId:
         return "No player found with ID " + error.userId;
+      case noMode:
+        return "No mode found when paring url " + error.mode; 
       default:
         return "Unknown error";
     }

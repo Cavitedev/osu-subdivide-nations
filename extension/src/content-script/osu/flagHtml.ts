@@ -39,7 +39,7 @@ const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, a
       return;
     }
     const textError = fetchErrorToText(playerOsuWorld);
-    console.log(textError);
+    console.error(textError);
     removeRegionalFlag(item);
     return;
   }

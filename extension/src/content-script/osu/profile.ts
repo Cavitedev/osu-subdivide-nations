@@ -3,19 +3,9 @@
 import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { isNumber } from "@src/utils/utils";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
-import { fetchWithCache } from "@src/utils/fetchUtils";
+import { osuScoreRanking } from "@src/utils/respektive";
 
-type TRespektiveScore = [{
-  rank: number;
-  user_id: number;
-  username: string;
-  score: number;
-  rank_highest: {
-    rank: number;
-    updated_at: string;
-  }
-}
-];
+
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
   updateFlagsProfile();
@@ -59,8 +49,6 @@ export const updateFlagsProfile = async () => {
 };
 
 
-const scoreDataExpire = 1800000; //30 minutes
-
 async function addScoreRank(functionId: number) {
   const ranksElement = document.querySelector(
     ".profile-detail__values"
@@ -78,9 +66,8 @@ async function addScoreRank(functionId: number) {
   const path = window.location.pathname.split("/");
   const userId = path[2];
   const mode = modesElement.dataset.mode;
-  const scoreRankInfo =  (
-    await fetchWithCache(`https://score.respektive.pw/u/${userId}?mode=${mode}`, scoreDataExpire)
-  ).data as TRespektiveScore;
+  const scoreRankInfo = await osuScoreRanking(userId, mode);
+  if(!scoreRankInfo) return;
 
   if(functionId !== runningId) return;
 
