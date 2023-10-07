@@ -20,5 +20,9 @@
     },
     "score_ranking":{
         "message": "Clasificación por puntuación"
+    },
+
+    "highest_rank_profile":{
+        "message": "Clasificación más alta: #{{rankHighest.rank}} el {{formattedDate}}"
     }
 }

@@ -26,5 +26,9 @@
     "score_ranking":{
         "message": "Score Ranking",
         "description": "Label for the score ranking in osu!"
+    },
+    "highest_rank_profile":{
+        "message": "Highest rank: #{{rankHighest.rank}} on {{formattedDate}}",
+        "description": "Tooltip on profile score. {{rankHighest.rank}} is the rank number and {{formattedDate}} is the date when the score was achieved. They should be preserved in translations as they are updated"
     }
 }

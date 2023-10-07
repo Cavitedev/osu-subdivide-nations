@@ -4,6 +4,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { isNumber } from "@src/utils/utils";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
 import { osuScoreRanking } from "@src/utils/respektive";
+import { getActiveLanguageCode, getActiveLanguageCodeForKey, getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languagesChrome";
 
 
 
@@ -78,7 +79,8 @@ async function addScoreRank(functionId: number) {
     scoreRankElement.classList.add("value-display", "value-display--rank");
     let scoreRankLabel = document.createElement("div");
     scoreRankLabel.classList.add("value-display__label");
-    scoreRankLabel.innerHTML = "Score Ranking";
+    await waitLastLanguageIsLoaded();
+    scoreRankLabel.innerText = getLocMsg("score_ranking");
     scoreRankElement.append(scoreRankLabel);
 
     let scoreRankValue = document.createElement("div");
@@ -89,7 +91,7 @@ async function addScoreRank(functionId: number) {
     rank.setAttribute("data-html-title", tooltipTitle);
     rank.setAttribute("title", "");
 
-    rank.innerHTML = `#${scoreRank.toLocaleString()}`;
+    rank.innerHTML = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
     scoreRankValue.append(rank);
 
     ranksElement.append(scoreRankElement);
@@ -97,12 +99,21 @@ async function addScoreRank(functionId: number) {
 }
 
 const highestRankTip = (scoreRankInfo: any) => {
+
   const rankHighest = scoreRankInfo[0]["rank_highest"];
   const date = new Date(rankHighest["updated_at"]);
 
   // Get the formatted date string
-  const formattedDate = new Intl.DateTimeFormat("en-GB", {
+  const highestRankKey = "highest_rank_profile";
+  const countryCode = getActiveLanguageCodeForKey(highestRankKey);
+
+  const formattedDate = new Intl.DateTimeFormat(countryCode, {
     dateStyle: "medium",
   }).format(date);
-  return `<div>Highest rank: #${rankHighest.rank} on ${formattedDate}</div>`;
+
+  const rawText = getLocMsg(highestRankKey);
+  const replacedText = rawText.replace("{{rankHighest.rank}}", rankHighest.rank).replace("{{formattedDate}}", formattedDate);
+  
+
+  return `<div>${replacedText}</div>`;
 };
