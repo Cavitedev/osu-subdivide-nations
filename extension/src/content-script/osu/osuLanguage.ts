@@ -10,7 +10,6 @@ export const watchOsuLanguage = () => {
 }
 
 const updateContentLanguageToOsu = async () =>{
-    console.log("lng");
     const buttonWithLanguage = document.querySelector('[data-click-menu-target="nav-mobile-locale"]');
     const language = buttonWithLanguage?.textContent?.trim();
     if(language){

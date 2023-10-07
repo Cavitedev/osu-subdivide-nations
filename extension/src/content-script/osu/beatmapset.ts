@@ -12,7 +12,6 @@ let initFlagsBeatmapsetMutationObserver = new MutationObserver((_) => {
   
   export const updateFlagsBeatmapsets = async () => {
     const functionId = nextFunctionId();
-    console.log("updateFlagsBeatmapsets");
   
     const linkItem = document.querySelector(".beatmapset-scoreboard__main");
     if (linkItem) {

@@ -20,7 +20,6 @@ export const getLocMsg = (key:string, substitutions: string | string[] | undefin
 }
 
 export const loadLanguage = async (lang:string) => {
-    console.log("lng");
     const languageFile = chrome.runtime.getURL(`_locales/${lang}/messages.json`);
     secondaryLanguagePromise = fetch(languageFile).then(res => res.json()).catch(e => {return null})
     secondaryLoadedLanguage = await secondaryLanguagePromise;

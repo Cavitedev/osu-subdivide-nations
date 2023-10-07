@@ -85,7 +85,6 @@ const addCacheButtonBehavior = () => {
 }
 
 const init = () => {
-  console.log("pop up init");
   updateTitle();
   addSupportedLanguages();
   addCacheButtonBehavior();

@@ -108,7 +108,9 @@ const highestRankTip = (scoreRankInfo: any) => {
   const countryCode = getActiveLanguageCodeForKey(highestRankKey);
 
   const formattedDate = new Intl.DateTimeFormat(countryCode, {
-    dateStyle: "medium",
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   }).format(date);
 
   const rawText = getLocMsg(highestRankKey);
