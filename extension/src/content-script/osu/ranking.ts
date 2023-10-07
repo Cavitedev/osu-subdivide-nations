@@ -8,9 +8,16 @@ import { nextFunctionId, runningId } from "./content";
 const rankingIdAttr = "data-user-id";
 
 export const updateFlagsRankings = async () => {
+  const url = location.href;
+if(
+  !url.includes("osu.ppy.sh/rankings") &&
+  !url.includes("osu.ppy.sh/multiplayer/rooms") &&
+  !url.includes("osu.ppy.sh/rankings/kudosu")
+  || url.includes("/country")
+) return;
+
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
   
-    const url = location.href;
   
     if (url.includes("/country")) {
       return;

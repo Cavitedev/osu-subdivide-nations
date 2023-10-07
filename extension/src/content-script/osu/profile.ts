@@ -13,6 +13,12 @@ export const profileMutationObserverInit = new MutationObserver((_) => {
 });
 
 export const updateFlagsProfile = async () => {
+  if(!location.href.includes("osu.ppy.sh/users")) {
+    profileMutationObserverInit.disconnect();
+    return;
+  };
+
+
   const functionId = nextFunctionId();
   const linkItem = document.querySelector(
     "body > div.osu-layout__section.osu-layout__section--full > div"

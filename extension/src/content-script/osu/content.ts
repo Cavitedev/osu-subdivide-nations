@@ -1,5 +1,4 @@
-
-import {  addFlagUser } from "@src/content-script/osu/flagHtml";
+import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./ranking";
 import { updateFlagsBeatmapsets } from "./beatmapset";
@@ -13,11 +12,10 @@ const flagClass = "flag-country";
 initConfigure(flagClass);
 export let runningId = 0;
 
-
 export const nextFunctionId = () => {
   const functionId = runningId + 1;
   runningId++;
-  
+
   bodyObserver.observe(document.querySelector("body")!, {
     attributes: false,
     childList: true,
@@ -37,7 +35,6 @@ export const nextFunctionId = () => {
 
   return functionId;
 };
-
 
 export const idFromProfileUrl = (url: string) => {
   return url.split("/")[4];
@@ -59,7 +56,7 @@ const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
 
 const bodyObserver = new MutationObserver((mutations) => {
   for (const mutation of mutations) {
-    for (const addedNode  of mutation.addedNodes) {
+    for (const addedNode of mutation.addedNodes) {
       const card = (addedNode as HTMLElement).querySelector(".user-card");
       if (card) {
         profileCardOverlayFinishObserver.observe(card, {
@@ -86,27 +83,24 @@ const updateFlagsProfileCardOverlay = async (card: HTMLElement) => {
   const nameElement = card.querySelector(".user-card__username")!;
   const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
   await addFlagUser(card, userId, true, true);
-
 };
 
 export const refreshOverlays = async () => {
-  const overlays = document.querySelectorAll(
-    ".user-card .user-card__details"
-  );
+  const url = location.href;
+  if (!url.includes("osu.ppy.sh/scores")) return;
+  const overlays = document.querySelectorAll(".user-card .user-card__details");
   for (const overlay of overlays) {
     await updateFlagsProfileCardOverlay(overlay as HTMLElement);
   }
 };
 
 const refreshSearch = async (mutations: MutationRecord[]) => {
-
-
   for (const mutation of mutations) {
     for (const addedNode of mutation.addedNodes) {
-      if(addedNode instanceof HTMLElement){
-      if (addedNode.getAttribute("data-section") === "user") {
-        await updateSearchCard(addedNode);
-      }
+      if (addedNode instanceof HTMLElement) {
+        if (addedNode.getAttribute("data-section") === "user") {
+          await updateSearchCard(addedNode);
+        }
       }
     }
   }
@@ -153,19 +147,18 @@ const updateFlagMobileSearchObserver = new MutationObserver(
   }
 );
 
-const updateSearchCard = async (card:HTMLElement) => {
+const updateSearchCard = async (card: HTMLElement) => {
   const userId = idFromProfileUrl(
     card
-      .querySelector(".user-search-card__col--username")!.getAttribute("href")!
+      .querySelector(".user-search-card__col--username")!
+      .getAttribute("href")!
   );
   await addFlagUser(card, userId, true);
 };
 
-
 const reloadMutationObserver = new MutationObserver((_) => {
   exec();
 });
-
 
 export const exec = async () => {
   reloadMutationObserver.observe(document.querySelector("title")!, {
@@ -175,34 +168,16 @@ export const exec = async () => {
   //Invalidate previous executions
   nextFunctionId();
 
-  const url = location.href;
-  
-  if (
-    url.includes("osu.ppy.sh/rankings") ||
-    url.includes("osu.ppy.sh/multiplayer/rooms") ||
-    url.includes("osu.ppy.sh/rankings/kudosu")
-  ) {
-    updateFlagsRankings();
-  } else if (url.includes("osu.ppy.sh/users")) {
-    updateFlagsProfile();
-  } else if (url.includes("osu.ppy.sh/home/friends")) {
-    const queryParameters = url.split("?")[1];
-    const urlParameters = new URLSearchParams(queryParameters);
-    const view = urlParameters.get("view");
-    if (view == "brick") {
-      return;
-    }
-    updateFlagsFriends();
-  } else if (url.includes("osu.ppy.sh/community/matches/")) {
-    updateFlagsMatches();
-  } else if (url.includes("osu.ppy.sh/community/forums/topics/")) {
-    updateFlagsTopics();
-  } else if (url.includes("osu.ppy.sh/beatmapsets/")) {
-    updateFlagsBeatmapsets();
-  } else if (url.includes("osu.ppy.sh/scores")) {
-    // The flag appears in a card same as overlays
-    refreshOverlays();
-  }
+  // All these updates are conditional to the url
+  updateFlagsRankings();
+  updateFlagsProfile();
+
+  updateFlagsFriends();
+  updateFlagsMatches();
+  updateFlagsTopics();
+  updateFlagsBeatmapsets();
+  // The flag appears in a card same as overlays
+  refreshOverlays();
 };
 
 (async () => {

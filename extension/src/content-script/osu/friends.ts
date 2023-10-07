@@ -12,6 +12,17 @@ const setActualFriendsObserver = new MutationObserver((_) => {
   });
   
   export const updateFlagsFriends = async () => {
+    const url = location.href;
+    if(!url.includes("osu.ppy.sh/home/friends")) return;
+
+    const queryParameters = url.split("?")[1];
+    const urlParameters = new URLSearchParams(queryParameters);
+    const view = urlParameters.get("view");
+    if (view == "brick") {
+      return;
+    }
+
+
     const functionId = nextFunctionId();
   
   

@@ -11,6 +11,8 @@ let initFlagsBeatmapsetMutationObserver = new MutationObserver((_) => {
   });
   
   export const updateFlagsBeatmapsets = async () => {
+    const url = location.href;
+    if(!url.includes("osu.ppy.sh/beatmapsets/")) return;
     const functionId = nextFunctionId();
   
     const linkItem = document.querySelector(".beatmapset-scoreboard__main");
