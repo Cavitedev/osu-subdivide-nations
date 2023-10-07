@@ -22,5 +22,9 @@
     "regions_language": {
         "message": "Regions Language:",
         "description": "Label for changing the language displayed for the country and region names. It doesn't have any effect in other UI elements."
+    },
+    "score_ranking":{
+        "message": "Score Ranking",
+        "description": "Label for the score ranking in osu!"
     }
 }

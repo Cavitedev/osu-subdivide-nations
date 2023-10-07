@@ -17,5 +17,8 @@
     },
     "regions_language":{
         "message": "Idioma de las regiones:"
+    },
+    "score_ranking":{
+        "message": "Clasificación por puntuación"
     }
 }
