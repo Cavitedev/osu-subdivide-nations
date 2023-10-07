@@ -31,7 +31,7 @@ export const osuScoreRanking = async (userId: string | undefined, mode:string | 
   
     let dataPromise = (fetchWithCache(url, respektiveDbReload) as Promise<IfetchResponse<TRespektiveScore>>).then(r => {
       // Validate to prevent XHR injection
-      if(!isNumber(r.data?.[0].rank) || !isValidDate(r.data?.[0].rank_highest.updated_at) ){
+      if(!isNumber(r.data?.[0]?.rank) || !isValidDate(r.data?.[0]?.rank_highest?.updated_at) ){
         return undefined;
       }
       return r.data;
