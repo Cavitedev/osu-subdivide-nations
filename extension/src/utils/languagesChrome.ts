@@ -30,6 +30,11 @@ export const getLocMsg = (
 };
 
 export const loadLanguage = async (lang: string) => {
+  const splittedLang = lang.split("-");
+  if (splittedLang.length > 1) {
+    lang = splittedLang[0] + "_" + splittedLang[1].toUpperCase();
+  }
+
   if (lang === selectedLanguage) return;
 
   const languageFile = chrome.runtime.getURL(`_locales/${lang}/messages.json`);
