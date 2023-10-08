@@ -8,7 +8,7 @@ let initFinishedMutationObserver = new MutationObserver((_) => {
   updateFlagsBeatmapsets();
 });
 
-const beatmapsetMutationObserver = new MutationObserver((mutations) => {
+const beatmapsetMutationObserver = new MutationObserver(() => {
   updateFlagsBeatmapsets();
 });
 
@@ -75,19 +75,51 @@ const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
   }
 };
 
+// For osu plus add-on or other add-ons
+let osuPlusBody;
+
+const rankingTableObverver = new MutationObserver((mutations) => {
+  console.log("Table observer");
+  osuPlusBody = mutations.find((m) => {
+    const addedNode = m.addedNodes?.[0] as HTMLElement;
+    const classList = addedNode.classList;
+    return (
+      classList.contains("osuplus-table") &&
+      classList.contains("beatmap-scoreboard-table__table")
+    );
+  })?.addedNodes[0] as HTMLElement | undefined;
+  if (osuPlusBody) {
+    osuPlusBodyObserver(osuPlusBody).observe(osuPlusBody.querySelector(".beatmap-scoreboard-table__body")!, { childList: true });
+  }
+});
+
+const osuPlusBodyObserver = (osuPlusBody: HTMLElement) =>
+  new MutationObserver((mutations) => {
+    console.log("Osu plus body observer");
+    const functionId = nextFunctionId();
+    updateTableRanks(osuPlusBody, functionId);
+  });
+
 const updateTableRanks = async (
   leaderboardParent: HTMLElement,
   functionId: number
 ) => {
-  // Children
   const rankingTable = leaderboardParent.querySelector(
+    ".beatmap-scoreboard-table"
+  );
+  console.log("Watching ", rankingTable);
+  if (rankingTable)
+    rankingTableObverver.observe(rankingTable, { childList: true });
+
+  // Children
+  const rankingTableBody = leaderboardParent.querySelector(
     ".beatmap-scoreboard-table__body"
   );
-  if (!rankingTable) {
+  if (!rankingTableBody) {
     return;
   }
 
-  const items = rankingTable.children;
+  const items = rankingTableBody.children;
   for (let item of items) {
     if (functionId != runningId) {
       return;
