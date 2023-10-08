@@ -50,7 +50,7 @@ const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
   );
 
   if (addedNodesCount > 2) {
-    updateFlagsProfileCardOverlay(mutations[0].target as HTMLElement);
+    updateUserCardFlag(mutations[0].target as HTMLElement);
   }
 });
 
@@ -79,7 +79,7 @@ const bodyObserver = new MutationObserver((mutations) => {
   }
 });
 
-const updateFlagsProfileCardOverlay = async (card: HTMLElement) => {
+const updateUserCardFlag = async (card: HTMLElement) => {
   const nameElement = card.querySelector(".user-card__username")!;
   const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
   await addFlagUser(card, userId, true, true);
@@ -90,7 +90,7 @@ export const refreshOverlays = async () => {
   if (!url.includes("osu.ppy.sh/scores")) return;
   const overlays = document.querySelectorAll(".user-card .user-card__details");
   for (const overlay of overlays) {
-    await updateFlagsProfileCardOverlay(overlay as HTMLElement);
+    await updateUserCardFlag(overlay as HTMLElement);
   }
 };
 
@@ -160,6 +160,24 @@ const reloadMutationObserver = new MutationObserver((_) => {
   exec();
 });
 
+
+let userCardObservedElement: HTMLElement | undefined = undefined;
+const userCardMobileMutationObserver = new MutationObserver((m) => {
+  updateUserCardMobileView(userCardObservedElement);
+});
+
+// Card displayed in mobile view everywhere
+const updateUserCardMobileView = async (parent: HTMLElement | undefined) => {
+  const userCard = (parent ?? document).querySelector(".user-card .user-card__details");
+  if (!userCard) {
+    const reactUserCard = document.querySelector(".js-react--user-card") as HTMLElement;
+    userCardObservedElement = reactUserCard;
+    userCardMobileMutationObserver.observe(reactUserCard!, {childList: true});
+    return;
+  };
+  updateUserCardFlag(userCard as HTMLElement);
+};
+
 export const exec = async () => {
   reloadMutationObserver.observe(document.querySelector("title")!, {
     childList: true,
@@ -168,6 +186,7 @@ export const exec = async () => {
   //Invalidate previous executions
   nextFunctionId();
 
+  updateUserCardMobileView();
   // All these updates are conditional to the url
   updateFlagsRankings();
   updateFlagsProfile();
