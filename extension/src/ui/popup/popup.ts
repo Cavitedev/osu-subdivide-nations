@@ -16,8 +16,8 @@ const updateTitle = () => {
   const title = chrome.runtime.getManifest().name;
   const version = " v" + chrome.runtime.getManifest().version;
 
-  document.querySelector("#header .title")!.innerHTML = title;
-  document.querySelector("#header .version")!.innerHTML = version;
+  (document.querySelector("#header .title") as HTMLElement).innerText = title;
+  (document.querySelector("#header .version") as HTMLElement).innerText = version;
 };
 
 const addSupportedLanguages = async () => {
