@@ -4,19 +4,34 @@ export const saveInCache = async (url:string, data:object) => {
   
   export const loadFromCache =async  (url:string): Promise<any | null> => {
     const storageReturn = await chrome.storage.local.get([url]);
-    if(Object.keys(storageReturn).length === 0){
+    if(!storageReturn ||  Object.keys(storageReturn).length === 0){
       return null;
     }else{
       return storageReturn[url];
     }
   }
   
-const lastCacheCleanKey = "lastCacheClean";
 
-export const cleanCacheConditionally = async () => {
-    const lastClean = await loadFromCache(lastCacheCleanKey);
-    if(!lastClean || lastClean.expire < Date.now()){
-        await chrome.storage.local.clear();
-        await saveInCache(lastCacheCleanKey, {expire: Date.now() + 604800000}); // 7 days
+export const cleanInvalidatedCacheConditionally = async () => {
+
+    const bytesThresholdClean = 4000000; // 4MB
+    const storage = await chrome.storage.local.getBytesInUse();
+    if(storage > bytesThresholdClean){
+        cleanInvalidatedCache();
     }
+}
+
+export const cleanInvalidatedCache =  () => {
+  return chrome.storage.local.get((items) => {
+      const now = Date.now();
+      const itemEntries = Object.entries(items);
+      if(itemEntries.length === 0) return;
+      const cleanKeys = itemEntries.filter(([key, value]) => value.expireDate < now && !value?.preserve).map(([key,value]) => key)
+      chrome.storage.local.remove(cleanKeys);
+    })
+
+}
+
+export const cleanCache = async () => {
+  return chrome.storage.local.clear();
 }

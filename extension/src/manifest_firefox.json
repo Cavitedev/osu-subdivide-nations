@@ -1,7 +1,7 @@
 {
     "name": "osu! subdivide nations",
     "version": "3.0.2",
-    "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
+    "description": "Updates national flags into regional flags on the osu! website.\n While Also updating osu! global score on profiles",
     "browser_specific_settings": {
         "gecko": {
             "id": "cavitedev@gmail.com",
@@ -12,8 +12,10 @@
         "tabs",
         "storage"
     ],  
+    "default_locale": "en",
     "host_permissions": [
-        "https://osuworld.octo.moe/api/*"
+        "https://osuworld.octo.moe/api/*",
+        "https://score.respektive.pw/*"
     ],
     "content_scripts": [
         {
@@ -21,7 +23,8 @@
                 "https://osu.ppy.sh/*"
             ],
             "js": [
-                "content-script/osu/content.js"
+                "content-script/osu/content.js",
+                "_locales/**/*"
             ]
         }
     ],

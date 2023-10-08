@@ -3,25 +3,22 @@ import { addFlagUser } from '@src/content-script/osu/flagHtml';
 
 import { isNumber } from "@src/utils/utils";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
-import { fetchWithCache } from "@src/utils/fetchUtils";
+import { osuScoreRanking } from "@src/utils/respektive";
+import { getActiveLanguageCode, getActiveLanguageCodeForKey, getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languagesChrome";
 
-type TRespektiveScore = [{
-  rank: number;
-  user_id: number;
-  username: string;
-  score: number;
-  rank_highest: {
-    rank: number;
-    updated_at: string;
-  }
-}
-];
+
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
   updateFlagsProfile();
 });
 
 export const updateFlagsProfile = async () => {
+  if(!location.href.includes("osu.ppy.sh/users")) {
+    profileMutationObserverInit.disconnect();
+    return;
+  };
+
+
   const functionId = nextFunctionId();
   const linkItem = document.querySelector(
     "body > div.osu-layout__section.osu-layout__section--full > div"
@@ -46,7 +43,6 @@ export const updateFlagsProfile = async () => {
   const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
   if (!flagResult) return;
   const { countryName, regionName } = flagResult;
-  console.log(countryName, regionName);
   const countryNameElement = flagElement.querySelector(
     ".profile-info__flag-text"
   )!;
@@ -59,8 +55,6 @@ export const updateFlagsProfile = async () => {
   countryNameElement.textContent = replaceText;
 };
 
-
-const scoreDataExpire = 1800000; //30 minutes
 
 async function addScoreRank(functionId: number) {
   const ranksElement = document.querySelector(
@@ -79,9 +73,8 @@ async function addScoreRank(functionId: number) {
   const path = window.location.pathname.split("/");
   const userId = path[2];
   const mode = modesElement.dataset.mode;
-  const scoreRankInfo =  (
-    await fetchWithCache(`https://score.respektive.pw/u/${userId}?mode=${mode}`, scoreDataExpire)
-  ).data as TRespektiveScore;
+  const scoreRankInfo = await osuScoreRanking(userId, mode);
+  if(!scoreRankInfo) return;
 
   if(functionId !== runningId) return;
 
@@ -92,7 +85,8 @@ async function addScoreRank(functionId: number) {
     scoreRankElement.classList.add("value-display", "value-display--rank");
     let scoreRankLabel = document.createElement("div");
     scoreRankLabel.classList.add("value-display__label");
-    scoreRankLabel.innerHTML = "Score Ranking";
+    await waitLastLanguageIsLoaded();
+    scoreRankLabel.innerText = getLocMsg("score_ranking");
     scoreRankElement.append(scoreRankLabel);
 
     let scoreRankValue = document.createElement("div");
@@ -103,7 +97,7 @@ async function addScoreRank(functionId: number) {
     rank.setAttribute("data-html-title", tooltipTitle);
     rank.setAttribute("title", "");
 
-    rank.innerHTML = `#${scoreRank.toLocaleString()}`;
+    rank.innerHTML = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
     scoreRankValue.append(rank);
 
     ranksElement.append(scoreRankElement);
@@ -111,12 +105,23 @@ async function addScoreRank(functionId: number) {
 }
 
 const highestRankTip = (scoreRankInfo: any) => {
+
   const rankHighest = scoreRankInfo[0]["rank_highest"];
   const date = new Date(rankHighest["updated_at"]);
 
   // Get the formatted date string
-  const formattedDate = new Intl.DateTimeFormat("en-GB", {
-    dateStyle: "medium",
+  const highestRankKey = "highest_rank_profile";
+  const countryCode = getActiveLanguageCodeForKey(highestRankKey);
+
+  const formattedDate = new Intl.DateTimeFormat(countryCode, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   }).format(date);
-  return `<div>Highest rank: #${rankHighest.rank} on ${formattedDate}</div>`;
+
+  const rawText = getLocMsg(highestRankKey);
+  const replacedText = rawText.replace("{{rankHighest.rank}}", rankHighest.rank).replace("{{formattedDate}}", formattedDate);
+  
+
+  return `<div>${replacedText}</div>`;
 };

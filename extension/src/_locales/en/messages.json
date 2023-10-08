@@ -1,0 +1,149 @@
+{
+    "created_by": {
+        "message": "created by"
+    },
+    "system_default": {
+        "message": "System Default"
+    },
+    "native_language": {
+        "message": "Native Language"
+    },
+    "clean_cache": {
+        "message": "Clean Cache"
+    },
+    "cache_cleaned": {
+        "message": "Cache has been cleaned"
+    },
+    "region_language": {
+        "message": "Region Language:"
+    },
+    "score_ranking": {
+        "message": "Score Ranking"
+    },
+    "highest_rank_profile": {
+        "message": "Highest rank: #{{rankHighest.rank}} on {{formattedDate}}"
+    },
+    "region":{
+        "message": "Region"
+    },
+    "region_ru": {
+        "message": "Republic / Oblast"
+    },
+    "region_ar": {
+        "message": "Province"
+    },
+    "region_at": {
+        "message": "State"
+    },
+    "region_au": {
+        "message": "State"
+    },
+    "region_be": {
+        "message": "Province"
+    },
+    "region_br": {
+        "message": "State"
+    },
+    "region_by": {
+        "message": "County"
+    },
+    "region_ca": {
+        "message": "Province"
+    },
+    "region_cl": {
+        "message": "Region"
+    },
+    "region_cn": {
+        "message": "Administrative Region"
+    },
+    "region_co": {
+        "message": "Department"
+    },
+    "region_cz": {
+        "message": "Region"
+    },
+    "region_de": {
+        "message": "State"
+    },
+    "region_es": {
+        "message": "Autonomous Community"
+    },
+    "region_fi": {
+        "message": "Region"
+    },
+    "region_fr": {
+        "message": "Region"
+    },
+    "region_hu": {
+        "message": "County"
+    },
+    "region_id": {
+        "message": "Province"
+    },
+    "region_it": {
+        "message": "Region"
+    },
+    "region_jp": {
+        "message": "Prefecture"
+    },
+    "region_kr": {
+        "message": "Province"
+    },
+    "region_kz": {
+        "message": "County"
+    },
+    "region_lv": {
+        "message": "Region"
+    },
+    "region_mx": {
+        "message": "State"
+    },
+    "region_my": {
+        "message": "State"
+    },
+    "region_nl": {
+        "message": "Province"
+    },
+    "region_no": {
+        "message": "County"
+    },
+    "region_pe": {
+        "message": "Region"
+    },
+    "region_ph": {
+        "message": "Province"
+    },
+    "region_pl": {
+        "message": "Voivodeship"
+    },
+    "region_pt": {
+        "message": "Region"
+    },
+    "region_ro": {
+        "message": "County"
+    },
+    "region_se": {
+        "message": "County"
+    },
+    "region_sg": {
+        "message": "Districts"
+    },
+    "region_th": {
+        "message": "Province"
+    },
+    "region_tr": {
+        "message": "Region"
+    },
+    "region_tw": {
+        "message": "Province"
+    },
+    "region_ua": {
+        "message": "County"
+    },
+    "region_us": {
+        "message": "State"
+    },
+    "region_vn": {
+        "message": "Province"
+    }
+}

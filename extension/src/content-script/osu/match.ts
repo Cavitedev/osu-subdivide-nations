@@ -5,6 +5,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
 
 export const updateFlagsMatches = async () => {
+  if(!location.href.includes("osu.ppy.sh/community/matches/")) return;
     const functionId = nextFunctionId();  
   
     const linkItem = document.querySelector(".js-react--mp-history");

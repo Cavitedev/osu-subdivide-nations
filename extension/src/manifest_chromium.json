@@ -1,8 +1,12 @@
 {
     "name": "osu! subdivide nations",
     "version": "3.0.2",
-    "description": "Updates national flags into regional flags in Osu! website.\n Flags from Wikimedia Commons.",
-    "permissions": ["storage", "tabs"],
+    "description": "Updates national flags into regional flags on the osu! website.\n While Also updating osu! global score on profiles",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "default_locale": "en",
     "content_scripts": [
         {
             "matches": [
@@ -13,18 +17,17 @@
             ]
         }
     ],
-
     "web_accessible_resources": [
         {
             "matches": [
                 "https://osu.ppy.sh/*"
             ],
             "resources": [
-                "flags.json"
+                "flags.json",
+                "_locales/**/*"
             ]
         }
     ],
-
     "icons": {
         "128": "assets/favicon/icon128.png",
         "48": "assets/favicon/icon48.png",
