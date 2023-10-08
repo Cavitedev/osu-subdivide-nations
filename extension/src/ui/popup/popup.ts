@@ -17,7 +17,7 @@ const updateTitle = () => {
 
 const addSupportedLanguages = async () => {
   const languagesLabel = document.querySelector("#language-option-label") as HTMLDivElement;
-  languagesLabel.innerText = chrome.i18n.getMessage("regions_language");
+  languagesLabel.innerText = chrome.i18n.getMessage("region_language");
 
   const selectElement = document.querySelector("#region-languages-select") as HTMLSelectElement;
   selectElement.addEventListener("change", onLanguageUpdate);
