@@ -1,6 +1,6 @@
+import { addFlagUser } from '@src/content-script/osu/flagHtml';
 // https://osu.ppy.sh/users/4871211/fruits
 
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { isNumber } from "@src/utils/utils";
 import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
 import { osuScoreRanking } from "@src/utils/respektive";
