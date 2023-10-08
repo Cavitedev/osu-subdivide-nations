@@ -60,6 +60,6 @@ let initFlagsBeatmapsetMutationObserver = new MutationObserver((_) => {
         ".beatmap-scoreboard-table__cell-content--user-link"
       );
       const playerId = playerNameElement?.getAttribute("data-user-id")!;
-      await addFlagUser(item  as HTMLElement, playerId, true, true  );
+      await addFlagUser(item  as HTMLElement, playerId, false, false, false, true  );
     }
   };
