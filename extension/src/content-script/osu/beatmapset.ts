@@ -4,6 +4,8 @@ import { nextFunctionId, runningId } from "./content";
 // https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628
 
 // This is run after the elements are first injected
+const tableBodyClass = "beatmap-scoreboard-table__body";
+
 let initFinishedMutationObserver = new MutationObserver((_) => {
   updateFlagsBeatmapsets();
 });
@@ -44,7 +46,13 @@ export const updateFlagsBeatmapsets = async () => {
   initFinishedMutationObserver.disconnect();
 
   updateTopLeaderboard(leaderboardParent);
-  updateTableRanks(leaderboardParent, functionId);
+
+  const rankingTable = leaderboardParent.querySelector(".beatmap-scoreboard-table") as HTMLElement;
+  if (rankingTable)
+    rankingTableObverver.observe(rankingTable, { childList: true });
+
+  const tableBody = rankingTable.querySelector(`.${tableBodyClass}`) as HTMLElement;
+  updateTableRanks(tableBody, functionId);
 };
 
 const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
@@ -79,7 +87,6 @@ const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
 let osuPlusBody;
 
 const rankingTableObverver = new MutationObserver((mutations) => {
-  console.log("Table observer");
   osuPlusBody = mutations.find((m) => {
     const addedNode = m.addedNodes?.[0] as HTMLElement;
     const classList = addedNode.classList;
@@ -89,37 +96,28 @@ const rankingTableObverver = new MutationObserver((mutations) => {
     );
   })?.addedNodes[0] as HTMLElement | undefined;
   if (osuPlusBody) {
-    osuPlusBodyObserver(osuPlusBody).observe(osuPlusBody.querySelector(".beatmap-scoreboard-table__body")!, { childList: true });
+    const osuPlusTable = osuPlusBody.querySelector(
+      `.${tableBodyClass}`
+    ) as HTMLElement;
+    osuPlusBodyObserver(osuPlusTable).observe(osuPlusTable, {
+      childList: true,
+    });
   }
 });
 
 const osuPlusBodyObserver = (osuPlusBody: HTMLElement) =>
-  new MutationObserver((mutations) => {
-    console.log("Osu plus body observer");
+  new MutationObserver(() => {
     const functionId = nextFunctionId();
     updateTableRanks(osuPlusBody, functionId);
   });
 
-const updateTableRanks = async (
-  leaderboardParent: HTMLElement,
-  functionId: number
-) => {
-  const rankingTable = leaderboardParent.querySelector(
-    ".beatmap-scoreboard-table"
-  );
-  console.log("Watching ", rankingTable);
-  if (rankingTable)
-    rankingTableObverver.observe(rankingTable, { childList: true });
+const updateTableRanks = async (tableBody: HTMLElement, functionId: number) => {
+
 
   // Children
-  const rankingTableBody = leaderboardParent.querySelector(
-    ".beatmap-scoreboard-table__body"
-  );
-  if (!rankingTableBody) {
-    return;
-  }
 
-  const items = rankingTableBody.children;
+
+  const items = tableBody.children;
   for (let item of items) {
     if (functionId != runningId) {
       return;
