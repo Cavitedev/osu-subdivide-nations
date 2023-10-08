@@ -3,6 +3,7 @@ import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUti
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
 import { nextFunctionId, runningId } from "./content";
+import { getLocMsg } from "@src/utils/languagesChrome";
 
 // https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
 const rankingIdAttr = "data-user-id";
@@ -141,7 +142,7 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
 
   cloneDropdown.setAttribute("id", "cavitedev_region_dropdown");
   cloneDropdown.querySelector(".ranking-filter__title")!.textContent =
-    "Region";
+    getLocMsg(`region_${countryCode.toLowerCase()}`, ["region"]);
 
   const predefinedAnchor = cloneDropdown.querySelector(
     ".select-options__select .select-options__option"
