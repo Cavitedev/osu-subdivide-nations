@@ -1,0 +1,198 @@
+{
+    "created_by": {
+        "message": "desarrollado por",
+        "description": "created by Cavitedev. After this goes the name of the developer who created/developed this"
+    },
+    "system_default": {
+        "message": "Idioma por Defecto",
+        "description": "Language used in the browser"
+    },
+    "native_language": {
+        "message": "Idioma Nativo",
+        "description": "Local language used for countries and Region"
+    },
+    "clean_cache": {
+        "message": "Limpiar Cache",
+        "description": "Button name that cleans the cache (local storage with fetch data)"
+    },
+    "cache_cleaned": {
+        "message": "Se ha limpiado la cache",
+        "description": "Message displayed when the cache is cleaned"
+    },
+    "region_language": {
+        "message": "Idioma de las Región:",
+        "description": "Label for changing the language displayed for the country and region names. It doesn't have any effect in other UI elements."
+    },
+    "score_ranking": {
+        "message": "Clasificación por puntuación",
+        "description": "Label for the score ranking in osu!"
+    },
+    "highest_rank_profile": {
+        "message": "Clasificación más alta: #{{rankHighest.rank}} el {{formattedDate}}",
+        "description": "Tooltip on profile score. {{rankHighest.rank}} is the rank number and {{formattedDate}} is the date when the score was achieved. They should be preserved in translations as they are updated"
+    },
+    "region": {
+        "message": "Región",
+        "description": "Generic region name by osuworld subdivisions"
+    },
+    "region_ru": {
+        "message": "República / Óblast",
+        "description": "Russia region name by osuworld subdivisions"
+    },
+    "region_ar": {
+        "message": "Provincia",
+        "description": "Argentina region name by osuworld subdivisions"
+    },
+    "region_at": {
+        "message": "Estado",
+        "description": "Austria region name by osuworld subdivisions"
+    },
+    "region_au": {
+        "message": "Estado",
+        "description": "Australia region name by osuworld subdivisions"
+    },
+    "region_be": {
+        "message": "Provincia",
+        "description": "Belgium region name by osuworld subdivisions"
+    },
+    "region_br": {
+        "message": "Estado",
+        "description": "Brazil region name by osuworld subdivisions"
+    },
+    "region_by": {
+        "message": "Condado",
+        "description": "Belarus region name by osuworld subdivisions"
+    },
+    "region_ca": {
+        "message": "Provincia",
+        "description": "Canada region name by osuworld subdivisions"
+    },
+    "region_cl": {
+        "message": "Región",
+        "description": "Chile region name by osuworld subdivisions"
+    },
+    "region_cn": {
+        "message": "Región Administrativa",
+        "description": "China region name by osuworld subdivisions"
+    },
+    "region_co": {
+        "message": "Departmento",
+        "description": "Colombia region name by osuworld subdivisions"
+    },
+    "region_cz": {
+        "message": "Región",
+        "description": "Czechia region name by osuworld subdivisions"
+    },
+    "region_de": {
+        "message": "Estado",
+        "description": "Germany region name by osuworld subdivisions"
+    },
+    "region_es": {
+        "message": "Comunidad Autónoma",
+        "description": "Spain region name by osuworld subdivisions"
+    },
+    "region_fi": {
+        "message": "Región",
+        "description": "Finland region name by osuworld subdivisions"
+    },
+    "region_fr": {
+        "message": "Región",
+        "description": "France region name by osuworld subdivisions"
+    },
+    "region_hu": {
+        "message": "Condado",
+        "description": "Hungary region name by osuworld subdivisions"
+    },
+    "region_id": {
+        "message": "Provincia",
+        "description": "Indonesia region name by osuworld subdivisions"
+    },
+    "region_it": {
+        "message": "Región",
+        "description": "Italy region name by osuworld subdivisions"
+    },
+    "region_jp": {
+        "message": "Prefectura",
+        "description": "Japan region name by osuworld subdivisions"
+    },
+    "region_kr": {
+        "message": "Provincia",
+        "description": "South Korea region name by osuworld subdivisions"
+    },
+    "region_kz": {
+        "message": "Condado",
+        "description": "Kazakhstan region name by osuworld subdivisions"
+    },
+    "region_lv": {
+        "message": "Región",
+        "description": "Latvia region name by osuworld subdivisions"
+    },
+    "region_mx": {
+        "message": "Estado",
+        "description": "Mexico region name by osuworld subdivisions"
+    },
+    "region_my": {
+        "message": "Estado",
+        "description": "Malaysia region name by osuworld subdivisions"
+    },
+    "region_nl": {
+        "message": "Provincia",
+        "description": "Netherlands region name by osuworld subdivisions"
+    },
+    "region_no": {
+        "message": "Condado",
+        "description": "Norway region name by osuworld subdivisions"
+    },
+    "region_pe": {
+        "message": "Región",
+        "description": "Peru region name by osuworld subdivisions"
+    },
+    "region_ph": {
+        "message": "Provincia",
+        "description": "Philippines region name by osuworld subdivisions"
+    },
+    "region_pl": {
+        "message": "Volvodato",
+        "description": "Poland region name by osuworld subdivisions"
+    },
+    "region_pt": {
+        "message": "Región",
+        "description": "Portugal region name by osuworld subdivisions"
+    },
+    "region_ro": {
+        "message": "Condado",
+        "description": "Romania region name by osuworld subdivisions"
+    },
+    "region_se": {
+        "message": "Condado",
+        "description": "Sweden region name by osuworld subdivisions"
+    },
+    "region_sg": {
+        "message": "Distrito",
+        "description": "Singapore region name by osuworld subdivisions"
+    },
+    "region_th": {
+        "message": "Provincia",
+        "description": "Thailand region name by osuworld subdivisions"
+    },
+    "region_tr": {
+        "message": "Región",
+        "description": "Turkey region name by osuworld subdivisions"
+    },
+    "region_tw": {
+        "message": "Provincia",
+        "description": "Taiwan region name by osuworld subdivisions"
+    },
+    "region_ua": {
+        "message": "Condado",
+        "description": "Ukraine region name by osuworld subdivisions"
+    },
+    "region_us": {
+        "message": "Estado",
+        "description": "United State of America region name by osuworld subdivisions"
+    },
+    "region_vn": {
+        "message": "Provincia",
+        "description": "Vietnam region name by osuworld subdivisions"
+    }
+}
