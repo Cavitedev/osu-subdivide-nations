@@ -167,7 +167,7 @@ const userCardMobileMutationObserver = new MutationObserver((m) => {
 });
 
 // Card displayed in mobile view everywhere
-const updateUserCardMobileView = async (parent: HTMLElement | undefined) => {
+const updateUserCardMobileView = async (parent: HTMLElement | undefined = undefined) => {
   const userCard = (parent ?? document).querySelector(".user-card .user-card__details");
   if (!userCard) {
     const reactUserCard = document.querySelector(".js-react--user-card") as HTMLElement;
