@@ -21,13 +21,18 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     bundle: true,
     outdir: buildPath,
     minify: !watch,
-    // loader: { ".json": "copy" },
     plugins: [
       json_plugin(),
       copy({
         assets: {
           from: ["./src/assets/**"],
           to: ["./assets"],
+        },
+      }),
+      copy({
+        assets: {
+          from: ["./src/_locales/**"],
+          to: ["./_locales"],
         },
       }),
       copy({
@@ -49,7 +54,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
   };
 
   return watch
-    ? esbuild.context(esbuildOptions)
+    ? (await esbuild.context(esbuildOptions)).watch()
     : esbuild.build(esbuildOptions);
 }
 
@@ -90,7 +95,7 @@ async function build() {
   if (isFirefox) {
     firefoxBuild = await runEsbuild({
       buildPath: `./${outdir}/firefox`,
-      manifestPath: "src/manifest_firefox.json",
+      manifestPath: "src/manifest_firefox_v2.json",
       watch: isWatch,
     });
     if (!isWatch) {

@@ -51,3 +51,11 @@ export const removeQueryParam = (url:string, paramName:string) => {
 export function isNumber(value: any) {
   return !isNaN(parseFloat(value)) && isFinite(value);
 }
+
+export function isValidDate(dateString: any) {
+  if(!dateString) return false;
+
+  const date = new Date(dateString);
+
+  return !isNaN(date.getTime());
+}

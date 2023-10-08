@@ -1,0 +1,152 @@
+{
+    "appDesc": {
+        "message": "Añade banderas regionales en la página oficial de osu!.\n También muestra la clasificación global por puntuación en el perfil."
+    },
+    "created_by": {
+        "message": "desarrollado por"
+    },
+    "system_default": {
+        "message": "Idioma por Defecto"
+    },
+    "native_language": {
+        "message": "Idioma Nativo"
+    },
+    "clean_cache": {
+        "message": "Limpiar Cache"
+    },
+    "cache_cleaned": {
+        "message": "Se ha limpiado la caché"
+    },
+    "region_language": {
+        "message": "Idioma de las Regiones:"
+    },
+    "score_ranking": {
+        "message": "Clasificación por puntuación"
+    },
+    "highest_rank_profile": {
+        "message": "Clasificación más alta: #{{rankHighest.rank}} el {{formattedDate}}"
+    },
+    "region": {
+        "message": "Región"
+    },
+    "region_ru": {
+        "message": "República / Óblast"
+    },
+    "region_ar": {
+        "message": "Provincia"
+    },
+    "region_at": {
+        "message": "Estado"
+    },
+    "region_au": {
+        "message": "Estado"
+    },
+    "region_be": {
+        "message": "Provincia"
+    },
+    "region_br": {
+        "message": "Estado"
+    },
+    "region_by": {
+        "message": "Condado"
+    },
+    "region_ca": {
+        "message": "Provincia"
+    },
+    "region_cl": {
+        "message": "Región"
+    },
+    "region_cn": {
+        "message": "Región Administrativa"
+    },
+    "region_co": {
+        "message": "Departamento"
+    },
+    "region_cz": {
+        "message": "Región"
+    },
+    "region_de": {
+        "message": "Estado"
+    },
+    "region_es": {
+        "message": "Comunidad Autónoma"
+    },
+    "region_fi": {
+        "message": "Región"
+    },
+    "region_fr": {
+        "message": "Región"
+    },
+    "region_hu": {
+        "message": "Condado"
+    },
+    "region_id": {
+        "message": "Provincia"
+    },
+    "region_it": {
+        "message": "Región"
+    },
+    "region_jp": {
+        "message": "Prefectura"
+    },
+    "region_kr": {
+        "message": "Provincia"
+    },
+    "region_kz": {
+        "message": "Condado"
+    },
+    "region_lv": {
+        "message": "Región"
+    },
+    "region_mx": {
+        "message": "Estado"
+    },
+    "region_my": {
+        "message": "Estado"
+    },
+    "region_nl": {
+        "message": "Provincia"
+    },
+    "region_no": {
+        "message": "Condado"
+    },
+    "region_pe": {
+        "message": "Región"
+    },
+    "region_ph": {
+        "message": "Provincia"
+    },
+    "region_pl": {
+        "message": "Volvodato"
+    },
+    "region_pt": {
+        "message": "Región"
+    },
+    "region_ro": {
+        "message": "Condado"
+    },
+    "region_se": {
+        "message": "Condado"
+    },
+    "region_sg": {
+        "message": "Distrito"
+    },
+    "region_th": {
+        "message": "Provincia"
+    },
+    "region_tr": {
+        "message": "Región"
+    },
+    "region_tw": {
+        "message": "Provincia"
+    },
+    "region_ua": {
+        "message": "Condado"
+    },
+    "region_us": {
+        "message": "Estado"
+    },
+    "region_vn": {
+        "message": "Provincia"
+    }
+}

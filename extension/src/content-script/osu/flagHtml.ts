@@ -22,8 +22,8 @@ type regionAndFlag = {
   regionName?: string ;
 } | undefined;
 
-export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false): Promise<regionAndFlag> => {
-  const resultNames = await _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone);
+export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false, insertInsideThePreviousFlag = false): Promise<regionAndFlag> => {
+  const resultNames = await _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone, insertInsideThePreviousFlag);
   if(!resultNames){
     const countryName = await updateCountryNameFlag(item);
     return {countryName};
@@ -31,7 +31,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = fa
   return resultNames;
 };
 
-const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false): Promise<regionAndFlag> => {
+const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false, insertInsideThePreviousFlag = false): Promise<regionAndFlag> => {
   if (!item) return;
   const playerOsuWorld = await osuWorldUser(userId);
   if (playerOsuWorld.error) {
@@ -39,7 +39,7 @@ const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, a
       return;
     }
     const textError = fetchErrorToText(playerOsuWorld);
-    console.log(textError);
+    console.error(textError);
     removeRegionalFlag(item);
     return;
   }
@@ -50,7 +50,7 @@ const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, a
 
   const countryCode = playerData["country_id"];
   const regionCode = playerData["region_id"];
-  return addRegionalFlag(item, countryCode, regionCode, addDiv, addMargin, addSuperParentClone);
+  return addRegionalFlag(item, countryCode, regionCode, addDiv, addMargin, addSuperParentClone, insertInsideThePreviousFlag);
 };
 
 export const removeRegionalFlag = (item: HTMLElement) => {
@@ -66,7 +66,8 @@ export const addRegionalFlag = async (
   regionCode: string,
   addDiv = false,
   addMargin = true,
-  superParentClone = false
+  superParentClone = false,
+  insertInsideThePreviousFlag = false,
 ) => {
   if (!item) return;
 
@@ -101,7 +102,10 @@ export const addRegionalFlag = async (
   }
 
 
-  let insertParent = flagParent.parentElement!;
+  let insertParent = insertInsideThePreviousFlag ? flagParent : flagParent.parentElement!;
+  if(insertInsideThePreviousFlag){
+    flagParentClone.classList.remove(...flagParentClone.classList);
+  }
 
   // Check again if flag is already added
   flagElements = item.querySelectorAll(`.${flagClass}`);

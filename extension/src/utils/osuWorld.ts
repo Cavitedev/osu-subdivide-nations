@@ -28,7 +28,7 @@ export interface IosuWorldIdSuccess  {
   export type osuWorldIdData =  IosuWorldIdSuccess | IFetchError 
 
   
-const userDataExpireTime = 1800000; //30 minutes
+const userDataExpireTime = 43200000; //12 hours
 
 export const osuWorldUser = async (id: String): Promise<IfetchResponse<osuWorldIdData>> => {
     if (!id) {
@@ -47,6 +47,8 @@ export const osuWorldUser = async (id: String): Promise<IfetchResponse<osuWorldI
 const regionRankingUrl =
 "https://osuworld.octo.moe/api/{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
 
+const regionRankingExpire = 7200000; //2 hours
+
 export const osuWorldCountryRegionRanking = async (
 countryCode: string,
 regionCode: string,
@@ -64,7 +66,7 @@ const url = regionRankingUrl
   .replace("{{mode}}", mode)
   .replace("{{page}}", page.toString());
 
-return fetchWithCache(url, userDataExpireTime).then((result) => {
+return fetchWithCache(url, regionRankingExpire).then((result) => {
     if (result.error) {
       console.log(fetchErrorToText(result));
       return null;
