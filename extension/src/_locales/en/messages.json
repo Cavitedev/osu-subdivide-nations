@@ -1,4 +1,7 @@
 {
+    "appDesc": {
+        "message": "Add regional flags on the osu! website.\n While Also updating osu! global score on profiles."
+    },
     "created_by": {
         "message": "created by"
     },
@@ -23,7 +26,7 @@
     "highest_rank_profile": {
         "message": "Highest rank: #{{rankHighest.rank}} on {{formattedDate}}"
     },
-    "region":{
+    "region": {
         "message": "Region"
     },
     "region_ru": {
