@@ -605,6 +605,70 @@
         "nativeName": "日本",
         "regions": {}
     },
+    "KZ": {
+        "regions": {
+            "KZ-10": {
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3e/Flag_of_Abai_Region.svg"
+            },
+            "KZ-11": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Coat_of_Arms_of_Aqmola_Province_(new).png"
+            },
+            "KZ-19": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/44/Алматы_облысы_герб.png"
+            },
+            "KZ-75": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Coat_of_arms_of_Almaty.svg/128px-Coat_of_arms_of_Almaty.svg.png"
+            },
+            "KZ-15": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Aktyubinsk-obl-coat-of-arms.png"
+            },
+            "KZ-71": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Emblem_of_Astana_(latin).svg"
+            },
+            "KZ-23": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Coat_of_arms_of_Atyrau.svg"
+            },
+            "KZ-63": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Coats_of_arms_of_East_Kazakhstan_Province.svg/128px-Coats_of_arms_of_East_Kazakhstan_Province.svg.png"
+            },
+            "KZ-31": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Zhambyl_province_seal.png"
+            },
+            "KZ-33": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Jetisu_Region_Emblem.jpg"
+            },
+            "KZ-35": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Coat_of_Arms_of_Karagandy_Province.svg"
+            },
+            "KZ-39": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Logo_Kostanay_Province.png"
+            },
+            "KZ-43": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Kyzylorda_province_seal.svg"
+            },
+            "KZ-47": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Маңғыстау_логотибі.jpg"
+            },
+            "KZ-59": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/North_Kazakhstan_province_seal.svg/128px-North_Kazakhstan_province_seal.svg.png"
+            },
+            "KZ-55": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Logo_Pavlodar_region.png"
+            },
+            "KZ-79": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Shymkent_logo.svg"
+            },
+            "KZ-61": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/62/South_Kazakhstan_province_seal.png"
+            },
+            "KZ-62": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Coat_of_arms_of_Ulytau_Region.svg"
+            },
+            "KZ-27": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Coat_of_Arms_Batys_Oblysy.png"
+            }
+        }
+    },
     "KR": {
         "nativeName": "한국",
         "regions": {
