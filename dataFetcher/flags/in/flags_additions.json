@@ -54,6 +54,15 @@
             }
         }
     },
+    "BR": {
+        "regions": {
+            "BR-RN": {
+                "name": "Rio Grande do Norte",
+                "nativeName": "Rio Grande do Norte",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Bandeira_do_Rio_Grande_do_Norte.svg"
+            }
+        }
+    },
     "BY": {
         "regions": {
             "BY-HO": {
