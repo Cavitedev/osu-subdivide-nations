@@ -413,11 +413,6 @@
                 "nativeName": "Rio de Janeiro",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg//128px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png"
             },
-            "BR-RN": {
-                "name": "Rio Grande do Norte",
-                "nativeName": "Rio Grande do Norte",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg//128px-Bandeira_do_Rio_Grande_do_Norte.svg.png"
-            },
             "BR-RS": {
                 "name": "Rio Grande do Sul",
                 "nativeName": "Rio Grande do Sul",
@@ -457,6 +452,11 @@
                 "name": "Federal District",
                 "nativeName": "Distrito Federal",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bandeira_do_Distrito_Federal_(Brasil).svg"
+            },
+            "BR-RN": {
+                "name": "Rio Grande do Norte",
+                "nativeName": "Rio Grande do Norte",
+                "flag": ""
             }
         }
     },
@@ -969,7 +969,7 @@
             },
             "CZ-64": {
                 "name": "South Moravia",
-                "nativeName": "Jihomoravský kraj",
+                "nativeName": "",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_South_Moravian_Region.svg//128px-Flag_of_South_Moravian_Region.svg.png"
             },
             "CZ-41": {
@@ -1024,6 +1024,37 @@
             }
         },
         "nativeName": "Česko"
+    },
+    "DK": {
+        "name": "Denmark",
+        "nativeName": "Danmark",
+        "regions": {
+            "DK-84": {
+                "name": "Capital Region of Denmark",
+                "nativeName": "Region Hovedstaden",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_the_Capital_Region_of_Denmark.svg"
+            },
+            "DK-82": {
+                "name": "Central Denmark Region",
+                "nativeName": "Region Midtjylland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Region_Midtjylland.svg"
+            },
+            "DK-81": {
+                "name": "North Jutland Region",
+                "nativeName": "Region Nordjylland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Region_Nordjylland.svg"
+            },
+            "DK-85": {
+                "name": "Region Zealand",
+                "nativeName": "Region Sjælland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_Region_Sjælland.svg"
+            },
+            "DK-83": {
+                "name": "Region of Southern Denmark",
+                "nativeName": "Region Syddanmark",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Flag_of_Region_Syddanmark.svg"
+            }
+        }
     },
     "FI": {
         "name": "Finland",
@@ -1428,6 +1459,11 @@
                 "nativeName": "Kalimantan Tengah",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Central_Kalimantan.svg"
             },
+            "ID-PT": {
+                "name": "Central Papua",
+                "nativeName": "Papua Tengah",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Central_Papua_Province.svg/128px-Flag_of_Central_Papua_Province.svg.png"
+            },
             "ID-ST": {
                 "name": "Central Sulawesi",
                 "nativeName": "Sulawesi Tengah",
@@ -1456,7 +1492,7 @@
             "ID-PE": {
                 "name": "Highland Papua",
                 "nativeName": "Papua Pegunungan",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Flag_of_Highland_Papua_Province.png/143px-Flag_of_Highland_Papua_Province.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Highland_Papua.svg//128px-Flag_of_Highland_Papua.svg.png"
             },
             "ID-JA": {
                 "name": "Jambi",
@@ -1513,6 +1549,11 @@
                 "nativeName": "Kalimantan Selatan",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_South_Kalimantan.svg"
             },
+            "ID-PS": {
+                "name": "South Papua",
+                "nativeName": "Papua Selatan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_South_Papua_Province.svg/128px-Flag_of_South_Papua_Province.svg.png"
+            },
             "ID-SN": {
                 "name": "South Sulawesi",
                 "nativeName": "Sulawesi Selatan",
@@ -1563,20 +1604,10 @@
                 "nativeName": "Daerah Khusus Ibukota Jakarta",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_Jakarta_(vectorised).svg//128px-Flag_of_Jakarta_(vectorised).svg.png"
             },
-            "ID-PT": {
-                "name": "Central Papua",
-                "nativeName": "Papua Tengah",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Central_Papua_Province.svg/128px-Flag_of_Central_Papua_Province.svg.png"
-            },
             "ID-MA": {
                 "name": "Maluku Islands",
                 "nativeName": "Maluku",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_Maluku.svg/128px-Flag_of_Maluku.svg.png"
-            },
-            "ID-PS": {
-                "name": "South Papua",
-                "nativeName": "Papua Selatan",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_South_Papua_Province.svg/128px-Flag_of_South_Papua_Province.svg.png"
             },
             "ID-PSW": {
                 "name": "Southwest Papua",
@@ -1693,7 +1724,7 @@
     },
     "JP": {
         "name": "Japan",
-        "nativeName": "Nippon 日本",
+        "nativeName": "日本",
         "regions": {
             "JP-23": {
                 "name": "Aichi Prefecture",
@@ -1934,7 +1965,7 @@
     },
     "KR": {
         "name": "South Korea",
-        "nativeName": "한국,남한",
+        "nativeName": "한국",
         "regions": {
             "KR-11": {
                 "name": "Seoul",
@@ -2046,6 +2077,62 @@
                 "name": "Zemgale",
                 "nativeName": "Zemgale",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Coat_of_arms_of_Zemgale.svg"
+            }
+        }
+    },
+    "LT": {
+        "name": "Lithuania",
+        "nativeName": "Lietuva",
+        "regions": {
+            "LT-AL": {
+                "name": "Alytus County",
+                "nativeName": "Alytaus apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Alytus_County_flag.svg"
+            },
+            "LT-KU": {
+                "name": "Kaunas County",
+                "nativeName": "Kauno apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/LTU_Kauno_apskritis_flag.svg"
+            },
+            "LT-KL": {
+                "name": "Klaipėda County",
+                "nativeName": "Klaipėdos apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/LTU_Klaipėdos_apskritis_flag.svg"
+            },
+            "LT-MR": {
+                "name": "Marijampolė County",
+                "nativeName": "Marijampolės apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Marijampole_County_flag.svg"
+            },
+            "LT-PN": {
+                "name": "Panevėžys County",
+                "nativeName": "Panevėžio apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Panevezys_County_flag.svg"
+            },
+            "LT-SA": {
+                "name": "Šiauliai County",
+                "nativeName": "Šiaulių apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Siauliai_County_flag.svg"
+            },
+            "LT-TA": {
+                "name": "Tauragė County",
+                "nativeName": "Tauragės apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Taurage_County_flag.png/120px-Taurage_County_flag.png"
+            },
+            "LT-TE": {
+                "name": "Telšiai County",
+                "nativeName": "Telšių apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Telsiai_County_flag.png/120px-Telsiai_County_flag.png"
+            },
+            "LT-UT": {
+                "name": "Utena County",
+                "nativeName": "Utenos apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Utena_County_flag.svg"
+            },
+            "LT-VL": {
+                "name": "Vilnius County",
+                "nativeName": "Vilniaus apskritis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Vilnius_County_flag.svg"
             }
         }
     },
@@ -2364,6 +2451,97 @@
                 "name": "Zeeland",
                 "nativeName": "Zeeland",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Zeeland.svg//128px-Flag_of_Zeeland.svg.png"
+            }
+        }
+    },
+    "NZ": {
+        "name": "New Zealand",
+        "nativeName": "New Zealand",
+        "regions": {
+            "NZ-CIT": {
+                "name": "Chatham Islands",
+                "nativeName": "Chatham Islands",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Chatham_Islands.svg"
+            },
+            "NZ-AUK": {
+                "name": "Auckland",
+                "nativeName": "Auckland",
+                "flag": ""
+            },
+            "NZ-BOP": {
+                "name": "Bay of Plenty",
+                "nativeName": "Bay of Plenty",
+                "flag": ""
+            },
+            "NZ-CAN": {
+                "name": "Canterbury",
+                "nativeName": "Canterbury",
+                "flag": ""
+            },
+            "NZ-GIS": {
+                "name": "Gisborne",
+                "nativeName": "Gisborne",
+                "flag": ""
+            },
+            "NZ-HKB": {
+                "name": "Hawke's Bay",
+                "nativeName": "Hawke's Bay",
+                "flag": ""
+            },
+            "NZ-MBH": {
+                "name": "Marlborough",
+                "nativeName": "Marlborough",
+                "flag": ""
+            },
+            "NZ-MWT": {
+                "name": "Manawatū-Whanganui",
+                "nativeName": "Manawatū-Whanganui",
+                "flag": ""
+            },
+            "NZ-NSN": {
+                "name": "Nelson",
+                "nativeName": "Nelson",
+                "flag": ""
+            },
+            "NZ-NTL": {
+                "name": "Northland",
+                "nativeName": "Northland",
+                "flag": ""
+            },
+            "NZ-OTA": {
+                "name": "Otago",
+                "nativeName": "Otago",
+                "flag": ""
+            },
+            "NZ-STL": {
+                "name": "Southland",
+                "nativeName": "Southland",
+                "flag": ""
+            },
+            "NZ-TAS": {
+                "name": "Tasman",
+                "nativeName": "Tasman",
+                "flag": ""
+            },
+            "NZ-TKI": {
+                "name": "Taranaki",
+                "nativeName": "Taranaki",
+                "flag": ""
+            },
+            "NZ-WGN": {
+                "name": "Wellington",
+                "nativeName": "Wellington",
+                "flag": ""
+            },
+            "NZ-WKO": {
+                "name": "Waikato",
+                "nativeName": "Waikato",
+                "flag": ""
+            },
+            "NZ-WTC": {
+                "name": "West Coast",
+                "nativeName": "West Coast",
+                "flag": ""
             }
         }
     },
@@ -3433,11 +3611,6 @@
                 "nativeName": "Canarias",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Flag_of_the_Canary_Islands.svg//128px-Flag_of_the_Canary_Islands.svg.png"
             },
-            "ES-CB": {
-                "name": "Cantabria",
-                "nativeName": "Cantabria",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Cantabria_(Official).svg//128px-Flag_of_Cantabria_(Official).svg.png"
-            },
             "ES-CM": {
                 "name": "Castilla–La Mancha",
                 "nativeName": "Castilla-La Mancha",
@@ -3497,6 +3670,11 @@
                 "name": "Balearic Islands",
                 "nativeName": "Illes Balears",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
+            },
+            "ES-CB": {
+                "name": "Cantabria",
+                "nativeName": "Cantabria",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Cantabria_(Official).svg//128px-Flag_of_Cantabria_(Official).svg.png"
             },
             "ES-RI": {
                 "name": "La Rioja",
@@ -4396,6 +4574,42 @@
                 "name": "Washington, D.C.",
                 "nativeName": "Washington, D.C.",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
+            }
+        }
+    },
+    "IL": {
+        "name": "Israel",
+        "nativeName": "ישראל",
+        "regions": {
+            "IL-M": {
+                "name": "Center District",
+                "nativeName": "מחוז המרכז",
+                "flag": ""
+            },
+            "IL-HA": {
+                "name": "Haifa District",
+                "nativeName": "מחוז חיפה",
+                "flag": ""
+            },
+            "IL-JM": {
+                "name": "Jerusalem District",
+                "nativeName": "מחוז ירושלים",
+                "flag": ""
+            },
+            "IL-Z": {
+                "name": "North District",
+                "nativeName": "מחוז הצפון",
+                "flag": ""
+            },
+            "IL-D": {
+                "name": "South District",
+                "nativeName": "מחוז הדרום",
+                "flag": ""
+            },
+            "IL-TA": {
+                "name": "Tel Aviv District",
+                "nativeName": "מחוז תל אביב",
+                "flag": ""
             }
         }
     },

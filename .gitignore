@@ -18,5 +18,6 @@ darkReader/
 node_modules/
 build/
 
-
+dataFetcher/countryVisualization/
 dataFetcher/translations/out/
+dataFetcher/flags/out/
