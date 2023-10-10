@@ -1,1 +1,5 @@
-{}
+{
+    "highest_rank_profile": {
+        "message": "最高ランク: #{{rankHighest.rank}} ({{formattedDate}}に取得)"
+    }
+}
