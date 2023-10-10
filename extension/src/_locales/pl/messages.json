@@ -1,1 +1,143 @@
-{}
+{
+    "appDesc": {
+        "message": "Dodaje regionalne flagi do oficjalnej strony osu!.\n Pokazuje również na profilu osu! ogólny ranking według łącznego wyniku."
+    },
+    "created_by": {
+        "message": "stworzone przez"
+    },
+    "system_default": {
+        "message": "Domyślne ustawienie systemowe"
+    },
+    "native_language": {
+        "message": "Język natywny"
+    },
+    "clean_cache": {
+        "message": "Wyczyść Cache"
+    },
+    "cache_cleaned": {
+        "message": "Cache zostało wyczyszczone"
+    },
+    "region_language": {
+        "message": "Język regionalny:"
+    },
+    "score_ranking": {
+        "message": "Ranking punktowy"
+    },
+    "highest_rank_profile": {
+        "message": "Najwyższa pozycja: #{{rankHighest.rank}} z {{formattedDate}}"
+    },
+    "region": {
+        "message": "Region"
+    },
+    "region_ru": {
+        "message": "Republika / Obwód"
+    },
+    "region_ar": {
+        "message": "Prowincja"
+    },
+    "region_at": {
+        "message": "Stan"
+    },
+    "region_au": {
+        "message": "Stan"
+    },
+    "region_be": {
+        "message": "Prowincja"
+    },
+    "region_br": {
+        "message": "Stan"
+    },
+    "region_ca": {
+        "message": "Prowincja"
+    },
+    "region_cl": {
+        "message": "Region"
+    },
+    "region_cn": {
+        "message": "Region Administracyjny"
+    },
+    "region_co": {
+        "message": "Departament"
+    },
+    "region_cz": {
+        "message": "Region"
+    },
+    "region_de": {
+        "message": "Stan"
+    },
+    "region_es": {
+        "message": "Wspólnota Autonomiczna"
+    },
+    "region_fi": {
+        "message": "Region"
+    },
+    "region_fr": {
+        "message": "Region"
+    },
+    "region_id": {
+        "message": "Prowincja"
+    },
+    "region_it": {
+        "message": "Region"
+    },
+    "region_jp": {
+        "message": "Prefektura"
+    },
+    "region_kr": {
+        "message": "Prowincja"
+    },
+    "region_lv": {
+        "message": "Region"
+    },
+    "region_mx": {
+        "message": "Stan"
+    },
+    "region_my": {
+        "message": "Stan"
+    },
+    "region_nl": {
+        "message": "Prowincja"
+    },
+    "region_pe": {
+        "message": "Region"
+    },
+    "region_ph": {
+        "message": "Prowincja"
+    },
+    "region_pl": {
+        "message": "Województwo"
+    },
+    "region_pt": {
+        "message": "Region"
+    },
+    "region_sg": {
+        "message": "Dystrykty"
+    },
+    "region_th": {
+        "message": "Prowincja"
+    },
+    "region_tr": {
+        "message": "Region"
+    },
+    "region_tw": {
+        "message": "Prowincja"
+    },
+    "region_us": {
+        "message": "Stan"
+    },
+    "region_vn": {
+        "message": "Prowincja"
+    },
+    "region_dk": {
+        "message": "Region"
+    },
+    "region_il": {
+        "message": "Dystrykt"
+    },
+    "region_nz": {
+        "message": "Region"
+    },
+    "region_lt": {
+        "message": "Region"
+    }
+}

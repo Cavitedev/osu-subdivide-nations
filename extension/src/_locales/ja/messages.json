@@ -1,1 +1,29 @@
-{}
+{
+    "score_ranking": {
+        "message": "スコアランキング"
+    },
+    "highest_rank_profile": {
+        "message": "最高ランク: #{{rankHighest.rank}} ({{formattedDate}}に取得)"
+    },
+    "region_at": {
+        "message": "州"
+    },
+    "region_au": {
+        "message": "州"
+    },
+    "region_br": {
+        "message": "州"
+    },
+    "region_de": {
+        "message": "州"
+    },
+    "region_mx": {
+        "message": "州"
+    },
+    "region_my": {
+        "message": "州"
+    },
+    "region_us": {
+        "message": "州"
+    }
+}
