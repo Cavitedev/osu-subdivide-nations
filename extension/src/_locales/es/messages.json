@@ -47,9 +47,6 @@
     "region_br": {
         "message": "Estado"
     },
-    "region_by": {
-        "message": "Condado"
-    },
     "region_ca": {
         "message": "Provincia"
     },
@@ -148,5 +145,17 @@
     },
     "region_vn": {
         "message": "Provincia"
+    },
+    "region_dk": {
+        "message": "Región"
+    },
+    "region_il": {
+        "message": "Distrito"
+    },
+    "region_nz": {
+        "message": "Región"
+    },
+    "region_lt": {
+        "message": "Región"
     }
 }

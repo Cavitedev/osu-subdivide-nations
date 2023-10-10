@@ -48,7 +48,7 @@
         "message": "State"
     },
     "region_by": {
-        "message": "County"
+        "message": "Oblast"
     },
     "region_ca": {
         "message": "Province"
@@ -148,5 +148,17 @@
     },
     "region_vn": {
         "message": "Province"
+    },
+    "region_dk": {
+        "message": "Region"
+    },
+    "region_il": {
+        "message": "District"
+    },
+    "region_nz":{
+        "message": "Region"
+    },
+    "region_lt":{
+        "message": "Region"
     }
 }
