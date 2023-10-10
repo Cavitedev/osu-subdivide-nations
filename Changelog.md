@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.1.2
+
+- Adding languages, mainly Poland
+
 ## Version 3.1.1
 
 - Added Romania, Kazakhstan, Denmark and Lithuania flags
