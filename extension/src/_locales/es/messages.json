@@ -148,5 +148,14 @@
     },
     "region_vn": {
         "message": "Provincia"
+    },
+    "region_dk": {
+        "message": "Región"
+    },
+    "region_nz": {
+        "message": "Región"
+    },
+    "region_lt": {
+        "message": "Región"
     }
 }
