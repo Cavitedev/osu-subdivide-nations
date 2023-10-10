@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.1.1
+
+- Added Romania, Kazakhstan, Denmark and Lithuania flags
+- Partial support for Israel and New Zealand (recently added in osu world)
+
 ## Version 3.1.0
 
 - Add support for other languages. English and Spanish are now supported (everyone can contribute on Discord)
