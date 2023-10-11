@@ -1,1 +1,8 @@
-{}
+{
+    "system_default": {
+        "message": "Systemstandard"
+    },
+    "native_language": {
+        "message": "Muttersprache"
+    }
+}
