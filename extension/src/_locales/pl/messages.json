@@ -2,9 +2,6 @@
     "appDesc": {
         "message": "Dodaje regionalne flagi do oficjalnej strony osu!.\n Pokazuje również na profilu osu! ogólny ranking według łącznego wyniku."
     },
-    "created_by": {
-        "message": "stworzone przez"
-    },
     "system_default": {
         "message": "Domyślne ustawienie systemowe"
     },
@@ -47,6 +44,9 @@
     "region_br": {
         "message": "Stan"
     },
+    "region_by": {
+        "message": "Obwód"
+    },
     "region_ca": {
         "message": "Prowincja"
     },
@@ -74,6 +74,9 @@
     "region_fr": {
         "message": "Region"
     },
+    "region_hu": {
+        "message": "Komitat"
+    },
     "region_id": {
         "message": "Prowincja"
     },
@@ -85,6 +88,9 @@
     },
     "region_kr": {
         "message": "Prowincja"
+    },
+    "region_kz": {
+        "message": "Komitat"
     },
     "region_lv": {
         "message": "Region"
@@ -98,6 +104,9 @@
     "region_nl": {
         "message": "Prowincja"
     },
+    "region_no": {
+        "message": "Komitat"
+    },
     "region_pe": {
         "message": "Region"
     },
@@ -110,6 +119,12 @@
     "region_pt": {
         "message": "Region"
     },
+    "region_ro": {
+        "message": "Komitat"
+    },
+    "region_se": {
+        "message": "Komitat"
+    },
     "region_sg": {
         "message": "Dystrykty"
     },
@@ -121,6 +136,9 @@
     },
     "region_tw": {
         "message": "Prowincja"
+    },
+    "region_ua": {
+        "message": "Komitat"
     },
     "region_us": {
         "message": "Stan"

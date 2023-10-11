@@ -1,1 +1,56 @@
-{}
+{
+    "system_default": {
+        "message": "Sistem Varsayılanı"
+    },
+    "native_language": {
+        "message": "Ana dil"
+    },
+    "region_language": {
+        "message": "Bölge dili:"
+    },
+    "score_ranking": {
+        "message": "Skor Sıralaması"
+    },
+    "highest_rank_profile": {
+        "message": "{{formattedDate}} tarihinde en yüksek rank: #{{rankHighest.rank}}"
+    },
+    "region": {
+        "message": "Bölge"
+    },
+    "region_cl": {
+        "message": "Bölge"
+    },
+    "region_cz": {
+        "message": "Bölge"
+    },
+    "region_fi": {
+        "message": "Bölge"
+    },
+    "region_fr": {
+        "message": "Bölge"
+    },
+    "region_it": {
+        "message": "Bölge"
+    },
+    "region_lv": {
+        "message": "Bölge"
+    },
+    "region_pe": {
+        "message": "Bölge"
+    },
+    "region_pt": {
+        "message": "Bölge"
+    },
+    "region_tr": {
+        "message": "Bölge"
+    },
+    "region_dk": {
+        "message": "Bölge"
+    },
+    "region_nz": {
+        "message": "Bölge"
+    },
+    "region_lt": {
+        "message": "Bölge"
+    }
+}
