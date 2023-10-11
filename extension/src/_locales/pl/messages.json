@@ -2,9 +2,6 @@
     "appDesc": {
         "message": "Dodaje regionalne flagi do oficjalnej strony osu!.\n Pokazuje również na profilu osu! ogólny ranking według łącznego wyniku."
     },
-    "created_by": {
-        "message": "stworzone przez"
-    },
     "system_default": {
         "message": "Domyślne ustawienie systemowe"
     },
