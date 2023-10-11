@@ -1,1 +1,161 @@
-{}
+{
+    "appDesc": {
+        "message": "Menambahkan bendera regional pada halaman osu!\n Dan juga memperbarui skor global osu! pada profil."
+    },
+    "system_default": {
+        "message": "Bawaan Sistem"
+    },
+    "native_language": {
+        "message": "Bahasa Asli"
+    },
+    "clean_cache": {
+        "message": "Bersihkan Cache"
+    },
+    "cache_cleaned": {
+        "message": "Cache telah dibersihkan"
+    },
+    "region_language": {
+        "message": "Bahasa Daerah:"
+    },
+    "score_ranking": {
+        "message": "Peringkat Skor"
+    },
+    "highest_rank_profile": {
+        "message": "Peringkat tertinggi: #{{rankHighest.rank}} pada {{formattedDate}}"
+    },
+    "region": {
+        "message": "Wilayah"
+    },
+    "region_ru": {
+        "message": "Republik / Oblast"
+    },
+    "region_ar": {
+        "message": "Provinsi"
+    },
+    "region_at": {
+        "message": "Negara Bagian"
+    },
+    "region_au": {
+        "message": "Negara Bagian"
+    },
+    "region_be": {
+        "message": "Provinsi"
+    },
+    "region_br": {
+        "message": "Negara Bagian"
+    },
+    "region_by": {
+        "message": "Oblast"
+    },
+    "region_ca": {
+        "message": "Provinsi"
+    },
+    "region_cl": {
+        "message": "Wilayah"
+    },
+    "region_cn": {
+        "message": "Wilayah Administrasi"
+    },
+    "region_co": {
+        "message": "Departemen"
+    },
+    "region_cz": {
+        "message": "Wilayah"
+    },
+    "region_de": {
+        "message": "Negara Bagian"
+    },
+    "region_es": {
+        "message": "Komunitas Otonom"
+    },
+    "region_fi": {
+        "message": "Wilayah"
+    },
+    "region_fr": {
+        "message": "Wilayah"
+    },
+    "region_hu": {
+        "message": "Daerah"
+    },
+    "region_id": {
+        "message": "Provinsi"
+    },
+    "region_it": {
+        "message": "Wilayah"
+    },
+    "region_jp": {
+        "message": "Prefektur"
+    },
+    "region_kr": {
+        "message": "Provinsi"
+    },
+    "region_kz": {
+        "message": "Daerah"
+    },
+    "region_lv": {
+        "message": "Wilayah"
+    },
+    "region_mx": {
+        "message": "Negara Bagian"
+    },
+    "region_my": {
+        "message": "Negara Bagian"
+    },
+    "region_nl": {
+        "message": "Provinsi"
+    },
+    "region_no": {
+        "message": "Daerah"
+    },
+    "region_pe": {
+        "message": "Wilayah"
+    },
+    "region_ph": {
+        "message": "Provinsi"
+    },
+    "region_pl": {
+        "message": "Provinsi"
+    },
+    "region_pt": {
+        "message": "Wilayah"
+    },
+    "region_ro": {
+        "message": "Daerah"
+    },
+    "region_se": {
+        "message": "Daerah"
+    },
+    "region_sg": {
+        "message": "Distrik"
+    },
+    "region_th": {
+        "message": "Provinsi"
+    },
+    "region_tr": {
+        "message": "Wilayah"
+    },
+    "region_tw": {
+        "message": "Provinsi"
+    },
+    "region_ua": {
+        "message": "Daerah"
+    },
+    "region_us": {
+        "message": "Negara Bagian"
+    },
+    "region_vn": {
+        "message": "Provinsi"
+    },
+    "region_dk": {
+        "message": "Wilayah"
+    },
+    "region_il": {
+        "message": "Distrik"
+    },
+    "region_nz": {
+        "message": "Wilayah"
+    },
+    "region_lt": {
+        "message": "Wilayah"
+    }
+}

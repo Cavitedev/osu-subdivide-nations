@@ -3,22 +3,22 @@
         "message": "Añade banderas regionales en la página oficial de osu!.\n También muestra la clasificación global por puntuación en el perfil."
     },
     "created_by": {
-        "message": "desarrollado por"
+        "message": "creado por {{developer}}"
     },
     "system_default": {
-        "message": "Idioma por Defecto"
+        "message": "Idioma por defecto"
     },
     "native_language": {
         "message": "Idioma Nativo"
     },
     "clean_cache": {
-        "message": "Limpiar Cache"
+        "message": "Limpiar caché"
     },
     "cache_cleaned": {
         "message": "Se ha limpiado la caché"
     },
     "region_language": {
-        "message": "Idioma de las Regiones:"
+        "message": "Idioma de la región:"
     },
     "score_ranking": {
         "message": "Clasificación por puntuación"
@@ -47,6 +47,9 @@
     "region_br": {
         "message": "Estado"
     },
+    "region_by": {
+        "message": "Óblast"
+    },
     "region_ca": {
         "message": "Provincia"
     },
@@ -54,7 +57,7 @@
         "message": "Región"
     },
     "region_cn": {
-        "message": "Región Administrativa"
+        "message": "Región administrativa"
     },
     "region_co": {
         "message": "Departamento"
@@ -66,7 +69,7 @@
         "message": "Estado"
     },
     "region_es": {
-        "message": "Comunidad Autónoma"
+        "message": "Comunidad autónoma"
     },
     "region_fi": {
         "message": "Región"

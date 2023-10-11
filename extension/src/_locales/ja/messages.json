@@ -17,11 +17,32 @@
     "region_de": {
         "message": "州"
     },
+    "region_hu": {
+        "message": "国"
+    },
+    "region_jp": {
+        "message": "県内"
+    },
+    "region_kz": {
+        "message": "国"
+    },
     "region_mx": {
         "message": "州"
     },
     "region_my": {
         "message": "州"
+    },
+    "region_no": {
+        "message": "国"
+    },
+    "region_ro": {
+        "message": "国"
+    },
+    "region_se": {
+        "message": "国"
+    },
+    "region_ua": {
+        "message": "国"
     },
     "region_us": {
         "message": "州"

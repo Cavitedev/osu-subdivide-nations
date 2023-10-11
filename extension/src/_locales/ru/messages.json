@@ -1,1 +1,158 @@
-{}
+{
+    "system_default": {
+        "message": "По умолчанию"
+    },
+    "native_language": {
+        "message": "Родной язык"
+    },
+    "clean_cache": {
+        "message": "Очистить кэш"
+    },
+    "cache_cleaned": {
+        "message": "Кэш очищен"
+    },
+    "region_language": {
+        "message": "Местный язык:"
+    },
+    "score_ranking": {
+        "message": "Ранг по скору"
+    },
+    "highest_rank_profile": {
+        "message": "Наивысший ранк: #{{rankHighest.rank}} был {{formattedDate}}"
+    },
+    "region": {
+        "message": "Регион"
+    },
+    "region_ru": {
+        "message": "Область"
+    },
+    "region_ar": {
+        "message": "Провинция"
+    },
+    "region_at": {
+        "message": "Штат"
+    },
+    "region_au": {
+        "message": "Штат"
+    },
+    "region_be": {
+        "message": "Провинция"
+    },
+    "region_br": {
+        "message": "Штат"
+    },
+    "region_by": {
+        "message": "Область"
+    },
+    "region_ca": {
+        "message": "Провинция"
+    },
+    "region_cl": {
+        "message": "Регион"
+    },
+    "region_cn": {
+        "message": "Административный регион"
+    },
+    "region_co": {
+        "message": "Отдел"
+    },
+    "region_cz": {
+        "message": "Регион"
+    },
+    "region_de": {
+        "message": "Штат"
+    },
+    "region_es": {
+        "message": "Автономное сообщество"
+    },
+    "region_fi": {
+        "message": "Регион"
+    },
+    "region_fr": {
+        "message": "Регион"
+    },
+    "region_hu": {
+        "message": "Страна"
+    },
+    "region_id": {
+        "message": "Провинция"
+    },
+    "region_it": {
+        "message": "Регион"
+    },
+    "region_jp": {
+        "message": "Префектура"
+    },
+    "region_kr": {
+        "message": "Провинция"
+    },
+    "region_kz": {
+        "message": "Страна"
+    },
+    "region_lv": {
+        "message": "Регион"
+    },
+    "region_mx": {
+        "message": "Штат"
+    },
+    "region_my": {
+        "message": "Штат"
+    },
+    "region_nl": {
+        "message": "Провинция"
+    },
+    "region_no": {
+        "message": "Страна"
+    },
+    "region_pe": {
+        "message": "Регион"
+    },
+    "region_ph": {
+        "message": "Провинция"
+    },
+    "region_pl": {
+        "message": "Воеводство"
+    },
+    "region_pt": {
+        "message": "Регион"
+    },
+    "region_ro": {
+        "message": "Страна"
+    },
+    "region_se": {
+        "message": "Страна"
+    },
+    "region_sg": {
+        "message": "Районы"
+    },
+    "region_th": {
+        "message": "Провинция"
+    },
+    "region_tr": {
+        "message": "Регион"
+    },
+    "region_tw": {
+        "message": "Провинция"
+    },
+    "region_ua": {
+        "message": "Страна"
+    },
+    "region_us": {
+        "message": "Штат"
+    },
+    "region_vn": {
+        "message": "Провинция"
+    },
+    "region_dk": {
+        "message": "Регион"
+    },
+    "region_il": {
+        "message": "Район"
+    },
+    "region_nz": {
+        "message": "Регион"
+    },
+    "region_lt": {
+        "message": "Регион"
+    }
+}

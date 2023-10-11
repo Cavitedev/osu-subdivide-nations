@@ -10,8 +10,25 @@ import {
 } from "@src/utils/language";
 
 const updateTitle = () => {
-  (document.querySelector("#created-by") as HTMLElement)!.innerText =
-    chrome.i18n.getMessage("created_by");
+
+  const createdBy = chrome.i18n.getMessage("created_by");
+  const splitted = createdBy.split("{{developer}}");
+  
+  const span1 = document.createElement("span");
+  span1.innerText = splitted[0];
+
+  const developerLink = document.createElement("a");
+  developerLink.innerText = "Cavitedev";
+  developerLink.href = "https://github.com/Cavitedev"
+  developerLink.setAttribute("target", "_blank");
+
+  const span2 = document.createElement("span");
+  span2.innerText = splitted[1];
+
+  const copyrightElement = document.querySelector(".copyright");
+  copyrightElement?.appendChild(span1);
+  copyrightElement?.appendChild(developerLink);
+  copyrightElement?.appendChild(span2);
 
   const title = chrome.runtime.getManifest().name;
   const version = " v" + chrome.runtime.getManifest().version;

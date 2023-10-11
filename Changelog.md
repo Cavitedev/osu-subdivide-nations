@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.1.3
+
+- Update translations
+
 ## Version 3.1.2
 
 - Adding languages, mainly Poland
