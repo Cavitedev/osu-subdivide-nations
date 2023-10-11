@@ -2,9 +2,6 @@
     "appDesc": {
         "message": "Adiciona bandeiras regionais ao site do osu!\n Enquanto também atualiza a posição global por pontuação no perfil."
     },
-    "created_by": {
-        "message": "Criado por"
-    },
     "system_default": {
         "message": "Configuração padrão do sistema"
     },
