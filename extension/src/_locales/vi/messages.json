@@ -1,1 +1,26 @@
-{}
+{
+    "created_by": {
+        "message": "được tạo bởi"
+    },
+    "system_default": {
+        "message": "Mặc định hệ thống"
+    },
+    "native_language": {
+        "message": "Tiếng mẹ đẻ"
+    },
+    "clean_cache": {
+        "message": "Xoá bộ nhớ đệm"
+    },
+    "cache_cleaned": {
+        "message": "Bộ nhớ đệm đã được làm sạch"
+    },
+    "region_language": {
+        "message": "Ngôn ngữ vùng:"
+    },
+    "score_ranking": {
+        "message": "Xếp hạng điểm"
+    },
+    "highest_rank_profile": {
+        "message": "Hạng cao nhất: #{{rankHighest.rank}} vào {{formattedDate}}"
+    }
+}
