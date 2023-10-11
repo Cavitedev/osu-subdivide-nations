@@ -1,1 +1,92 @@
-{}
+{
+    "created_by": {
+        "message": "dibuat oleh"
+    },
+    "system_default": {
+        "message": "Bawaan Sistem"
+    },
+    "native_language": {
+        "message": "Bahasa Asli"
+    },
+    "clean_cache": {
+        "message": "Bersihkan Cache"
+    },
+    "cache_cleaned": {
+        "message": "Cache telah dibersihkan"
+    },
+    "highest_rank_profile": {
+        "message": "Peringkat tertinggi: #{{rankHighest.rank}} pada {{formattedDate}}"
+    },
+    "region": {
+        "message": "Wilayah"
+    },
+    "region_ru": {
+        "message": "Republik / Oblast"
+    },
+    "region_ar": {
+        "message": "Provinsi"
+    },
+    "region_be": {
+        "message": "Provinsi"
+    },
+    "region_ca": {
+        "message": "Provinsi"
+    },
+    "region_cl": {
+        "message": "Wilayah"
+    },
+    "region_cz": {
+        "message": "Wilayah"
+    },
+    "region_fi": {
+        "message": "Wilayah"
+    },
+    "region_fr": {
+        "message": "Wilayah"
+    },
+    "region_id": {
+        "message": "Provinsi"
+    },
+    "region_it": {
+        "message": "Wilayah"
+    },
+    "region_kr": {
+        "message": "Provinsi"
+    },
+    "region_lv": {
+        "message": "Wilayah"
+    },
+    "region_nl": {
+        "message": "Provinsi"
+    },
+    "region_pe": {
+        "message": "Wilayah"
+    },
+    "region_ph": {
+        "message": "Provinsi"
+    },
+    "region_pt": {
+        "message": "Wilayah"
+    },
+    "region_th": {
+        "message": "Provinsi"
+    },
+    "region_tr": {
+        "message": "Wilayah"
+    },
+    "region_tw": {
+        "message": "Provinsi"
+    },
+    "region_vn": {
+        "message": "Provinsi"
+    },
+    "region_dk": {
+        "message": "Wilayah"
+    },
+    "region_nz": {
+        "message": "Wilayah"
+    },
+    "region_lt": {
+        "message": "Wilayah"
+    }
+}
