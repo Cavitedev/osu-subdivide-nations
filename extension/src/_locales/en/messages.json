@@ -3,7 +3,7 @@
         "message": "Add regional flags on the osu! website.\n While Also updating osu! global score on profiles."
     },
     "created_by": {
-        "message": "created by"
+        "message": "created by {{developer}}"
     },
     "system_default": {
         "message": "System Default"
