@@ -2,6 +2,9 @@
     "appDesc": {
         "message": "Añade banderas regionales en la página oficial de osu!.\n También muestra la clasificación global por puntuación en el perfil."
     },
+    "created_by": {
+        "message": "creado por {{developer}}"
+    },
     "system_default": {
         "message": "Idioma por defecto"
     },
