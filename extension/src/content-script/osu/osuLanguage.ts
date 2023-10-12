@@ -2,6 +2,7 @@
 import { Ilanguages } from '@src/utils/language';
 import jsonNameToCode from './nameToLanguage.json'
 import { loadLanguage } from '@src/utils/languagesChrome';
+import { updateRegionsDropdown } from './ranking';
 
 const nameToCode = jsonNameToCode as Ilanguages;
 
@@ -11,7 +12,8 @@ export const updateLanguageToOsuLanguage = async () =>{
     if(language){
         const languageCode = nameToCode[language];
         if(languageCode){
-            loadLanguage(languageCode)
+            await loadLanguage(languageCode)
+            updateRegionsDropdown();
         }
     }
 }
