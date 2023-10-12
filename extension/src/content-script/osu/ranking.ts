@@ -1,7 +1,22 @@
-import { flagClass, addFlagUser, addRegionalFlag } from "@src/content-script/osu/flagHtml";
-import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
-import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
-import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
+import {
+  flagClass,
+  addFlagUser,
+  addRegionalFlag,
+} from "@src/content-script/osu/flagHtml";
+import {
+  countryRegionsLocalData,
+  getRegionNames,
+} from "@src/utils/flagsJsonUtils";
+import {
+  osuWorldCountryRegionRanking,
+  IosuWorldRegionalPlayerData,
+  buildProfileUrl,
+} from "@src/utils/osuWorld";
+import {
+  addOrReplaceQueryParam,
+  removeQueryParam,
+  convertToGroupsOf5,
+} from "@src/utils/utils";
 import { nextAbortControllerSignal } from "./content";
 import { getLocMsg } from "@src/utils/languagesChrome";
 
@@ -10,46 +25,48 @@ const rankingIdAttr = "data-user-id";
 
 export const updateFlagsRankings = async () => {
   const url = location.href;
-if(
-  !url.includes("osu.ppy.sh/rankings") &&
-  !url.includes("osu.ppy.sh/multiplayer/rooms") &&
-  !url.includes("osu.ppy.sh/rankings/kudosu")
-  || url.includes("/country")
-) return;
+  if (
+    (!url.includes("osu.ppy.sh/rankings") &&
+      !url.includes("osu.ppy.sh/multiplayer/rooms") &&
+      !url.includes("osu.ppy.sh/rankings/kudosu")) ||
+    url.includes("/country")
+  )
+    return;
 
-    const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
-  
-  
-    if (url.includes("/country")) {
+  const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
+
+  if (url.includes("/country")) {
+    return;
+  }
+
+  if (
+    url.includes("osu.ppy.sh/multiplayer/rooms") ||
+    url.includes("osu.ppy.sh/rankings/kudosu") ||
+    (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
+  ) {
+    for (const item of listItems) {
+      addLinkToFlag(item as HTMLElement);
+    }
+  }
+  const signal = nextAbortControllerSignal();
+
+  const isRegionRanking = await regionsInRanking(signal);
+  if (isRegionRanking) return;
+
+  for (const item of listItems) {
+    if (signal.aborted) {
       return;
     }
-  
-    if (
-      url.includes("osu.ppy.sh/multiplayer/rooms") ||
-      url.includes("osu.ppy.sh/rankings/kudosu") ||
-      (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
-    ) {
-      for (const item of listItems) {
-        addLinkToFlag(item as HTMLElement);
-      }
-    }
-    const signal = nextAbortControllerSignal();
-  
-  
-    const isRegionRanking = await regionsInRanking(signal);
-    if(isRegionRanking) return;
-  
-  
-    for (const item of listItems) {
-      if (signal.aborted) {
-        return;
-      }
-      let idItem = item.querySelector(`[${rankingIdAttr}]`)!;
-      const userId = idItem.getAttribute(rankingIdAttr)!;
-  
-      await addFlagUser(item as HTMLElement,  userId,  {addDiv:  true, addMargin:  true , });
-    }
-  };
+    let idItem = item.querySelector(`[${rankingIdAttr}]`)!;
+    const userId = idItem.getAttribute(rankingIdAttr)!;
+
+    await addFlagUser(item as HTMLElement, userId, {
+      addDiv: true,
+      addMargin: true,
+      signal: signal,
+    });
+  }
+};
 
 const addLinkToFlag = (item: HTMLElement) => {
   const flags = item.querySelectorAll(`.${flagClass}`);
@@ -64,25 +81,25 @@ const addLinkToFlag = (item: HTMLElement) => {
   parent.insertBefore(anchorParent, parent.firstChild);
 };
 
-
-
-const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
+const regionsInRanking = async (signal: AbortSignal): Promise<boolean> => {
   const queryString = location.search;
   const urlParams = new URLSearchParams(queryString);
   const regionUrlParam = urlParams.get("region");
   const countryUrlParam = urlParams.get("country");
 
-
   const rankingType = location.pathname.split("/")[3];
   const filter = urlParams.get("filter");
-  
-  if (rankingType === "performance" &&
-      (!filter || filter === "all") 
-      && countryUrlParam) {
+
+  if (
+    rankingType === "performance" &&
+    (!filter || filter === "all") &&
+    countryUrlParam
+  ) {
     addRegionsDropdown(countryUrlParam, regionUrlParam);
-    if(!regionUrlParam) return false;
-    const regionData =
-    (await countryRegionsLocalData)[countryUrlParam]?.["regions"]?.[regionUrlParam];
+    if (!regionUrlParam) return false;
+    const regionData = (await countryRegionsLocalData)[countryUrlParam]?.[
+      "regions"
+    ]?.[regionUrlParam];
     if (regionData) {
       const page = urlParams.get("page");
       const mode = location.pathname.split("/")[2];
@@ -97,9 +114,9 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
     }
   }
   return false;
-}
+};
 
-  export const updateRegionsDropdown = async () => {
+export const updateRegionsDropdown = async () => {
   const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
   if (!addedDropdown) return;
 
@@ -108,12 +125,15 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
   const regionUrlParam = urlParams.get("region");
   const countryUrlParam = urlParams.get("country");
 
-  
-  if(!countryUrlParam) return;
+  if (!countryUrlParam) return;
   addRegionsDropdown(countryUrlParam, regionUrlParam, true);
 };
 
- const addRegionsDropdown = async (countryCode: string, regionCode: string | null, replace = false) => {
+const addRegionsDropdown = async (
+  countryCode: string,
+  regionCode: string | null,
+  replace = false
+) => {
   const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
   let regionNames = await getRegionNames(countryCode);
   const regionNamesKeys = Object.entries(regionNames).sort(
@@ -159,7 +179,9 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
   const optionsParent = cloneDropdown.querySelector(
     ".select-options__selector"
   )!;
-  const templateOption = optionsParent!.firstChild!.cloneNode(true) as HTMLElement;
+  const templateOption = optionsParent!.firstChild!.cloneNode(
+    true
+  ) as HTMLElement;
 
   while (optionsParent!.firstChild) {
     optionsParent!.removeChild(optionsParent!.firstChild);
@@ -182,33 +204,29 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
 
   for (const key in regionNames) {
     const value = regionNames[key];
-    const updatedRanking = addOrReplaceQueryParam(
-      baseRanking,
-      "region",
-      key
-    );
+    const updatedRanking = addOrReplaceQueryParam(baseRanking, "region", key);
     const clonedOption = templateOption.cloneNode(true) as HTMLElement;
     clonedOption.setAttribute("href", updatedRanking);
     clonedOption.textContent = value;
     optionsParent.appendChild(clonedOption);
   }
 
-  const selectedRegionName = regionCode != null ? regionNames[regionCode] ?? allText : allText;
+  const selectedRegionName =
+    regionCode != null ? regionNames[regionCode] ?? allText : allText;
   cloneDropdown.querySelector(
     ".select-options__select .u-ellipsis-overflow"
   )!.textContent = selectedRegionName;
 
   if (document.querySelector("#cavitedev_region_dropdown")) return;
 
-  if(replace){
+  if (replace) {
     addedDropdown?.replaceWith(cloneDropdown);
-  }else{
+  } else {
     originalDropdown.parentElement!.appendChild(cloneDropdown);
   }
-
 };
 
- const regionalRanking = async (
+const regionalRanking = async (
   signal: AbortSignal,
   osuMode: string,
   countryCode: string,
@@ -235,7 +253,7 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
       osuMode,
       page
     );
-    if(!results || "error" in results){
+    if (!results || "error" in results) {
       return;
     }
 
@@ -260,7 +278,6 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
     }
 
     if (page >= totalPages) break;
-
   }
 
   for (let i = listItems.length - 1; i >= replaceIndex; i--) {
@@ -270,15 +287,11 @@ const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
 
 const removeColsRegionalRanking = [7, 6, 5, 3];
 
-const initRegionalRanking = ( regionCode: string) => {
+const initRegionalRanking = (regionCode: string) => {
   const modes = document.querySelectorAll(".game-mode [href]");
   for (const mode of modes) {
     const href = mode.getAttribute("href")!;
-    const updatedHref = addOrReplaceQueryParam(
-      href,
-      "region",
-      regionCode
-    );
+    const updatedHref = addOrReplaceQueryParam(href, "region", regionCode);
 
     // Already fixed
     if (href === updatedHref) return;
@@ -296,7 +309,10 @@ const initRegionalRanking = ( regionCode: string) => {
   headers[2].textContent = "Rank";
 };
 
-const updateRankingRow = async (row:HTMLElement, playerData: IosuWorldRegionalPlayerData) => {
+const updateRankingRow = async (
+  row: HTMLElement,
+  playerData: IosuWorldRegionalPlayerData
+) => {
   const cells = row?.children;
   //Not loaded yet
   if (!cells) return;
@@ -327,7 +343,9 @@ const updateRankingPagination = (
   countryCode: string,
   regionCode: string
 ) => {
-  const paginations = document.querySelectorAll(".pagination-v2") as NodeListOf<HTMLElement> ;
+  const paginations = document.querySelectorAll(
+    ".pagination-v2"
+  ) as NodeListOf<HTMLElement>;
 
   if (totalPages === 1) {
     paginations.forEach((pagination) => pagination.remove());
@@ -370,20 +388,14 @@ const updateRankingPagination = (
     inactivePageTemplate,
     enabledArrow.parentElement,
   ]) {
-    const linkInactive = (templateWithLink as HTMLElement).querySelector("[href]")!;
+    const linkInactive = (templateWithLink as HTMLElement).querySelector(
+      "[href]"
+    )!;
     const href = linkInactive.getAttribute("href")!;
 
-    let updatedHref = addOrReplaceQueryParam(
-      href,
-      "region",
-      regionCode
-    );
+    let updatedHref = addOrReplaceQueryParam(href, "region", regionCode);
 
-    updatedHref = addOrReplaceQueryParam(
-      updatedHref,
-      "country",
-      countryCode
-    );
+    updatedHref = addOrReplaceQueryParam(updatedHref, "country", countryCode);
     updatedHref = updatedHref.replace("fruits", osuMode);
 
     linkInactive.setAttribute("href", updatedHref);
@@ -419,17 +431,19 @@ const updateRankingPagination = (
       ".pagination-v2__link--quick"
     );
 
-    const leftArrow =
-      (currentPage > 1
+    const leftArrow = (
+      currentPage > 1
         ? enabledArrow.cloneNode(true)
-        : disabledArrow.cloneNode(true)) as HTMLElement;
+        : disabledArrow.cloneNode(true)
+    ) as HTMLElement;
     leftArrow.querySelector(".hidden-xs")!.textContent = "prev";
     oldArrows[0].replaceWith(leftArrow);
 
-    const rightArrow =
-      (currentPage < totalPages
+    const rightArrow = (
+      currentPage < totalPages
         ? enabledArrow.cloneNode(true)
-        : disabledArrow.cloneNode(true)) as HTMLElement;
+        : disabledArrow.cloneNode(true)
+    ) as HTMLElement;
     rightArrow.querySelector(".hidden-xs")!.textContent = "next";
     oldArrows[1].replaceWith(rightArrow);
   }
@@ -485,7 +499,7 @@ const pageToAdd = (
   return node;
 };
 
-const updatePagePagination = (paginationItem:HTMLElement, page: number) => {
+const updatePagePagination = (paginationItem: HTMLElement, page: number) => {
   const link = paginationItem.querySelector(".pagination-v2__link")!;
   link.textContent = page.toString();
   const href = link.getAttribute("href");

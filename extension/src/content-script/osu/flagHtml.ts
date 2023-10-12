@@ -6,6 +6,7 @@ import {
 } from "../../utils/flagsJsonUtils";
 import { osuWorldUser } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
+import { currentSignal } from "./content";
 import osuNameToCode from "./osuNameToCode";
 
 // Quotes needed for special characters
@@ -29,16 +30,17 @@ type regionAndFlag =
   | undefined;
 
 type osuHtmlUserOptions = {
-      addDiv?: boolean;
-      addMargin?: boolean;
-      addSuperParentClone?: boolean;
-      insertInsideOriginalElement?: boolean;
-    };
+  addDiv?: boolean;
+  addMargin?: boolean;
+  addSuperParentClone?: boolean;
+  insertInsideOriginalElement?: boolean;
+  signal?: AbortSignal;
+};
 
 export const addFlagUser = async (
   item: HTMLElement,
   userId: string,
-  options: osuHtmlUserOptions = {}
+  options?: osuHtmlUserOptions
 ): Promise<regionAndFlag> => {
   const resultNames = await _addFlagUser(item, userId, options);
   if (!resultNames) {
@@ -51,10 +53,13 @@ export const addFlagUser = async (
 const _addFlagUser = async (
   item: HTMLElement,
   userId: string,
-  options: osuHtmlUserOptions
+  options?: osuHtmlUserOptions
 ): Promise<regionAndFlag> => {
   if (!item) return;
-  const playerOsuWorld = await osuWorldUser(userId);
+  const playerOsuWorld = await osuWorldUser(
+    userId,
+    options?.signal ?? currentSignal()
+  );
   if (playerOsuWorld.error) {
     if (playerOsuWorld.error.code === unknownUserError) {
       return;

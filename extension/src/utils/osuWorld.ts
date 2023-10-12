@@ -30,7 +30,7 @@ export interface IosuWorldIdSuccess  {
   
 const userDataExpireTime = 43200000; //12 hours
 
-export const osuWorldUser = async (id: String): Promise<IfetchResponse<osuWorldIdData>> => {
+export const osuWorldUser = async (id: String, signal: AbortSignal | undefined): Promise<IfetchResponse<osuWorldIdData>> => {
     if (!id) {
       console.log("id is null");
       return { error: { code: noId, userId: id } };
@@ -38,7 +38,7 @@ export const osuWorldUser = async (id: String): Promise<IfetchResponse<osuWorldI
   
     const url = "https://osuworld.octo.moe/api/users/" + id;
   
-    let dataPromise = fetchWithCache(url, userDataExpireTime) as Promise<IfetchResponse<osuWorldIdData>>;
+    let dataPromise = fetchWithCache(url,  userDataExpireTime,  { signal:signal}) as Promise<IfetchResponse<osuWorldIdData>>;
     return fetchWithMinimumWaitTime<osuWorldIdData>(dataPromise, 200);
   };
 
@@ -66,7 +66,7 @@ const url = regionRankingUrl
   .replace("{{mode}}", mode)
   .replace("{{page}}", page.toString());
 
-return fetchWithCache(url, regionRankingExpire).then((result) => {
+return fetchWithCache(url,  regionRankingExpire).then((result) => {
     if (result.error) {
       console.log(fetchErrorToText(result));
       return null;

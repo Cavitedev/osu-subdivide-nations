@@ -12,6 +12,8 @@ const flagClass = "flag-country";
 initConfigure(flagClass);
 let currentAbortController = new AbortController();
 
+export const currentSignal = () => currentAbortController.signal;
+
 export const nextAbortControllerSignal = () => {
   currentAbortController.abort();
   currentAbortController = new AbortController();
@@ -65,7 +67,7 @@ const bodyObserver = new MutationObserver((mutations) => {
 const updateUserCardFlag = async (card: HTMLElement) => {
   const nameElement = card.querySelector(".user-card__username")!;
   const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
-  await addFlagUser(card,  userId,  {addDiv:  true, addMargin:  true, });
+  await addFlagUser(card,  userId,  {addDiv:  true, addMargin:  true });
 };
 
 export const refreshOverlays = async () => {
