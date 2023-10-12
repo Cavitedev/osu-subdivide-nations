@@ -2,11 +2,11 @@
 // https://osu.ppy.sh/community/matches/110067650
 
 import { addFlagUser } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
+import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
 
 export const updateFlagsMatches = async () => {
   if(!location.href.includes("osu.ppy.sh/community/matches/")) return;
-    const functionId = nextFunctionId();  
+    const signal = nextAbortControllerSignal();  
   
     const linkItem = document.querySelector(".js-react--mp-history");
     if (linkItem) {
@@ -17,7 +17,7 @@ export const updateFlagsMatches = async () => {
       });
     }
     watchPlayingGame();
-    updateFlagsInMatchPlay(document, functionId);
+    updateFlagsInMatchPlay(document, signal);
   };
 
 const gameBeingPlayedMutationObserver = new MutationObserver(
@@ -69,11 +69,11 @@ const gameBeingPlayedMutationObserver = new MutationObserver(
     }
   };
   
-  const updateFlagsInMatchPlay = async (scores: ParentNode, functionId: number) => {
+  const updateFlagsInMatchPlay = async (scores: ParentNode, signal: AbortSignal) => {
     const listScores = scores.querySelectorAll(".mp-history-player-score__main");
   
     for (const item of listScores) {
-      if (functionId != runningId) {
+      if (signal.aborted) {
         return;
       }
       await updateFlagInMatchScore(item as HTMLElement);

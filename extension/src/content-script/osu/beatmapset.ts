@@ -1,5 +1,5 @@
 import { addFlagUser } from "@src/content-script/osu/flagHtml";
-import { nextFunctionId, runningId } from "./content";
+import { nextAbortControllerSignal } from "./content";
 
 // https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628
 
@@ -17,7 +17,7 @@ const beatmapsetMutationObserver = new MutationObserver(() => {
 export const updateFlagsBeatmapsets = async () => {
   const url = location.href;
   if (!url.includes("osu.ppy.sh/beatmapsets/")) return;
-  const functionId = nextFunctionId();
+  const signal = nextAbortControllerSignal();
 
   const linkItem = document.querySelector(".beatmapset-scoreboard__main");
   if (linkItem) {
@@ -52,7 +52,7 @@ export const updateFlagsBeatmapsets = async () => {
     rankingTableObverver.observe(rankingTable, { childList: true });
 
   const tableBody = rankingTable.querySelector(`.${tableBodyClass}`) as HTMLElement;
-  updateTableRanks(tableBody, functionId);
+  updateTableRanks(tableBody, signal);
 };
 
 const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
@@ -107,19 +107,16 @@ const rankingTableObverver = new MutationObserver((mutations) => {
 
 const osuPlusBodyObserver = (osuPlusBody: HTMLElement) =>
   new MutationObserver(() => {
-    const functionId = nextFunctionId();
-    updateTableRanks(osuPlusBody, functionId);
+    const signal = nextAbortControllerSignal();
+    updateTableRanks(osuPlusBody, signal);
   });
 
-const updateTableRanks = async (tableBody: HTMLElement, functionId: number) => {
-
+const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => {
 
   // Children
-
-
   const items = tableBody.children;
   for (let item of items) {
-    if (functionId != runningId) {
+    if (signal.aborted) {
       return;
     }
     const playerNameElement = item.querySelector(

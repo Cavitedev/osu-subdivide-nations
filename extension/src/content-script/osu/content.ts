@@ -10,15 +10,13 @@ import { updateLanguageToOsuLanguage } from "./osuLanguage";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
-export let runningId = 0;
+let currentAbortController = new AbortController();
 
-export const nextFunctionId = () => {
-  const functionId = runningId + 1;
-  runningId++;
+export const nextAbortControllerSignal = () => {
+  currentAbortController.abort();
+  currentAbortController = new AbortController();
 
-
-
-  return functionId;
+  return currentAbortController.signal;
 };
 
 export const idFromProfileUrl = (url: string) => {
@@ -184,7 +182,7 @@ export const exec = async () => {
   });
   updateLanguageToOsuLanguage();
   //Invalidate previous executions
-  nextFunctionId();
+  nextAbortControllerSignal();
   addGlobalObservers();
   updateUserCardMobileView();
   // All these updates are conditional to the url

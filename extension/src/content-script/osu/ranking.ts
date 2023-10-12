@@ -2,7 +2,7 @@ import { flagClass, addFlagUser, addRegionalFlag } from "@src/content-script/osu
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
-import { nextFunctionId, runningId } from "./content";
+import { nextAbortControllerSignal } from "./content";
 import { getLocMsg } from "@src/utils/languagesChrome";
 
 // https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
@@ -33,15 +33,15 @@ if(
         addLinkToFlag(item as HTMLElement);
       }
     }
-    const functionId = nextFunctionId();
+    const signal = nextAbortControllerSignal();
   
   
-    const isRegionRanking = await regionsInRanking(functionId);
+    const isRegionRanking = await regionsInRanking(signal);
     if(isRegionRanking) return;
   
   
     for (const item of listItems) {
-      if (functionId != runningId) {
+      if (signal.aborted) {
         return;
       }
       let idItem = item.querySelector(`[${rankingIdAttr}]`)!;
@@ -66,7 +66,7 @@ const addLinkToFlag = (item: HTMLElement) => {
 
 
 
-const regionsInRanking = async (functionId: number) : Promise<boolean> => {
+const regionsInRanking = async (signal: AbortSignal) : Promise<boolean> => {
   const queryString = location.search;
   const urlParams = new URLSearchParams(queryString);
   const regionUrlParam = urlParams.get("region");
@@ -87,7 +87,7 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
       const page = urlParams.get("page");
       const mode = location.pathname.split("/")[2];
       await regionalRanking(
-        functionId,
+        signal,
         mode,
         countryUrlParam,
         regionUrlParam,
@@ -209,7 +209,7 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
 };
 
  const regionalRanking = async (
-  functionId: number,
+  signal: AbortSignal,
   osuMode: string,
   countryCode: string,
   regionCode: string,
@@ -227,7 +227,7 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
   const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
   for (const page of pagesToCheck) {
-    if (functionId != runningId) return;
+    if (signal.aborted) return;
 
     const results = await osuWorldCountryRegionRanking(
       countryCode,

@@ -2,7 +2,7 @@ import { addFlagUser } from '@src/content-script/osu/flagHtml';
 // https://osu.ppy.sh/users/4871211/fruits
 
 import { isNumber } from "@src/utils/utils";
-import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
+import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
 import { osuScoreRanking } from "@src/utils/respektive";
 import { getActiveLanguageCode, getActiveLanguageCodeForKey, getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languagesChrome";
 
@@ -19,7 +19,7 @@ export const updateFlagsProfile = async () => {
   };
 
 
-  const functionId = nextFunctionId();
+  const signal = nextAbortControllerSignal();
   const linkItem = document.querySelector(
     "body > div.osu-layout__section.osu-layout__section--full > div"
   ) as HTMLElement;
@@ -39,7 +39,7 @@ export const updateFlagsProfile = async () => {
   if (!flagElement) {
     return;
   }
-  addScoreRank(functionId);
+  addScoreRank(signal);
   const flagResult = await addFlagUser(flagElement as HTMLElement, playerId);
   if (!flagResult) return;
   const { countryName, regionName } = flagResult;
@@ -56,7 +56,7 @@ export const updateFlagsProfile = async () => {
 };
 
 
-async function addScoreRank(functionId: number) {
+async function addScoreRank(signal: AbortSignal) {
   const ranksElement = document.querySelector(
     ".profile-detail__values"
   ) as HTMLElement;
@@ -76,7 +76,7 @@ async function addScoreRank(functionId: number) {
   const scoreRankInfo = await osuScoreRanking(userId, mode);
   if(!scoreRankInfo) return;
 
-  if(functionId !== runningId) return;
+  if(signal.aborted) return;
 
   const scoreRank = scoreRankInfo[0].rank;
   if (scoreRank != 0) {
