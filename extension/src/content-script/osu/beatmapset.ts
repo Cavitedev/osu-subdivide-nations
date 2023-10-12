@@ -47,11 +47,15 @@ export const updateFlagsBeatmapsets = async () => {
 
   updateTopLeaderboard(leaderboardParent);
 
-  const rankingTable = leaderboardParent.querySelector(".beatmap-scoreboard-table") as HTMLElement;
+  const rankingTable = leaderboardParent.querySelector(
+    ".beatmap-scoreboard-table"
+  ) as HTMLElement;
   if (rankingTable)
     rankingTableObverver.observe(rankingTable, { childList: true });
 
-  const tableBody = rankingTable.querySelector(`.${tableBodyClass}`) as HTMLElement;
+  const tableBody = rankingTable.querySelector(
+    `.${tableBodyClass}`
+  ) as HTMLElement;
   updateTableRanks(tableBody, signal);
 };
 
@@ -73,14 +77,10 @@ const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
       "data-user-id"
     );
     if (topScoreUserId) {
-      await addFlagUser(
-        topScoreElement as HTMLElement,
-        topScoreUserId,
-        {
-          addDiv: true,
-          addMargin: true,
-        }
-      );
+      await addFlagUser(topScoreElement as HTMLElement, topScoreUserId, {
+        addDiv: true,
+        addMargin: true,
+      });
     }
   }
 };
@@ -113,8 +113,10 @@ const osuPlusBodyObserver = (osuPlusBody: HTMLElement) =>
     updateTableRanks(osuPlusBody, signal);
   });
 
-const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => {
-
+const updateTableRanks = async (
+  tableBody: HTMLElement,
+  signal: AbortSignal
+) => {
   // Children
   const items = tableBody.children;
   for (let item of items) {
@@ -125,6 +127,11 @@ const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => 
       ".beatmap-scoreboard-table__cell-content--user-link"
     );
     const playerId = playerNameElement?.getAttribute("data-user-id")!;
-    await addFlagUser(item as HTMLElement,  playerId,  {addDiv:  false, addMargin:  true, addSuperParentClone:  false, insertInsideOriginalElement: true});
+    await addFlagUser(item as HTMLElement, playerId, {
+      addDiv: false,
+      addMargin: true,
+      addSuperParentClone: false,
+      insertInsideOriginalElement: true,
+    });
   }
 };
