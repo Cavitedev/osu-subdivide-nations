@@ -53,8 +53,12 @@ const fetchAndSaveInCache = async (
       saveInCache(url, cachedResponse);
       return cachedResponse;
     })
-    .catch((_) => {
-      return { error: { code: "cannot_fetch", url: url } };
+    .catch((err) => {
+      //AbortError
+      if (err.code === 20) {
+        return {};
+      }
+      return { error: { code: cannotFetchError, url: url } };
     });
 };
 
