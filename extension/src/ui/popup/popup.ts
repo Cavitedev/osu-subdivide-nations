@@ -1,3 +1,4 @@
+import browser from 'webextension-polyfill';
 import { cleanCache, cleanInvalidatedCache } from "@src/utils/cache";
 import { lastAvailableLanguages } from "./../../utils/language";
 import {
@@ -11,7 +12,7 @@ import {
 
 const updateTitle = () => {
 
-  const createdBy = chrome.i18n.getMessage("created_by");
+  const createdBy = browser.i18n.getMessage("created_by");
   const splitted = createdBy.split("{{developer}}");
   
   const span1 = document.createElement("span");
@@ -30,8 +31,8 @@ const updateTitle = () => {
   copyrightElement?.appendChild(developerLink);
   copyrightElement?.appendChild(span2);
 
-  const title = chrome.runtime.getManifest().name;
-  const version = " v" + chrome.runtime.getManifest().version;
+  const title = browser.runtime.getManifest().name;
+  const version = " v" + browser.runtime.getManifest().version;
 
   (document.querySelector("#header .title") as HTMLElement).innerText = title;
   (document.querySelector("#header .version") as HTMLElement).innerText = version;
@@ -41,7 +42,7 @@ const addSupportedLanguages = async () => {
   const languagesLabel = document.querySelector(
     "#language-option-label"
   ) as HTMLDivElement;
-  languagesLabel.innerText = chrome.i18n.getMessage("region_language");
+  languagesLabel.innerText = browser.i18n.getMessage("region_language");
 
   const selectElement = document.querySelector(
     "#region-languages-select"
@@ -69,12 +70,12 @@ const fillSelectLanguages = (osuWorldLanguages: Ilanguages,  selectedLang: strin
   // Create and set the system default option
   const systemDefaultOption = optionTemplate.cloneNode(true) as HTMLOptionElement;
   systemDefaultOption.value = systemDefaultCode;
-  systemDefaultOption.textContent = chrome.i18n.getMessage("system_default");
+  systemDefaultOption.textContent = browser.i18n.getMessage("system_default");
 
   // Create and set the native language option
   const nativeLanguageOption = optionTemplate.cloneNode(true) as HTMLOptionElement;
   nativeLanguageOption.value = nativeLanguageCode;
-  nativeLanguageOption.textContent = chrome.i18n.getMessage("native_language");
+  nativeLanguageOption.textContent = browser.i18n.getMessage("native_language");
 
   // Append the system default and native language options to the select element
   selectElement.appendChild(systemDefaultOption);
@@ -104,12 +105,12 @@ const onLanguageUpdate = async (event: Event) => {
 const addCacheButtonBehavior = () => {
   const button = document.querySelector("#cache-button") as HTMLButtonElement;
   button.querySelector("span")!.textContent =
-    chrome.i18n.getMessage("clean_cache");
+    browser.i18n.getMessage("clean_cache");
 
   const cacheMessage = document.querySelector(
     "#cache-message"
   ) as HTMLDivElement;
-  cacheMessage.textContent = chrome.i18n.getMessage("cache_cleaned");
+  cacheMessage.textContent = browser.i18n.getMessage("cache_cleaned");
 
   button.addEventListener("click", async (e) => {
     await cleanCache();
