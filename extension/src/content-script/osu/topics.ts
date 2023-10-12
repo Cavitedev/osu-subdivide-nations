@@ -17,6 +17,6 @@ export const updateFlagsTopics = async () => {
       ".forum-post-info__row--username"
     ) as HTMLElement;
     const playerId = playerNameElement.getAttribute("data-user-id")!;
-    addFlagUser(item as HTMLElement, playerId, false, false, true);
+   addFlagUser(item as HTMLElement,  playerId, {addDiv:  false, addMargin:  false, addSuperParentClone:  true} );
   }
 };

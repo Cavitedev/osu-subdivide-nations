@@ -76,8 +76,10 @@ const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
       await addFlagUser(
         topScoreElement as HTMLElement,
         topScoreUserId,
-        true,
-        true
+        {
+          addDiv: true,
+          addMargin: true,
+        }
       );
     }
   }
@@ -123,6 +125,6 @@ const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => 
       ".beatmap-scoreboard-table__cell-content--user-link"
     );
     const playerId = playerNameElement?.getAttribute("data-user-id")!;
-    await addFlagUser(item as HTMLElement, playerId, false, true, false, true);
+    await addFlagUser(item as HTMLElement,  playerId,  {addDiv:  false, addMargin:  true, addSuperParentClone:  false, insertInsideOriginalElement: true});
   }
 };

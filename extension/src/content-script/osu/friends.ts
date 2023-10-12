@@ -48,6 +48,6 @@ const setActualFriendsObserver = new MutationObserver((_) => {
       }
       const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
       const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-      await addFlagUser(item as HTMLElement, playerId, true, true);
+      await addFlagUser(item as HTMLElement,  playerId,  {addDiv:  true, addMargin:  true, });
     }
   };

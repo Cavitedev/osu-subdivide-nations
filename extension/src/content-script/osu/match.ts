@@ -85,5 +85,5 @@ const gameBeingPlayedMutationObserver = new MutationObserver(
       ".mp-history-player-score__username"
     ) as HTMLElement;
     const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-    await addFlagUser(item, playerId, true);
+    await addFlagUser(item,  playerId,  {addDiv:  true});
   };

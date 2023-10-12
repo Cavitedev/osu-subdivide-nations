@@ -1,5 +1,9 @@
 import { unknownUserError, fetchErrorToText } from "../../utils/fetchUtils";
-import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
+import {
+  countryRegionsLocalData,
+  getCountryName,
+  getRegionName,
+} from "../../utils/flagsJsonUtils";
 import { osuWorldUser } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
 import osuNameToCode from "./osuNameToCode";
@@ -13,25 +17,43 @@ const noFlag =
 
 export let flagClass: string | null = null;
 
-export const setFlagClass = (flagClassParam:string) =>{
-    flagClass = flagClassParam;
-}
+export const setFlagClass = (flagClassParam: string) => {
+  flagClass = flagClassParam;
+};
 
-type regionAndFlag = {
-  countryName?: string;
-  regionName?: string ;
-} | undefined;
+type regionAndFlag =
+  | {
+      countryName?: string;
+      regionName?: string;
+    }
+  | undefined;
 
-export const addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false, insertInsideThePreviousFlag = false): Promise<regionAndFlag> => {
-  const resultNames = await _addFlagUser(item, userId, addDiv, addMargin, addSuperParentClone, insertInsideThePreviousFlag);
-  if(!resultNames){
+type osuHtmlUserOptions = {
+      addDiv?: boolean;
+      addMargin?: boolean;
+      addSuperParentClone?: boolean;
+      insertInsideOriginalElement?: boolean;
+    }
+  | undefined;
+
+export const addFlagUser = async (
+  item: HTMLElement,
+  userId: string,
+  options: osuHtmlUserOptions = {}
+): Promise<regionAndFlag> => {
+  const resultNames = await _addFlagUser(item, userId, options);
+  if (!resultNames) {
     const countryName = await updateCountryNameFlag(item);
-    return {countryName};
+    return { countryName };
   }
   return resultNames;
 };
 
-const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, addMargin = true, addSuperParentClone = false, insertInsideThePreviousFlag = false): Promise<regionAndFlag> => {
+const _addFlagUser = async (
+  item: HTMLElement,
+  userId: string,
+  options: osuHtmlUserOptions
+): Promise<regionAndFlag> => {
   if (!item) return;
   const playerOsuWorld = await osuWorldUser(userId);
   if (playerOsuWorld.error) {
@@ -44,13 +66,13 @@ const _addFlagUser = async (item: HTMLElement, userId: string, addDiv = false, a
     return;
   }
   const playerData = playerOsuWorld.data;
-  if(!playerData || "error" in playerData){
+  if (!playerData || "error" in playerData) {
     return;
   }
 
   const countryCode = playerData["country_id"];
   const regionCode = playerData["region_id"];
-  return addRegionalFlag(item, countryCode, regionCode, addDiv, addMargin, addSuperParentClone, insertInsideThePreviousFlag);
+  return addRegionalFlag(item, countryCode, regionCode, options);
 };
 
 export const removeRegionalFlag = (item: HTMLElement) => {
@@ -64,13 +86,15 @@ export const addRegionalFlag = async (
   item: HTMLElement,
   countryCode: string,
   regionCode: string,
-  addDiv = false,
-  addMargin = true,
-  superParentClone = false,
-  insertInsideThePreviousFlag = false,
+  options: osuHtmlUserOptions = {}
 ) => {
   if (!item) return;
-
+  const {
+    addDiv,
+    addMargin,
+    addSuperParentClone,
+    insertInsideOriginalElement: insertInsideThePreviousFlag,
+  } = options ?? {};
 
   let countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
@@ -83,7 +107,7 @@ export const addRegionalFlag = async (
 
   let flagElement = flagElements[0];
   let flagParent = flagElement.parentElement!;
-  let flagParentClone = flagParent.cloneNode(true) as HTMLElement;  
+  let flagParentClone = flagParent.cloneNode(true) as HTMLElement;
   let flagElementClone = flagParentClone.querySelector(`.${flagClass}`)!;
 
   let flag = regionData["flag"];
@@ -91,19 +115,20 @@ export const addRegionalFlag = async (
     flag = noFlag;
   }
 
-  flagElementClone.setAttribute("style", (addMargin ? flagStyleWithMargin : flagStyle).replace(
-    "$flag",
-    flag
-  ));
+  flagElementClone.setAttribute(
+    "style",
+    (addMargin ? flagStyleWithMargin : flagStyle).replace("$flag", flag)
+  );
 
-  const regionName =await getRegionName(countryCode, regionCode, regionData);
+  const regionName = await getRegionName(countryCode, regionCode, regionData);
   if (regionData["name"]) {
     flagElementClone.setAttribute("title", regionName);
   }
 
-
-  let insertParent = insertInsideThePreviousFlag ? flagParent : flagParent.parentElement!;
-  if(insertInsideThePreviousFlag){
+  let insertParent = insertInsideThePreviousFlag
+    ? flagParent
+    : flagParent.parentElement!;
+  if (insertInsideThePreviousFlag) {
     flagParentClone.classList.remove(...flagParentClone.classList);
   }
 
@@ -112,7 +137,7 @@ export const addRegionalFlag = async (
   if (flagElements.length > 1) {
     // Update
     flagElements[1].replaceWith(flagElementClone);
-  } else {    
+  } else {
     // Add
 
     let href = flagParent.getAttribute("href");
@@ -125,17 +150,16 @@ export const addRegionalFlag = async (
         flagParentClone = anchorParent;
       }
     }
-  
+
     if (flagParentClone.nodeName === "A") {
       const updatedHref = addOrReplaceQueryParam(
         href as string,
         "region",
         regionCode
       );
-  
+
       flagParentClone.setAttribute("href", updatedHref);
     }
-
 
     let sibling = flagParent.nextSibling;
     if (addDiv) {
@@ -155,7 +179,7 @@ export const addRegionalFlag = async (
       flagParentClone = flagsDiv;
     }
 
-    if (superParentClone) {
+    if (addSuperParentClone) {
       const superParent = insertParent.cloneNode(false) as HTMLElement;
       superParent.appendChild(flagParentClone);
       flagParentClone = superParent;
@@ -165,34 +189,27 @@ export const addRegionalFlag = async (
     }
 
     insertParent.insertBefore(flagParentClone, sibling);
-
-
-
-
   }
 
-  const countryName = await updateCountryNameFlag(item);;
-  return {countryName, regionName};
+  const countryName = await updateCountryNameFlag(item);
+  return { countryName, regionName };
 };
 
-
 const updateCountryNameFlag = async (item: HTMLElement) => {
-
-
   const flagElement = item.querySelector(`.${flagClass}`);
   if (!flagElement) return;
 
-  const osuCountryName = flagElement.getAttribute("original-title") ?? flagElement.getAttribute("title");
+  const osuCountryName =
+    flagElement.getAttribute("original-title") ??
+    flagElement.getAttribute("title");
   if (!osuCountryName) return;
 
   const countryCode = osuNameToCode(osuCountryName!);
-  if(!countryCode) return;
+  if (!countryCode) return;
 
-  const countryName = await getCountryName(countryCode)
-  if(!countryName) return;
+  const countryName = await getCountryName(countryCode);
+  if (!countryName) return;
   flagElement.setAttribute("original-title", osuCountryName);
   flagElement.setAttribute("title", countryName);
   return countryName;
-
-}
-
+};
