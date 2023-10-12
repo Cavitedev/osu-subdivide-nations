@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "fs-extra";
 import path from "path";
 import jsonminify from "jsonminify";
 
@@ -30,7 +30,6 @@ export default (options = {}) => ({
 
     build.onLoad({ filter: /\.json$/, namespace: "json-plugin" }, async (args) => {
       // Emit the minified JSON content as a module
-      console.log(args.path);
       return {
         contents: args.pluginData.json,
         loader: args.path.includes("flags")?  "copy" : "json",
