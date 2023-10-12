@@ -42,7 +42,7 @@ export const updateFlagsProfile = async () => {
         return;
     }
     addScoreRank(signal);
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal });
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true  });
     if (!flagResult) return;
     const { countryName, regionName } = flagResult;
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;

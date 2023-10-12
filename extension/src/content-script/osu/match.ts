@@ -74,5 +74,5 @@ const updateFlagsInMatchPlay = async (scores: ParentNode, signal: AbortSignal) =
 const updateFlagInMatchScore = async (item: HTMLElement, signal?: AbortSignal) => {
     const playerNameElement = item.querySelector(".mp-history-player-score__username") as HTMLElement;
     const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-    await addFlagUser(item, playerId, { addDiv: true, signal: signal });
+    await addFlagUser(item, playerId, { addDiv: true, addMargin:true, signal: signal });
 };
