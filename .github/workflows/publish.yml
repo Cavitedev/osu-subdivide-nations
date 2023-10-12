@@ -22,7 +22,7 @@ jobs:
         working-directory: ./extension
         run: npm run build
       - name: Browser Platform Publish
-        uses: PlasmoHQ/bpp@v3
+        uses: PlasmoHQ/bpp@v3.5.0
         with:
           keys: ${{ secrets.BPP_KEYS }}
           chrome-file: "extension/build/chromium.zip"
