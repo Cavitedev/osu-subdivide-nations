@@ -49,7 +49,7 @@ const fetchAndSaveInCache = async (url:string, expireTime:number, preserve = fal
         return cachedResponse;
       })
       .catch((_) => {
-        return { error: { code: "cannot_fetch ", url: url } };
+        return { error: { code: "cannot_fetch", url: url } };
       });
   }
   
