@@ -1,16 +1,16 @@
 // https://osu.ppy.sh/community/forums/topics/1686524?n=3
 
 import { addFlagUser } from "@src/content-script/osu/flagHtml";
-import { nextFunctionId, runningId } from "./content";
+import { nextAbortControllerSignal } from "./content";
 
 export const updateFlagsTopics = async () => {
   const url = location.href;
   if (!url.includes("osu.ppy.sh/community/forums/topics/")) return;
-  const functionId = nextFunctionId();
+  const signal = nextAbortControllerSignal();
   const posts = document.querySelectorAll(".forum-post-info");
 
   for (let item of posts) {
-    if (functionId != runningId) {
+    if (signal.aborted) {
       return;
     }
     const playerNameElement = item.querySelector(

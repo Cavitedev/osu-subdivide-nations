@@ -1,5 +1,5 @@
 import { addFlagUser } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl, nextFunctionId, runningId } from "./content";
+import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
 
 // https://osu.ppy.sh/home/friends
 const setActualFriendsObserver = new MutationObserver((_) => {
@@ -23,7 +23,7 @@ const setActualFriendsObserver = new MutationObserver((_) => {
     }
 
 
-    const functionId = nextFunctionId();
+    const signal = nextAbortControllerSignal();
   
   
     const allFriendsElement = document.querySelector(".t-changelog-stream--all");
@@ -43,7 +43,7 @@ const setActualFriendsObserver = new MutationObserver((_) => {
       .querySelector(".user-list")!.querySelectorAll(".user-card__details");
   
     for (let item of friendsList) {
-      if (functionId != runningId) {
+      if (signal.aborted) {
         return;
       }
       const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
