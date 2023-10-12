@@ -33,8 +33,7 @@ type osuHtmlUserOptions = {
       addMargin?: boolean;
       addSuperParentClone?: boolean;
       insertInsideOriginalElement?: boolean;
-    }
-  | undefined;
+    };
 
 export const addFlagUser = async (
   item: HTMLElement,
