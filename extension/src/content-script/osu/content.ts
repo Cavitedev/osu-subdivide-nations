@@ -16,22 +16,7 @@ export const nextFunctionId = () => {
   const functionId = runningId + 1;
   runningId++;
 
-  bodyObserver.observe(document.querySelector("body")!, {
-    attributes: false,
-    childList: true,
-    subtree: false,
-  });
 
-  const mobileMenu = document.querySelector(
-    ".mobile-menu__item--search > .quick-search"
-  );
-  if (mobileMenu) {
-    updateFlagMobileSearchObserver.observe(mobileMenu, {
-      attributes: false,
-      childList: true,
-      subtree: false,
-    });
-  }
 
   return functionId;
 };
@@ -178,6 +163,21 @@ const updateUserCardMobileView = async (parent: HTMLElement | undefined = undefi
   updateUserCardFlag(userCard as HTMLElement);
 };
 
+const addGlobalObservers = () => {
+  bodyObserver.observe(document.querySelector("body")!, {
+    childList: true,
+  });
+
+  const mobileMenu = document.querySelector(
+    ".mobile-menu__item--search > .quick-search"
+  );
+  if (mobileMenu) {
+    updateFlagMobileSearchObserver.observe(mobileMenu, {
+      childList: true,
+    });
+  }
+}
+
 export const exec = async () => {
   reloadMutationObserver.observe(document.querySelector("title")!, {
     childList: true,
@@ -185,7 +185,7 @@ export const exec = async () => {
   updateLanguageToOsuLanguage();
   //Invalidate previous executions
   nextFunctionId();
-
+  addGlobalObservers();
   updateUserCardMobileView();
   // All these updates are conditional to the url
   updateFlagsRankings();
