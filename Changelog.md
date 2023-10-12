@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.1.4
+
+- Fix Selected language on popup wasn't working properly
+- Improve performance aborting calls
+- Other refactoring improvements
+- Update translations
+- Minify translation files
+
 ## Version 3.1.3
 
 - Update translations
