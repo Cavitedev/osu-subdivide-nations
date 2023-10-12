@@ -108,12 +108,12 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
   const regionUrlParam = urlParams.get("region");
   const countryUrlParam = urlParams.get("country");
 
-  addedDropdown.remove();
-  if(!countryUrlParam || !regionUrlParam) return;
-  addRegionsDropdown(countryUrlParam, regionUrlParam);
+  
+  if(!countryUrlParam) return;
+  addRegionsDropdown(countryUrlParam, regionUrlParam, true);
 };
 
- const addRegionsDropdown = async (countryCode: string, regionCode: string | null) => {
+ const addRegionsDropdown = async (countryCode: string, regionCode: string | null, replace = false) => {
   const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
   let regionNames = await getRegionNames(countryCode);
   const regionNamesKeys = Object.entries(regionNames).sort(
@@ -131,7 +131,8 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
     return;
   }
 
-  if (addedDropdown) {
+  // Avoid reruns
+  if (addedDropdown && !replace) {
     return;
   }
 
@@ -199,7 +200,12 @@ const regionsInRanking = async (functionId: number) : Promise<boolean> => {
 
   if (document.querySelector("#cavitedev_region_dropdown")) return;
 
-  originalDropdown.parentElement!.appendChild(cloneDropdown);
+  if(replace){
+    addedDropdown?.replaceWith(cloneDropdown);
+  }else{
+    originalDropdown.parentElement!.appendChild(cloneDropdown);
+  }
+
 };
 
  const regionalRanking = async (
