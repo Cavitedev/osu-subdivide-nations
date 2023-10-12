@@ -125,7 +125,7 @@ const updateFlagMobileSearchObserver = new MutationObserver(async (mutations) =>
 
 const updateSearchCard = async (card: HTMLElement) => {
     const userId = idFromProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
-    await addFlagUser(card, userId, { addDiv: true, addMargin:true });
+    await addFlagUser(card, userId, { addDiv: true, addMargin: true });
 };
 
 const reloadMutationObserver = new MutationObserver(() => {

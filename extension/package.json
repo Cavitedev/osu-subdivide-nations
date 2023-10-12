@@ -9,7 +9,8 @@
     "build:firefox": "node build.mjs --firefox",
     "watch": "node build.mjs --watch",
     "watch:chromium": "node build.mjs --chromium --watch",
-    "watch:firefox": "node build.mjs --firefox --watch"
+    "watch:firefox": "node build.mjs --firefox --watch",
+    "lint": "eslint --fix src"
   },
   "repository": {
     "type": "git",

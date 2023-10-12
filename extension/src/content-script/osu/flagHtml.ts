@@ -37,7 +37,7 @@ export const addFlagUser = async (
     userId?: string | null,
     options?: osuHtmlUserOptions,
 ): Promise<regionAndFlag> => {
-  if(!userId) return;
+    if (!userId) return;
     const resultNames = await _addFlagUser(item, userId, options);
     if (!resultNames) {
         const countryName = await updateCountryNameFlag(item);
