@@ -48,23 +48,22 @@ const addSupportedLanguages = async () => {
   ) as HTMLSelectElement;
   selectElement.addEventListener("change", onLanguageUpdate);
 
-  getLanguage().then((lang) => {
-    selectElement.value = lang;
-  });
+  const langPromise = getLanguage()
 
   let cachedLanguages = await lastAvailableLanguages();
+  let selectedLang = await langPromise;
   if (cachedLanguages) {
-    fillSelectLanguages(cachedLanguages.data!, selectElement);
+    fillSelectLanguages(cachedLanguages.data!, selectedLang, selectElement);
     if (!cachedLanguages.expired) {
       return;
     }
   }
 
   const osuWorldLanguages = await availableLanguagesOsuWorld();
-  fillSelectLanguages(osuWorldLanguages, selectElement);
+  fillSelectLanguages(osuWorldLanguages, selectedLang,   selectElement);
 };
 
-const fillSelectLanguages = (osuWorldLanguages: Ilanguages,  selectElement: HTMLSelectElement) => {
+const fillSelectLanguages = (osuWorldLanguages: Ilanguages,  selectedLang: string, selectElement: HTMLSelectElement) => {
   const optionTemplate = document.createElement("option") as HTMLOptionElement;
 
   // Create and set the system default option
@@ -87,6 +86,13 @@ const fillSelectLanguages = (osuWorldLanguages: Ilanguages,  selectElement: HTML
     option.value = key;
     option.textContent = value;
     selectElement.appendChild(option);
+  }
+
+  for(const option of selectElement.options) {
+    if(option.value === selectedLang) {
+      option.selected = true;
+      break;
+    }
   }
 };
 
