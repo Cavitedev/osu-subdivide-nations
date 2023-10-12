@@ -29,7 +29,7 @@ export const osuScoreRanking = async (userId: string | undefined, mode:string | 
   // example: `https://score.respektive.pw/u/4871211?mode=fruits`
     const url = `https://score.respektive.pw/u/${userId}?mode=${mode}`;
   
-    let dataPromise = (fetchWithCache(url, respektiveDbReload) as Promise<IfetchResponse<TRespektiveScore>>).then(r => {
+    let dataPromise = (fetchWithCache(url,  respektiveDbReload) as Promise<IfetchResponse<TRespektiveScore>>,  { signal:signal}).then(r => {
       // Validate to prevent XHR injection
       if(!isNumber(r.data?.[0]?.rank) || !isValidDate(r.data?.[0]?.rank_highest?.updated_at) ){
         return undefined;

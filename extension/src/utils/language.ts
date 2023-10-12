@@ -23,7 +23,7 @@ export const lastAvailableLanguages = async () => {
 
 export const availableLanguagesOsuWorld = async (): Promise<Ilanguages> => {
   // 1 day cache
-  return fetchWithCache(languagesUrl, 86400000, true).then((res) => {
+  return fetchWithCache(languagesUrl, 86400000, {preserve:true}).then((res) => {
     const data = res["data"] as Ilanguages;
     const languageKeys = Object.keys(data);
     browser.storage.local.set({ availableLanguages: languageKeys });

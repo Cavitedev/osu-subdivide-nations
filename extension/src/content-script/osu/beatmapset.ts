@@ -45,7 +45,7 @@ export const updateFlagsBeatmapsets = async () => {
   beatmapsetMutationObserver.observe(leaderboardParent, { childList: true });
   initFinishedMutationObserver.disconnect();
 
-  updateTopLeaderboard(leaderboardParent);
+  updateTopLeaderboard(leaderboardParent, signal);
 
   const rankingTable = leaderboardParent.querySelector(
     ".beatmap-scoreboard-table"
@@ -59,7 +59,7 @@ export const updateFlagsBeatmapsets = async () => {
   updateTableRanks(tableBody, signal);
 };
 
-const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
+const updateTopLeaderboard = async (leaderboardParent: HTMLElement, signal: AbortSignal) => {
   //beatmap-scoreboard-top
 
   const topScoreElements = leaderboardParent.querySelectorAll(
@@ -80,6 +80,7 @@ const updateTopLeaderboard = async (leaderboardParent: HTMLElement) => {
       await addFlagUser(topScoreElement as HTMLElement, topScoreUserId, {
         addDiv: true,
         addMargin: true,
+        signal:signal
       });
     }
   }
@@ -132,6 +133,7 @@ const updateTableRanks = async (
       addMargin: true,
       addSuperParentClone: false,
       insertInsideOriginalElement: true,
+      signal: signal
     });
   }
 };
