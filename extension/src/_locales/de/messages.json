@@ -1,8 +1,71 @@
 {
+    "created_by": {
+        "message": "erstellt von {{developer}}"
+    },
     "system_default": {
         "message": "Systemstandard"
     },
     "native_language": {
         "message": "Muttersprache"
+    },
+    "region_language": {
+        "message": "Regionalsprache"
+    },
+    "region": {
+        "message": "Region"
+    },
+    "region_cl": {
+        "message": "Region"
+    },
+    "region_cz": {
+        "message": "Region"
+    },
+    "region_fi": {
+        "message": "Region"
+    },
+    "region_fr": {
+        "message": "Region"
+    },
+    "region_hu": {
+        "message": "Land"
+    },
+    "region_it": {
+        "message": "Region"
+    },
+    "region_kz": {
+        "message": "Land"
+    },
+    "region_lv": {
+        "message": "Region"
+    },
+    "region_no": {
+        "message": "Land"
+    },
+    "region_pe": {
+        "message": "Region"
+    },
+    "region_pt": {
+        "message": "Region"
+    },
+    "region_ro": {
+        "message": "Land"
+    },
+    "region_se": {
+        "message": "Land"
+    },
+    "region_tr": {
+        "message": "Region"
+    },
+    "region_ua": {
+        "message": "Land"
+    },
+    "region_dk": {
+        "message": "Region"
+    },
+    "region_nz": {
+        "message": "Region"
+    },
+    "region_lt": {
+        "message": "Region"
     }
 }
