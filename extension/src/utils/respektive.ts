@@ -19,6 +19,7 @@ const respektiveDbReload = 1800000; //30 minutes
 export const osuScoreRanking = async (
     userId: string | undefined,
     mode: string | undefined,
+    signal: AbortSignal | undefined,
 ): Promise<TRespektiveScore | undefined> => {
     if (!userId) {
         const err = fetchErrorToText({ error: { code: noId, userId: userId } });
@@ -32,8 +33,8 @@ export const osuScoreRanking = async (
     // example: `https://score.respektive.pw/u/4871211?mode=fruits`
     const url = `https://score.respektive.pw/u/${userId}?mode=${mode}`;
 
-    const dataPromise = (fetchWithCache(url, respektiveDbReload) as Promise<IfetchResponse<TRespektiveScore>>,
-    { signal: signal }).then((r) => {
+    const dataPromise = ((fetchWithCache(url, respektiveDbReload, 
+        { signal: signal })) as Promise<IfetchResponse<TRespektiveScore>>).then((r) => {
         // Validate to prevent XHR injection
         if (!isNumber(r.data?.[0]?.rank) || !isValidDate(r.data?.[0]?.rank_highest?.updated_at)) {
             return undefined;

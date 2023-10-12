@@ -66,7 +66,7 @@ async function addScoreRank(signal: AbortSignal) {
     const path = window.location.pathname.split("/");
     const userId = path[2];
     const mode = modesElement.dataset.mode;
-    const scoreRankInfo = await osuScoreRanking(userId, mode);
+    const scoreRankInfo = await osuScoreRanking(userId, mode, signal);
     if (!scoreRankInfo) return;
 
     if (signal.aborted) return;
