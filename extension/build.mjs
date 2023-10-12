@@ -3,6 +3,7 @@ import esbuild from "esbuild";
 import fs from "fs-extra";
 import { copy } from "esbuild-plugin-copy";
 import json_plugin from "./build_plugins/json_plugin.mjs";
+import json_plugin_copy from "./build_plugins/json_plugin_copy.mjs";
 
 const outdir = "build";
 
@@ -22,17 +23,10 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
     outdir: buildPath,
     minify: !watch,
     plugins: [
-      json_plugin(),
       copy({
         assets: {
           from: ["./src/assets/**"],
           to: ["./assets"],
-        },
-      }),
-      copy({
-        assets: {
-          from: ["./src/_locales/**"],
-          to: ["./_locales"],
         },
       }),
       copy({
@@ -44,6 +38,8 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
           to: ["./ui"],
         },
       }),
+      json_plugin(),
+      json_plugin_copy({resolveFrom: "src/_locales/**/*"}),
       copy({
         assets: {
           from: [manifestPath],
