@@ -65,7 +65,7 @@ const bodyObserver = new MutationObserver((mutations) => {
 const updateUserCardFlag = async (card: HTMLElement) => {
   const nameElement = card.querySelector(".user-card__username")!;
   const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
-  await addFlagUser(card, userId, true, true);
+  await addFlagUser(card,  userId,  {addDiv:  true, addMargin:  true, });
 };
 
 export const refreshOverlays = async () => {
@@ -136,7 +136,7 @@ const updateSearchCard = async (card: HTMLElement) => {
       .querySelector(".user-search-card__col--username")!
       .getAttribute("href")!
   );
-  await addFlagUser(card, userId, true);
+  await addFlagUser(card,  userId,  {addDiv:  true});
 };
 
 const reloadMutationObserver = new MutationObserver((_) => {

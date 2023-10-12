@@ -47,7 +47,7 @@ if(
       let idItem = item.querySelector(`[${rankingIdAttr}]`)!;
       const userId = idItem.getAttribute(rankingIdAttr)!;
   
-      await addFlagUser(item as HTMLElement, userId, true, true );
+      await addFlagUser(item as HTMLElement,  userId,  {addDiv:  true, addMargin:  true , });
     }
   };
 
