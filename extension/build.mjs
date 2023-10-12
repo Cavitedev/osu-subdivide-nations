@@ -38,8 +38,13 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
           to: ["./ui"],
         },
       }),
+      copy({
+        assets: {
+          from: ["./src/_locales/**"],
+          to: ["./_locales"],
+        },
+      }),
       json_plugin(),
-      json_plugin_copy({resolveFrom: "src/_locales/**/*"}),
       copy({
         assets: {
           from: [manifestPath],
