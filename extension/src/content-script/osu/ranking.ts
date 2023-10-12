@@ -175,11 +175,11 @@ const addRegionsDropdown = async (countryCode: string, regionCode: string | null
     const selectedRegionName = regionCode != null ? regionNames[regionCode] ?? allText : allText;
     cloneDropdown.querySelector(".select-options__select .u-ellipsis-overflow")!.textContent = selectedRegionName;
 
-    if (document.querySelector("#cavitedev_region_dropdown")) return;
 
-    if (replace) {
+    if (replace && addedDropdown) {
         addedDropdown?.replaceWith(cloneDropdown);
     } else {
+        if (document.querySelector("#cavitedev_region_dropdown")) return;
         originalDropdown.parentElement!.appendChild(cloneDropdown);
     }
 };
