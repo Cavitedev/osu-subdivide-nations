@@ -2,6 +2,9 @@
     "appDesc": {
         "message": "Voeg regionale vlaggen toe op de osu! website.\nTijdens het updaten van wereldwijde osu! score op profielen."
     },
+    "created_by": {
+        "message": "gemaakt door {{developer}}"
+    },
     "system_default": {
         "message": "Systeemstandaard"
     },

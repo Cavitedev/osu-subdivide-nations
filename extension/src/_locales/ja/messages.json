@@ -1,4 +1,7 @@
 {
+    "created_by": {
+        "message": "{{developer}}によって作成された"
+    },
     "score_ranking": {
         "message": "スコアランキング"
     },
