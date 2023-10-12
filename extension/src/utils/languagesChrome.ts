@@ -1,3 +1,5 @@
+import browser from 'webextension-polyfill';
+
 type TLanguagesData = {
   [key: string]: {
     message: string;
@@ -26,7 +28,7 @@ export const getLocMsg = (
     }
   }
 
-  return chrome.i18n.getMessage(key, substitutions);
+  return browser.i18n.getMessage(key, substitutions);
 };
 
 export const loadLanguage = async (lang: string) => {
@@ -37,7 +39,7 @@ export const loadLanguage = async (lang: string) => {
 
   if (lang === selectedLanguage) return;
 
-  const languageFile = chrome.runtime.getURL(`_locales/${lang}/messages.json`);
+  const languageFile = browser.runtime.getURL(`_locales/${lang}/messages.json`);
   secondaryLanguagePromise = fetch(languageFile)
     .then((res) => res.json())
     .catch((e) => {

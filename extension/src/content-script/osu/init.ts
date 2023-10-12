@@ -1,3 +1,4 @@
+import browser from 'webextension-polyfill';
 import { cleanInvalidatedCacheConditionally } from "@src/utils/cache";
 import { setFlagClass } from "@src/content-script/osu/flagHtml";
 import { refreshOverlays, exec } from "./content";
@@ -9,7 +10,7 @@ export const initConfigure = (flagClass: string)  => {
     
     setFlagClass(flagClass);
     
-chrome.runtime.onMessage.addListener(async (obj, sender, respone) => {
+browser.runtime.onMessage.addListener(async (obj, sender, respone) => {
 
 
   const {  action } = obj;

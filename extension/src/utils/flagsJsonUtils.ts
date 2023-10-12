@@ -1,8 +1,9 @@
 import { IfetchResponse, fetchWithCache } from "./fetchUtils";
 import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
 
+import browser from 'webextension-polyfill';
 
-  const flagsUrl = chrome.runtime.getURL(`flags.json`);
+  const flagsUrl = browser.runtime.getURL(`flags.json`);
   export const countryRegionsLocalData = fetch(flagsUrl).then(res => res.json()) as Promise<IflagsData>;
 
   
