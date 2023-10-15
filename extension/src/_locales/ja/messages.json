@@ -2,6 +2,9 @@
     "created_by": {
         "message": "{{developer}}によって作成された"
     },
+    "clean_cache": {
+        "message": "キャッシュクリア"
+    },
     "score_ranking": {
         "message": "スコアランキング"
     },
