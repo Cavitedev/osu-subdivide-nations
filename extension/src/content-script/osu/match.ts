@@ -7,46 +7,31 @@ export const updateFlagsMatches = async () => {
     if (!location.href.includes("osu.ppy.sh/community/matches/")) return;
     const signal = nextAbortControllerSignal();
 
-    const linkItem = document.querySelector(".js-react--mp-history");
+    const linkItem = document.querySelector(".js-react--mp-history") as HTMLElement;
     if (linkItem) {
         matchesObserver.observe(linkItem, {
             attributes: false,
             childList: true,
             subtree: false,
         });
+        checkNewGames(linkItem);
+        watchPlayingGame(linkItem);
     }
-    watchPlayingGame();
+
     updateFlagsInMatchPlay(document, signal);
 };
 
-const gameBeingPlayedMutationObserver = new MutationObserver(async (mutations) => {
-    for (const mutation of mutations) {
-        for (const addedNode of mutation.addedNodes) {
-            const score = (addedNode as HTMLElement).querySelector(".mp-history-player-score__main");
-            if (score) {
-                await updateFlagInMatchScore(score as HTMLElement);
-            }
-        }
-    }
-});
-
-const matchesObserver = new MutationObserver((mutations) => {
+// For late initialization
+const matchesObserver = new MutationObserver(() => {
     updateFlagsMatches();
-    const addedScores = mutations[mutations.length - 1].addedNodes[0];
-    if (!addedScores) return;
-
-    const matchPlay = (addedScores as HTMLElement).querySelector(".mp-history-game__player-scores");
-    if (matchPlay) {
-        gameBeingPlayedMutationObserver.observe(matchPlay, {
-            attributes: false,
-            childList: true,
-            subtree: false,
-        });
-    }
 });
 
-const watchPlayingGame = () => {
-    const gamesPlayed = document.querySelectorAll(".mp-history-game");
+
+
+
+// Check for playing games
+const watchPlayingGame = (parent: HTMLElement) => {
+    const gamesPlayed = (parent ?? document).querySelectorAll(".mp-history-game");
     if (!gamesPlayed || gamesPlayed.length === 0) return;
     const lastGame = gamesPlayed[gamesPlayed.length - 1];
     if (!lastGame) return;
@@ -59,6 +44,41 @@ const watchPlayingGame = () => {
         });
     }
 };
+
+// Running game
+const gameBeingPlayedMutationObserver = new MutationObserver(async (mutations) => {
+    for (const mutation of mutations) {
+        for (const addedNode of mutation.addedNodes) {
+            const score = (addedNode as HTMLElement).querySelector(".mp-history-player-score__main");
+            if (score) {
+                await updateFlagInMatchScore(score as HTMLElement);
+            }
+        }
+    }
+});
+
+
+
+
+const checkNewGames = (parent: HTMLElement | undefined) => {
+    const parentContent = (parent ?? document).querySelector(".mp-history-content") as HTMLElement;
+    newMatchesObserver.observe(parentContent, {childList: true});
+}
+
+//Observer for new matches getting played
+const newMatchesObserver = new MutationObserver((mutations) => {
+    const addedScores = mutations[mutations.length - 1].addedNodes[0];
+    if (!addedScores) return;
+
+    const matchPlay = (addedScores as HTMLElement).querySelector(".mp-history-game__player-scores");
+    if (matchPlay) {
+        gameBeingPlayedMutationObserver.observe(matchPlay, {
+            attributes: false,
+            childList: true,
+            subtree: false,
+        });
+    }
+});
 
 const updateFlagsInMatchPlay = async (scores: ParentNode, signal: AbortSignal) => {
     const listScores = scores.querySelectorAll(".mp-history-player-score__main");
