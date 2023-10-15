@@ -780,6 +780,63 @@
             }
         }
     },
+    "PH": {
+        "name": "Philippines",
+        "nativeName": "Philippines",
+        "regions": {
+            "PH-14": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_Bangsamoro.svg"
+            },
+            "PH-05": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/PH-CAS_Flag.png/256px-PH-CAS_Flag.png"
+            },
+            "PH-02": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Isabela_(province).svg/128px-Flag_of_Isabela_(province).svg.png"
+            },
+            "PH-40": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/PH-CAV_Flag.png/256px-PH-CAV_Flag.png"
+            },
+            "PH-13": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/PH-AGN_Flag.png/256px-PH-AGN_Flag.png"
+            },
+            "PH-03": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PH-BUL_Flag.png/256px-PH-BUL_Flag.png"
+            },
+            "PH-07": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Cebu_(province).svg/128px-Flag_of_Cebu_(province).svg.png"
+            },
+            "PH-15": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Seal_of_the_Cordillera_Administrative_Region.png"
+            },
+            "PH-11": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Vlag_Fil_DavaodelSur.gif"
+            },
+            "PH-08": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Leyte_Flag.png/256px-Leyte_Flag.png"
+            },
+            "PH-01": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_Pangasinan.svg/128px-Flag_of_Pangasinan.svg.png"
+            },
+            "PH-00": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Metro_Manila.png"
+            },
+            "PH-41": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Orien._Mindoro_Flag.png/256px-Orien._Mindoro_Flag.png"
+            },
+            "PH-10": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_the_Province_of_Bukidnon.svg"
+            },
+            "PH-12": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7f/South_Cotabato_Flag.png"
+            },
+            "PH-06": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/PH-NEC_Flag.png/256px-PH-NEC_Flag.png"
+            },
+            "PH-09": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Zamboanga_del_Sur_gov._Flag.png/256px-Zamboanga_del_Sur_gov._Flag.png"
+            }
+        }
+    },
     "PT": {
         "name": "Portugal",
         "nativeName": "Portugal",

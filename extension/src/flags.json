@@ -969,7 +969,7 @@
             },
             "CZ-64": {
                 "name": "South Moravia",
-                "nativeName": "",
+                "nativeName": "Jihomoravský kraj",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_South_Moravian_Region.svg/128px-Flag_of_South_Moravian_Region.svg.png"
             },
             "CZ-41": {
@@ -2744,87 +2744,87 @@
             "PH-14": {
                 "name": "Bangsamoro",
                 "nativeName": "Bangsamoro",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_Bangsamoro.svg"
             },
             "PH-05": {
                 "name": "Bicol Region",
                 "nativeName": "Bicol Region",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/PH-CAS_Flag.png/256px-PH-CAS_Flag.png"
             },
             "PH-02": {
                 "name": "Cagayan Valley",
                 "nativeName": "Cagayan Valley",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Isabela_(province).svg/128px-Flag_of_Isabela_(province).svg.png"
             },
             "PH-40": {
                 "name": "Calabarzon",
                 "nativeName": "Calabarzon",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/PH-CAV_Flag.png/256px-PH-CAV_Flag.png"
             },
             "PH-13": {
                 "name": "Caraga",
                 "nativeName": "Caraga",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/PH-AGN_Flag.png/256px-PH-AGN_Flag.png"
             },
             "PH-03": {
                 "name": "Central Luzon",
                 "nativeName": "Central Luzon",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PH-BUL_Flag.png/256px-PH-BUL_Flag.png"
             },
             "PH-07": {
                 "name": "Central Visayas",
                 "nativeName": "Central Visayas",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Cebu_(province).svg/128px-Flag_of_Cebu_(province).svg.png"
             },
             "PH-15": {
                 "name": "Cordillera Administrative Region",
                 "nativeName": "Cordillera Administrative Region",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Seal_of_the_Cordillera_Administrative_Region.png"
             },
             "PH-11": {
                 "name": "Davao Region",
                 "nativeName": "Davao Region",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Vlag_Fil_DavaodelSur.gif"
             },
             "PH-08": {
                 "name": "Eastern Visayas",
                 "nativeName": "Eastern Visayas",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Leyte_Flag.png/256px-Leyte_Flag.png"
             },
             "PH-01": {
                 "name": "Ilocos Region",
                 "nativeName": "Ilocos Region",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_Pangasinan.svg/128px-Flag_of_Pangasinan.svg.png"
             },
             "PH-00": {
                 "name": "Metro Manila",
                 "nativeName": "Metro Manila",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_Metro_Manila.png"
             },
             "PH-41": {
                 "name": "Mimaropa",
                 "nativeName": "Mimaropa",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Orien._Mindoro_Flag.png/256px-Orien._Mindoro_Flag.png"
             },
             "PH-10": {
                 "name": "Northern Mindanao",
                 "nativeName": "Northern Mindanao",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_the_Province_of_Bukidnon.svg"
             },
             "PH-12": {
                 "name": "Soccsksargen",
                 "nativeName": "Soccsksargen",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7f/South_Cotabato_Flag.png"
             },
             "PH-06": {
                 "name": "Western Visayas",
                 "nativeName": "Western Visayas",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/PH-NEC_Flag.png/256px-PH-NEC_Flag.png"
             },
             "PH-09": {
                 "name": "Zamboanga Peninsula",
                 "nativeName": "Zamboanga Peninsula",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Zamboanga_del_Sur_gov._Flag.png/256px-Zamboanga_del_Sur_gov._Flag.png"
             }
         }
     },
