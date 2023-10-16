@@ -161,8 +161,14 @@
     "region_lt": {
         "message": "Regio"
     },
+    "region_ch": {
+        "message": "Kanton"
+    },
     "region_gr": {
         "message": "Regio"
+    },
+    "region_ee": {
+        "message": "Maakond"
     },
     "region_bg": {
         "message": "Provincie"
