@@ -441,6 +441,57 @@
             }
         }
     },
+    "EE": {
+        "name": "Estonia",
+        "nativeName": "Eesti",
+        "regions": {
+            "EE-37": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/23/Et-Harju_maakond-coa.svg"
+            },
+            "EE-39": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Hiiumaa_vapp.svg"
+            },
+            "EE-45": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Ida-Virumaa_vapp.svg"
+            },
+            "EE-50": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/J%C3%B5gevamaa_vapp.svg"
+            },
+            "EE-52": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Et-J%C3%A4rva_maakond-coa.svg"
+            },
+            "EE-56": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/L%C3%A4%C3%A4nemaa_vapp.svg"
+            },
+            "EE-60": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/L%C3%A4%C3%A4ne-Virumaa_vapp.svg"
+            },
+            "EE-64": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/P%C3%B5lvamaa_vapp.svg"
+            },
+            "EE-68": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Et-P%C3%A4rnu_maakond-coa.svg"
+            },
+            "EE-71": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Raplamaa_vapp.svg"
+            },
+            "EE-74": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Saaremaa_vapp.svg"
+            },
+            "EE-79": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Tartumaa_vapp.svg"
+            },
+            "EE-81": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Valgamaa_vapp.svg"
+            },
+            "EE-84": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Viljandimaa_vapp.svg"
+            },
+            "EE-87": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cd/V%C3%B5rumaa_vapp.svg"
+            }
+        }
+    },
     "ES": {
         "nativeName": "Españita",
         "regions": {
@@ -1028,6 +1079,34 @@
             "SG-05": {
                 "nativeName": "Southwest Singapore",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region,_Singapore.png"
+            }
+        }
+    },
+    "SK": {
+        "regions": {
+            "SK-BC": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Banskobystricky_vlajka.svg"
+            },
+            "SK-BL": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bratislavsky_vlajka.svg"
+            },
+            "SK-KI": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kosicky_vlajka.svg"
+            },
+            "SK-NI": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Nitriansky_vlajka.svg"
+            },
+            "SK-PV": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Presovsky_vlajka.svg"
+            },
+            "SK-TC": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/51/Trenciansky_vlajka.svg"
+            },
+            "SK-TA": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trnavsky_vlajka.svg"
+            },
+            "SK-ZI": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Zilinsky_vlajka.svg"
             }
         }
     },
