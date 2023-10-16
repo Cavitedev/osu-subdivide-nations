@@ -157,5 +157,14 @@
     },
     "region_lt": {
         "message": "Região"
+    },
+    "region_gr": {
+        "message": "Região"
+    },
+    "region_bg": {
+        "message": "Província"
+    },
+    "region_sk": {
+        "message": "Região"
     }
 }
