@@ -154,5 +154,14 @@
     },
     "region_lt": {
         "message": "Регион"
+    },
+    "region_gr": {
+        "message": "Регион"
+    },
+    "region_bg": {
+        "message": "Провинция"
+    },
+    "region_sk": {
+        "message": "Регион"
     }
 }
