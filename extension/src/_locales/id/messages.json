@@ -157,5 +157,14 @@
     },
     "region_lt": {
         "message": "Wilayah"
+    },
+    "region_gr": {
+        "message": "Wilayah"
+    },
+    "region_bg": {
+        "message": "Provinsi"
+    },
+    "region_sk": {
+        "message": "Wilayah"
     }
 }
