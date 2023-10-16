@@ -160,20 +160,5 @@
     },
     "region_lt":{
         "message": "Region"
-    },
-    "region_ch":{
-        "message": "Canton"
-    },
-    "region_gr":{
-        "message": "Region"
-    },
-    "region_ee":{
-        "message": "Maakond"
-    },
-    "region_bg":{
-        "message": "Province"
-    },
-    "region_sk":{
-        "message": "Region"
     }
 }
