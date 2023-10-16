@@ -160,5 +160,14 @@
     },
     "region_lt": {
         "message": "Regio"
+    },
+    "region_gr": {
+        "message": "Regio"
+    },
+    "region_bg": {
+        "message": "Provincie"
+    },
+    "region_sk": {
+        "message": "Regio"
     }
 }
