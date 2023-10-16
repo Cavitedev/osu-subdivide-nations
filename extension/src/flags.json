@@ -1056,6 +1056,87 @@
             }
         }
     },
+    "EE": {
+        "name": "Estonia",
+        "nativeName": "Eesti",
+        "regions": {
+            "EE-37": {
+                "name": "Harju maakond",
+                "nativeName": "Harju maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/23/Et-Harju_maakond-coa.svg"
+            },
+            "EE-39": {
+                "name": "Hiiu maakond",
+                "nativeName": "Hiiu maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Hiiumaa_vapp.svg"
+            },
+            "EE-45": {
+                "name": "Ida-Viru maakond",
+                "nativeName": "Ida-Viru maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Ida-Virumaa_vapp.svg"
+            },
+            "EE-50": {
+                "name": "Jõgeva maakond",
+                "nativeName": "Jõgeva maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Jõgevamaa_vapp.svg"
+            },
+            "EE-52": {
+                "name": "Järva maakond",
+                "nativeName": "Järva maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Et-Järva_maakond-coa.svg"
+            },
+            "EE-56": {
+                "name": "Lääne maakond",
+                "nativeName": "Lääne maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Läänemaa_vapp.svg"
+            },
+            "EE-60": {
+                "name": "Lääne-Viru maakond",
+                "nativeName": "Lääne-Viru maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Lääne-Virumaa_vapp.svg"
+            },
+            "EE-64": {
+                "name": "Põlva maakond",
+                "nativeName": "Põlva maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Põlvamaa_vapp.svg"
+            },
+            "EE-68": {
+                "name": "Pärnu maakond",
+                "nativeName": "Pärnu maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Et-Pärnu_maakond-coa.svg"
+            },
+            "EE-71": {
+                "name": "Rapla maakond",
+                "nativeName": "Rapla maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Raplamaa_vapp.svg"
+            },
+            "EE-74": {
+                "name": "Saare maakond",
+                "nativeName": "Saare maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Saaremaa_vapp.svg"
+            },
+            "EE-79": {
+                "name": "Tartu maakond",
+                "nativeName": "Tartu maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Tartumaa_vapp.svg"
+            },
+            "EE-81": {
+                "name": "Valga maakond",
+                "nativeName": "Valga maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Valgamaa_vapp.svg"
+            },
+            "EE-84": {
+                "name": "Viljandi maakond",
+                "nativeName": "Viljandi maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Viljandimaa_vapp.svg"
+            },
+            "EE-87": {
+                "name": "Võru maakond",
+                "nativeName": "Võru maakond",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Võrumaa_vapp.svg"
+            }
+        }
+    },
     "FI": {
         "name": "Finland",
         "nativeName": "Suomi",
@@ -3582,6 +3663,52 @@
             }
         }
     },
+    "SK": {
+        "name": "Slovakia",
+        "nativeName": "Slovensko",
+        "regions": {
+            "SK-BC": {
+                "name": "Region of Banská Bystrica",
+                "nativeName": "Banskobystrický kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Banskobystricky_vlajka.svg"
+            },
+            "SK-BL": {
+                "name": "Region of Bratislava",
+                "nativeName": "Bratislavský kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bratislavsky_vlajka.svg"
+            },
+            "SK-KI": {
+                "name": "Region of Košice",
+                "nativeName": "Košický kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kosicky_vlajka.svg"
+            },
+            "SK-NI": {
+                "name": "Region of Nitra",
+                "nativeName": "Nitriansky kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Nitriansky_vlajka.svg"
+            },
+            "SK-PV": {
+                "name": "Region of Prešov",
+                "nativeName": "Prešovský kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Presovsky_vlajka.svg"
+            },
+            "SK-TC": {
+                "name": "Region of Trenčín",
+                "nativeName": "Trenčiansky kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/51/Trenciansky_vlajka.svg"
+            },
+            "SK-TA": {
+                "name": "Region of Trnava",
+                "nativeName": "Trnavský kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Trnavsky_vlajka.svg"
+            },
+            "SK-ZI": {
+                "name": "Region of Žilina",
+                "nativeName": "Žilinský kraj",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Zilinsky_vlajka.svg"
+            }
+        }
+    },
     "ES": {
         "name": "Spain",
         "nativeName": "Españita",
@@ -3791,6 +3918,142 @@
                 "name": "Östergötland County",
                 "nativeName": "Östergötlands län",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Östergötlands_län_vapenflagga.svg"
+            }
+        }
+    },
+    "CH": {
+        "name": "Switzerland",
+        "nativeName": "Suisse",
+        "regions": {
+            "CH-AG": {
+                "name": "Aargau",
+                "nativeName": "Aargau",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_Canton_of_Aargau.svg"
+            },
+            "CH-AR": {
+                "name": "Appenzell Ausserrhoden",
+                "nativeName": "Appenzell Ausserrhoden",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Canton_of_Appenzell_Ausserrhoden.svg"
+            },
+            "CH-AI": {
+                "name": "Appenzell Innerrhoden",
+                "nativeName": "Appenzell Innerrhoden",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Canton_of_Appenzell_Innerrhoden.svg"
+            },
+            "CH-BL": {
+                "name": "Basel-Landschaft",
+                "nativeName": "Basel-Landschaft",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Canton_of_Basel_Land.svg"
+            },
+            "CH-BS": {
+                "name": "Basel-Stadt",
+                "nativeName": "Basel-Stadt",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Flag_of_Canton_of_Basel.svg"
+            },
+            "CH-BE": {
+                "name": "Bern",
+                "nativeName": "Bern/Berne",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Canton_of_Bern.svg"
+            },
+            "CH-FR": {
+                "name": "Fribourg",
+                "nativeName": "Fribourg/Freiburg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_Canton_of_Fribourg.svg"
+            },
+            "CH-GE": {
+                "name": "Geneva",
+                "nativeName": "Genève",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Canton_of_Geneva.svg"
+            },
+            "CH-GL": {
+                "name": "Glarus",
+                "nativeName": "Glarus",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Flag_of_Canton_of_Glarus.svg"
+            },
+            "CH-GR": {
+                "name": "Grisons",
+                "nativeName": "Graubünden/Grischun/Grigioni",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Canton_of_Graubünden.svg"
+            },
+            "CH-JU": {
+                "name": "Jura",
+                "nativeName": "Jura",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Canton_of_Jura.svg"
+            },
+            "CH-LU": {
+                "name": "Lucerne",
+                "nativeName": "Luzern",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_Canton_of_Lucerne.svg"
+            },
+            "CH-NE": {
+                "name": "Neuchâtel",
+                "nativeName": "Neuchâtel",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Flag_of_Canton_of_Neuchâtel.svg"
+            },
+            "CH-NW": {
+                "name": "Nidwalden",
+                "nativeName": "Nidwalden",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Canton_of_Nidwalden.svg"
+            },
+            "CH-OW": {
+                "name": "Obwalden",
+                "nativeName": "Obwalden",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/76/Flag_of_Canton_of_Obwalden.svg"
+            },
+            "CH-SH": {
+                "name": "Schaffhausen",
+                "nativeName": "Schaffhausen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_Canton_of_Schaffhausen.svg"
+            },
+            "CH-SZ": {
+                "name": "Schwyz",
+                "nativeName": "Schwyz",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Canton_of_Schwyz.svg"
+            },
+            "CH-SO": {
+                "name": "Solothurn",
+                "nativeName": "Solothurn",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Canton_of_Solothurn.svg"
+            },
+            "CH-SG": {
+                "name": "St. Gallen",
+                "nativeName": "Sankt Gallen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Canton_of_Sankt_Gallen.svg"
+            },
+            "CH-TG": {
+                "name": "Thurgau",
+                "nativeName": "Thurgau",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Canton_of_Thurgau.svg"
+            },
+            "CH-TI": {
+                "name": "Ticino",
+                "nativeName": "Ticino",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_Canton_of_Ticino.svg"
+            },
+            "CH-UR": {
+                "name": "Uri",
+                "nativeName": "Uri",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Canton_of_Uri.svg"
+            },
+            "CH-VS": {
+                "name": "Valais",
+                "nativeName": "Valais/Wallis",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Canton_of_Valais.svg"
+            },
+            "CH-VD": {
+                "name": "Vaud",
+                "nativeName": "Vaud",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Canton_of_Vaud.svg"
+            },
+            "CH-ZG": {
+                "name": "Zug",
+                "nativeName": "Zug",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Canton_of_Zug.svg"
+            },
+            "CH-ZH": {
+                "name": "Zürich",
+                "nativeName": "Zürich",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Canton_of_Zürich.svg"
             }
         }
     },
@@ -4574,6 +4837,228 @@
                 "name": "Washington, D.C.",
                 "nativeName": "Washington, D.C.",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
+            }
+        }
+    },
+    "BG": {
+        "name": "Bulgaria",
+        "regions": {
+            "BG-01": {
+                "name": "Blagoevgrad",
+                "nativeName": "Благоевград",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Emblem_of_Blagoevgrad.svg"
+            },
+            "BG-02": {
+                "name": "Burgas",
+                "nativeName": "Бургас",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/be/BG-Burgas_flag.png"
+            },
+            "BG-03": {
+                "name": "Varna",
+                "nativeName": "Варна",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Varna_flag.png/256px-Varna_flag.png"
+            },
+            "BG-04": {
+                "name": "Veliko Tarnovo",
+                "nativeName": "Велико Търново",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/11/Veliko_tarnovo_flag.png"
+            },
+            "BG-05": {
+                "name": "Vidin",
+                "nativeName": "Видин",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Vidin.gif"
+            },
+            "BG-06": {
+                "name": "Vratsa",
+                "nativeName": "Враца",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Vratza.gif"
+            },
+            "BG-07": {
+                "name": "Gabrovo",
+                "nativeName": "Габрово",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/BG_Gabrovo_flag.svg"
+            },
+            "BG-08": {
+                "name": "Dobrich",
+                "nativeName": "Добрич",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Dobrich.svg"
+            },
+            "BG-09": {
+                "name": "Kardzhali",
+                "nativeName": "Кърджали",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Kardzhali.gif"
+            },
+            "BG-10": {
+                "name": "Kyustendil",
+                "nativeName": "Кюстендил",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_kn.gif"
+            },
+            "BG-11": {
+                "name": "Lovech",
+                "nativeName": "Ловеч",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Lovech.gif"
+            },
+            "BG-12": {
+                "name": "Montana",
+                "nativeName": "Монтана",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Montana,_Bulgaria.svg"
+            },
+            "BG-13": {
+                "name": "Pazardzhik",
+                "nativeName": "Пазарджик",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Pazardzhik.gif"
+            },
+            "BG-14": {
+                "name": "Pernik",
+                "nativeName": "Перник",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Pernik_flag.png"
+            },
+            "BG-15": {
+                "name": "Pleven",
+                "nativeName": "Плевен",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_Pleven.gif"
+            },
+            "BG-16": {
+                "name": "Plovdiv",
+                "nativeName": "Пловдив",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Plovdiv_flag.svg/128px-Plovdiv_flag.svg.png"
+            },
+            "BG-17": {
+                "name": "Razgrad",
+                "nativeName": "Разград",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/86/Razgrad_flag.png"
+            },
+            "BG-18": {
+                "name": "Ruse",
+                "nativeName": "Русе",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Ruse.gif"
+            },
+            "BG-19": {
+                "name": "Silistra",
+                "nativeName": "Силистра",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Silistra_Municipality_HD.jpg/256px-Silistra_Municipality_HD.jpg"
+            },
+            "BG-20": {
+                "name": "Sliven",
+                "nativeName": "Сливен",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sliven_flag.png"
+            },
+            "BG-21": {
+                "name": "Smolyan",
+                "nativeName": "Смолян",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Smolyan_Coat_of_Arms.png"
+            },
+            "BG-22": {
+                "name": "Sofia-City",
+                "nativeName": "София-град",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/BG_Sofia_flag.svg/128px-BG_Sofia_flag.svg.png"
+            },
+            "BG-23": {
+                "name": "Sofia",
+                "nativeName": "Софийска",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/BG_Sofia_flag.svg/128px-BG_Sofia_flag.svg.png"
+            },
+            "BG-24": {
+                "name": "Stara Zagora",
+                "nativeName": "Стара Загора",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Stara_Zagora_(obverse).svg"
+            },
+            "BG-25": {
+                "name": "Targovishte",
+                "nativeName": "Търговище",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Targovishte_Municipality.jpg/256px-Targovishte_Municipality.jpg"
+            },
+            "BG-26": {
+                "name": "Haskovo",
+                "nativeName": "Хасково",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Haskovo.gif"
+            },
+            "BG-27": {
+                "name": "Shumen",
+                "nativeName": "Шумен",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_of_Shumen.png"
+            },
+            "BG-28": {
+                "name": "Yambol",
+                "nativeName": "Ямбол",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Yambol.gif"
+            }
+        },
+        "nativeName": "България"
+    },
+    "GR": {
+        "name": "Greece",
+        "nativeName": "Ελλάς",
+        "regions": {
+            "GR-A": {
+                "name": "Eastern Macedonia and Thrace",
+                "nativeName": "Περιφέρεια Ανατολικής Μακεδονίας και Θράκης",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/f/f8/Eastern_Macedonia_and_Thrace_logo.png"
+            },
+            "GR-B": {
+                "name": "Central Macedonia",
+                "nativeName": "Περιφέρεια Κεντρικής Μακεδονίας",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Greek_Macedonia.svg"
+            },
+            "GR-C": {
+                "name": "Western Macedonia",
+                "nativeName": "Περιφέρεια Δυτικής Μακεδονίας",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Greek_Macedonia.svg"
+            },
+            "GR-D": {
+                "name": "Epirus",
+                "nativeName": "Περιφέρεια Ηπείρου",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_the_Autonomous_Republic_of_Northern_Epirus.svg"
+            },
+            "GR-E": {
+                "name": "Thessaly",
+                "nativeName": "Περιφέρεια Θεσσαλίας",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_the_Region_of_Thessaly.svg"
+            },
+            "GR-F": {
+                "name": "Ioanian Islands",
+                "nativeName": "Περιφέρεια Ιονίων Νήσων",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/9/9f/Logo_of_the_Ionian_Islands_Region.png"
+            },
+            "GR-G": {
+                "name": "Western Greece",
+                "nativeName": "Περιφέρεια Δυτικής Ελλάδας",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Western_Greece_logo.png"
+            },
+            "GR-H": {
+                "name": "Central Greece",
+                "nativeName": "Περιφέρεια Στερεάς Ελλάδας",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/4/4c/Logo_of_the_Central_Greece_Region.png"
+            },
+            "GR-I": {
+                "name": "Attica",
+                "nativeName": "Περιφέρεια Αττικής",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bandera_d'Àtica.svg"
+            },
+            "GR-J": {
+                "name": "Peloponnese Region",
+                "nativeName": "Περιφέρεια Πελοποννήσου",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Greek_Revolution_flag.svg"
+            },
+            "GR-K": {
+                "name": "Northern Aegean",
+                "nativeName": "Περιφέρεια Βόρειου Αιγαίου",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/70/Logo_of_the_North_Aegean_Region.jpg"
+            },
+            "GR-L": {
+                "name": "South Aegean",
+                "nativeName": "Περιφέρεια Νοτίου Αιγαίου",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Region_of_South_Aegean.svg"
+            },
+            "GR-M": {
+                "name": "Region of Crete",
+                "nativeName": "Περιφέρεια Κρήτης",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/1a/Logo_of_the_Crete_Region.png"
+            },
+            "GR-69": {
+                "name": "Autonomous Monastic State of the Holy Mountain",
+                "nativeName": "Αυτόνομη Μοναστική Πολιτεία Αγίου Όρους",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_the_Greek_Orthodox_Church.svg/128px-Flag_of_the_Greek_Orthodox_Church.svg.png"
             }
         }
     },

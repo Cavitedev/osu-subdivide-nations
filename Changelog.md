@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.1.6
+
+- Add new countries: Switzerland, Greece, Estonia, Bulgaria, Slovakia
+
 ## Version 3.1.5
 
 - Fixing matches flags updates
