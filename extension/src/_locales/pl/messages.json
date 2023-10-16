@@ -3,7 +3,7 @@
         "message": "Dodaje regionalne flagi do oficjalnej strony osu!.\n Pokazuje również na profilu osu! ogólny ranking według łącznego wyniku."
     },
     "created_by": {
-        "message": "stworzone przez"
+        "message": "Stworzone przez {{developer}}"
     },
     "system_default": {
         "message": "Domyślne ustawienie systemowe"
