@@ -3,7 +3,7 @@
         "message": "Dodaje regionalne flagi do oficjalnej strony osu!.\n Pokazuje również na profilu osu! ogólny ranking według łącznego wyniku."
     },
     "created_by": {
-        "message": "Stworzone przez {{developer}}"
+        "message": "stworzone przez"
     },
     "system_default": {
         "message": "Domyślne ustawienie systemowe"
@@ -159,6 +159,15 @@
         "message": "Region"
     },
     "region_lt": {
+        "message": "Region"
+    },
+    "region_gr": {
+        "message": "Region"
+    },
+    "region_bg": {
+        "message": "Prowincja"
+    },
+    "region_sk": {
         "message": "Region"
     }
 }
