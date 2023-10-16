@@ -54,6 +54,98 @@
             }
         }
     },
+    "BG": {
+        "name": "Bulgaria",
+        "nativeName": "България",
+        "regions": {
+            "BG-01": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Emblem_of_Blagoevgrad.svg"
+            },
+            "BG-02": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/be/BG-Burgas_flag.png"
+            },
+            "BG-03": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Varna_flag.png/256px-Varna_flag.png"
+            },
+            "BG-04": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/11/Veliko_tarnovo_flag.png"
+            },
+            "BG-05": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Vidin.gif"
+            },
+            "BG-06": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_Vratza.gif"
+            },
+            "BG-07": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/BG_Gabrovo_flag.svg"
+            },
+            "BG-08": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Dobrich.svg"
+            },
+            "BG-09": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Kardzhali.gif"
+            },
+            "BG-10": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_kn.gif"
+            },
+            "BG-11": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Lovech.gif"
+            },
+            "BG-12": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Montana,_Bulgaria.svg"
+            },
+            "BG-13": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Pazardzhik.gif"
+            },
+            "BG-14": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Pernik_flag.png"
+            },
+            "BG-15": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_Pleven.gif"
+            },
+            "BG-16": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Plovdiv_flag.svg/128px-Plovdiv_flag.svg.png"
+            },
+            "BG-17": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/86/Razgrad_flag.png"
+            },
+            "BG-18": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Ruse.gif"
+            },
+            "BG-19": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Silistra_Municipality_HD.jpg/256px-Silistra_Municipality_HD.jpg"
+            },
+            "BG-20": {
+                "name": "Sliven",
+                "nativeName": "Сливен",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sliven_flag.png"
+            },
+            "BG-21": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Smolyan_Coat_of_Arms.png"
+            },
+            "BG-22": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/BG_Sofia_flag.svg/128px-BG_Sofia_flag.svg.png"
+            },
+            "BG-23": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/BG_Sofia_flag.svg/128px-BG_Sofia_flag.svg.png"
+            },
+            "BG-24": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Stara_Zagora_(obverse).svg"
+            },
+            "BG-25": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Targovishte_Municipality.jpg/256px-Targovishte_Municipality.jpg"
+            },
+            "BG-26": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Haskovo.gif"
+            },
+            "BG-27": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_of_Shumen.png"
+            },
+            "BG-28": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Yambol.gif"
+            }
+        }
+    },
     "BR": {
         "regions": {
             "BR-RN": {
@@ -455,22 +547,22 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Ida-Virumaa_vapp.svg"
             },
             "EE-50": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/J%C3%B5gevamaa_vapp.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Jõgevamaa_vapp.svg"
             },
             "EE-52": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Et-J%C3%A4rva_maakond-coa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Et-Järva_maakond-coa.svg"
             },
             "EE-56": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/L%C3%A4%C3%A4nemaa_vapp.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Läänemaa_vapp.svg"
             },
             "EE-60": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/L%C3%A4%C3%A4ne-Virumaa_vapp.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Lääne-Virumaa_vapp.svg"
             },
             "EE-64": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/P%C3%B5lvamaa_vapp.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Põlvamaa_vapp.svg"
             },
             "EE-68": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Et-P%C3%A4rnu_maakond-coa.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Et-Pärnu_maakond-coa.svg"
             },
             "EE-71": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Raplamaa_vapp.svg"
@@ -488,7 +580,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Viljandimaa_vapp.svg"
             },
             "EE-87": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cd/V%C3%B5rumaa_vapp.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Võrumaa_vapp.svg"
             }
         }
     },
@@ -530,6 +622,52 @@
             },
             "FI-19": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varsinais-Suomen.vaakuna.svg"
+            }
+        }
+    },
+    "GR": {
+        "regions": {
+            "GR-A": {
+                "flag": "https://upload.wikimedia.org/wikipedia/en/f/f8/Eastern_Macedonia_and_Thrace_logo.png"
+            },
+            "GR-B": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Greek_Macedonia.svg"
+            },
+            "GR-C": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Greek_Macedonia.svg"
+            },
+            "GR-D": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_the_Autonomous_Republic_of_Northern_Epirus.svg"
+            },
+            "GR-E": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_the_Region_of_Thessaly.svg"
+            },
+            "GR-F": {
+                "flag": "https://upload.wikimedia.org/wikipedia/en/9/9f/Logo_of_the_Ionian_Islands_Region.png"
+            },
+            "GR-G": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Western_Greece_logo.png"
+            },
+            "GR-H": {
+                "flag": "https://upload.wikimedia.org/wikipedia/en/4/4c/Logo_of_the_Central_Greece_Region.png"
+            },
+            "GR-I": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bandera_d'Àtica.svg"
+            },
+            "GR-J": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Greek_Revolution_flag.svg"
+            },
+            "GR-K": {
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/70/Logo_of_the_North_Aegean_Region.jpg"
+            },
+            "GR-L": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Region_of_South_Aegean.svg"
+            },
+            "GR-M": {
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/1a/Logo_of_the_Crete_Region.png"
+            },
+            "GR-69": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_the_Greek_Orthodox_Church.svg/128px-Flag_of_the_Greek_Orthodox_Church.svg.png"
             }
         }
     },
