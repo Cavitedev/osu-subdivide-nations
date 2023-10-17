@@ -117,7 +117,7 @@
         "message": "Provincia"
     },
     "region_pl": {
-        "message": "Volvodato"
+        "message": "Voivodato"
     },
     "region_pt": {
         "message": "Región"
@@ -159,6 +159,21 @@
         "message": "Región"
     },
     "region_lt": {
+        "message": "Región"
+    },
+    "region_ch": {
+        "message": "Cantón"
+    },
+    "region_gr": {
+        "message": "Región"
+    },
+    "region_ee": {
+        "message": "Condado"
+    },
+    "region_bg": {
+        "message": "Provincia"
+    },
+    "region_sk": {
         "message": "Región"
     }
 }

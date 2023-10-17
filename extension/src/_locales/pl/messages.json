@@ -129,7 +129,7 @@
         "message": "Komitat"
     },
     "region_sg": {
-        "message": "Dystrykty"
+        "message": "Dystrykt"
     },
     "region_th": {
         "message": "Prowincja"
@@ -159,6 +159,15 @@
         "message": "Region"
     },
     "region_lt": {
+        "message": "Region"
+    },
+    "region_gr": {
+        "message": "Region"
+    },
+    "region_bg": {
+        "message": "Prowincja"
+    },
+    "region_sk": {
         "message": "Region"
     }
 }

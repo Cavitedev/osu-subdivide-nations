@@ -126,7 +126,7 @@
         "message": "Condado"
     },
     "region_sg": {
-        "message": "Distritos"
+        "message": "Distrito"
     },
     "region_th": {
         "message": "Província"
@@ -156,6 +156,15 @@
         "message": "Região"
     },
     "region_lt": {
+        "message": "Região"
+    },
+    "region_gr": {
+        "message": "Região"
+    },
+    "region_bg": {
+        "message": "Província"
+    },
+    "region_sk": {
         "message": "Região"
     }
 }

@@ -2,9 +2,6 @@
     "appDesc": {
         "message": "Adaugă steaguri regionale pe site-ul osu!.\nȘi actualizați scorul global osu! pe profile."
     },
-    "created_by": {
-        "message": "creat de"
-    },
     "system_default": {
         "message": "Default al Sistemului"
     },
@@ -22,9 +19,6 @@
     },
     "score_ranking": {
         "message": "Clasament al Scorului"
-    },
-    "highest_rank_profile": {
-        "message": "Cel mai înalt rang pe clasament:             pe"
     },
     "region": {
         "message": "Regiune"
@@ -129,7 +123,7 @@
         "message": "Județ"
     },
     "region_sg": {
-        "message": "Districte"
+        "message": "District"
     },
     "region_th": {
         "message": "Provincie"
@@ -159,6 +153,15 @@
         "message": "Regiune"
     },
     "region_lt": {
+        "message": "Regiune"
+    },
+    "region_gr": {
+        "message": "Regiune"
+    },
+    "region_bg": {
+        "message": "Provincie"
+    },
+    "region_sk": {
         "message": "Regiune"
     }
 }
