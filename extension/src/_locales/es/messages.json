@@ -161,8 +161,14 @@
     "region_lt": {
         "message": "Región"
     },
+    "region_ch": {
+        "message": "Cantón"
+    },
     "region_gr": {
         "message": "Región"
+    },
+    "region_ee": {
+        "message": "Condado"
     },
     "region_bg": {
         "message": "Provincia"
