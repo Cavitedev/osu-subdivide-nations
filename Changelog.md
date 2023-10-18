@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.0
+
+- Bulk players load (faster loads for flags)
+- Fix profiles whose region is not in osu country
+
 ## Version 3.1.7
 
 - Fix margin regional ranking
