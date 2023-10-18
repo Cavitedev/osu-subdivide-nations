@@ -1,4 +1,4 @@
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
+import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./ranking";
 import { updateFlagsBeatmapsets } from "./beatmapset";
@@ -78,6 +78,7 @@ export const refreshOverlays = async () => {
 
 const refreshSearch = async (mutations: MutationRecord[]) => {
     for (const mutation of mutations) {
+        console.log(mutation.addedNodes);
         for (const addedNode of mutation.addedNodes) {
             if (addedNode instanceof HTMLElement) {
                 if (addedNode.getAttribute("data-section") === "user") {
@@ -110,9 +111,7 @@ const firstSearch = async (addedNode: HTMLElement, mobile: boolean) => {
         },
     );
 
-    for (const userCard of userCards) {
-        await updateSearchCard(userCard as HTMLElement);
-    }
+    await updateSearchCards(userCards as NodeListOf<HTMLElement>);
 };
 
 const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
@@ -120,10 +119,23 @@ const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
 });
 
 const updateFlagMobileSearchObserver = new MutationObserver(async (mutations) => {
+    console.log("Mobile search observer");
     return firstSearch(mutations[0].addedNodes[0] as HTMLElement, true);
 });
 
+const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
+    console.log("Update multiple cards");
+    const flagItems: TFlagItems = [];
+    for(const card of cards){
+        const userId = idFromProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
+        flagItems.push({item: card, id:userId});
+    }
+
+    await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
+};
+
 const updateSearchCard = async (card: HTMLElement) => {
+    console.log("Update single card");
     const userId = idFromProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
     await addFlagUser(card, userId, { addDiv: true, addMargin: true });
 };
@@ -149,14 +161,31 @@ const updateUserCardMobileView = async (parent: HTMLElement | undefined = undefi
     updateUserCardFlag(userCard as HTMLElement);
 };
 
+const mobileMenuCreationObserver = new MutationObserver((mutations) => {
+    const mobileMenuInner = (mutations?.[0]?.target as HTMLElement)?.querySelector(".quick-search");
+    if (mobileMenuInner) {
+        updateFlagMobileSearchObserver.observe(mobileMenuInner, {
+            childList: true,
+        });
+        mobileMenuCreationObserver.disconnect();   
+        return;
+    }
+
+});
+
 const addGlobalObservers = () => {
     bodyObserver.observe(document.querySelector("body")!, {
         childList: true,
     });
 
-    const mobileMenu = document.querySelector(".mobile-menu__item--search > .quick-search");
-    if (mobileMenu) {
-        updateFlagMobileSearchObserver.observe(mobileMenu, {
+    const mobileMenu = document.querySelector(".mobile-menu__item--search");
+    const mobileMenuInner = mobileMenu?.querySelector(".quick-search");
+    if (mobileMenuInner) {
+        updateFlagMobileSearchObserver.observe(mobileMenuInner, {
+            childList: true,
+        });
+    }else if (mobileMenu){
+        mobileMenuCreationObserver.observe(mobileMenu, {
             childList: true,
         });
     }
