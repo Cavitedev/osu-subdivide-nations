@@ -1,4 +1,4 @@
-import { saveInCache } from "./cache";
+import { loadFromCache, loadMultipleUrlsFromCache, saveInCache } from "./cache";
 import {
     IfetchResponse,
     noId,
@@ -10,6 +10,7 @@ import {
     genExpireDate,
     expireHeader,
     unknownUserError,
+    noData,
 } from "./fetchUtils";
 
 export interface IosuWorldIdSuccess {
@@ -72,8 +73,20 @@ export const osuWorldUsers = async (
     for (let i = 0; i < ids.length; i += 50) {
         const slicedIds = ids.slice(i, i + 50);
         const url = osuWorldApiBase + "subdiv/users?ids=" + slicedIds.join(",");
-        promises.push((fetchWithoutCache(url, { signal: signal }) as Promise<
-        IfetchResponse<TosuWorldIdsData>>))
+        const promise = loadFromCache(url).then((cacheResponse) => {
+            const expireTime = cacheResponse?.[expireHeader];
+            if(!expireTime || expireTime < Date.now()){
+                return (fetchWithoutCache(url, { signal: signal }) as Promise<
+                IfetchResponse<TosuWorldIdsData>>);
+            };
+            return loadUserIdsFromCache(slicedIds, url);
+
+        });
+        promises.push(promise)
+
+        saveInCache(url, {
+            [expireHeader]: genExpireDate(userDataExpireTime),
+        });
       }
 
       const response = await Promise.all(promises).then((responses) => {
@@ -96,7 +109,39 @@ export const osuWorldUsers = async (
     return response;
 };
 
-const isFetchError = (data: TosuWorldIdsData): data is IFetchError => {
+const loadUserIdsFromCache = async (ids: string[], url: string): Promise<
+IfetchResponse<TosuWorldIdsData>> => {
+    const urls = [];
+    for(const id of ids){
+        const url = osuWorldApiBase + "users/" + id;
+        urls.push(url);
+
+    }
+    const responses = await loadMultipleUrlsFromCache(urls) as IfetchResponse<TosuWorldIdData>[] | null;
+    if(!responses){
+        return {
+            error: {
+                code: noData,
+                url: url
+            } 
+        }
+    }
+
+    const data = responses.filter(response => {
+        const responseData = response.data;
+        if(!responseData) return false;
+        if((responseData as IFetchError).error !== undefined) return false;
+        return true;
+    }).map((response) => {
+        return response.data as IosuWorldIdSuccess});
+
+    return {
+        data: data,
+        cache: true
+    }
+};
+
+const isFetchError = (data: TosuWorldIdsData | undefined): data is IFetchError => {
     return (data as IFetchError).error !== undefined;
   }
 

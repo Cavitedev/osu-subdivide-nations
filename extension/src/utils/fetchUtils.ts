@@ -51,11 +51,12 @@ const fetchAndSaveInCache = async (
             cachedResponse["data"] = jsonResponse;
             if(expireTime > 0){
                 cachedResponse[expireHeader] = genExpireDate(expireTime);
+                if (preserve) {
+                    cachedResponse["preserve"] = true;
+                }
+                saveInCache(url, cachedResponse);
             }
-            if (preserve) {
-                cachedResponse["preserve"] = true;
-            }
-            saveInCache(url, cachedResponse);
+
             return cachedResponse;
         })
         .catch((err) => {
@@ -113,7 +114,7 @@ export const fetchWithoutCache = async (url: string, options: fetchOptions = {})
 
 export const unknownUserError = "unknown_user";
 const cannotFetchError = "cannot_fetch";
-const noData = "no_data";
+export const noData = "no_data";
 export const noId = "no_id";
 export const noMode = "no_mode";
 

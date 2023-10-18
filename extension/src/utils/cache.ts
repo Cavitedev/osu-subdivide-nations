@@ -12,6 +12,15 @@ export const loadFromCache = async (url: string): Promise<any | null> => {
     }
 };
 
+export const loadMultipleUrlsFromCache = async (urls: string[]): Promise<any[] | null> => {
+    const storageReturn = await browser.storage.local.get(urls);
+    if (!storageReturn || Object.keys(storageReturn).length === 0) {
+        return null;
+    } else {
+        return Object.values(storageReturn);
+    }
+};
+
 export const cleanInvalidatedCacheConditionally = async () => {
     const cacheClean = (await loadFromCache("cacheClean")) as number | null;
     if (!cacheClean || cacheClean < Date.now()) cleanInvalidatedCache();
