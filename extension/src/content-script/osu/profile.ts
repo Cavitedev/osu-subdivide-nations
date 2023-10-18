@@ -10,6 +10,8 @@ import {
     getLocMsg,
     waitLastLanguageIsLoaded,
 } from "@src/utils/languagesChrome";
+import osuNameToCode from "./osuNameToCode";
+import { getCountryName } from "@src/utils/flagsJsonUtils";
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
     updateFlagsProfile();
@@ -44,11 +46,20 @@ export const updateFlagsProfile = async () => {
     addScoreRank(signal);
     const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
     if (!flagResult) return;
-    const { countryName, regionName } = flagResult;
+    const { countryCode, countryName, regionName } = flagResult;
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
+    
+    let countryText = countryNameElement.textContent?.split(" |")[0];
+    const originalCountryCode = osuNameToCode(countryText!);
 
-    const originalCountry = countryNameElement.textContent?.split(" / ")[0];
-    const replaceText = `${countryName ? countryName : originalCountry}${regionName ? ` / ${regionName}` : ""}`;
+    let replaceText: string;
+    if (originalCountryCode === countryCode){
+        countryText = countryNameElement.textContent?.split(" / ")[0];
+        replaceText = `${countryName ? countryName : countryText}${regionName ? ` / ${regionName}` : ""}`;
+    }else{
+        const regionCountryName = await getCountryName(countryCode!);
+        replaceText = `${countryName} | ${regionCountryName} / ${regionName}`;
+    }
 
     countryNameElement.textContent = replaceText;
 };

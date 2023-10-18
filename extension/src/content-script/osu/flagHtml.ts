@@ -17,8 +17,9 @@ export const setFlagClass = (flagClassParam: string) => {
     flagClass = flagClassParam;
 };
 
-type regionAndFlag =
+type regionAndCountry =
     | {
+            countryCode?: string;
           countryName?: string;
           regionName?: string;
       }
@@ -36,7 +37,7 @@ export const addFlagUser = async (
     item: HTMLElement,
     userId?: string | null,
     options?: osuHtmlUserOptions,
-): Promise<regionAndFlag> => {
+): Promise<regionAndCountry> => {
     if (!userId) return;
     const resultNames = await _addFlagUser(item, userId, options);
     if (!resultNames) {
@@ -50,7 +51,7 @@ const _addFlagUser = async (
     item: HTMLElement,
     userId: string,
     options?: osuHtmlUserOptions,
-): Promise<regionAndFlag> => {
+): Promise<regionAndCountry> => {
     if (!item) return;
     const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
     if (playerOsuWorld.error) {
@@ -180,7 +181,7 @@ export const addRegionalFlag = async (
     }
 
     const countryName = await updateCountryNameFlag(item);
-    return { countryName, regionName };
+    return { countryCode, countryName, regionName };
 };
 
 const updateCountryNameFlag = async (item: HTMLElement) => {
