@@ -1,7 +1,7 @@
 import { Ilanguages } from "@src/utils/language";
 import jsonNameToCode from "./nameToLanguage.json";
 import { loadLanguage } from "@src/utils/languagesChrome";
-import { updateRegionsDropdown } from "./ranking";
+import { updateRegionsDropdown } from "./pages/ranking";
 
 const nameToCode = jsonNameToCode as Ilanguages;
 

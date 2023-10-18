@@ -1,5 +1,5 @@
 import { TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
+import { idFromProfileUrl, nextAbortControllerSignal } from "../content";
 
 // https://osu.ppy.sh/home/search?mode=user&query=Deif&page=1
 const initPageObserver = new MutationObserver(() => {

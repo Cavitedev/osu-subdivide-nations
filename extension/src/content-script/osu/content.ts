@@ -1,13 +1,13 @@
 import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { initConfigure } from "./init";
-import { updateFlagsRankings } from "./ranking";
-import { updateFlagsBeatmapsets } from "./beatmapset";
-import { updateFlagsFriends } from "./friends";
-import { updateFlagsMatches } from "./match";
-import { updateFlagsProfile } from "./profile";
-import { updateFlagsTopics } from "./topics";
+import { updateFlagsRankings } from "./pages/ranking";
+import { updateFlagsBeatmapsets } from "./pages/beatmapset";
+import { updateFlagsFriends } from "./pages/friends";
+import { updateFlagsMatches } from "./pages/match";
+import { updateFlagsProfile } from "./pages/profile";
+import { updateFlagsTopics } from "./pages/topics";
 import { updateLanguageToOsuLanguage } from "./osuLanguage";
-import { updateFlagsSearch } from "./search";
+import { updateFlagsSearch } from "./pages/search";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);

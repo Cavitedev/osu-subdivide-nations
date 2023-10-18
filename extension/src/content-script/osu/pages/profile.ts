@@ -2,7 +2,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 // https://osu.ppy.sh/users/4871211/fruits
 
 import { isNumber } from "@src/utils/utils";
-import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
+import { idFromProfileUrl, nextAbortControllerSignal } from "../content";
 import { osuScoreRanking } from "@src/utils/respektive";
 import {
     getActiveLanguageCode,
@@ -10,7 +10,7 @@ import {
     getLocMsg,
     waitLastLanguageIsLoaded,
 } from "@src/utils/languagesChrome";
-import osuNameToCode from "./osuNameToCode";
+import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
