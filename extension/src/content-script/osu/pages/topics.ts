@@ -1,6 +1,7 @@
 // https://osu.ppy.sh/community/forums/topics/1686524?n=3
 
-import { TFlagItems, addFlagUsers as addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { addFlagUsers as addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 export const updateFlagsTopics = async () => {

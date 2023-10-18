@@ -1,4 +1,5 @@
-import { TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 

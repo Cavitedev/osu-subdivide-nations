@@ -1,4 +1,5 @@
-import { flagClass, addRegionalFlag, TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { flagClass, addRegionalFlag, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";

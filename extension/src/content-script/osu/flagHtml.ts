@@ -4,6 +4,7 @@ import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
 import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
+import { TFlagItems } from "@src/utils/html";
 
 // Quotes needed for special characters
 const flagStyle = 'background-image: url("$flag"); background-size: auto 100%';
@@ -32,11 +33,6 @@ type osuHtmlUserOptions = {
     insertInsideOriginalElement?: boolean;
     signal?: AbortSignal;
 };
-
-export type TFlagItems = {
-    id: string,
-    item: HTMLElement
-}[];
 
 export const addFlagUser = async (
     item: HTMLElement,

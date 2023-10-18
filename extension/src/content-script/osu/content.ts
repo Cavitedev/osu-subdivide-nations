@@ -1,4 +1,5 @@
-import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
 import { initConfigure } from "./init";
 import { updateFlagsRankings } from "./pages/ranking";
 import { updateFlagsBeatmapsets } from "./pages/beatmapset";
