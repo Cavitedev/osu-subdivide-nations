@@ -15,7 +15,10 @@ export const exec = async () => {
     
     content = document.querySelector("body > app-root > app-tournament-view > div.content-spacing > app-tournament-view-details") as HTMLElement;
     if(!content) return;
-    contentObserver.observe(content, {childList: true});
+
+    const contentChild = content.children[0] as HTMLElement;
+
+    contentObserver.observe(contentChild ?? content, {childList: true});
     
     //No content
     if(content.children.length === 0) return;
