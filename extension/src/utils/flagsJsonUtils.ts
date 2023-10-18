@@ -1,4 +1,4 @@
-import { IfetchResponse, fetchWithCache } from "./fetchUtils";
+import { IfetchResponse, fetchWithCache, fetchWithoutCache } from "./fetchUtils";
 import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
 
 import browser from "webextension-polyfill";
@@ -103,15 +103,13 @@ const langToRightUpperCases = (lang: string) => {
     return lowerCaseLang;
 };
 
-const languagesCacheTime = 216000000; // 60 hours;
 
 export const getCountryNamesLocale = async (): Promise<IfetchResponse<Icountries> | { lang: string }> => {
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode) return Promise.resolve({ lang: nativeLanguageCode });
 
-    return fetchWithCache(
+    return fetchWithoutCache(
         countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        languagesCacheTime,
     ) as Promise<IfetchResponse<Icountries>>;
 };
 
@@ -119,8 +117,7 @@ export const getRegionNamesLocale = async (): Promise<IfetchResponse<Iregions> |
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode) return Promise.resolve({ lang: nativeLanguageCode });
 
-    return fetchWithCache(
+    return fetchWithoutCache(
         regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-        languagesCacheTime,
     ) as Promise<IfetchResponse<Iregions>>;
 };

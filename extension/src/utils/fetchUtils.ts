@@ -101,7 +101,7 @@ export const fetchWithCache = async (
     }
 };
 
-export const fetchWithoutCache = async (url: string, options: fetchOptions = {}) => {
+export const fetchWithoutCache = async (url: string, options: fetchOptions = {}) : Promise<IfetchResponse<object>> => {
     if (pendingRequests[url] !== undefined) {
         return pendingRequests[url];
     }

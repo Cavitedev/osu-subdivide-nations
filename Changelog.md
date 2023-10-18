@@ -5,6 +5,7 @@
 - Bulk players load (faster loads for flags)
 - Fix profiles whose region is not in osu country
 - Concurrent fetches for regional ranking (faster load)
+- Stop caching regions and country names (already cached on browser)
 
 ## Version 3.1.7
 
