@@ -77,16 +77,11 @@ export const refreshOverlays = async () => {
 };
 
 const refreshSearch = async (mutations: MutationRecord[]) => {
-    for (const mutation of mutations) {
-        console.log(mutation.addedNodes);
-        for (const addedNode of mutation.addedNodes) {
-            if (addedNode instanceof HTMLElement) {
-                if (addedNode.getAttribute("data-section") === "user") {
-                    await updateSearchCard(addedNode);
-                }
-            }
-        }
-    }
+
+    const target = (mutations?.[0]?.target as HTMLElement);
+    const items = target.querySelectorAll("[data-section=user]");
+
+    updateSearchCards(items as NodeListOf<HTMLElement>);
 };
 
 const updateFlagSearchRefreshObserver = new MutationObserver(async (mutations) => {
@@ -119,12 +114,10 @@ const updateFlagSearchObserver = new MutationObserver(async (mutations) => {
 });
 
 const updateFlagMobileSearchObserver = new MutationObserver(async (mutations) => {
-    console.log("Mobile search observer");
     return firstSearch(mutations[0].addedNodes[0] as HTMLElement, true);
 });
 
 const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
-    console.log("Update multiple cards");
     const flagItems: TFlagItems = [];
     for(const card of cards){
         const userId = idFromProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
@@ -132,12 +125,6 @@ const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
     }
 
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
-};
-
-const updateSearchCard = async (card: HTMLElement) => {
-    console.log("Update single card");
-    const userId = idFromProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
-    await addFlagUser(card, userId, { addDiv: true, addMargin: true });
 };
 
 const reloadMutationObserver = new MutationObserver(() => {
