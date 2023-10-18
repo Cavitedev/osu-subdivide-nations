@@ -959,6 +959,97 @@
             }
         }
     },
+    "NZ": {
+        "name": "New Zealand",
+        "nativeName": "New Zealand",
+        "regions": {
+            "NZ-CIT": {
+                "name": "Chatham Islands",
+                "nativeName": "Chatham Islands",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Chatham_Islands.svg"
+            },
+            "NZ-AUK": {
+                "name": "Auckland",
+                "nativeName": "Auckland",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Flag_of_Auckland_Region.svg"
+            },
+            "NZ-BOP": {
+                "name": "Bay of Plenty",
+                "nativeName": "Bay of Plenty",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Flag_of_Bay_of_Plenty_Region.svg"
+            },
+            "NZ-CAN": {
+                "name": "Canterbury",
+                "nativeName": "Canterbury",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/e3/Flag_of_Canterbury_Region.svg"
+            },
+            "NZ-GIS": {
+                "name": "Gisborne",
+                "nativeName": "Gisborne",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/e4/Flag_of_Gisborne_District.svg"
+            },
+            "NZ-HKB": {
+                "name": "Hawke's Bay",
+                "nativeName": "Hawke's Bay",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c0/Flag_of_Hawke%27s_Bay.svg"
+            },
+            "NZ-MBH": {
+                "name": "Marlborough",
+                "nativeName": "Marlborough",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a1/Flag_of_Marlborough_District.svg"
+            },
+            "NZ-MWT": {
+                "name": "Manawatū-Whanganui",
+                "nativeName": "Manawatū-Whanganui",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/8a/Flag_of_Manawat%C5%AB-Whanganui.svg"
+            },
+            "NZ-NSN": {
+                "name": "Nelson",
+                "nativeName": "Nelson",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nelson_flag.svg"
+            },
+            "NZ-NTL": {
+                "name": "Northland",
+                "nativeName": "Northland",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c3/Flag_of_Northland_Region.svg"
+            },
+            "NZ-OTA": {
+                "name": "Otago",
+                "nativeName": "Otago",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Otago.svg"
+            },
+            "NZ-STL": {
+                "name": "Southland",
+                "nativeName": "Southland",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a1/Flag_of_Southland_Region.svg"
+            },
+            "NZ-TAS": {
+                "name": "Tasman",
+                "nativeName": "Tasman",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/ba/Flag_of_Tasman_District.svg"
+            },
+            "NZ-TKI": {
+                "name": "Taranaki",
+                "nativeName": "Taranaki",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/db/Flag_of_Taranaki.svg"
+            },
+            "NZ-WGN": {
+                "name": "Wellington",
+                "nativeName": "Wellington",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/42/Flag_of_Wellington_Region.svg"
+            },
+            "NZ-WKO": {
+                "name": "Waikato",
+                "nativeName": "Waikato",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/12/Flag_of_Waikato.svg"
+            },
+            "NZ-WTC": {
+                "name": "West Coast",
+                "nativeName": "West Coast",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6b/Flag_of_West_Coast_Region.svg"
+            }
+        }
+    },
     "PE": {
         "name": "Peru",
         "nativeName": "Piruw",
