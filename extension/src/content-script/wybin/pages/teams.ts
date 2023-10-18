@@ -1,25 +1,34 @@
 import { TFlagItems } from "@src/utils/html";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { addFlagUsers } from "../flagHtml";
-import { getContent } from "../content";
 
 
 
-const onLoadedMutation = new MutationObserver(() => {
-    updateFlagsTeams(true);
+const onLoadedMutation = (parent: HTMLElement) => new MutationObserver(() => {
+    forceUpdateFlagTeams(parent, true);
+    
 });
 
-export const updateFlagsTeams = async (update = false) => {
+export const updateFlagsTeams = async () => {
     const url = location.href;
     if (!url.includes("/teams") ) return;
 
+    forceUpdateFlagTeams(document.body, false);
+}
+
+export const forceUpdateFlagTeams = async (parent: HTMLElement, update = false) => {
     const navigationElement = document.querySelector("body > app-root > app-tournament-view > div.navigation-bar > div.navigation")!;
-    onLoadedMutation.observe(navigationElement, {childList: true});
+    onLoadedMutation(parent).observe(navigationElement, {childList: true});
     if(!update) return;
 
 
-    const players = getContent()?.querySelectorAll(".players .player") ?? []
+    const players = parent.querySelectorAll(".players .player") ?? []
 
+    await updateTeamFlagsPlayersList(players);
+}
+
+
+export const updateTeamFlagsPlayersList = async (players: NodeListOf<Element> | never[]) => {
     const flagItems: TFlagItems = [];    
     
     for(const player of players){
@@ -31,8 +40,8 @@ export const updateFlagsTeams = async (update = false) => {
     await addFlagUsers(flagItems);
 
     fixTeamsHtml(players);
+};
 
-}
 
 const fixTeamsHtml = (players: NodeListOf<Element> | never[]) => {
     for(const player of players){
