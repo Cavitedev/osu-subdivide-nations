@@ -1,5 +1,6 @@
 import { updateFlagsPlayers } from "./pages/players";
 import { updateFlagsSchedule } from "./pages/schedule";
+import { updateFlagsTeams } from "./pages/teams";
 
 
 const contentObserver = new MutationObserver(() => {
@@ -25,6 +26,7 @@ export const exec = async () => {
 
 
     updateFlagsPlayers();
+    updateFlagsTeams();
     updateFlagsSchedule();
 
 };
