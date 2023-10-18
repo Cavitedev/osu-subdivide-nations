@@ -72,9 +72,12 @@ export const osuWorldUsers = async (
 
     // Max 50 ids per request
     const promises = [];
+    const urls = [];
+
     for (let i = 0; i < ids.length; i += 50) {
         const slicedIds = ids.slice(i, i + 50);
         const url = osuWorldApiBase + "subdiv/users?ids=" + slicedIds.join(",");
+        urls.push(url);
         const promise = loadFromCache(url).then((cacheResponse) => {
             const expireTime = cacheResponse?.[expireHeader];
             if(!expireTime || expireTime < Date.now()){
@@ -86,9 +89,7 @@ export const osuWorldUsers = async (
         });
         promises.push(promise)
 
-        saveInCache(url, {
-            [expireHeader]: genExpireDate(userDataExpireTime),
-        });
+
       }
 
       const response = await Promise.all(promises).then((responses) => {
@@ -105,8 +106,9 @@ export const osuWorldUsers = async (
 
   
       const data = response.data;
-      cacheMultipleUsersData(data, ids);
+      cacheMultipleUsersData(data, ids, urls);
 
+    if(signal?.aborted) return {};
 
     return response;
 };
@@ -147,7 +149,7 @@ const isFetchError = (data: TosuWorldIdsData | undefined): data is IFetchError =
     return (data as IFetchError).error !== undefined;
   }
 
-const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: string[]) => {
+const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: string[], urls: string[]) => {
     if(!data) return;
     if(isFetchError(data)) return;
     
@@ -171,6 +173,12 @@ const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: s
             } 
         });
     }
+
+    for (const url of urls){
+        saveInCache(url, {
+            [expireHeader]: genExpireDate(userDataExpireTime),
+        });
+      }
 }
 
 // Modes: osu, taiko, fruits, mania

@@ -1,4 +1,4 @@
-import { fetchErrorToText, nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { fetchErrorToText, fetchOptions, nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
 import { osuWorldUsers } from "@src/utils/osuWorld";
@@ -6,7 +6,7 @@ import { osuWorldUsers } from "@src/utils/osuWorld";
 
 export type TWybinHtmlUserOptions = {
     inlineInsteadOfFlex?: boolean;
-};
+} & fetchOptions;
 
 export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUserOptions) => {
     if(flagItems.length === 0) return;
