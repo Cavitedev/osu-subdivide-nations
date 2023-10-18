@@ -5,12 +5,7 @@ import { addOrReplaceQueryParam } from "../../utils/utils";
 import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 import { TFlagItems } from "@src/utils/html";
-
-// Quotes needed for special characters
-const flagStyle = 'background-image: url("$flag"); background-size: auto 100%';
-const marginLeftStyle = "margin-left: 4px";
-const flagStyleWithMargin = flagStyle + ";" + marginLeftStyle;
-const noFlag = "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
+import { noFlag, flagStyleWithMargin, flagStyle } from "@src/utils/html";
 
 export let flagClass: string | null = null;
 

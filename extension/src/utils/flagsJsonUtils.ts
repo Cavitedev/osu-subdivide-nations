@@ -1,4 +1,4 @@
-import { IfetchResponse, fetchWithCache, fetchWithoutCache } from "./fetchUtils";
+import { IfetchResponse, fetchWithoutCache } from "./fetchUtils";
 import { nativeLanguageCode, IregionData, getActiveLanguage } from "./language";
 
 import browser from "webextension-polyfill";

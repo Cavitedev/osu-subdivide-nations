@@ -15,12 +15,21 @@
             "js": [
                 "content-script/osu/content.js"
             ]
+        },
+        {
+            "matches": [
+                "https://wybin.xyz/*"
+            ],
+            "js": [
+                "content-script/wybin/content.js"
+            ]
         }
     ],
     "web_accessible_resources": [
         {
             "matches": [
-                "https://osu.ppy.sh/*"
+                "https://osu.ppy.sh/*",
+                "https://wybin.xyz/*"
             ],
             "resources": [
                 "flags.json",
