@@ -119,9 +119,10 @@ export const noId = "no_id";
 export const noMode = "no_mode";
 
 export const fetchErrorToText = (response: IfetchResponse<object> | undefined) => {
-    if (!response?.error?.code) return "";
-    const error = response.error;
-    switch (error.code) {
+    const errorCode = response?.error?.code ?? response?.error;
+    if(!errorCode) return "";
+    const error = response?.error!;
+    switch (errorCode) {
         case unknownUserError:
             return "Unknown user " + error.userId;
         case cannotFetchError:

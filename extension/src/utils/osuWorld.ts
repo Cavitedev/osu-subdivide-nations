@@ -166,7 +166,9 @@ const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: s
         if(dataIdsSet.has(id)) continue;
         const url = osuWorldApiBase + "users/" + id;
         saveInCache(url, {
-            error: unknownUserError
+            data: {
+                error: unknownUserError
+            } 
         });
     }
 }

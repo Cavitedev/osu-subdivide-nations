@@ -1,4 +1,4 @@
-import { unknownUserError, fetchErrorToText } from "../../utils/fetchUtils";
+import { fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
 import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
@@ -60,9 +60,6 @@ const _addFlagUser = async (
     if (!item) return;
     const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
     if (playerOsuWorld.error) {
-        if (playerOsuWorld.error.code === unknownUserError) {
-            return;
-        }
         const textError = fetchErrorToText(playerOsuWorld);
         console.error(textError);
         removeRegionalFlag(item);
@@ -70,6 +67,7 @@ const _addFlagUser = async (
     }
     const playerData = playerOsuWorld.data;
     if (!playerData || "error" in playerData) {
+        removeRegionalFlag(item);
         return;
     }
 
@@ -82,9 +80,6 @@ export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserO
     const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), options?.signal ?? currentSignal());
 
     if (playersOsuWorld.error) {
-        if (playersOsuWorld.error.code === unknownUserError) {
-            return;
-        }
         const textError = fetchErrorToText(playersOsuWorld);
         console.error(textError);
         return;
