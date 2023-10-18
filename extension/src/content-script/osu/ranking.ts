@@ -214,6 +214,20 @@ const regionalRanking = async (
         if (!results || "error" in results) {
             return;
         }
+        totalPages = results["pages"];
+
+
+       // First iteration
+       if (page === pagesToCheck[0]) {
+
+        // Prefetch next pages. It doesn't make 2 requests behind scenes so it is fine
+        for (const prefetchPage of pagesToCheck.slice(1)) {
+            if (prefetchPage >= totalPages) break;
+            osuWorldCountryRegionRanking(countryCode, regionCode, osuMode, prefetchPage)
+        }
+
+        updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
+    }
 
         for (const player of results["top"]) {
             const row = listItems[replaceIndex] as HTMLElement;
@@ -225,12 +239,8 @@ const regionalRanking = async (
             replaceIndex++;
         }
 
-        totalPages = results["pages"];
 
-        // First iteration
-        if (page === pagesToCheck[0]) {
-            updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
-        }
+ 
 
         if (page >= totalPages) break;
     }
