@@ -1,4 +1,4 @@
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
+import { TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
 
 // https://osu.ppy.sh/home/friends
@@ -39,12 +39,13 @@ export const updateFlagsFriends = async () => {
 
     const friendsList = document.querySelector(".user-list")!.querySelectorAll(".user-card__details");
 
+    const flagItems: TFlagItems = [];
     for (const item of friendsList) {
-        if (signal.aborted) {
-            return;
-        }
+
         const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
         const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
-        await addFlagUser(item as HTMLElement, playerId, { addDiv: true, addMargin: true, signal: signal });
+        flagItems.push({ id: playerId, item: item as HTMLElement });
     }
+    await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });
+
 };

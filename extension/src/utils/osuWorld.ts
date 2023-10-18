@@ -67,14 +67,31 @@ export const osuWorldUsers = async (
         return { error: { code: noId } };
     }
 
-    const url = osuWorldApiBase + "subdiv/users?ids=" + ids.join(",");
+    // Max 50 ids per request
+    const promises = [];
+    for (let i = 0; i < ids.length; i += 50) {
+        const slicedIds = ids.slice(i, i + 50);
+        const url = osuWorldApiBase + "subdiv/users?ids=" + slicedIds.join(",");
+        promises.push((fetchWithoutCache(url, { signal: signal }) as Promise<
+        IfetchResponse<TosuWorldIdsData>>))
+      }
 
-    const response = await (fetchWithoutCache(url, { signal: signal }) as Promise<
-        IfetchResponse<TosuWorldIdsData>
-    >);
+      const response = await Promise.all(promises).then((responses) => {
+        const data = responses.map((response) => {
+            const responseData = response.data;
+            if(!responseData) return [];
+            if(isFetchError(responseData)) return [];
+            return responseData;
+        });
+        return {
+          data: data.flat(),
+        };
+      });
 
-    const data = response.data;
-    cacheMultipleUsersData(data, ids);
+  
+      const data = response.data;
+      cacheMultipleUsersData(data, ids);
+
 
     return response;
 };
