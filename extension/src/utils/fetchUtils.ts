@@ -27,7 +27,7 @@ export type fetchCacheOptions = {
     preserve?: boolean;
 } & fetchOptions;
 
-const genExpireDate = (expireTime: number) => Date.now() + expireTime;
+export const genExpireDate = (expireTime: number) => Date.now() + expireTime;
 
 const pendingRequests: { [key: string]: Promise<object> } = {};
 

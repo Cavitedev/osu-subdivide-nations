@@ -1,3 +1,4 @@
+import { saveInCache } from "./cache";
 import {
     IfetchResponse,
     noId,
@@ -6,6 +7,8 @@ import {
     IFetchError,
     fetchErrorToText,
     fetchWithoutCache,
+    genExpireDate,
+    expireHeader,
 } from "./fetchUtils";
 
 export interface IosuWorldIdSuccess {
@@ -29,17 +32,17 @@ export interface IosuWorldRegionalRankingSuccess {
     top: [IosuWorldRegionalPlayerData];
 }
 
-export type IosuWorldIdData = IosuWorldIdSuccess | IFetchError;
-export type IosuWorldIdsData = IosuWorldIdSuccess[] | IFetchError;
+export type TosuWorldIdData = IosuWorldIdSuccess | IFetchError;
+export type TosuWorldIdsData = IosuWorldIdSuccess[] | IFetchError;
 
 const osuWorldApiBase = "https://osuworld.octo.moe/api/";
 
-const userDataExpireTime = 43200000; //12 hours
+const userDataExpireTime = 1800000; //30 minutes
 
 export const osuWorldUser = async (
     id: string,
     signal: AbortSignal | undefined,
-): Promise<IfetchResponse<IosuWorldIdData>> => {
+): Promise<IfetchResponse<TosuWorldIdData>> => {
     if (!id) {
         console.log("id is null");
         return { error: { code: noId } };
@@ -48,16 +51,16 @@ export const osuWorldUser = async (
     const url = osuWorldApiBase + "users/" + id;
 
     const dataPromise = fetchWithCache(url, userDataExpireTime, { signal: signal }) as Promise<
-        IfetchResponse<IosuWorldIdData>
+        IfetchResponse<TosuWorldIdData>
     >;
-    return fetchWithMinimumWaitTime<IosuWorldIdData>(dataPromise, 200);
+    return fetchWithMinimumWaitTime<TosuWorldIdData>(dataPromise, 200);
 };
 
 
 export const osuWorldUsers = async (
     ids: string[],
     signal: AbortSignal | undefined,
-): Promise<IfetchResponse<IosuWorldIdsData>> => {
+): Promise<IfetchResponse<TosuWorldIdsData>> => {
     if (!ids || ids.length === 0) {
         console.log("id is null");
         return { error: { code: noId } };
@@ -65,12 +68,33 @@ export const osuWorldUsers = async (
 
     const url = osuWorldApiBase + "subdiv/users?ids=" + ids.join(",");
 
-    const dataPromise = fetchWithoutCache(url, { signal: signal }) as Promise<
-        IfetchResponse<IosuWorldIdsData>
-    >;
+    const response = await (fetchWithoutCache(url, { signal: signal }) as Promise<
+        IfetchResponse<TosuWorldIdsData>
+    >);
 
-    return dataPromise;
+    const data = response.data;
+    cacheMultipleUsersData(data);
+
+    return response;
 };
+
+const isFetchError = (data: TosuWorldIdsData): data is IFetchError => {
+    return (data as IFetchError).error !== undefined;
+  }
+
+const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined) => {
+    if(!data) return;
+    if(isFetchError(data)) return;
+    
+    for(const playerData of data){
+        const url = osuWorldApiBase + "users/" + playerData.id;
+        const cacheResponse = {
+            data: playerData,
+            [expireHeader]: genExpireDate(userDataExpireTime),
+        }
+        saveInCache(url, cacheResponse);
+    }
+}
 
 // Modes: osu, taiko, fruits, mania
 const regionRankingUrl =
