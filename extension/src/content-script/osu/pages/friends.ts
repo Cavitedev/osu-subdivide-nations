@@ -1,5 +1,6 @@
 import { TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl, nextAbortControllerSignal } from "../content";
+import { idFromProfileUrl } from "../content";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/home/friends
 const setActualFriendsObserver = new MutationObserver(() => {

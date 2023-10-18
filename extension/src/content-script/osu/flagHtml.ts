@@ -2,7 +2,7 @@ import { fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
 import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
-import { currentSignal } from "./content";
+import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 
 // Quotes needed for special characters

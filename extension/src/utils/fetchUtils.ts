@@ -164,3 +164,15 @@ export const fetchWithMinimumWaitTime = async <T>(
             return result as IfetchResponse<T>;
         });
 };
+
+export let currentAbortController = new AbortController();
+
+
+export const currentSignal = () => currentAbortController.signal;
+export const nextAbortControllerSignal = () => {
+    currentAbortController.abort();
+    currentAbortController = new AbortController();
+
+    return currentAbortController.signal;
+};
+

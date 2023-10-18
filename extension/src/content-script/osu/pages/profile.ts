@@ -2,7 +2,8 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 // https://osu.ppy.sh/users/4871211/fruits
 
 import { isNumber } from "@src/utils/utils";
-import { idFromProfileUrl, nextAbortControllerSignal } from "../content";
+import { idFromProfileUrl } from "../content";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { osuScoreRanking } from "@src/utils/respektive";
 import {
     getActiveLanguageCode,

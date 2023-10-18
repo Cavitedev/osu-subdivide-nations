@@ -1,7 +1,8 @@
 // https://osu.ppy.sh/community/matches/110067650
 
 import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl, nextAbortControllerSignal } from "../content";
+import { idFromProfileUrl } from "../content";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 export const updateFlagsMatches = async () => {
     if (!location.href.includes("osu.ppy.sh/community/matches/")) return;

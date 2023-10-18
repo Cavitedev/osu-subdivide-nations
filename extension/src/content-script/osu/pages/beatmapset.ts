@@ -1,5 +1,5 @@
 import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
-import { nextAbortControllerSignal } from "../content";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628
 

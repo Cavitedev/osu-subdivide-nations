@@ -2,7 +2,7 @@ import { flagClass, addRegionalFlag, TFlagItems, addFlagUsers } from "@src/conte
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
-import { nextAbortControllerSignal } from "../content";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { getLocMsg } from "@src/utils/languagesChrome";
 
 // https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
