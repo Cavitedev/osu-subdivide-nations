@@ -9,6 +9,7 @@ import {
     fetchWithoutCache,
     genExpireDate,
     expireHeader,
+    unknownUserError,
 } from "./fetchUtils";
 
 export interface IosuWorldIdSuccess {
@@ -73,7 +74,7 @@ export const osuWorldUsers = async (
     >);
 
     const data = response.data;
-    cacheMultipleUsersData(data);
+    cacheMultipleUsersData(data, ids);
 
     return response;
 };
@@ -82,7 +83,7 @@ const isFetchError = (data: TosuWorldIdsData): data is IFetchError => {
     return (data as IFetchError).error !== undefined;
   }
 
-const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined) => {
+const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: string[]) => {
     if(!data) return;
     if(isFetchError(data)) return;
     
@@ -93,6 +94,16 @@ const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined) => {
             [expireHeader]: genExpireDate(userDataExpireTime),
         }
         saveInCache(url, cacheResponse);
+    }
+    const dataIdsSet = new Set(data.map(playerData => playerData.id.toString()));
+
+
+    for(const id of ids){
+        if(dataIdsSet.has(id)) continue;
+        const url = osuWorldApiBase + "users/" + id;
+        saveInCache(url, {
+            error: unknownUserError
+        });
     }
 }
 
