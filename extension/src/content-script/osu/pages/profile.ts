@@ -2,7 +2,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 // https://osu.ppy.sh/users/4871211/fruits
 
 import { isNumber } from "@src/utils/utils";
-import { idFromProfileUrl } from "../content";
+import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { osuScoreRanking } from "@src/utils/respektive";
 import {
@@ -35,7 +35,7 @@ export const updateFlagsProfile = async () => {
     });
 
     const url = location.href;
-    const playerId = idFromProfileUrl(url);
+    const playerId = idFromOsuProfileUrl(url);
     if (!isNumber(playerId)) {
         return;
     }

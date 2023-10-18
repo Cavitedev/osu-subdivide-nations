@@ -1,5 +1,5 @@
 import { TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl } from "../content";
+import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/home/search?mode=user&query=Deif&page=1
@@ -39,7 +39,7 @@ export const updateFlagsSearch = async () => {
     const flagItems: TFlagItems = [];
     for (const item of friendsList) {
         const playerNameElement = item.querySelector(".user-card__background-container") as HTMLElement;
-        const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
+        const playerId = idFromOsuProfileUrl(playerNameElement.getAttribute("href")!);
         flagItems.push({ id: playerId, item: item as HTMLElement });
     }
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });

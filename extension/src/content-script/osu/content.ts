@@ -9,13 +9,10 @@ import { updateFlagsTopics } from "./pages/topics";
 import { updateLanguageToOsuLanguage } from "./osuLanguage";
 import { updateFlagsSearch } from "./pages/search";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { idFromOsuProfileUrl } from "@src/utils/utils";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
-export const idFromProfileUrl = (url: string) => {
-    return url.split("/")[4];
-};
-
 const profileCardOverlayFinishObserver = new MutationObserver((mutations) => {
     const addedNodesCount = mutations.reduce(
         (total, mutation) => (mutation.type === "childList" ? total + mutation.addedNodes.length : total),
@@ -54,7 +51,7 @@ const bodyObserver = new MutationObserver((mutations) => {
 
 const updateUserCardFlag = async (card: HTMLElement) => {
     const nameElement = card.querySelector(".user-card__username")!;
-    const userId = idFromProfileUrl(nameElement.getAttribute("href")!);
+    const userId = idFromOsuProfileUrl(nameElement.getAttribute("href")!);
     await addFlagUser(card, userId, { addDiv: true, addMargin: true });
 };
 
@@ -111,7 +108,7 @@ const updateFlagMobileSearchObserver = new MutationObserver(async (mutations) =>
 const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
     const flagItems: TFlagItems = [];
     for(const card of cards){
-        const userId = idFromProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
+        const userId = idFromOsuProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
         flagItems.push({item: card, id:userId});
     }
 

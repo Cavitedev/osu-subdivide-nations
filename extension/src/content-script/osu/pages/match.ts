@@ -1,7 +1,7 @@
 // https://osu.ppy.sh/community/matches/110067650
 
 import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
-import { idFromProfileUrl } from "../content";
+import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 export const updateFlagsMatches = async () => {
@@ -101,5 +101,5 @@ const updateFlagInMatchScore = async (item: HTMLElement, signal?: AbortSignal) =
 
 const _idFromScoreItem = (item: HTMLElement) => {
     const playerNameElement = item.querySelector(".mp-history-player-score__username") as HTMLElement;
-    return idFromProfileUrl(playerNameElement.getAttribute("href")!);
+    return idFromOsuProfileUrl(playerNameElement.getAttribute("href")!);
 }
