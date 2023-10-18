@@ -22,7 +22,7 @@ export const osuScoreRanking = async (
     signal: AbortSignal | undefined,
 ): Promise<TRespektiveScore | undefined> => {
     if (!userId) {
-        const err = fetchErrorToText({ error: { code: noId, userId: userId } });
+        const err = fetchErrorToText({ error: { code: noId } });
         console.error(err);
     }
     if (!mode) {

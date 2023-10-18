@@ -54,3 +54,8 @@ export function isValidDate(dateString: any) {
 
     return !isNaN(date.getTime());
 }
+
+export const idFromOsuProfileUrl = (url: string) => {
+    return url.split("/")[4];
+};
+

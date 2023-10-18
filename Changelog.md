@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 3.2.0
+
+- Add regional flags in wybin
+- Add flags in search page
+- Bulk players load (faster loads for flags)
+- Fix profiles whose region is not in osu country
+- Concurrent fetches for regional ranking (faster load)
+- Stop caching regions and country names (already cached on browser)
+
 ## Version 3.1.7
 
 - Fix margin regional ranking

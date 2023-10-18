@@ -1,12 +1,12 @@
 {
     "name": "osu! subdivide nations",
-    "version": "3.1.7",
+    "version": "3.2.0",
     "description": "__MSG_appDesc__",
     "browser_specific_settings": {
         "gecko": {
             "id": "cavitedev@gmail.com"
         },
-        "gecko_android":{
+        "gecko_android": {
             "strict_min_version": "113.0"
         }
     },
@@ -15,7 +15,7 @@
         "storage",
         "https://osuworld.octo.moe/api/*",
         "https://score.respektive.pw/*"
-    ],  
+    ],
     "default_locale": "en",
     "content_scripts": [
         {
@@ -25,9 +25,16 @@
             "js": [
                 "content-script/osu/content.js"
             ]
+        },
+        {
+            "matches": [
+                "https://wybin.xyz/*"
+            ],
+            "js": [
+                "content-script/wybin/content.js"
+            ]
         }
     ],
-
     "icons": {
         "128": "assets/favicon/icon128.png",
         "48": "assets/favicon/icon48.png",

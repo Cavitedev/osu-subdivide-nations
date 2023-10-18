@@ -1,5 +1,6 @@
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
-import { nextAbortControllerSignal } from "./content";
+import { addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628
 
@@ -36,13 +37,14 @@ export const updateFlagsBeatmapsets = async () => {
     beatmapsetMutationObserver.observe(leaderboardParent, { childList: true });
     initFinishedMutationObserver.disconnect();
 
-    updateTopLeaderboard(leaderboardParent, signal);
-
+    
     const rankingTable = leaderboardParent.querySelector(".beatmap-scoreboard-table") as HTMLElement;
     if (rankingTable) rankingTableObverver.observe(rankingTable, { childList: true });
-
+    
     const tableBody = rankingTable.querySelector(`.${tableBodyClass}`) as HTMLElement;
-    updateTableRanks(tableBody, signal);
+    await updateTableRanks(tableBody, signal);
+
+    updateTopLeaderboard(leaderboardParent, signal);
 };
 
 const updateTopLeaderboard = async (leaderboardParent: HTMLElement, signal: AbortSignal) => {
@@ -92,18 +94,21 @@ const osuPlusBodyObserver = (osuPlusBody: HTMLElement) =>
 const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => {
     // Children
     const items = tableBody.children;
+
+    const flagItems: TFlagItems = [];
     for (const item of items) {
-        if (signal.aborted) {
-            return;
-        }
+
         const playerNameElement = item.querySelector(".beatmap-scoreboard-table__cell-content--user-link");
         const playerId = playerNameElement?.getAttribute("data-user-id");
-        await addFlagUser(item as HTMLElement, playerId, {
-            addDiv: false,
-            addMargin: true,
-            addSuperParentClone: false,
-            insertInsideOriginalElement: true,
-            signal: signal,
-        });
+        if(playerId){
+            flagItems.push({ item: item as HTMLElement, id: playerId });
+        }
     }
+    await addFlagUsers(flagItems, {
+        addDiv: false,
+        addMargin: true,
+        addSuperParentClone: false,
+        insertInsideOriginalElement: true,
+        signal: signal,
+    });
 };
