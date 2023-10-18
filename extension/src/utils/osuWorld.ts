@@ -5,6 +5,7 @@ import {
     fetchWithMinimumWaitTime,
     IFetchError,
     fetchErrorToText,
+    fetchWithoutCache,
 } from "./fetchUtils";
 
 export interface IosuWorldIdSuccess {
@@ -28,30 +29,52 @@ export interface IosuWorldRegionalRankingSuccess {
     top: [IosuWorldRegionalPlayerData];
 }
 
-export type osuWorldIdData = IosuWorldIdSuccess | IFetchError;
+export type IosuWorldIdData = IosuWorldIdSuccess | IFetchError;
+export type IosuWorldIdsData = IosuWorldIdSuccess[] | IFetchError;
+
+const osuWorldApiBase = "https://osuworld.octo.moe/api/";
 
 const userDataExpireTime = 43200000; //12 hours
 
 export const osuWorldUser = async (
     id: string,
     signal: AbortSignal | undefined,
-): Promise<IfetchResponse<osuWorldIdData>> => {
+): Promise<IfetchResponse<IosuWorldIdData>> => {
     if (!id) {
         console.log("id is null");
-        return { error: { code: noId, userId: id } };
+        return { error: { code: noId } };
     }
 
-    const url = "https://osuworld.octo.moe/api/users/" + id;
+    const url = osuWorldApiBase + "users/" + id;
 
     const dataPromise = fetchWithCache(url, userDataExpireTime, { signal: signal }) as Promise<
-        IfetchResponse<osuWorldIdData>
+        IfetchResponse<IosuWorldIdData>
     >;
-    return fetchWithMinimumWaitTime<osuWorldIdData>(dataPromise, 200);
+    return fetchWithMinimumWaitTime<IosuWorldIdData>(dataPromise, 200);
+};
+
+
+export const osuWorldUsers = async (
+    ids: string[],
+    signal: AbortSignal | undefined,
+): Promise<IfetchResponse<IosuWorldIdsData>> => {
+    if (!ids || ids.length === 0) {
+        console.log("id is null");
+        return { error: { code: noId } };
+    }
+
+    const url = osuWorldApiBase + "subdiv/users?ids=" + ids.join(",");
+
+    const dataPromise = fetchWithoutCache(url, { signal: signal }) as Promise<
+        IfetchResponse<IosuWorldIdsData>
+    >;
+
+    return dataPromise;
 };
 
 // Modes: osu, taiko, fruits, mania
 const regionRankingUrl =
-    "https://osuworld.octo.moe/api/{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
+osuWorldApiBase + "{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
 
 const regionRankingExpire = 7200000; //2 hours
 

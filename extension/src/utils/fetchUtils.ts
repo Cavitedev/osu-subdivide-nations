@@ -20,9 +20,12 @@ export interface IfetchResponse<T> {
 }
 
 export type fetchOptions = {
-    preserve?: boolean;
     signal?: AbortSignal;
-};
+}
+
+export type fetchCacheOptions = {
+    preserve?: boolean;
+} & fetchOptions;
 
 const genExpireDate = (expireTime: number) => Date.now() + expireTime;
 
@@ -31,7 +34,7 @@ const pendingRequests: { [key: string]: Promise<object> } = {};
 const fetchAndSaveInCache = async (
     url: string,
     expireTime: number,
-    options: fetchOptions,
+    options: fetchCacheOptions,
 ): Promise<IfetchResponse<object>> => {
     const { preserve, signal } = options;
     return fetch(url, { signal: signal })
@@ -46,7 +49,9 @@ const fetchAndSaveInCache = async (
                 };
             const cachedResponse: IfetchResponse<object> = {};
             cachedResponse["data"] = jsonResponse;
-            cachedResponse[expireHeader] = genExpireDate(expireTime);
+            if(expireTime > 0){
+                cachedResponse[expireHeader] = genExpireDate(expireTime);
+            }
             if (preserve) {
                 cachedResponse["preserve"] = true;
             }
@@ -72,7 +77,7 @@ const fetchAndSaveInCache = async (
 export const fetchWithCache = async (
     url: string,
     expireTime: number,
-    options: fetchOptions = {},
+    options: fetchCacheOptions = {},
 ): Promise<IfetchResponse<object>> => {
     if (pendingRequests[url] !== undefined) {
         return pendingRequests[url];
@@ -95,6 +100,17 @@ export const fetchWithCache = async (
     }
 };
 
+export const fetchWithoutCache = async (url: string, options: fetchOptions = {}) => {
+    if (pendingRequests[url] !== undefined) {
+        return pendingRequests[url];
+    }
+    const fetchPromise = fetchAndSaveInCache(url, 0, options);
+    pendingRequests[url] = fetchPromise;
+    const result = await fetchPromise;
+    delete pendingRequests[url];
+    return result;
+}
+
 export const unknownUserError = "unknown_user";
 const cannotFetchError = "cannot_fetch";
 const noData = "no_data";
@@ -112,7 +128,7 @@ export const fetchErrorToText = (response: IfetchResponse<object> | undefined) =
         case noData:
             return "No data for " + error.url;
         case noId:
-            return "No player found with ID " + error.userId;
+            return "No player ID found";
         case noMode:
             return "No mode found when paring url " + error.mode;
         default:

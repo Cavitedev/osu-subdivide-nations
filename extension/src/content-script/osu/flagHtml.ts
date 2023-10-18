@@ -1,6 +1,6 @@
 import { unknownUserError, fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
-import { osuWorldUser } from "../../utils/osuWorld";
+import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
 import { currentSignal } from "./content";
 import osuNameToCode from "./osuNameToCode";
@@ -32,6 +32,11 @@ type osuHtmlUserOptions = {
     insertInsideOriginalElement?: boolean;
     signal?: AbortSignal;
 };
+
+export type IFlagItems = {
+    id: string,
+    item: HTMLElement
+}[];
 
 export const addFlagUser = async (
     item: HTMLElement,
@@ -72,6 +77,38 @@ const _addFlagUser = async (
     const regionCode = playerData["region_id"];
     return addRegionalFlag(item, countryCode, regionCode, options);
 };
+
+export const addFlagsUser = async (flagItems: IFlagItems, options?: osuHtmlUserOptions) => {
+    const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), options?.signal ?? currentSignal());
+
+    if (playersOsuWorld.error) {
+        if (playersOsuWorld.error.code === unknownUserError) {
+            return;
+        }
+        const textError = fetchErrorToText(playersOsuWorld);
+        console.error(textError);
+        return;
+    }
+
+    const playersData = playersOsuWorld.data;
+    if (!playersData || "error" in playersData) {
+        return;
+    }
+
+    const promises = [];
+
+    for(const playerData of playersData){
+        const item = flagItems.find(item => item.id === playerData.id.toString())?.item;
+        if(!item) continue;
+        const countryCode = playerData["country_id"];
+        const regionCode = playerData["region_id"];
+        const promise =  addRegionalFlag(item, countryCode, regionCode, options);
+        promises.push(promise);
+    }
+    await Promise.all(promises);
+
+
+}
 
 export const removeRegionalFlag = (item: HTMLElement) => {
     if (!item) return;
