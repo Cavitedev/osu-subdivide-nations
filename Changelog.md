@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.1.7
+
+- Fix margin regional ranking
+- New translations
+
 ## Version 3.1.6
 
 - Add new countries: Switzerland, Greece, Estonia, Bulgaria, Slovakia

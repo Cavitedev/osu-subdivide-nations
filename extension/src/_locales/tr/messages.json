@@ -52,5 +52,11 @@
     },
     "region_lt": {
         "message": "Bölge"
+    },
+    "region_gr": {
+        "message": "Bölge"
+    },
+    "region_sk": {
+        "message": "Bölge"
     }
 }

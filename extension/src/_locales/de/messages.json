@@ -67,5 +67,11 @@
     },
     "region_lt": {
         "message": "Region"
+    },
+    "region_gr": {
+        "message": "Region"
+    },
+    "region_sk": {
+        "message": "Region"
     }
 }

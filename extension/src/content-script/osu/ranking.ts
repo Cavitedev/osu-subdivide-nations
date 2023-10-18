@@ -213,7 +213,10 @@ const regionalRanking = async (
         for (const player of results["top"]) {
             const row = listItems[replaceIndex] as HTMLElement;
             updateRankingRow(row, player);
-            await addRegionalFlag(row as HTMLElement, countryCode, regionCode);
+            await addRegionalFlag(row as HTMLElement, countryCode, regionCode, {
+                addDiv: true,
+                addMargin: true,
+            });
             replaceIndex++;
         }
 
