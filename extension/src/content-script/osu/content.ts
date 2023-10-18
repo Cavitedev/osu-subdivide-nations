@@ -7,6 +7,7 @@ import { updateFlagsMatches } from "./match";
 import { updateFlagsProfile } from "./profile";
 import { updateFlagsTopics } from "./topics";
 import { updateLanguageToOsuLanguage } from "./osuLanguage";
+import { updateFlagsSearch } from "./search";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -187,6 +188,7 @@ export const exec = async () => {
     nextAbortControllerSignal();
     addGlobalObservers();
     updateUserCardMobileView();
+    updateFlagsSearch();
     // All these updates are conditional to the url
     updateFlagsRankings();
     updateFlagsProfile();
