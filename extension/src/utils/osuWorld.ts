@@ -68,6 +68,8 @@ export const osuWorldUsers = async (
         return { error: { code: noId } };
     }
 
+    ids = [...new Set(ids)];
+
     // Max 50 ids per request
     const promises = [];
     for (let i = 0; i < ids.length; i += 50) {

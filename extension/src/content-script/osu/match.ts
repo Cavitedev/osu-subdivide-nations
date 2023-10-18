@@ -1,6 +1,6 @@
 // https://osu.ppy.sh/community/matches/110067650
 
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
+import { TFlagItems, addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { idFromProfileUrl, nextAbortControllerSignal } from "./content";
 
 export const updateFlagsMatches = async () => {
@@ -62,6 +62,7 @@ const gameBeingPlayedMutationObserver = new MutationObserver(async (mutations) =
 
 const checkNewGames = (parent: HTMLElement | undefined) => {
     const parentContent = (parent ?? document).querySelector(".mp-history-content") as HTMLElement;
+    if(!parentContent) return;
     newMatchesObserver.observe(parentContent, {childList: true});
 }
 
@@ -82,17 +83,22 @@ const newMatchesObserver = new MutationObserver((mutations) => {
 
 const updateFlagsInMatchPlay = async (scores: ParentNode, signal: AbortSignal) => {
     const listScores = scores.querySelectorAll(".mp-history-player-score__main");
+    if(!listScores || listScores.length === 0) return;
 
+    const flagItems: TFlagItems = [];
     for (const item of listScores) {
-        if (signal.aborted) {
-            return;
-        }
-        await updateFlagInMatchScore(item as HTMLElement, signal);
+        const id = _idFromScoreItem(item as HTMLElement);
+        flagItems.push({ id: id, item: item as HTMLElement });
     }
+    await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });
 };
 
 const updateFlagInMatchScore = async (item: HTMLElement, signal?: AbortSignal) => {
-    const playerNameElement = item.querySelector(".mp-history-player-score__username") as HTMLElement;
-    const playerId = idFromProfileUrl(playerNameElement.getAttribute("href")!);
+    const playerId = _idFromScoreItem(item);
     await addFlagUser(item, playerId, { addDiv: true, addMargin: true, signal: signal });
 };
+
+const _idFromScoreItem = (item: HTMLElement) => {
+    const playerNameElement = item.querySelector(".mp-history-player-score__username") as HTMLElement;
+    return idFromProfileUrl(playerNameElement.getAttribute("href")!);
+}
