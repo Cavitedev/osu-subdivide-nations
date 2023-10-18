@@ -1,4 +1,4 @@
-import { flagClass, addRegionalFlag, IFlagItems, addFlagsUser } from "@src/content-script/osu/flagHtml";
+import { flagClass, addRegionalFlag, TFlagItems, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
@@ -38,7 +38,7 @@ export const updateFlagsRankings = async () => {
     const isRegionRanking = await regionsInRanking(signal);
     if (isRegionRanking) return;
 
-    const flagItems: IFlagItems = [];
+    const flagItems: TFlagItems = [];
     for (const item of listItems) {
 
         const idItem = item.querySelector(`[${rankingIdAttr}]`)!;
@@ -49,7 +49,7 @@ export const updateFlagsRankings = async () => {
             );
     }
     
-    await addFlagsUser(flagItems, {
+    await addFlagUsers(flagItems, {
         addDiv: true,
         addMargin: true,
         signal: signal,

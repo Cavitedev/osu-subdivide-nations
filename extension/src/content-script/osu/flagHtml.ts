@@ -33,7 +33,7 @@ type osuHtmlUserOptions = {
     signal?: AbortSignal;
 };
 
-export type IFlagItems = {
+export type TFlagItems = {
     id: string,
     item: HTMLElement
 }[];
@@ -78,7 +78,7 @@ const _addFlagUser = async (
     return addRegionalFlag(item, countryCode, regionCode, options);
 };
 
-export const addFlagsUser = async (flagItems: IFlagItems, options?: osuHtmlUserOptions) => {
+export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserOptions) => {
     const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), options?.signal ?? currentSignal());
 
     if (playersOsuWorld.error) {

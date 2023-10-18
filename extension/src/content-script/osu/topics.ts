@@ -1,6 +1,6 @@
 // https://osu.ppy.sh/community/forums/topics/1686524?n=3
 
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
+import { TFlagItems, addFlagUsers as addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { nextAbortControllerSignal } from "./content";
 
 export const updateFlagsTopics = async () => {
@@ -9,17 +9,18 @@ export const updateFlagsTopics = async () => {
     const signal = nextAbortControllerSignal();
     const posts = document.querySelectorAll(".forum-post-info");
 
+    const flagItems: TFlagItems = [];
+
     for (const item of posts) {
-        if (signal.aborted) {
-            return;
-        }
         const playerNameElement = item.querySelector(".forum-post-info__row--username") as HTMLElement;
         const playerId = playerNameElement.getAttribute("data-user-id")!;
-        addFlagUser(item as HTMLElement, playerId, {
-            addDiv: false,
-            addMargin: false,
-            addSuperParentClone: true,
-            signal: signal,
-        });
+        flagItems.push({ id: playerId, item: item as HTMLElement });
     }
+    
+    await addFlagUsers(flagItems, {
+        addDiv: false,
+        addMargin: false,
+        addSuperParentClone: true,
+        signal: signal,
+    });
 };
