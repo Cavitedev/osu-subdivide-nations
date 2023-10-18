@@ -3,7 +3,13 @@ import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
 import { osuWorldUsers } from "@src/utils/osuWorld";
 
-export const addFlagUsers = async (flagItems: TFlagItems) => {
+
+export type TWybinHtmlUserOptions = {
+    inlineInsteadOfFlex?: boolean;
+};
+
+export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUserOptions) => {
+    if(flagItems.length === 0) return;
 
     const signal = nextAbortControllerSignal();
     
@@ -27,7 +33,7 @@ export const addFlagUsers = async (flagItems: TFlagItems) => {
         if(!item) continue;
         const countryCode = playerData["country_id"];
         const regionCode = playerData["region_id"];
-        const promise =  addRegionalFlag(item, countryCode, regionCode);
+        const promise =  addRegionalFlag(item, countryCode, regionCode, options);
         promises.push(promise);
     }
     await Promise.all(promises);
@@ -35,9 +41,10 @@ export const addFlagUsers = async (flagItems: TFlagItems) => {
 
 const flagClass = "fi";
 
-const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:string) => {
+const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:string, options?: TWybinHtmlUserOptions) => {
 
     if (!item) return;
+    const {inlineInsteadOfFlex: flexInParent} = options ?? {};
 
     const countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
@@ -64,7 +71,12 @@ const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:
     const flagsDiv = document.createElement("div");
     flagsDiv.appendChild(flagElement);
     flagsDiv.appendChild(flagElementClone);
-    flagsDiv.setAttribute("style", "display: flex");
+  
+    if(flexInParent){
+        flagsDiv.setAttribute("style", "display: inline")
+    }else{
+        flagsDiv.setAttribute("style", "display: flex")
+    }
 
     parent.insertBefore(flagsDiv, parent.firstChild);
 

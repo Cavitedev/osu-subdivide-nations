@@ -1,13 +1,14 @@
 import { TFlagItems } from "@src/utils/html";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { addFlagUsers } from "../flagHtml";
+import { getContent } from "../content";
 
 export const updateFlagsPlayers = async () => {
     const url = location.href;
     if (!url.includes("/players")) return;
 
 
-    const players = document.querySelectorAll(".players .player")
+    const players = getContent()?.querySelectorAll(".players .player") ?? []
 
     const flagItems: TFlagItems = [];    
     

@@ -7,6 +7,19 @@
         "tabs"
     ],
     "default_locale": "en",
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "https://osu.ppy.sh/*",
+                "https://wybin.xyz/*"
+            ],
+            "resources": [
+                "flags.json",
+                "_locales/**/*",
+                "wybin.css"
+            ]
+        }
+    ],
     "content_scripts": [
         {
             "matches": [
@@ -22,18 +35,6 @@
             ],
             "js": [
                 "content-script/wybin/content.js"
-            ]
-        }
-    ],
-    "web_accessible_resources": [
-        {
-            "matches": [
-                "https://osu.ppy.sh/*",
-                "https://wybin.xyz/*"
-            ],
-            "resources": [
-                "flags.json",
-                "_locales/**/*"
             ]
         }
     ],
