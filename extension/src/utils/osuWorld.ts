@@ -39,7 +39,7 @@ export type TosuWorldIdsData = IosuWorldIdSuccess[] | IFetchError;
 
 const osuWorldApiBase = "https://osuworld.octo.moe/api/";
 
-const userDataExpireTime = 1800000; //30 minutes
+const userDataExpireTime = 3600000; //60 minutes
 
 export const osuWorldUser = async (
     id: string,
