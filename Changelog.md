@@ -2,6 +2,7 @@
 
 ## Version 3.2.0
 
+- Add regional flags in wybin
 - Add flags in search page
 - Bulk players load (faster loads for flags)
 - Fix profiles whose region is not in osu country
