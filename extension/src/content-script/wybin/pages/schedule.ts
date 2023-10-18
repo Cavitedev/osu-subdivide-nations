@@ -8,9 +8,14 @@ const loadingObserver = new MutationObserver(() => {
     loadingObserver.disconnect();
 })
 
+const onContentChangeObserver = new MutationObserver(() => {
+    console.log("content change");
+    updateFlagsSchedule();
+});
+
 export const updateFlagsSchedule = async () => {
     const url = location.href;
-    if (!url.includes("/schedule#qualifiers")) return;
+    if (!url.includes("/schedule")) return;
 
 
     const activeStage = getContent()?.querySelector(".active-stage") ?? null;
@@ -22,6 +27,10 @@ export const updateFlagsSchedule = async () => {
         return;
     }
 
+    onContentChangeObserver.observe(activeStage, {attributes: true});
+    
+
+    if (!url.includes("/schedule#qualifiers")) return;
 
     const flagElements = activeStage.querySelectorAll(".lobbies .fi") ?? []
 
@@ -33,9 +42,6 @@ export const updateFlagsSchedule = async () => {
         flagItems.push({ id: playerId, item: playerElement as HTMLElement });
     }
 
-    // for(const referee of activeStage.querySelectorAll(".referee")){
-    //     referee.setAttribute("style", "grid-template-columns: 1fr;");
-    // }
 
     await addFlagUsers(flagItems, {
         inlineInsteadOfFlex: true,
