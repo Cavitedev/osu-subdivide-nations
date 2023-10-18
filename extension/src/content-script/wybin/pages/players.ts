@@ -6,7 +6,7 @@ import { getContent } from "../content";
 export const updateFlagsPlayers = async () => {
     const url = location.href;
     if (!url.includes("/players")) return;
-
+    
 
     const players = getContent()?.querySelectorAll(".players .player") ?? []
 
