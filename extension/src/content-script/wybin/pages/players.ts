@@ -11,11 +11,12 @@ export const updateFlagsPlayers = async () => {
     const url = location.href;
     if (!url.includes("/players")) return;
     
-    const playersContainer = getContent()?.querySelector(".player-container") as HTMLElement | undefined
-    if(!playersContainer) return;
+    const playersContainers = getContent()?.querySelectorAll(".player-container");
+    if(!playersContainers ||  playersContainers.length === 0) return;
+    const playersContainer = playersContainers?.[playersContainers.length - 1] as HTMLElement;
     playersTeamTabUpdateObserver.observe(playersContainer, {childList: true});
 
-    const players = playersContainer.querySelectorAll(".players .player") ?? []
+    const players = getContent()?.querySelectorAll(".players .player") ?? []
 
     await updateFlagsPlayersList(players);
 
