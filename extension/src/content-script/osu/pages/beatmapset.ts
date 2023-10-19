@@ -11,7 +11,7 @@ const initFinishedMutationObserver = new MutationObserver((_) => {
     updateFlagsBeatmapsets();
 });
 
-const beatmapsetMutationObserver = new MutationObserver(() => {
+const tabsMutationObserver = new MutationObserver(() => {
     updateFlagsBeatmapsets();
 });
 
@@ -31,10 +31,16 @@ export const updateFlagsBeatmapsets = async () => {
         });
     }
 
+    const tabs = linkItem?.parentElement!.querySelector(".page-tabs");
+    if(tabs){
+        for (let i = 0; i < tabs.children.length; i++) {
+            tabsMutationObserver.observe(tabs.children[i], {attributes: true});
+          }
+    }
+
     const leaderboardParent = document.querySelector(".beatmapset-scoreboard__main")?.firstChild as HTMLElement;
     if (!leaderboardParent || leaderboardParent.classList.contains("beatmapset-scoreboard__notice")) return;
-
-    beatmapsetMutationObserver.observe(leaderboardParent, { childList: true });
+    
     initFinishedMutationObserver.disconnect();
 
     
