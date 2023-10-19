@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.2.2
+
+- Fix wybin schedule reloading page referees
+
 ## Version 3.2.1
 
 - Fix regional flag link on players with a different country in osu and osuworld
