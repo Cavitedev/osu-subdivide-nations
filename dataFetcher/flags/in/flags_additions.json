@@ -776,17 +776,195 @@
         "name": "Indonesia",
         "nativeName": "Indonesia",
         "regions": {
-            "ID-PT": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Central_Papua_Province.svg/128px-Flag_of_Central_Papua_Province.svg.png"
+            "ID-AC": {
+                "name": "Aceh",
+                "nativeName": "Aceh",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/128px-Coat_of_arms_of_Aceh.svg.png"
             },
-            "ID-MA": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Maluku.svg"
+            "ID-BA": {
+                "name": "Bali",
+                "nativeName": "Bali",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Coat_of_arms_of_Bali.svg/128px-Coat_of_arms_of_Bali.svg.png"
+            },
+            "ID-BB": {
+                "name": "Bangka Belitung Islands",
+                "nativeName": "Kepulauan Bangka Belitung",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg"
+            },
+            "ID-BT": {
+                "name": "Banten",
+                "nativeName": "Banten",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Coat_of_arms_of_Banten.svg/128px-Coat_of_arms_of_Banten.svg.png"
+            },
+            "ID-BE": {
+                "name": "Bengkulu",
+                "nativeName": "Bengkulu",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Coat_of_arms_of_Bengkulu.svg"
+            },
+            "ID-JT": {
+                "name": "Central Java",
+                "nativeName": "Jawa Tengah",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Coat_of_arms_of_Central_Java.svg/128px-Coat_of_arms_of_Central_Java.svg.png"
+            },
+            "ID-KT": {
+                "name": "Central Kalimantan",
+                "nativeName": "Kalimantan Tengah",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Coat_of_arms_of_Central_Kalimantan.svg"
+            },
+            "ID-PT": {
+                "name": "Central Papua",
+                "nativeName": "Papua Tengah",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lambang_Papua_Tengah.png/256px-Lambang_Papua_Tengah.png"
+            },
+            "ID-ST": {
+                "name": "Central Sulawesi",
+                "nativeName": "Sulawesi Tengah",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/46/Coat_of_arms_of_Central_Sulawesi.svg"
+            },
+            "ID-JI": {
+                "name": "East Java",
+                "nativeName": "Jawa Timur",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Coat_of_arms_of_East_Java.svg/128px-Coat_of_arms_of_East_Java.svg.png"
+            },
+            "ID-KI": {
+                "name": "East Kalimantan",
+                "nativeName": "Kalimantan Timur",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Coat_of_arms_of_East_Kalimantan.svg"
+            },
+            "ID-NT": {
+                "name": "East Nusa Tenggara",
+                "nativeName": "Nusa Tenggara Timur",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coat_of_Arms_of_East_Nusa_Tenggara_NEW.png/256px-Coat_of_Arms_of_East_Nusa_Tenggara_NEW.png"
+            },
+            "ID-GO": {
+                "name": "Gorontalo",
+                "nativeName": "Gorontalo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Coat_of_arms_of_Gorontalo.svg"
+            },
+            "ID-PE": {
+                "name": "Highland Papua",
+                "nativeName": "Papua Pegunungan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Lambang_Papua_Pegunungan.png/256px-Lambang_Papua_Pegunungan.png"
+            },
+            "ID-JA": {
+                "name": "Jambi",
+                "nativeName": "Jambi",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Coat_of_arms_of_Jambi.svg"
+            },
+            "ID-LA": {
+                "name": "Lampung",
+                "nativeName": "Lampung",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coat_of_arms_of_Lampung.svg/128px-Coat_of_arms_of_Lampung.svg.png"
+            },
+            "ID-KU": {
+                "name": "North Kalimantan",
+                "nativeName": "Kalimantan Utara",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Coat_of_arms_of_North_Kalimantan_(2021_version).svg"
+            },
+            "ID-MU": {
+                "name": "North Maluku",
+                "nativeName": "Maluku Utara",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Coat_of_arms_of_North_Maluku.svg"
+            },
+            "ID-SA": {
+                "name": "North Sulawesi",
+                "nativeName": "Sulawesi Utara",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/128px-Coat_of_arms_of_North_Sulawesi.svg.png"
+            },
+            "ID-SU": {
+                "name": "North Sumatra",
+                "nativeName": "Sumatera Utara",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/128px-Coat_of_arms_of_North_Sumatra.svg.png"
+            },
+            "ID-PA": {
+                "name": "Papua",
+                "nativeName": "Papua",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/98/Coat_of_arms_of_Papua_2.svg"
+            },
+            "ID-RI": {
+                "name": "Riau",
+                "nativeName": "Riau",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/128px-Coat_of_arms_of_Riau.svg.png"
+            },
+            "ID-KR": {
+                "name": "Riau Islands",
+                "nativeName": "Kepulauan Riau",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coat_of_arms_of_Riau_Islands.svg/128px-Coat_of_arms_of_Riau_Islands.svg.png"
+            },
+            "ID-SG": {
+                "name": "Southeast Sulawesi",
+                "nativeName": "Sulawesi Tenggara",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/128px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"
+            },
+            "ID-KS": {
+                "name": "South Kalimantan",
+                "nativeName": "Kalimantan Selatan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Coat_of_arms_of_South_Kalimantan.svg"
             },
             "ID-PS": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_South_Papua_Province.svg/128px-Flag_of_South_Papua_Province.svg.png"
+                "name": "South Papua",
+                "nativeName": "Papua Selatan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Lambang_Papua_Selatan.png/256px-Lambang_Papua_Selatan.png"
+            },
+            "ID-SN": {
+                "name": "South Sulawesi",
+                "nativeName": "Sulawesi Selatan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/67/Coat_of_arms_of_South_Sulawesi.svg"
+            },
+            "ID-SS": {
+                "name": "South Sumatra",
+                "nativeName": "Sumatera Selatan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Coat_of_arms_of_South_Sumatra.svg"
+            },
+            "ID-JB": {
+                "name": "West Java",
+                "nativeName": "Jawa Barat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Coat_of_arms_of_West_Java.svg"
+            },
+            "ID-KB": {
+                "name": "West Kalimantan",
+                "nativeName": "Kalimantan Barat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/128px-Coat_of_arms_of_West_Kalimantan.svg.png"
+            },
+            "ID-NB": {
+                "name": "West Nusa Tenggara",
+                "nativeName": "Nusa Tenggara Barat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/128px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"
+            },
+            "ID-PB": {
+                "name": "West Papua",
+                "nativeName": "Papua Barat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/de/Coat_of_arms_of_West_Papua.svg"
+            },
+            "ID-SR": {
+                "name": "West Sulawesi",
+                "nativeName": "Sulawesi Barat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_West_Sulawesi.svg"
+            },
+            "ID-SB": {
+                "name": "West Sumatra",
+                "nativeName": "Sumatera Barat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Coat_of_arms_of_West_Sulawesi.svg"
+            },
+            "ID-YO": {
+                "name": "Special Region of Yogyakarta",
+                "nativeName": "Daerah Istimewa Yogyakarta",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/128px-Coat_of_arms_of_Yogyakarta.svg.png"
+            },
+            "ID-JK": {
+                "name": "Jakarta",
+                "nativeName": "Daerah Khusus Ibukota Jakarta",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/128px-Coat_of_arms_of_Jakarta.svg.png"
+            },
+            "ID-MA": {
+                "name": "Maluku Islands",
+                "nativeName": "Maluku",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Coat_of_arms_of_Maluku.svg"
             },
             "ID-PSW": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Southwest_Papua.svg/128px-Flag_of_Southwest_Papua.svg.png"
+                "name": "Southwest Papua",
+                "nativeName": "Papua Barat Daya",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_Papua_Barat_Daya1.png/256px-Logo_Papua_Barat_Daya1.png"
             }
         }
     },

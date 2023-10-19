@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.1
+
+- Fix regional flag link on players with a different country in osu and osuworld
+- Indonesia flags into coat of arms
+
 ## Version 3.2.0
 
 - Add regional flags in wybin
@@ -8,6 +13,7 @@
 - Fix profiles whose region is not in osu country
 - Concurrent fetches for regional ranking (faster load)
 - Stop caching regions and country names (already cached on browser)
+- Add remaining flags (Turkey, Israel and New Zealand) + improve 1 flag from Kazakhstan
 
 ## Version 3.1.7
 
