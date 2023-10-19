@@ -168,7 +168,8 @@ export const addRegionalFlag = async (
         }
 
         if (flagParentClone.nodeName === "A") {
-            const updatedHref = addOrReplaceQueryParam(href as string, "region", regionCode);
+            let updatedHref = addOrReplaceQueryParam(href as string, "region", regionCode);
+            updatedHref = addOrReplaceQueryParam(updatedHref, "country", countryCode);
 
             flagParentClone.setAttribute("href", updatedHref);
         }

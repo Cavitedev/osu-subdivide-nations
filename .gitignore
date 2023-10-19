@@ -20,4 +20,5 @@ build/
 
 dataFetcher/countryVisualization/
 dataFetcher/translations/out/
+dataFetcher/flags/osu/out/
 dataFetcher/flags/out/
