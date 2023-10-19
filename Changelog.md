@@ -3,6 +3,7 @@
 ## Version 3.2.1
 
 - Fix regional flag link on players with a different country in osu and osuworld
+- Fix beatmapset loading friends and country
 - Indonesia flags into coat of arms
 
 ## Version 3.2.0
