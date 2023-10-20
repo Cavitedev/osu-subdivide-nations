@@ -175,5 +175,11 @@
     },
     "region_sk":{
         "message": "Region"
+    },
+    "region_uk":{
+        "message": "County"
+    },
+    "region_ie":{
+        "message": "Province"
     }
 }
