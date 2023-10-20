@@ -169,5 +169,11 @@
     },
     "region_sk": {
         "message": "Regiune"
+    },
+    "region_uk": {
+        "message": "Județ"
+    },
+    "region_ie": {
+        "message": "Provincie"
     }
 }
