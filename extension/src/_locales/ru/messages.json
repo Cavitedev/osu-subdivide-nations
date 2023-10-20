@@ -163,5 +163,11 @@
     },
     "region_sk": {
         "message": "Регион"
+    },
+    "region_uk": {
+        "message": "Страна"
+    },
+    "region_ie": {
+        "message": "Провинция"
     }
 }
