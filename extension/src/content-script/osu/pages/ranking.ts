@@ -1,8 +1,9 @@
-import { flagClass, addFlagUser, addRegionalFlag } from "@src/content-script/osu/flagHtml";
+import { flagClass, addRegionalFlag, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
-import { nextAbortControllerSignal } from "./content";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { getLocMsg } from "@src/utils/languagesChrome";
 
 // https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
@@ -38,19 +39,24 @@ export const updateFlagsRankings = async () => {
     const isRegionRanking = await regionsInRanking(signal);
     if (isRegionRanking) return;
 
+    const flagItems: TFlagItems = [];
     for (const item of listItems) {
-        if (signal.aborted) {
-            return;
-        }
+
         const idItem = item.querySelector(`[${rankingIdAttr}]`)!;
         const userId = idItem.getAttribute(rankingIdAttr)!;
-
-        await addFlagUser(item as HTMLElement, userId, {
-            addDiv: true,
-            addMargin: true,
-            signal: signal,
-        });
+        flagItems.push({
+            item: item as HTMLElement,
+            id: userId}
+            );
     }
+    
+    await addFlagUsers(flagItems, {
+        addDiv: true,
+        addMargin: true,
+        signal: signal,
+    });
+
+
 };
 
 const addLinkToFlag = (item: HTMLElement) => {
@@ -209,6 +215,20 @@ const regionalRanking = async (
         if (!results || "error" in results) {
             return;
         }
+        totalPages = results["pages"];
+
+
+       // First iteration
+       if (page === pagesToCheck[0]) {
+
+        // Prefetch next pages. It doesn't make 2 requests behind scenes so it is fine
+        for (const prefetchPage of pagesToCheck.slice(1)) {
+            if (prefetchPage >= totalPages) break;
+            osuWorldCountryRegionRanking(countryCode, regionCode, osuMode, prefetchPage)
+        }
+
+        updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
+    }
 
         for (const player of results["top"]) {
             const row = listItems[replaceIndex] as HTMLElement;
@@ -220,12 +240,8 @@ const regionalRanking = async (
             replaceIndex++;
         }
 
-        totalPages = results["pages"];
 
-        // First iteration
-        if (page === pagesToCheck[0]) {
-            updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
-        }
+ 
 
         if (page >= totalPages) break;
     }

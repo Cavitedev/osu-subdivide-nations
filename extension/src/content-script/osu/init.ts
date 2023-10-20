@@ -2,7 +2,7 @@ import browser from "webextension-polyfill";
 import { cleanInvalidatedCacheConditionally } from "@src/utils/cache";
 import { setFlagClass } from "@src/content-script/osu/flagHtml";
 import { refreshOverlays, exec } from "./content";
-import { updateRegionsDropdown } from "./ranking";
+import { updateRegionsDropdown } from "./pages/ranking";
 
 export const initConfigure = (flagClass: string) => {
     cleanInvalidatedCacheConditionally();

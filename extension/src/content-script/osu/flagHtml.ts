@@ -1,15 +1,11 @@
-import { unknownUserError, fetchErrorToText } from "../../utils/fetchUtils";
+import { fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
-import { osuWorldUser } from "../../utils/osuWorld";
+import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
-import { currentSignal } from "./content";
+import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
-
-// Quotes needed for special characters
-const flagStyle = 'background-image: url("$flag"); background-size: auto 100%';
-const marginLeftStyle = "margin-left: 4px";
-const flagStyleWithMargin = flagStyle + ";" + marginLeftStyle;
-const noFlag = "https://upload.wikimedia.org/wikipedia/commons/4/49/Noflag2.svg";
+import { TFlagItems } from "@src/utils/html";
+import { noFlag, flagStyleWithMargin, flagStyle } from "@src/utils/html";
 
 export let flagClass: string | null = null;
 
@@ -17,8 +13,9 @@ export const setFlagClass = (flagClassParam: string) => {
     flagClass = flagClassParam;
 };
 
-type regionAndFlag =
+type regionAndCountry =
     | {
+            countryCode?: string;
           countryName?: string;
           regionName?: string;
       }
@@ -36,7 +33,7 @@ export const addFlagUser = async (
     item: HTMLElement,
     userId?: string | null,
     options?: osuHtmlUserOptions,
-): Promise<regionAndFlag> => {
+): Promise<regionAndCountry> => {
     if (!userId) return;
     const resultNames = await _addFlagUser(item, userId, options);
     if (!resultNames) {
@@ -50,13 +47,10 @@ const _addFlagUser = async (
     item: HTMLElement,
     userId: string,
     options?: osuHtmlUserOptions,
-): Promise<regionAndFlag> => {
+): Promise<regionAndCountry> => {
     if (!item) return;
     const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
     if (playerOsuWorld.error) {
-        if (playerOsuWorld.error.code === unknownUserError) {
-            return;
-        }
         const textError = fetchErrorToText(playerOsuWorld);
         console.error(textError);
         removeRegionalFlag(item);
@@ -64,6 +58,7 @@ const _addFlagUser = async (
     }
     const playerData = playerOsuWorld.data;
     if (!playerData || "error" in playerData) {
+        removeRegionalFlag(item);
         return;
     }
 
@@ -71,6 +66,35 @@ const _addFlagUser = async (
     const regionCode = playerData["region_id"];
     return addRegionalFlag(item, countryCode, regionCode, options);
 };
+
+export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserOptions) => {
+    const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), options?.signal ?? currentSignal());
+
+    if (playersOsuWorld.error) {
+        const textError = fetchErrorToText(playersOsuWorld);
+        console.error(textError);
+        return;
+    }
+
+    const playersData = playersOsuWorld.data;
+    if (!playersData || "error" in playersData) {
+        return;
+    }
+
+    const promises = [];
+
+    for(const playerData of playersData){
+        const item = flagItems.find(item => item.id === playerData.id.toString())?.item;
+        if(!item) continue;
+        const countryCode = playerData["country_id"];
+        const regionCode = playerData["region_id"];
+        const promise =  addRegionalFlag(item, countryCode, regionCode, options);
+        promises.push(promise);
+    }
+    await Promise.all(promises);
+
+
+}
 
 export const removeRegionalFlag = (item: HTMLElement) => {
     if (!item) return;
@@ -144,7 +168,8 @@ export const addRegionalFlag = async (
         }
 
         if (flagParentClone.nodeName === "A") {
-            const updatedHref = addOrReplaceQueryParam(href as string, "region", regionCode);
+            let updatedHref = addOrReplaceQueryParam(href as string, "region", regionCode);
+            updatedHref = addOrReplaceQueryParam(updatedHref, "country", countryCode);
 
             flagParentClone.setAttribute("href", updatedHref);
         }
@@ -180,7 +205,7 @@ export const addRegionalFlag = async (
     }
 
     const countryName = await updateCountryNameFlag(item);
-    return { countryName, regionName };
+    return { countryCode, countryName, regionName };
 };
 
 const updateCountryNameFlag = async (item: HTMLElement) => {

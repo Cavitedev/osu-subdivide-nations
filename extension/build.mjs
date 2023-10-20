@@ -15,6 +15,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
         entryPoints: [
             "src/flags.json",
             "src/content-script/osu/content.ts",
+            "src/content-script/wybin/content.ts",
             "src/ui/popup/popup.ts",
             "src/ui/popup/popup.css",
         ],

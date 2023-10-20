@@ -1,5 +1,25 @@
 # Changelog
 
+## Version 3.2.2
+
+- Fix wybin schedule reloading page referees
+
+## Version 3.2.1
+
+- Fix regional flag link on players with a different country in osu and osuworld
+- Fix beatmapset loading friends and country
+- Indonesia flags into coat of arms
+
+## Version 3.2.0
+
+- Add regional flags in wybin
+- Add flags in search page
+- Bulk players load (faster loads for flags)
+- Fix profiles whose region is not in osu country
+- Concurrent fetches for regional ranking (faster load)
+- Stop caching regions and country names (already cached on browser)
+- Add remaining flags (Turkey, Israel and New Zealand) + improve 1 flag from Kazakhstan
+
 ## Version 3.1.7
 
 - Fix margin regional ranking

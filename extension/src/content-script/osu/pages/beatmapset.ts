@@ -1,5 +1,6 @@
-import { addFlagUser } from "@src/content-script/osu/flagHtml";
-import { nextAbortControllerSignal } from "./content";
+import { addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
+import { TFlagItems } from "@src/utils/html";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628
 
@@ -10,7 +11,7 @@ const initFinishedMutationObserver = new MutationObserver((_) => {
     updateFlagsBeatmapsets();
 });
 
-const beatmapsetMutationObserver = new MutationObserver(() => {
+const tabsMutationObserver = new MutationObserver(() => {
     updateFlagsBeatmapsets();
 });
 
@@ -30,19 +31,26 @@ export const updateFlagsBeatmapsets = async () => {
         });
     }
 
+    const tabs = linkItem?.parentElement!.querySelector(".page-tabs");
+    if(tabs){
+        for (let i = 0; i < tabs.children.length; i++) {
+            tabsMutationObserver.observe(tabs.children[i], {attributes: true});
+          }
+    }
+
     const leaderboardParent = document.querySelector(".beatmapset-scoreboard__main")?.firstChild as HTMLElement;
     if (!leaderboardParent || leaderboardParent.classList.contains("beatmapset-scoreboard__notice")) return;
-
-    beatmapsetMutationObserver.observe(leaderboardParent, { childList: true });
+    
     initFinishedMutationObserver.disconnect();
 
-    updateTopLeaderboard(leaderboardParent, signal);
-
+    
     const rankingTable = leaderboardParent.querySelector(".beatmap-scoreboard-table") as HTMLElement;
     if (rankingTable) rankingTableObverver.observe(rankingTable, { childList: true });
-
+    
     const tableBody = rankingTable.querySelector(`.${tableBodyClass}`) as HTMLElement;
-    updateTableRanks(tableBody, signal);
+    await updateTableRanks(tableBody, signal);
+
+    updateTopLeaderboard(leaderboardParent, signal);
 };
 
 const updateTopLeaderboard = async (leaderboardParent: HTMLElement, signal: AbortSignal) => {
@@ -92,18 +100,21 @@ const osuPlusBodyObserver = (osuPlusBody: HTMLElement) =>
 const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => {
     // Children
     const items = tableBody.children;
+
+    const flagItems: TFlagItems = [];
     for (const item of items) {
-        if (signal.aborted) {
-            return;
-        }
+
         const playerNameElement = item.querySelector(".beatmap-scoreboard-table__cell-content--user-link");
         const playerId = playerNameElement?.getAttribute("data-user-id");
-        await addFlagUser(item as HTMLElement, playerId, {
-            addDiv: false,
-            addMargin: true,
-            addSuperParentClone: false,
-            insertInsideOriginalElement: true,
-            signal: signal,
-        });
+        if(playerId){
+            flagItems.push({ item: item as HTMLElement, id: playerId });
+        }
     }
+    await addFlagUsers(flagItems, {
+        addDiv: false,
+        addMargin: true,
+        addSuperParentClone: false,
+        insertInsideOriginalElement: true,
+        signal: signal,
+    });
 };
