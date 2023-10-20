@@ -166,5 +166,11 @@
     },
     "region_sk": {
         "message": "Região"
+    },
+    "region_uk": {
+        "message": "Condado"
+    },
+    "region_ie": {
+        "message": "Província"
     }
 }
