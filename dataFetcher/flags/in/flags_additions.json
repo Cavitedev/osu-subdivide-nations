@@ -625,6 +625,312 @@
             }
         }
     },
+    "GB": {
+        "name": "United Kingdom",
+        "nativeName": "United Kingdom",
+        "regions": {
+            "GB-BDF": {
+                "name": "Bedfordshire",
+                "nativeName": "Bedfordshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bedfordshire_County_Flag.svg"
+            },
+            "GB-BRK": {
+                "name": "Berkshire",
+                "nativeName": "Berkshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Flag_of_Berkshire.svg/128px-Flag_of_Berkshire.svg.png"
+            },
+            "GB-BST": {
+                "name": "Bristol",
+                "nativeName": "Bristol",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bristol_Flag.jpg/256px-Bristol_Flag.jpg"
+            },
+            "GB-BKM": {
+                "name": "Buckinghamshire",
+                "nativeName": "Buckinghamshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Buckinghamshire.svg/128px-Flag_of_Buckinghamshire.svg.png"
+            },
+            "GB-CAM": {
+                "name": "Cambridgeshire",
+                "nativeName": "Cambridgeshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Cambridgeshire_Flag.svg"
+            },
+            "GB-CHS": {
+                "name": "Cheshire",
+                "nativeName": "Cheshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Cheshire.svg"
+            },
+            "GB-CON": {
+                "name": "Cornwall",
+                "nativeName": "Cornwall",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Cornwall.svg"
+            },
+            "GB-CMA": {
+                "name": "Cumbria",
+                "nativeName": "Cumbria",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/County_Flag_of_Cumbria.svg"
+            },
+            "GB-DBY": {
+                "name": "Derbyshire",
+                "nativeName": "Derbyshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Derbyshire_flag.svg"
+            },
+            "GB-DEV": {
+                "name": "Devon",
+                "nativeName": "Devon",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_Devon.svg"
+            },
+            "GB-DOR": {
+                "name": "Dorset",
+                "nativeName": "Dorset",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Dorset.svg"
+            },
+            "GB-DUR": {
+                "name": "Durham",
+                "nativeName": "Durham",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_County_Durham.svg"
+            },
+            "GB-ERY": {
+                "name": "East Riding of Yorkshire",
+                "nativeName": "East Riding of Yorkshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/East_Riding_Of_Yorkshire.svg"
+            },
+            "GB-ESX": {
+                "name": "East Sussex",
+                "nativeName": "East Sussex",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Sussex.svg"
+            },
+            "GB-ESS": {
+                "name": "Essex",
+                "nativeName": "Essex",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Essex.svg"
+            },
+            "GB-GLS": {
+                "name": "Gloucestershire",
+                "nativeName": "Gloucestershire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Severn_Cross.svg"
+            },
+            "GB-LND": {
+                "name": "Greater London",
+                "nativeName": "Greater London",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Greater_London.svg"
+            },
+            "GB-MAN": {
+                "name": "Greater Manchester",
+                "nativeName": "Manchester",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Unofficial_County_Flag_of_Greater_Manchester.svg"
+            },
+            "GB-HAM": {
+                "name": "Hampshire",
+                "nativeName": "Hampshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/County_Flag_of_Hampshire.svg"
+            },
+            "GB-HEF": {
+                "name": "Herefordshire",
+                "nativeName": "Herefordshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/County_Flag_Of_Herefordshire.svg"
+            },
+            "GB-HRT": {
+                "name": "Hertfordshire",
+                "nativeName": "Hertfordshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b8/County_Flag_of_Hertfordshire.svg"
+            },
+            "GB-IOW": {
+                "name": "Isle of Wight",
+                "nativeName": "Isle of Wight",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Flag_of_the_Isle_of_Wight.svg"
+            },
+            "GB-KEN": {
+                "name": "Kent",
+                "nativeName": "Kent",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/24/FlagOfKent.svg"
+            },
+            "GB-LAN": {
+                "name": "Lancashire",
+                "nativeName": "Lancashire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Lancashire_County_Flag.svg"
+            },
+            "GB-LEC": {
+                "name": "Leicestershire",
+                "nativeName": "Leicestershire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Leicestershire.svg"
+            },
+            "GB-LIN": {
+                "name": "Lincolnshire",
+                "nativeName": "Lincolnshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_Lincolnshire.svg"
+            },
+            "GB-MRS": {
+                "name": "Merseyside",
+                "nativeName": "Merseyside",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/County_Flag_of_Merseyside.svg"
+            },
+            "GB-NFK": {
+                "name": "Norfolk",
+                "nativeName": "Norfolk",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Flag_of_Norfolk.svg"
+            },
+            "GB-NYK": {
+                "name": "North Yorkshire",
+                "nativeName": "North Yorkshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/North-Yorkshire-Flag.svg"
+            },
+            "GB-NTH": {
+                "name": "Northamptonshire",
+                "nativeName": "Northamptonshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Northamptonshire.svg"
+            },
+            "GB-NBL": {
+                "name": "Northumberland",
+                "nativeName": "Northumberland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/61/Flag_of_Northumberland.svg"
+            },
+            "GB-NTT": {
+                "name": "Nottinghamshire",
+                "nativeName": "Nottinghamshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0c/County_Flag_of_Nottinghamshire.svg"
+            },
+            "GB-OXF": {
+                "name": "Oxfordshire",
+                "nativeName": "Oxfordshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Oxfordshire.svg"
+            },
+            "GB-RUT": {
+                "name": "Rutland",
+                "nativeName": "Rutland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Rutland_County_Flag.svg"
+            },
+            "GB-SHR": {
+                "name": "Shropshire",
+                "nativeName": "Shropshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Flag_of_Shropshire.svg"
+            },
+            "GB-SOM": {
+                "name": "Somerset",
+                "nativeName": "Somerset",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Somerset_Flag.svg"
+            },
+            "GB-SYK": {
+                "name": "South Yorkshire",
+                "nativeName": "South Yorkshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Unofficial_County_Flag_of_South_Yorkshire.svg"
+            },
+            "GB-STS": {
+                "name": "Staffordshire",
+                "nativeName": "Staffordshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Staffordshire_Flag.svg"
+            },
+            "GB-SFK": {
+                "name": "Suffolk",
+                "nativeName": "Suffolk",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/County_Flag_of_Suffolk.svg"
+            },
+            "GB-SRY": {
+                "name": "Surrey",
+                "nativeName": "Surrey",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Surrey.svg"
+            },
+            "GB-TYW": {
+                "name": "Tyne and Wear",
+                "nativeName": "Tyne and Wear",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/County_Flag_of_Tyne_&_Wear.svg"
+            },
+            "GB-WAR": {
+                "name": "Warwickshire",
+                "nativeName": "Warwickshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Warwickshire.svg"
+            },
+            "GB-WML": {
+                "name": "West Midlands",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_the_West_Midlands_County.svg"
+            },
+            "GB-WSX": {
+                "name": "West Sussex",
+                "nativeName": "West Sussex",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Flag_of_West_Sussex.svg"
+            },
+            "GB-WYS": {
+                "name": "West Yorkshire",
+                "nativeName": "West Yorkshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Unofficial_Flag_of_West_Yorkshire.svg"
+            },
+            "GB-WIL": {
+                "name": "Wiltshire",
+                "nativeName": "Wiltshire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/County_Flag_of_Wiltshire.svg"
+            },
+            "GB-WOR": {
+                "name": "Worcestershire",
+                "nativeName": "Worcestershire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Worcestershire_flag.svg"
+            },
+            "GB-SCNW": {
+                "name": "North West of Scotland",
+                "nativeName": "North West of Scotland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
+            },
+            "GB-SCNE": {
+                "name": "North East of Scotland",
+                "nativeName": "North East of Scotland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
+            },
+            "GB-SCSW": {
+                "name": "South West of Scotland",
+                "nativeName": "South West of Scotland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
+            },
+            "GB-SCSE": {
+                "name": "South East of Scotland",
+                "nativeName": "South East of Scotland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
+            },
+            "GB-GWN": {
+                "name": "Gwent",
+                "nativeName": "Gwent",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Flag_of_Wales.svg"
+            },
+            "GB-SGL": {
+                "name": "South Glamorgan",
+                "nativeName": "South Glamorgan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Glamorgan_Flag.svg"
+            },
+            "GB-MGL": {
+                "name": "Mid Glamorgan",
+                "nativeName": "Mid Glamorgan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Glamorgan_Flag.svg"
+            },
+            "GB-WGL": {
+                "name": "West Glamorgan",
+                "nativeName": "West Glamorgan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Glamorgan_Flag.svg"
+            },
+            "GB-DYF": {
+                "name": "Dyfed",
+                "nativeName": "Dyfed",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_dyfed.svg/128px-Flag_of_dyfed.svg.png"
+            },
+            "GB-POW": {
+                "name": "Powys",
+                "nativeName": "Powys",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Powys.svg"
+            },
+            "GB-GWY": {
+                "name": "Gwynedd",
+                "nativeName": "Gwynedd",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Gwynedd.svg"
+            },
+            "GB-CLW": {
+                "name": "Clwyd",
+                "nativeName": "Clwyd",
+                "flag": "https://en.wikipedia.org/wiki/Clwyd#/media/File:Coat_of_arms_of_Clwyd.svg"
+            },
+            "GB-NIR": {
+                "name": "Northern Ireland",
+                "nativeName": "Tuaisceart Éireann",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Saint_Patrick's_Saltire.svg"
+            }
+        }
+    },
     "GR": {
         "regions": {
             "GR-A": {

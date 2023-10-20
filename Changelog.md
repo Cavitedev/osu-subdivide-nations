@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.2.3
+
+- Add UK and Ireland flags
+
 ## Version 3.2.2
 
 - Fix wybin schedule reloading page referees
