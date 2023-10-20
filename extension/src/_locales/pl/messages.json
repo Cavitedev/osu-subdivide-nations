@@ -169,5 +169,11 @@
     },
     "region_sk": {
         "message": "Region"
+    },
+    "region_uk": {
+        "message": "Komitat"
+    },
+    "region_ie": {
+        "message": "Prowincja"
     }
 }
