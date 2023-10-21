@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.4
+
+- Fix profile country / region when changing mode
+- Fix UK flag
+
 ## Version 3.2.3
 
 - Add UK and Ireland flags
