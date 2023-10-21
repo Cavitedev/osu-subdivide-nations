@@ -166,5 +166,11 @@
     },
     "region_sk": {
         "message": "Wilayah"
+    },
+    "region_uk": {
+        "message": "Daerah"
+    },
+    "region_ie": {
+        "message": "Provinsi"
     }
 }

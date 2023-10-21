@@ -73,5 +73,8 @@
     },
     "region_sk": {
         "message": "Region"
+    },
+    "region_uk": {
+        "message": "Land"
     }
 }

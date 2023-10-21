@@ -52,5 +52,8 @@
     },
     "region_us": {
         "message": "州"
+    },
+    "region_uk": {
+        "message": "国"
     }
 }
