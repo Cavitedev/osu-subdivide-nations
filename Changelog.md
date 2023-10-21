@@ -3,7 +3,7 @@
 ## Version 3.2.4
 
 - Fix profile country / region when changing mode
-- Fix UK flag
+- Fix 1 flag from UK, 1 flag from Finland and 2 from Romania
 
 ## Version 3.2.3
 
