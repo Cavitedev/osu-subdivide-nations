@@ -44,6 +44,7 @@ export const updateFlagsSchedule = async () => {
     for(const flagElement of flagElements){
         const playerElement = flagElement.parentElement;
         const href = playerElement?.getAttribute("href");
+        console.log(href);
         if(!href) continue;
         const playerId = idFromOsuProfileUrl(href);
         flagItems.push({ id: playerId, item: playerElement as HTMLElement });
