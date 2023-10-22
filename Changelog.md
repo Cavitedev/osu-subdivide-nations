@@ -3,6 +3,7 @@
 ## Version 3.2.5
 
 - Fix wybin osu-catch-draft-tournament prizes view exception
+- Newest translations
 
 
 ## Version 3.2.4
