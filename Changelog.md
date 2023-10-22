@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.5
+
+- Fix wybin osu-catch-draft-tournament prizes view exception
+
+
 ## Version 3.2.4
 
 - Fix profile country / region when changing mode
