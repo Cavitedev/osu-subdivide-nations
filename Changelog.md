@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 3.2.5
+
+- Fix wybin osu-catch-draft-tournament prizes view exception
+
+
+## Version 3.2.4
+
+- Fix profile country / region when changing mode
+- Fix 1 flag from UK, 1 flag from Finland and 2 from Romania
+
 ## Version 3.2.3
 
 - Add UK and Ireland flags

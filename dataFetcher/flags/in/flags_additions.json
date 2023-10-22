@@ -618,7 +618,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pohjanmaan_maakunnan_vaakuna.svg"
             },
             "FI-14": {
-                "flag": "https://en.wikipedia.org/wiki/North_Ostrobothnia#/media/File:Pohjois-Pohjanmaan_vaakuna.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Pohjois-Pohjanmaan_vaakuna.svg"
             },
             "FI-19": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varsinais-Suomen.vaakuna.svg"
@@ -922,7 +922,7 @@
             "GB-CLW": {
                 "name": "Clwyd",
                 "nativeName": "Clwyd",
-                "flag": "https://en.wikipedia.org/wiki/Clwyd#/media/File:Coat_of_arms_of_Clwyd.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Coat_of_arms_of_Clwyd.svg/128px-Coat_of_arms_of_Clwyd.svg.png"
             },
             "GB-NIR": {
                 "name": "Northern Ireland",
@@ -1737,7 +1737,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Stema_judetului_Galati.svg"
             },
             "RO-GR": {
-                "flag": "https://commons.wikimedia.org/wiki/File:Flag_of_Giurgiu_County,_Romania.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Giurgiu_County,_Romania.svg"
             },
             "RO-GJ": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Stema_Gorj.svg"
@@ -1767,10 +1767,10 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mures_county_coat_of_arms.svg/128px-Mures_county_coat_of_arms.svg.png"
             },
             "RO-NT": {
-                "flag": "https://commons.wikimedia.org/wiki/File:Stema_Neamt.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Stema_Neamt.svg"
             },
             "RO-OT": {
-                "flag": "https://commons.wikimedia.org/wiki/File:Actual_Olt_county_CoA.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/de/Actual_Olt_county_CoA.png"
             },
             "RO-PH": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Stema_Prahova.svg"
