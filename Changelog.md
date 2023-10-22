@@ -3,6 +3,7 @@
 ## Version 3.2.6
 
 - Fix Staff schedule flags wybin
+- Fix same user appearing multiple times osu! and wybin
 
 ## Version 3.2.5
 
