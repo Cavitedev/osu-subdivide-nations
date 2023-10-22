@@ -13,13 +13,13 @@ const onLoadedMutation = new MutationObserver(() => {
 });
 
 const onContentChangeObserver = new MutationObserver(() => {
-    console.log("content change");
     updateFlagsSchedule();
 });
 
 export const updateFlagsSchedule = async () => {
     const url = location.href;
-    if (!url.includes("/schedule")) return;
+    if (!url.includes("/schedule") && !url.includes("/staff-schedule")) return;
+
     const navigationElement = document.querySelector("body > app-root > app-tournament-view > div.navigation-bar > div.navigation")!;
     onLoadedMutation.observe(navigationElement, {childList: true});
 
@@ -35,7 +35,7 @@ export const updateFlagsSchedule = async () => {
     onContentChangeObserver.observe(activeStage, {attributes: true});
     
 
-    if (!url.includes("/schedule#qualifiers")) return;
+    if (!url.includes("schedule#qualifiers")) return;
 
     const flagElements = activeStage.querySelectorAll(".lobbies .fi") ?? []
 

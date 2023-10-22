@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.2.6
+
+- Fix Staff schedule flags wybin
+
 ## Version 3.2.5
 
 - Fix wybin osu-catch-draft-tournament prizes view exception
