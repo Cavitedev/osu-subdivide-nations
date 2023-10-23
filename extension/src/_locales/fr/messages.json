@@ -1,1 +1,134 @@
-{}
+{
+    "created_by": {
+        "message": "créé par {{developer}}"
+    },
+    "system_default": {
+        "message": "Par défaut (système)"
+    },
+    "native_language": {
+        "message": "Langue maternelle"
+    },
+    "clean_cache": {
+        "message": "Nettoyer le cache"
+    },
+    "cache_cleaned": {
+        "message": "Le cache a été nettoyé"
+    },
+    "region_language": {
+        "message": "Langue de la région :"
+    },
+    "score_ranking": {
+        "message": "Classement"
+    },
+    "highest_rank_profile": {
+        "message": "Rang le plus haut : {{rankHighest.rank}} le {{formattedDate}}"
+    },
+    "region": {
+        "message": "Région"
+    },
+    "region_ar": {
+        "message": "Province"
+    },
+    "region_at": {
+        "message": "État"
+    },
+    "region_au": {
+        "message": "État"
+    },
+    "region_be": {
+        "message": "Province"
+    },
+    "region_br": {
+        "message": "État"
+    },
+    "region_ca": {
+        "message": "Province"
+    },
+    "region_cl": {
+        "message": "Région"
+    },
+    "region_cn": {
+        "message": "Région administrative"
+    },
+    "region_co": {
+        "message": "Département"
+    },
+    "region_cz": {
+        "message": "Région"
+    },
+    "region_de": {
+        "message": "État"
+    },
+    "region_fi": {
+        "message": "Région"
+    },
+    "region_fr": {
+        "message": "Région"
+    },
+    "region_id": {
+        "message": "Province"
+    },
+    "region_it": {
+        "message": "Région"
+    },
+    "region_kr": {
+        "message": "Province"
+    },
+    "region_lv": {
+        "message": "Région"
+    },
+    "region_mx": {
+        "message": "État"
+    },
+    "region_my": {
+        "message": "État"
+    },
+    "region_nl": {
+        "message": "Province"
+    },
+    "region_pe": {
+        "message": "Région"
+    },
+    "region_ph": {
+        "message": "Province"
+    },
+    "region_pt": {
+        "message": "Région"
+    },
+    "region_th": {
+        "message": "Province"
+    },
+    "region_tr": {
+        "message": "Région"
+    },
+    "region_tw": {
+        "message": "Province"
+    },
+    "region_us": {
+        "message": "État"
+    },
+    "region_vn": {
+        "message": "Province"
+    },
+    "region_dk": {
+        "message": "Région"
+    },
+    "region_nz": {
+        "message": "Région"
+    },
+    "region_lt": {
+        "message": "Région"
+    },
+    "region_gr": {
+        "message": "Région"
+    },
+    "region_bg": {
+        "message": "Province"
+    },
+    "region_sk": {
+        "message": "Région"
+    },
+    "region_ie": {
+        "message": "Province"
+    }
+}
