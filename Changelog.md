@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.7
+
+- Fix Bavaria flag
+- Latest translations
+
 ## Version 3.2.6
 
 - Fix Staff schedule flags wybin

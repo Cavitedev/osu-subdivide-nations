@@ -492,6 +492,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Pardubice_Region.svg/128px-Flag_of_Pardubice_Region.svg.png"
             },
             "CZ-31": {
+                "nativeName": "Jihočeský kraj",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_South_Bohemian_Region.svg/128px-Flag_of_South_Bohemian_Region.svg.png"
             },
             "CZ-64": {
@@ -529,7 +530,7 @@
     "DE": {
         "regions": {
             "DE-BY": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Bavaria_(striped).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rautenflagge_(24_Rauten).svg"
             }
         }
     },
