@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.2.8
+
+- Bavaria fix was not accurate
+
 ## Version 3.2.7
 
 - Fix Bavaria flag
