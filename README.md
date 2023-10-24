@@ -1,6 +1,6 @@
 <p align="center"><a href="https://discord.gg/s7TMSQt3E2" target="_blank" ><img width="256" alt="osu! subdivide nations icon" src="icons/icon256.png"></a></p>
 
-<p align="center">This project aims to display the <strong>regional</strong> flags of players on osu! website and its region name through an extension. As well as other <strong>extra features</strong></p>
+<p align="center">This project aims to display the <strong>regional flags </strong> and names of players on osu! official website as well as other unofficial ones. As well as other <strong>extra features</strong></p>
 <br/>
 
 <p align="center">
