@@ -33,6 +33,7 @@ export const addFlagsTournamentManagement = async () => {
 
 
     addFlagsStaff(bodyContainer as HTMLElement);
+    addFlagsParticipants(bodyContainer as HTMLElement);
 }
 
 const addFlagsStaff = async (parent: HTMLElement) => {
@@ -42,6 +43,36 @@ const addFlagsStaff = async (parent: HTMLElement) => {
 
 
     const elements = parent.querySelectorAll(".all-staff .staff") ?? []
+
+    const flagItems: TFlagItems = [];    
+    
+    for(const element of elements){
+        const playerElement = element.querySelector(".username");
+        const href = playerElement?.getAttribute("href");
+        if(!href) continue;
+        const playerId = idFromOsuProfileUrl(href);
+        flagItems.push({ id: playerId, item: playerElement as HTMLElement });
+    }
+
+
+    await addFlagUsers(flagItems);
+}
+
+
+
+const addFlagsParticipants = async (parent: HTMLElement) => {
+    const url = location.href;
+    if (!url.includes("#participants")) return;
+
+    const allPlayers = parent.querySelector(".all-players");
+    if(!allPlayers) return;
+
+    const playersPageObserver = new MutationObserver(() => {
+        addFlagsParticipants(parent);
+    });
+    playersPageObserver.observe(allPlayers, {childList: true});
+
+    const elements = allPlayers.querySelectorAll(".all-players .player") ?? []
 
     const flagItems: TFlagItems = [];    
     

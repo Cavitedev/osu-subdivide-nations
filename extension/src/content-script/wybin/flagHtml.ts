@@ -86,19 +86,27 @@ const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:
 
     flagElementClone.setAttribute("style", (flagStyleWithMargin).replace("$flag", flag));
 
-    const parent = flagElement.parentElement!;
-
-    //Parent div
-    const flagsDiv = document.createElement("div");
-    flagsDiv.appendChild(flagElement);
-    flagsDiv.appendChild(flagElementClone);
-  
-    if(flexInParent){
-        flagsDiv.setAttribute("style", "display: inline")
+    if(flagElements.length > 1){
+        // Update
+        flagElements[1].replaceWith(flagElementClone);
     }else{
-        flagsDiv.setAttribute("style", "display: flex")
+        // Add
+        const parent = flagElement.parentElement!;
+
+        //Parent div
+        const flagsDiv = document.createElement("div");
+        flagsDiv.appendChild(flagElement);
+        flagsDiv.appendChild(flagElementClone);
+      
+        if(flexInParent){
+            flagsDiv.setAttribute("style", "display: inline")
+        }else{
+            flagsDiv.setAttribute("style", "display: flex")
+        }
+    
+        parent.insertBefore(flagsDiv, parent.firstChild);
+    
     }
 
-    parent.insertBefore(flagsDiv, parent.firstChild);
 
 }
