@@ -10,7 +10,7 @@
     "watch": "node build.mjs --watch",
     "watch:chromium": "node build.mjs --chromium --watch",
     "watch:firefox": "node build.mjs --firefox --watch",
-    "test": "jest",
+    "test:unit": "jest",
     "lint": "eslint --fix src"
   },
   "repository": {

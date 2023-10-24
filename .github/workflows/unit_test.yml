@@ -1,0 +1,28 @@
+name: Build extensions and upload them
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - release
+
+jobs:
+  test_unit:
+    permissions: write-all
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4.0.0
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.8.1
+      - name: Install dependencies
+        working-directory: ./extension
+        run: npm install
+      - name: Test
+        working-directory: ./extension
+        run: npm run test:unit
+
