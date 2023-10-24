@@ -1,17 +1,37 @@
-import { fetchErrorToText, fetchOptions, nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { currentSignal, fetchErrorToText, fetchOptions, nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
-import { osuWorldUsers } from "@src/utils/osuWorld";
+import { osuWorldUser, osuWorldUsers } from "@src/utils/osuWorld";
 
 
 export type TWybinHtmlUserOptions = {
     inlineInsteadOfFlex?: boolean;
 } & fetchOptions;
 
+
+export const addFlagUser = async (    item: HTMLElement, userId: string, options?: TWybinHtmlUserOptions) => {
+    if (!item) return;
+    const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
+    if (playerOsuWorld.error) {
+        const textError = fetchErrorToText(playerOsuWorld);
+        console.error(textError);
+        return;
+    }
+    const playerData = playerOsuWorld.data;
+    if (!playerData || "error" in playerData) {
+        return;
+    }
+
+    const countryCode = playerData["country_id"];
+    const regionCode = playerData["region_id"];
+    return addRegionalFlag(item, countryCode, regionCode, options);
+}
+
+
 export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUserOptions) => {
     if(flagItems.length === 0) return;
 
-    const signal = nextAbortControllerSignal();
+    const signal = options?.signal ?? nextAbortControllerSignal();
     
     const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), signal);
 

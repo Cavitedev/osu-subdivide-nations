@@ -1,14 +1,15 @@
 import { TFlagItems } from "@src/utils/html";
 import { getContent } from "../content";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
-import { addFlagUsers } from "../flagHtml";
+import { addFlagUser, addFlagUsers } from "../flagHtml";
+import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 const initObserver = new MutationObserver(() => {
     updateFlagsHome();
     initObserver.disconnect();
 });
 
-const teamTabObserver = new MutationObserver(() => {
+const tabObserver = new MutationObserver(() => {
     updateFlagsHome();
 });
 
@@ -18,22 +19,47 @@ export const updateFlagsHome = async () => {
     
     const registerBox = getContent()?.querySelector(".tournament-box.register");
     if(!registerBox) return;
-
-    const teamForm = registerBox.querySelector(".team-form");
-    if(!teamForm) {
+    if(registerBox.children.length < 3){
         initObserver.observe(registerBox, {childList: true});
         return;
-    };
+    }
+    const signal = nextAbortControllerSignal();
 
-    const teamFormTabs = teamForm.querySelectorAll(".team-form-header .team-form-header-button");
-    for(const tab of teamFormTabs){
-        teamTabObserver.observe(tab, {attributes: true});
+    updateTeamFlags(registerBox, signal);
+    updatePlayerFlag(registerBox, signal);
+
+}
+
+const updatePlayerFlag = async(registerBox: Element, signal: AbortSignal) => {
+    const userForm = registerBox.querySelector(".user-form");
+    if(!userForm) return;
+    const formTabs = userForm.querySelectorAll(".user-form-header .user-form-header-button");
+    for(const tab of formTabs){
+        tabObserver.observe(tab, {attributes: true});
     }
 
 
-    const playersContainers = teamForm.querySelector(".team-form .body");
+    const playersContainers = userForm.querySelector(".body");
     if(!playersContainers) return;
-    const players = getContent()?.querySelectorAll(".team-players .username") ?? []
+    const player = playersContainers.querySelector(".data .username")
+    if(!player) return;
+
+    const playerId = idFromOsuProfileUrl(player.getAttribute("href")!);
+    addFlagUser(player as HTMLElement, playerId, {signal: signal});
+}
+
+const updateTeamFlags = async(registerBox: Element, signal: AbortSignal) => {
+    const teamForm = registerBox.querySelector(".team-form");
+    if(!teamForm) return;
+    const formTabs = teamForm.querySelectorAll(".team-form-header .team-form-header-button");
+    for(const tab of formTabs){
+        tabObserver.observe(tab, {attributes: true});
+    }
+
+
+    const playersContainers = teamForm.querySelector(".body");
+    if(!playersContainers) return;
+    const players = playersContainers.querySelectorAll(".team-players .username") ?? []
 
     const flagItems: TFlagItems = [];    
     
@@ -42,6 +68,5 @@ export const updateFlagsHome = async () => {
         flagItems.push({ id: playerId, item: player as HTMLElement });
     }
 
-    await addFlagUsers(flagItems);
-
+    await addFlagUsers(flagItems, {signal:signal});
 }
