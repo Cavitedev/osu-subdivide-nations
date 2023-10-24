@@ -30,6 +30,7 @@ These are some examples of websites the extension is applied
 - [Friends](https://osu.ppy.sh/home/friends)
 - [Forum](https://osu.ppy.sh/community/forums/topics/1686524?n=3)
 - [Beatmapset](https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628)
+- [Wiki](https://osu.ppy.sh/wiki/en/Tournaments/OWC/2023)
 
 ## Inner Projects
 
