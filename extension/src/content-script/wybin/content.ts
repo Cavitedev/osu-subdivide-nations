@@ -1,8 +1,9 @@
-import { updateFlagsHome } from "./pages/home";
-import { updateFlagsParticipants } from "./pages/participants";
-import { updateFlagsPlayers } from "./pages/players";
-import { updateFlagsSchedule } from "./pages/schedule";
-import { updateFlagsTeams } from "./pages/teams";
+import { updateFlagsHome as addFlagsHome } from "./pages/home";
+import { updateFlagsParticipants as addFlagsParticipants } from "./pages/participants";
+import { updateFlagsPlayers as addFlagsPlayers } from "./pages/players";
+import { updateFlagsSchedule as addFlagsSchedule } from "./pages/schedule";
+import { updateFlagsTeams as addFlagsTeams } from "./pages/teams";
+import { addFlagsTournamentManagement } from "./pages/tournamentManagement";
 
 
 const contentObserver = new MutationObserver(() => {
@@ -21,6 +22,8 @@ export const exec = async () => {
 
     titleObserver.observe(document.querySelector("head > title")!, {childList: true});
     
+    addFlagsTournamentManagement();
+
     content = document.querySelector("body > app-root > app-tournament-view > div.content-spacing > app-tournament-view-details") as HTMLElement;
     if(!content) return;
     const contentChild = content.children[0] as HTMLElement;
@@ -33,11 +36,12 @@ export const exec = async () => {
     };
 
 
-    updateFlagsHome();
-    updateFlagsPlayers();
-    updateFlagsTeams();
-    updateFlagsParticipants();  
-    updateFlagsSchedule();
+    addFlagsHome();
+    addFlagsPlayers();
+    addFlagsTeams();
+    addFlagsParticipants();  
+    addFlagsSchedule();
+
 
 };
 
