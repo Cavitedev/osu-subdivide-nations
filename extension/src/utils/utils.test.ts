@@ -1,6 +1,16 @@
 import {describe, expect, test} from '@jest/globals';
-import { idFromOsuProfileUrl } from "./utils";
+import { convertToGroupsOf5, idFromOsuProfileUrl } from "./utils";
 
+describe("convertToGroupsOfFive", () => {
+
+test("1st group", () => {
+    expect(convertToGroupsOf5(1)).toEqual([1, 2, 3, 4, 5]);
+});
+test("2nd group", () => {
+    expect(convertToGroupsOf5(2)).toEqual([6, 7, 8, 9, 10]);
+});
+
+})
 
 describe("idFromOsuProfileUrl", () => {
     // Gets id from osu link url. It doesn't work for other websites
