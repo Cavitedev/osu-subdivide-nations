@@ -11,7 +11,7 @@
 </p>
 <p align="center">
     <a title="Discord" href="https://discord.gg/s7TMSQt3E2"><img  src="https://img.shields.io/badge/Discord%20-%235865F2.svg?logo=discord&logoColor=white"></a>
-    <a title="Osuworld Discord" href="https://discord.gg/s7TMSQt3E2"><img src="https://img.shields.io/badge/Osuworld Discord%20-%23FFcde2.svg?logo=discord&logoColor"></a>
+    <a title="Osuworld Discord" href="https://discord.gg/995xKj2EHP"><img src="https://img.shields.io/badge/Osuworld Discord%20-%23FFcde2.svg?logo=discord&logoColor"></a>
     <a title="Crowdin" target="_blank" href="https://crowdin.com/project/osu-subdivide-nations"><img src="https://badges.crowdin.net/osu-subdivide-nations/localized.svg"></a>
 </p>
 <p align="center">
