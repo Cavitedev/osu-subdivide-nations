@@ -1,3 +1,4 @@
+import { updateFlagsHome } from "./pages/home";
 import { updateFlagsParticipants } from "./pages/participants";
 import { updateFlagsPlayers } from "./pages/players";
 import { updateFlagsSchedule } from "./pages/schedule";
@@ -32,6 +33,7 @@ export const exec = async () => {
     };
 
 
+    updateFlagsHome();
     updateFlagsPlayers();
     updateFlagsTeams();
     updateFlagsParticipants();  

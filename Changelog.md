@@ -3,6 +3,7 @@
 ## Version 3.3.0
 
 - Flags in osu wiki page
+- Flags in wybin home team
 
 ## Version 3.2.9
 
