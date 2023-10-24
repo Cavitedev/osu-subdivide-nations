@@ -3,8 +3,7 @@ import { TFlagItems } from "@src/utils/html";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { addFlagUsers } from "../flagHtml";
 
-export const updateFlagsWiki = async () => {
-
+export const addFlagsWiki = async () => {
     const url = location.href;
     if (!url.includes("/wiki")) return;
     const signal = nextAbortControllerSignal();
@@ -14,15 +13,14 @@ export const updateFlagsWiki = async () => {
 
     for (const item of posts) {
         const href = item.getAttribute("href");
-        if(!href) continue;
+        if (!href) continue;
         const playerId = idFromOsuProfileUrl(href);
-        if(!playerId) continue;
+        if (!playerId) continue;
         flagItems.push({ id: playerId, item: item as HTMLElement });
     }
-    
+
     await addFlagUsers(flagItems, {
         wikiPage: true,
         signal: signal,
     });
-
-}
+};

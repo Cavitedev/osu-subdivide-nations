@@ -5,15 +5,15 @@ import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/home/friends
 const setActualFriendsObserver = new MutationObserver(() => {
-    updateFlagsFriends();
+    addFlagsFriends();
     setActualFriendsObserver.disconnect();
 });
 
 const updateFlagsFriendsObserver = new MutationObserver(() => {
-    updateFlagsFriends();
+    addFlagsFriends();
 });
 
-export const updateFlagsFriends = async () => {
+export const addFlagsFriends = async () => {
     const url = location.href;
     if (!url.includes("osu.ppy.sh/home/friends")) return;
 
@@ -43,11 +43,9 @@ export const updateFlagsFriends = async () => {
 
     const flagItems: TFlagItems = [];
     for (const item of friendsList) {
-
         const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
         const playerId = idFromOsuProfileUrl(playerNameElement.getAttribute("href")!);
         flagItems.push({ id: playerId, item: item as HTMLElement });
     }
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });
-
 };

@@ -9,7 +9,7 @@ import { getLocMsg } from "@src/utils/languagesChrome";
 // https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
 const rankingIdAttr = "data-user-id";
 
-export const updateFlagsRankings = async () => {
+export const addFlagsRankings = async () => {
     const url = location.href;
     if (
         (!url.includes("osu.ppy.sh/rankings") &&
@@ -41,22 +41,19 @@ export const updateFlagsRankings = async () => {
 
     const flagItems: TFlagItems = [];
     for (const item of listItems) {
-
         const idItem = item.querySelector(`[${rankingIdAttr}]`)!;
         const userId = idItem.getAttribute(rankingIdAttr)!;
         flagItems.push({
             item: item as HTMLElement,
-            id: userId}
-            );
+            id: userId,
+        });
     }
-    
+
     await addFlagUsers(flagItems, {
         addDiv: true,
         addMargin: true,
         signal: signal,
     });
-
-
 };
 
 const addLinkToFlag = (item: HTMLElement) => {
@@ -181,7 +178,6 @@ const addRegionsDropdown = async (countryCode: string, regionCode: string | null
     const selectedRegionName = regionCode != null ? regionNames[regionCode] ?? allText : allText;
     cloneDropdown.querySelector(".select-options__select .u-ellipsis-overflow")!.textContent = selectedRegionName;
 
-
     if (replace && addedDropdown) {
         addedDropdown?.replaceWith(cloneDropdown);
     } else {
@@ -217,18 +213,16 @@ const regionalRanking = async (
         }
         totalPages = results["pages"];
 
+        // First iteration
+        if (page === pagesToCheck[0]) {
+            // Prefetch next pages. It doesn't make 2 requests behind scenes so it is fine
+            for (const prefetchPage of pagesToCheck.slice(1)) {
+                if (prefetchPage >= totalPages) break;
+                osuWorldCountryRegionRanking(countryCode, regionCode, osuMode, prefetchPage);
+            }
 
-       // First iteration
-       if (page === pagesToCheck[0]) {
-
-        // Prefetch next pages. It doesn't make 2 requests behind scenes so it is fine
-        for (const prefetchPage of pagesToCheck.slice(1)) {
-            if (prefetchPage >= totalPages) break;
-            osuWorldCountryRegionRanking(countryCode, regionCode, osuMode, prefetchPage)
+            updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
         }
-
-        updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
-    }
 
         for (const player of results["top"]) {
             const row = listItems[replaceIndex] as HTMLElement;
@@ -239,9 +233,6 @@ const regionalRanking = async (
             });
             replaceIndex++;
         }
-
-
- 
 
         if (page >= totalPages) break;
     }

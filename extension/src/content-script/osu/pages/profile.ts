@@ -15,10 +15,10 @@ import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
-    updateFlagsProfile();
+    addFlagsProfile();
 });
 
-export const updateFlagsProfile = async () => {
+export const addFlagsProfile = async () => {
     if (!location.href.includes("osu.ppy.sh/users")) {
         profileMutationObserverInit.disconnect();
         return;
@@ -49,17 +49,15 @@ export const updateFlagsProfile = async () => {
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
-    
-
 
     let countryText = flagElement.querySelector("span.flag-country")?.getAttribute("original-title");
     const originalCountryCode = osuNameToCode(countryText!);
 
     let replaceText: string;
-    if (originalCountryCode === countryCode){
+    if (originalCountryCode === countryCode) {
         countryText = countryNameElement.textContent?.split(" / ")[0];
         replaceText = `${countryName ? countryName : countryText}${regionName ? ` / ${regionName}` : ""}`;
-    }else{
+    } else {
         const regionCountryName = await getCountryName(countryCode!);
         replaceText = `${countryName} | ${regionCountryName} / ${regionName}`;
     }

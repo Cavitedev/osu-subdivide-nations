@@ -4,29 +4,28 @@ import { addFlagUsers } from "../flagHtml";
 import { getContent } from "../content";
 
 const playersTeamTabUpdateObserver = new MutationObserver(() => {
-    updateFlagsPlayers();
+    addFlagsPlayers();
 });
 
-export const updateFlagsPlayers = async () => {
+export const addFlagsPlayers = async () => {
     const url = location.href;
     if (!url.includes("/players")) return;
-    
-    const playersContainers = getContent()?.querySelectorAll(".player-container");
-    if(!playersContainers ||  playersContainers.length === 0) return;
-    const playersContainer = playersContainers?.[playersContainers.length - 1] as HTMLElement;
-    playersTeamTabUpdateObserver.observe(playersContainer, {childList: true});
 
-    const players = getContent()?.querySelectorAll(".players .player") ?? []
+    const playersContainers = getContent()?.querySelectorAll(".player-container");
+    if (!playersContainers || playersContainers.length === 0) return;
+    const playersContainer = playersContainers?.[playersContainers.length - 1] as HTMLElement;
+    playersTeamTabUpdateObserver.observe(playersContainer, { childList: true });
+
+    const players = getContent()?.querySelectorAll(".players .player") ?? [];
 
     await updateFlagsPlayersList(players);
-
-}
+};
 
 export const updateFlagsPlayersList = async (players: NodeListOf<Element> | never[]) => {
-    const flagItems: TFlagItems = [];    
-    
-    for(const player of players){
-        let usernameElement = (player as HTMLElement).querySelector(".username") as HTMLElement;
+    const flagItems: TFlagItems = [];
+
+    for (const player of players) {
+        const usernameElement = (player as HTMLElement).querySelector(".username") as HTMLElement;
         const playerId = idFromOsuProfileUrl(usernameElement.getAttribute("href")!);
         flagItems.push({ id: playerId, item: player as HTMLElement });
     }

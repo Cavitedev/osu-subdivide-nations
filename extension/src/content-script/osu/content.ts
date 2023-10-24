@@ -1,17 +1,17 @@
 import { addFlagUser, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { TFlagItems } from "@src/utils/html";
 import { initConfigure } from "./init";
-import { updateFlagsRankings } from "./pages/ranking";
-import { updateFlagsBeatmapsets } from "./pages/beatmapset";
-import { updateFlagsFriends } from "./pages/friends";
-import { updateFlagsMatches } from "./pages/match";
-import { updateFlagsProfile } from "./pages/profile";
-import { updateFlagsTopics } from "./pages/topics";
+import { addFlagsRankings } from "./pages/ranking";
+import { addFlagsBeatmapsets } from "./pages/beatmapset";
+import { addFlagsFriends } from "./pages/friends";
+import { addFlagsMatches } from "./pages/match";
+import { addFlagsProfile } from "./pages/profile";
+import { addFlagsTopics } from "./pages/topics";
 import { updateLanguageToOsuLanguage } from "./osuLanguage";
-import { updateFlagsSearch } from "./pages/search";
+import { addFlagsSearch } from "./pages/search";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
-import { updateFlagsWiki } from "./pages/wiki";
+import { addFlagsWiki } from "./pages/wiki";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -67,8 +67,7 @@ export const refreshOverlays = async () => {
 };
 
 const refreshSearch = async (mutations: MutationRecord[]) => {
-
-    const target = (mutations?.[0]?.target as HTMLElement);
+    const target = mutations?.[0]?.target as HTMLElement;
     const items = target.querySelectorAll("[data-section=user]");
 
     updateSearchCards(items as NodeListOf<HTMLElement>);
@@ -109,9 +108,11 @@ const updateFlagMobileSearchObserver = new MutationObserver(async (mutations) =>
 
 const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
     const flagItems: TFlagItems = [];
-    for(const card of cards){
-        const userId = idFromOsuProfileUrl(card.querySelector(".user-search-card__col--username")!.getAttribute("href")!);
-        flagItems.push({item: card, id:userId});
+    for (const card of cards) {
+        const userId = idFromOsuProfileUrl(
+            card.querySelector(".user-search-card__col--username")!.getAttribute("href")!,
+        );
+        flagItems.push({ item: card, id: userId });
     }
 
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
@@ -144,10 +145,9 @@ const mobileMenuCreationObserver = new MutationObserver((mutations) => {
         updateFlagMobileSearchObserver.observe(mobileMenuInner, {
             childList: true,
         });
-        mobileMenuCreationObserver.disconnect();   
+        mobileMenuCreationObserver.disconnect();
         return;
     }
-
 });
 
 const addGlobalObservers = () => {
@@ -161,7 +161,7 @@ const addGlobalObservers = () => {
         updateFlagMobileSearchObserver.observe(mobileMenuInner, {
             childList: true,
         });
-    }else if (mobileMenu){
+    } else if (mobileMenu) {
         mobileMenuCreationObserver.observe(mobileMenu, {
             childList: true,
         });
@@ -177,16 +177,16 @@ export const exec = async () => {
     nextAbortControllerSignal();
     addGlobalObservers();
     updateUserCardMobileView();
-    updateFlagsSearch();
+    addFlagsSearch();
     // All these updates are conditional to the url
-    updateFlagsRankings();
-    updateFlagsProfile();
+    addFlagsRankings();
+    addFlagsProfile();
 
-    updateFlagsFriends();
-    updateFlagsMatches();
-    updateFlagsTopics();
-    updateFlagsBeatmapsets();
-    updateFlagsWiki();
+    addFlagsFriends();
+    addFlagsMatches();
+    addFlagsTopics();
+    addFlagsBeatmapsets();
+    addFlagsWiki();
     // The flag appears in a card same as overlays
     refreshOverlays();
 };

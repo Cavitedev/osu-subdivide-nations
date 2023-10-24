@@ -103,21 +103,20 @@ const langToRightUpperCases = (lang: string) => {
     return lowerCaseLang;
 };
 
-
 export const getCountryNamesLocale = async (): Promise<IfetchResponse<Icountries> | { lang: string }> => {
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode) return Promise.resolve({ lang: nativeLanguageCode });
 
-    return fetchWithoutCache(
-        countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-    ) as Promise<IfetchResponse<Icountries>>;
+    return fetchWithoutCache(countryUrl.replace("{{lang-code}}", langToRightUpperCases(lang))) as Promise<
+        IfetchResponse<Icountries>
+    >;
 };
 
 export const getRegionNamesLocale = async (): Promise<IfetchResponse<Iregions> | { lang: string }> => {
     const lang = await getActiveLanguage();
     if (lang === nativeLanguageCode) return Promise.resolve({ lang: nativeLanguageCode });
 
-    return fetchWithoutCache(
-        regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang)),
-    ) as Promise<IfetchResponse<Iregions>>;
+    return fetchWithoutCache(regionsUrl.replace("{{lang-code}}", langToRightUpperCases(lang))) as Promise<
+        IfetchResponse<Iregions>
+    >;
 };

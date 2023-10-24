@@ -58,4 +58,3 @@ export function isValidDate(dateString: any) {
 export const idFromOsuProfileUrl = (url: string) => {
     return url.split("/")[4];
 };
-

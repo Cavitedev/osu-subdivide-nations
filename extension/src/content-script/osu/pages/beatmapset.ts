@@ -8,14 +8,14 @@ import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 const tableBodyClass = "beatmap-scoreboard-table__body";
 
 const initFinishedMutationObserver = new MutationObserver((_) => {
-    updateFlagsBeatmapsets();
+    addFlagsBeatmapsets();
 });
 
 const tabsMutationObserver = new MutationObserver(() => {
-    updateFlagsBeatmapsets();
+    addFlagsBeatmapsets();
 });
 
-export const updateFlagsBeatmapsets = async () => {
+export const addFlagsBeatmapsets = async () => {
     const url = location.href;
     if (!url.includes("osu.ppy.sh/beatmapsets/")) return;
     const signal = nextAbortControllerSignal();
@@ -32,21 +32,20 @@ export const updateFlagsBeatmapsets = async () => {
     }
 
     const tabs = linkItem?.parentElement!.querySelector(".page-tabs");
-    if(tabs){
+    if (tabs) {
         for (let i = 0; i < tabs.children.length; i++) {
-            tabsMutationObserver.observe(tabs.children[i], {attributes: true});
-          }
+            tabsMutationObserver.observe(tabs.children[i], { attributes: true });
+        }
     }
 
     const leaderboardParent = document.querySelector(".beatmapset-scoreboard__main")?.firstChild as HTMLElement;
     if (!leaderboardParent || leaderboardParent.classList.contains("beatmapset-scoreboard__notice")) return;
-    
+
     initFinishedMutationObserver.disconnect();
 
-    
     const rankingTable = leaderboardParent.querySelector(".beatmap-scoreboard-table") as HTMLElement;
     if (rankingTable) rankingTableObverver.observe(rankingTable, { childList: true });
-    
+
     const tableBody = rankingTable.querySelector(`.${tableBodyClass}`) as HTMLElement;
     await updateTableRanks(tableBody, signal);
 
@@ -103,10 +102,9 @@ const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => 
 
     const flagItems: TFlagItems = [];
     for (const item of items) {
-
         const playerNameElement = item.querySelector(".beatmap-scoreboard-table__cell-content--user-link");
         const playerId = playerNameElement?.getAttribute("data-user-id");
-        if(playerId){
+        if (playerId) {
             flagItems.push({ item: item as HTMLElement, id: playerId });
         }
     }

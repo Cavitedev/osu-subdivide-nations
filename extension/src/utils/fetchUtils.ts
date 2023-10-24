@@ -21,7 +21,7 @@ export interface IfetchResponse<T> {
 
 export type fetchOptions = {
     signal?: AbortSignal;
-}
+};
 
 export type fetchCacheOptions = {
     preserve?: boolean;
@@ -49,7 +49,7 @@ const fetchAndSaveInCache = async (
                 };
             const cachedResponse: IfetchResponse<object> = {};
             cachedResponse["data"] = jsonResponse;
-            if(expireTime > 0){
+            if (expireTime > 0) {
                 cachedResponse[expireHeader] = genExpireDate(expireTime);
                 if (preserve) {
                     cachedResponse["preserve"] = true;
@@ -101,7 +101,7 @@ export const fetchWithCache = async (
     }
 };
 
-export const fetchWithoutCache = async (url: string, options: fetchOptions = {}) : Promise<IfetchResponse<object>> => {
+export const fetchWithoutCache = async (url: string, options: fetchOptions = {}): Promise<IfetchResponse<object>> => {
     if (pendingRequests[url] !== undefined) {
         return pendingRequests[url];
     }
@@ -110,7 +110,7 @@ export const fetchWithoutCache = async (url: string, options: fetchOptions = {})
     const result = await fetchPromise;
     delete pendingRequests[url];
     return result;
-}
+};
 
 export const unknownUserError = "unknown_user";
 const cannotFetchError = "cannot_fetch";
@@ -120,8 +120,8 @@ export const noMode = "no_mode";
 
 export const fetchErrorToText = (response: IfetchResponse<object> | undefined) => {
     const errorCode = response?.error?.code ?? response?.error;
-    if(!errorCode) return "";
-    const error = response?.error!;
+    if (!errorCode) return "";
+    const error = response!.error!;
     switch (errorCode) {
         case unknownUserError:
             return "Unknown user " + error.userId;
@@ -167,7 +167,6 @@ export const fetchWithMinimumWaitTime = async <T>(
 
 export let currentAbortController = new AbortController();
 
-
 export const currentSignal = () => currentAbortController.signal;
 export const nextAbortControllerSignal = () => {
     currentAbortController.abort();
@@ -175,4 +174,3 @@ export const nextAbortControllerSignal = () => {
 
     return currentAbortController.signal;
 };
-

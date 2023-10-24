@@ -16,7 +16,7 @@ export const setFlagClass = (flagClassParam: string) => {
 
 type regionAndCountry =
     | {
-            countryCode?: string;
+          countryCode?: string;
           countryName?: string;
           regionName?: string;
       }
@@ -70,7 +70,10 @@ const _addFlagUser = async (
 };
 
 export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserOptions) => {
-    const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), options?.signal ?? currentSignal());
+    const playersOsuWorld = await osuWorldUsers(
+        flagItems.map((item) => item.id),
+        options?.signal ?? currentSignal(),
+    );
 
     if (playersOsuWorld.error) {
         const textError = fetchErrorToText(playersOsuWorld);
@@ -84,20 +87,18 @@ export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserO
     }
 
     const promises = [];
-    
-    for(const flagItem of flagItems){
+
+    for (const flagItem of flagItems) {
         const item = flagItem.item;
-        const playerData = playersData.find(player => player["id"].toString() === flagItem.id );
-        if(!playerData) continue;
+        const playerData = playersData.find((player) => player["id"].toString() === flagItem.id);
+        if (!playerData) continue;
         const countryCode = playerData["country_id"];
         const regionCode = playerData["region_id"];
-        const promise =  addRegionalFlag(item, countryCode, regionCode, options);
+        const promise = addRegionalFlag(item, countryCode, regionCode, options);
         promises.push(promise);
     }
     await Promise.all(promises);
-
-
-}
+};
 
 export const removeRegionalFlag = (item: HTMLElement) => {
     if (!item) return;
@@ -121,8 +122,6 @@ export const addRegionalFlag = async (
         wikiPage,
     } = options ?? {};
 
-
-
     const countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
     if (!countryRegionsData) return;
@@ -130,8 +129,8 @@ export const addRegionalFlag = async (
     const regionData = countryRegionsData["regions"][regionCode];
     if (!regionData) return;
 
-    if(wikiPage) {
-        return addWikiPageFlag(item, countryCode, regionCode,regionData, options);
+    if (wikiPage) {
+        return addWikiPageFlag(item, countryCode, regionCode, regionData, options);
     }
 
     let flagElements = item.querySelectorAll(`.${flagClass}`);
@@ -225,16 +224,14 @@ const addWikiPageFlag = async (
     regionData: IregionData,
     options: osuHtmlUserOptions = {},
 ) => {
-
     const prevElement = item.previousElementSibling;
-    if(prevElement && prevElement.classList.contains("cavitedev-flag")) return;
+    if (prevElement && prevElement.classList.contains("cavitedev-flag")) return;
 
     const flagElement = document.createElement("span");
     flagElement.classList.add(flagClass!);
     flagElement.classList.add("flag-country--flat");
     flagElement.classList.add("flag-country--wiki");
     flagElement.classList.add("cavitedev-flag");
-
 
     let flag = regionData["flag"];
     if (!flag || flag === "") {
@@ -247,8 +244,7 @@ const addWikiPageFlag = async (
     parent.insertBefore(flagElement, item);
 
     return undefined;
-
-}
+};
 
 const updateCountryNameFlag = async (item: HTMLElement) => {
     const flagElement = item.querySelector(`.${flagClass}`);

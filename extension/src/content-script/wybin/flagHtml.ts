@@ -3,13 +3,11 @@ import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
 import { osuWorldUser, osuWorldUsers } from "@src/utils/osuWorld";
 
-
 export type TWybinHtmlUserOptions = {
     inlineInsteadOfFlex?: boolean;
 } & fetchOptions;
 
-
-export const addFlagUser = async (    item: HTMLElement, userId: string, options?: TWybinHtmlUserOptions) => {
+export const addFlagUser = async (item: HTMLElement, userId: string, options?: TWybinHtmlUserOptions) => {
     if (!item) return;
     const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
     if (playerOsuWorld.error) {
@@ -25,15 +23,17 @@ export const addFlagUser = async (    item: HTMLElement, userId: string, options
     const countryCode = playerData["country_id"];
     const regionCode = playerData["region_id"];
     return addRegionalFlag(item, countryCode, regionCode, options);
-}
-
+};
 
 export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUserOptions) => {
-    if(flagItems.length === 0) return;
+    if (flagItems.length === 0) return;
 
     const signal = options?.signal ?? nextAbortControllerSignal();
-    
-    const playersOsuWorld = await osuWorldUsers(flagItems.map(item => item.id), signal);
+
+    const playersOsuWorld = await osuWorldUsers(
+        flagItems.map((item) => item.id),
+        signal,
+    );
 
     if (playersOsuWorld.error) {
         const textError = fetchErrorToText(playersOsuWorld);
@@ -48,24 +48,28 @@ export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUs
 
     const promises = [];
 
-    for(const flagItem of flagItems){
+    for (const flagItem of flagItems) {
         const item = flagItem.item;
-        const playerData = playersData.find(player => player["id"].toString() === flagItem.id );
-        if(!playerData) continue;
+        const playerData = playersData.find((player) => player["id"].toString() === flagItem.id);
+        if (!playerData) continue;
         const countryCode = playerData["country_id"];
         const regionCode = playerData["region_id"];
-        const promise =  addRegionalFlag(item, countryCode, regionCode, options);
+        const promise = addRegionalFlag(item, countryCode, regionCode, options);
         promises.push(promise);
     }
     await Promise.all(promises);
-}
+};
 
 const flagClass = "fi";
 
-const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:string, options?: TWybinHtmlUserOptions) => {
-
+const addRegionalFlag = async (
+    item: HTMLElement,
+    countryCode: string,
+    regionCode: string,
+    options?: TWybinHtmlUserOptions,
+) => {
     if (!item) return;
-    const {inlineInsteadOfFlex: flexInParent} = options ?? {};
+    const { inlineInsteadOfFlex: flexInParent } = options ?? {};
 
     const countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
@@ -74,7 +78,7 @@ const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:
     const regionData = countryRegionsData["regions"][regionCode];
     if (!regionData) return;
 
-    let flagElements = item.querySelectorAll(`.${flagClass}`);
+    const flagElements = item.querySelectorAll(`.${flagClass}`);
 
     const flagElement = flagElements[0];
     const flagElementClone = flagElement.cloneNode(true) as HTMLElement;
@@ -84,12 +88,12 @@ const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:
         flag = noFlag;
     }
 
-    flagElementClone.setAttribute("style", (flagStyleWithMargin).replace("$flag", flag));
+    flagElementClone.setAttribute("style", flagStyleWithMargin.replace("$flag", flag));
 
-    if(flagElements.length > 1){
+    if (flagElements.length > 1) {
         // Update
         flagElements[1].replaceWith(flagElementClone);
-    }else{
+    } else {
         // Add
         const parent = flagElement.parentElement!;
 
@@ -97,16 +101,13 @@ const addRegionalFlag = async (item:HTMLElement, countryCode:string, regionCode:
         const flagsDiv = document.createElement("div");
         flagsDiv.appendChild(flagElement);
         flagsDiv.appendChild(flagElementClone);
-      
-        if(flexInParent){
-            flagsDiv.setAttribute("style", "display: inline")
-        }else{
-            flagsDiv.setAttribute("style", "display: flex")
+
+        if (flexInParent) {
+            flagsDiv.setAttribute("style", "display: inline");
+        } else {
+            flagsDiv.setAttribute("style", "display: flex");
         }
-    
+
         parent.insertBefore(flagsDiv, parent.firstChild);
-    
     }
-
-
-}
+};
