@@ -3,6 +3,7 @@ import esbuild from "esbuild";
 import fs from "fs-extra";
 import { copy } from "esbuild-plugin-copy";
 import json_plugin from "./build_plugins/json_plugin.mjs";
+import onEndConsole from "./build_plugins/onEndConsole.mjs";
 
 const outdir = "build";
 
@@ -45,6 +46,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
                 },
             }),
             json_plugin(),
+            onEndConsole(),
             copy({
                 assets: {
                     from: [manifestPath],
@@ -54,7 +56,7 @@ async function runEsbuild({ buildPath, manifestPath, watch = false }) {
         ],
     };
 
-    return watch ? (await esbuild.context(esbuildOptions)).watch() : esbuild.build(esbuildOptions);
+    return watch ? esbuild.context(esbuildOptions) : esbuild.build(esbuildOptions);
 }
 
 async function zipFolder(dir) {
