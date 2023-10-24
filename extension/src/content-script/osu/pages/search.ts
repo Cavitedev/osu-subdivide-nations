@@ -5,13 +5,11 @@ import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
 // https://osu.ppy.sh/home/search?mode=user&query=Deif&page=1
 const initPageObserver = new MutationObserver(() => {
-    updateFlagsSearch();
+    addFlagsSearch();
     initPageObserver.disconnect();
 });
 
-
-
-export const updateFlagsSearch = async () => {
+export const addFlagsSearch = async () => {
     const url = location.href;
     if (!url.includes("osu.ppy.sh/home/search")) return;
 
@@ -25,15 +23,12 @@ export const updateFlagsSearch = async () => {
     const signal = nextAbortControllerSignal();
 
     const allcardsElement = document.querySelector(".search-result .user-cards");
-    if (allcardsElement) {
-
-    } else {
+    if (!allcardsElement) {
         initPageObserver.observe(document.querySelector(".js-react--user-cards")!, {
             childList: true,
         });
         return;
     }
-
 
     const friendsList = allcardsElement.querySelectorAll(".user-card");
 
@@ -44,5 +39,4 @@ export const updateFlagsSearch = async () => {
         flagItems.push({ id: playerId, item: item as HTMLElement });
     }
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });
-
 };

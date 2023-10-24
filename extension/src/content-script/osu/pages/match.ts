@@ -5,7 +5,7 @@ import { TFlagItems } from "@src/utils/html";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 
-export const updateFlagsMatches = async () => {
+export const addFlagsMatches = async () => {
     if (!location.href.includes("osu.ppy.sh/community/matches/")) return;
     const signal = nextAbortControllerSignal();
 
@@ -25,11 +25,8 @@ export const updateFlagsMatches = async () => {
 
 // For late initialization
 const matchesObserver = new MutationObserver(() => {
-    updateFlagsMatches();
+    addFlagsMatches();
 });
-
-
-
 
 // Check for playing games
 const watchPlayingGame = (parent: HTMLElement) => {
@@ -59,14 +56,11 @@ const gameBeingPlayedMutationObserver = new MutationObserver(async (mutations) =
     }
 });
 
-
-
-
 const checkNewGames = (parent: HTMLElement | undefined) => {
     const parentContent = (parent ?? document).querySelector(".mp-history-content") as HTMLElement;
-    if(!parentContent) return;
-    newMatchesObserver.observe(parentContent, {childList: true});
-}
+    if (!parentContent) return;
+    newMatchesObserver.observe(parentContent, { childList: true });
+};
 
 //Observer for new matches getting played
 const newMatchesObserver = new MutationObserver((mutations) => {
@@ -85,7 +79,7 @@ const newMatchesObserver = new MutationObserver((mutations) => {
 
 const updateFlagsInMatchPlay = async (scores: ParentNode, signal: AbortSignal) => {
     const listScores = scores.querySelectorAll(".mp-history-player-score__main");
-    if(!listScores || listScores.length === 0) return;
+    if (!listScores || listScores.length === 0) return;
 
     const flagItems: TFlagItems = [];
     for (const item of listScores) {
@@ -103,4 +97,4 @@ const updateFlagInMatchScore = async (item: HTMLElement, signal?: AbortSignal) =
 const _idFromScoreItem = (item: HTMLElement) => {
     const playerNameElement = item.querySelector(".mp-history-player-score__username") as HTMLElement;
     return idFromOsuProfileUrl(playerNameElement.getAttribute("href")!);
-}
+};

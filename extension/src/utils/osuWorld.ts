@@ -58,7 +58,6 @@ export const osuWorldUser = async (
     return fetchWithMinimumWaitTime<TosuWorldIdData>(dataPromise, 200);
 };
 
-
 export const osuWorldUsers = async (
     ids: string[],
     signal: AbortSignal | undefined,
@@ -80,110 +79,104 @@ export const osuWorldUsers = async (
         urls.push(url);
         const promise = loadFromCache(url).then((cacheResponse) => {
             const expireTime = cacheResponse?.[expireHeader];
-            if(!expireTime || expireTime < Date.now()){
-                return (fetchWithoutCache(url, { signal: signal }) as Promise<
-                IfetchResponse<TosuWorldIdsData>>);
-            };
+            if (!expireTime || expireTime < Date.now()) {
+                return fetchWithoutCache(url, { signal: signal }) as Promise<IfetchResponse<TosuWorldIdsData>>;
+            }
             return loadUserIdsFromCache(slicedIds, url);
-
         });
-        promises.push(promise)
+        promises.push(promise);
+    }
 
-
-      }
-
-      const response = await Promise.all(promises).then((responses) => {
+    const response = await Promise.all(promises).then((responses) => {
         const data = responses.map((response) => {
             const responseData = response.data;
-            if(!responseData) return [];
-            if(isFetchError(responseData)) return [];
+            if (!responseData) return [];
+            if (isFetchError(responseData)) return [];
             return responseData;
         });
         return {
-          data: data.flat(),
+            data: data.flat(),
         };
-      });
+    });
 
-  
-      const data = response.data;
-      cacheMultipleUsersData(data, ids, urls);
+    const data = response.data;
+    cacheMultipleUsersData(data, ids, urls);
 
-    if(signal?.aborted) return {};
+    if (signal?.aborted) return {};
 
     return response;
 };
 
-const loadUserIdsFromCache = async (ids: string[], url: string): Promise<
-IfetchResponse<TosuWorldIdsData>> => {
+const loadUserIdsFromCache = async (ids: string[], url: string): Promise<IfetchResponse<TosuWorldIdsData>> => {
     const urls = [];
-    for(const id of ids){
+    for (const id of ids) {
         const url = osuWorldApiBase + "users/" + id;
         urls.push(url);
-
     }
-    const responses = await loadMultipleUrlsFromCache(urls) as IfetchResponse<TosuWorldIdData>[] | null;
-    if(!responses){
+    const responses = (await loadMultipleUrlsFromCache(urls)) as IfetchResponse<TosuWorldIdData>[] | null;
+    if (!responses) {
         return {
             error: {
                 code: noData,
-                url: url
-            } 
-        }
+                url: url,
+            },
+        };
     }
 
-    const data = responses.filter(response => {
-        const responseData = response.data;
-        if(!responseData) return false;
-        if((responseData as IFetchError).error !== undefined) return false;
-        return true;
-    }).map((response) => {
-        return response.data as IosuWorldIdSuccess});
+    const data = responses
+        .filter((response) => {
+            const responseData = response.data;
+            if (!responseData) return false;
+            if ((responseData as IFetchError).error !== undefined) return false;
+            return true;
+        })
+        .map((response) => {
+            return response.data as IosuWorldIdSuccess;
+        });
 
     return {
         data: data,
-        cache: true
-    }
+        cache: true,
+    };
 };
 
 const isFetchError = (data: TosuWorldIdsData | undefined): data is IFetchError => {
     return (data as IFetchError).error !== undefined;
-  }
+};
 
 const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: string[], urls: string[]) => {
-    if(!data) return;
-    if(isFetchError(data)) return;
-    
-    for(const playerData of data){
+    if (!data) return;
+    if (isFetchError(data)) return;
+
+    for (const playerData of data) {
         const url = osuWorldApiBase + "users/" + playerData.id;
         const cacheResponse = {
             data: playerData,
             [expireHeader]: genExpireDate(userDataExpireTime),
-        }
+        };
         saveInCache(url, cacheResponse);
     }
-    const dataIdsSet = new Set(data.map(playerData => playerData.id.toString()));
+    const dataIdsSet = new Set(data.map((playerData) => playerData.id.toString()));
 
-
-    for(const id of ids){
-        if(dataIdsSet.has(id)) continue;
+    for (const id of ids) {
+        if (dataIdsSet.has(id)) continue;
         const url = osuWorldApiBase + "users/" + id;
         saveInCache(url, {
             data: {
-                error: unknownUserError
-            } 
+                error: unknownUserError,
+            },
         });
     }
 
-    for (const url of urls){
+    for (const url of urls) {
         saveInCache(url, {
             [expireHeader]: genExpireDate(userDataExpireTime),
         });
-      }
-}
+    }
+};
 
 // Modes: osu, taiko, fruits, mania
-const regionRankingUrl =
-osuWorldApiBase + "{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
+const regionRankingUrl = osuWorldApiBase + "{{country-code}}/{{country-region-code}}/top/{{mode}}?page={{page}}";
 
 const regionRankingExpire = 7200000; //2 hours
 

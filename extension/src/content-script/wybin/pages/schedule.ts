@@ -4,55 +4,53 @@ import { addFlagUsers } from "../flagHtml";
 import { getContent } from "../content";
 
 const loadingObserver = new MutationObserver(() => {
-    updateFlagsSchedule();
+    addFlagsSchedule();
     loadingObserver.disconnect();
-})
+});
 
 const onLoadedMutation = new MutationObserver(() => {
-    updateFlagsSchedule();
+    addFlagsSchedule();
 });
 
 const onContentChangeObserver = new MutationObserver(() => {
-    updateFlagsSchedule();
+    addFlagsSchedule();
 });
 
-export const updateFlagsSchedule = async () => {
+export const addFlagsSchedule = async () => {
     const url = location.href;
     if (!url.includes("/schedule") && !url.includes("/staff-schedule")) return;
 
-    const navigationElement = document.querySelector("body > app-root > app-tournament-view > div.navigation-bar > div.navigation")!;
-    onLoadedMutation.observe(navigationElement, {childList: true});
+    const navigationElement = document.querySelector(
+        "body > app-root > app-tournament-view > div.navigation-bar > div.navigation",
+    )!;
+    onLoadedMutation.observe(navigationElement, { childList: true });
 
     const activeStage = getContent()?.querySelector(".active-stage") ?? null;
 
-    if(!activeStage) return;
+    if (!activeStage) return;
     const loading = activeStage.querySelector(".loading") ?? null;
-    if(loading){
-        loadingObserver.observe(loading.parentElement!, {childList: true, subtree:true });
+    if (loading) {
+        loadingObserver.observe(loading.parentElement!, { childList: true, subtree: true });
         return;
     }
 
-    onContentChangeObserver.observe(activeStage, {attributes: true});
-    
+    onContentChangeObserver.observe(activeStage, { attributes: true });
 
     if (!url.includes("schedule#qualifiers")) return;
 
-    const flagElements = activeStage.querySelectorAll(".lobbies .fi") ?? []
+    const flagElements = activeStage.querySelectorAll(".lobbies .fi") ?? [];
 
-    const flagItems: TFlagItems = [];    
-    
-    for(const flagElement of flagElements){
+    const flagItems: TFlagItems = [];
+
+    for (const flagElement of flagElements) {
         const playerElement = flagElement.parentElement;
         const href = playerElement?.getAttribute("href");
-        console.log(href);
-        if(!href) continue;
+        if (!href) continue;
         const playerId = idFromOsuProfileUrl(href);
         flagItems.push({ id: playerId, item: playerElement as HTMLElement });
     }
 
-
     await addFlagUsers(flagItems, {
         inlineInsteadOfFlex: true,
     });
-
-}
+};

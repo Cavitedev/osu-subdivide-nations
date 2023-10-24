@@ -1,8 +1,9 @@
-import { updateFlagsParticipants } from "./pages/participants";
-import { updateFlagsPlayers } from "./pages/players";
-import { updateFlagsSchedule } from "./pages/schedule";
-import { updateFlagsTeams } from "./pages/teams";
-
+import { addFlagsHome } from "./pages/home";
+import { addFlagsParticipants } from "./pages/participants";
+import { addFlagsPlayers } from "./pages/players";
+import { addFlagsSchedule } from "./pages/schedule";
+import { addFlagsTeams } from "./pages/teams";
+import { addFlagsTournamentManagement } from "./pages/tournamentManagement";
 
 const contentObserver = new MutationObserver(() => {
     exec();
@@ -17,26 +18,28 @@ export const getContent = () => content;
 let content: HTMLElement | undefined = undefined;
 
 export const exec = async () => {
+    titleObserver.observe(document.querySelector("head > title")!, { childList: true });
 
-    titleObserver.observe(document.querySelector("head > title")!, {childList: true});
-    
-    content = document.querySelector("body > app-root > app-tournament-view > div.content-spacing > app-tournament-view-details") as HTMLElement;
-    if(!content) return;
+    addFlagsTournamentManagement();
+
+    content = document.querySelector(
+        "body > app-root > app-tournament-view > div.content-spacing > app-tournament-view-details",
+    ) as HTMLElement;
+    if (!content) return;
     const contentChild = content.children[0] as HTMLElement;
 
-    contentObserver.observe(contentChild ?? content, {childList: true});
-    
+    contentObserver.observe(contentChild ?? content, { childList: true });
+
     //No content
-    if(content.children.length === 0) {
+    if (content.children.length === 0) {
         return;
-    };
+    }
 
-
-    updateFlagsPlayers();
-    updateFlagsTeams();
-    updateFlagsParticipants();  
-    updateFlagsSchedule();
-
+    addFlagsHome();
+    addFlagsPlayers();
+    addFlagsTeams();
+    addFlagsParticipants();
+    addFlagsSchedule();
 };
 
 (async () => {

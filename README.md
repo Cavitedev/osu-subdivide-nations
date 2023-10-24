@@ -28,8 +28,9 @@ These are some examples of websites the extension is applied
 - [Rankings](https://osu.ppy.sh/rankings/osu/performance?country=ES)
 - [Profile](https://osu.ppy.sh/users/4871211/fruits)
 - [Friends](https://osu.ppy.sh/home/friends)
-- [Forum](https://osu.ppy.sh/community/forums/topics/1686524?n=3)
+- [Forum](https://osu.ppy.sh/community/forums/topics/1834351?n=19)
 - [Beatmapset](https://osu.ppy.sh/beatmapsets/1508588#fruits/3734628)
+- [Wiki](https://osu.ppy.sh/wiki/en/Tournaments/OWC/2023)
 
 ## Inner Projects
 
