@@ -50,7 +50,9 @@ export const updateFlagsProfile = async () => {
     const { countryCode, countryName, regionName } = flagResult;
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
     
-    let countryText = countryNameElement.textContent?.split(" |")[0]?.split(" /")[0];
+
+
+    let countryText = flagElement.querySelector("span.flag-country")?.getAttribute("original-title");
     const originalCountryCode = osuNameToCode(countryText!);
 
     let replaceText: string;

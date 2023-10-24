@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.2.9
+
+- Fix repeated country name in other languages
+
 ## Version 3.2.8
 
 - Bavaria fix was not accurate
