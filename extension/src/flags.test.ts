@@ -14,7 +14,7 @@ function readJsonFile(filePath: string) {
     });
     describe("Test flag links", () => {
 
-        const flagLinks = Object.values(flagsJson).flatMap((flag) => Object.values(flag.regions).flatMap((region) => region.flag));
+        const flagLinks = Object.values(flagsJson).flatMap((country) => Object.values(country.regions).flatMap((region) => region.flag));
         test("Link does not commons wikimedia", () => {
             flagLinks.forEach((link) => {
                 expect(link).not.toContain("commons.wikimedia.org");
@@ -26,6 +26,24 @@ function readJsonFile(filePath: string) {
                 expect(link).toMatch(regex);
             })
         })
+    });
+
+    describe("Test native names", () => {
+
+        const nativeNames = Object.values(flagsJson).flatMap((country) => Object.values(country.regions).flatMap((region) => region.nativeName));
+
+        test("Native names cannot contain /", () => {
+            nativeNames.forEach((name) => {
+                expect(name).not.toContain("/");
+            })
+        });
+
+        test("Native names cannot contain |", () => {
+            nativeNames.forEach((name) => {
+                expect(name).not.toContain("|");
+            })
+        });
+
     });
 
   });
