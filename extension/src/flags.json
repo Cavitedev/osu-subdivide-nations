@@ -71,7 +71,7 @@
             "AR-J": {
                 "name": "San Juan Province",
                 "nativeName": "San Juan",
-                "flag": "https://es.wikipedia.org/wiki/Archivo:Flag_of_the_San_Juan_Province.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_the_San_Juan_Province.svg"
             },
             "AR-K": {
                 "name": "Catamarca Province",
@@ -101,7 +101,7 @@
             "AR-S": {
                 "name": "Santa Fe Province",
                 "nativeName": "Santa Fe",
-                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Santa_Fe.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Bandera_de_la_Provincia_de_Santa_Fe.svg"
             },
             "AR-T": {
                 "name": "Tucumán Province",
@@ -111,12 +111,12 @@
             "AR-W": {
                 "name": "Corrientes Province",
                 "nativeName": "Corrientes",
-                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Corrientes.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bandera_de_la_Provincia_de_Corrientes.svg/128px-Bandera_de_la_Provincia_de_Corrientes.svg.png"
             },
             "AR-X": {
                 "name": "Córdoba Province",
                 "nativeName": "Córdoba",
-                "flag": "https://es.wikipedia.org/wiki/Archivo:Bandera_de_la_Provincia_de_Córdoba_2014.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Bandera_de_la_Provincia_de_Córdoba_2014.svg"
             },
             "AR-Y": {
                 "name": "Jujuy Province",

@@ -3,6 +3,7 @@
 ## Version 3.2.9
 
 - Fix repeated country name in other languages
+- Fix Argentina flags
 
 ## Version 3.2.8
 
