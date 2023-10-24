@@ -11,6 +11,7 @@ import { updateLanguageToOsuLanguage } from "./osuLanguage";
 import { updateFlagsSearch } from "./pages/search";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
+import { updateFlagsWiki } from "./pages/wiki";
 
 const flagClass = "flag-country";
 initConfigure(flagClass);
@@ -185,6 +186,7 @@ export const exec = async () => {
     updateFlagsMatches();
     updateFlagsTopics();
     updateFlagsBeatmapsets();
+    updateFlagsWiki();
     // The flag appears in a card same as overlays
     refreshOverlays();
 };

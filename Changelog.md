@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.3.0
+
+- Flags in osu wiki page
+
 ## Version 3.2.9
 
 - Fix repeated country name in other languages

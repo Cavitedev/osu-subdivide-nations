@@ -6,6 +6,7 @@ import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 import { TFlagItems } from "@src/utils/html";
 import { noFlag, flagStyleWithMargin, flagStyle } from "@src/utils/html";
+import { IregionData } from "@src/utils/language";
 
 export let flagClass: string | null = null;
 
@@ -26,6 +27,7 @@ type osuHtmlUserOptions = {
     addMargin?: boolean;
     addSuperParentClone?: boolean;
     insertInsideOriginalElement?: boolean;
+    wikiPage?: boolean;
     signal?: AbortSignal;
 };
 
@@ -116,7 +118,10 @@ export const addRegionalFlag = async (
         addMargin,
         addSuperParentClone,
         insertInsideOriginalElement: insertInsideThePreviousFlag,
+        wikiPage,
     } = options ?? {};
+
+
 
     const countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
@@ -124,6 +129,10 @@ export const addRegionalFlag = async (
 
     const regionData = countryRegionsData["regions"][regionCode];
     if (!regionData) return;
+
+    if(wikiPage) {
+        return addWikiPageFlag(item, countryCode, regionCode,regionData, options);
+    }
 
     let flagElements = item.querySelectorAll(`.${flagClass}`);
 
@@ -208,6 +217,38 @@ export const addRegionalFlag = async (
     const countryName = await updateCountryNameFlag(item);
     return { countryCode, countryName, regionName };
 };
+
+const addWikiPageFlag = async (
+    item: HTMLElement,
+    countryCode: string,
+    regionCode: string,
+    regionData: IregionData,
+    options: osuHtmlUserOptions = {},
+) => {
+
+    const prevElement = item.previousElementSibling;
+    if(prevElement && prevElement.classList.contains("cavitedev-flag")) return;
+
+    const flagElement = document.createElement("span");
+    flagElement.classList.add(flagClass!);
+    flagElement.classList.add("flag-country--flat");
+    flagElement.classList.add("flag-country--wiki");
+    flagElement.classList.add("cavitedev-flag");
+
+
+    let flag = regionData["flag"];
+    if (!flag || flag === "") {
+        flag = noFlag;
+    }
+
+    flagElement.setAttribute("style", flagStyle.replace("$flag", flag) + ";margin-right: 4px;");
+
+    const parent = item.parentElement!;
+    parent.insertBefore(flagElement, item);
+
+    return undefined;
+
+}
 
 const updateCountryNameFlag = async (item: HTMLElement) => {
     const flagElement = item.querySelector(`.${flagClass}`);
