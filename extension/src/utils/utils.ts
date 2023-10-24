@@ -55,6 +55,11 @@ export function isValidDate(dateString: any) {
     return !isNaN(date.getTime());
 }
 
-export const idFromOsuProfileUrl = (url: string) => {
-    return url.split("/")[4];
+export const idFromOsuProfileUrl = (url: string | null | undefined): string | null => {
+    if(!url) return null;
+    if(!url.includes("//osu.ppy.sh/") && !url.includes("//old.ppy.sh/")) return null;
+    if(!url.includes("ppy.sh/users/") && !url.includes("ppy.sh/u/")) return null;
+    const id = url.split("/")?.[4];
+    if(!isNumber(id)) return null;
+    return id;
 };

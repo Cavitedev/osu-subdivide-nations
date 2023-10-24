@@ -32,6 +32,7 @@ export const updateTeamFlagsPlayersList = async (players: NodeListOf<Element> | 
     for (const player of players) {
         const usernameElement = player.querySelector(".username>a") as HTMLElement;
         const playerId = idFromOsuProfileUrl(usernameElement.getAttribute("href")!);
+        if(playerId === null) continue;
         flagItems.push({ id: playerId, item: player as HTMLElement });
     }
 
