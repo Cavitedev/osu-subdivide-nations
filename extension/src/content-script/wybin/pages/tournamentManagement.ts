@@ -62,7 +62,7 @@ const addFlagsStaff = async (parent: HTMLElement) => {
 
 const addFlagsParticipants = async (parent: HTMLElement) => {
     const url = location.href;
-    if (!url.includes("#participants")) return;
+    if (!url.includes("#participants") && !url.includes("#draft")) return;
 
     const allPlayers = parent.querySelector(".all-players");
     if(!allPlayers) return;
@@ -87,3 +87,5 @@ const addFlagsParticipants = async (parent: HTMLElement) => {
 
     await addFlagUsers(flagItems);
 }
+
+

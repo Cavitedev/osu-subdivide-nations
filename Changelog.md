@@ -6,7 +6,7 @@
 - Flags in wybin home team
 - Flags in wybin home player
 - Flags in wybin tournament edit / staff
-- Flags in wybin tournament edit / participants
+- Flags in wybin tournament edit / participants | draft
 
 
 ## Version 3.2.9
