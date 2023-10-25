@@ -7,9 +7,12 @@ test('Osu! user test', async ({ page }) => {
 });
 
 
-test('Osu! user test Spanish', async ({ page }) => {
+test('Osu! user test native language', async ({ page }) => {
   await selectLanguage(page, 'NAT');
   await page.goto('https://osu.ppy.sh/users/4871211');
   page.waitForSelector('.profile-info__info .profile-info__flag a .flag-country');
   await expect(page.locator('.profile-info__info .profile-info__flag-text')).toHaveText('Españita / Castilla-La Mancha');
+  await page.click(".game-mode-link");
+  await expect(page.locator('.profile-info__info .profile-info__flag-text')).toHaveText('Españita / Castilla-La Mancha');
 });
+
