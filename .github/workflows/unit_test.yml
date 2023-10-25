@@ -16,12 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4.0.0
+        uses: actions/checkout@v4
       - name: Setup Node.js environment
-        uses: actions/setup-node@v3.8.1
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
       - name: Install dependencies
         working-directory: ./extension
-        run: npm install
+        run: npm ci
       - name: Test
         working-directory: ./extension
         run: npm run test:unit
