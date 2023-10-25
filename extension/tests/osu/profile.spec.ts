@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures';
+import { test, expect } from '../fixtures';
 
 test('Osu! user test', async ({ page }) => {
   await page.goto('https://osu.ppy.sh/users/4871211');
