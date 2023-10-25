@@ -1,4 +1,4 @@
-name: Build extensions and upload them
+name: Unit tests
 
 on:
   push:
