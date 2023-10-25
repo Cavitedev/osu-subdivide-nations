@@ -2,7 +2,6 @@
     "appDesc": {
         "message": "Adaugă steaguri regionale pe site-ul osu!.\nȘi actualizați scorul global osu! pe profile."
     },
-
     "system_default": {
         "message": "Default al Sistemului"
     },
@@ -21,7 +20,6 @@
     "score_ranking": {
         "message": "Clasament al Scorului"
     },
-
     "region": {
         "message": "Regiune"
     },
