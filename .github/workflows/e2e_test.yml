@@ -16,16 +16,12 @@ jobs:
       - name: Install dependencies
         working-directory: ./extension
         run: npm ci
-      - name: Install Playwright Browsers
-        working-directory: ./extension
-        run: npx playwright install --with-deps
       - name: Build extension
         working-directory: ./extension
         run: npm run build
-      - name: Set up Xvfb
-        run: |
-          sudo apt-get install xvfb
-          xvfb-run -a -s "-screen 0 1280x1024x24" google-chrome
+      - name: Install Playwright Browsers
+        working-directory: ./extension
+        run: npx playwright install --with-deps
       - name: Run Playwright tests
         working-directory: ./extension
         run: npm run test:e2e
