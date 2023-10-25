@@ -11,6 +11,7 @@
     "watch:chromium": "node build.mjs --chromium --watch",
     "watch:firefox": "node build.mjs --firefox --watch",
     "test:unit": "jest",
+    "test:e2e": "playwright test --project chromium",
     "lint": "eslint --fix src"
   },
   "repository": {
@@ -30,8 +31,10 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@playwright/test": "^1.39.0",
     "@types/chrome": "^0.0.248",
     "@types/fs-extra": "^11.0.3",
+    "@types/node": "^20.8.9",
     "@types/webextension-polyfill": "^0.10.5",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "archiver": "^6.0.1",
