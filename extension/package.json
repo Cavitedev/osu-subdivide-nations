@@ -12,6 +12,7 @@
     "watch:firefox": "node build.mjs --firefox --watch",
     "test:unit": "jest",
     "test:e2e": "playwright test --project chromium",
+    "test:e2e:ui": "playwright test --project chromium --ui",
     "lint": "eslint --fix src"
   },
   "repository": {
