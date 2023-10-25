@@ -1,5 +1,7 @@
-import { test as base, chromium, type BrowserContext } from '@playwright/test';
+import { test as base, chromium, type BrowserContext, Page } from '@playwright/test';
 import path from 'path';
+
+
 
 export const test = base.extend<{
   context: BrowserContext;
@@ -28,3 +30,10 @@ export const test = base.extend<{
   },
 });
 export const expect = test.expect;
+
+export const selectLanguage = async (page: Page, option:string) => {
+
+    await page.goto('chrome-extension://fmadiabbijdijjcidogjenmjeekgmdko/ui/popup/popup.html');
+    await page.selectOption('select#region-languages-select', { value: option });
+
+}
