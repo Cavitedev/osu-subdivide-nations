@@ -31,9 +31,13 @@ export const test = base.extend<{
 });
 export const expect = test.expect;
 
+export const goPopUp = async (page: Page) => {
+    await page.goto('chrome-extension://fmadiabbijdijjcidogjenmjeekgmdko/ui/popup/popup.html');
+}
+
 export const selectLanguage = async (page: Page, option:string) => {
 
-    await page.goto('chrome-extension://fmadiabbijdijjcidogjenmjeekgmdko/ui/popup/popup.html');
+    await goPopUp(page);
     await page.selectOption('select#region-languages-select', { value: option });
 
 }
