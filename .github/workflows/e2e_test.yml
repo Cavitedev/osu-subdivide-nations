@@ -22,6 +22,10 @@ jobs:
       - name: Build extension
         working-directory: ./extension
         run: npm run build
+      - name: Set up Xvfb
+        run: |
+          sudo apt-get install xvfb
+          xvfb-run -a -s "-screen 0 1280x1024x24" google-chrome
       - name: Run Playwright tests
         working-directory: ./extension
         run: npm run test:e2e
