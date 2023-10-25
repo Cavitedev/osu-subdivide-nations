@@ -481,7 +481,7 @@
             },
             "CA-NB": {
                 "name": "New Brunswick",
-                "nativeName": "New Brunswick / Nouveau-Brunswick",
+                "nativeName": "Nouveau-Brunswick",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_New_Brunswick.svg"
             },
             "CA-NL": {
@@ -521,7 +521,7 @@
             },
             "CA-NU": {
                 "name": "Nunavut",
-                "nativeName": "ᓄᓇᕗᑦ Nunavut",
+                "nativeName": "ᓄᓇᕗᑦ",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/90/Flag_of_Nunavut.svg"
             },
             "CA-YT": {
@@ -1729,7 +1729,7 @@
         "regions": {
             "IT-23": {
                 "name": "Aosta Valley",
-                "nativeName": "Valle d'Aosta / Vallée d'Aoste",
+                "nativeName": "Valle d'Aosta",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/90/Flag_of_Valle_d'Aosta.svg"
             },
             "IT-36": {
@@ -1739,7 +1739,7 @@
             },
             "IT-88": {
                 "name": "Sardinia",
-                "nativeName": "Sardigna/Sardegna",
+                "nativeName": "Sardegna",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Sardinia,_Italy.svg"
             },
             "IT-82": {
@@ -1749,7 +1749,7 @@
             },
             "IT-32": {
                 "name": "Trentino-Alto Adige/Südtirol",
-                "nativeName": "Trentino-Alto Adige/Südtirol",
+                "nativeName": "Trentino-Alto Adige",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Flag_of_Trentino-South_Tyrol.svg"
             },
             "IT-65": {
@@ -3751,7 +3751,7 @@
             },
             "ES-AS": {
                 "name": "Asturias",
-                "nativeName": "Asturias / Asturies",
+                "nativeName": "Asturies",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Asturias.svg"
             },
             "ES-PV": {
@@ -3978,12 +3978,12 @@
             },
             "CH-BE": {
                 "name": "Bern",
-                "nativeName": "Bern/Berne",
+                "nativeName": "Bern",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Canton_of_Bern.svg"
             },
             "CH-FR": {
                 "name": "Fribourg",
-                "nativeName": "Fribourg/Freiburg",
+                "nativeName": "FFreiburg",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_Canton_of_Fribourg.svg"
             },
             "CH-GE": {
@@ -3998,7 +3998,7 @@
             },
             "CH-GR": {
                 "name": "Grisons",
-                "nativeName": "Graubünden/Grischun/Grigioni",
+                "nativeName": "Graubünden",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Canton_of_Graubünden.svg"
             },
             "CH-JU": {
@@ -4063,7 +4063,7 @@
             },
             "CH-VS": {
                 "name": "Valais",
-                "nativeName": "Valais/Wallis",
+                "nativeName": "Valais",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Canton_of_Valais.svg"
             },
             "CH-VD": {
@@ -4821,7 +4821,7 @@
             },
             "GB-WML": {
                 "name": "West Midlands",
-                "nativeName": "",
+                "nativeName": "West Midlands",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_the_West_Midlands_County.svg"
             },
             "GB-WSX": {

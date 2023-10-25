@@ -1,12 +1,16 @@
-name: Build extensions and upload them
+name: Unit tests
 
 on:
   push:
     branches:
+      - main
+      - dev
+  pull_request:
+    branches:
       - release
 
 jobs:
-  publish_extension:
+  test_unit:
     permissions: write-all
     environment: production
     runs-on: ubuntu-latest
@@ -20,15 +24,7 @@ jobs:
       - name: Install dependencies
         working-directory: ./extension
         run: npm ci
-      - name: Compile
+      - name: Test
         working-directory: ./extension
-        run: npm run build
-      - name: Browser Platform Publish
-        uses: PlasmoHQ/bpp@v3.5.0
-        with:
-          keys: ${{ secrets.BPP_KEYS }}
-          chrome-file: "extension/build/chromium.zip"
-          edge-file: "extension/build/chromium.zip"
-          firefox-file: "extension/build/firefox.zip"
-          verbose: true
-      
+        run: npm run test:unit
+

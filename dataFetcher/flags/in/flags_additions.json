@@ -382,6 +382,36 @@
             }
         }
     },
+    "CA": {
+        "name": "Canada",
+        "nativeName": "Canada",
+        "regions": {
+            "CA-NB": {
+                "nativeName": "Nouveau-Brunswick"
+            },
+            "CA-NU": {
+                "nativeName": "ᓄᓇᕗᑦ"
+            }
+        }
+    },
+    "CH": {
+        "name": "Switzerland",
+        "nativeName": "Suisse",
+        "regions": {
+            "CH-BE": {
+                "nativeName": "Bern"
+            },
+            "CH-FR": {
+                "nativeName": "FFreiburg"
+            },
+            "CH-GR": {
+                "nativeName": "Graubünden"
+            },
+            "CH-VS": {
+                "nativeName": "Valais"
+            }
+        }
+    },
     "CO": {
         "regions": {
             "CO-DC": {
@@ -588,6 +618,9 @@
     "ES": {
         "nativeName": "Españita",
         "regions": {
+            "ES-AS": {
+                "nativeName": "Asturies"
+            },
             "ES-PM": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
             },
@@ -842,7 +875,7 @@
             },
             "GB-WML": {
                 "name": "West Midlands",
-                "nativeName": "",
+                "nativeName": "West Midlands",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_the_West_Midlands_County.svg"
             },
             "GB-WSX": {
@@ -1308,6 +1341,21 @@
                 "name": "Tel Aviv District",
                 "nativeName": "מחוז תל אביב",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Emblem_of_Tel_Aviv.svg"
+            }
+        }
+    },
+    "IT": {
+        "name": "Italy",
+        "nativeName": "Italia",
+        "regions": {
+            "IT-23": {
+                "nativeName": "Valle d'Aosta"
+            },
+            "IT-88": {
+                "nativeName": "Sardegna"
+            },
+            "IT-32": {
+                "nativeName": "Trentino-Alto Adige"
             }
         }
     },

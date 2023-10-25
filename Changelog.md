@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.3.1
+
+- Round flags wiki page
+- Fix native names having 2 languages. I enforce one language now
+- Newest translations
+- Improve code reliability
+
 ## Version 3.3.0
 
 - Flags in osu wiki page

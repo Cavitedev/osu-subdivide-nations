@@ -112,6 +112,7 @@ const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
         const userId = idFromOsuProfileUrl(
             card.querySelector(".user-search-card__col--username")!.getAttribute("href")!,
         );
+        if(userId === null) continue;
         flagItems.push({ item: card, id: userId });
     }
 

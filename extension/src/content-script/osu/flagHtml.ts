@@ -238,7 +238,7 @@ const addWikiPageFlag = async (
         flag = noFlag;
     }
 
-    flagElement.setAttribute("style", flagStyle.replace("$flag", flag) + ";margin-right: 4px;");
+    flagElement.setAttribute("style", flagStyle.replace("$flag", flag) + ";margin-right: 4px;border-radius: 2px;");
 
     const parent = item.parentElement!;
     parent.insertBefore(flagElement, item);
