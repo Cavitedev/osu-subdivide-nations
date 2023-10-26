@@ -43,7 +43,7 @@ const updatePlayerFlag = async (registerBox: Element, signal: AbortSignal) => {
     if (!player) return;
 
     const playerId = idFromOsuProfileUrl(player.getAttribute("href")!);
-    if(playerId === null) return;
+    if(!playerId) return;
     addFlagUser(player as HTMLElement, playerId, { signal: signal });
 };
 
@@ -63,7 +63,7 @@ const updateTeamFlags = async (registerBox: Element, signal: AbortSignal) => {
 
     for (const player of players) {
         const playerId = idFromOsuProfileUrl(player.getAttribute("href"));
-        if(playerId === null) continue;
+        if(!playerId) continue;
         flagItems.push({ id: playerId, item: player as HTMLElement });
     }
 

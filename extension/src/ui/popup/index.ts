@@ -1,6 +1,5 @@
 import browser from "webextension-polyfill";
 import { cleanCache, cleanInvalidatedCache } from "@src/utils/cache";
-import { lastAvailableLanguages } from "./../../utils/language";
 import {
     systemDefaultCode,
     nativeLanguageCode,
@@ -8,6 +7,7 @@ import {
     setLanguage,
     availableLanguagesOsuWorld,
     Ilanguages,
+    lastAvailableLanguages
 } from "@src/utils/language";
 
 const updateTitle = () => {

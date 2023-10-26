@@ -15,7 +15,7 @@ export const addFlagsWiki = async () => {
         const href = item.getAttribute("href");
         if (!href) continue;
         const playerId = idFromOsuProfileUrl(href);
-        if (playerId === null) continue;
+        if (!playerId) continue;
         flagItems.push({ id: playerId, item: item as HTMLElement });
     }
 

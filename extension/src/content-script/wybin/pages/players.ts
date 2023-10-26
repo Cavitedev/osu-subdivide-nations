@@ -27,7 +27,7 @@ export const updateFlagsPlayersList = async (players: NodeListOf<Element> | neve
     for (const player of players) {
         const usernameElement = (player as HTMLElement).querySelector(".username") as HTMLElement;
         const playerId = idFromOsuProfileUrl(usernameElement.getAttribute("href")!);
-        if(playerId === null) continue;
+        if(!playerId) continue;
         flagItems.push({ id: playerId, item: player as HTMLElement });
     }
 
