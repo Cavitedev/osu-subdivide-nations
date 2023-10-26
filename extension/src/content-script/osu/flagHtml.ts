@@ -91,7 +91,10 @@ export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserO
     for (const flagItem of flagItems) {
         const item = flagItem.item;
         const playerData = playersData.find((player) => player["id"].toString() === flagItem.id);
-        if (!playerData) continue;
+        if (!playerData)  {
+            removeRegionalFlag(item);
+            continue;
+        };
         const countryCode = playerData["country_id"];
         const regionCode = playerData["region_id"];
         const promise = addRegionalFlag(item, countryCode, regionCode, options);
