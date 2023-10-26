@@ -32,7 +32,7 @@ export const test = base.extend<{
 export const expect = test.expect;
 
 export const goPopUp = async (page: Page) => {
-    await page.goto('chrome-extension://fmadiabbijdijjcidogjenmjeekgmdko/ui/popup/popup.html');
+    await page.goto('chrome-extension://fmadiabbijdijjcidogjenmjeekgmdko/src/ui/popup/index.html');
 }
 
 export const selectLanguage = async (page: Page, option:string) => {
