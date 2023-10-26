@@ -8,7 +8,7 @@ function readJsonFile(filePath: string) {
   }
 
   describe("Test flags.json content", () => {
-    const flagsJson = readJsonFile("./src/flags.json") as IflagsData;
+    const flagsJson = readJsonFile("./public/flags.json") as IflagsData;
     test("Flags.json is not empty", () => {
         expect(Object.keys(flagsJson).length).toBeGreaterThan(0);
     });

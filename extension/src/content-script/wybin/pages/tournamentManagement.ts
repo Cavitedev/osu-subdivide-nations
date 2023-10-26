@@ -46,7 +46,7 @@ const addFlagsStaff = async (parent: HTMLElement) => {
         const href = playerElement?.getAttribute("href");
         if (!href) continue;
         const playerId = idFromOsuProfileUrl(href);
-        if(playerId === null) continue;
+        if(!playerId) continue;
         flagItems.push({ id: playerId, item: playerElement as HTMLElement });
     }
 
@@ -73,7 +73,7 @@ const addFlagsParticipants = async (parent: HTMLElement) => {
         const playerElement = element.querySelector(".username");
         const href = playerElement?.getAttribute("href");
         const playerId = idFromOsuProfileUrl(href);
-        if(playerId === null) continue;
+        if(!playerId) continue;
         flagItems.push({ id: playerId, item: playerElement as HTMLElement });
     }
 

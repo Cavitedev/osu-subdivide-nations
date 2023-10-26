@@ -11,12 +11,15 @@ extension.zip
 # build version
 extensions/chrome_dev/*
 extensions/firefox_dev/*
-data/*
+
+tmp/
+data/
 
 credentials/*
 darkReader/
 node_modules/
 build/
+dist/
 
 dataFetcher/countryVisualization/
 dataFetcher/translations/out/
