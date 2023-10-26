@@ -1,6 +1,6 @@
 {
     "appDesc": {
-        "message": "Adiciona bandeiras regionais à página oficial do osu!\n Atualiza também as posições globais nos perfis."
+        "message": "Adiciona bandeiras regionais ao website do osu!\n Atualiza também as posições globais nos perfis."
     },
     "created_by": {
         "message": "criado por {{developer}}"
@@ -57,7 +57,7 @@
         "message": "Região"
     },
     "region_cn": {
-        "message": "Região administrativa"
+        "message": "Região Administrativa"
     },
     "region_co": {
         "message": "Departamento"
