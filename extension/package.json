@@ -34,6 +34,7 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@playwright/test": "^1.39.0",
+    "@samrum/vite-plugin-web-extension": "^5.0.0",
     "@types/chrome": "^0.0.248",
     "@types/fs-extra": "^11.0.3",
     "@types/node": "^20.8.9",
