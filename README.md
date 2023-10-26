@@ -7,7 +7,7 @@
     <a title="Chrome Web Store" href="https://chrome.google.com/webstore/detail/ehdehfcjlmekjdolbbmjgokdfeoocccd"><img src="https://img.shields.io/badge/Chrome%20-%234285F4.svg?logo=google%20chrome&logoColor=white"></a>
     <a title="Firefox add-ons" href="https://addons.mozilla.org/firefox/addon/osu-subdivide-nations/"><img  src="https://img.shields.io/badge/Firefox%20-%23FF7139.svg?logo=firefox%20browser&logoColor=white"></a>
     <a title="Microsoft Edge Add-Ons" href="https://microsoftedge.microsoft.com/addons/detail/osu-subdivide-nations/mdbdfpbifeapmnkolpbcppeibblipjal"><img src="https://img.shields.io/badge/Edge%20-%230078D7.svg?logo=microsoft%20edge&logoColor=white"></a>
-        <a title="Osuworld" href="https://osuworld.octo.moe/"><img src="https://img.shields.io/badge/Osuworld%20-%23FFcde2.svg?"></a>
+
 </p>
 <p align="center">
     <a title="Discord" href="https://discord.gg/s7TMSQt3E2"><img  src="https://img.shields.io/badge/Discord%20-%235865F2.svg?logo=discord&logoColor=white"></a>
