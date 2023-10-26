@@ -67,3 +67,19 @@ Jupyter Notebook to automatically gather and structure data needed somewhere els
 ### console
 
 Utils code that is used to update the view on pages related to this project
+
+## Screenshots
+
+<details> 
+  <summary>Screenshots</summary>
+  <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/1.png" alt="Profile Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/2.png" alt="Ranking Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/3.png" alt="Beatmapset Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/4.png" alt="Wybin Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/5.png" alt="Wiki Screenshot" width="600"/>
+</details>
