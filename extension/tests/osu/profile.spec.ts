@@ -7,8 +7,8 @@ test('Osu! user test', async ({ page }) => {
 });
 
 
-test('Osu! user test native language', async ({ page }) => {
-  await selectLanguage(page, 'NAT');
+test('Osu! user test native language', async ({ page, extensionId }) => {
+  await selectLanguage(page, extensionId, 'NAT');
   await page.goto('https://osu.ppy.sh/users/4871211');
   await page.waitForSelector('.profile-info__info .profile-info__flag a .flag-country');
   await expect(page.locator('.profile-info__info .profile-info__flag-text')).toHaveText('Españita / Castilla-La Mancha');
