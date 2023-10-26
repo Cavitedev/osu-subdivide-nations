@@ -105,6 +105,9 @@ async function addScoreRank(signal: AbortSignal) {
         rank.innerHTML = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
         scoreRankValue.append(rank);
 
+        const previousScoreSet = ranksElement.querySelector(".respektiveScore");
+        if (previousScoreSet) return;
+        
         ranksElement.append(scoreRankElement);
     }
 }

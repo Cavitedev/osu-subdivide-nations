@@ -1,5 +1,11 @@
 # Changelog
 
+
+## Version 3.3.2
+
+- Update bundler to vite (decrease file size)
+- Fix Score ranking showing twice (a few times)
+
 ## Version 3.3.1
 
 - Round flags wiki page
