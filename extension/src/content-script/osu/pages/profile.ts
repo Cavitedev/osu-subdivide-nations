@@ -102,7 +102,7 @@ async function addScoreRank(signal: AbortSignal) {
         rank.setAttribute("data-html-title", tooltipTitle);
         rank.setAttribute("title", "");
 
-        rank.innerHTML = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
+        rank.textContent = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
         scoreRankValue.append(rank);
 
         const previousScoreSet = ranksElement.querySelector(".respektiveScore");
