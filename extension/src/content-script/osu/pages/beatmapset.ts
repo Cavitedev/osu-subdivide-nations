@@ -31,6 +31,13 @@ export const addFlagsBeatmapsets = async () => {
         });
     }
 
+    const diffs = document.querySelector(".beatmapset-beatmap-picker");
+    if (diffs) {
+        for (let i = 0; i < diffs.children.length; i++) {
+            tabsMutationObserver.observe(diffs.children[i], { attributes: true });
+        }
+    }
+
     const playMods = document.querySelector(".game-mode--beatmapset");
     if (playMods) {
         for (let i = 0; i < playMods.children.length; i++) {
