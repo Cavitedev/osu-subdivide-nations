@@ -1,1 +1,185 @@
-{}
+{
+    "appDesc": {
+        "message": "Додайте регіональні прапори на вебсайт osu!.\n Поки також оновлюється загальна оцінка в профілях osu!."
+    },
+    "created_by": {
+        "message": "створено {{developer}}"
+    },
+    "system_default": {
+        "message": "Системне за замовчуванням"
+    },
+    "native_language": {
+        "message": "Рідна мова"
+    },
+    "clean_cache": {
+        "message": "Очистити кеш"
+    },
+    "cache_cleaned": {
+        "message": "Кеш був очищений"
+    },
+    "region_language": {
+        "message": "Мова регіону:"
+    },
+    "score_ranking": {
+        "message": "Рейтинг балів"
+    },
+    "highest_rank_profile": {
+        "message": "Найвищий ранг: #{{rankHighest.rank}} в {{formattedDate}}"
+    },
+    "region": {
+        "message": "Регіон"
+    },
+    "region_ru": {
+        "message": "Республіка / Область"
+    },
+    "region_ar": {
+        "message": "Провінція"
+    },
+    "region_at": {
+        "message": "Штат"
+    },
+    "region_au": {
+        "message": "Штат"
+    },
+    "region_be": {
+        "message": "Провінція"
+    },
+    "region_br": {
+        "message": "Штат"
+    },
+    "region_by": {
+        "message": "Область"
+    },
+    "region_ca": {
+        "message": "Провінція"
+    },
+    "region_cl": {
+        "message": "Регіон"
+    },
+    "region_cn": {
+        "message": "Адміністративний Регіон"
+    },
+    "region_co": {
+        "message": "Департамент"
+    },
+    "region_cz": {
+        "message": "Регіон"
+    },
+    "region_de": {
+        "message": "Штат"
+    },
+    "region_es": {
+        "message": "Автономна Спільнота"
+    },
+    "region_fi": {
+        "message": "Регіон"
+    },
+    "region_fr": {
+        "message": "Регіон"
+    },
+    "region_hu": {
+        "message": "Округ"
+    },
+    "region_id": {
+        "message": "Провінція"
+    },
+    "region_it": {
+        "message": "Регіон"
+    },
+    "region_jp": {
+        "message": "Префектура"
+    },
+    "region_kr": {
+        "message": "Провінція"
+    },
+    "region_kz": {
+        "message": "Округ"
+    },
+    "region_lv": {
+        "message": "Регіон"
+    },
+    "region_mx": {
+        "message": "Штат"
+    },
+    "region_my": {
+        "message": "Штат"
+    },
+    "region_nl": {
+        "message": "Провінція"
+    },
+    "region_no": {
+        "message": "Округ"
+    },
+    "region_pe": {
+        "message": "Регіон"
+    },
+    "region_ph": {
+        "message": "Провінція"
+    },
+    "region_pl": {
+        "message": "Воєводство"
+    },
+    "region_pt": {
+        "message": "Регіон"
+    },
+    "region_ro": {
+        "message": "Округ"
+    },
+    "region_se": {
+        "message": "Округ"
+    },
+    "region_sg": {
+        "message": "Район"
+    },
+    "region_th": {
+        "message": "Провінція"
+    },
+    "region_tr": {
+        "message": "Регіон"
+    },
+    "region_tw": {
+        "message": "Провінція"
+    },
+    "region_ua": {
+        "message": "Округ"
+    },
+    "region_us": {
+        "message": "Штат"
+    },
+    "region_vn": {
+        "message": "Провінція"
+    },
+    "region_dk": {
+        "message": "Регіон"
+    },
+    "region_il": {
+        "message": "Район"
+    },
+    "region_nz": {
+        "message": "Регіон"
+    },
+    "region_lt": {
+        "message": "Регіон"
+    },
+    "region_ch": {
+        "message": "Кантон"
+    },
+    "region_gr": {
+        "message": "Регіон"
+    },
+    "region_ee": {
+        "message": "Округ"
+    },
+    "region_bg": {
+        "message": "Провінція"
+    },
+    "region_sk": {
+        "message": "Регіон"
+    },
+    "region_uk": {
+        "message": "Округ"
+    },
+    "region_ie": {
+        "message": "Провінція"
+    }
+}
