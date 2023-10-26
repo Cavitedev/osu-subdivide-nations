@@ -316,15 +316,27 @@ const updateRankingPagination = (
         if (regionParam) return;
     }
 
+// <li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>
+const el1 = generateActivePagination();
+
+// <li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>
+const el2 = generateLinkPagination();
+
+// <li class="pagination-v2__item"> <span class="pagination-v2__link">...</span></li>
+const el3 = generateDotsPagination();
+
+//<a class="pagination-v2__link pagination-v2__link--quick" href="https://osu.ppy.sh/rankings/fruits/performance?country=US&amp;page=2#scores"> <span class="hidden-xs"> next </span> <i class="fas fa-angle-right"></i> </a>
+const el4 = generateArrowPagination();
+
+// <span class="pagination-v2__link pagination-v2__link--quick pagination-v2__link--disabled"> <i class="fas fa-angle-left"></i> <span class="hidden-xs"> prev </span> </span>
+const el5 = generateDisabledArrowPagination();
+
+
     const htmlTemplates = [
-        '<li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>',
-        '<li class="pagination-v2__item"><a class="pagination-v2__link" href="https://osu.ppy.sh/rankings/fruits/performance?country=ES&amp;page=4#scores">4</a></li>',
-        '<li class="pagination-v2__item"> <span class="pagination-v2__link">...</span></li>',
-        '<a class="pagination-v2__link pagination-v2__link--quick" href="https://osu.ppy.sh/rankings/fruits/performance?country=US&amp;page=2#scores"> <span class="hidden-xs"> next </span> <i class="fas fa-angle-right"></i> </a>',
-        '<span class="pagination-v2__link pagination-v2__link--quick pagination-v2__link--disabled"> <i class="fas fa-angle-left"></i> <span class="hidden-xs"> prev </span> </span>',
-    ].map((html) => {
+        el1, el2, el3, el4, el5
+    ].map((element) => {
         const template = document.createElement("div");
-        template.innerHTML = html;
+        template.appendChild(element);
         return template.firstChild;
     });
 
@@ -444,3 +456,95 @@ const updatePagePagination = (paginationItem: HTMLElement, page: number) => {
         link.setAttribute("href", addOrReplaceQueryParam(href, "page", page.toString()));
     }
 };
+
+// <li class="pagination-v2__item"><span class="pagination-v2__link pagination-v2__link--active">5</span></li>
+const generateActivePagination = () => {
+    const el = document.createElement('li');
+    el.classList.add('pagination-v2__item');
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('pagination-v2__link', 'pagination-v2__link--active');
+    el.appendChild(spanElement);
+    return el;
+}
+
+// <li class="pagination-v2__item"><a class="pagination-v2__link" href="https://osu.ppy.sh/rankings/fruits/performance?country=ES&amp;page=4#scores">4</a></li>
+const generateLinkPagination = () => {
+    const listItem = document.createElement('li');
+const anchorElement = document.createElement('a');
+
+// Conditionally add class to the <li> element
+listItem.classList.add('pagination-v2__item');
+
+// Conditionally add class to the <a> element
+anchorElement.classList.add('pagination-v2__link');
+
+// Set the href and text content
+anchorElement.href = 'https://osu.ppy.sh/rankings/fruits/performance?country=ES&page=4#scores';
+anchorElement.textContent = '4';
+
+// Append the <a> element to the <li> element
+listItem.appendChild(anchorElement);
+return listItem;
+}
+
+// <li class="pagination-v2__item"> <span class="pagination-v2__link">...</span></li>
+const generateDotsPagination = () => {
+
+    const listItem = document.createElement('li');
+    listItem.classList.add('pagination-v2__item');
+    
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('pagination-v2__link');
+    spanElement.textContent = '...';
+    
+    listItem.appendChild(spanElement);
+    return listItem;
+    
+}
+
+// <a class="pagination-v2__link pagination-v2__link--quick" href="https://osu.ppy.sh/rankings/fruits/performance?country=US&amp;page=2#scores"> <span class="hidden-xs"> next </span> <i class="fas fa-angle-right"></i> </a>
+const generateArrowPagination = () => {
+
+    const anchorElement = document.createElement('a');
+    anchorElement.classList.add('pagination-v2__link', 'pagination-v2__link--quick');
+    anchorElement.href = 'https://osu.ppy.sh/rankings/fruits/performance?country=US&page=2#scores';
+    
+    // Create the <span> element
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('hidden-xs');
+    spanElement.textContent = 'next';
+    
+    // Create the <i> element
+    const iconElement = document.createElement('i');
+    iconElement.classList.add('fas', 'fa-angle-right');
+    
+    // Append the <span> and <i> elements to the <a> element
+    anchorElement.appendChild(spanElement);
+    anchorElement.appendChild(iconElement);
+
+    return anchorElement;
+}
+
+
+// <span class="pagination-v2__link pagination-v2__link--quick pagination-v2__link--disabled"> <i class="fas fa-angle-left"></i> <span class="hidden-xs"> prev </span> </span>
+const generateDisabledArrowPagination = () => {
+
+    // Create the <span> element
+const spanElement = document.createElement('span');
+spanElement.classList.add('pagination-v2__link', 'pagination-v2__link--quick', 'pagination-v2__link--disabled');
+
+// Create the <i> element
+const iconElement = document.createElement('i');
+iconElement.classList.add('fas', 'fa-angle-left');
+
+// Create the <span> element for "prev"
+const prevSpanElement = document.createElement('span');
+prevSpanElement.classList.add('hidden-xs');
+prevSpanElement.textContent = 'prev';
+
+// Append the <i>, <span>, and <span> elements to the main <span> element
+spanElement.appendChild(iconElement);
+spanElement.appendChild(prevSpanElement);
+
+return spanElement;
+}
