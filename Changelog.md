@@ -4,6 +4,8 @@
 ## Version 3.3.2
 
 - Fix beatmapset page navigation
+- Increase speed regional ranking
+- Avoid resizing regional ranking row when loading pages
 - Update bundler to vite (decrease file size)
 - Fix Score ranking showing twice (a few times)
 - Remove InnerHTML code (security)

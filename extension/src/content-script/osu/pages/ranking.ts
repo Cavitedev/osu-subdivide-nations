@@ -204,6 +204,9 @@ const regionalRanking = async (
 
     const listItems = document.querySelectorAll(".ranking-page-table>tbody>tr");
 
+
+
+
     for (const page of pagesToCheck) {
         if (signal.aborted) return;
 
@@ -215,6 +218,8 @@ const regionalRanking = async (
 
         // First iteration
         if (page === pagesToCheck[0]) {
+            cleanRankingColumns(listItems);
+
             // Prefetch next pages. It doesn't make 2 requests behind scenes so it is fine
             for (const prefetchPage of pagesToCheck.slice(1)) {
                 if (prefetchPage >= totalPages) break;
@@ -224,15 +229,17 @@ const regionalRanking = async (
             updateRankingPagination(osuPage, Math.ceil(totalPages / 5), osuMode, countryCode, regionCode);
         }
 
+        const promises = [];
         for (const player of results["top"]) {
             const row = listItems[replaceIndex] as HTMLElement;
             updateRankingRow(row, player);
-            await addRegionalFlag(row as HTMLElement, countryCode, regionCode, {
+            promises.push(addRegionalFlag(row as HTMLElement, countryCode, regionCode, {
                 addDiv: true,
                 addMargin: true,
-            });
+            }));
             replaceIndex++;
         }
+        await Promise.all(promises);
 
         if (page >= totalPages) break;
     }
@@ -243,6 +250,17 @@ const regionalRanking = async (
 };
 
 const removeColsRegionalRanking = [7, 6, 5, 3];
+
+const cleanRankingColumns = (listItems: NodeListOf<Element>) => {
+
+    for(const tr of listItems){
+        const cells = tr.children;
+        for (const index of removeColsRegionalRanking) {
+            cells[index].remove();
+        }
+    }
+
+}
 
 const initRegionalRanking = (regionCode: string) => {
     const modes = document.querySelectorAll(".game-mode [href]");
@@ -279,12 +297,10 @@ const updateRankingRow = async (row: HTMLElement, playerData: IosuWorldRegionalP
     nameElement.setAttribute("href", buildProfileUrl(id.toString(), mode));
     nameElement.textContent = username;
 
-    const performanceCell = cells[4];
+    const performanceCell = cells[3];
     performanceCell.textContent = Math.round(pp).toLocaleString();
 
-    for (const index of removeColsRegionalRanking) {
-        cells[index].remove();
-    }
+
     cells[2].textContent = "#" + rank.toLocaleString();
 
     row.classList.remove("ranking-page-table__row--inactive");
