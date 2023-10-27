@@ -3,7 +3,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 
 import { isNumber } from "@src/utils/utils";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
-import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { IFetchError } from "@src/utils/fetchUtils";
 import { osuScoreRanking } from "@src/utils/respektive";
 import {
     getActiveLanguageCode,
@@ -13,30 +13,16 @@ import {
 } from "@src/utils/languagesChrome";
 import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
+import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
 
-export const profileMutationObserverInit = new MutationObserver((_) => {
-    addFlagsProfile();
-});
-
-export const addFlagsProfile = async () => {
+export const enhanceProfile = async () => {
     if (!location.href.includes("osu.ppy.sh/users")) {
-        profileMutationObserverInit.disconnect();
         return;
     }
 
-    const signal = nextAbortControllerSignal();
-    const linkItem = document.querySelector(
-        "body > div.osu-layout__section.osu-layout__section--full > div",
-    ) as HTMLElement;
-    profileMutationObserverInit.observe(linkItem, {
-        attributes: false,
-        childList: true,
-        subtree: false,
-    });
-
     const url = location.href;
     const playerId = idFromOsuProfileUrl(url);
-    if (!isNumber(playerId)) {
+    if (!playerId || !isNumber(playerId)) {
         return;
     }
 
@@ -44,10 +30,21 @@ export const addFlagsProfile = async () => {
     if (!flagElement) {
         return;
     }
-    addScoreRank(signal);
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
+    const currentMod = getCurrentMod();
+    if (currentMod) {
+        addScoreRank(playerId, currentMod);
+        addRegionalRank(playerId, currentMod);
+    }
+    addRegionalFlagProfile(flagElement as HTMLElement, playerId);
+};
+
+const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string) => {
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: true });
+
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
+    if (!countryCode) return;
+
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
 
     let countryText = flagElement.querySelector("span.flag-country")?.getAttribute("original-title");
@@ -65,54 +62,113 @@ export const addFlagsProfile = async () => {
     countryNameElement.textContent = replaceText;
 };
 
-async function addScoreRank(signal: AbortSignal) {
-    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
-    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
+const tagRanks = {
+    scoreRank: "respektiveScore",
+    regionalRank: "cavitedevRegionalRank",
+};
 
+const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
+
+async function addRegionalRank(playerId: string, mode: string) {
+    const tagRank = tagRanks.regionalRank;
+
+    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+
+    let previousScoreSet = ranksElement.querySelector("." + tagRank);
+    if (previousScoreSet) return;
+
+    const osuWorldInfo = await osuWorldUser(playerId, undefined, mode);
+    const playerData = osuWorldInfo.data;
+    if (!playerData || (playerData as IFetchError).error) return;
+
+    const rankValue = (playerData as TosuWorldIdSuccess).placement;
+    if (!rankValue) return;
+
+    const label = getLocMsg("region_ranking");
+
+    addRank(ranksElement, rankValue, label, tagRank);
+}
+
+async function addScoreRank(playerId: string, mode: string) {
+    const tagRank = tagRanks.scoreRank;
+
+    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+    const previousScoreSet = ranksElement.querySelector("." + tagRank);
+    if (previousScoreSet) return;
+
+    const scoreRankInfo = await osuScoreRanking(playerId, mode);
+    if (!scoreRankInfo) return;
+
+    const label = getLocMsg("score_ranking");
+
+    const rankHighest = scoreRankInfo[0]["rank_highest"];
+    const highestRank = rankHighest.rank;
+    const date = new Date(rankHighest["updated_at"]);
+    const tooltip = highestRankTip(highestRank, date);
+
+    const scoreRank = scoreRankInfo[0].rank;
+    if (scoreRank === 0) {
+        return;
+    }
+    await addRank(ranksElement, scoreRank, label, tagRank, tooltip);
+}
+
+const addRank = async (
+    ranksElement: HTMLElement,
+    rankValue: number,
+    labelText: string,
+    classTag: string,
+    tooltip?: string,
+) => {
+    const scoreRankElement = document.createElement("div");
+    scoreRankElement.classList.add(classTag);
+    scoreRankElement.classList.add("value-display", "value-display--rank");
+    const scoreRankLabel = document.createElement("div");
+    scoreRankLabel.classList.add("value-display__label");
+    await waitLastLanguageIsLoaded();
+
+    scoreRankLabel.innerText = labelText;
+    scoreRankElement.append(scoreRankLabel);
+
+    const scoreRankValue = document.createElement("div");
+    scoreRankValue.classList.add("value-display__value");
+    scoreRankElement.append(scoreRankValue);
+    const rank = document.createElement("div");
+
+    if (tooltip) {
+        rank.setAttribute("data-html-title", tooltip);
+    }
+    rank.setAttribute("title", "");
+
+    rank.textContent = `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
+    scoreRankValue.append(rank);
+
+    const previousRank = ranksElement.querySelector("." + classTag);
+    if (previousRank) return;
+
+    const positioningIndex = tagsOrder.indexOf(classTag);
+    const nextTag = tagsOrder[positioningIndex + 1];
+    if (!nextTag) {
+        ranksElement.append(scoreRankElement);
+    }
+    const nextElement = ranksElement.querySelector("." + nextTag);
+    if (nextElement) {
+        ranksElement.insertBefore(scoreRankElement, nextElement);
+    } else {
+        ranksElement.append(scoreRankElement);
+    }
+};
+
+const getCurrentMod = () => {
+    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
     if (!modesElement) {
         return;
     }
-    const previousScoreSet = ranksElement.querySelector(".respektiveScore");
-    if (previousScoreSet) return;
-
-    const path = window.location.pathname.split("/");
-    const userId = path[2];
     const mode = modesElement.dataset.mode;
-    const scoreRankInfo = await osuScoreRanking(userId, mode, signal);
-    if (!scoreRankInfo) return;
+    return mode;
+};
 
-    if (signal.aborted) return;
-
-    const scoreRank = scoreRankInfo[0].rank;
-    if (scoreRank != 0) {
-        const scoreRankElement = document.createElement("div");
-        scoreRankElement.classList.add("respektiveScore");
-        scoreRankElement.classList.add("value-display", "value-display--rank");
-        const scoreRankLabel = document.createElement("div");
-        scoreRankLabel.classList.add("value-display__label");
-        await waitLastLanguageIsLoaded();
-        scoreRankLabel.innerText = getLocMsg("score_ranking");
-        scoreRankElement.append(scoreRankLabel);
-
-        const scoreRankValue = document.createElement("div");
-        scoreRankValue.classList.add("value-display__value");
-        scoreRankElement.append(scoreRankValue);
-        const rank = document.createElement("div");
-        const tooltipTitle = highestRankTip(scoreRankInfo);
-        rank.setAttribute("data-html-title", tooltipTitle);
-        rank.setAttribute("title", "");
-
-        rank.innerHTML = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
-        scoreRankValue.append(rank);
-
-        ranksElement.append(scoreRankElement);
-    }
-}
-
-const highestRankTip = (scoreRankInfo: any) => {
-    const rankHighest = scoreRankInfo[0]["rank_highest"];
-    const date = new Date(rankHighest["updated_at"]);
-
+const highestRankTip = (highestRank: number, date: Date) => {
     // Get the formatted date string
     const highestRankKey = "highest_rank_profile";
     const countryCode = getActiveLanguageCodeForKey(highestRankKey);
@@ -125,7 +181,7 @@ const highestRankTip = (scoreRankInfo: any) => {
 
     const rawText = getLocMsg(highestRankKey);
     const replacedText = rawText
-        .replace("{{rankHighest.rank}}", rankHighest.rank)
+        .replace("{{rankHighest.rank}}", highestRank.toLocaleString(getActiveLanguageCode()))
         .replace("{{formattedDate}}", formattedDate);
 
     return `<div>${replacedText}</div>`;

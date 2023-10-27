@@ -1,10 +1,29 @@
 # Changelog
 
+## Version 3.4.0
+
+- Add regional ranking to profile
+- Fix search after going to searched player
+- Fix turbolinks on profile not showing flag or ranking
+- Optimize cache when requesting multiple ids at the same time
+- Force one name in Navarra native name
+- Latest translations
+
+## Version 3.3.2
+
+- Fix beatmapset page navigation
+- Increase speed regional ranking
+- Avoid resizing regional ranking row when loading pages
+- Update bundler to vite (decrease file size)
+- Fix Score ranking showing twice (a few times)
+- Remove InnerHTML code (security)
+- Latest translations
+
 ## Version 3.3.1
 
 - Round flags wiki page
 - Fix native names having 2 languages. I enforce one language now
-- Newest translations
+- Latest translations
 - Improve code reliability
 
 ## Version 3.3.0
@@ -39,7 +58,7 @@
 ## Version 3.2.5
 
 - Fix wybin osu-catch-draft-tournament prizes view exception
-- Newest translations
+- Latest translations
 
 
 ## Version 3.2.4

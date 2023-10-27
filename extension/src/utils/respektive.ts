@@ -19,7 +19,7 @@ const respektiveDbReload = 1800000; //30 minutes
 export const osuScoreRanking = async (
     userId: string | undefined,
     mode: string | undefined,
-    signal: AbortSignal | undefined,
+    signal?: AbortSignal | undefined,
 ): Promise<TRespektiveScore | undefined> => {
     if (!userId) {
         const err = fetchErrorToText({ error: { code: noId } });

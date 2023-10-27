@@ -35,9 +35,10 @@ export const addFlagUser = async (
     item: HTMLElement,
     userId?: string | null,
     options?: osuHtmlUserOptions,
+    mode?: string,
 ): Promise<regionAndCountry> => {
     if (!userId) return;
-    const resultNames = await _addFlagUser(item, userId, options);
+    const resultNames = await _addFlagUser(item, userId, options, mode);
     if (!resultNames) {
         const countryName = await updateCountryNameFlag(item);
         return { countryName };
@@ -49,9 +50,10 @@ const _addFlagUser = async (
     item: HTMLElement,
     userId: string,
     options?: osuHtmlUserOptions,
+    mode?: string,
 ): Promise<regionAndCountry> => {
     if (!item) return;
-    const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
+    const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal(), mode);
     if (playerOsuWorld.error) {
         const textError = fetchErrorToText(playerOsuWorld);
         console.error(textError);
@@ -91,7 +93,10 @@ export const addFlagUsers = async (flagItems: TFlagItems, options?: osuHtmlUserO
     for (const flagItem of flagItems) {
         const item = flagItem.item;
         const playerData = playersData.find((player) => player["id"].toString() === flagItem.id);
-        if (!playerData) continue;
+        if (!playerData) {
+            removeRegionalFlag(item);
+            continue;
+        }
         const countryCode = playerData["country_id"];
         const regionCode = playerData["region_id"];
         const promise = addRegionalFlag(item, countryCode, regionCode, options);

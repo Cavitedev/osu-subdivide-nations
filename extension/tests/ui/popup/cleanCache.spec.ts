@@ -1,7 +1,8 @@
 import { goPopUp, expect, test } from "../../fixtures";
 
-test("Popup Clean cache", async ({ page }) => {
-    await goPopUp(page);
+test("Popup Clean cache", async ({ page, extensionId }) => {
+
+    await goPopUp(page, extensionId);
     
     let read = await page.evaluate(async () => {
         await chrome.storage.local.set({ x: "A" });

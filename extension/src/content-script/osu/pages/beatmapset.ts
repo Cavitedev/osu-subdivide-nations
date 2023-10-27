@@ -31,10 +31,34 @@ export const addFlagsBeatmapsets = async () => {
         });
     }
 
+    const diffs = document.querySelector(".beatmapset-beatmap-picker");
+    if (diffs) {
+        for (let i = 0; i < diffs.children.length; i++) {
+            tabsMutationObserver.observe(diffs.children[i], { attributes: true });
+        }
+    }
+
+    const playMods = document.querySelector(".game-mode--beatmapset");
+    if (playMods) {
+        for (let i = 0; i < playMods.children.length; i++) {
+            const playmod = playMods.children[i];
+            const anchor = playmod.querySelector("a");
+            if(!anchor) continue;
+            tabsMutationObserver.observe(anchor, { attributes: true });
+        }
+    }
+
     const tabs = linkItem?.parentElement!.querySelector(".page-tabs");
     if (tabs) {
         for (let i = 0; i < tabs.children.length; i++) {
             tabsMutationObserver.observe(tabs.children[i], { attributes: true });
+        }
+    }
+
+    const mods = linkItem?.parentElement!.querySelector(".beatmapset-scoreboard__mods");
+    if (mods) {
+        for (let i = 0; i < mods.children.length; i++) {
+            tabsMutationObserver.observe(mods.children[i], { attributes: true });
         }
     }
 
