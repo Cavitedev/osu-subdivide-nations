@@ -7,7 +7,7 @@
     <a title="Chrome Web Store" href="https://chrome.google.com/webstore/detail/ehdehfcjlmekjdolbbmjgokdfeoocccd"><img src="https://img.shields.io/badge/Chrome%20-%234285F4.svg?logo=google%20chrome&logoColor=white"></a>
     <a title="Firefox add-ons" href="https://addons.mozilla.org/firefox/addon/osu-subdivide-nations/"><img  src="https://img.shields.io/badge/Firefox%20-%23FF7139.svg?logo=firefox%20browser&logoColor=white"></a>
     <a title="Microsoft Edge Add-Ons" href="https://microsoftedge.microsoft.com/addons/detail/osu-subdivide-nations/mdbdfpbifeapmnkolpbcppeibblipjal"><img src="https://img.shields.io/badge/Edge%20-%230078D7.svg?logo=microsoft%20edge&logoColor=white"></a>
-        <a title="Osuworld" href="https://osuworld.octo.moe/"><img src="https://img.shields.io/badge/Osuworld%20-%23FFcde2.svg?"></a>
+
 </p>
 <p align="center">
     <a title="Discord" href="https://discord.gg/s7TMSQt3E2"><img  src="https://img.shields.io/badge/Discord%20-%235865F2.svg?logo=discord&logoColor=white"></a>
@@ -15,7 +15,7 @@
     <a title="Crowdin" target="_blank" href="https://crowdin.com/project/osu-subdivide-nations"><img src="https://badges.crowdin.net/osu-subdivide-nations/localized.svg"></a>
 </p>
 <p align="center">
-    <a title="Osu! profile"  href="https://osu.ppy.sh/u/4871211"><img src="https://img.shields.io/badge/osu!%20-%23FF66AA.svg?logo=osu&logoColor=white"></a>
+    <a title="Osu! forum"  href="https://img.shields.io/badge/osu!%20-%23FF66AA.svg?logo=osu&logoColor=white"><img src="https://img.shields.io/badge/osu! forum%20-%23FF66AA.svg?logo=osu&logoColor=white"></a>
     <a title="𝕏 profile"  href="https://x.com/CaviteDev"><img src="https://img.shields.io/badge/-%23000000.svg?logo=x&logoColor=white"></a>
     <a title="Reddit profile"  href="https://www.reddit.com/user/Cavitedev"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=reddit&logoColor=white"></a>
 </p>
@@ -67,3 +67,19 @@ Jupyter Notebook to automatically gather and structure data needed somewhere els
 ### console
 
 Utils code that is used to update the view on pages related to this project
+
+## Screenshots
+
+<details> 
+  <summary>Screenshots</summary>
+  <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/1.png" alt="Profile Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/2.png" alt="Ranking Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/3.png" alt="Beatmapset Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/4.png" alt="Wybin Screenshot" width="600"/>
+      <br/>
+    <img src="https://raw.githubusercontent.com/Cavitedev/osu-subdivide-nations/main/screenshots/5.png" alt="Wiki Screenshot" width="600"/>
+</details>

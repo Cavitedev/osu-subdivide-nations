@@ -62,7 +62,7 @@ const fetchAndSaveInCache = async (
         .catch((err) => {
             //AbortError
             if (err.code === 20) {
-                return {};
+                return { error: { code: abortError, url: url } };
             }
             return { error: { code: cannotFetchError, url: url } };
         });
@@ -81,7 +81,11 @@ export const fetchWithCache = async (
     options: fetchCacheOptions = {},
 ): Promise<IfetchResponse<object>> => {
     if (pendingRequests[url] !== undefined) {
-        return pendingRequests[url];
+        const res = await pendingRequests[url];
+        if((res as IfetchResponse<object>)?.error?.code !== abortError){
+            return res;
+        }
+        // If it was aborted it is going to try it again. This should be avoided as much as possible
     }
 
     const cachedItem = (await loadFromCache(url)) as IfetchResponse<object> | undefined;
@@ -117,6 +121,7 @@ const cannotFetchError = "cannot_fetch";
 export const noData = "no_data";
 export const noId = "no_id";
 export const noMode = "no_mode";
+export const abortError = "aborted";
 
 export const fetchErrorToText = (response: IfetchResponse<object> | undefined) => {
     const errorCode = response?.error?.code ?? response?.error;

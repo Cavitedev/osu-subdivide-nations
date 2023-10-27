@@ -12,12 +12,12 @@ export const loadFromCache = async (url: string): Promise<any | null> => {
     }
 };
 
-export const loadMultipleUrlsFromCache = async (urls: string[]): Promise<any[] | null> => {
+export const loadMultipleUrlsFromCache= async <T>(urls: string[]): Promise<Record<string, T> | null> => {
     const storageReturn = await browser.storage.local.get(urls);
     if (!storageReturn || Object.keys(storageReturn).length === 0) {
         return null;
     } else {
-        return Object.values(storageReturn);
+        return storageReturn;
     }
 };
 
