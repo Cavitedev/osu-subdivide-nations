@@ -4,7 +4,7 @@
 
 
 - Optimize cache when requesting multiple ids at the same time
-
+- Force one name in Navarra native name
 
 ## Version 3.3.2
 
