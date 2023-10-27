@@ -3,7 +3,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 
 import { isNumber } from "@src/utils/utils";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
-import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { IFetchError, nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { osuScoreRanking } from "@src/utils/respektive";
 import {
     getActiveLanguageCode,
@@ -13,6 +13,7 @@ import {
 } from "@src/utils/languagesChrome";
 import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
+import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
     addFlagsProfile();
@@ -45,6 +46,7 @@ export const addFlagsProfile = async () => {
         return;
     }
     addScoreRank(signal);
+    addRegionalRank(signal);
     const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
@@ -64,6 +66,50 @@ export const addFlagsProfile = async () => {
 
     countryNameElement.textContent = replaceText;
 };
+
+async function addRegionalRank(signal: AbortSignal) {
+    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
+
+    if (!modesElement) {
+        return;
+    }
+    let previousScoreSet = ranksElement.querySelector(".cavitedevRegionalRank");
+    if (previousScoreSet) return;
+
+    const path = window.location.pathname.split("/");
+    const userId = path[2];
+    const mode = modesElement.dataset.mode;
+    const osuWorldInfo = await osuWorldUser(userId, signal, mode);
+    const playerData = osuWorldInfo.data;
+    if (!playerData || (playerData as IFetchError).error) return;
+
+    if (signal.aborted) return;
+
+    const rankValue = (playerData as TosuWorldIdSuccess).placement;
+    if (!rankValue) return;
+
+    const rankElement = document.createElement("div");
+    rankElement.classList.add("respektiveScore");
+    rankElement.classList.add("value-display", "value-display--rank");
+    const rankLabel = document.createElement("div");
+    rankLabel.classList.add("value-display__label");
+    await waitLastLanguageIsLoaded();
+    rankLabel.innerText = getLocMsg("region_ranking");
+    rankElement.append(rankLabel);
+    const scoreRankValue = document.createElement("div");
+    scoreRankValue.classList.add("value-display__value");
+    rankElement.append(scoreRankValue);
+
+    const rank = document.createElement("div");
+    rank.textContent = `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
+    scoreRankValue.append(rank);
+
+    previousScoreSet = ranksElement.querySelector(".cavitedevRegionalRank");
+    if (previousScoreSet) return;
+
+    ranksElement.append(rankElement);
+}
 
 async function addScoreRank(signal: AbortSignal) {
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
@@ -107,7 +153,7 @@ async function addScoreRank(signal: AbortSignal) {
 
         const previousScoreSet = ranksElement.querySelector(".respektiveScore");
         if (previousScoreSet) return;
-        
+
         ranksElement.append(scoreRankElement);
     }
 }

@@ -42,14 +42,14 @@ const userDataExpireTime = 3600000; //60 minutes
 export const osuWorldUser = async (
     id: string,
     signal: AbortSignal | undefined,
-    retrievePlacement = false,
+    mode? : string,
 ): Promise<IfetchResponse<TosuWorldIdData>> => {
     if (!id) {
         console.log("id is null");
         return { error: { code: noId } };
     }
 
-    const url = osuWorldApiBase + "users/" + id;
+    const url = osuWorldApiBase + "users/" + id + (mode ? "?mode=" + mode : "");
 
     const dataPromise = fetchWithCache(url, userDataExpireTime, { signal: signal }) as Promise<
         IfetchResponse<TosuWorldIdData>
@@ -57,7 +57,7 @@ export const osuWorldUser = async (
 
     const fetchData = await dataPromise;
     const data = fetchData.data;
-    if (retrievePlacement && (data as TosuWorldIdSuccess | undefined)?.placement === undefined) {
+    if (mode && (data as TosuWorldIdSuccess | undefined)?.placement === undefined) {
         return fetchWithoutCache(url, { signal: signal }) as Promise<IfetchResponse<TosuWorldIdData>>;
     }
 

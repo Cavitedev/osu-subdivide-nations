@@ -1,17 +1,15 @@
-import { Mock } from 'node:test';
+import { Mock } from "node:test";
 import { expireHeader } from "./fetchUtils";
 import { beforeEach, describe, expect, jest, test } from "@jest/globals";
 import mockBrowser from "../__mocks__/browser";
 import { osuWorldUser, osuWorldUsers } from "./osuWorld";
 
 describe("Osu World", () => {
-
     beforeEach(() => {
         mockBrowser.storage.local.get.mockReset();
     });
 
     describe("osuWorldUser", () => {
-
         test("Cache no placement, does not need placement, use cache", async () => {
             const mockFetch = jest.fn(() =>
                 Promise.resolve({
@@ -84,17 +82,15 @@ describe("Osu World", () => {
 
             mockBrowser.storage.local.get.mockImplementation(getStorage);
 
-            const userPlacement = await osuWorldUser("4871211", new AbortController().signal, true);
-            expect(userPlacement).toEqual({
-                data: {
-                    id: 4871211,
-                    username: "nekonyo",
-                    country_id: "ES",
-                    region_id: "ES-CM",
-                    placement: 1,
-                },
+            const userPlacement = await osuWorldUser("4871211", new AbortController().signal, "taiko");
+            expect(userPlacement.data).toEqual({
+                id: 4871211,
+                username: "nekonyo",
+                country_id: "ES",
+                region_id: "ES-CM",
+                placement: 1,
             });
-            expectToHaveBeenCalledWithFirstArg(mockUserFetch, "https://osuworld.octo.moe/api/users/4871211");
+            expectToHaveBeenCalledWithFirstArg(mockUserFetch, "https://osuworld.octo.moe/api/users/4871211?mode=taiko");
         });
     });
 
