@@ -45,9 +45,18 @@ export const addFlagsProfile = async () => {
     if (!flagElement) {
         return;
     }
-    addScoreRank(signal);
-    addRegionalRank(signal);
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
+    const currentMod = getCurrentMod();
+    if (currentMod) {
+        addScoreRank(signal, currentMod);
+        addRegionalRank(signal, currentMod);
+    }
+    const flagResult = await addFlagUser(
+        flagElement as HTMLElement,
+        playerId,
+        { signal: signal, addMargin: true },
+        currentMod,
+    );
+
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
@@ -67,19 +76,14 @@ export const addFlagsProfile = async () => {
     countryNameElement.textContent = replaceText;
 };
 
-async function addRegionalRank(signal: AbortSignal) {
+async function addRegionalRank(signal: AbortSignal, mode: string) {
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
-    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
 
-    if (!modesElement) {
-        return;
-    }
     let previousScoreSet = ranksElement.querySelector(".cavitedevRegionalRank");
     if (previousScoreSet) return;
 
     const path = window.location.pathname.split("/");
     const userId = path[2];
-    const mode = modesElement.dataset.mode;
     const osuWorldInfo = await osuWorldUser(userId, signal, mode);
     const playerData = osuWorldInfo.data;
     if (!playerData || (playerData as IFetchError).error) return;
@@ -111,19 +115,13 @@ async function addRegionalRank(signal: AbortSignal) {
     ranksElement.append(rankElement);
 }
 
-async function addScoreRank(signal: AbortSignal) {
+async function addScoreRank(signal: AbortSignal, mode: string) {
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
-    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
-
-    if (!modesElement) {
-        return;
-    }
     const previousScoreSet = ranksElement.querySelector(".respektiveScore");
     if (previousScoreSet) return;
 
     const path = window.location.pathname.split("/");
     const userId = path[2];
-    const mode = modesElement.dataset.mode;
     const scoreRankInfo = await osuScoreRanking(userId, mode, signal);
     if (!scoreRankInfo) return;
 
@@ -178,4 +176,13 @@ const highestRankTip = (scoreRankInfo: any) => {
         .replace("{{formattedDate}}", formattedDate);
 
     return `<div>${replacedText}</div>`;
+};
+
+const getCurrentMod = () => {
+    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
+    if (!modesElement) {
+        return;
+    }
+    const mode = modesElement.dataset.mode;
+    return mode;
 };
