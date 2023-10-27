@@ -8,6 +8,7 @@ import {
     fetchWithoutCache,
     genExpireDate,
     expireHeader,
+    fetchWithMinimumWaitTime,
 } from "./fetchUtils";
 
 export type TosuWorldIdSuccess = {
@@ -42,7 +43,7 @@ const userDataExpireTime = 3600000; //60 minutes
 export const osuWorldUser = async (
     id: string,
     signal: AbortSignal | undefined,
-    mode? : string,
+    mode?: string,
 ): Promise<IfetchResponse<TosuWorldIdData>> => {
     if (!id) {
         console.log("id is null");
@@ -54,20 +55,16 @@ export const osuWorldUser = async (
     const dataPromise = fetchWithCache(url, userDataExpireTime, { signal: signal }) as Promise<
         IfetchResponse<TosuWorldIdData>
     >;
-
-    const fetchData = await dataPromise;
-    const data = fetchData.data;
-    if (mode && (data as TosuWorldIdSuccess | undefined)?.placement === undefined) {
-        return fetchWithoutCache(url, { signal: signal }) as Promise<IfetchResponse<TosuWorldIdData>>;
-    }
-
-    return dataPromise;
+    return fetchWithMinimumWaitTime<TosuWorldIdData>(dataPromise, 200);
 };
 
 export const osuWorldUsers = async (
     ids: string[],
     signal: AbortSignal | undefined,
 ): Promise<IfetchResponse<TosuWorldIdsData>> => {
+
+    console.log("Requesting users " + ids.join(","));
+
     if (!ids || ids.length === 0) {
         console.log("id is null");
         return { error: { code: noId } };

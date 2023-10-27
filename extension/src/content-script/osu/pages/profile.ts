@@ -59,7 +59,7 @@ export const addFlagsProfile = async () => {
 
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
-    if (!countryCode) return;
+    // if (!countryCode) return;
 
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
 

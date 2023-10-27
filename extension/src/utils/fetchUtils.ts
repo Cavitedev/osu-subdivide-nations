@@ -40,6 +40,7 @@ const fetchAndSaveInCache = async (
     return fetch(url, { signal: signal })
         .then(async (res) => {
             const jsonResponse = await res.json();
+            console.log(`Fetching ${url} returns ${JSON.stringify(jsonResponse)}`);
             if (!jsonResponse)
                 return {
                     error: {
@@ -60,6 +61,7 @@ const fetchAndSaveInCache = async (
             return cachedResponse;
         })
         .catch((err) => {
+            console.error(err);
             //AbortError
             if (err.code === 20) {
                 return {};
