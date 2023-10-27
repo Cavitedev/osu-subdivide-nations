@@ -1,9 +1,8 @@
-import {  loadMultipleUrlsFromCache, saveInCache } from "./cache";
+import { loadMultipleUrlsFromCache, saveInCache } from "./cache";
 import {
     IfetchResponse,
     noId,
     fetchWithCache,
-    fetchWithMinimumWaitTime,
     IFetchError,
     fetchErrorToText,
     fetchWithoutCache,
@@ -11,12 +10,13 @@ import {
     expireHeader,
 } from "./fetchUtils";
 
-export interface IosuWorldIdSuccess {
+export type TosuWorldIdSuccess = {
     id: number;
     username: string;
     country_id: string;
     region_id: string;
-}
+    placement?: number;
+};
 
 export interface IosuWorldRegionalPlayerData {
     id: number;
@@ -32,8 +32,8 @@ export interface IosuWorldRegionalRankingSuccess {
     top: [IosuWorldRegionalPlayerData];
 }
 
-export type TosuWorldIdData = IosuWorldIdSuccess | IFetchError;
-export type TosuWorldIdsData = IosuWorldIdSuccess[] | IFetchError;
+export type TosuWorldIdData = TosuWorldIdSuccess | IFetchError;
+export type TosuWorldIdsData = TosuWorldIdSuccess[] | IFetchError;
 
 const osuWorldApiBase = "https://osuworld.octo.moe/api/";
 
@@ -42,6 +42,7 @@ const userDataExpireTime = 3600000; //60 minutes
 export const osuWorldUser = async (
     id: string,
     signal: AbortSignal | undefined,
+    retrievePlacement = false,
 ): Promise<IfetchResponse<TosuWorldIdData>> => {
     if (!id) {
         console.log("id is null");
@@ -53,7 +54,14 @@ export const osuWorldUser = async (
     const dataPromise = fetchWithCache(url, userDataExpireTime, { signal: signal }) as Promise<
         IfetchResponse<TosuWorldIdData>
     >;
-    return fetchWithMinimumWaitTime<TosuWorldIdData>(dataPromise, 200);
+
+    const fetchData = await dataPromise;
+    const data = fetchData.data;
+    if (retrievePlacement && (data as TosuWorldIdSuccess | undefined)?.placement === undefined) {
+        return fetchWithoutCache(url, { signal: signal }) as Promise<IfetchResponse<TosuWorldIdData>>;
+    }
+
+    return dataPromise;
 };
 
 export const osuWorldUsers = async (
@@ -68,13 +76,13 @@ export const osuWorldUsers = async (
     const cachedRequests = await loadUserIdsFromCache(ids);
 
     const cachedIds = new Set(cachedRequests.map((entry) => entry.id));
-    ids = [...new Set(ids.filter(id => !cachedIds.has(id)))];
+    const fetchIds = [...new Set(ids.filter((id) => !cachedIds.has(id)))];
 
     // Max 50 ids per request
     const promises = [];
 
-    for (let i = 0; i < ids.length; i += 50) {
-        const slicedIds = ids.slice(i, i + 50);
+    for (let i = 0; i < fetchIds.length; i += 50) {
+        const slicedIds = fetchIds.slice(i, i + 50);
         const url = osuWorldApiBase + "subdiv/users?ids=" + slicedIds.join(",");
         const promise = fetchWithoutCache(url, { signal: signal }) as Promise<IfetchResponse<TosuWorldIdsData>>;
         promises.push(promise);
@@ -93,11 +101,11 @@ export const osuWorldUsers = async (
     });
 
     const data = response.data;
-    cacheMultipleUsersData(data, ids);
+    cacheMultipleUsersData(data, fetchIds);
 
     if (signal?.aborted) return {};
 
-    const successCache = cacheResponsesFilter(cachedRequests.map(d => d.data));
+    const successCache = cacheResponsesFilter(cachedRequests.map((d) => d.data));
     response.data = [...successCache.data, ...response.data];
 
     return response;
@@ -147,7 +155,7 @@ const cacheResponsesFilter = (responses: IfetchResponse<TosuWorldIdData>[]) => {
             return true;
         })
         .map((response) => {
-            return response.data as IosuWorldIdSuccess;
+            return response.data as TosuWorldIdSuccess;
         });
 
     return {
@@ -181,7 +189,6 @@ const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: s
             [expireHeader]: genExpireDate(userDataExpireTime),
         });
     }
-
 };
 
 // Modes: osu, taiko, fruits, mania
