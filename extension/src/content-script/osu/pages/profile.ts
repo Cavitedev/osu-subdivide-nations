@@ -24,7 +24,6 @@ export const addFlagsProfile = async () => {
         profileMutationObserverInit.disconnect();
         return;
     }
-    console.log("profile");
 
     const signal = nextAbortControllerSignal();
     const linkItem = document.querySelector(

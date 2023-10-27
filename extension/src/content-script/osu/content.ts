@@ -112,10 +112,12 @@ const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
         const userId = idFromOsuProfileUrl(
             card.querySelector(".user-search-card__col--username")!.getAttribute("href")!,
         );
-        if(!userId) continue;
+        if (!userId) continue;
         flagItems.push({ item: card, id: userId });
+        (card.querySelector(".user-search-card__col--username") as HTMLElement).textContent = "xxx";
     }
-
+    console.log("Updating ");
+    console.log(flagItems);
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
 };
 
@@ -151,33 +153,54 @@ const mobileMenuCreationObserver = new MutationObserver((mutations) => {
     }
 });
 
+const allobserver = new MutationObserver((mutations) => {
+    console.log(mutations);
+});
+
+const refreshHiddenSearchResults = () => {
+    const resultsDiv = document.querySelector("div.mobile-menu div.quick-search-result");
+    if (!resultsDiv) return;
+    const userCards = resultsDiv.querySelectorAll("[data-section=user]");
+    if (!userCards || userCards.length === 0) return;
+
+    updateSearchCards(userCards as NodeListOf<HTMLElement>);
+};
+
 const addGlobalObservers = () => {
     bodyObserver.observe(document.querySelector("body")!, {
         childList: true,
     });
 
-    const mobileMenu = document.querySelector(".mobile-menu__item--search");
-    const mobileMenuInner = mobileMenu?.querySelector(".quick-search");
+    const mobileMenu = document.querySelector(".mobile-menu") as HTMLElement | undefined;
+
+    if (!mobileMenu) return;
+
+    const mobileMenuSearch = mobileMenu.querySelector(".mobile-menu__item--search");
+    const mobileMenuInner = mobileMenuSearch?.querySelector(".quick-search");
     if (mobileMenuInner) {
         updateFlagMobileSearchObserver.observe(mobileMenuInner, {
             childList: true,
         });
-    } else if (mobileMenu) {
-        mobileMenuCreationObserver.observe(mobileMenu, {
+    } else if (mobileMenuSearch) {
+        mobileMenuCreationObserver.observe(mobileMenuSearch, {
             childList: true,
         });
     }
 };
 
 export const exec = async () => {
+    allobserver.observe(document, {
+        childList: true,
+        subtree: true,
+    });
+    console.log("executing");
     reloadMutationObserver.observe(document.querySelector("title")!, {
         childList: true,
     });
     updateLanguageToOsuLanguage();
     //Invalidate previous executions
     nextAbortControllerSignal();
-    
-    addGlobalObservers();
+
     updateUserCardMobileView();
     addFlagsSearch();
     // All these updates are conditional to the url
@@ -190,7 +213,9 @@ export const exec = async () => {
     addFlagsBeatmapsets();
     addFlagsWiki();
     // The flag appears in a card same as overlays
+    addGlobalObservers();
     refreshOverlays();
+    refreshHiddenSearchResults();
 };
 
 (async () => {
