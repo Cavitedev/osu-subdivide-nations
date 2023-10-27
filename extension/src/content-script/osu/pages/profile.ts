@@ -16,7 +16,7 @@ import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
-    enhanceProfile();
+    // enhanceProfile();
 });
 
 export const enhanceProfile = async () => {
@@ -46,7 +46,6 @@ export const enhanceProfile = async () => {
         return;
     }
     const currentMod = getCurrentMod();
-    console.log(currentMod);
     if (currentMod) {
         addScoreRank(signal, playerId, currentMod);
         addRegionalRank(signal, playerId, currentMod);

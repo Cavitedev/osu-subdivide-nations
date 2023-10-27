@@ -118,7 +118,7 @@ const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
 };
 
-const reloadMutationObserver = new MutationObserver(() => {
+const reloadMutationObserver = new MutationObserver((m) => {
     exec();
 });
 
