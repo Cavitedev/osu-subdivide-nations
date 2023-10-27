@@ -9,7 +9,6 @@ import {
     fetchWithoutCache,
     genExpireDate,
     expireHeader,
-    unknownUserError,
 } from "./fetchUtils";
 
 export interface IosuWorldIdSuccess {
