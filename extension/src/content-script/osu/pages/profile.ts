@@ -24,6 +24,7 @@ export const addFlagsProfile = async () => {
         profileMutationObserverInit.disconnect();
         return;
     }
+    console.log("profile");
 
     const signal = nextAbortControllerSignal();
     const linkItem = document.querySelector(
@@ -50,16 +51,11 @@ export const addFlagsProfile = async () => {
         addScoreRank(signal, playerId, currentMod);
         addRegionalRank(signal, playerId, currentMod);
     }
-    const flagResult = await addFlagUser(
-        flagElement as HTMLElement,
-        playerId,
-        { signal: signal, addMargin: true },
-        currentMod,
-    );
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
 
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
-    // if (!countryCode) return;
+    if (!countryCode) return;
 
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
 

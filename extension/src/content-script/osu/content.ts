@@ -176,6 +176,7 @@ export const exec = async () => {
     updateLanguageToOsuLanguage();
     //Invalidate previous executions
     nextAbortControllerSignal();
+    
     addGlobalObservers();
     updateUserCardMobileView();
     addFlagsSearch();
