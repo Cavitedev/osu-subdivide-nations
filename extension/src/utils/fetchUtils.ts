@@ -85,6 +85,7 @@ export const fetchWithCache = async (
         if((res as IfetchResponse<object>)?.error?.code !== abortError){
             return res;
         }
+        // If it was aborted it is going to try it again. This should be avoided as much as possible
     }
 
     const cachedItem = (await loadFromCache(url)) as IfetchResponse<object> | undefined;

@@ -3,7 +3,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 
 import { isNumber } from "@src/utils/utils";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
-import { IFetchError, nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { IFetchError } from "@src/utils/fetchUtils";
 import { osuScoreRanking } from "@src/utils/respektive";
 import {
     getActiveLanguageCode,
@@ -15,25 +15,10 @@ import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
 
-export const profileMutationObserverInit = new MutationObserver((_) => {
-    // enhanceProfile();
-});
-
 export const enhanceProfile = async () => {
     if (!location.href.includes("osu.ppy.sh/users")) {
-        profileMutationObserverInit.disconnect();
         return;
     }
-
-    const signal = nextAbortControllerSignal();
-    const linkItem = document.querySelector(
-        "body > div.osu-layout__section.osu-layout__section--full > div",
-    ) as HTMLElement;
-    profileMutationObserverInit.observe(linkItem, {
-        attributes: false,
-        childList: true,
-        subtree: false,
-    });
 
     const url = location.href;
     const playerId = idFromOsuProfileUrl(url);
@@ -47,16 +32,14 @@ export const enhanceProfile = async () => {
     }
     const currentMod = getCurrentMod();
     if (currentMod) {
-        addScoreRank(signal, playerId, currentMod);
-        addRegionalRank(signal, playerId, currentMod);
+        addScoreRank(playerId, currentMod);
+        addRegionalRank(playerId, currentMod);
     }
-    addRegionalFlagProfile(flagElement as HTMLElement, playerId, signal);
-
+    addRegionalFlagProfile(flagElement as HTMLElement, playerId);
 };
 
-
-const addRegionalFlagProfile = async (flagElement : HTMLElement, playerId: string, signal: AbortSignal) => {
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
+const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string) => {
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: true });
 
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
@@ -77,8 +60,7 @@ const addRegionalFlagProfile = async (flagElement : HTMLElement, playerId: strin
     }
 
     countryNameElement.textContent = replaceText;
-}
-
+};
 
 const tagRanks = {
     scoreRank: "respektiveScore",
@@ -87,7 +69,7 @@ const tagRanks = {
 
 const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
 
-async function addRegionalRank(signal: AbortSignal, playerId: string, mode: string) {
+async function addRegionalRank(playerId: string, mode: string) {
     const tagRank = tagRanks.regionalRank;
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
@@ -95,11 +77,9 @@ async function addRegionalRank(signal: AbortSignal, playerId: string, mode: stri
     let previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return;
 
-    const osuWorldInfo = await osuWorldUser(playerId, signal, mode);
+    const osuWorldInfo = await osuWorldUser(playerId, undefined, mode);
     const playerData = osuWorldInfo.data;
     if (!playerData || (playerData as IFetchError).error) return;
-
-    if (signal.aborted) return;
 
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return;
@@ -109,17 +89,15 @@ async function addRegionalRank(signal: AbortSignal, playerId: string, mode: stri
     addRank(ranksElement, rankValue, label, tagRank);
 }
 
-async function addScoreRank(signal: AbortSignal, playerId: string, mode: string) {
+async function addScoreRank(playerId: string, mode: string) {
     const tagRank = tagRanks.scoreRank;
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return;
 
-    const scoreRankInfo = await osuScoreRanking(playerId, mode, signal);
+    const scoreRankInfo = await osuScoreRanking(playerId, mode);
     if (!scoreRankInfo) return;
-
-    if (signal.aborted) return;
 
     const label = getLocMsg("score_ranking");
 
