@@ -1,8 +1,6 @@
 import { test as base, chromium, type BrowserContext, Page } from '@playwright/test';
 import path from 'path';
 
-let currentExtensionId: string;
-
 export const test = base.extend<{
   context: BrowserContext;
   extensionId: string;

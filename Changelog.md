@@ -14,13 +14,13 @@
 - Update bundler to vite (decrease file size)
 - Fix Score ranking showing twice (a few times)
 - Remove InnerHTML code (security)
-- Newest translations
+- Latest translations
 
 ## Version 3.3.1
 
 - Round flags wiki page
 - Fix native names having 2 languages. I enforce one language now
-- Newest translations
+- Latest translations
 - Improve code reliability
 
 ## Version 3.3.0
@@ -55,7 +55,7 @@
 ## Version 3.2.5
 
 - Fix wybin osu-catch-draft-tournament prizes view exception
-- Newest translations
+- Latest translations
 
 
 ## Version 3.2.4
