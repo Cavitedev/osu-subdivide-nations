@@ -1,4 +1,10 @@
 {
+    "appDesc": {
+        "message": "Добавьте региональные флаги на веб-сайт osu!\n Пока так же обновляются глобальные очки в профилях osu!."
+    },
+    "created_by": {
+        "message": "создатель: {{developer}}"
+    },
     "system_default": {
         "message": "По умолчанию"
     },
@@ -12,34 +18,34 @@
         "message": "Кэш очищен"
     },
     "region_language": {
-        "message": "Местный язык:"
+        "message": "Язык расширения:"
     },
     "score_ranking": {
-        "message": "Ранг по скору"
+        "message": "Рейтинг по очкам"
     },
     "highest_rank_profile": {
-        "message": "Наивысший ранк: #{{rankHighest.rank}} был {{formattedDate}}"
+        "message": "Наивысший ранг: #{{rankHighest.rank}} от {{formattedDate}}"
     },
     "region": {
         "message": "Регион"
     },
     "region_ru": {
-        "message": "Область"
+        "message": "Республика / Область"
     },
     "region_ar": {
         "message": "Провинция"
     },
     "region_at": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_au": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_be": {
         "message": "Провинция"
     },
     "region_br": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_by": {
         "message": "Область"
@@ -54,13 +60,13 @@
         "message": "Административный регион"
     },
     "region_co": {
-        "message": "Отдел"
+        "message": "Департамент"
     },
     "region_cz": {
         "message": "Регион"
     },
     "region_de": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_es": {
         "message": "Автономное сообщество"
@@ -72,7 +78,7 @@
         "message": "Регион"
     },
     "region_hu": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_id": {
         "message": "Провинция"
@@ -87,22 +93,22 @@
         "message": "Провинция"
     },
     "region_kz": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_lv": {
         "message": "Регион"
     },
     "region_mx": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_my": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_nl": {
         "message": "Провинция"
     },
     "region_no": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_pe": {
         "message": "Регион"
@@ -117,10 +123,10 @@
         "message": "Регион"
     },
     "region_ro": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_se": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_sg": {
         "message": "Район"
@@ -135,10 +141,10 @@
         "message": "Провинция"
     },
     "region_ua": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_us": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_vn": {
         "message": "Провинция"
@@ -155,8 +161,14 @@
     "region_lt": {
         "message": "Регион"
     },
+    "region_ch": {
+        "message": "Кантон"
+    },
     "region_gr": {
         "message": "Регион"
+    },
+    "region_ee": {
+        "message": "Мааконд"
     },
     "region_bg": {
         "message": "Провинция"
@@ -165,7 +177,7 @@
         "message": "Регион"
     },
     "region_uk": {
-        "message": "Страна"
+        "message": "Медье"
     },
     "region_ie": {
         "message": "Провинция"
