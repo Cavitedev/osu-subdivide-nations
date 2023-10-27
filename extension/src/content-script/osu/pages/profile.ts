@@ -16,10 +16,10 @@ import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
 
 export const profileMutationObserverInit = new MutationObserver((_) => {
-    addFlagsProfile();
+    enhanceProfile();
 });
 
-export const addFlagsProfile = async () => {
+export const enhanceProfile = async () => {
     if (!location.href.includes("osu.ppy.sh/users")) {
         profileMutationObserverInit.disconnect();
         return;
@@ -46,10 +46,17 @@ export const addFlagsProfile = async () => {
         return;
     }
     const currentMod = getCurrentMod();
+    console.log(currentMod);
     if (currentMod) {
         addScoreRank(signal, playerId, currentMod);
         addRegionalRank(signal, playerId, currentMod);
     }
+    addRegionalFlagProfile(flagElement as HTMLElement, playerId, signal);
+
+};
+
+
+const addRegionalFlagProfile = async (flagElement : HTMLElement, playerId: string, signal: AbortSignal) => {
     const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { signal: signal, addMargin: true });
 
     if (!flagResult) return;
@@ -71,7 +78,8 @@ export const addFlagsProfile = async () => {
     }
 
     countryNameElement.textContent = replaceText;
-};
+}
+
 
 const tagRanks = {
     scoreRank: "respektiveScore",

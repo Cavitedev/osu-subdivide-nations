@@ -5,7 +5,7 @@ import { addFlagsRankings } from "./pages/ranking";
 import { addFlagsBeatmapsets } from "./pages/beatmapset";
 import { addFlagsFriends } from "./pages/friends";
 import { addFlagsMatches } from "./pages/match";
-import { addFlagsProfile } from "./pages/profile";
+import { enhanceProfile } from "./pages/profile";
 import { addFlagsTopics } from "./pages/topics";
 import { updateLanguageToOsuLanguage } from "./osuLanguage";
 import { addFlagsSearch } from "./pages/search";
@@ -194,7 +194,7 @@ export const exec = async () => {
     addFlagsSearch();
     // All these updates are conditional to the url
     addFlagsRankings();
-    addFlagsProfile();
+    enhanceProfile();
 
     addFlagsFriends();
     addFlagsMatches();

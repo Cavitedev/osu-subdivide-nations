@@ -63,8 +63,6 @@ export const osuWorldUsers = async (
     signal: AbortSignal | undefined,
 ): Promise<IfetchResponse<TosuWorldIdsData>> => {
 
-    console.log("Requesting users " + ids.join(","));
-
     if (!ids || ids.length === 0) {
         console.log("id is null");
         return { error: { code: noId } };
