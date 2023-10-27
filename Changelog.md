@@ -2,7 +2,7 @@
 
 ## Version 3.4.0
 
-
+- Add regional ranking to profile
 - Optimize cache when requesting multiple ids at the same time
 - Force one name in Navarra native name
 
