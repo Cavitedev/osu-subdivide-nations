@@ -23,13 +23,9 @@
     "score_ranking": {
         "message": "Score Ranking"
     },
-    "region_ranking": {
-        "message": "Region Ranking"
-    },
     "highest_rank_profile": {
         "message": "Highest rank: #{{rankHighest.rank}} on {{formattedDate}}"
     },
-
     "region": {
         "message": "Region"
     },
