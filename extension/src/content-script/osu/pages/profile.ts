@@ -81,7 +81,7 @@ const tagRanks = {
     regionalRank: ".cavitedevRegionalRank",
 };
 
-
+const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
 
 async function addRegionalRank(signal: AbortSignal, playerId: string, mode: string) {
     const tagRank = tagRanks.regionalRank;
@@ -164,7 +164,17 @@ const addRank = async (
     const previousRank = ranksElement.querySelector(classTag);
     if (previousRank) return;
 
-    ranksElement.append(scoreRankElement);
+    const positioningIndex = tagsOrder.indexOf(classTag);
+    const nextTag = tagsOrder[positioningIndex + 1];
+    if (!nextTag) {
+        ranksElement.append(scoreRankElement);
+    }
+    const nextElement = ranksElement.querySelector(nextTag);
+    if (nextElement) {
+        ranksElement.insertBefore(scoreRankElement, nextElement);
+    } else {
+        ranksElement.append(scoreRankElement);
+    }
 };
 
 const getCurrentMod = () => {
