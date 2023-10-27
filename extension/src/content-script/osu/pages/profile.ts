@@ -142,7 +142,13 @@ async function addScoreRank(signal: AbortSignal, mode: string) {
         scoreRankValue.classList.add("value-display__value");
         scoreRankElement.append(scoreRankValue);
         const rank = document.createElement("div");
-        const tooltipTitle = highestRankTip(scoreRankInfo);
+
+        const rankHighest = scoreRankInfo[0]["rank_highest"];
+
+        const highestRank = rankHighest.rank;
+        const date = new Date(rankHighest["updated_at"]);
+
+        const tooltipTitle = highestRankTip(highestRank, date);
         rank.setAttribute("data-html-title", tooltipTitle);
         rank.setAttribute("title", "");
 
@@ -156,10 +162,16 @@ async function addScoreRank(signal: AbortSignal, mode: string) {
     }
 }
 
-const highestRankTip = (scoreRankInfo: any) => {
-    const rankHighest = scoreRankInfo[0]["rank_highest"];
-    const date = new Date(rankHighest["updated_at"]);
+const getCurrentMod = () => {
+    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
+    if (!modesElement) {
+        return;
+    }
+    const mode = modesElement.dataset.mode;
+    return mode;
+};
 
+const highestRankTip = (highestRank: number, date: Date) => {
     // Get the formatted date string
     const highestRankKey = "highest_rank_profile";
     const countryCode = getActiveLanguageCodeForKey(highestRankKey);
@@ -172,17 +184,8 @@ const highestRankTip = (scoreRankInfo: any) => {
 
     const rawText = getLocMsg(highestRankKey);
     const replacedText = rawText
-        .replace("{{rankHighest.rank}}", rankHighest.rank)
+        .replace("{{rankHighest.rank}}", highestRank.toLocaleString(getActiveLanguageCode()))
         .replace("{{formattedDate}}", formattedDate);
 
     return `<div>${replacedText}</div>`;
-};
-
-const getCurrentMod = () => {
-    const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
-    if (!modesElement) {
-        return;
-    }
-    const mode = modesElement.dataset.mode;
-    return mode;
 };
