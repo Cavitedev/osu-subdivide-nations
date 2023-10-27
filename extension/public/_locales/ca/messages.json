@@ -1,12 +1,12 @@
 {
     "appDesc": {
-        "message": "Afegeix banderes regionals a la pàgina oficial de l'osu!\nTambé mostra la classificació global per puntuació al perfil."
+        "message": "Afegeix banderes regionals a la pàgina oficial d'osu!\nTambé mostra la classificació global per puntuació al perfil."
     },
     "created_by": {
         "message": "creat per {{developer}}"
     },
     "system_default": {
-        "message": "Idioma per defecte"
+        "message": "Llengua per defecte"
     },
     "native_language": {
         "message": "Idioma natiu"
