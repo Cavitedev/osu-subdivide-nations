@@ -3,6 +3,7 @@
 ## Version 3.4.0
 
 - Add regional ranking to profile
+- Fix search after going to searched player
 - Optimize cache when requesting multiple ids at the same time
 - Force one name in Navarra native name
 

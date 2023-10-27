@@ -114,10 +114,7 @@ const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
         );
         if (!userId) continue;
         flagItems.push({ item: card, id: userId });
-        (card.querySelector(".user-search-card__col--username") as HTMLElement).textContent = "xxx";
     }
-    console.log("Updating ");
-    console.log(flagItems);
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
 };
 
@@ -153,13 +150,10 @@ const mobileMenuCreationObserver = new MutationObserver((mutations) => {
     }
 });
 
-const allobserver = new MutationObserver((mutations) => {
-    console.log(mutations);
-});
-
 const refreshHiddenSearchResults = () => {
     const resultsDiv = document.querySelector("div.mobile-menu div.quick-search-result");
     if (!resultsDiv) return;
+    firstSearch(resultsDiv as HTMLElement, true);
     const userCards = resultsDiv.querySelectorAll("[data-section=user]");
     if (!userCards || userCards.length === 0) return;
 
@@ -189,11 +183,6 @@ const addGlobalObservers = () => {
 };
 
 export const exec = async () => {
-    allobserver.observe(document, {
-        childList: true,
-        subtree: true,
-    });
-    console.log("executing");
     reloadMutationObserver.observe(document.querySelector("title")!, {
         childList: true,
     });
