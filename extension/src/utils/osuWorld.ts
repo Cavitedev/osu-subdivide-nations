@@ -9,6 +9,7 @@ import {
     genExpireDate,
     expireHeader,
     fetchWithMinimumWaitTime,
+    unknownUserError,
 } from "./fetchUtils";
 
 export type TosuWorldIdSuccess = {
@@ -62,7 +63,6 @@ export const osuWorldUsers = async (
     ids: string[],
     signal: AbortSignal | undefined,
 ): Promise<IfetchResponse<TosuWorldIdsData>> => {
-
     if (!ids || ids.length === 0) {
         console.log("id is null");
         return { error: { code: noId } };
@@ -181,6 +181,9 @@ const cacheMultipleUsersData = async (data: TosuWorldIdsData | undefined, ids: s
         if (dataIdsSet.has(id)) continue;
         const url = osuWorldApiBase + "users/" + id;
         saveInCache(url, {
+            data: {
+                error: unknownUserError,
+            },
             [expireHeader]: genExpireDate(userDataExpireTime),
         });
     }

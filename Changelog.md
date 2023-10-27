@@ -4,6 +4,7 @@
 
 - Add regional ranking to profile
 - Fix search after going to searched player
+- Fix turbolinks on profile not showing flag or ranking
 - Optimize cache when requesting multiple ids at the same time
 - Force one name in Navarra native name
 
