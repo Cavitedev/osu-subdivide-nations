@@ -37,7 +37,7 @@ export const addFlagsProfile = async () => {
 
     const url = location.href;
     const playerId = idFromOsuProfileUrl(url);
-    if (!isNumber(playerId)) {
+    if (!playerId || !isNumber(playerId)) {
         return;
     }
 
@@ -47,8 +47,8 @@ export const addFlagsProfile = async () => {
     }
     const currentMod = getCurrentMod();
     if (currentMod) {
-        addScoreRank(signal, currentMod);
-        addRegionalRank(signal, currentMod);
+        addScoreRank(signal, playerId, currentMod);
+        addRegionalRank(signal, playerId, currentMod);
     }
     const flagResult = await addFlagUser(
         flagElement as HTMLElement,
@@ -76,15 +76,22 @@ export const addFlagsProfile = async () => {
     countryNameElement.textContent = replaceText;
 };
 
-async function addRegionalRank(signal: AbortSignal, mode: string) {
+const tagRanks = {
+    scoreRank: ".respektiveScore",
+    regionalRank: ".cavitedevRegionalRank",
+};
+
+
+
+async function addRegionalRank(signal: AbortSignal, playerId: string, mode: string) {
+    const tagRank = tagRanks.regionalRank;
+
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
 
-    let previousScoreSet = ranksElement.querySelector(".cavitedevRegionalRank");
+    let previousScoreSet = ranksElement.querySelector(tagRank);
     if (previousScoreSet) return;
 
-    const path = window.location.pathname.split("/");
-    const userId = path[2];
-    const osuWorldInfo = await osuWorldUser(userId, signal, mode);
+    const osuWorldInfo = await osuWorldUser(playerId, signal, mode);
     const playerData = osuWorldInfo.data;
     if (!playerData || (playerData as IFetchError).error) return;
 
@@ -93,74 +100,72 @@ async function addRegionalRank(signal: AbortSignal, mode: string) {
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return;
 
-    const rankElement = document.createElement("div");
-    rankElement.classList.add("respektiveScore");
-    rankElement.classList.add("value-display", "value-display--rank");
-    const rankLabel = document.createElement("div");
-    rankLabel.classList.add("value-display__label");
-    await waitLastLanguageIsLoaded();
-    rankLabel.innerText = getLocMsg("region_ranking");
-    rankElement.append(rankLabel);
-    const scoreRankValue = document.createElement("div");
-    scoreRankValue.classList.add("value-display__value");
-    rankElement.append(scoreRankValue);
+    const label = getLocMsg("region_ranking");
 
-    const rank = document.createElement("div");
-    rank.textContent = `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
-    scoreRankValue.append(rank);
-
-    previousScoreSet = ranksElement.querySelector(".cavitedevRegionalRank");
-    if (previousScoreSet) return;
-
-    ranksElement.append(rankElement);
+    addRank(ranksElement, rankValue, label, tagRank);
 }
 
-async function addScoreRank(signal: AbortSignal, mode: string) {
+async function addScoreRank(signal: AbortSignal, playerId: string, mode: string) {
+    const tagRank = tagRanks.scoreRank;
+
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
-    const previousScoreSet = ranksElement.querySelector(".respektiveScore");
+    const previousScoreSet = ranksElement.querySelector(tagRank);
     if (previousScoreSet) return;
 
-    const path = window.location.pathname.split("/");
-    const userId = path[2];
-    const scoreRankInfo = await osuScoreRanking(userId, mode, signal);
+    const scoreRankInfo = await osuScoreRanking(playerId, mode, signal);
     if (!scoreRankInfo) return;
 
     if (signal.aborted) return;
 
+    const label = getLocMsg("score_ranking");
+
+    const rankHighest = scoreRankInfo[0]["rank_highest"];
+    const highestRank = rankHighest.rank;
+    const date = new Date(rankHighest["updated_at"]);
+    const tooltip = highestRankTip(highestRank, date);
+
     const scoreRank = scoreRankInfo[0].rank;
-    if (scoreRank != 0) {
-        const scoreRankElement = document.createElement("div");
-        scoreRankElement.classList.add("respektiveScore");
-        scoreRankElement.classList.add("value-display", "value-display--rank");
-        const scoreRankLabel = document.createElement("div");
-        scoreRankLabel.classList.add("value-display__label");
-        await waitLastLanguageIsLoaded();
-        scoreRankLabel.innerText = getLocMsg("score_ranking");
-        scoreRankElement.append(scoreRankLabel);
-
-        const scoreRankValue = document.createElement("div");
-        scoreRankValue.classList.add("value-display__value");
-        scoreRankElement.append(scoreRankValue);
-        const rank = document.createElement("div");
-
-        const rankHighest = scoreRankInfo[0]["rank_highest"];
-
-        const highestRank = rankHighest.rank;
-        const date = new Date(rankHighest["updated_at"]);
-
-        const tooltipTitle = highestRankTip(highestRank, date);
-        rank.setAttribute("data-html-title", tooltipTitle);
-        rank.setAttribute("title", "");
-
-        rank.textContent = `#${scoreRank.toLocaleString(getActiveLanguageCode())}`;
-        scoreRankValue.append(rank);
-
-        const previousScoreSet = ranksElement.querySelector(".respektiveScore");
-        if (previousScoreSet) return;
-
-        ranksElement.append(scoreRankElement);
+    if (scoreRank === 0) {
+        return;
     }
+    await addRank(ranksElement, scoreRank, label, tagRank, tooltip);
 }
+
+const addRank = async (
+    ranksElement: HTMLElement,
+    rankValue: number,
+    labelText: string,
+    classTag: string,
+    tooltip?: string,
+) => {
+    const scoreRankElement = document.createElement("div");
+    scoreRankElement.classList.add("respektiveScore");
+    scoreRankElement.classList.add("value-display", "value-display--rank");
+    const scoreRankLabel = document.createElement("div");
+    scoreRankLabel.classList.add("value-display__label");
+    await waitLastLanguageIsLoaded();
+
+    scoreRankLabel.innerText = labelText;
+    scoreRankElement.append(scoreRankLabel);
+
+    const scoreRankValue = document.createElement("div");
+    scoreRankValue.classList.add("value-display__value");
+    scoreRankElement.append(scoreRankValue);
+    const rank = document.createElement("div");
+
+    if (tooltip) {
+        rank.setAttribute("data-html-title", tooltip);
+    }
+    rank.setAttribute("title", "");
+
+    rank.textContent = `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
+    scoreRankValue.append(rank);
+
+    const previousRank = ranksElement.querySelector(classTag);
+    if (previousRank) return;
+
+    ranksElement.append(scoreRankElement);
+};
 
 const getCurrentMod = () => {
     const modesElement = document.querySelector(".game-mode-link--active") as HTMLElement;
