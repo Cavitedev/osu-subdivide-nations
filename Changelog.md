@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.4.0
+
+
+- Optimize cache when requesting multiple ids at the same time
+
 
 ## Version 3.3.2
 
