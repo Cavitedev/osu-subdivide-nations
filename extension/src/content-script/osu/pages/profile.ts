@@ -59,6 +59,8 @@ export const addFlagsProfile = async () => {
 
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
+    if (!countryCode) return;
+
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
 
     let countryText = flagElement.querySelector("span.flag-country")?.getAttribute("original-title");
