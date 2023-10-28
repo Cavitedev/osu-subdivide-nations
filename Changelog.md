@@ -4,6 +4,7 @@
 
 - Add wybin draft page
 - Fix wybin participants page flags
+- Latest translations
 
 ## Version 3.4.0
 
