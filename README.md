@@ -15,7 +15,7 @@
     <a title="Crowdin" target="_blank" href="https://crowdin.com/project/osu-subdivide-nations"><img src="https://badges.crowdin.net/osu-subdivide-nations/localized.svg"></a>
 </p>
 <p align="center">
-    <a title="Osu! forum"  href="https://img.shields.io/badge/osu!%20-%23FF66AA.svg?logo=osu&logoColor=white"><img src="https://img.shields.io/badge/osu! forum%20-%23FF66AA.svg?logo=osu&logoColor=white"></a>
+    <a title="Osu! forum"  href="https://osu.ppy.sh/community/forums/topics/1837728?n=1"><img src="https://img.shields.io/badge/osu! forum%20-%23FF66AA.svg?logo=osu&logoColor=white"></a>
     <a title="𝕏 profile"  href="https://x.com/CaviteDev"><img src="https://img.shields.io/badge/-%23000000.svg?logo=x&logoColor=white"></a>
     <a title="Reddit profile"  href="https://www.reddit.com/user/Cavitedev"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=reddit&logoColor=white"></a>
 </p>
