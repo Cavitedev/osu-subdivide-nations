@@ -1,6 +1,6 @@
 {
     "appDesc": {
-        "message": "Добавьте региональные флаги на веб-сайт osu!\n Пока так же обновляются глобальные очки в профилях osu!."
+        "message": "Дополните сайт osu! региональными гербами / флагами административных делений.\n И вместе с этим получите рейтинг игроков по очкам!"
     },
     "created_by": {
         "message": "создатель: {{developer}}"
@@ -23,8 +23,11 @@
     "score_ranking": {
         "message": "Рейтинг по очкам"
     },
+    "region_ranking": {
+        "message": "Рейтинг в регионе"
+    },
     "highest_rank_profile": {
-        "message": "Наивысший ранг: #{{rankHighest.rank}} от {{formattedDate}}"
+        "message": "Наивысший: #{{rankHighest.rank}} от {{formattedDate}}"
     },
     "region": {
         "message": "Регион"
