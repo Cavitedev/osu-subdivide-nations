@@ -6,10 +6,10 @@
         "message": "создатель: {{developer}}"
     },
     "system_default": {
-        "message": "По умолчанию"
+        "message": "Как в системе"
     },
     "native_language": {
-        "message": "Родной язык"
+        "message": "Как в стране"
     },
     "clean_cache": {
         "message": "Очистить кэш"
@@ -18,7 +18,7 @@
         "message": "Кэш очищен"
     },
     "region_language": {
-        "message": "Язык расширения:"
+        "message": "Язык регионов:"
     },
     "score_ranking": {
         "message": "Рейтинг по очкам"
