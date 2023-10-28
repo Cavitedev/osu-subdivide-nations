@@ -81,7 +81,7 @@
         "message": "Регион"
     },
     "region_hu": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_id": {
         "message": "Провинция"
@@ -96,7 +96,7 @@
         "message": "Провинция"
     },
     "region_kz": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_lv": {
         "message": "Регион"
@@ -111,7 +111,7 @@
         "message": "Провинция"
     },
     "region_no": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_pe": {
         "message": "Регион"
@@ -126,10 +126,10 @@
         "message": "Регион"
     },
     "region_ro": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_se": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_sg": {
         "message": "Район"
@@ -144,7 +144,7 @@
         "message": "Провинция"
     },
     "region_ua": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_us": {
         "message": "Земля"
@@ -180,7 +180,7 @@
         "message": "Регион"
     },
     "region_uk": {
-        "message": "Медье"
+        "message": "Земля"
     },
     "region_ie": {
         "message": "Провинция"
