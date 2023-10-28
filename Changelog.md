@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.4.1
+
+- Add wybin draft page
+
 ## Version 3.4.0
 
 - Add regional ranking to profile
