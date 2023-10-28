@@ -1,4 +1,4 @@
-import { currentSignal, fetchErrorToText, fetchOptions, nextAbortControllerSignal } from "@src/utils/fetchUtils";
+import { currentSignal, fetchErrorToText, fetchOptions } from "@src/utils/fetchUtils";
 import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
 import { osuWorldUser, osuWorldUsers } from "@src/utils/osuWorld";
