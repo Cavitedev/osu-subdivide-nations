@@ -1,1 +1,68 @@
-{}
+{
+    "system_default": {
+        "message": "系统默认"
+    },
+    "native_language": {
+        "message": "母语"
+    },
+    "clean_cache": {
+        "message": "清理缓存"
+    },
+    "cache_cleaned": {
+        "message": "缓存已清理"
+    },
+    "region_language": {
+        "message": "地区语言"
+    },
+    "score_ranking": {
+        "message": "分数排名"
+    },
+    "region_ranking": {
+        "message": "地区排名"
+    },
+    "region": {
+        "message": "地区"
+    },
+    "region_cl": {
+        "message": "地区"
+    },
+    "region_cz": {
+        "message": "地区"
+    },
+    "region_fi": {
+        "message": "地区"
+    },
+    "region_fr": {
+        "message": "地区"
+    },
+    "region_it": {
+        "message": "地区"
+    },
+    "region_lv": {
+        "message": "地区"
+    },
+    "region_pe": {
+        "message": "地区"
+    },
+    "region_pt": {
+        "message": "地区"
+    },
+    "region_tr": {
+        "message": "地区"
+    },
+    "region_dk": {
+        "message": "地区"
+    },
+    "region_nz": {
+        "message": "地区"
+    },
+    "region_lt": {
+        "message": "地区"
+    },
+    "region_gr": {
+        "message": "地区"
+    },
+    "region_sk": {
+        "message": "地区"
+    }
+}
