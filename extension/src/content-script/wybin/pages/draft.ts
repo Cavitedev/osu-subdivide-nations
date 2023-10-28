@@ -1,6 +1,5 @@
 import { TFlagItems } from "@src/utils/html";
 import { getContent } from "../content";
-import { updateFlagsPlayersList } from "./players";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { addFlagUsers } from "../flagHtml";
 
