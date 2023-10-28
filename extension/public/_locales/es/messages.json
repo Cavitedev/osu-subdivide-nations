@@ -23,6 +23,9 @@
     "score_ranking": {
         "message": "Clasificación por puntuación"
     },
+    "region_ranking": {
+        "message": "Clasificación regional"
+    },
     "highest_rank_profile": {
         "message": "Clasificación más alta: #{{rankHighest.rank}} el {{formattedDate}}"
     },
