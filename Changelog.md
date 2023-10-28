@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.4.1
+
+- Add wybin draft page
+- Fix wybin participants page flags
+- Latest translations
+
 ## Version 3.4.0
 
 - Add regional ranking to profile

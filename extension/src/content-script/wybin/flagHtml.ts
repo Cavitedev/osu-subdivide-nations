@@ -28,11 +28,9 @@ export const addFlagUser = async (item: HTMLElement, userId: string, options?: T
 export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUserOptions) => {
     if (flagItems.length === 0) return;
 
-    const signal = options?.signal ?? nextAbortControllerSignal();
 
     const playersOsuWorld = await osuWorldUsers(
         flagItems.map((item) => item.id),
-        signal,
     );
 
     if (playersOsuWorld.error) {
