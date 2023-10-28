@@ -27,7 +27,7 @@
         "message": "地区排名"
     },
     "highest_rank_profile": {
-        "message": "最高排名：{{formattedDate}}第{{rankHighest.rank}}名"
+        "message": "最高排名：#{{rankHighest.rank}} 于{{formattedDate}}达成"
     },
     "region": {
         "message": "地区"
