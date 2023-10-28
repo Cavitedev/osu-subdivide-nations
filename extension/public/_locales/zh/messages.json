@@ -18,7 +18,7 @@
         "message": "缓存已清理"
     },
     "region_language": {
-        "message": "地区语言："
+        "message": "地区语言"
     },
     "score_ranking": {
         "message": "分数排名"
@@ -51,7 +51,7 @@
         "message": "州"
     },
     "region_by": {
-        "message": "州"
+        "message": "省份"
     },
     "region_ca": {
         "message": "省份"
@@ -63,7 +63,7 @@
         "message": "行政区"
     },
     "region_co": {
-        "message": "省份"
+        "message": "行政区"
     },
     "region_cz": {
         "message": "地区"
@@ -90,7 +90,7 @@
         "message": "地区"
     },
     "region_jp": {
-        "message": "都道府县"
+        "message": "省份"
     },
     "region_kr": {
         "message": "省份"
@@ -120,7 +120,7 @@
         "message": "省份"
     },
     "region_pl": {
-        "message": "省份"
+        "message": "省"
     },
     "region_pt": {
         "message": "地区"
@@ -132,7 +132,7 @@
         "message": "州"
     },
     "region_sg": {
-        "message": "行政区"
+        "message": "自治区"
     },
     "region_th": {
         "message": "省份"
@@ -156,7 +156,7 @@
         "message": "地区"
     },
     "region_il": {
-        "message": "行政区"
+        "message": "自治区"
     },
     "region_nz": {
         "message": "地区"
