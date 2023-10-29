@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.4.4
+
+- Improve load speed in profile
+
 ## Version 3.4.3
 
 - Fix wybin participants flags changing tab

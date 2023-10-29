@@ -41,7 +41,7 @@ describe("Osu World", () => {
 
             mockBrowser.storage.local.get.mockImplementation(getStorage);
 
-            const userNoPlacement = await osuWorldUser("4871211", new AbortController().signal);
+            const userNoPlacement = await osuWorldUser("4871211");
             expect(mockFetch).toBeCalledTimes(0);
             expect(userNoPlacement.data).toEqual({
                 id: 4871211,
@@ -82,7 +82,7 @@ describe("Osu World", () => {
 
             mockBrowser.storage.local.get.mockImplementation(getStorage);
 
-            const userPlacement = await osuWorldUser("4871211", new AbortController().signal, "taiko");
+            const userPlacement = await osuWorldUser("4871211", "taiko");
             expect(userPlacement.data).toEqual({
                 id: 4871211,
                 username: "nekonyo",
