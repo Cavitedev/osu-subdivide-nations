@@ -112,13 +112,14 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     // Abort after fetch to ensure it's cached
     if (!scoreRankInfo || signal?.aborted) return;
     const scoreRank = scoreRankInfo[0].rank;
-    if (scoreRank === 0) {
-        return;
-    }
-    const label = getLocMsg("score_ranking");
 
     const rankHighest = scoreRankInfo[0]["rank_highest"];
     const highestRank = rankHighest.rank;
+
+    if (!highestRank && scoreRank === 0) {
+        return;
+    }
+    const label = getLocMsg("score_ranking");
     const date = new Date(rankHighest["updated_at"]);
     const tooltip = highestRankTip(highestRank, date);
     await addRank(ranksElement, scoreRank, label, tagRank, tooltip);
@@ -151,7 +152,7 @@ const addRank = async (
     }
     rank.setAttribute("title", "");
 
-    rank.textContent = `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
+    rank.textContent = rankValue === 0 ? "-" : `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
     scoreRankValue.append(rank);
 
     const previousRank = ranksElement.querySelector("." + classTag);

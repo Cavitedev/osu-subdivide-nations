@@ -5,6 +5,7 @@
 - Removing tabs permission (changing language doesn't update automatically anymore)
 - Fix wybin flags team overlay
 - Update respektive's domain (getting blocked by some blocklist)
+- Show "-" score ranking if no recent data but highest rank is found
 - Improve load speed in profile
 - Update date format code (trying to fix a bug)
 
