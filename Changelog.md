@@ -4,6 +4,7 @@
 
 - Fix wybin flags team overlay
 - Improve load speed in profile
+- Update date format code (trying to fix a bug)
 
 ## Version 3.4.3
 
