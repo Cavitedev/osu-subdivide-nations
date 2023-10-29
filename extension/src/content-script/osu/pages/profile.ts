@@ -96,9 +96,8 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return;
 
-    const label = getLocMsg("region_ranking");
 
-    addRank(ranksElement, rankValue, label, tagRank);
+    addRank(ranksElement, rankValue, "region_ranking", tagRank);
 }
 
 async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal) {
@@ -119,16 +118,16 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     if (!highestRank && scoreRank === 0) {
         return;
     }
-    const label = getLocMsg("score_ranking");
+
     const date = new Date(rankHighest["updated_at"]);
     const tooltip = highestRankTip(highestRank, date);
-    await addRank(ranksElement, scoreRank, label, tagRank, tooltip);
+    await addRank(ranksElement, scoreRank, "score_ranking", tagRank, tooltip);
 }
 
 const addRank = async (
     ranksElement: HTMLElement,
     rankValue: number,
-    labelText: string,
+    labelTag: string,
     classTag: string,
     tooltip?: string,
 ) => {
@@ -138,7 +137,7 @@ const addRank = async (
     const scoreRankLabel = document.createElement("div");
     scoreRankLabel.classList.add("value-display__label");
     await waitLastLanguageIsLoaded();
-
+    const labelText = getLocMsg(labelTag);
     scoreRankLabel.innerText = labelText;
     scoreRankElement.append(scoreRankLabel);
 
