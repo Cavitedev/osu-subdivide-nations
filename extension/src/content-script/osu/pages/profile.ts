@@ -111,18 +111,16 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     const scoreRankInfo = await osuScoreRanking(playerId, mode);
     // Abort after fetch to ensure it's cached
     if (!scoreRankInfo || signal?.aborted) return;
-
+    const scoreRank = scoreRankInfo[0].rank;
+    if (scoreRank === 0) {
+        return;
+    }
     const label = getLocMsg("score_ranking");
 
     const rankHighest = scoreRankInfo[0]["rank_highest"];
     const highestRank = rankHighest.rank;
     const date = new Date(rankHighest["updated_at"]);
     const tooltip = highestRankTip(highestRank, date);
-
-    const scoreRank = scoreRankInfo[0].rank;
-    if (scoreRank === 0) {
-        return;
-    }
     await addRank(ranksElement, scoreRank, label, tagRank, tooltip);
 }
 
