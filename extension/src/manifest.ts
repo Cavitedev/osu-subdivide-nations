@@ -43,7 +43,7 @@ const ManifestFirefox = {
         },
     },
     browser_action: browserAction,
-    permissions: [...sharedManifest.permissions, "https://osuworld.octo.moe/api/*", "https://score.respektive.pw/*"],
+    permissions: [...sharedManifest.permissions, "https://osuworld.octo.moe/api/*", "https://score.pekkie.de/*"],
 };
 
 const ManifestChromium = {

@@ -29,17 +29,23 @@ export const osuScoreRanking = async (
         const err = fetchErrorToText({ error: { code: noMode, mode: mode } });
         console.error(err);
     }
-
-    // example: `https://score.respektive.pw/u/4871211?mode=fruits`
-    const url = `https://score.respektive.pw/u/${userId}?mode=${mode}`;
+    console.log("score ranking");
+    // example: `https://score.pekkie.de/u/4871211?mode=fruits`
+    const url = `https://score.pekkie.de/u/${userId}?mode=${mode}`;
 
     const dataPromise = (
         fetchWithCache(url, respektiveDbReload, { signal: signal }) as Promise<IfetchResponse<TRespektiveScore>>
     ).then((r) => {
+        const errText = fetchErrorToText(r);
+        if (errText) {
+            console.error(errText);
+        }
+
         // Validate to prevent XHR injection
         if (!isNumber(r.data?.[0]?.rank) || !isValidDate(r.data?.[0]?.rank_highest?.updated_at)) {
             return undefined;
         }
+
         return r.data;
     });
     return dataPromise;
