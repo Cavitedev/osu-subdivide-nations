@@ -29,7 +29,6 @@ export const osuScoreRanking = async (
         const err = fetchErrorToText({ error: { code: noMode, mode: mode } });
         console.error(err);
     }
-    console.log("score ranking");
     // example: `https://score.pekkie.de/u/4871211?mode=fruits`
     const url = `https://score.pekkie.de/u/${userId}?mode=${mode}`;
 

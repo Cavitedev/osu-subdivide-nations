@@ -184,7 +184,6 @@ const highestRankTip = (highestRank: number, date: Date) => {
     // Get the formatted date string
     const highestRankKey = "highest_rank_profile";
     const countryCode = getActiveLanguageCodeForKey(highestRankKey);
-    console.log(countryCode);
 
     const formattedDate = date.toLocaleDateString(countryCode, { year: "numeric", month: "long", day: "numeric" });
 
