@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.4.3
+
+- Fix wybin participants flags changing tab
+
 ## Version 3.4.2
 
 - Fix profile execution
