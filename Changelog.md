@@ -3,6 +3,7 @@
 ## Version 3.4.2
 
 - Fix profile execution
+- Latest translations
 
 ## Version 3.4.1
 
