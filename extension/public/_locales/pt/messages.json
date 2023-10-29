@@ -24,7 +24,7 @@
         "message": "Classificação de pontuação"
     },
     "region_ranking": {
-        "message": "Classificação regional"
+        "message": "Classificação de região"
     },
     "highest_rank_profile": {
         "message": "Classificação mais alta: #{{rankHighest.rank}} em {{formattedDate}}"
