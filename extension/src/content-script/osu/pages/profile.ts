@@ -96,7 +96,6 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return;
 
-
     addRank(ranksElement, rankValue, "region_ranking", tagRank);
 }
 
@@ -120,8 +119,8 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     }
 
     const date = new Date(rankHighest["updated_at"]);
-    const tooltip = highestRankTip(highestRank, date);
-    await addRank(ranksElement, scoreRank, "score_ranking", tagRank, tooltip);
+    
+    await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
 }
 
 const addRank = async (
@@ -129,7 +128,8 @@ const addRank = async (
     rankValue: number,
     labelTag: string,
     classTag: string,
-    tooltip?: string,
+    highestRank?: number,
+    date?: Date,
 ) => {
     const scoreRankElement = document.createElement("div");
     scoreRankElement.classList.add(classTag);
@@ -146,7 +146,8 @@ const addRank = async (
     scoreRankElement.append(scoreRankValue);
     const rank = document.createElement("div");
 
-    if (tooltip) {
+    if (highestRank && date) {
+        const tooltip = highestRankTip(highestRank, date);
         rank.setAttribute("data-html-title", tooltip);
     }
     rank.setAttribute("title", "");
@@ -183,9 +184,9 @@ const highestRankTip = (highestRank: number, date: Date) => {
     // Get the formatted date string
     const highestRankKey = "highest_rank_profile";
     const countryCode = getActiveLanguageCodeForKey(highestRankKey);
+    console.log(countryCode);
 
     const formattedDate = date.toLocaleDateString(countryCode, { year: "numeric", month: "long", day: "numeric" });
-
 
     const rawText = getLocMsg(highestRankKey);
     const replacedText = rawText
