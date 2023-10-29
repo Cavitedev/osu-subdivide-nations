@@ -1,23 +1,36 @@
 import browser from "webextension-polyfill";
 export const saveInCache = async (url: string, data: object) => {
-    return browser.storage.local.set({ [url]: data });
-};
-
-export const loadFromCache = async (url: string): Promise<any | null> => {
-    const storageReturn = await browser.storage.local.get([url]);
-    if (!storageReturn || Object.keys(storageReturn).length === 0) {
-        return null;
-    } else {
-        return storageReturn[url];
+    try {
+        return browser.storage.local.set({ [url]: data });
+    } catch (e) {
+        console.error(`Error storing: ${data} in ${url} Error:${e}`);
     }
 };
 
-export const loadMultipleUrlsFromCache= async <T>(urls: string[]): Promise<Record<string, T> | null> => {
-    const storageReturn = await browser.storage.local.get(urls);
-    if (!storageReturn || Object.keys(storageReturn).length === 0) {
+export const loadFromCache = async (url: string): Promise<any | null> => {
+    try {
+        const storageReturn = await browser.storage.local.get([url]);
+        if (!storageReturn || Object.keys(storageReturn).length === 0) {
+            return null;
+        } else {
+            return storageReturn[url];
+        }
+    } catch (e) {
+        console.error(`Error loading: ${url} Error:${e}`);
+    }
+};
+
+export const loadMultipleUrlsFromCache = async <T>(urls: string[]): Promise<Record<string, T> | null> => {
+    try {
+        const storageReturn = await browser.storage.local.get(urls);
+        if (!storageReturn || Object.keys(storageReturn).length === 0) {
+            return null;
+        } else {
+            return storageReturn;
+        }
+    } catch (e) {
+        console.error(`Error loading: ${urls} Error:${e}`);
         return null;
-    } else {
-        return storageReturn;
     }
 };
 
