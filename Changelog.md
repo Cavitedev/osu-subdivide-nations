@@ -2,6 +2,7 @@
 
 ## Version 3.4.4
 
+- Fix wybin flags team overlay
 - Improve load speed in profile
 
 ## Version 3.4.3
