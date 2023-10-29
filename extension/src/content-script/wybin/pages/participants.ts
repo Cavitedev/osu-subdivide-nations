@@ -12,7 +12,7 @@ export const addFlagsParticipants = async () => {
         individualPlayers = getContent()?.querySelectorAll(".players .player-tile") ?? [];
     }
 
-    const teamPromise = forceUpdateFlagTeams(teamContainer, false);
+    const teamPromise = forceUpdateFlagTeams(teamContainer, true);
     const playersPromise = updateFlagsPlayersList(individualPlayers);
     await Promise.all([teamPromise, playersPromise]);
 };
