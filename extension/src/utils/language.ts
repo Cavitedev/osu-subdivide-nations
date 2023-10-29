@@ -110,27 +110,4 @@ export const setLanguage = async (lang: string) => {
     } catch (e) {
         // Extension invalidated. It doesn't matter too much
     }
-
-    const tabs = await browser.tabs.query({});
-
-    for (let i = 0; i < tabs.length; i++) {
-        const tab = tabs[i];
-        const tabId = tab.id;
-        console.log(tab.title);
-        if (!tabId || !tab.url) continue;
-        if (!hasContentScript(tab.url)) continue;
-        browser.tabs.sendMessage(tabId, { action: "osu_flag_refresh" });
-    }
-};
-
-const hasContentScript = (url: string) => {
-    const matches = ["https://osu.ppy.sh/*"];
-    for (const match of matches) {
-        if (matchesPattern(url, match)) return true;
-    }
-    return false;
-};
-
-const matchesPattern = (url: string, pattern: string) => {
-    return RegExp(`^${pattern}`).test(url);
 };

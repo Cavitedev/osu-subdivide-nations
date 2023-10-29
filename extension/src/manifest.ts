@@ -21,7 +21,7 @@ const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
         128: "icons/128.png",
     },
 
-    permissions: ["tabs", "storage"],
+    permissions: ["storage"],
 };
 
 const browserAction = {

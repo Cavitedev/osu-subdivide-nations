@@ -2,6 +2,7 @@
 
 ## Version 3.4.4
 
+- Removing tabs permission (changing language doesn't update automatically anymore)
 - Fix wybin flags team overlay
 - Update respektive's domain (getting blocked by some blocklist)
 - Improve load speed in profile
