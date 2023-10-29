@@ -6,7 +6,7 @@
         "message": "Creato da {{developer}}"
     },
     "system_default": {
-        "message": "Sistema Default"
+        "message": "Default del Sistema"
     },
     "native_language": {
         "message": "Lingua Nativa"
