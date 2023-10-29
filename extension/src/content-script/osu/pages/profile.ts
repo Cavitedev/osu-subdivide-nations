@@ -15,12 +15,24 @@ import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
 
+// Executed when opening a tab or going back and forth so this runs too early
+export const profileMutationObserverInit = new MutationObserver((_) => {
+    profileMutationObserverInit.disconnect();
+    enhanceProfile();
+});
+
 export const enhanceProfile = async () => {
+    const url = location.href;
     if (!location.href.includes("osu.ppy.sh/users")) {
         return;
     }
+    const linkItem = document.querySelector(
+        "body > div.osu-layout__section.osu-layout__section--full > div",
+    ) as HTMLElement;
+    profileMutationObserverInit.observe(linkItem, {
+        childList: true,
+    });
 
-    const url = location.href;
     const playerId = idFromOsuProfileUrl(url);
     if (!playerId || !isNumber(playerId)) {
         return;
