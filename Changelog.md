@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.4.2
+
+- Fix profile execution
+
 ## Version 3.4.1
 
 - Add wybin draft page
