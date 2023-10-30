@@ -167,6 +167,9 @@
     "region_gr": {
         "message": "Region"
     },
+    "region_ee": {
+        "message": "Komitat"
+    },
     "region_bg": {
         "message": "Prowincja"
     },
