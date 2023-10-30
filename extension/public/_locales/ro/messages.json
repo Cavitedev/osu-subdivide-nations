@@ -158,6 +158,9 @@
     "region_gr": {
         "message": "Regiune"
     },
+    "region_ee": {
+        "message": "Județ"
+    },
     "region_bg": {
         "message": "Provincie"
     },
