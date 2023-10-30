@@ -27,7 +27,7 @@
         "message": "地区排名"
     },
     "highest_rank_profile": {
-        "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
+        "message": "最高排名：#{{rankHighest.rank}} 于{{formattedDate}}达成"
     },
     "region": {
         "message": "地区"
@@ -51,7 +51,7 @@
         "message": "州"
     },
     "region_by": {
-        "message": "省份"
+        "message": "自治区"
     },
     "region_ca": {
         "message": "省份"
@@ -81,7 +81,7 @@
         "message": "地区"
     },
     "region_hu": {
-        "message": "州"
+        "message": "省份"
     },
     "region_id": {
         "message": "省份"
@@ -96,7 +96,7 @@
         "message": "省份"
     },
     "region_kz": {
-        "message": "州"
+        "message": "省份"
     },
     "region_lv": {
         "message": "地区"
@@ -111,7 +111,7 @@
         "message": "省份"
     },
     "region_no": {
-        "message": "州"
+        "message": "省份"
     },
     "region_pe": {
         "message": "地区"
@@ -126,10 +126,10 @@
         "message": "地区"
     },
     "region_ro": {
-        "message": "州"
+        "message": "省份"
     },
     "region_se": {
-        "message": "州"
+        "message": "省份"
     },
     "region_sg": {
         "message": "自治区"
@@ -144,7 +144,7 @@
         "message": "省份"
     },
     "region_ua": {
-        "message": "州"
+        "message": "省份"
     },
     "region_us": {
         "message": "州"
@@ -180,7 +180,7 @@
         "message": "地区"
     },
     "region_uk": {
-        "message": "州"
+        "message": "省份"
     },
     "region_ie": {
         "message": "省份"

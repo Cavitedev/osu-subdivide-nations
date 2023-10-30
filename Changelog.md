@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 3.4.4
+
+- Removing tabs permission (changing language doesn't update automatically anymore)
+- Fix wybin flags team overlay
+- Update respektive's domain (getting blocked by some blocklist)
+- Show "-" score ranking if no recent data but highest rank is found
+- Improve load speed in profile
+- Update date format code (trying to fix a bug)
+- Latest translations
+
 ## Version 3.4.3
 
 - Fix wybin participants flags changing tab
