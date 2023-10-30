@@ -99,7 +99,7 @@
         "message": "Область"
     },
     "region_lv": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_mx": {
         "message": "Штат"
@@ -156,7 +156,7 @@
         "message": "Регион"
     },
     "region_il": {
-        "message": "Район"
+        "message": "Округ"
     },
     "region_nz": {
         "message": "Регион"
@@ -168,16 +168,16 @@
         "message": "Кантон"
     },
     "region_gr": {
-        "message": "Регион"
+        "message": "Периферия"
     },
     "region_ee": {
         "message": "Медье"
     },
     "region_bg": {
-        "message": "Провинция"
+        "message": "Область"
     },
     "region_sk": {
-        "message": "Регион"
+        "message": "Край"
     },
     "region_uk": {
         "message": "Графство"
