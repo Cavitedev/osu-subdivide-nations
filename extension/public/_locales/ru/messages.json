@@ -57,7 +57,7 @@
         "message": "Провинция"
     },
     "region_cl": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_cn": {
         "message": "Административный регион"
@@ -66,7 +66,7 @@
         "message": "Департамент"
     },
     "region_cz": {
-        "message": "Регион"
+        "message": "Край"
     },
     "region_de": {
         "message": "Земля"
@@ -75,7 +75,7 @@
         "message": "Автономное сообщество"
     },
     "region_fi": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_fr": {
         "message": "Регион"
@@ -87,7 +87,7 @@
         "message": "Провинция"
     },
     "region_it": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_jp": {
         "message": "Префектура"
@@ -96,7 +96,7 @@
         "message": "Провинция"
     },
     "region_kz": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_lv": {
         "message": "Регион"
@@ -132,7 +132,7 @@
         "message": "Лен"
     },
     "region_sg": {
-        "message": "Район"
+        "message": "Округ"
     },
     "region_th": {
         "message": "Провинция"
@@ -171,7 +171,7 @@
         "message": "Регион"
     },
     "region_ee": {
-        "message": "Мааконд"
+        "message": "Медье"
     },
     "region_bg": {
         "message": "Провинция"
@@ -180,7 +180,7 @@
         "message": "Регион"
     },
     "region_uk": {
-        "message": "Медье"
+        "message": "Графство"
     },
     "region_ie": {
         "message": "Провинция"
