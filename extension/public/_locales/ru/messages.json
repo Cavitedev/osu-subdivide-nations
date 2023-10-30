@@ -39,7 +39,7 @@
         "message": "Провинция"
     },
     "region_at": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_au": {
         "message": "Штат"
@@ -69,7 +69,7 @@
         "message": "Регион"
     },
     "region_de": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_es": {
         "message": "Автономное сообщество"
@@ -111,13 +111,13 @@
         "message": "Провинция"
     },
     "region_no": {
-        "message": "Медье"
+        "message": "Фюльке"
     },
     "region_pe": {
         "message": "Регион"
     },
     "region_ph": {
-        "message": "Провинция"
+        "message": "Как в стране"
     },
     "region_pl": {
         "message": "Воеводство"
@@ -126,10 +126,10 @@
         "message": "Регион"
     },
     "region_ro": {
-        "message": "Медье"
+        "message": "Жудец"
     },
     "region_se": {
-        "message": "Медье"
+        "message": "Лен"
     },
     "region_sg": {
         "message": "Район"
@@ -144,7 +144,7 @@
         "message": "Провинция"
     },
     "region_ua": {
-        "message": "Медье"
+        "message": "Область"
     },
     "region_us": {
         "message": "Штат"
