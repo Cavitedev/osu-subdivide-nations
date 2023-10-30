@@ -161,6 +161,9 @@
     "region_gr": {
         "message": "Wilayah"
     },
+    "region_ee": {
+        "message": "Daerah"
+    },
     "region_bg": {
         "message": "Provinsi"
     },
