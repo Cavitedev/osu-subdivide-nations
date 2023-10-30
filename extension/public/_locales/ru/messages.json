@@ -93,7 +93,7 @@
         "message": "Префектура"
     },
     "region_kr": {
-        "message": "Провинция"
+        "message": "Провинция / Город"
     },
     "region_kz": {
         "message": "Область"
@@ -117,7 +117,7 @@
         "message": "Регион"
     },
     "region_ph": {
-        "message": "Как в стране"
+        "message": "Провинция"
     },
     "region_pl": {
         "message": "Воеводство"
@@ -141,7 +141,7 @@
         "message": "Регион"
     },
     "region_tw": {
-        "message": "Провинция"
+        "message": "Уезд / Город"
     },
     "region_ua": {
         "message": "Область"
