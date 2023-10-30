@@ -1,4 +1,4 @@
-import { currentSignal, fetchErrorToText, fetchOptions } from "@src/utils/fetchUtils";
+import { fetchErrorToText, fetchOptions } from "@src/utils/fetchUtils";
 import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
 import { osuWorldUser, osuWorldUsers } from "@src/utils/osuWorld";
@@ -9,7 +9,7 @@ export type TWybinHtmlUserOptions = {
 
 export const addFlagUser = async (item: HTMLElement, userId: string, options?: TWybinHtmlUserOptions) => {
     if (!item) return;
-    const playerOsuWorld = await osuWorldUser(userId, options?.signal ?? currentSignal());
+    const playerOsuWorld = await osuWorldUser(userId);
     if (playerOsuWorld.error) {
         const textError = fetchErrorToText(playerOsuWorld);
         console.error(textError);
@@ -19,6 +19,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, options?: T
     if (!playerData || "error" in playerData) {
         return;
     }
+    if(options?.signal?.aborted) return;
 
     const countryCode = playerData["country_id"];
     const regionCode = playerData["region_id"];

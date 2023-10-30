@@ -4,25 +4,25 @@ import { addFlagUsers } from "../flagHtml";
 
 const onLoadedMutation = (parent: HTMLElement) =>
     new MutationObserver(() => {
-        forceUpdateFlagTeams(parent, true);
+        updateFlagTeams(parent);
     });
 
 export const addFlagsTeams = async () => {
     const url = location.href;
     if (!url.includes("/teams")) return;
 
-    forceUpdateFlagTeams(document.body, false);
+    watchFlagTeams(document.body);
 };
 
-export const forceUpdateFlagTeams = async (parent: HTMLElement, update = false) => {
+export const watchFlagTeams = async (parent: HTMLElement) => {
     const navigationElement = document.querySelector(
         "body > app-root > app-tournament-view > div.navigation-bar > div.navigation",
     )!;
     onLoadedMutation(parent).observe(navigationElement, { childList: true });
-    if (!update) return;
+};
 
+export const updateFlagTeams = async (parent: HTMLElement) => {
     const players = parent.querySelectorAll(".players .player") ?? [];
-
     await updateTeamFlagsPlayersList(players);
 };
 
@@ -30,9 +30,9 @@ export const updateTeamFlagsPlayersList = async (players: NodeListOf<Element> | 
     const flagItems: TFlagItems = [];
 
     for (const player of players) {
-        const usernameElement = player.querySelector(".username>a") as HTMLElement;
+        const usernameElement = (player.querySelector(".username>a") ?? player.querySelector("a.username")) as HTMLElement;
         const playerId = idFromOsuProfileUrl(usernameElement.getAttribute("href")!);
-        if(!playerId) continue;
+        if (!playerId) continue;
         flagItems.push({ id: playerId, item: player as HTMLElement });
     }
 

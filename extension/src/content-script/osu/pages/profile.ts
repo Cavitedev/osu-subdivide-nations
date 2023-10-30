@@ -21,7 +21,7 @@ export const profileMutationObserverInit = new MutationObserver((_) => {
     enhanceProfile();
 });
 
-export const enhanceProfile = async () => {
+export const enhanceProfile = async (signal?: AbortSignal) => {
     const url = location.href;
     if (!location.href.includes("osu.ppy.sh/users")) {
         return;
@@ -44,14 +44,14 @@ export const enhanceProfile = async () => {
     }
     const currentMod = getCurrentMod();
     if (currentMod) {
-        addScoreRank(playerId, currentMod);
-        addRegionalRank(playerId, currentMod);
+        addScoreRank(playerId, currentMod, signal);
+        addRegionalRank(playerId, currentMod, signal);
     }
     addRegionalFlagProfile(flagElement as HTMLElement, playerId);
 };
 
-const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string) => {
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: true });
+const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string, signal?: AbortSignal) => {
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: true, signal: signal });
 
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
@@ -81,7 +81,7 @@ const tagRanks = {
 
 const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
 
-async function addRegionalRank(playerId: string, mode: string) {
+async function addRegionalRank(playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.regionalRank;
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
@@ -89,19 +89,17 @@ async function addRegionalRank(playerId: string, mode: string) {
     let previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return;
 
-    const osuWorldInfo = await osuWorldUser(playerId, undefined, mode);
+    const osuWorldInfo = await osuWorldUser(playerId, mode);
     const playerData = osuWorldInfo.data;
-    if (!playerData || (playerData as IFetchError).error) return;
+    if (!playerData || (playerData as IFetchError).error || signal?.aborted) return;
 
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return;
 
-    const label = getLocMsg("region_ranking");
-
-    addRank(ranksElement, rankValue, label, tagRank);
+    addRank(ranksElement, rankValue, "region_ranking", tagRank);
 }
 
-async function addScoreRank(playerId: string, mode: string) {
+async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.scoreRank;
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
@@ -109,28 +107,29 @@ async function addScoreRank(playerId: string, mode: string) {
     if (previousScoreSet) return;
 
     const scoreRankInfo = await osuScoreRanking(playerId, mode);
-    if (!scoreRankInfo) return;
-
-    const label = getLocMsg("score_ranking");
+    // Abort after fetch to ensure it's cached
+    if (!scoreRankInfo || signal?.aborted) return;
+    const scoreRank = scoreRankInfo[0].rank;
 
     const rankHighest = scoreRankInfo[0]["rank_highest"];
     const highestRank = rankHighest.rank;
-    const date = new Date(rankHighest["updated_at"]);
-    const tooltip = highestRankTip(highestRank, date);
 
-    const scoreRank = scoreRankInfo[0].rank;
-    if (scoreRank === 0) {
+    if (!highestRank && scoreRank === 0) {
         return;
     }
-    await addRank(ranksElement, scoreRank, label, tagRank, tooltip);
+
+    const date = new Date(rankHighest["updated_at"]);
+    
+    await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
 }
 
 const addRank = async (
     ranksElement: HTMLElement,
     rankValue: number,
-    labelText: string,
+    labelTag: string,
     classTag: string,
-    tooltip?: string,
+    highestRank?: number,
+    date?: Date,
 ) => {
     const scoreRankElement = document.createElement("div");
     scoreRankElement.classList.add(classTag);
@@ -138,7 +137,7 @@ const addRank = async (
     const scoreRankLabel = document.createElement("div");
     scoreRankLabel.classList.add("value-display__label");
     await waitLastLanguageIsLoaded();
-
+    const labelText = getLocMsg(labelTag);
     scoreRankLabel.innerText = labelText;
     scoreRankElement.append(scoreRankLabel);
 
@@ -147,12 +146,13 @@ const addRank = async (
     scoreRankElement.append(scoreRankValue);
     const rank = document.createElement("div");
 
-    if (tooltip) {
+    if (highestRank && date) {
+        const tooltip = highestRankTip(highestRank, date);
         rank.setAttribute("data-html-title", tooltip);
     }
     rank.setAttribute("title", "");
 
-    rank.textContent = `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
+    rank.textContent = rankValue === 0 ? "-" : `#${rankValue.toLocaleString(getActiveLanguageCode())}`;
     scoreRankValue.append(rank);
 
     const previousRank = ranksElement.querySelector("." + classTag);
@@ -185,11 +185,7 @@ const highestRankTip = (highestRank: number, date: Date) => {
     const highestRankKey = "highest_rank_profile";
     const countryCode = getActiveLanguageCodeForKey(highestRankKey);
 
-    const formattedDate = new Intl.DateTimeFormat(countryCode, {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-    }).format(date);
+    const formattedDate = date.toLocaleDateString(countryCode, { year: "numeric", month: "long", day: "numeric" });
 
     const rawText = getLocMsg(highestRankKey);
     const replacedText = rawText

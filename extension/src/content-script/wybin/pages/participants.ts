@@ -1,6 +1,6 @@
 import { getContent } from "../content";
 import { updateFlagsPlayersList } from "./players";
-import { forceUpdateFlagTeams } from "./teams";
+import { updateFlagTeams, watchFlagTeams } from "./teams";
 
 export const addFlagsParticipants = async () => {
     const url = location.href;
@@ -12,7 +12,9 @@ export const addFlagsParticipants = async () => {
         individualPlayers = getContent()?.querySelectorAll(".players .player-tile") ?? [];
     }
 
-    const teamPromise = forceUpdateFlagTeams(teamContainer, true);
+    const teamPromise = watchFlagTeams(teamContainer);
+    updateFlagTeams(teamContainer);
+
     const playersPromise = updateFlagsPlayersList(individualPlayers);
     await Promise.all([teamPromise, playersPromise]);
 };

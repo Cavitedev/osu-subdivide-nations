@@ -8,7 +8,6 @@ import {
     fetchWithoutCache,
     genExpireDate,
     expireHeader,
-    fetchWithMinimumWaitTime,
     unknownUserError,
 } from "./fetchUtils";
 
@@ -43,7 +42,6 @@ const userDataExpireTime = 3600000; //60 minutes
 
 export const osuWorldUser = async (
     id: string,
-    signal: AbortSignal | undefined,
     mode?: string,
 ): Promise<IfetchResponse<TosuWorldIdData>> => {
     if (!id) {
@@ -53,10 +51,12 @@ export const osuWorldUser = async (
 
     const url = osuWorldApiBase + "users/" + id + (mode ? "?mode=" + mode : "");
 
-    const dataPromise = fetchWithCache(url, userDataExpireTime, { signal: signal }) as Promise<
+    // I'm not cancelling the request midway because it may be repeated
+    const dataPromise = fetchWithCache(url, userDataExpireTime) as Promise<
         IfetchResponse<TosuWorldIdData>
     >;
-    return fetchWithMinimumWaitTime<TosuWorldIdData>(dataPromise, 200);
+
+    return dataPromise;
 };
 
 export const osuWorldUsers = async (
