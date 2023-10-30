@@ -86,6 +86,9 @@
     "region_gr": {
         "message": "Region"
     },
+    "region_ee": {
+        "message": "Land"
+    },
     "region_sk": {
         "message": "Region"
     },
