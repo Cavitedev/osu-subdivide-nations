@@ -162,7 +162,7 @@
         "message": "Регион"
     },
     "region_lt": {
-        "message": "Медье"
+        "message": "Уезд"
     },
     "region_ch": {
         "message": "Кантон"
@@ -171,7 +171,7 @@
         "message": "Периферия"
     },
     "region_ee": {
-        "message": "Медье"
+        "message": "Уезд"
     },
     "region_bg": {
         "message": "Область"
