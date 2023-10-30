@@ -18,7 +18,7 @@
         "message": "S'ha netejat la memòria cau"
     },
     "region_language": {
-        "message": "Idioma de la regió"
+        "message": "Idioma de la regió:"
     },
     "score_ranking": {
         "message": "Classificació per puntuació"
@@ -96,7 +96,7 @@
         "message": "Província"
     },
     "region_kz": {
-        "message": "Comtat"
+        "message": "Regió"
     },
     "region_lv": {
         "message": "Regió"

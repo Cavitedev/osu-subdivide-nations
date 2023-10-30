@@ -1,15 +1,15 @@
 {
     "appDesc": {
-        "message": "Добавьте региональные флаги на веб-сайт osu!\n Пока так же обновляются глобальные очки в профилях osu!."
+        "message": "Дополните сайт osu! региональными гербами / флагами административных делений.\n И вместе с этим получите рейтинг игроков по очкам!"
     },
     "created_by": {
         "message": "создатель: {{developer}}"
     },
     "system_default": {
-        "message": "По умолчанию"
+        "message": "Как в системе"
     },
     "native_language": {
-        "message": "Родной язык"
+        "message": "Как в стране"
     },
     "clean_cache": {
         "message": "Очистить кэш"
@@ -18,7 +18,7 @@
         "message": "Кэш очищен"
     },
     "region_language": {
-        "message": "Местный язык:"
+        "message": "Язык регионов:"
     },
     "score_ranking": {
         "message": "Рейтинг по очкам"
@@ -27,7 +27,7 @@
         "message": "Рейтинг в регионе"
     },
     "highest_rank_profile": {
-        "message": "Наивысший ранг: #{{rankHighest.rank}} был {{formattedDate}}"
+        "message": "Наивысший: #{{rankHighest.rank}} от {{formattedDate}}"
     },
     "region": {
         "message": "Регион"
@@ -63,7 +63,7 @@
         "message": "Административный регион"
     },
     "region_co": {
-        "message": "Отдел"
+        "message": "Департамент"
     },
     "region_cz": {
         "message": "Регион"
@@ -81,7 +81,7 @@
         "message": "Регион"
     },
     "region_hu": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_id": {
         "message": "Провинция"
@@ -96,7 +96,7 @@
         "message": "Провинция"
     },
     "region_kz": {
-        "message": "Округ"
+        "message": "Регион"
     },
     "region_lv": {
         "message": "Регион"
@@ -111,7 +111,7 @@
         "message": "Провинция"
     },
     "region_no": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_pe": {
         "message": "Регион"
@@ -126,10 +126,10 @@
         "message": "Регион"
     },
     "region_ro": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_se": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_sg": {
         "message": "Район"
@@ -144,7 +144,7 @@
         "message": "Провинция"
     },
     "region_ua": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_us": {
         "message": "Штат"
@@ -180,7 +180,7 @@
         "message": "Регион"
     },
     "region_uk": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_ie": {
         "message": "Провинция"
