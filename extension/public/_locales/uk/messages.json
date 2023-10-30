@@ -23,8 +23,11 @@
     "score_ranking": {
         "message": "Рейтинг балів"
     },
+    "region_ranking": {
+        "message": "Рейтинг В Регіоні"
+    },
     "highest_rank_profile": {
-        "message": "Найвищий ранг: #{{rankHighest.rank}} в {{formattedDate}}"
+        "message": "Найвищий ранг: #{{rankHighest.rank}} був {{formattedDate}}"
     },
     "region": {
         "message": "Регіон"
