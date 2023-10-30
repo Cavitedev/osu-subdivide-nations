@@ -8,6 +8,7 @@
 - Show "-" score ranking if no recent data but highest rank is found
 - Improve load speed in profile
 - Update date format code (trying to fix a bug)
+- Latest translations
 
 ## Version 3.4.3
 
