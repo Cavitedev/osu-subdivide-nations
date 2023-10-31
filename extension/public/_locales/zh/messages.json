@@ -81,7 +81,7 @@
         "message": "地区"
     },
     "region_hu": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_id": {
         "message": "省份"
@@ -126,10 +126,10 @@
         "message": "地区"
     },
     "region_ro": {
-        "message": "州份"
+        "message": "县"
     },
     "region_se": {
-        "message": "州份"
+        "message": "省份"
     },
     "region_sg": {
         "message": "地区"
@@ -144,7 +144,7 @@
         "message": "省份"
     },
     "region_ua": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_us": {
         "message": "州份"
