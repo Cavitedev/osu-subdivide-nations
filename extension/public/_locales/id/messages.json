@@ -138,7 +138,7 @@
         "message": "Provinsi"
     },
     "region_ua": {
-        "message": "Daerah"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "Negara Bagian"
@@ -156,10 +156,13 @@
         "message": "Wilayah"
     },
     "region_lt": {
-        "message": "Wilayah"
+        "message": "Daerah"
     },
     "region_gr": {
         "message": "Wilayah"
+    },
+    "region_ee": {
+        "message": "Daerah"
     },
     "region_bg": {
         "message": "Provinsi"

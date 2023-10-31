@@ -144,7 +144,7 @@
         "message": "Província"
     },
     "region_ua": {
-        "message": "Comtat"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "Estat"
@@ -162,7 +162,7 @@
         "message": "Regió"
     },
     "region_lt": {
-        "message": "Regió"
+        "message": "Comtat"
     },
     "region_ch": {
         "message": "Cantó"

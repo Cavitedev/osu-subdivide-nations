@@ -51,7 +51,7 @@
         "message": "Stato"
     },
     "region_by": {
-        "message": "Dominio"
+        "message": "Contea"
     },
     "region_ca": {
         "message": "Provincia"
@@ -162,7 +162,7 @@
         "message": "Regione"
     },
     "region_lt": {
-        "message": "Regione"
+        "message": "Contea"
     },
     "region_ch": {
         "message": "Cantone"

@@ -39,7 +39,7 @@
         "message": "Провинция"
     },
     "region_at": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_au": {
         "message": "Штат"
@@ -57,7 +57,7 @@
         "message": "Провинция"
     },
     "region_cl": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_cn": {
         "message": "Административный регион"
@@ -66,16 +66,16 @@
         "message": "Департамент"
     },
     "region_cz": {
-        "message": "Регион"
+        "message": "Край"
     },
     "region_de": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_es": {
         "message": "Автономное сообщество"
     },
     "region_fi": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_fr": {
         "message": "Регион"
@@ -87,19 +87,19 @@
         "message": "Провинция"
     },
     "region_it": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_jp": {
         "message": "Префектура"
     },
     "region_kr": {
-        "message": "Провинция"
+        "message": "Провинция / Город"
     },
     "region_kz": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_lv": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_mx": {
         "message": "Штат"
@@ -111,7 +111,7 @@
         "message": "Провинция"
     },
     "region_no": {
-        "message": "Медье"
+        "message": "Фюльке"
     },
     "region_pe": {
         "message": "Регион"
@@ -126,13 +126,13 @@
         "message": "Регион"
     },
     "region_ro": {
-        "message": "Медье"
+        "message": "Жудец"
     },
     "region_se": {
-        "message": "Медье"
+        "message": "Лен"
     },
     "region_sg": {
-        "message": "Район"
+        "message": "Округ"
     },
     "region_th": {
         "message": "Провинция"
@@ -141,10 +141,10 @@
         "message": "Регион"
     },
     "region_tw": {
-        "message": "Провинция"
+        "message": "Уезд / Город"
     },
     "region_ua": {
-        "message": "Медье"
+        "message": "Область"
     },
     "region_us": {
         "message": "Штат"
@@ -156,31 +156,31 @@
         "message": "Регион"
     },
     "region_il": {
-        "message": "Район"
+        "message": "Округ"
     },
     "region_nz": {
         "message": "Регион"
     },
     "region_lt": {
-        "message": "Регион"
+        "message": "Уезд"
     },
     "region_ch": {
         "message": "Кантон"
     },
     "region_gr": {
-        "message": "Регион"
+        "message": "Периферия"
     },
     "region_ee": {
-        "message": "Мааконд"
+        "message": "Уезд"
     },
     "region_bg": {
-        "message": "Провинция"
+        "message": "Область"
     },
     "region_sk": {
-        "message": "Регион"
+        "message": "Край"
     },
     "region_uk": {
-        "message": "Медье"
+        "message": "Графство"
     },
     "region_ie": {
         "message": "Провинция"

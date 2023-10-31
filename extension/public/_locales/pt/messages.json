@@ -144,7 +144,7 @@
         "message": "Província"
     },
     "region_ua": {
-        "message": "Condado"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "Estado"
@@ -162,7 +162,7 @@
         "message": "Região"
     },
     "region_lt": {
-        "message": "Região"
+        "message": "Condado"
     },
     "region_ch": {
         "message": "Cantão"
@@ -171,7 +171,7 @@
         "message": "Região"
     },
     "region_ee": {
-        "message": "Maakond"
+        "message": "Condado"
     },
     "region_bg": {
         "message": "Província"

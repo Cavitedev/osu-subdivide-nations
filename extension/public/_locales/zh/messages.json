@@ -1,9 +1,9 @@
 {
     "appDesc": {
-        "message": "在osu!官方网站上添加地区旗帜。\n同时也更新osu!个人资料上的分数排名。"
+        "message": "在 osu! 官方网站上添加地区旗帜。\n同时也更新 osu! 个人资料上的分数排名。"
     },
     "created_by": {
-        "message": "由{{developer}}创建"
+        "message": "由 {{developer}} 创建"
     },
     "system_default": {
         "message": "系统默认"
@@ -27,31 +27,31 @@
         "message": "地区排名"
     },
     "highest_rank_profile": {
-        "message": "最高排名：#{{rankHighest.rank}} 于{{formattedDate}}达成"
+        "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
     },
     "region": {
         "message": "地区"
     },
     "region_ru": {
-        "message": "共和国/州"
+        "message": "共和国/州份"
     },
     "region_ar": {
         "message": "省份"
     },
     "region_at": {
-        "message": "州"
+        "message": "州份"
     },
     "region_au": {
-        "message": "州"
+        "message": "州份"
     },
     "region_be": {
         "message": "省份"
     },
     "region_br": {
-        "message": "州"
+        "message": "州份"
     },
     "region_by": {
-        "message": "自治区"
+        "message": "州份"
     },
     "region_ca": {
         "message": "省份"
@@ -63,13 +63,13 @@
         "message": "行政区"
     },
     "region_co": {
-        "message": "行政区"
+        "message": "省份"
     },
     "region_cz": {
         "message": "地区"
     },
     "region_de": {
-        "message": "州"
+        "message": "州份"
     },
     "region_es": {
         "message": "自治区"
@@ -90,7 +90,7 @@
         "message": "地区"
     },
     "region_jp": {
-        "message": "省份"
+        "message": "都道府县"
     },
     "region_kr": {
         "message": "省份"
@@ -102,16 +102,16 @@
         "message": "地区"
     },
     "region_mx": {
-        "message": "州"
+        "message": "州份"
     },
     "region_my": {
-        "message": "州"
+        "message": "州份"
     },
     "region_nl": {
         "message": "省份"
     },
     "region_no": {
-        "message": "省份"
+        "message": "县"
     },
     "region_pe": {
         "message": "地区"
@@ -120,19 +120,19 @@
         "message": "省份"
     },
     "region_pl": {
-        "message": "省"
+        "message": "省份"
     },
     "region_pt": {
         "message": "地区"
     },
     "region_ro": {
-        "message": "省份"
+        "message": "县"
     },
     "region_se": {
         "message": "省份"
     },
     "region_sg": {
-        "message": "自治区"
+        "message": "区"
     },
     "region_th": {
         "message": "省份"
@@ -144,10 +144,10 @@
         "message": "省份"
     },
     "region_ua": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_us": {
-        "message": "州"
+        "message": "州份"
     },
     "region_vn": {
         "message": "省份"
@@ -162,16 +162,16 @@
         "message": "地区"
     },
     "region_lt": {
-        "message": "地区"
+        "message": "省份"
     },
     "region_ch": {
-        "message": "州"
+        "message": "州份"
     },
     "region_gr": {
         "message": "地区"
     },
     "region_ee": {
-        "message": "县"
+        "message": "省份"
     },
     "region_bg": {
         "message": "省份"
@@ -180,7 +180,7 @@
         "message": "地区"
     },
     "region_uk": {
-        "message": "省份"
+        "message": "郡"
     },
     "region_ie": {
         "message": "省份"
