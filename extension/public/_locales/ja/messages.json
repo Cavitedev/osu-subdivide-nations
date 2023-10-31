@@ -15,25 +15,25 @@
         "message": "国"
     },
     "region_at": {
-        "message": "州"
+        "message": "国"
     },
     "region_au": {
-        "message": "州"
+        "message": "国"
     },
     "region_be": {
         "message": "国"
     },
     "region_br": {
-        "message": "州"
+        "message": "国"
     },
     "region_ca": {
         "message": "国"
     },
     "region_de": {
-        "message": "州"
+        "message": "国"
     },
     "region_hu": {
-        "message": "国"
+        "message": "州"
     },
     "region_id": {
         "message": "国"
@@ -45,25 +45,25 @@
         "message": "国"
     },
     "region_mx": {
-        "message": "州"
+        "message": "国"
     },
     "region_my": {
-        "message": "州"
+        "message": "国"
     },
     "region_nl": {
         "message": "国"
     },
     "region_no": {
-        "message": "国"
+        "message": "州"
     },
     "region_ph": {
         "message": "国"
     },
     "region_ro": {
-        "message": "国"
+        "message": "州"
     },
     "region_se": {
-        "message": "国"
+        "message": "州"
     },
     "region_th": {
         "message": "国"
@@ -72,22 +72,22 @@
         "message": "国"
     },
     "region_us": {
-        "message": "州"
+        "message": "国"
     },
     "region_vn": {
         "message": "国"
     },
     "region_lt": {
-        "message": "国"
+        "message": "州"
     },
     "region_ee": {
-        "message": "国"
+        "message": "州"
     },
     "region_bg": {
         "message": "国"
     },
     "region_uk": {
-        "message": "国"
+        "message": "州"
     },
     "region_ie": {
         "message": "国"
