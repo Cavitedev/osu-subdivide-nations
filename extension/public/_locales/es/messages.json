@@ -144,7 +144,7 @@
         "message": "Provincia"
     },
     "region_ua": {
-        "message": "Condado"
+        "message": "Óblast"
     },
     "region_us": {
         "message": "Estado"
@@ -162,7 +162,7 @@
         "message": "Región"
     },
     "region_lt": {
-        "message": "Región"
+        "message": "Condado"
     },
     "region_ch": {
         "message": "Cantón"

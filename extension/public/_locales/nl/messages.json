@@ -23,6 +23,9 @@
     "score_ranking": {
         "message": "Score Ranking"
     },
+    "region_ranking": {
+        "message": "Taal regio:"
+    },
     "highest_rank_profile": {
         "message": "Hoogste rank: #{{rankHighest.rank}} op {{formattedDate}}"
     },
@@ -141,7 +144,7 @@
         "message": "Provincie"
     },
     "region_ua": {
-        "message": "Land"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "Staat"
@@ -159,7 +162,7 @@
         "message": "Regio"
     },
     "region_lt": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_ch": {
         "message": "Kanton"
@@ -168,7 +171,7 @@
         "message": "Regio"
     },
     "region_ee": {
-        "message": "Maakond"
+        "message": "Land"
     },
     "region_bg": {
         "message": "Provincie"
