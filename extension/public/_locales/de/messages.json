@@ -24,7 +24,7 @@
         "message": "Score Rang"
     },
     "region_ranking": {
-        "message": "Land"
+        "message": "Bundeslandrangliste"
     },
     "highest_rank_profile": {
         "message": "Höchster Rang: #{{rankHighest.rank}} am {{formattedDate}}"
@@ -51,7 +51,7 @@
         "message": "Bundesstaat"
     },
     "region_by": {
-        "message": "Land"
+        "message": "Region"
     },
     "region_ca": {
         "message": "Provinz"
@@ -60,7 +60,7 @@
         "message": "Region"
     },
     "region_cn": {
-        "message": "Land"
+        "message": "Administrative Region"
     },
     "region_co": {
         "message": "Departamento"
@@ -144,7 +144,7 @@
         "message": "Provinz"
     },
     "region_ua": {
-        "message": "Land"
+        "message": "Region"
     },
     "region_us": {
         "message": "Bundesstaat"
@@ -163,6 +163,9 @@
     },
     "region_lt": {
         "message": "Land"
+    },
+    "region_ch": {
+        "message": "Kanton"
     },
     "region_gr": {
         "message": "Region"
