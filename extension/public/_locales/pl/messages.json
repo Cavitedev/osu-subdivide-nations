@@ -23,6 +23,9 @@
     "score_ranking": {
         "message": "Ranking punktowy"
     },
+    "region_ranking": {
+        "message": "Dystrykt"
+    },
     "highest_rank_profile": {
         "message": "Najwyższa pozycja: #{{rankHighest.rank}} z {{formattedDate}}"
     },
@@ -48,7 +51,7 @@
         "message": "Stan"
     },
     "region_by": {
-        "message": "Obwód"
+        "message": "Prowincja"
     },
     "region_ca": {
         "message": "Prowincja"
@@ -93,7 +96,7 @@
         "message": "Prowincja"
     },
     "region_kz": {
-        "message": "Komitat"
+        "message": "Region"
     },
     "region_lv": {
         "message": "Region"
@@ -129,7 +132,7 @@
         "message": "Komitat"
     },
     "region_sg": {
-        "message": "Dystrykt"
+        "message": "Prowincja"
     },
     "region_th": {
         "message": "Prowincja"
@@ -141,7 +144,7 @@
         "message": "Prowincja"
     },
     "region_ua": {
-        "message": "Komitat"
+        "message": "Prowincja"
     },
     "region_us": {
         "message": "Stan"
@@ -153,16 +156,19 @@
         "message": "Region"
     },
     "region_il": {
-        "message": "Dystrykt"
+        "message": "Prowincja"
     },
     "region_nz": {
         "message": "Region"
     },
     "region_lt": {
-        "message": "Region"
+        "message": "Komitat"
     },
     "region_gr": {
         "message": "Region"
+    },
+    "region_ee": {
+        "message": "Komitat"
     },
     "region_bg": {
         "message": "Prowincja"

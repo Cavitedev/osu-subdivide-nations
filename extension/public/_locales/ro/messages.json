@@ -87,7 +87,7 @@
         "message": "Provincie"
     },
     "region_kz": {
-        "message": "Județ"
+        "message": "Regiune"
     },
     "region_lv": {
         "message": "Regiune"
@@ -135,7 +135,7 @@
         "message": "Provincie"
     },
     "region_ua": {
-        "message": "Județ"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "Stat"
@@ -153,10 +153,13 @@
         "message": "Regiune"
     },
     "region_lt": {
-        "message": "Regiune"
+        "message": "Județ"
     },
     "region_gr": {
         "message": "Regiune"
+    },
+    "region_ee": {
+        "message": "Județ"
     },
     "region_bg": {
         "message": "Provincie"

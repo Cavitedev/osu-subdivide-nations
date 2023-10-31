@@ -97,7 +97,7 @@
         "message": "Province"
     },
     "region_kz": {
-        "message": "County"
+        "message": "Region"
     },
     "region_lv": {
         "message": "Region"
@@ -145,7 +145,7 @@
         "message": "Province"
     },
     "region_ua": {
-        "message": "County"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "State"
@@ -163,7 +163,7 @@
         "message": "Region"
     },
     "region_lt":{
-        "message": "Region"
+        "message": "County"
     },
     "region_ch":{
         "message": "Canton"
@@ -172,7 +172,7 @@
         "message": "Region"
     },
     "region_ee":{
-        "message": "Maakond"
+        "message": "County"
     },
     "region_bg":{
         "message": "Province"

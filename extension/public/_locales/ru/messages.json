@@ -1,15 +1,15 @@
 {
     "appDesc": {
-        "message": "Добавьте региональные флаги на веб-сайт osu!\n Пока так же обновляются глобальные очки в профилях osu!."
+        "message": "Дополните сайт osu! региональными гербами / флагами административных делений.\n И вместе с этим получите рейтинг игроков по очкам!"
     },
     "created_by": {
         "message": "создатель: {{developer}}"
     },
     "system_default": {
-        "message": "По умолчанию"
+        "message": "Как в системе"
     },
     "native_language": {
-        "message": "Родной язык"
+        "message": "Как в стране"
     },
     "clean_cache": {
         "message": "Очистить кэш"
@@ -18,7 +18,7 @@
         "message": "Кэш очищен"
     },
     "region_language": {
-        "message": "Местный язык:"
+        "message": "Язык регионов:"
     },
     "score_ranking": {
         "message": "Рейтинг по очкам"
@@ -27,7 +27,7 @@
         "message": "Рейтинг в регионе"
     },
     "highest_rank_profile": {
-        "message": "Наивысший ранг: #{{rankHighest.rank}} был {{formattedDate}}"
+        "message": "Наивысший: #{{rankHighest.rank}} от {{formattedDate}}"
     },
     "region": {
         "message": "Регион"
@@ -39,7 +39,7 @@
         "message": "Провинция"
     },
     "region_at": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_au": {
         "message": "Штат"
@@ -57,49 +57,49 @@
         "message": "Провинция"
     },
     "region_cl": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_cn": {
         "message": "Административный регион"
     },
     "region_co": {
-        "message": "Отдел"
+        "message": "Департамент"
     },
     "region_cz": {
-        "message": "Регион"
+        "message": "Край"
     },
     "region_de": {
-        "message": "Штат"
+        "message": "Земля"
     },
     "region_es": {
         "message": "Автономное сообщество"
     },
     "region_fi": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_fr": {
         "message": "Регион"
     },
     "region_hu": {
-        "message": "Округ"
+        "message": "Медье"
     },
     "region_id": {
         "message": "Провинция"
     },
     "region_it": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_jp": {
         "message": "Префектура"
     },
     "region_kr": {
-        "message": "Провинция"
+        "message": "Провинция / Город"
     },
     "region_kz": {
-        "message": "Округ"
+        "message": "Область"
     },
     "region_lv": {
-        "message": "Регион"
+        "message": "Область"
     },
     "region_mx": {
         "message": "Штат"
@@ -111,7 +111,7 @@
         "message": "Провинция"
     },
     "region_no": {
-        "message": "Округ"
+        "message": "Фюльке"
     },
     "region_pe": {
         "message": "Регион"
@@ -126,13 +126,13 @@
         "message": "Регион"
     },
     "region_ro": {
-        "message": "Округ"
+        "message": "Жудец"
     },
     "region_se": {
-        "message": "Округ"
+        "message": "Лен"
     },
     "region_sg": {
-        "message": "Район"
+        "message": "Округ"
     },
     "region_th": {
         "message": "Провинция"
@@ -141,10 +141,10 @@
         "message": "Регион"
     },
     "region_tw": {
-        "message": "Провинция"
+        "message": "Уезд / Город"
     },
     "region_ua": {
-        "message": "Округ"
+        "message": "Область"
     },
     "region_us": {
         "message": "Штат"
@@ -156,31 +156,31 @@
         "message": "Регион"
     },
     "region_il": {
-        "message": "Район"
+        "message": "Округ"
     },
     "region_nz": {
         "message": "Регион"
     },
     "region_lt": {
-        "message": "Регион"
+        "message": "Уезд"
     },
     "region_ch": {
         "message": "Кантон"
     },
     "region_gr": {
-        "message": "Регион"
+        "message": "Периферия"
     },
     "region_ee": {
-        "message": "Мааконд"
+        "message": "Уезд"
     },
     "region_bg": {
-        "message": "Провинция"
+        "message": "Область"
     },
     "region_sk": {
-        "message": "Регион"
+        "message": "Край"
     },
     "region_uk": {
-        "message": "Округ"
+        "message": "Графство"
     },
     "region_ie": {
         "message": "Провинция"

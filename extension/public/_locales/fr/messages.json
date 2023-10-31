@@ -74,6 +74,9 @@
     "region_kr": {
         "message": "Province"
     },
+    "region_kz": {
+        "message": "Région"
+    },
     "region_lv": {
         "message": "Région"
     },
@@ -114,9 +117,6 @@
         "message": "Région"
     },
     "region_nz": {
-        "message": "Région"
-    },
-    "region_lt": {
         "message": "Région"
     },
     "region_gr": {

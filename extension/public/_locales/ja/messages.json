@@ -11,14 +11,23 @@
     "highest_rank_profile": {
         "message": "最高ランク: #{{rankHighest.rank}} ({{formattedDate}}に取得)"
     },
+    "region_ar": {
+        "message": "国"
+    },
     "region_at": {
         "message": "州"
     },
     "region_au": {
         "message": "州"
     },
+    "region_be": {
+        "message": "国"
+    },
     "region_br": {
         "message": "州"
+    },
+    "region_ca": {
+        "message": "国"
     },
     "region_de": {
         "message": "州"
@@ -26,10 +35,13 @@
     "region_hu": {
         "message": "国"
     },
+    "region_id": {
+        "message": "国"
+    },
     "region_jp": {
         "message": "県内"
     },
-    "region_kz": {
+    "region_kr": {
         "message": "国"
     },
     "region_mx": {
@@ -38,7 +50,13 @@
     "region_my": {
         "message": "州"
     },
+    "region_nl": {
+        "message": "国"
+    },
     "region_no": {
+        "message": "国"
+    },
+    "region_ph": {
         "message": "国"
     },
     "region_ro": {
@@ -47,13 +65,31 @@
     "region_se": {
         "message": "国"
     },
-    "region_ua": {
+    "region_th": {
+        "message": "国"
+    },
+    "region_tw": {
         "message": "国"
     },
     "region_us": {
         "message": "州"
     },
+    "region_vn": {
+        "message": "国"
+    },
+    "region_lt": {
+        "message": "国"
+    },
+    "region_ee": {
+        "message": "国"
+    },
+    "region_bg": {
+        "message": "国"
+    },
     "region_uk": {
+        "message": "国"
+    },
+    "region_ie": {
         "message": "国"
     }
 }

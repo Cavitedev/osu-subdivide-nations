@@ -18,7 +18,7 @@
         "message": "S'ha netejat la memòria cau"
     },
     "region_language": {
-        "message": "Idioma de la regió"
+        "message": "Idioma de la regió:"
     },
     "score_ranking": {
         "message": "Classificació per puntuació"
@@ -96,7 +96,7 @@
         "message": "Província"
     },
     "region_kz": {
-        "message": "Comtat"
+        "message": "Regió"
     },
     "region_lv": {
         "message": "Regió"
@@ -144,7 +144,7 @@
         "message": "Província"
     },
     "region_ua": {
-        "message": "Comtat"
+        "message": "Oblast"
     },
     "region_us": {
         "message": "Estat"
@@ -162,7 +162,7 @@
         "message": "Regió"
     },
     "region_lt": {
-        "message": "Regió"
+        "message": "Comtat"
     },
     "region_ch": {
         "message": "Cantó"

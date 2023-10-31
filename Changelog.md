@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.4.5
+
+- Latest translations
+
 ## Version 3.4.4
 
 - Removing tabs permission (changing language doesn't update automatically anymore)

@@ -96,7 +96,7 @@
         "message": "Провінція"
     },
     "region_kz": {
-        "message": "Округ"
+        "message": "Регіон"
     },
     "region_lv": {
         "message": "Регіон"
@@ -144,7 +144,7 @@
         "message": "Провінція"
     },
     "region_ua": {
-        "message": "Округ"
+        "message": "Область"
     },
     "region_us": {
         "message": "Штат"
@@ -162,7 +162,7 @@
         "message": "Регіон"
     },
     "region_lt": {
-        "message": "Регіон"
+        "message": "Округ"
     },
     "region_ch": {
         "message": "Кантон"
