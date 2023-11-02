@@ -2,9 +2,9 @@
 
 ## Version 3.4.6
 
-- Add flag wybin search user
-- Mantain staff flags when adding a new staff member.
-- Add flag staff registration
+- Add flag search user (wybin)
+- Mantain staff flags when adding a new staff member (wybin)
+- Add flag staff registration (wybin)
 
 ## Version 3.4.5
 
