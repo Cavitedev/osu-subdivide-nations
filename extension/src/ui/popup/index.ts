@@ -7,7 +7,7 @@ import {
     setLanguage,
     availableLanguagesOsuWorld,
     Ilanguages,
-    lastAvailableLanguages
+    lastAvailableLanguages,
 } from "@src/utils/language";
 
 const updateTitle = () => {

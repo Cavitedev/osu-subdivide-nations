@@ -45,7 +45,7 @@ export const addFlagsFriends = async () => {
     for (const item of friendsList) {
         const playerNameElement = item.querySelector(".user-card__username") as HTMLElement;
         const playerId = idFromOsuProfileUrl(playerNameElement.getAttribute("href")!);
-        if(!playerId) continue;
+        if (!playerId) continue;
         flagItems.push({ id: playerId, item: item as HTMLElement });
     }
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });

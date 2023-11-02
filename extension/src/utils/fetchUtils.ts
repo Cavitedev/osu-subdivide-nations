@@ -82,7 +82,7 @@ export const fetchWithCache = async (
 ): Promise<IfetchResponse<object>> => {
     if (pendingRequests[url] !== undefined) {
         const res = await pendingRequests[url];
-        if((res as IfetchResponse<object>)?.error?.code !== abortError){
+        if ((res as IfetchResponse<object>)?.error?.code !== abortError) {
             return res;
         }
         // If it was aborted it is going to try it again. This should be avoided as much as possible

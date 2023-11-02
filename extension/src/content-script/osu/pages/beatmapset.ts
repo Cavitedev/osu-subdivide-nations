@@ -43,7 +43,7 @@ export const addFlagsBeatmapsets = async () => {
         for (let i = 0; i < playMods.children.length; i++) {
             const playmod = playMods.children[i];
             const anchor = playmod.querySelector("a");
-            if(!anchor) continue;
+            if (!anchor) continue;
             tabsMutationObserver.observe(anchor, { attributes: true });
         }
     }

@@ -40,10 +40,7 @@ const osuWorldApiBase = "https://osuworld.octo.moe/api/";
 
 const userDataExpireTime = 3600000; //60 minutes
 
-export const osuWorldUser = async (
-    id: string,
-    mode?: string,
-): Promise<IfetchResponse<TosuWorldIdData>> => {
+export const osuWorldUser = async (id: string, mode?: string): Promise<IfetchResponse<TosuWorldIdData>> => {
     if (!id) {
         console.log("id is null");
         return { error: { code: noId } };
@@ -52,9 +49,7 @@ export const osuWorldUser = async (
     const url = osuWorldApiBase + "users/" + id + (mode ? "?mode=" + mode : "");
 
     // I'm not cancelling the request midway because it may be repeated
-    const dataPromise = fetchWithCache(url, userDataExpireTime) as Promise<
-        IfetchResponse<TosuWorldIdData>
-    >;
+    const dataPromise = fetchWithCache(url, userDataExpireTime) as Promise<IfetchResponse<TosuWorldIdData>>;
 
     return dataPromise;
 };

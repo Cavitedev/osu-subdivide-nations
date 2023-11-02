@@ -19,7 +19,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, options?: T
     if (!playerData || "error" in playerData) {
         return;
     }
-    if(options?.signal?.aborted) return;
+    if (options?.signal?.aborted) return;
 
     const countryCode = playerData["country_id"];
     const regionCode = playerData["region_id"];
@@ -29,10 +29,7 @@ export const addFlagUser = async (item: HTMLElement, userId: string, options?: T
 export const addFlagUsers = async (flagItems: TFlagItems, options?: TWybinHtmlUserOptions) => {
     if (flagItems.length === 0) return;
 
-
-    const playersOsuWorld = await osuWorldUsers(
-        flagItems.map((item) => item.id),
-    );
+    const playersOsuWorld = await osuWorldUsers(flagItems.map((item) => item.id));
 
     if (playersOsuWorld.error) {
         const textError = fetchErrorToText(playersOsuWorld);

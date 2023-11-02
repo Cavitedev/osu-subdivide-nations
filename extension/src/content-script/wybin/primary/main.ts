@@ -1,3 +1,3 @@
-import {exec} from "../content";
+import { exec } from "../content";
 
 exec();

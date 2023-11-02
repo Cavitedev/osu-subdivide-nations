@@ -86,7 +86,7 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
 
-    let previousScoreSet = ranksElement.querySelector("." + tagRank);
+    const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return;
 
     const osuWorldInfo = await osuWorldUser(playerId, mode);
@@ -119,7 +119,7 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     }
 
     const date = new Date(rankHighest["updated_at"]);
-    
+
     await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
 }
 

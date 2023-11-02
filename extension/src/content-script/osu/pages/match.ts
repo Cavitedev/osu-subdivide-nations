@@ -84,7 +84,7 @@ const updateFlagsInMatchPlay = async (scores: ParentNode, signal: AbortSignal) =
     const flagItems: TFlagItems = [];
     for (const item of listScores) {
         const id = _idFromScoreItem(item as HTMLElement);
-        if(!id) continue;
+        if (!id) continue;
         flagItems.push({ id: id, item: item as HTMLElement });
     }
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true, signal: signal });

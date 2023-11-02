@@ -54,7 +54,7 @@ const _addFlagUser = async (
 ): Promise<regionAndCountry> => {
     if (!item) return;
     const playerOsuWorld = await osuWorldUser(userId, mode);
-    if(options?.signal?.aborted) return;
+    if (options?.signal?.aborted) return;
     if (playerOsuWorld.error) {
         const textError = fetchErrorToText(playerOsuWorld);
         console.error(textError);
