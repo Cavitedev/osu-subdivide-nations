@@ -111,7 +111,7 @@
         "message": "省份"
     },
     "region_no": {
-        "message": "州份"
+        "message": "州"
     },
     "region_pe": {
         "message": "地区"
@@ -162,7 +162,7 @@
         "message": "地区"
     },
     "region_lt": {
-        "message": "省份"
+        "message": "州"
     },
     "region_ch": {
         "message": "郡"
@@ -171,7 +171,7 @@
         "message": "地区"
     },
     "region_ee": {
-        "message": "县"
+        "message": "省份"
     },
     "region_bg": {
         "message": "省份"
@@ -180,7 +180,7 @@
         "message": "地区"
     },
     "region_uk": {
-        "message": "县"
+        "message": "省"
     },
     "region_ie": {
         "message": "省份"
