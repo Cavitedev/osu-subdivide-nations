@@ -33,7 +33,6 @@
   "author": "Cavitedev",
   "license": "MIT",
   "dependencies": {
-    "@solidjs/router": "^0.8.3",
     "solid-js": "^1.8.5",
     "webextension-polyfill": "^0.10.0"
   },
