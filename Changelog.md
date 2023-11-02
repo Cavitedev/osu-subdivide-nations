@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.4.6
+
+- Add flag wybin search user
+
+
 ## Version 3.4.5
 
 - Latest translations

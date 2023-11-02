@@ -79,3 +79,4 @@ const addFlagsParticipants = async (parent: HTMLElement) => {
 
     await addFlagUsers(flagItems);
 };
+
