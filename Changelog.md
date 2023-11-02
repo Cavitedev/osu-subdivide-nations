@@ -5,6 +5,7 @@
 - Add flag search user (wybin)
 - Mantain staff flags when adding a new staff member (wybin)
 - Add flag staff registration (wybin)
+- Latest translations
 
 ## Version 3.4.5
 
