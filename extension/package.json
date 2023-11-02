@@ -11,6 +11,8 @@
     "watch": "concurrently \"npm run watch:chromium\" \"npm run watch:firefox\"",
     "watch:chromium": "vite build --watch --minify false -- --browser=chromium",
     "watch:firefox": "vite build --watch --minify false -- --browser=firefox",
+    "dev:chromium": "vite -- --browser=chromium",
+    "dev:firefox": "vite -- --browser=firefox",
     "serve:chromium": "web-ext run -t chromium --start-url \"https://wybin.xyz/tournaments/osu-catch-draft-tournament-2023/participants#solo\" --source-dir ./build/chromium",
     "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./build/firefox",
     "test:unit": "jest",
