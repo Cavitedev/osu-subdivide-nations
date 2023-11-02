@@ -33,11 +33,19 @@ export const addFlagsTournamentManagement = async () => {
     addFlagsParticipants(bodyContainer as HTMLElement);
 };
 
+
+const addFlagsStaffObserver = new MutationObserver((mutations) => {
+    addFlagsStaff(mutations[0].target as HTMLElement);
+});
+
 const addFlagsStaff = async (parent: HTMLElement) => {
     const url = location.href;
     if (!url.includes("#staff")) return;
 
-    const elements = parent.querySelectorAll(".all-staff .staff") ?? [];
+    const allStaff = parent.querySelector(".all-staff");
+    addFlagsStaffObserver.observe(allStaff ?? parent, { childList: true });
+
+    const elements = (allStaff ?? parent).querySelectorAll(".staff") ?? [];
 
     const flagItems: TFlagItems = [];
 

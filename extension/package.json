@@ -1,7 +1,7 @@
 {
   "name": "osu_subdivide_nations",
   "displayName": "osu! subdivide nations",
-  "version": "3.4.5",
+  "version": "3.4.6",
   "description": "Updates national flags into regional flags in Osu! website.",
   "main": "index.js",
   "scripts": {

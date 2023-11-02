@@ -3,6 +3,7 @@
 ## Version 3.4.6
 
 - Add flag wybin search user
+- Mantain staff flags when adding a new staff member.
 
 
 ## Version 3.4.5
