@@ -4,6 +4,7 @@ import { addFlagsParticipants } from "./pages/participants";
 import { addFlagsPlayers } from "./pages/players";
 import { addFlagsSchedule } from "./pages/schedule";
 import { enhanceSearchUser } from "./pages/searchOverlay";
+import { enhanceStaffRegistration } from "./pages/staffRegistration";
 import { addFlagsTeams, updateFlagTeams } from "./pages/teams";
 import { addFlagsTournamentManagement } from "./pages/tournamentManagement";
 
@@ -85,6 +86,7 @@ const enhancePages = () => {
     addFlagsTeams();
     addFlagsParticipants();
     addFlagsSchedule();
+    enhanceStaffRegistration(content ?? document.body);
 };
 
 (async () => {
