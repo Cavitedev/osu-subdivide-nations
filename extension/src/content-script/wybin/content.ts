@@ -3,6 +3,8 @@ import { addFlagsHome } from "./pages/home";
 import { addFlagsParticipants } from "./pages/participants";
 import { addFlagsPlayers } from "./pages/players";
 import { addFlagsSchedule } from "./pages/schedule";
+import { enhanceSearchUser } from "./pages/searchOverlay";
+import { enhanceStaffRegistration } from "./pages/staffRegistration";
 import { addFlagsTeams, updateFlagTeams } from "./pages/teams";
 import { addFlagsTournamentManagement } from "./pages/tournamentManagement";
 
@@ -26,6 +28,7 @@ const overlayObserver = new MutationObserver((mutation) => {
 
 const execOverlay = (parent: HTMLElement) => {
     updateFlagTeams(parent);
+    enhanceSearchUser(parent);
 };
 
 const contentObserver = new MutationObserver(() => {
@@ -83,6 +86,7 @@ const enhancePages = () => {
     addFlagsTeams();
     addFlagsParticipants();
     addFlagsSchedule();
+    enhanceStaffRegistration(content ?? document.body);
 };
 
 (async () => {

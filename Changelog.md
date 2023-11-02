@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 3.4.6
+
+- Add flag search user (wybin)
+- Mantain staff flags when adding a new staff member (wybin)
+- Add flag staff registration (wybin)
+
+## Version 3.4.5
+
+- Latest translations
+
 ## Version 3.4.4
 
 - Removing tabs permission (changing language doesn't update automatically anymore)
@@ -8,6 +18,7 @@
 - Show "-" score ranking if no recent data but highest rank is found
 - Improve load speed in profile
 - Update date format code (trying to fix a bug)
+- Latest translations
 
 ## Version 3.4.3
 
