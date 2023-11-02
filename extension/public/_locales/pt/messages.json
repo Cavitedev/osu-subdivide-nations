@@ -90,7 +90,7 @@
         "message": "Região"
     },
     "region_jp": {
-        "message": "Prefeituras"
+        "message": "Região"
     },
     "region_kr": {
         "message": "Província"
@@ -126,7 +126,7 @@
         "message": "Região"
     },
     "region_ro": {
-        "message": "Condado"
+        "message": "Região"
     },
     "region_se": {
         "message": "Condado"

@@ -81,7 +81,7 @@
         "message": "地区"
     },
     "region_hu": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_id": {
         "message": "省份"
@@ -93,7 +93,7 @@
         "message": "都道府县"
     },
     "region_kr": {
-        "message": "省份"
+        "message": "道"
     },
     "region_kz": {
         "message": "地区"
@@ -111,7 +111,7 @@
         "message": "省份"
     },
     "region_no": {
-        "message": "县"
+        "message": "州份"
     },
     "region_pe": {
         "message": "地区"
@@ -132,7 +132,7 @@
         "message": "省份"
     },
     "region_sg": {
-        "message": "区"
+        "message": "地区"
     },
     "region_th": {
         "message": "省份"
@@ -156,7 +156,7 @@
         "message": "地区"
     },
     "region_il": {
-        "message": "自治区"
+        "message": "区"
     },
     "region_nz": {
         "message": "地区"
@@ -165,13 +165,13 @@
         "message": "省份"
     },
     "region_ch": {
-        "message": "州份"
+        "message": "郡"
     },
     "region_gr": {
         "message": "地区"
     },
     "region_ee": {
-        "message": "省份"
+        "message": "县"
     },
     "region_bg": {
         "message": "省份"
@@ -180,7 +180,7 @@
         "message": "地区"
     },
     "region_uk": {
-        "message": "郡"
+        "message": "县"
     },
     "region_ie": {
         "message": "省份"

@@ -24,7 +24,7 @@
         "message": "Score Ranking"
     },
     "region_ranking": {
-        "message": "Taal regio:"
+        "message": "Regionale Ranking"
     },
     "highest_rank_profile": {
         "message": "Hoogste rank: #{{rankHighest.rank}} op {{formattedDate}}"
@@ -180,7 +180,7 @@
         "message": "Regio"
     },
     "region_uk": {
-        "message": "Land"
+        "message": "Regio"
     },
     "region_ie": {
         "message": "Provincie"
