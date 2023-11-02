@@ -15,6 +15,9 @@
     "resolveJsonModule": true,
     "strictNullChecks": true,
     "noEmit": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    
     "esModuleInterop": true,
     "typeRoots": ["./src", "./node_modules/@types"]
   }

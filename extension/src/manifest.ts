@@ -20,7 +20,10 @@ const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
         48: "icons/48.png",
         128: "icons/128.png",
     },
-
+    options_ui: {
+        page: "src/ui/options/index.html",
+        open_in_tab: true,
+    },
     permissions: ["storage"],
 };
 
