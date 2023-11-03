@@ -1,5 +1,5 @@
 import Settings from "./pages/Settings";
-import { Match, Switch, createSignal } from "solid-js";
+import { Match, Switch, createSignal, For } from "solid-js";
 
 const hashToPage = {
     "#settings": <Settings />,
@@ -17,9 +17,9 @@ export default function Content() {
     return (
         <div class="flex-auto">
             <Switch>
-                {Object.entries(hashToPage).map(([hashRoute, page]) => (
-                    <Match when={hashRoute === hash()}>{page}</Match>
-                ))}
+                <For each={Object.entries(hashToPage)}>
+                    {([hashRoute, page]) => <Match when={hashRoute === hash()}>{page}</Match>}
+                </For>
             </Switch>
         </div>
     );

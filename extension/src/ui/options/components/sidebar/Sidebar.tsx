@@ -6,10 +6,10 @@ export default function Sidebar() {
             <h1>Options</h1>
             <ul>
                 <li>
-                    <button onclick={() => (window.location.hash = "home")}>Home</button>
+                    <button onClick={() => (window.location.hash = "home")}>Home</button>
                 </li>
                 <li>
-                    <button onclick={() => (window.location.hash = "settings")}>Settings</button>
+                    <button onClick={() => (window.location.hash = "settings")}>Settings</button>
                 </li>
             </ul>
         </div>

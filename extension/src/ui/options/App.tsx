@@ -5,7 +5,7 @@ import "flowbite";
 
 function App() {
     return (
-        <div class="flex h-full transition-all duration-[0.4s] ease-[ease] m-2 p-2;">
+        <div class="p-2 m-2 flex h-full transition-all duration-[0.4s] ease-[ease]">
             <Sidebar />
             <Content />
             {/* <div>
