@@ -1,10 +1,4 @@
 .sidebar {
-    width: 30%;
-    position: relative;
-    max-width: 289px;
-    padding: 6px;
+    @apply w-[30%] relative max-w-[289px] shadow-[8px_8px_64px_rgba(0,0,0,0.25)] transition-all duration-[0.5s] ease-[ease] p-1.5 rounded-lg;
     background: linear-gradient(var(--backgroundAccent), var(--backgroundAccentDark));
-    box-shadow: 8px 8px 64px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    transition: all 0.5s ease;
 }
