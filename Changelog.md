@@ -3,7 +3,7 @@
 ## Version 3.4.7
 
 - Fix osu! language not being detected properly
-
+- Latest translations
 
 ## Version 3.4.6
 
