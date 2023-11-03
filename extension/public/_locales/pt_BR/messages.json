@@ -24,7 +24,7 @@
         "message": "Classificação de Pontuação"
     },
     "region_ranking": {
-        "message": "Região"
+        "message": "Maakond"
     },
     "highest_rank_profile": {
         "message": "Maior classificação: #{{rankHighest.rank}} em {{formattedDate}}"
@@ -81,7 +81,7 @@
         "message": "Região"
     },
     "region_hu": {
-        "message": "Cantão"
+        "message": "Prefeitura"
     },
     "region_id": {
         "message": "Província"
@@ -180,7 +180,7 @@
         "message": "Região"
     },
     "region_uk": {
-        "message": "Condado"
+        "message": "Cantão"
     },
     "region_ie": {
         "message": "Província"
