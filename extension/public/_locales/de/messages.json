@@ -171,7 +171,7 @@
         "message": "Region"
     },
     "region_ee": {
-        "message": "Land"
+        "message": "Bundesland"
     },
     "region_bg": {
         "message": "Provinz"
@@ -180,7 +180,7 @@
         "message": "Region"
     },
     "region_gb": {
-        "message": "Land"
+        "message": "Bundesland"
     },
     "region_ie": {
         "message": "Provinz"
