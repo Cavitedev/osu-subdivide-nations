@@ -8,6 +8,9 @@ const mockBrowser = {
             set: jest.fn(),
         },
     },
+    i18n: {
+        getMessage: jest.fn(),
+    },
     // Add more mock APIs as needed
 };
 

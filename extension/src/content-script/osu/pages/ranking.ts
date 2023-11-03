@@ -4,7 +4,7 @@ import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUti
 import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
-import { getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languagesChrome";
+import { getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languageChrome";
 
 // https://osu.ppy.sh/rankings/fruits/performance?country=ES&region=ES-AN
 const rankingIdAttr = "data-user-id";

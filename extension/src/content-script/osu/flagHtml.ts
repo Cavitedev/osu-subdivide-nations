@@ -6,7 +6,7 @@ import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 import { TFlagItems } from "@src/utils/html";
 import { noFlag, flagStyleWithMargin, flagStyle } from "@src/utils/html";
-import { IregionData } from "@src/utils/language";
+import { IregionData } from "@src/utils/languageOsuWorld";
 
 export let flagClass: string | null = null;
 

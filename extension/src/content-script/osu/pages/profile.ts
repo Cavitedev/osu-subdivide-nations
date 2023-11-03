@@ -10,7 +10,7 @@ import {
     getActiveLanguageCodeForKey,
     getLocMsg,
     waitLastLanguageIsLoaded,
-} from "@src/utils/languagesChrome";
+} from "@src/utils/languageChrome";
 import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";

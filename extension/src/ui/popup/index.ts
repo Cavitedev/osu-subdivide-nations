@@ -8,7 +8,7 @@ import {
     availableLanguagesOsuWorld,
     Ilanguages,
     lastAvailableLanguages,
-} from "@src/utils/language";
+} from "@src/utils/languageOsuWorld";
 
 const updateTitle = () => {
     const createdBy = browser.i18n.getMessage("created_by");

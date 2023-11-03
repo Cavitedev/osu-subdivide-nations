@@ -4,7 +4,7 @@ export default function Settings() {
     return (
         <div class="mx-2">
             <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Global Settings</h2>
-            <div class=" block  p-6 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 ">
+            <div class=" block  rounded-lg border border-gray-200 bg-white p-6 shadow  dark:border-gray-700 dark:bg-gray-800 ">
                 <div class=" flex">
                     <div class="flex-auto px-1">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -17,9 +17,9 @@ export default function Settings() {
                         </p>
                     </div>
                     <div class="self-end">
-                        <label class="relative inline-flex items-center cursor-pointer">
-                            <input type="checkbox" value="" class="sr-only peer" />
-                            <div class="w-11 h-6 bg-gray-400 peer-focus:outline-none  rounded-full  dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+                        <label class="relative inline-flex cursor-pointer items-center">
+                            <input type="checkbox" value="" class="peer sr-only" />
+                            <div class="h-6 w-11 rounded-full bg-gray-400  after:absolute  after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-purple-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none dark:border-gray-600 dark:bg-gray-700" />
                         </label>
                     </div>
                 </div>
