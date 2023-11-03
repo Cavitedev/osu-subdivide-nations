@@ -111,7 +111,7 @@
         "message": "Província"
     },
     "region_no": {
-        "message": "Condado"
+        "message": "Prefeitura"
     },
     "region_pe": {
         "message": "Região"
@@ -179,8 +179,8 @@
     "region_sk": {
         "message": "Região"
     },
-    "region_uk": {
-        "message": "Cantão"
+    "region_gb": {
+        "message": "Condado"
     },
     "region_ie": {
         "message": "Província"
