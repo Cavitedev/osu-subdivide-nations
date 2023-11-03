@@ -32,23 +32,8 @@
     "region_at": {
         "message": "Stat"
     },
-    "region_au": {
-        "message": "Stat"
-    },
-    "region_be": {
-        "message": "Provincie"
-    },
-    "region_br": {
-        "message": "Stat"
-    },
     "region_by": {
         "message": "Oblast"
-    },
-    "region_ca": {
-        "message": "Provincie"
-    },
-    "region_cl": {
-        "message": "Regiune"
     },
     "region_cn": {
         "message": "Regiune Administrativă"
@@ -56,121 +41,25 @@
     "region_co": {
         "message": "Departament"
     },
-    "region_cz": {
-        "message": "Regiune"
-    },
-    "region_de": {
-        "message": "Stat"
-    },
     "region_es": {
         "message": "Comunitate Autonoma"
-    },
-    "region_fi": {
-        "message": "Regiune"
-    },
-    "region_fr": {
-        "message": "Regiune"
     },
     "region_hu": {
         "message": "Județ"
     },
-    "region_id": {
-        "message": "Provincie"
-    },
-    "region_it": {
-        "message": "Regiune"
-    },
     "region_jp": {
         "message": "Prefectură"
-    },
-    "region_kr": {
-        "message": "Provincie"
     },
     "region_kz": {
         "message": "Regiune"
     },
-    "region_lv": {
-        "message": "Regiune"
-    },
-    "region_mx": {
-        "message": "Stat"
-    },
-    "region_my": {
-        "message": "Stat"
-    },
-    "region_nl": {
-        "message": "Provincie"
-    },
-    "region_no": {
-        "message": "Județ"
-    },
-    "region_pe": {
-        "message": "Regiune"
-    },
-    "region_ph": {
-        "message": "Provincie"
-    },
     "region_pl": {
         "message": "Voievodat"
-    },
-    "region_pt": {
-        "message": "Regiune"
-    },
-    "region_ro": {
-        "message": "Județ"
-    },
-    "region_se": {
-        "message": "Județ"
     },
     "region_sg": {
         "message": "District"
     },
-    "region_th": {
-        "message": "Provincie"
-    },
-    "region_tr": {
-        "message": "Regiune"
-    },
-    "region_tw": {
-        "message": "Provincie"
-    },
-    "region_ua": {
-        "message": "Oblast"
-    },
-    "region_us": {
-        "message": "Stat"
-    },
-    "region_vn": {
-        "message": "Provincie"
-    },
-    "region_dk": {
-        "message": "Regiune"
-    },
-    "region_il": {
-        "message": "District"
-    },
-    "region_nz": {
-        "message": "Regiune"
-    },
-    "region_lt": {
-        "message": "Județ"
-    },
-    "region_gr": {
-        "message": "Regiune"
-    },
-    "region_ee": {
-        "message": "Județ"
-    },
-    "region_bg": {
-        "message": "Provincie"
-    },
-    "region_sk": {
-        "message": "Regiune"
-    },
     "region_gb": {
         "message": "Județ"
-    },
-    "region_ie": {
-        "message": "Provincie"
     }
 }
