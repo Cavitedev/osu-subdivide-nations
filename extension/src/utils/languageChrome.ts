@@ -29,31 +29,55 @@ export const getLocMsg = (key: string, substitutions: string | string[] | undefi
 };
 
 type TLocHtml = {
-    [key: string]: {
-        type: string;
-        link?: string;
-        forcedString?: string;
-    };
+    type: string;
+    match: string;
+    link?: string;
+    forcedString?: string;
 };
 
-export const getLocHtml = (key: string, substitutions: string | string[] | undefined = undefined, htmlReplacements: TLocHtml) => {
+export const locMsgToHtml = (msg: string, htmlReplacements?: TLocHtml[] | undefined): HTMLElement[] => {
+    if (!msg) return [];
+    const firstReplacement = htmlReplacements?.pop();
 
-    const originalMessage = getLocMsg(key, substitutions);
+    if (!firstReplacement) {
+        const spanEl = document.createElement("span");
+        spanEl.textContent = msg;
+        return [spanEl];
+    }
 
+    const splittedArray = msg.split(`{{${firstReplacement.match}}}`);
+    const middleFillEl = splittedSubstitute(firstReplacement);
 
-    const splitted = originalMessage.split("{{developer}}");
-    const span1 = document.createElement("span");
-    span1.innerText = splitted[0];
+    const returnElements: HTMLElement[] = [];
+    for (let i = 0; i < splittedArray.length; i++) {
+        const recursiveElements = locMsgToHtml(splittedArray[i], htmlReplacements);
+        returnElements.push(...recursiveElements);
+        if (i < splittedArray.length - 1) {
+            returnElements.push(middleFillEl.cloneNode(true) as HTMLElement);
+        }
+    }
 
-    const developerLink = document.createElement("a");
-    developerLink.innerText = "Cavitedev";
-    developerLink.href = "https://github.com/Cavitedev";
-    developerLink.setAttribute("target", "_blank");
+    return returnElements;
+};
 
-    const span2 = document.createElement("span");
-    span2.innerText = splitted[1];
+const splittedSubstitute = (replacement: TLocHtml) => {
+    console.log(replacement);
+    if (replacement.type === "A") {
+        const anchor = document.createElement("a");
+        if (replacement.link) {
+            anchor.href = replacement.link;
+        }
+        if (replacement.forcedString) {
+            anchor.textContent = replacement.forcedString;
+        } else {
+            const substituteStr = getLocMsg(replacement.match);
+            anchor.textContent = substituteStr;
+        }
+        return anchor;
+    }
 
-}
+    return document.createElement("span");
+};
 
 export const loadLanguage = async (lang: string) => {
     const splittedLang = lang.split("-");

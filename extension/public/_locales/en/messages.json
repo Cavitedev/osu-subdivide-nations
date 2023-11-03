@@ -35,7 +35,7 @@
     "score_ranking_desc": {
         "message": "Displays Score Ranking from {{respektive_api}} in osu! profile"
     },
-    "resepktive_api": {
+    "respektive_api": {
         "message": "Respektive's API"
     },
     "region": {
