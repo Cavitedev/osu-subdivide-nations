@@ -1,6 +1,7 @@
 import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Content from "./content/Content";
+import "flowbite";
 
 function App() {
     return (

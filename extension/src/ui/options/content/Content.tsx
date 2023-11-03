@@ -15,7 +15,7 @@ export default function Content() {
     window.addEventListener("hashchange", updateHashValue);
 
     return (
-        <div>
+        <div class="flex-auto">
             <Switch>
                 {Object.entries(hashToPage).map(([hashRoute, page]) => (
                     <Match when={hashRoute === hash()}>{page}</Match>
