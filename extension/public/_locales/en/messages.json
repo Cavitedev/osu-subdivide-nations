@@ -212,7 +212,7 @@
     "region_sk": {
         "message": "Region"
     },
-    "region_gb": {
+    "region_gb":{
         "message": "County"
     },
     "region_ie": {
