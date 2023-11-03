@@ -162,7 +162,7 @@
         "message": "Região"
     },
     "region_lt": {
-        "message": "Condado"
+        "message": "Região"
     },
     "region_ch": {
         "message": "Cantão"
@@ -179,7 +179,7 @@
     "region_sk": {
         "message": "Região"
     },
-    "region_uk": {
+    "region_gb": {
         "message": "Condado"
     },
     "region_ie": {
