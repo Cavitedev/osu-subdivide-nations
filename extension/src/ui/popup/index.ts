@@ -9,26 +9,29 @@ import {
     Ilanguages,
     lastAvailableLanguages,
 } from "@src/utils/languageOsuWorld";
+import { getLocMsg, locMsgToHtml } from "@src/utils/languageChrome";
 
 const updateTitle = () => {
-    const createdBy = browser.i18n.getMessage("created_by");
-    const splitted = createdBy.split("{{developer}}");
+    const createdBy = getLocMsg("created_by");
 
-    const span1 = document.createElement("span");
-    span1.innerText = splitted[0];
-
-    const developerLink = document.createElement("a");
-    developerLink.innerText = "Cavitedev";
-    developerLink.href = "https://github.com/Cavitedev";
-    developerLink.setAttribute("target", "_blank");
-
-    const span2 = document.createElement("span");
-    span2.innerText = splitted[1];
+    const elements = locMsgToHtml(createdBy, [
+        {
+            type: "A",
+            match: "developer",
+            link: "https://github.com/Cavitedev",
+            forcedString: "Cavitedev",
+        },
+    ]);
+    elements.forEach((element) => {
+        if (element.tagName === "A") {
+            element.setAttribute("target", "_blank");
+        }
+    });
 
     const copyrightElement = document.querySelector(".copyright");
-    copyrightElement?.appendChild(span1);
-    copyrightElement?.appendChild(developerLink);
-    copyrightElement?.appendChild(span2);
+    for (const el of elements) {
+        copyrightElement?.appendChild(el);
+    }
 
     const title = browser.runtime.getManifest().name;
     const version = " v" + browser.runtime.getManifest().version;
