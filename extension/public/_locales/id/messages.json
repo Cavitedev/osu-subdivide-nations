@@ -35,23 +35,8 @@
     "region_at": {
         "message": "Negara Bagian"
     },
-    "region_au": {
-        "message": "Negara Bagian"
-    },
-    "region_be": {
-        "message": "Provinsi"
-    },
-    "region_br": {
-        "message": "Negara Bagian"
-    },
     "region_by": {
         "message": "Oblast"
-    },
-    "region_ca": {
-        "message": "Provinsi"
-    },
-    "region_cl": {
-        "message": "Wilayah"
     },
     "region_cn": {
         "message": "Wilayah Administrasi"
@@ -59,121 +44,25 @@
     "region_co": {
         "message": "Departemen"
     },
-    "region_cz": {
-        "message": "Wilayah"
-    },
-    "region_de": {
-        "message": "Negara Bagian"
-    },
     "region_es": {
         "message": "Komunitas Otonom"
-    },
-    "region_fi": {
-        "message": "Wilayah"
-    },
-    "region_fr": {
-        "message": "Wilayah"
     },
     "region_hu": {
         "message": "Daerah"
     },
-    "region_id": {
-        "message": "Provinsi"
-    },
-    "region_it": {
-        "message": "Wilayah"
-    },
     "region_jp": {
         "message": "Prefektur"
-    },
-    "region_kr": {
-        "message": "Provinsi"
     },
     "region_kz": {
         "message": "Wilayah"
     },
-    "region_lv": {
-        "message": "Wilayah"
-    },
-    "region_mx": {
-        "message": "Negara Bagian"
-    },
-    "region_my": {
-        "message": "Negara Bagian"
-    },
-    "region_nl": {
-        "message": "Provinsi"
-    },
-    "region_no": {
-        "message": "Daerah"
-    },
-    "region_pe": {
-        "message": "Wilayah"
-    },
-    "region_ph": {
-        "message": "Provinsi"
-    },
     "region_pl": {
         "message": "Provinsi"
-    },
-    "region_pt": {
-        "message": "Wilayah"
-    },
-    "region_ro": {
-        "message": "Daerah"
-    },
-    "region_se": {
-        "message": "Daerah"
     },
     "region_sg": {
         "message": "Distrik"
     },
-    "region_th": {
-        "message": "Provinsi"
-    },
-    "region_tr": {
-        "message": "Wilayah"
-    },
-    "region_tw": {
-        "message": "Provinsi"
-    },
-    "region_ua": {
-        "message": "Oblast"
-    },
-    "region_us": {
-        "message": "Negara Bagian"
-    },
-    "region_vn": {
-        "message": "Provinsi"
-    },
-    "region_dk": {
-        "message": "Wilayah"
-    },
-    "region_il": {
-        "message": "Distrik"
-    },
-    "region_nz": {
-        "message": "Wilayah"
-    },
-    "region_lt": {
-        "message": "Daerah"
-    },
-    "region_gr": {
-        "message": "Wilayah"
-    },
-    "region_ee": {
-        "message": "Daerah"
-    },
-    "region_bg": {
-        "message": "Provinsi"
-    },
-    "region_sk": {
-        "message": "Wilayah"
-    },
     "region_gb": {
         "message": "Daerah"
-    },
-    "region_ie": {
-        "message": "Provinsi"
     }
 }
