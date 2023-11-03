@@ -4,13 +4,13 @@
 
 body {
     font-family: "Roboto", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #fff;
-    background-color: #18171c;
+    @apply text-base leading-tight text-white bg-slate-950;
 }
 
 html {
     --backgroundAccent: #2e293d;
     --backgroundAccentDark: #1a1822;
+}
+a {
+    @apply text-purple-500 underline;
 }
