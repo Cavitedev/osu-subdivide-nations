@@ -41,6 +41,9 @@
     "region_br": {
         "message": "État"
     },
+    "region_by": {
+        "message": "Région"
+    },
     "region_ca": {
         "message": "Province"
     },
@@ -106,6 +109,9 @@
     },
     "region_tw": {
         "message": "Province"
+    },
+    "region_ua": {
+        "message": "Région"
     },
     "region_us": {
         "message": "État"

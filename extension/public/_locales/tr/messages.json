@@ -17,6 +17,9 @@
     "region": {
         "message": "Bölge"
     },
+    "region_by": {
+        "message": "Bölge"
+    },
     "region_cl": {
         "message": "Bölge"
     },
@@ -45,6 +48,9 @@
         "message": "Bölge"
     },
     "region_tr": {
+        "message": "Bölge"
+    },
+    "region_ua": {
         "message": "Bölge"
     },
     "region_dk": {

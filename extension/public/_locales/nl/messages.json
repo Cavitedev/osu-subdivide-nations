@@ -24,7 +24,7 @@
         "message": "Score Ranking"
     },
     "region_ranking": {
-        "message": "Regionale Ranking"
+        "message": "Regio"
     },
     "highest_rank_profile": {
         "message": "Hoogste rank: #{{rankHighest.rank}} op {{formattedDate}}"
@@ -171,7 +171,7 @@
         "message": "Regio"
     },
     "region_ee": {
-        "message": "Land"
+        "message": "Maakond"
     },
     "region_bg": {
         "message": "Provincie"
