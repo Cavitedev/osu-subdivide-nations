@@ -1,6 +1,11 @@
+import { getLocMsg, locMsgToHtml } from "@src/utils/languageChrome";
 import browser from "webextension-polyfill";
 
 export default function Settings() {
+    const descriptionContent = locMsgToHtml(getLocMsg("score_ranking_desc"), [
+        { type: "A", link: "https://github.com/respektive/osu-score-rank-api", match: "respektive_api" },
+    ]);
+
     return (
         <div class="mx-2">
             <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Global Settings</h2>
@@ -10,11 +15,7 @@ export default function Settings() {
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             {browser.i18n.getMessage("score_ranking")}
                         </h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">
-                            Displays Score Ranking from{" "}
-                            <a href="https://github.com/respektive/osu-score-rank-api">Repektive's API</a> in osu!
-                            profile.
-                        </p>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">{descriptionContent}</p>
                     </div>
                     <div class="self-end">
                         <label class="relative inline-flex cursor-pointer items-center">
