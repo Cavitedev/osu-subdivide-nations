@@ -143,9 +143,6 @@
     "region_tw": {
         "message": "Provincie"
     },
-    "region_ua": {
-        "message": "Oblast"
-    },
     "region_us": {
         "message": "Staat"
     },
@@ -154,9 +151,6 @@
     },
     "region_dk": {
         "message": "Regio"
-    },
-    "region_il": {
-        "message": "District"
     },
     "region_nz": {
         "message": "Regio"
