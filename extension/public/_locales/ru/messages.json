@@ -179,8 +179,8 @@
     "region_sk": {
         "message": "Край"
     },
-    "region_uk": {
-        "message": "Графство"
+    "region_gb": {
+        "message": "Уезд"
     },
     "region_ie": {
         "message": "Провинция"
