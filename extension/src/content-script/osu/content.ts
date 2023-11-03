@@ -132,7 +132,7 @@ const updateUserCardMobileView = async (parent: HTMLElement | undefined = undefi
     const userCard = (parent ?? document).querySelector(".user-card .user-card__details");
     if (!userCard) {
         const reactUserCard = document.querySelector(".js-react--user-card") as HTMLElement;
-        if(!reactUserCard) return;
+        if (!reactUserCard) return;
         userCardObservedElement = reactUserCard;
         userCardMobileMutationObserver.observe(reactUserCard!, { childList: true });
         return;

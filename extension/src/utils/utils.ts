@@ -56,10 +56,10 @@ export function isValidDate(dateString: any) {
 }
 
 export const idFromOsuProfileUrl = (url: string | null | undefined): string | null | undefined => {
-    if(!url) return null;
+    if (!url) return null;
 
     const id = /(osu|old)\.ppy\.sh\/(u|users)\/(\d+)/.exec(url)?.[3];
 
-    if(!isNumber(id)) return null;
+    if (!isNumber(id)) return null;
     return id;
 };

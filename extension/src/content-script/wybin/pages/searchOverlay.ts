@@ -12,13 +12,10 @@ export const enhanceSearchUser = async (parent: HTMLElement) => {
 };
 
 const addFlagSearchUser = async (parent: HTMLElement) => {
-
     const playerElement = parent.querySelector(".username");
     const href = playerElement?.getAttribute("href");
     const playerId = idFromOsuProfileUrl(href);
     if (!playerId) return;
 
     await addFlagUser(playerElement as HTMLElement, playerId);
-
-
-}
+};
