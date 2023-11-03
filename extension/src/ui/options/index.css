@@ -6,3 +6,7 @@ body {
     background-color: #18171c;
 }
 
+html{
+    --backgroundAccent: #2e293d;
+    --backgroundAccentDark: #1a1822;
+}
