@@ -2,13 +2,14 @@ import { getLocMsg } from "@src/utils/languageChrome";
 import NavbarListItem from "./NavbarListItem";
 import { useHashContext } from "../../context/hashContext";
 import ThemeToggle from "./ThemeToggle";
+import { getManifestTitle } from "@src/utils/manifestUtils";
 
 export default function Navbar() {
     const { hasSidebar } = useHashContext();
 
     return (
         <nav class=" bg-white border-gray-200 dark:bg-gray-900 " classList={{ "sm:ml-64": hasSidebar() }}>
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+            <div class="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2">
                 <button
                     data-drawer-target="default-sidebar"
                     data-drawer-toggle="default-sidebar"
@@ -32,10 +33,10 @@ export default function Navbar() {
                     </svg>
                 </button>
 
-                <a href="https://osu.ppy.sh/community/forums/topics/1837728" class="flex items-center">
+                <a href="https://osu.ppy.sh/community/forums/topics/1837728" class="contents items-center">
                     <img src="../../../icons/128.png" class="h-8 mr-3" alt="osu! subdive nations logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white underline">
-                        osu! subdivide nations
+                    <span class="truncate self-center text-2xl font-semibold whitespace-nowrap dark:text-white underline">
+                        {getManifestTitle()}
                     </span>
                 </a>
                 <div class="flex-auto"></div>
