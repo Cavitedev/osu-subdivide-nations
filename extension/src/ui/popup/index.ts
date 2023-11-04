@@ -10,6 +10,7 @@ import {
     lastAvailableLanguages,
 } from "@src/utils/languageOsuWorld";
 import { getLocMsg, locMsgToHtml } from "@src/utils/languageChrome";
+import { getManifestTitle } from "@src/utils/manifestUtils";
 
 const updateTitle = () => {
     const createdBy = getLocMsg("created_by");
@@ -28,7 +29,7 @@ const updateTitle = () => {
         copyrightElement?.appendChild(el);
     }
 
-    const title = browser.runtime.getManifest().name;
+    const title = getManifestTitle();
     const version = " v" + browser.runtime.getManifest().version;
 
     (document.querySelector("#header .title") as HTMLElement).innerText = title;
