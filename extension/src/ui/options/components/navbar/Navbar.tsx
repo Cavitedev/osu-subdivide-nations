@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return (
         <nav class=" bg-white border-gray-200 dark:bg-gray-900 " classList={{ "sm:ml-64": hasSidebar() }}>
-            <div class="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2">
+            <div class="max-w-screen-xl2 flex items-center justify-between mx-auto px-4 py-2">
                 <button
                     data-drawer-target="default-sidebar"
                     data-drawer-toggle="default-sidebar"
