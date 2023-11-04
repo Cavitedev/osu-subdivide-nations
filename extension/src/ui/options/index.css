@@ -4,13 +4,13 @@
 
 body {
     font-family: "Roboto", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    @apply text-base leading-tight text-white bg-slate-950;
+    @apply text-base leading-tight text-black bg-slate-100;
 }
 
-html {
-    --backgroundAccent: #2e293d;
-    --backgroundAccentDark: #1a1822;
+html.dark body {
+    @apply bg-slate-950 text-white !important;
 }
+
 a {
     @apply text-purple-500 underline;
 }
