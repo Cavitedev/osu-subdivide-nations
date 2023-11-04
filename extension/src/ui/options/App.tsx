@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import Content from "./content/Content";
 import "flowbite";
@@ -6,7 +7,7 @@ import "flowbite";
 function App() {
     return (
         <div>
-            <Sidebar />
+            <Navbar />
             <Content />
             {/* <div>
                 <h1>Vite + Solid + XD</h1>
