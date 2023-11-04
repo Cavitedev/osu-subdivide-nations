@@ -1,24 +1,26 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Sidebar from "./components/sidebar/Sidebar";
 import Content from "./content/Content";
 import "flowbite";
+import { usePreferencesContext } from "./context/preferencesContext";
+import { createEffect } from "solid-js";
 
 function App() {
+    const { preferences } = usePreferencesContext();
+
+    createEffect(() => {
+        const darkMode = preferences.darkMode;
+        if (darkMode) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    });
+
     return (
-        <div>
+        <div >
             <Navbar />
             <Content />
-            {/* <div>
-                <h1>Vite + Solid + XD</h1>
-                <div class="card">
-                    <button onClick={() => setCount((count) => count + 1)}>count is {count()}</button>
-                    <p>
-                        Edit <code>src/App.tsx</code> and save to test HMR
-                    </p>
-                </div>
-                <p class="read-the-docs">Click on the Vite and Solid logos to learn more</p>
-            </div> */}
         </div>
     );
 }

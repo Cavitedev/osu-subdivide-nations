@@ -1,21 +1,20 @@
 import { getLocMsg } from "@src/utils/languageChrome";
 import NavbarListItem from "./NavbarListItem";
 import { useHashContext } from "../../context/hashContext";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
-
-    const {hasSidebar} = useHashContext();
+    const { hasSidebar } = useHashContext();
 
     return (
-        <nav class=" bg-white border-gray-200 dark:bg-gray-900 " 
-        classList={{"sm:ml-64": hasSidebar()}}>
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav class=" bg-white border-gray-200 dark:bg-gray-900 " classList={{ "sm:ml-64": hasSidebar() }}>
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
                 <button
                     data-drawer-target="default-sidebar"
                     data-drawer-toggle="default-sidebar"
                     aria-controls="default-sidebar"
                     type="button"
-                    class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 mr-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 >
                     <span class="sr-only">{getLocMsg("open_sidebar")}</span>
                     <svg
@@ -34,11 +33,13 @@ export default function Navbar() {
                 </button>
 
                 <a href="https://osu.ppy.sh/community/forums/topics/1837728" class="flex items-center">
-                    <img src="../../../icons/128.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <img src="../../../icons/128.png" class="h-8 mr-3" alt="osu! subdive nations logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white underline">
                         osu! subdivide nations
                     </span>
                 </a>
+                <div class="flex-auto"></div>
+                <ThemeToggle />
                 <button
                     data-collapse-toggle="navbar-default"
                     type="button"
@@ -63,6 +64,7 @@ export default function Navbar() {
                         />
                     </svg>
                 </button>
+
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <NavbarListItem hash="settings" text={getLocMsg("settings")} />
