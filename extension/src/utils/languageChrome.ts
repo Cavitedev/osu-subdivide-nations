@@ -65,6 +65,7 @@ const splittedSubstitute = (replacement: TLocHtml) => {
         const anchor = document.createElement("a");
         if (replacement.link) {
             anchor.href = replacement.link;
+            anchor.setAttribute("target", "_blank");
         }
         if (replacement.forcedString) {
             anchor.textContent = replacement.forcedString;
