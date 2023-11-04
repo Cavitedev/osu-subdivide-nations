@@ -4,13 +4,16 @@ import { render } from "solid-js/web";
 import "./index.css";
 import App from "./App";
 import { PreferencesContextProvider } from "./context/preferencesContext";
+import { HashContextProvider } from "./context/hashContext";
 
 const root = document.getElementById("root");
 
 render(
     () => (
         <PreferencesContextProvider>
-            <App />
+            <HashContextProvider>
+                <App />
+            </HashContextProvider>
         </PreferencesContextProvider>
     ),
     root!,
