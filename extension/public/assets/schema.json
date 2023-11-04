@@ -2,7 +2,12 @@
     "type": "object",
     "properties": {
         "lang": {
-            "type": "string"
+            "type": "string",
+            "default": "en"
+        },
+        "darkMode": {
+            "type": "boolean",
+            "default": true
         }
     }
 }

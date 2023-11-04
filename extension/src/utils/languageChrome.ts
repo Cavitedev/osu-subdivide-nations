@@ -61,7 +61,6 @@ export const locMsgToHtml = (msg: string, htmlReplacements?: TLocHtml[] | undefi
 };
 
 const splittedSubstitute = (replacement: TLocHtml) => {
-    console.log(replacement);
     if (replacement.type === "A") {
         const anchor = document.createElement("a");
         if (replacement.link) {
