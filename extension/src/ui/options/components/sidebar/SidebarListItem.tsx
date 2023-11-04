@@ -1,24 +1,24 @@
 import { JSX } from "solid-js/jsx-runtime";
-import { useHashContext } from "../../context/hashContext";
+import { useTabContext } from "../../context/tabContext";
 
 export default function SidebarListItem(props: {
-    hash: string;
+    tab: string;
     icon: number | boolean | Node | JSX.ArrayElement | (string & {}) | null | undefined;
     label: number | boolean | Node | JSX.ArrayElement | (string & {}) | null | undefined;
 }) {
-    const { hash, setHash } = useHashContext();
+    const { tab, setTab } = useTabContext();
 
     const active = () => {
-        return hash() === `#${props.hash}` || (hash() === "" && props.hash === "settings");
+        return tab() === `#${props.tab}` || (tab() === "" && props.tab === "osu");
     };
 
     return (
         <li>
             <a
-                href={`#${props.hash}`}
+                href={`#`}
                 onClick={(e) => {
                     e.preventDefault();
-                    setHash(props.hash);
+                    setTab(props.tab);
                 }}
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 classList={{ "bg-gray-200 dark:bg-gray-600": active() }}
