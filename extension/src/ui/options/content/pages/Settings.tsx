@@ -1,7 +1,5 @@
 import { getLocMsg, locMsgToHtml } from "@src/utils/languageChrome";
-import browser from "webextension-polyfill";
 import { usePreferencesContext } from "../../context/preferencesContext";
-import { createEffect } from "solid-js";
 
 export default function Settings() {
     const descriptionContent = locMsgToHtml(getLocMsg("score_ranking_desc"), [
@@ -10,19 +8,17 @@ export default function Settings() {
 
     const preferencesContext = usePreferencesContext();
 
-    createEffect(() => {
-        console.log("preferencesContext", preferencesContext);
-    });
-
     return (
         <div class="mx-2">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Global Settings</h2>
+            <h2 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {getLocMsg("settings")}
+            </h2>
 
             <div class=" block  rounded-lg border border-gray-200 bg-white p-6 shadow  dark:border-gray-700 dark:bg-gray-800 ">
                 <div class=" flex">
                     <div class="flex-auto px-1">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            {browser.i18n.getMessage("score_ranking")}
+                            {getLocMsg("score_ranking")}
                         </h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">{descriptionContent}</p>
                     </div>

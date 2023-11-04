@@ -32,6 +32,12 @@
     "settings": {
         "message": "Settings"
     },
+    "options": {
+        "message": "Options"
+    },
+    "about": {
+        "message": "About"
+    },
     "score_ranking_desc": {
         "message": "Displays Score Ranking from {{respektive_api}} in osu! profile"
     },

@@ -1,24 +1,24 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "baseUrl": "",
-    "module": "ES2020",
-    "paths": {
-      "@src/*": ["./src/*"]
-    },
-    "moduleResolution": "node",
-    "lib": ["ES2022", "Dom", "DOM.Iterable"],
-    "types": ["chrome"],
-    "downlevelIteration": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "resolveJsonModule": true,
-    "strictNullChecks": true,
-    "noEmit": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    
-    "esModuleInterop": true,
-    "typeRoots": ["./src", "./node_modules/@types"]
-  }
+    "compilerOptions": {
+        "target": "ES2020",
+        "baseUrl": "",
+        "module": "ES2020",
+        "paths": {
+            "@src/*": ["./src/*"]
+        },
+        "moduleResolution": "node",
+        "lib": ["ES2022", "Dom", "DOM.Iterable"],
+        "types": ["vite-plugin-solid-svg/types-component-solid", "vite/client", "chrome"],
+        "downlevelIteration": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "noEmit": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+
+        "esModuleInterop": true,
+        "typeRoots": ["./src", "./node_modules/@types/", "./node_modules"]
+    }
 }

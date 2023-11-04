@@ -1,4 +1,5 @@
-import solid from 'vite-plugin-solid'
+import solidPlugin from 'vite-plugin-solid'
+import solidSvg from 'vite-plugin-solid-svg'
 import { defineConfig } from "vite";
 import webExtension from "@samrum/vite-plugin-web-extension";
 import path from "path";
@@ -31,7 +32,8 @@ export default defineConfig(() => {
 const buildFor = (mode: TtargetBrowser) => {
     return {
         plugins: [
-            solid(),
+            solidPlugin(),
+            solidSvg(),
             webExtension({
                 manifest: getManifest(mode as TtargetBrowser),
             }),
