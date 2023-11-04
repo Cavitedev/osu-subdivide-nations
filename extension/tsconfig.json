@@ -8,7 +8,7 @@
         },
         "moduleResolution": "node",
         "lib": ["ES2022", "Dom", "DOM.Iterable"],
-        "types": ["vite-plugin-solid-svg/types-component-solid", "vite/client", "chrome"],
+        "types": ["chrome"],
         "downlevelIteration": true,
         "noImplicitAny": true,
         "noUnusedLocals": true,
