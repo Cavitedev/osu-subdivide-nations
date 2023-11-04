@@ -10,13 +10,15 @@ export let preferences: Tpreferences = {
     darkMode: true,
     scoreRanking: true,
 };
-// const preferencesPromise: Promise<Tpreferences> = browser.storage.sync.get() as Promise<Tpreferences>;
-// preferencesPromise.then((prefs) => {
-//     preferences = prefs;
-// });
+let preferencesPromise: Promise<Tpreferences>;
+
+export const waitPreferencesToLoad = async () => {
+    await preferencesPromise;
+};
 
 export const loadPreferences = async () => {
-    preferences = (await browser.storage.sync.get()) as Tpreferences;
+    preferencesPromise = browser.storage.sync.get() as Promise<Tpreferences>;
+    preferences = (await preferencesPromise) as Tpreferences;
     return preferences;
 };
 
