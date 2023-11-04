@@ -14,6 +14,7 @@ import {
 import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
+import { preferences, waitPreferencesToLoad } from "@src/utils/preferences";
 
 // Executed when opening a tab or going back and forth so this runs too early
 export const profileMutationObserverInit = new MutationObserver((_) => {
@@ -107,6 +108,9 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     if (previousScoreSet) return;
 
     const scoreRankInfo = await osuScoreRanking(playerId, mode);
+    await waitPreferencesToLoad();
+    if (!preferences.scoreRanking) return;
+
     // Abort after fetch to ensure it's cached
     if (!scoreRankInfo || signal?.aborted) return;
     const scoreRank = scoreRankInfo[0].rank;
