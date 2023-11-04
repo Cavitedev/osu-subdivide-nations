@@ -1,6 +1,5 @@
 import { getLocMsg } from "@src/utils/languageChrome";
-import SettingsIcon from "@src/ui/icons/settings.svg";
-import AboutIcon from "@src/ui/icons/about.svg";
+
 import SidebarListItem from "./SidebarListItem";
 
 export default function Sidebar() {
@@ -16,8 +15,8 @@ export default function Sidebar() {
                         {getLocMsg("setting")}
                     </h5>
                     <ul class="space-y-2 font-medium">
-                        <SidebarListItem tab="osu" icon={<SettingsIcon />} label="Osu!" />
-                        <SidebarListItem tab="wybin" icon={<AboutIcon />} label={"Wybin"} />
+                        <SidebarListItem tab="osu" label="osu!" />
+                        <SidebarListItem tab="wybin" label={"wyBin"} />
                     </ul>
                 </div>
             </aside>
