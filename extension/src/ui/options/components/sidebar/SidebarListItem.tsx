@@ -8,7 +8,7 @@ export default function SidebarListItem(props: {
     const { tab, setTab } = useTabContext();
 
     const active = () => {
-        return tab() === `#${props.tab}` || (tab() === "" && props.tab === "osu");
+        return tab() === `${props.tab}` || (tab() === "" && props.tab === "osu");
     };
 
     return (
