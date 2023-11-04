@@ -33,7 +33,7 @@
         "message": "Settings"
     },
     "website_settings": {
-        "message": "{{Website}} Settings"
+        "message": "{{Website}} settings"
     },
     "options": {
         "message": "Options"

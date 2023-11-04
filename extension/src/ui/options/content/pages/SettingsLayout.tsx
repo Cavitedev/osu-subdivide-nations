@@ -9,11 +9,6 @@ export default function SettingsLayout(props: {
     const title = locMsgToHtml(getLocMsg("website_settings"), [
         { type: "A", link: props.link, match: "Website", forcedString: props.websiteName },
     ]);
-    title.forEach((element) => {
-        if (element.tagName === "A") {
-            element.setAttribute("target", "_blank");
-        }
-    });
     
     return (
         <div class="mx-2">

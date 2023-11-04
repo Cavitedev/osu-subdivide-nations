@@ -22,11 +22,6 @@ const updateTitle = () => {
             forcedString: "Cavitedev",
         },
     ]);
-    elements.forEach((element) => {
-        if (element.tagName === "A") {
-            element.setAttribute("target", "_blank");
-        }
-    });
 
     const copyrightElement = document.querySelector(".copyright");
     for (const el of elements) {

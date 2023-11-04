@@ -10,7 +10,7 @@ const hashContext = createContext({
 });
 
 export function HashContextProvider(props: any) {
-    const [hash, setHash] = createSignal("");
+    const [hash, setHash] = createSignal(window.location.hash);
 
     const innerSetHash = (value: string) => {
         setHash(value);

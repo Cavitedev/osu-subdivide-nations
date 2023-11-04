@@ -93,6 +93,7 @@ describe("Needs message mock", () => {
             expect(translationHtml.length).toEqual(3);
             expect(translationHtml[0].tagName).toEqual("SPAN");
             expect(translationHtml[1].tagName).toEqual("A");
+            expect(translationHtml[1].getAttribute("target")).toEqual("_blank");
             expect(translationHtml[2].tagName).toEqual("SPAN");
             expect(translationHtml[1].getAttribute("href")).toEqual(link);
             expect(translationHtml[1].textContent).toEqual(anchorLink);

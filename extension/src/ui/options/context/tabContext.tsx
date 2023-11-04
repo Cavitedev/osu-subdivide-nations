@@ -5,7 +5,12 @@ const [constantValue] = createSignal("");
 const tabContext = createContext({ tab: constantValue, setTab: (value: string) => {} });
 
 export function TabContextProvider(props: any) {
-    const [tab, setSignalTab] = createSignal("");
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Get the value of the "tab" parameter
+    const tabParam = urlParams.get("tab") ?? "";
+
+    const [tab, setSignalTab] = createSignal(tabParam);
 
     const setTab = (newTab: string) => {
         setSignalTab(newTab);
