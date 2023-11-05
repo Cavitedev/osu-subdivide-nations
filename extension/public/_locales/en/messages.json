@@ -51,13 +51,13 @@
         "message": "Open Sidebar"
     },
     "score_ranking_desc": {
-        "message": "Displays score ranking from {{respektive_api}} on osu! profiles"
+        "message": "Displays score ranking from {{respektive_api}} on osu! profiles."
     },
     "respektive_api": {
         "message": "Respektive's API"
     },
     "kudosu_ranking_desc": {
-        "message": "Displays Kudosu ranking from {{hiviexd_api}} on osu! profiles"
+        "message": "Displays Kudosu ranking from {{hiviexd_api}} on osu! profiles."
     },
     "hiviexd_api": {
         "message": "Hiviexd's API"
