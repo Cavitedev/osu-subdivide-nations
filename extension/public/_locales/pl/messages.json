@@ -29,6 +29,12 @@
     "highest_rank_profile": {
         "message": "Najwyższa pozycja: #{{rankHighest.rank}} z {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Komitat"
+    },
+    "last_rank_update": {
+        "message": "Prefektura"
+    },
     "region": {
         "message": "Region"
     },
@@ -87,30 +93,6 @@
         "message": "Stan"
     },
     "region_il": {
-        "message": "Prowincja"
-    },
-    "region_nz": {
-        "message": "Region"
-    },
-    "region_lt": {
-        "message": "Komitat"
-    },
-    "region_gr": {
-        "message": "Region"
-    },
-    "region_ee": {
-        "message": "Komitat"
-    },
-    "region_bg": {
-        "message": "Prowincja"
-    },
-    "region_sk": {
-        "message": "Region"
-    },
-    "region_gb": {
-        "message": "Komitat"
-    },
-    "region_ie": {
         "message": "Prowincja"
     }
 }
