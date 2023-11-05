@@ -35,17 +35,11 @@
     "region_au": {
         "message": "État"
     },
-    "region_be": {
-        "message": "Province"
-    },
     "region_br": {
         "message": "État"
     },
     "region_by": {
         "message": "Région"
-    },
-    "region_ca": {
-        "message": "Province"
     },
     "region_cl": {
         "message": "Région"
@@ -68,14 +62,8 @@
     "region_fr": {
         "message": "Région"
     },
-    "region_id": {
-        "message": "Province"
-    },
     "region_it": {
         "message": "Région"
-    },
-    "region_kr": {
-        "message": "Province"
     },
     "region_kz": {
         "message": "Région"
@@ -89,35 +77,20 @@
     "region_my": {
         "message": "État"
     },
-    "region_nl": {
-        "message": "Province"
-    },
     "region_pe": {
         "message": "Région"
-    },
-    "region_ph": {
-        "message": "Province"
     },
     "region_pt": {
         "message": "Région"
     },
-    "region_th": {
-        "message": "Province"
-    },
     "region_tr": {
         "message": "Région"
-    },
-    "region_tw": {
-        "message": "Province"
     },
     "region_ua": {
         "message": "Région"
     },
     "region_us": {
         "message": "État"
-    },
-    "region_vn": {
-        "message": "Province"
     },
     "region_dk": {
         "message": "Région"
@@ -128,13 +101,7 @@
     "region_gr": {
         "message": "Région"
     },
-    "region_bg": {
-        "message": "Province"
-    },
     "region_sk": {
         "message": "Région"
-    },
-    "region_ie": {
-        "message": "Province"
     }
 }

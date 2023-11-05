@@ -143,9 +143,6 @@
     "region_tw": {
         "message": "Província"
     },
-    "region_ua": {
-        "message": "Oblast"
-    },
     "region_us": {
         "message": "Estado"
     },
@@ -162,7 +159,7 @@
         "message": "Região"
     },
     "region_lt": {
-        "message": "Condado"
+        "message": "Região"
     },
     "region_ch": {
         "message": "Cantão"

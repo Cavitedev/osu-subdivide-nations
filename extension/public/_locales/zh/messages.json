@@ -162,7 +162,7 @@
         "message": "地区"
     },
     "region_lt": {
-        "message": "州"
+        "message": "县"
     },
     "region_ch": {
         "message": "郡"
@@ -171,7 +171,7 @@
         "message": "地区"
     },
     "region_ee": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_bg": {
         "message": "省份"
