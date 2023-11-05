@@ -1,5 +1,5 @@
 import { IfetchResponse, fetchWithoutCache } from "./fetchUtils";
-import { nativeLanguageCode, IregionData, getActiveLanguage } from "./languageOsuWorld";
+import { nativeLanguageCode, IregionData, getActiveLanguage } from "./external/languageOsuWorld";
 
 import browser from "webextension-polyfill";
 

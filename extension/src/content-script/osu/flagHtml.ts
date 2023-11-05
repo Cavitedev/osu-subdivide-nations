@@ -1,12 +1,12 @@
 import { fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
-import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
+import { osuWorldUser, osuWorldUsers } from "../../utils/external/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
 import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 import { TFlagItems } from "@src/utils/html";
 import { noFlag, flagStyleWithMargin, flagStyle } from "@src/utils/html";
-import { IregionData } from "@src/utils/languageOsuWorld";
+import { IregionData } from "@src/utils/external/languageOsuWorld";
 
 export let flagClass: string | null = null;
 

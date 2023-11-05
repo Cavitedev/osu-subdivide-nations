@@ -8,7 +8,7 @@ import {
     availableLanguagesOsuWorld,
     Ilanguages,
     lastAvailableLanguages,
-} from "@src/utils/languageOsuWorld";
+} from "@src/utils/external/languageOsuWorld";
 import { getLocMsg, locMsgToHtml } from "@src/utils/languageChrome";
 import { getManifestTitle } from "@src/utils/manifestUtils";
 

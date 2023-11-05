@@ -29,6 +29,12 @@
     "highest_rank_profile": {
         "message": "Highest rank: #{{rankHighest.rank}} on {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Kudosu Ranking"
+    },
+    "last_rank_update": {
+        "message": "Last rank update on {{formattedDate}}"
+    },
     "settings": {
         "message": "Settings"
     },
