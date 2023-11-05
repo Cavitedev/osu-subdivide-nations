@@ -105,8 +105,18 @@ export const getActiveLanguageCode = () => {
     return selectedLanguage;
 };
 
+interface ILanguageCodeCorrections {
+    [key: string]: string;
+}
+
+const languageCodeCorrections: ILanguageCodeCorrections = {
+    en: "en-GB",
+};
+
 export const getActiveLanguageCodeForKey = (key: string) => {
-    return secondaryLoadedLanguage?.[key] ? selectedLanguage : undefined;
+    const languageCode = secondaryLoadedLanguage?.[key] ? selectedLanguage : undefined;
+    if (!languageCode) return undefined;
+    return languageCodeCorrections?.[languageCode] ?? languageCode;
 };
 
 export const unloadLanguage = () => {
