@@ -33,7 +33,7 @@ export default function Navbar() {
                     </svg>
                 </button>
 
-                <a href="https://osu.ppy.sh/community/forums/topics/1837728" class="contents items-center">
+                <a href="https://osu.ppy.sh/community/forums/topics/1837728" target="_blank" class="contents items-center">
                     <img src="../../../icons/128.png" class="h-8 mr-3" alt="osu! subdive nations logo" />
                     <span class="truncate self-center text-2xl font-semibold whitespace-nowrap dark:text-white underline">
                         {getManifestTitle()}
