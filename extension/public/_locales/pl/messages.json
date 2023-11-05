@@ -44,20 +44,11 @@
     "region_au": {
         "message": "Stan"
     },
-    "region_be": {
-        "message": "Prowincja"
-    },
     "region_br": {
         "message": "Stan"
     },
     "region_by": {
         "message": "Prowincja"
-    },
-    "region_ca": {
-        "message": "Prowincja"
-    },
-    "region_cl": {
-        "message": "Region"
     },
     "region_cn": {
         "message": "Region Administracyjny"
@@ -65,41 +56,17 @@
     "region_co": {
         "message": "Departament"
     },
-    "region_cz": {
-        "message": "Region"
-    },
     "region_de": {
         "message": "Stan"
     },
     "region_es": {
         "message": "Wspólnota Autonomiczna"
     },
-    "region_fi": {
-        "message": "Region"
-    },
-    "region_fr": {
-        "message": "Region"
-    },
     "region_hu": {
         "message": "Komitat"
     },
-    "region_id": {
-        "message": "Prowincja"
-    },
-    "region_it": {
-        "message": "Region"
-    },
     "region_jp": {
         "message": "Prefektura"
-    },
-    "region_kr": {
-        "message": "Prowincja"
-    },
-    "region_kz": {
-        "message": "Region"
-    },
-    "region_lv": {
-        "message": "Region"
     },
     "region_mx": {
         "message": "Stan"
@@ -107,40 +74,10 @@
     "region_my": {
         "message": "Stan"
     },
-    "region_nl": {
-        "message": "Prowincja"
-    },
-    "region_no": {
-        "message": "Komitat"
-    },
-    "region_pe": {
-        "message": "Region"
-    },
-    "region_ph": {
-        "message": "Prowincja"
-    },
     "region_pl": {
         "message": "Prowincja"
     },
-    "region_pt": {
-        "message": "Region"
-    },
-    "region_ro": {
-        "message": "Komitat"
-    },
-    "region_se": {
-        "message": "Komitat"
-    },
     "region_sg": {
-        "message": "Prowincja"
-    },
-    "region_th": {
-        "message": "Prowincja"
-    },
-    "region_tr": {
-        "message": "Region"
-    },
-    "region_tw": {
         "message": "Prowincja"
     },
     "region_ua": {
@@ -148,12 +85,6 @@
     },
     "region_us": {
         "message": "Stan"
-    },
-    "region_vn": {
-        "message": "Prowincja"
-    },
-    "region_dk": {
-        "message": "Region"
     },
     "region_il": {
         "message": "Prowincja"

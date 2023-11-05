@@ -6,7 +6,7 @@
         "message": "Creato da {{developer}}"
     },
     "system_default": {
-        "message": "Default del Sistema"
+        "message": "Default di Sistema"
     },
     "native_language": {
         "message": "Lingua Nativa"
@@ -21,10 +21,10 @@
         "message": "Lingua:"
     },
     "score_ranking": {
-        "message": "Ranking dello score"
+        "message": "Classifica dello Score"
     },
     "region_ranking": {
-        "message": "Ranking Regionale"
+        "message": "Classifica Regionale"
     },
     "highest_rank_profile": {
         "message": "Rank più alto: #{{rankHighest.rank}} il {{formattedDate}}"

@@ -77,29 +77,17 @@
     "region_fi": {
         "message": "Region"
     },
-    "region_fr": {
-        "message": "Region"
-    },
     "region_hu": {
         "message": "Land"
     },
     "region_id": {
         "message": "Provinz"
     },
-    "region_it": {
-        "message": "Region"
-    },
     "region_jp": {
         "message": "Präfektur"
     },
     "region_kr": {
         "message": "Provinz"
-    },
-    "region_kz": {
-        "message": "Region"
-    },
-    "region_lv": {
-        "message": "Region"
     },
     "region_mx": {
         "message": "Bundesstaat"
@@ -113,17 +101,11 @@
     "region_no": {
         "message": "Bundesland"
     },
-    "region_pe": {
-        "message": "Region"
-    },
     "region_ph": {
         "message": "Provinz"
     },
     "region_pl": {
         "message": "Woiwodschaft"
-    },
-    "region_pt": {
-        "message": "Region"
     },
     "region_ro": {
         "message": "Land"
@@ -137,9 +119,6 @@
     "region_th": {
         "message": "Provinz"
     },
-    "region_tr": {
-        "message": "Region"
-    },
     "region_tw": {
         "message": "Provinz"
     },
@@ -152,14 +131,8 @@
     "region_vn": {
         "message": "Provinz"
     },
-    "region_dk": {
-        "message": "Region"
-    },
     "region_il": {
         "message": "Land"
-    },
-    "region_nz": {
-        "message": "Region"
     },
     "region_lt": {
         "message": "Bundesland"
@@ -167,11 +140,8 @@
     "region_ch": {
         "message": "Kanton"
     },
-    "region_gr": {
-        "message": "Region"
-    },
     "region_ee": {
-        "message": "Land"
+        "message": "Bundesland"
     },
     "region_bg": {
         "message": "Provinz"
