@@ -29,6 +29,9 @@
     "highest_rank_profile": {
         "message": "Clasificación más alta: #{{rankHighest.rank}} el {{formattedDate}}"
     },
+    "last_rank_update": {
+        "message": "Idioma por defecto"
+    },
     "region": {
         "message": "Región"
     },
