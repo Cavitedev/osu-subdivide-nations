@@ -135,7 +135,7 @@
         "message": "Land"
     },
     "region_lt": {
-        "message": "Bundesland"
+        "message": "Land"
     },
     "region_ch": {
         "message": "Kanton"
@@ -145,9 +145,6 @@
     },
     "region_bg": {
         "message": "Provinz"
-    },
-    "region_sk": {
-        "message": "Region"
     },
     "region_gb": {
         "message": "Land"
