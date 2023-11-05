@@ -114,9 +114,8 @@ const languageCodeCorrections: ILanguageCodeCorrections = {
 };
 
 export const getActiveLanguageCodeForKey = (key: string) => {
-    const languageCode = secondaryLoadedLanguage?.[key] ? selectedLanguage : undefined;
-    if (!languageCode) return undefined;
-    return languageCodeCorrections?.[languageCode] ?? languageCode;
+    const languageCode = secondaryLoadedLanguage?.[key] ? selectedLanguage : "en";
+    return languageCodeCorrections?.[languageCode ?? "en"] ?? languageCode;
 };
 
 export const unloadLanguage = () => {
