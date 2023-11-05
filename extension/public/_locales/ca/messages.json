@@ -71,16 +71,7 @@
     "region_ch": {
         "message": "Cantó"
     },
-    "region_bg": {
-        "message": "Província"
-    },
-    "region_sk": {
-        "message": "Regió"
-    },
     "region_gb": {
         "message": "Comtat"
-    },
-    "region_ie": {
-        "message": "Província"
     }
 }
