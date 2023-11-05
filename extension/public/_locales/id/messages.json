@@ -62,7 +62,16 @@
     "region_sg": {
         "message": "Distrik"
     },
+    "region_bg": {
+        "message": "Provinsi"
+    },
+    "region_sk": {
+        "message": "Wilayah"
+    },
     "region_gb": {
         "message": "Daerah"
+    },
+    "region_ie": {
+        "message": "Provinsi"
     }
 }
