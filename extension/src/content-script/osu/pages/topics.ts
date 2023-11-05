@@ -38,7 +38,9 @@ const addFlagsPostsTopics = async (posts: Iterable<Element>, signal?: AbortSigna
     await addFlagUsers(flagItems, {
         addDiv: false,
         addMargin: false,
-        addSuperParentClone: true,
+        addSuperParentClone: false,
+        insertInsideOriginalElement: false,
+        topicFlag:true, 
         signal: signal,
     });
 };
