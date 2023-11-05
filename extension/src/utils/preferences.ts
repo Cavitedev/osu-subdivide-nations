@@ -19,7 +19,6 @@ export const waitPreferencesToLoad = async () => {
 };
 
 export const loadPreferences = async () => {
-    console.log("loadPreferences");
     preferencesPromise = browser.storage.sync.get() as Promise<Tpreferences>;
     const newPreferences = (await preferencesPromise) as Tpreferences;
     preferences = { ...preferences, ...newPreferences };
