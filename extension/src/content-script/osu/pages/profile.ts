@@ -144,7 +144,6 @@ async function addKudosuRanking(playerId: string, signal?: AbortSignal) {
     if (!kudosuRankInfo) return;
 
     await waitPreferencesToLoad();
-    console.log(preferences);
     if (!preferences.kudosuRanking) return;
     // Abort after fetch to ensure it's cached
     if (signal?.aborted) return;
