@@ -146,6 +146,9 @@
     "region_bg": {
         "message": "Provinz"
     },
+    "region_sk": {
+        "message": "Region"
+    },
     "region_gb": {
         "message": "Land"
     },
