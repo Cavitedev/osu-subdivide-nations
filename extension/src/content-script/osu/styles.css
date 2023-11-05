@@ -1,0 +1,3 @@
+.profile-detail__stats--force-row {
+    grid-template-columns: auto !important;
+}

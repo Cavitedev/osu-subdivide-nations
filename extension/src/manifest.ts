@@ -5,6 +5,7 @@ const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
         {
             matches: ["https://osu.ppy.sh/*"],
             js: ["src/content-script/osu/content.ts"],
+            css: ["src/content-script/osu/styles.css"],
         },
         {
             matches: ["https://wybin.xyz/*"],
