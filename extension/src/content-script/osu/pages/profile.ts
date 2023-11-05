@@ -45,12 +45,19 @@ export const enhanceProfile = async (signal?: AbortSignal) => {
         return;
     }
     const currentMod = getCurrentMod();
+    const rankingsPromise = [];
     if (currentMod) {
-        addRegionalRank(playerId, currentMod, signal);
-        addScoreRank(playerId, currentMod, signal);
-        addKudosuRanking(playerId, signal);
+        rankingsPromise.push(addRegionalRank(playerId, currentMod, signal));
+        rankingsPromise.push(addScoreRank(playerId, currentMod, signal));
+        rankingsPromise.push(addKudosuRanking(playerId, signal));
     }
     addRegionalFlagProfile(flagElement as HTMLElement, playerId);
+
+    const results = await Promise.all(rankingsPromise);
+    if (results.filter(Boolean).length >= 3) {
+        // There's no space so force 2 rows to avoid visual glitches
+        forceStatsInAnotherRow();
+    }
 };
 
 const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string, signal?: AbortSignal) => {
@@ -91,16 +98,16 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
 
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
-    if (previousScoreSet) return;
+    if (previousScoreSet) return true;
 
     const osuWorldInfo = await osuWorldUser(playerId, mode);
     const playerData = osuWorldInfo.data;
-    if (!playerData || (playerData as IFetchError).error || signal?.aborted) return;
+    if (!playerData || (playerData as IFetchError).error || signal?.aborted) return false;
 
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
-    if (!rankValue) return;
+    if (!rankValue) return false;
 
-    addRank(ranksElement, rankValue, "region_ranking", tagRank);
+    return addRank(ranksElement, rankValue, "region_ranking", tagRank);
 }
 
 async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal) {
@@ -108,26 +115,26 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
-    if (previousScoreSet) return;
+    if (previousScoreSet) return false;
 
     const scoreRankInfo = await osuScoreRanking(playerId, mode);
     await waitPreferencesToLoad();
-    if (!preferences.scoreRanking) return;
+    if (!preferences.scoreRanking) return true;
 
     // Abort after fetch to ensure it's cached
-    if (!scoreRankInfo || signal?.aborted) return;
+    if (!scoreRankInfo || signal?.aborted) return false;
     const scoreRank = scoreRankInfo[0].rank;
 
     const rankHighest = scoreRankInfo[0]["rank_highest"];
     const highestRank = rankHighest.rank;
 
     if (!highestRank && scoreRank === 0) {
-        return;
+        return false;
     }
 
     const date = new Date(rankHighest["updated_at"]);
 
-    await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
+    return await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
 }
 
 async function addKudosuRanking(playerId: string, signal?: AbortSignal) {
@@ -135,22 +142,22 @@ async function addKudosuRanking(playerId: string, signal?: AbortSignal) {
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
     const previousKudosuSet = ranksElement.querySelector("." + tagRank);
-    if (previousKudosuSet) return;
+    if (previousKudosuSet) return true;
 
     const kudosuRankInfo = await osuKudosuRanking(playerId);
 
-    if (!kudosuRankInfo) return;
+    if (!kudosuRankInfo) return false;
     const kudosuRank = kudosuRankInfo?.rank;
-    if (!kudosuRankInfo) return;
+    if (!kudosuRankInfo) return false;
 
     await waitPreferencesToLoad();
-    if (!preferences.kudosuRanking) return;
+    if (!preferences.kudosuRanking) return false;
     // Abort after fetch to ensure it's cached
-    if (signal?.aborted) return;
+    if (signal?.aborted) return false;
 
     const date = new Date(kudosuRankInfo.updatedAt);
 
-    await addRank(ranksElement, kudosuRank, "kudosu_ranking", tagRank, undefined, date);
+    return await addRank(ranksElement, kudosuRank, "kudosu_ranking", tagRank, undefined, date);
 }
 
 const addRank = async (
@@ -186,7 +193,7 @@ const addRank = async (
     scoreRankValue.append(rank);
 
     const previousRank = ranksElement.querySelector("." + classTag);
-    if (previousRank) return;
+    if (previousRank) return true;
 
     const positioningIndex = tagsOrder.indexOf(classTag);
     const nextTag = tagsOrder[positioningIndex + 1];
@@ -199,6 +206,7 @@ const addRank = async (
     } else {
         ranksElement.append(scoreRankElement);
     }
+    return true;
 };
 
 const getCurrentMod = () => {
@@ -236,4 +244,9 @@ const lastUpdateTip = (date: Date) => {
     const replacedText = rawText.replace("{{formattedDate}}", formattedDate);
 
     return `<div>${replacedText}</div>`;
+};
+
+const forceStatsInAnotherRow = () => {
+    const element = document.querySelector(".osu-page .profile-detail__stats") as HTMLElement;
+    element.classList.add("profile-detail__stats--force-row");
 };
