@@ -1,7 +1,7 @@
 import { flagClass, addRegionalFlag, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { TFlagItems } from "@src/utils/html";
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
-import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/osuWorld";
+import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/external/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languageChrome";

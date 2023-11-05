@@ -1,7 +1,7 @@
 import { fetchErrorToText, fetchOptions } from "@src/utils/fetchUtils";
 import { countryRegionsLocalData } from "@src/utils/flagsJsonUtils";
 import { TFlagItems, flagStyleWithMargin, noFlag } from "@src/utils/html";
-import { osuWorldUser, osuWorldUsers } from "@src/utils/osuWorld";
+import { osuWorldUser, osuWorldUsers } from "@src/utils/external/osuWorld";
 
 export type TWybinHtmlUserOptions = {
     inlineInsteadOfFlex?: boolean;

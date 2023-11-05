@@ -1,4 +1,4 @@
-import { loadMultipleUrlsFromCache, saveInCache } from "./cache";
+import { loadMultipleUrlsFromCache, saveInCache } from "../cache";
 import {
     IfetchResponse,
     noId,
@@ -9,7 +9,7 @@ import {
     genExpireDate,
     expireHeader,
     unknownUserError,
-} from "./fetchUtils";
+} from "../fetchUtils";
 
 export type TosuWorldIdSuccess = {
     id: number;

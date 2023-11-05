@@ -3,12 +3,14 @@ export type Tpreferences = {
     lang: string;
     darkMode: boolean;
     scoreRanking: boolean;
+    kudosuRanking: boolean;
 };
 
 export let preferences: Tpreferences = {
     lang: "en",
     darkMode: true,
     scoreRanking: true,
+    kudosuRanking: true,
 };
 let preferencesPromise: Promise<Tpreferences>;
 
@@ -17,8 +19,10 @@ export const waitPreferencesToLoad = async () => {
 };
 
 export const loadPreferences = async () => {
+    console.log("loadPreferences");
     preferencesPromise = browser.storage.sync.get() as Promise<Tpreferences>;
-    preferences = (await preferencesPromise) as Tpreferences;
+    const newPreferences = (await preferencesPromise) as Tpreferences;
+    preferences = { ...preferences, ...newPreferences };
     return preferences;
 };
 

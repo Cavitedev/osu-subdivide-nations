@@ -1,4 +1,4 @@
-import { Ilanguages } from "@src/utils/languageOsuWorld";
+import { Ilanguages } from "@src/utils/external/languageOsuWorld";
 import jsonNameToCode from "./nameToLanguage.json";
 import { loadLanguage } from "@src/utils/languageChrome";
 import { updateRegionsDropdown } from "./pages/ranking";

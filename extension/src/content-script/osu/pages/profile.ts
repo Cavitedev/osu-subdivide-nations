@@ -4,7 +4,7 @@ import { addFlagUser } from "@src/content-script/osu/flagHtml";
 import { isNumber } from "@src/utils/utils";
 import { idFromOsuProfileUrl } from "@src/utils/utils";
 import { IFetchError } from "@src/utils/fetchUtils";
-import { osuScoreRanking } from "@src/utils/respektive";
+import { osuScoreRanking } from "@src/utils/external/respektive";
 import {
     getActiveLanguageCode,
     getActiveLanguageCodeForKey,
@@ -13,8 +13,9 @@ import {
 } from "@src/utils/languageChrome";
 import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
-import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/osuWorld";
+import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/external/osuWorld";
 import { preferences, waitPreferencesToLoad } from "@src/utils/preferences";
+import { osuKudosuRanking } from "@src/utils/external/kudosuRanking";
 
 // Executed when opening a tab or going back and forth so this runs too early
 export const profileMutationObserverInit = new MutationObserver((_) => {
@@ -45,8 +46,9 @@ export const enhanceProfile = async (signal?: AbortSignal) => {
     }
     const currentMod = getCurrentMod();
     if (currentMod) {
-        addScoreRank(playerId, currentMod, signal);
         addRegionalRank(playerId, currentMod, signal);
+        addScoreRank(playerId, currentMod, signal);
+        addKudosuRanking(playerId, signal);
     }
     addRegionalFlagProfile(flagElement as HTMLElement, playerId);
 };
@@ -78,9 +80,10 @@ const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string
 const tagRanks = {
     scoreRank: "respektiveScore",
     regionalRank: "cavitedevRegionalRank",
+    kudosuRank: "hiviexdKudosuRank",
 };
 
-const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
+const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank, tagRanks.kudosuRank];
 
 async function addRegionalRank(playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.regionalRank;
@@ -127,6 +130,30 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
 }
 
+async function addKudosuRanking(playerId: string, signal?: AbortSignal) {
+    const tagRank = tagRanks.kudosuRank;
+
+    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+    const previousKudosuSet = ranksElement.querySelector("." + tagRank);
+    if (previousKudosuSet) return;
+
+    const kudosuRankInfo = await osuKudosuRanking(playerId);
+
+    if (!kudosuRankInfo) return;
+    const kudosuRank = kudosuRankInfo?.rank;
+    if (!kudosuRankInfo) return;
+
+    await waitPreferencesToLoad();
+    console.log(preferences);
+    if (!preferences.kudosuRanking) return;
+    // Abort after fetch to ensure it's cached
+    if (signal?.aborted) return;
+
+    const date = new Date(kudosuRankInfo.updatedAt);
+
+    await addRank(ranksElement, kudosuRank, "kudosu_ranking", tagRank, undefined, date);
+}
+
 const addRank = async (
     ranksElement: HTMLElement,
     rankValue: number,
@@ -150,8 +177,8 @@ const addRank = async (
     scoreRankElement.append(scoreRankValue);
     const rank = document.createElement("div");
 
-    if (highestRank && date) {
-        const tooltip = highestRankTip(highestRank, date);
+    if (date) {
+        const tooltip = highestRank ? highestRankTip(highestRank, date) : lastUpdateTip(date);
         rank.setAttribute("data-html-title", tooltip);
     }
     rank.setAttribute("title", "");
@@ -195,6 +222,19 @@ const highestRankTip = (highestRank: number, date: Date) => {
     const replacedText = rawText
         .replace("{{rankHighest.rank}}", highestRank.toLocaleString(getActiveLanguageCode()))
         .replace("{{formattedDate}}", formattedDate);
+
+    return `<div>${replacedText}</div>`;
+};
+
+const lastUpdateTip = (date: Date) => {
+    // Get the formatted date string
+    const keyTooltip = "last_rank_update";
+    const countryCode = getActiveLanguageCodeForKey(keyTooltip);
+
+    const formattedDate = date.toLocaleDateString(countryCode, { year: "numeric", month: "long", day: "numeric" });
+
+    const rawText = getLocMsg(keyTooltip);
+    const replacedText = rawText.replace("{{formattedDate}}", formattedDate);
 
     return `<div>${replacedText}</div>`;
 };

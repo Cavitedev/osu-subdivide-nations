@@ -8,6 +8,14 @@
         "darkMode": {
             "type": "boolean",
             "default": true
+        },
+        "scoreRanking": {
+            "type": "boolean",
+            "default": true
+        },
+        "kudosuRanking": {
+            "type": "boolean",
+            "default": true
         }
     }
 }
