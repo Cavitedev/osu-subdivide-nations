@@ -13,8 +13,8 @@ export default function OsuSettings() {
 
     return (
         <SettingsLayout websiteName="osu!" link="https://osu.ppy.sh/home">
-            <PreferenceCard title={getLocMsg("score_ranking")} content={scoreRankingDescription} />
-            <PreferenceCard title={getLocMsg("kudosu_ranking")} content={kudosuRankingDescription} />
+            <PreferenceCard preference="scoreRanking" title={getLocMsg("score_ranking")} content={scoreRankingDescription} />
+            <PreferenceCard preference="kudosuRanking" title={getLocMsg("kudosu_ranking")} content={kudosuRankingDescription} />
         </SettingsLayout>
     );
 }

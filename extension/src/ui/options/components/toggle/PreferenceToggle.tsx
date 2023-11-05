@@ -7,6 +7,7 @@ export default function PreferenceToggle(props: { preference: keyof Tpreferences
 
     return (
         <Toggle
+            value={props.preference}
             checked={!!preferencesContext.preferences[props.preference]}
             onChange={(e) => {
                 preferencesContext.setPreference(props.preference, e.currentTarget.checked);
