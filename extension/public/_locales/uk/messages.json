@@ -73,17 +73,5 @@
     },
     "region_gb": {
         "message": "Округ"
-    },
-    "region_bg": {
-        "message": "Провінція"
-    },
-    "region_sk": {
-        "message": "Регіон"
-    },
-    "region_gb": {
-        "message": "Округ"
-    },
-    "region_ie": {
-        "message": "Провінція"
     }
 }
