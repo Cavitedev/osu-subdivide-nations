@@ -7,7 +7,7 @@ export type Tpreferences = {
 };
 
 export let preferences: Tpreferences = {
-    lang: "en",
+    lang: "DEF",
     darkMode: true,
     scoreRanking: true,
     kudosuRanking: true,
