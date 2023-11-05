@@ -1,7 +1,9 @@
 import { JSX } from "solid-js/jsx-runtime";
 import PreferenceToggle from "../components/toggle/PreferenceToggle";
+import { Tpreferences } from "@src/utils/preferences";
 
 export function PreferenceCard(props: {
+    preference: keyof Tpreferences;
     title: number | boolean | Node | JSX.ArrayElement | (string & {}) | null | undefined;
     content: number | boolean | Node | JSX.ArrayElement | (string & {}) | null | undefined;
 }) {
@@ -13,7 +15,7 @@ export function PreferenceCard(props: {
                     <p class="font-normal text-gray-700 dark:text-gray-400">{props.content}</p>
                 </div>
                 <div class="self-end">
-                    <PreferenceToggle preference="scoreRanking" />
+                    <PreferenceToggle preference={props.preference} />
                 </div>
             </div>
         </div>
