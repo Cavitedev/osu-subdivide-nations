@@ -29,12 +29,6 @@
     "highest_rank_profile": {
         "message": "Classificação mais alta: #{{rankHighest.rank}} em {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Cantão"
-    },
-    "last_rank_update": {
-        "message": "Idioma padrão"
-    },
     "region": {
         "message": "Região"
     },
@@ -117,7 +111,7 @@
         "message": "Província"
     },
     "region_no": {
-        "message": "Região"
+        "message": "Condado"
     },
     "region_pe": {
         "message": "Região"
@@ -135,7 +129,7 @@
         "message": "Região"
     },
     "region_se": {
-        "message": "Região"
+        "message": "Condado"
     },
     "region_sg": {
         "message": "Distrito"
@@ -174,7 +168,7 @@
         "message": "Região"
     },
     "region_ee": {
-        "message": "Região"
+        "message": "Condado"
     },
     "region_bg": {
         "message": "Província"
@@ -183,7 +177,7 @@
         "message": "Região"
     },
     "region_gb": {
-        "message": "Região"
+        "message": "Condado"
     },
     "region_ie": {
         "message": "Província"
