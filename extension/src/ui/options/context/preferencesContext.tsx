@@ -11,7 +11,6 @@ const preferencesContext = createContext({
 
 export function PreferencesContextProvider(props: any) {
     const [preferencesSolid, setPreferencesSolid] = createStore(preferences);
-    setPreferencesSolid("scoreRanking", false);
 
     const innerSetPreference = (key: keyof Tpreferences, value: any) => {
         const lastPref = preferencesSolid[key];

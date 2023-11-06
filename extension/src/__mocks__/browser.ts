@@ -7,6 +7,10 @@ const mockBrowser = {
             get: jest.fn(),
             set: jest.fn(),
         },
+        sync: {
+            get: jest.fn(),
+            set: jest.fn(),
+        },
     },
     i18n: {
         getMessage: jest.fn(),
