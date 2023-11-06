@@ -29,6 +29,36 @@
     "highest_rank_profile": {
         "message": "Rank più alto: #{{rankHighest.rank}} il {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Classifica Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Ultimo aggiornamento classifica il {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Impostazioni"
+    },
+    "website_settings": {
+        "message": "Impostazioni {{Website}}"
+    },
+    "about": {
+        "message": "Riguardo"
+    },
+    "open_sidebar": {
+        "message": "Apri Barra laterale"
+    },
+    "score_ranking_desc": {
+        "message": "Mostra classifica dello score da {{respektive_api}} sui profili osu!"
+    },
+    "respektive_api": {
+        "message": "API di Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Mostra classifica Kudosu da {{hiviexd_api}} sui profili osu!"
+    },
+    "hiviexd_api": {
+        "message": "API di Hiviexd"
+    },
     "region": {
         "message": "Regione"
     },
