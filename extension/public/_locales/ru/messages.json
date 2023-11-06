@@ -1,0 +1,188 @@
+{
+    "appDesc": {
+        "message": "Дополните сайт osu! региональными гербами / флагами административных делений.\n И вместе с этим получите рейтинг игроков по очкам!"
+    },
+    "created_by": {
+        "message": "создатель: {{developer}}"
+    },
+    "system_default": {
+        "message": "Как в системе"
+    },
+    "native_language": {
+        "message": "Как в стране"
+    },
+    "clean_cache": {
+        "message": "Очистить кэш"
+    },
+    "cache_cleaned": {
+        "message": "Кэш очищен"
+    },
+    "region_language": {
+        "message": "Язык регионов:"
+    },
+    "score_ranking": {
+        "message": "Рейтинг по очкам"
+    },
+    "region_ranking": {
+        "message": "Рейтинг в регионе"
+    },
+    "highest_rank_profile": {
+        "message": "Наивысший: #{{rankHighest.rank}} от {{formattedDate}}"
+    },
+    "region": {
+        "message": "Регион"
+    },
+    "region_ru": {
+        "message": "Республика / Область"
+    },
+    "region_ar": {
+        "message": "Провинция"
+    },
+    "region_at": {
+        "message": "Земля"
+    },
+    "region_au": {
+        "message": "Штат"
+    },
+    "region_be": {
+        "message": "Провинция"
+    },
+    "region_br": {
+        "message": "Штат"
+    },
+    "region_by": {
+        "message": "Область"
+    },
+    "region_ca": {
+        "message": "Провинция"
+    },
+    "region_cl": {
+        "message": "Область"
+    },
+    "region_cn": {
+        "message": "Административный регион"
+    },
+    "region_co": {
+        "message": "Департамент"
+    },
+    "region_cz": {
+        "message": "Край"
+    },
+    "region_de": {
+        "message": "Земля"
+    },
+    "region_es": {
+        "message": "Автономное сообщество"
+    },
+    "region_fi": {
+        "message": "Область"
+    },
+    "region_fr": {
+        "message": "Регион"
+    },
+    "region_hu": {
+        "message": "Медье"
+    },
+    "region_id": {
+        "message": "Провинция"
+    },
+    "region_it": {
+        "message": "Область"
+    },
+    "region_jp": {
+        "message": "Префектура"
+    },
+    "region_kr": {
+        "message": "Провинция / Город"
+    },
+    "region_kz": {
+        "message": "Область"
+    },
+    "region_lv": {
+        "message": "Область"
+    },
+    "region_mx": {
+        "message": "Штат"
+    },
+    "region_my": {
+        "message": "Штат"
+    },
+    "region_nl": {
+        "message": "Провинция"
+    },
+    "region_no": {
+        "message": "Фюльке"
+    },
+    "region_pe": {
+        "message": "Регион"
+    },
+    "region_ph": {
+        "message": "Провинция"
+    },
+    "region_pl": {
+        "message": "Воеводство"
+    },
+    "region_pt": {
+        "message": "Регион"
+    },
+    "region_ro": {
+        "message": "Жудец"
+    },
+    "region_se": {
+        "message": "Лен"
+    },
+    "region_sg": {
+        "message": "Округ"
+    },
+    "region_th": {
+        "message": "Провинция"
+    },
+    "region_tr": {
+        "message": "Регион"
+    },
+    "region_tw": {
+        "message": "Уезд / Город"
+    },
+    "region_ua": {
+        "message": "Область"
+    },
+    "region_us": {
+        "message": "Штат"
+    },
+    "region_vn": {
+        "message": "Провинция"
+    },
+    "region_dk": {
+        "message": "Регион"
+    },
+    "region_il": {
+        "message": "Округ"
+    },
+    "region_nz": {
+        "message": "Регион"
+    },
+    "region_lt": {
+        "message": "Уезд"
+    },
+    "region_ch": {
+        "message": "Кантон"
+    },
+    "region_gr": {
+        "message": "Периферия"
+    },
+    "region_ee": {
+        "message": "Уезд"
+    },
+    "region_bg": {
+        "message": "Область"
+    },
+    "region_sk": {
+        "message": "Край"
+    },
+    "region_gb": {
+        "message": "Графство"
+    },
+    "region_ie": {
+        "message": "Провинция"
+    }
+}

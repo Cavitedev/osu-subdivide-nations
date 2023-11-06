@@ -1,0 +1,185 @@
+{
+    "appDesc": {
+        "message": "Adiciona bandeiras regionais ao website do osu!\n Atualiza também as posições globais nos perfis."
+    },
+    "created_by": {
+        "message": "criado por {{developer}}"
+    },
+    "system_default": {
+        "message": "Idioma padrão"
+    },
+    "native_language": {
+        "message": "Língua materna"
+    },
+    "clean_cache": {
+        "message": "Limpar o cache"
+    },
+    "cache_cleaned": {
+        "message": "Limpeza com sucesso"
+    },
+    "region_language": {
+        "message": "Idioma da região:"
+    },
+    "score_ranking": {
+        "message": "Classificação de pontuação"
+    },
+    "region_ranking": {
+        "message": "Classificação de região"
+    },
+    "highest_rank_profile": {
+        "message": "Classificação mais alta: #{{rankHighest.rank}} em {{formattedDate}}"
+    },
+    "region": {
+        "message": "Região"
+    },
+    "region_ru": {
+        "message": "República / Oblast"
+    },
+    "region_ar": {
+        "message": "Província"
+    },
+    "region_at": {
+        "message": "Estado"
+    },
+    "region_au": {
+        "message": "Estado"
+    },
+    "region_be": {
+        "message": "Província"
+    },
+    "region_br": {
+        "message": "Estado"
+    },
+    "region_by": {
+        "message": "Oblast"
+    },
+    "region_ca": {
+        "message": "Província"
+    },
+    "region_cl": {
+        "message": "Região"
+    },
+    "region_cn": {
+        "message": "Região Administrativa"
+    },
+    "region_co": {
+        "message": "Departamento"
+    },
+    "region_cz": {
+        "message": "Região"
+    },
+    "region_de": {
+        "message": "Estado"
+    },
+    "region_es": {
+        "message": "Comunidade autónoma"
+    },
+    "region_fi": {
+        "message": "Região"
+    },
+    "region_fr": {
+        "message": "Região"
+    },
+    "region_hu": {
+        "message": "Condado"
+    },
+    "region_id": {
+        "message": "Província"
+    },
+    "region_it": {
+        "message": "Região"
+    },
+    "region_jp": {
+        "message": "Região"
+    },
+    "region_kr": {
+        "message": "Província"
+    },
+    "region_kz": {
+        "message": "Região"
+    },
+    "region_lv": {
+        "message": "Região"
+    },
+    "region_mx": {
+        "message": "Estado"
+    },
+    "region_my": {
+        "message": "Estado"
+    },
+    "region_nl": {
+        "message": "Província"
+    },
+    "region_no": {
+        "message": "Condado"
+    },
+    "region_pe": {
+        "message": "Região"
+    },
+    "region_ph": {
+        "message": "Província"
+    },
+    "region_pl": {
+        "message": "Voivodato"
+    },
+    "region_pt": {
+        "message": "Região"
+    },
+    "region_ro": {
+        "message": "Região"
+    },
+    "region_se": {
+        "message": "Condado"
+    },
+    "region_sg": {
+        "message": "Distrito"
+    },
+    "region_th": {
+        "message": "Província"
+    },
+    "region_tr": {
+        "message": "Região"
+    },
+    "region_tw": {
+        "message": "Província"
+    },
+    "region_us": {
+        "message": "Estado"
+    },
+    "region_vn": {
+        "message": "Província"
+    },
+    "region_dk": {
+        "message": "Região"
+    },
+    "region_il": {
+        "message": "Distrito"
+    },
+    "region_nz": {
+        "message": "Região"
+    },
+    "region_lt": {
+        "message": "Região"
+    },
+    "region_ch": {
+        "message": "Cantão"
+    },
+    "region_gr": {
+        "message": "Região"
+    },
+    "region_ee": {
+        "message": "Condado"
+    },
+    "region_bg": {
+        "message": "Província"
+    },
+    "region_sk": {
+        "message": "Região"
+    },
+    "region_gb": {
+        "message": "Condado"
+    },
+    "region_ie": {
+        "message": "Província"
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "appDesc": {
+        "message": "Dodaje regionalne flagi do oficjalnej strony osu!.\n Pokazuje również na profilu osu! ogólny ranking według łącznego wyniku."
+    },
+    "created_by": {
+        "message": "Stworzone przez {{developer}}"
+    },
+    "system_default": {
+        "message": "Domyślne ustawienie systemowe"
+    },
+    "native_language": {
+        "message": "Język natywny"
+    },
+    "clean_cache": {
+        "message": "Wyczyść Cache"
+    },
+    "cache_cleaned": {
+        "message": "Cache zostało wyczyszczone"
+    },
+    "region_language": {
+        "message": "Język regionalny:"
+    },
+    "score_ranking": {
+        "message": "Ranking punktowy"
+    },
+    "region_ranking": {
+        "message": "Dystrykt"
+    },
+    "highest_rank_profile": {
+        "message": "Najwyższa pozycja: #{{rankHighest.rank}} z {{formattedDate}}"
+    },
+    "region": {
+        "message": "Region"
+    },
+    "region_ru": {
+        "message": "Republika / Obwód"
+    },
+    "region_ar": {
+        "message": "Prowincja"
+    },
+    "region_at": {
+        "message": "Stan"
+    },
+    "region_au": {
+        "message": "Stan"
+    },
+    "region_br": {
+        "message": "Stan"
+    },
+    "region_by": {
+        "message": "Prowincja"
+    },
+    "region_cn": {
+        "message": "Region Administracyjny"
+    },
+    "region_co": {
+        "message": "Departament"
+    },
+    "region_de": {
+        "message": "Stan"
+    },
+    "region_es": {
+        "message": "Wspólnota Autonomiczna"
+    },
+    "region_hu": {
+        "message": "Komitat"
+    },
+    "region_jp": {
+        "message": "Prefektura"
+    },
+    "region_mx": {
+        "message": "Stan"
+    },
+    "region_my": {
+        "message": "Stan"
+    },
+    "region_pl": {
+        "message": "Prowincja"
+    },
+    "region_sg": {
+        "message": "Prowincja"
+    },
+    "region_ua": {
+        "message": "Prowincja"
+    },
+    "region_us": {
+        "message": "Stan"
+    },
+    "region_il": {
+        "message": "Prowincja"
+    }
+}

@@ -41,9 +41,7 @@
     "website_settings": {
         "message": "{{Website}} settings"
     },
-    "options": {
-        "message": "Options"
-    },
+
     "about": {
         "message": "About"
     },
