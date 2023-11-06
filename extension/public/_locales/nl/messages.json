@@ -29,9 +29,6 @@
     "highest_rank_profile": {
         "message": "Hoogste rank: #{{rankHighest.rank}} op {{formattedDate}}"
     },
-    "last_rank_update": {
-        "message": "Moedertaal"
-    },
     "region": {
         "message": "Regio"
     },
@@ -177,7 +174,7 @@
         "message": "Regio"
     },
     "region_gb": {
-        "message": "Land"
+        "message": "Regio"
     },
     "region_ie": {
         "message": "Provincie"
