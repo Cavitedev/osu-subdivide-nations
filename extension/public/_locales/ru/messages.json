@@ -29,9 +29,6 @@
     "highest_rank_profile": {
         "message": "Наивысший: #{{rankHighest.rank}} от {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Фюльке"
-    },
     "region": {
         "message": "Регион"
     },
