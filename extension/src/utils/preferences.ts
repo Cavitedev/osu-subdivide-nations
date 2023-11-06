@@ -10,7 +10,7 @@ export let preferences: Tpreferences = {
     lang: "DEF",
     darkMode: true,
     scoreRanking: true,
-    kudosuRanking: true,
+    kudosuRanking: false,
 };
 let preferencesPromise: Promise<Tpreferences>;
 
