@@ -61,17 +61,5 @@
     },
     "region_gb": {
         "message": "Județ"
-    },
-    "region_bg": {
-        "message": "Provincie"
-    },
-    "region_sk": {
-        "message": "Regiune"
-    },
-    "region_gb": {
-        "message": "Județ"
-    },
-    "region_ie": {
-        "message": "Provincie"
     }
 }
