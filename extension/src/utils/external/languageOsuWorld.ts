@@ -1,5 +1,5 @@
-import { loadFromCache } from "./cache";
-import { IfetchResponse, fetchWithCache } from "./fetchUtils";
+import { loadFromCache } from "../cache";
+import { IfetchResponse, fetchWithCache } from "../fetchUtils";
 import browser from "webextension-polyfill";
 
 export interface Ilanguages {

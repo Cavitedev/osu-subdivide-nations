@@ -29,7 +29,36 @@
     "highest_rank_profile": {
         "message": "Highest rank: #{{rankHighest.rank}} on {{formattedDate}}"
     },
-
+    "kudosu_ranking": {
+        "message": "Kudosu Ranking"
+    },
+    "last_rank_update": {
+        "message": "Last rank update on {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Settings"
+    },
+    "website_settings": {
+        "message": "{{Website}} settings"
+    },
+    "about": {
+        "message": "About"
+    },
+    "open_sidebar": {
+        "message": "Open Sidebar"
+    },
+    "score_ranking_desc": {
+        "message": "Displays score ranking from {{respektive_api}} on osu! profiles."
+    },
+    "respektive_api": {
+        "message": "Respektive's API"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Displays Kudosu ranking from {{hiviexd_api}} on osu! profiles."
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd's API"
+    },
     "region": {
         "message": "Region"
     },
@@ -159,31 +188,31 @@
     "region_il": {
         "message": "District"
     },
-    "region_nz":{
+    "region_nz": {
         "message": "Region"
     },
-    "region_lt":{
+    "region_lt": {
         "message": "County"
     },
-    "region_ch":{
+    "region_ch": {
         "message": "Canton"
     },
-    "region_gr":{
+    "region_gr": {
         "message": "Region"
     },
-    "region_ee":{
+    "region_ee": {
         "message": "County"
     },
-    "region_bg":{
+    "region_bg": {
         "message": "Province"
     },
-    "region_sk":{
+    "region_sk": {
         "message": "Region"
     },
-    "region_uk":{
+    "region_gb": {
         "message": "County"
     },
-    "region_ie":{
+    "region_ie": {
         "message": "Province"
     }
 }

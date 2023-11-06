@@ -1,12 +1,12 @@
 import { fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
-import { osuWorldUser, osuWorldUsers } from "../../utils/osuWorld";
+import { osuWorldUser, osuWorldUsers } from "../../utils/external/osuWorld";
 import { addOrReplaceQueryParam } from "../../utils/utils";
 import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 import { TFlagItems } from "@src/utils/html";
 import { noFlag, flagStyleWithMargin, flagStyle } from "@src/utils/html";
-import { IregionData } from "@src/utils/language";
+import { IregionData } from "@src/utils/external/languageOsuWorld";
 
 export let flagClass: string | null = null;
 
@@ -28,6 +28,7 @@ type osuHtmlUserOptions = {
     addSuperParentClone?: boolean;
     insertInsideOriginalElement?: boolean;
     wikiPage?: boolean;
+    topicFlag?: boolean;
     signal?: AbortSignal;
 };
 
@@ -125,6 +126,7 @@ export const addRegionalFlag = async (
         addMargin,
         addSuperParentClone,
         insertInsideOriginalElement: insertInsideThePreviousFlag,
+        topicFlag,
         wikiPage,
     } = options ?? {};
 
@@ -136,7 +138,7 @@ export const addRegionalFlag = async (
     if (!regionData) return;
 
     if (wikiPage) {
-        return addWikiPageFlag(item, countryCode, regionCode, regionData, options);
+        return addWikiPageFlag(item, regionData);
     }
 
     let flagElements = item.querySelectorAll(`.${flagClass}`);
@@ -152,6 +154,11 @@ export const addRegionalFlag = async (
     }
 
     flagElementClone.setAttribute("style", (addMargin ? flagStyleWithMargin : flagStyle).replace("$flag", flag));
+
+    if (topicFlag) {
+        flagParentClone.classList.add("cavitedev-topic-flag");
+        flagParent.parentElement!.classList.add("cavitedev-topic-flag-parent");
+    }
 
     const regionName = await getRegionName(countryCode, regionCode, regionData);
     if (regionData["name"]) {
@@ -223,13 +230,7 @@ export const addRegionalFlag = async (
     return { countryCode, countryName, regionName };
 };
 
-const addWikiPageFlag = async (
-    item: HTMLElement,
-    countryCode: string,
-    regionCode: string,
-    regionData: IregionData,
-    options: osuHtmlUserOptions = {},
-) => {
+const addWikiPageFlag = async (item: HTMLElement, regionData: IregionData) => {
     const prevElement = item.previousElementSibling;
     if (prevElement && prevElement.classList.contains("cavitedev-flag")) return;
 

@@ -1,0 +1,8 @@
+.sidebarAndContent {
+    display: flex;
+    height: 100%;
+    margin: 8px;
+    padding: 8px;
+    transition: all 0.4s ease;
+}
+

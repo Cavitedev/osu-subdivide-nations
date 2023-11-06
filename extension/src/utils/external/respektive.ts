@@ -1,5 +1,5 @@
-import { IfetchResponse, fetchErrorToText, fetchWithCache, noId, noMode } from "./fetchUtils";
-import { isNumber, isValidDate } from "./utils";
+import { IfetchResponse, fetchErrorToText, fetchWithCache, noId, noMode } from "../fetchUtils";
+import { isNumber, isValidDate } from "../utils";
 
 type TRespektiveScore = [
     {

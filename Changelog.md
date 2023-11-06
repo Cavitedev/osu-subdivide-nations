@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.5.0
+
+- Add options page
+- Add Kudosu ranking (disabled by default)
+- Topic flags are now together if there's enough space
+- Latest translations
+
 ## Version 3.4.7
 
 - Fix osu! language not being detected properly

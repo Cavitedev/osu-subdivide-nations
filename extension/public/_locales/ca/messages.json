@@ -6,7 +6,7 @@
         "message": "creat per {{developer}}"
     },
     "system_default": {
-        "message": "Llengua per defecte"
+        "message": "Idioma per defecte"
     },
     "native_language": {
         "message": "Idioma natiu"
@@ -28,6 +28,36 @@
     },
     "highest_rank_profile": {
         "message": "Classificació més alta: #{{rankHighest.rank}} el {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "Clasificació per Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Última actualització de classificació el {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Configuració"
+    },
+    "website_settings": {
+        "message": "Configuració de {{Website}}"
+    },
+    "about": {
+        "message": "Quant a"
+    },
+    "open_sidebar": {
+        "message": "Obrir barra lateral"
+    },
+    "score_ranking_desc": {
+        "message": "Mostra la classificació per puntuació de l'{{respektive_api}} en perfils d'osu!"
+    },
+    "respektive_api": {
+        "message": "API de Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Mostra la classificació per Kudosu de l'{{hiviexd_api}} en perfils d'osu!"
+    },
+    "hiviexd_api": {
+        "message": "API de Hiviexd"
     },
     "region": {
         "message": "Regió"
@@ -179,7 +209,7 @@
     "region_sk": {
         "message": "Regió"
     },
-    "region_uk": {
+    "region_gb": {
         "message": "Comtat"
     },
     "region_ie": {

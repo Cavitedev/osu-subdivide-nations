@@ -29,6 +29,36 @@
     "highest_rank_profile": {
         "message": "Clasificación más alta: #{{rankHighest.rank}} el {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Clasificación por Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Última actualización de clasificación el {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Configuración"
+    },
+    "website_settings": {
+        "message": "Configuración de {{Website}}"
+    },
+    "about": {
+        "message": "Acerca de"
+    },
+    "open_sidebar": {
+        "message": "Abrir barra lateral"
+    },
+    "score_ranking_desc": {
+        "message": "Muestra la clasificación por puntuación de la {{respektive_api}} en perfiles de osu!."
+    },
+    "respektive_api": {
+        "message": "API de Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Muestra la clasificación por Kudosu de la {{hiviexd_api}} en perfiles de osu!."
+    },
+    "hiviexd_api": {
+        "message": "API de Hiviexd"
+    },
     "region": {
         "message": "Región"
     },
@@ -179,7 +209,7 @@
     "region_sk": {
         "message": "Región"
     },
-    "region_uk": {
+    "region_gb": {
         "message": "Condado"
     },
     "region_ie": {

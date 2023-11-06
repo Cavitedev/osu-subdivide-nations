@@ -111,7 +111,7 @@
         "message": "Província"
     },
     "region_no": {
-        "message": "Condado"
+        "message": "Prefeitura"
     },
     "region_pe": {
         "message": "Região"
@@ -143,9 +143,6 @@
     "region_tw": {
         "message": "Província"
     },
-    "region_ua": {
-        "message": "Oblast"
-    },
     "region_us": {
         "message": "Estado"
     },
@@ -171,7 +168,7 @@
         "message": "Região"
     },
     "region_ee": {
-        "message": "Condado"
+        "message": "Cantão"
     },
     "region_bg": {
         "message": "Província"
@@ -179,8 +176,8 @@
     "region_sk": {
         "message": "Região"
     },
-    "region_uk": {
-        "message": "Cantão"
+    "region_gb": {
+        "message": "Condado"
     },
     "region_ie": {
         "message": "Província"

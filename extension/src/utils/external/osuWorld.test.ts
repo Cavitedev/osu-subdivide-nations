@@ -1,7 +1,7 @@
 import { Mock } from "node:test";
-import { expireHeader } from "./fetchUtils";
+import { expireHeader } from "../fetchUtils";
 import { beforeEach, describe, expect, jest, test } from "@jest/globals";
-import mockBrowser from "../__mocks__/browser";
+import mockBrowser from "../../__mocks__/browser";
 import { osuWorldUser, osuWorldUsers } from "./osuWorld";
 
 describe("Osu World", () => {

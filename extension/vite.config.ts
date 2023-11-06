@@ -1,3 +1,4 @@
+import solidPlugin from "vite-plugin-solid";
 import { defineConfig } from "vite";
 import webExtension from "@samrum/vite-plugin-web-extension";
 import path from "path";
@@ -20,7 +21,7 @@ export default defineConfig(() => {
         return {
             ...buildFor(browser),
         };
-    }else{
+    } else {
         return {
             ...buildFor("chromium"),
         };
@@ -30,6 +31,8 @@ export default defineConfig(() => {
 const buildFor = (mode: TtargetBrowser) => {
     return {
         plugins: [
+            solidPlugin(),
+
             webExtension({
                 manifest: getManifest(mode as TtargetBrowser),
             }),
@@ -37,7 +40,7 @@ const buildFor = (mode: TtargetBrowser) => {
                 inDir: `build/${mode}`,
                 outDir: `build`,
                 outFileName: `${mode}.zip`,
-            })
+            }),
         ],
         resolve: {
             alias: {

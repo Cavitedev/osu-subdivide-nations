@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Roboto", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    @apply text-base leading-tight text-black bg-slate-100;
+}
+
+html.dark body {
+    @apply bg-slate-950 text-white !important;
+}
+
+a {
+    @apply text-purple-500 underline;
+}

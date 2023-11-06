@@ -1,6 +1,6 @@
-import { Ilanguages } from "@src/utils/language";
+import { Ilanguages } from "@src/utils/external/languageOsuWorld";
 import jsonNameToCode from "./nameToLanguage.json";
-import { loadLanguage } from "@src/utils/languagesChrome";
+import { loadLanguage } from "@src/utils/languageChrome";
 import { updateRegionsDropdown } from "./pages/ranking";
 
 const nameToCode = jsonNameToCode as Ilanguages;

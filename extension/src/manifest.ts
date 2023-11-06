@@ -5,6 +5,7 @@ const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
         {
             matches: ["https://osu.ppy.sh/*"],
             js: ["src/content-script/osu/content.ts"],
+            css: ["src/content-script/osu/styles.css"],
         },
         {
             matches: ["https://wybin.xyz/*"],
@@ -20,7 +21,10 @@ const sharedManifest: Partial<chrome.runtime.ManifestBase> = {
         48: "icons/48.png",
         128: "icons/128.png",
     },
-
+    options_ui: {
+        page: "src/ui/options/index.html",
+        open_in_tab: true,
+    },
     permissions: ["storage"],
 };
 
@@ -43,7 +47,12 @@ const ManifestFirefox = {
         },
     },
     browser_action: browserAction,
-    permissions: [...sharedManifest.permissions, "https://osuworld.octo.moe/api/*", "https://score.pekkie.de/*"],
+    permissions: [
+        ...sharedManifest.permissions,
+        "https://osuworld.octo.moe/api/*",
+        "https://score.pekkie.de/*",
+        "https://kudosu-api.vercel.app/*",
+    ],
 };
 
 const ManifestChromium = {
