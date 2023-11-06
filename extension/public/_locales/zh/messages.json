@@ -29,9 +29,6 @@
     "highest_rank_profile": {
         "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
     },
-    "kudosu_ranking": {
-        "message": "都道府县"
-    },
     "region": {
         "message": "地区"
     },
@@ -66,7 +63,7 @@
         "message": "行政区"
     },
     "region_co": {
-        "message": "州份"
+        "message": "省份"
     },
     "region_cz": {
         "message": "地区"
@@ -183,7 +180,7 @@
         "message": "地区"
     },
     "region_gb": {
-        "message": "县"
+        "message": "省"
     },
     "region_ie": {
         "message": "省份"
