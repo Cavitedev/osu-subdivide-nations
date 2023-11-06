@@ -33,7 +33,7 @@
         "message": "Clasificación por Kudosu"
     },
     "last_rank_update": {
-        "message": "Idioma por defecto"
+        "message": "Última actualización de clasificación el {{formattedDate}}"
     },
     "settings": {
         "message": "Configuración"
@@ -54,7 +54,7 @@
         "message": "API de Respektive"
     },
     "kudosu_ranking_desc": {
-        "message": "Muestra la clasificación por Kudosi de la {{hiviexd_api}} en perfiles de osu!."
+        "message": "Muestra la clasificación por Kudosu de la {{hiviexd_api}} en perfiles de osu!."
     },
     "hiviexd_api": {
         "message": "API de Hiviexd"
