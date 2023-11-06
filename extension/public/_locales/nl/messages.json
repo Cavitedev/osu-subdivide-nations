@@ -1,0 +1,182 @@
+{
+    "appDesc": {
+        "message": "Voeg regionale vlaggen toe op de osu! website.\nTijdens het updaten van wereldwijde osu! score op profielen."
+    },
+    "created_by": {
+        "message": "gemaakt door {{developer}}"
+    },
+    "system_default": {
+        "message": "Systeemstandaard"
+    },
+    "native_language": {
+        "message": "Moedertaal"
+    },
+    "clean_cache": {
+        "message": "Cache opruimen"
+    },
+    "cache_cleaned": {
+        "message": "Cache is opgeruimd"
+    },
+    "region_language": {
+        "message": "Taal regio:"
+    },
+    "score_ranking": {
+        "message": "Score Ranking"
+    },
+    "region_ranking": {
+        "message": "Regio"
+    },
+    "highest_rank_profile": {
+        "message": "Hoogste rank: #{{rankHighest.rank}} op {{formattedDate}}"
+    },
+    "region": {
+        "message": "Regio"
+    },
+    "region_ru": {
+        "message": "Republiek / Oblast"
+    },
+    "region_ar": {
+        "message": "Provincie"
+    },
+    "region_at": {
+        "message": "Staat"
+    },
+    "region_au": {
+        "message": "Staat"
+    },
+    "region_be": {
+        "message": "Provincie"
+    },
+    "region_br": {
+        "message": "Staat"
+    },
+    "region_by": {
+        "message": "Oblast"
+    },
+    "region_ca": {
+        "message": "Provincie"
+    },
+    "region_cl": {
+        "message": "Regio"
+    },
+    "region_cn": {
+        "message": "Administratieve Regio"
+    },
+    "region_co": {
+        "message": "Ministerie"
+    },
+    "region_cz": {
+        "message": "Regio"
+    },
+    "region_de": {
+        "message": "Staat"
+    },
+    "region_es": {
+        "message": "Zelfstandige Gemeenschap"
+    },
+    "region_fi": {
+        "message": "Regio"
+    },
+    "region_fr": {
+        "message": "Regio"
+    },
+    "region_hu": {
+        "message": "Land"
+    },
+    "region_id": {
+        "message": "Provincie"
+    },
+    "region_it": {
+        "message": "Regio"
+    },
+    "region_jp": {
+        "message": "Prefectuur"
+    },
+    "region_kr": {
+        "message": "Provincie"
+    },
+    "region_kz": {
+        "message": "Regio"
+    },
+    "region_lv": {
+        "message": "Regio"
+    },
+    "region_mx": {
+        "message": "Staat"
+    },
+    "region_my": {
+        "message": "Staat"
+    },
+    "region_nl": {
+        "message": "Provincie"
+    },
+    "region_no": {
+        "message": "Land"
+    },
+    "region_pe": {
+        "message": "Regio"
+    },
+    "region_ph": {
+        "message": "Provincie"
+    },
+    "region_pl": {
+        "message": "Woiwodschap"
+    },
+    "region_pt": {
+        "message": "Regio"
+    },
+    "region_ro": {
+        "message": "Land"
+    },
+    "region_se": {
+        "message": "Land"
+    },
+    "region_sg": {
+        "message": "District"
+    },
+    "region_th": {
+        "message": "Provincie"
+    },
+    "region_tr": {
+        "message": "Regio"
+    },
+    "region_tw": {
+        "message": "Provincie"
+    },
+    "region_us": {
+        "message": "Staat"
+    },
+    "region_vn": {
+        "message": "Provincie"
+    },
+    "region_dk": {
+        "message": "Regio"
+    },
+    "region_nz": {
+        "message": "Regio"
+    },
+    "region_lt": {
+        "message": "Land"
+    },
+    "region_ch": {
+        "message": "Kanton"
+    },
+    "region_gr": {
+        "message": "Regio"
+    },
+    "region_ee": {
+        "message": "Maakond"
+    },
+    "region_bg": {
+        "message": "Provincie"
+    },
+    "region_sk": {
+        "message": "Regio"
+    },
+    "region_gb": {
+        "message": "Regio"
+    },
+    "region_ie": {
+        "message": "Provincie"
+    }
+}

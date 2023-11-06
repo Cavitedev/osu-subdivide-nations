@@ -1,0 +1,188 @@
+{
+    "appDesc": {
+        "message": "在 osu! 官方网站上添加地区旗帜。\n同时也更新 osu! 个人资料上的分数排名。"
+    },
+    "created_by": {
+        "message": "由 {{developer}} 创建"
+    },
+    "system_default": {
+        "message": "系统默认"
+    },
+    "native_language": {
+        "message": "母语"
+    },
+    "clean_cache": {
+        "message": "清理缓存"
+    },
+    "cache_cleaned": {
+        "message": "缓存已清理"
+    },
+    "region_language": {
+        "message": "地区语言"
+    },
+    "score_ranking": {
+        "message": "分数排名"
+    },
+    "region_ranking": {
+        "message": "地区排名"
+    },
+    "highest_rank_profile": {
+        "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
+    },
+    "region": {
+        "message": "地区"
+    },
+    "region_ru": {
+        "message": "共和国/州份"
+    },
+    "region_ar": {
+        "message": "省份"
+    },
+    "region_at": {
+        "message": "州份"
+    },
+    "region_au": {
+        "message": "州份"
+    },
+    "region_be": {
+        "message": "省份"
+    },
+    "region_br": {
+        "message": "州份"
+    },
+    "region_by": {
+        "message": "州份"
+    },
+    "region_ca": {
+        "message": "省份"
+    },
+    "region_cl": {
+        "message": "地区"
+    },
+    "region_cn": {
+        "message": "行政区"
+    },
+    "region_co": {
+        "message": "省份"
+    },
+    "region_cz": {
+        "message": "地区"
+    },
+    "region_de": {
+        "message": "州份"
+    },
+    "region_es": {
+        "message": "自治区"
+    },
+    "region_fi": {
+        "message": "地区"
+    },
+    "region_fr": {
+        "message": "地区"
+    },
+    "region_hu": {
+        "message": "州份"
+    },
+    "region_id": {
+        "message": "省份"
+    },
+    "region_it": {
+        "message": "地区"
+    },
+    "region_jp": {
+        "message": "都道府县"
+    },
+    "region_kr": {
+        "message": "道"
+    },
+    "region_kz": {
+        "message": "地区"
+    },
+    "region_lv": {
+        "message": "地区"
+    },
+    "region_mx": {
+        "message": "州份"
+    },
+    "region_my": {
+        "message": "州份"
+    },
+    "region_nl": {
+        "message": "省份"
+    },
+    "region_no": {
+        "message": "州"
+    },
+    "region_pe": {
+        "message": "地区"
+    },
+    "region_ph": {
+        "message": "省份"
+    },
+    "region_pl": {
+        "message": "省份"
+    },
+    "region_pt": {
+        "message": "地区"
+    },
+    "region_ro": {
+        "message": "县"
+    },
+    "region_se": {
+        "message": "省份"
+    },
+    "region_sg": {
+        "message": "地区"
+    },
+    "region_th": {
+        "message": "省份"
+    },
+    "region_tr": {
+        "message": "地区"
+    },
+    "region_tw": {
+        "message": "省份"
+    },
+    "region_ua": {
+        "message": "州份"
+    },
+    "region_us": {
+        "message": "州份"
+    },
+    "region_vn": {
+        "message": "省份"
+    },
+    "region_dk": {
+        "message": "地区"
+    },
+    "region_il": {
+        "message": "区"
+    },
+    "region_nz": {
+        "message": "地区"
+    },
+    "region_lt": {
+        "message": "县"
+    },
+    "region_ch": {
+        "message": "郡"
+    },
+    "region_gr": {
+        "message": "地区"
+    },
+    "region_ee": {
+        "message": "州份"
+    },
+    "region_bg": {
+        "message": "省份"
+    },
+    "region_sk": {
+        "message": "地区"
+    },
+    "region_gb": {
+        "message": "省"
+    },
+    "region_ie": {
+        "message": "省份"
+    }
+}

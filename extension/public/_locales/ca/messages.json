@@ -1,0 +1,218 @@
+{
+    "appDesc": {
+        "message": "Afegeix banderes regionals a la pàgina oficial d'osu!\nTambé mostra la classificació global per puntuació al perfil."
+    },
+    "created_by": {
+        "message": "creat per {{developer}}"
+    },
+    "system_default": {
+        "message": "Idioma per defecte"
+    },
+    "native_language": {
+        "message": "Idioma natiu"
+    },
+    "clean_cache": {
+        "message": "Netejar memòria cau"
+    },
+    "cache_cleaned": {
+        "message": "S'ha netejat la memòria cau"
+    },
+    "region_language": {
+        "message": "Idioma de la regió:"
+    },
+    "score_ranking": {
+        "message": "Classificació per puntuació"
+    },
+    "region_ranking": {
+        "message": "Classificació regional"
+    },
+    "highest_rank_profile": {
+        "message": "Classificació més alta: #{{rankHighest.rank}} el {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "Clasificació per Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Última actualització de classificació el {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Configuració"
+    },
+    "website_settings": {
+        "message": "Configuració de {{Website}}"
+    },
+    "about": {
+        "message": "Quant a"
+    },
+    "open_sidebar": {
+        "message": "Obrir barra lateral"
+    },
+    "score_ranking_desc": {
+        "message": "Mostra la classificació per puntuació de l'{{respektive_api}} en perfils d'osu!"
+    },
+    "respektive_api": {
+        "message": "API de Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Mostra la classificació per Kudosu de l'{{hiviexd_api}} en perfils d'osu!"
+    },
+    "hiviexd_api": {
+        "message": "API de Hiviexd"
+    },
+    "region": {
+        "message": "Regió"
+    },
+    "region_ru": {
+        "message": "República / Oblast"
+    },
+    "region_ar": {
+        "message": "Província"
+    },
+    "region_at": {
+        "message": "Estat"
+    },
+    "region_au": {
+        "message": "Estat"
+    },
+    "region_be": {
+        "message": "Província"
+    },
+    "region_br": {
+        "message": "Estat"
+    },
+    "region_by": {
+        "message": "Oblast"
+    },
+    "region_ca": {
+        "message": "Província"
+    },
+    "region_cl": {
+        "message": "Regió"
+    },
+    "region_cn": {
+        "message": "Regió administrativa"
+    },
+    "region_co": {
+        "message": "Departament"
+    },
+    "region_cz": {
+        "message": "Regió"
+    },
+    "region_de": {
+        "message": "Estat"
+    },
+    "region_es": {
+        "message": "Comunitat autònoma"
+    },
+    "region_fi": {
+        "message": "Regió"
+    },
+    "region_fr": {
+        "message": "Regió"
+    },
+    "region_hu": {
+        "message": "Comtat"
+    },
+    "region_id": {
+        "message": "Província"
+    },
+    "region_it": {
+        "message": "Regió"
+    },
+    "region_jp": {
+        "message": "Prefectura"
+    },
+    "region_kr": {
+        "message": "Província"
+    },
+    "region_kz": {
+        "message": "Regió"
+    },
+    "region_lv": {
+        "message": "Regió"
+    },
+    "region_mx": {
+        "message": "Estat"
+    },
+    "region_my": {
+        "message": "Estat"
+    },
+    "region_nl": {
+        "message": "Província"
+    },
+    "region_no": {
+        "message": "Comtat"
+    },
+    "region_pe": {
+        "message": "Regió"
+    },
+    "region_ph": {
+        "message": "Província"
+    },
+    "region_pl": {
+        "message": "Voivodat"
+    },
+    "region_pt": {
+        "message": "Regió"
+    },
+    "region_ro": {
+        "message": "Comtat"
+    },
+    "region_se": {
+        "message": "Comtat"
+    },
+    "region_sg": {
+        "message": "Districte"
+    },
+    "region_th": {
+        "message": "Província"
+    },
+    "region_tr": {
+        "message": "Regió"
+    },
+    "region_tw": {
+        "message": "Província"
+    },
+    "region_ua": {
+        "message": "Oblast"
+    },
+    "region_us": {
+        "message": "Estat"
+    },
+    "region_vn": {
+        "message": "Província"
+    },
+    "region_dk": {
+        "message": "Regió"
+    },
+    "region_il": {
+        "message": "Districte"
+    },
+    "region_nz": {
+        "message": "Regió"
+    },
+    "region_lt": {
+        "message": "Comtat"
+    },
+    "region_ch": {
+        "message": "Cantó"
+    },
+    "region_gr": {
+        "message": "Regió"
+    },
+    "region_ee": {
+        "message": "Comtat"
+    },
+    "region_bg": {
+        "message": "Província"
+    },
+    "region_sk": {
+        "message": "Regió"
+    },
+    "region_gb": {
+        "message": "Comtat"
+    },
+    "region_ie": {
+        "message": "Província"
+    }
+}
