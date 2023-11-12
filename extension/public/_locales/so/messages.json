@@ -1,6 +1,6 @@
 {
     "appDesc": {
-        "message": "Ku dar calamada websiteka osu! iyo cusboonaysii Dhibcaha adduunka profile ada osu!"
+        "message": "Ku dar calamada gobolada websiteka osu! iyo cusboonaysii Dhibcaha adduunka profile ada osu!"
     },
     "created_by": {
         "message": "Qofka sameeyay wa {{developer}}"
@@ -28,6 +28,36 @@
     },
     "highest_rank_profile": {
         "message": "Darajada ugu sare: #{{rankHighest.rank}} ee {{formattedDate}} keeda"
+    },
+    "kudosu_ranking": {
+        "message": "Darajada Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Tariiqta Cusboonaysiinta ugu dambeyey waa {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Settings"
+    },
+    "website_settings": {
+        "message": "{{Website}} settings"
+    },
+    "about": {
+        "message": "Ku saabsan"
+    },
+    "open_sidebar": {
+        "message": "Sidebar Fur"
+    },
+    "score_ranking_desc": {
+        "message": "Waxay muujinaysaa Qiimaynta dhibcaha {{respektive_api}} profileada osu!"
+    },
+    "respektive_api": {
+        "message": "Respektive's API"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Waxay muujinaysaa Qiimaynta dhibcaha {{hiviexd_api}} profileada osu!"
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd's API"
     },
     "region": {
         "message": "Gobolka"

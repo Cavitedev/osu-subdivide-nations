@@ -29,6 +29,36 @@
     "highest_rank_profile": {
         "message": "Наивысший: #{{rankHighest.rank}} от {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Рейтинг по кудосу"
+    },
+    "last_rank_update": {
+        "message": "Обновлён {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Настройки"
+    },
+    "website_settings": {
+        "message": "Настройки {{Website}}"
+    },
+    "about": {
+        "message": "О расширении"
+    },
+    "open_sidebar": {
+        "message": "Открыть боковую панель"
+    },
+    "score_ranking_desc": {
+        "message": "Отображение рейтинга по очкам в профиле osu!, используя {{respektive_api}}."
+    },
+    "respektive_api": {
+        "message": "API от Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Отображение рейтинга по кудосу в профиле osu!, используя {{hiviexd_api}}."
+    },
+    "hiviexd_api": {
+        "message": "API от Hiviexd"
+    },
     "region": {
         "message": "Регион"
     },
