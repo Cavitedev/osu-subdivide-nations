@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.5.1
+
+- Fix Philippines name province to region
+- Update 1 flag from Philippines
+- Latest translations
+
 ## Version 3.5.0
 
 - Add options page
