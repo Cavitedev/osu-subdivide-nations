@@ -156,6 +156,7 @@
         }
     },
     "BY": {
+        "nativeName": "Беларусь",
         "regions": {
             "BY-HO": {
                 "nativeName": "Гомельская вобласць",
