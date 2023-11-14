@@ -4,6 +4,7 @@
 
 - Fix Lithuanian flag
 - Fix native names
+- Latest translations
 
 ## Version 3.5.1
 
