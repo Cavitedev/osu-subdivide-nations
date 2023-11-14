@@ -1439,6 +1439,13 @@
             }
         }
     },
+    "LT": {
+        "regions": {
+            "LT-PN": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Panevezys_County_flag.svg/128px-Panevezys_County_flag.svg.png"
+            }
+        }
+    },
     "LV": {
         "regions": {
             "K": {
@@ -1862,8 +1869,7 @@
     },
     "RU": {
         "nativeName": "Россия",
-        "regions": {
-        }
+        "regions": {}
     },
     "SG": {
         "regions": {

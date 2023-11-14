@@ -2,6 +2,7 @@
 
 ## Version 3.5.2
 
+- Fix Lithuanian flag
 - Fix native names
 
 ## Version 3.5.1
