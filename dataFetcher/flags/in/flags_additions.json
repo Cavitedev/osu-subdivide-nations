@@ -1859,6 +1859,11 @@
             }
         }
     },
+    "RU": {
+        "nativeName": "Россия",
+        "regions": {
+        }
+    },
     "SG": {
         "regions": {
             "SG-01": {

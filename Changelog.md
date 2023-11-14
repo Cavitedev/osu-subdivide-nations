@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.5.2
+
+- Fix Russia native name
+
 ## Version 3.5.1
 
 - Fix Philippines name province to region
