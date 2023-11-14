@@ -156,6 +156,7 @@
         }
     },
     "BY": {
+        "nativeName": "Беларусь",
         "regions": {
             "BY-HO": {
                 "nativeName": "Гомельская вобласць",
@@ -1438,6 +1439,13 @@
             }
         }
     },
+    "LT": {
+        "regions": {
+            "LT-PN": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Panevezys_County_flag.svg/128px-Panevezys_County_flag.svg.png"
+            }
+        }
+    },
     "LV": {
         "regions": {
             "K": {
@@ -1858,6 +1866,10 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Stema_Valcea.svg/128px-Stema_Valcea.svg.png"
             }
         }
+    },
+    "RU": {
+        "nativeName": "Россия",
+        "regions": {}
     },
     "SG": {
         "regions": {

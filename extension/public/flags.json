@@ -224,7 +224,7 @@
     },
     "BY": {
         "name": "Belarus",
-        "nativeName": "Bielaruś",
+        "nativeName": "Беларусь",
         "regions": {
             "BY-BR": {
                 "name": "Brest Region",
@@ -2214,7 +2214,7 @@
             "LT-PN": {
                 "name": "Panevėžys County",
                 "nativeName": "Panevėžio apskritis",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Panevezys_County_flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Panevezys_County_flag.svg/128px-Panevezys_County_flag.svg.png"
             },
             "LT-SA": {
                 "name": "Šiauliai County",
@@ -3280,7 +3280,7 @@
     },
     "RU": {
         "name": "Russia",
-        "nativeName": "Rossiâ Россия",
+        "nativeName": "Россия",
         "regions": {
             "RU-AD": {
                 "name": "Adygea",

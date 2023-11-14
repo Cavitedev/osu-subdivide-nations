@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.5.2
+
+- Fix Lithuanian flag
+- Fix native names
+- Latest translations
+
 ## Version 3.5.1
 
 - Fix Philippines name province to region
