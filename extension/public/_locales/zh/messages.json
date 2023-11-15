@@ -29,6 +29,12 @@
     "highest_rank_profile": {
         "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
     },
+    "about": {
+        "message": "关于"
+    },
+    "open_sidebar": {
+        "message": "打开侧边栏"
+    },
     "region": {
         "message": "地区"
     },
