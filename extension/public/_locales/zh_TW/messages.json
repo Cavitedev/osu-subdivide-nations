@@ -1,1 +1,44 @@
-{}
+{
+    "system_default": {
+        "message": "系統預設"
+    },
+    "native_language": {
+        "message": "母語"
+    },
+    "clean_cache": {
+        "message": "清理快取"
+    },
+    "cache_cleaned": {
+        "message": "快取已清理"
+    },
+    "region_language": {
+        "message": "地區語言"
+    },
+    "score_ranking": {
+        "message": "分數排名"
+    },
+    "region_ranking": {
+        "message": "地區排名"
+    },
+    "highest_rank_profile": {
+        "message": "最高排名#{{rankHighest.rank}}於{{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "Kudosu排名"
+    },
+    "last_rank_update": {
+        "message": "最後一次排名更新於{{formattedDate}}"
+    },
+    "settings": {
+        "message": "設定"
+    },
+    "website_settings": {
+        "message": "{{Website}} 設定"
+    },
+    "about": {
+        "message": "關於"
+    },
+    "open_sidebar": {
+        "message": "打開側邊欄"
+    }
+}
