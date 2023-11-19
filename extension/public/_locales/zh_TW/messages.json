@@ -1,4 +1,7 @@
 {
+    "created_by": {
+        "message": "由 {{developer}} 創建"
+    },
     "system_default": {
         "message": "系統預設"
     },
@@ -40,5 +43,14 @@
     },
     "open_sidebar": {
         "message": "打開側邊欄"
+    },
+    "region": {
+        "message": "地區"
+    },
+    "region_cn": {
+        "message": "行政區"
+    },
+    "region_es": {
+        "message": "自治區"
     }
 }
