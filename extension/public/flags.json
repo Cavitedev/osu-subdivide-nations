@@ -2245,7 +2245,7 @@
     },
     "MY": {
         "name": "Malaysia",
-        "nativeName": "Mǎláixīyà 马来西亚",
+        "nativeName": "Malaysia",
         "regions": {
             "MY-01": {
                 "name": "Johor",
@@ -2331,7 +2331,7 @@
     },
     "MX": {
         "name": "Mexico",
-        "nativeName": "Mēxihco",
+        "nativeName": "México",
         "regions": {
             "MX-AGU": {
                 "name": "Aguascalientes",
@@ -2846,7 +2846,7 @@
     },
     "PH": {
         "name": "Philippines",
-        "nativeName": "Philippines",
+        "nativeName": "Pilipinas",
         "regions": {
             "PH-14": {
                 "name": "Bangsamoro",
@@ -4085,7 +4085,7 @@
     },
     "TH": {
         "name": "Thailand",
-        "nativeName": "Mueang Thai",
+        "nativeName": "ประเทศไทย",
         "regions": {
             "TH-37": {
                 "name": "Amnat Charoen province",
@@ -4476,7 +4476,7 @@
     },
     "UA": {
         "name": "Ukraine",
-        "nativeName": "Ukraїna Україна",
+        "nativeName": "Україна",
         "regions": {
             "UA-71": {
                 "name": "Cherkasy Oblast",
@@ -5320,7 +5320,7 @@
     },
     "GR": {
         "name": "Greece",
-        "nativeName": "Ελλάς",
+        "nativeName": "Ελλάδα",
         "regions": {
             "GR-A": {
                 "name": "Eastern Macedonia and Thrace",

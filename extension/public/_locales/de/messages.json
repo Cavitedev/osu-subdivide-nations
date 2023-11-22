@@ -29,6 +29,36 @@
     "highest_rank_profile": {
         "message": "Höchster Rang: #{{rankHighest.rank}} am {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Kudosu Rang"
+    },
+    "last_rank_update": {
+        "message": "Letztes Rangupdate am {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Einstellungen"
+    },
+    "website_settings": {
+        "message": "{{Website}} Einstellungen"
+    },
+    "about": {
+        "message": "Über"
+    },
+    "open_sidebar": {
+        "message": "Offene Seitenleiste"
+    },
+    "score_ranking_desc": {
+        "message": "Zeigt den score Rang von {{respektive_api}} auf osu! Profilen an."
+    },
+    "respektive_api": {
+        "message": "Respektive API"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Zeigt den Kudosu Rang von {{hiviexd_api}} auf osu! Profilen an."
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd's API"
+    },
     "region": {
         "message": "Region"
     },
@@ -48,7 +78,7 @@
         "message": "Provinz"
     },
     "region_br": {
-        "message": "Land"
+        "message": "Bundesstaat"
     },
     "region_by": {
         "message": "Region"
@@ -63,18 +93,21 @@
         "message": "Administrative Region"
     },
     "region_co": {
-        "message": "Departamento"
+        "message": "Abteilung"
     },
     "region_cz": {
         "message": "Region"
     },
     "region_de": {
-        "message": "Bundesstaat"
+        "message": "Bundesland"
     },
     "region_es": {
         "message": "Autonome Gemeinschaft"
     },
     "region_fi": {
+        "message": "Region"
+    },
+    "region_fr": {
         "message": "Region"
     },
     "region_hu": {
@@ -83,11 +116,20 @@
     "region_id": {
         "message": "Provinz"
     },
+    "region_it": {
+        "message": "Region"
+    },
     "region_jp": {
         "message": "Präfektur"
     },
     "region_kr": {
         "message": "Provinz"
+    },
+    "region_kz": {
+        "message": "Region"
+    },
+    "region_lv": {
+        "message": "Region"
     },
     "region_mx": {
         "message": "Bundesstaat"
@@ -101,8 +143,17 @@
     "region_no": {
         "message": "Bundesland"
     },
+    "region_pe": {
+        "message": "Region"
+    },
+    "region_ph": {
+        "message": "Region"
+    },
     "region_pl": {
         "message": "Woiwodschaft"
+    },
+    "region_pt": {
+        "message": "Region"
     },
     "region_ro": {
         "message": "Land"
@@ -116,6 +167,9 @@
     "region_th": {
         "message": "Provinz"
     },
+    "region_tr": {
+        "message": "Region"
+    },
     "region_tw": {
         "message": "Provinz"
     },
@@ -128,8 +182,14 @@
     "region_vn": {
         "message": "Provinz"
     },
+    "region_dk": {
+        "message": "Region"
+    },
     "region_il": {
         "message": "Land"
+    },
+    "region_nz": {
+        "message": "Region"
     },
     "region_lt": {
         "message": "Bundesland"
@@ -137,14 +197,20 @@
     "region_ch": {
         "message": "Kanton"
     },
+    "region_gr": {
+        "message": "Region"
+    },
     "region_ee": {
         "message": "Bundesland"
     },
     "region_bg": {
         "message": "Provinz"
     },
+    "region_sk": {
+        "message": "Region"
+    },
     "region_gb": {
-        "message": "Bundesland"
+        "message": "Landkreis"
     },
     "region_ie": {
         "message": "Provinz"

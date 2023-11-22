@@ -29,6 +29,30 @@
     "highest_rank_profile": {
         "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
     },
+    "kudosu_ranking": {
+        "message": "Kudosu排名"
+    },
+    "last_rank_update": {
+        "message": "最后一次排名更新在 {{formattedDate}}"
+    },
+    "settings": {
+        "message": "设置"
+    },
+    "website_settings": {
+        "message": "{{Website}} 设置"
+    },
+    "about": {
+        "message": "关于"
+    },
+    "open_sidebar": {
+        "message": "打开侧边栏"
+    },
+    "score_ranking_desc": {
+        "message": "在 osu! 个人资料上显示来自 {{respektive_api}} 的分数排名。"
+    },
+    "kudosu_ranking_desc": {
+        "message": "在 osu! 个人资料上显示来自 {{hiviexd_api}} 的Kudosu排名。"
+    },
     "region": {
         "message": "地区"
     },
@@ -115,6 +139,9 @@
     },
     "region_pe": {
         "message": "地区"
+    },
+    "region_ph": {
+        "message": "大区"
     },
     "region_pl": {
         "message": "省份"
