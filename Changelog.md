@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.5.3
+
+- New countries: Venezuela, Ecuador, Saudi Arabia, Serbia, Jamaica
+- Latest translations
+
 ## Version 3.5.2
 
 - Fix Lithuanian flag

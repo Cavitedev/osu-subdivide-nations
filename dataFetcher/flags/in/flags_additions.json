@@ -1363,6 +1363,82 @@
             }
         }
     },
+    "JM": {
+        "name": "Jamaica",
+        "nativeName": "Jamaica",
+        "regions": {
+            "JM-01": {
+                "name": "Kingston",
+                "nativeName": "Kingston",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/99/Flag_of_Kingston_Parish.png/revision/latest?cb=20230516011030"
+            },
+            "JM-02": {
+                "name": "Saint Andrew",
+                "nativeName": "Saint Andrew",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/81/Saint_Andrew_Parish,_Jamaica.jpeg/revision/latest?cb=20230516014126"
+            },
+            "JM-03": {
+                "name": "Saint Thomas",
+                "nativeName": "Saint Thomas",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/56/Flag_of_Saint_Thomas_Parish,_Jamaica.jpeg/revision/latest?cb=20230516015041"
+            },
+            "JM-04": {
+                "name": "Portland",
+                "nativeName": "Portland",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6a/Flag_of_Portland_Parish.jpeg/revision/latest?cb=20230516012045"
+            },
+            "JM-05": {
+                "name": "Saint Mary",
+                "nativeName": "Saint Mary",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a8/Flag_of_Saint_Mary_Parish,_Jamaica.png/revision/latest?cb=20230516010117"
+            },
+            "JM-06": {
+                "name": "Saint Ann",
+                "nativeName": "Saint Ann",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/89/Flag_of_Saint_Ann_Parish.png/revision/latest?cb=20230422025415"
+            },
+            "JM-07": {
+                "name": "Trelawny",
+                "nativeName": "Trelawny",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/95/Flag_of_Trelawny_Parish.png/revision/latest?cb=20230516120258"
+            },
+            "JM-08": {
+                "name": "Saint James",
+                "nativeName": "Saint James",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/ff/Flag_of_Saint_James_Parish,_Jamaica.png/revision/latest?cb=20230422021342"
+            },
+            "JM-09": {
+                "name": "Hanover",
+                "nativeName": "Hanover",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b7/Proposed_flag_of_Hanover_Parish.png/revision/latest?cb=20230411001746"
+            },
+            "JM-10": {
+                "name": "Westmoreland",
+                "nativeName": "Westmoreland",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/de/Flag_of_Westmoreland_Parish.png/revision/latest?cb=20230422024137"
+            },
+            "JM-11": {
+                "name": "Saint Elizabeth",
+                "nativeName": "Saint Elizabeth",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2b/Flag_of_Saint_Elizabeth_Parish.png/revision/latest?cb=20230412002449"
+            },
+            "JM-12": {
+                "name": "Manchester",
+                "nativeName": "Manchester",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3a/Flag_of_Manchester_Parish.png/revision/latest?cb=20230422024732"
+            },
+            "JM-13": {
+                "name": "Clarendon",
+                "nativeName": "Clarendon",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Flag_of_Clarendon_Parish,_Jamaica.png/revision/latest?cb=20230417124811"
+            },
+            "JM-14": {
+                "name": "Saint Catherine",
+                "nativeName": "Saint Catherine",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/40/Flag_of_Saint_Catherine_Parish.png/revision/latest?cb=20230516002708"
+            }
+        }
+    },
     "JP": {
         "nativeName": "日本",
         "regions": {}
@@ -1442,7 +1518,7 @@
     "LT": {
         "regions": {
             "LT-PN": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Panevezys_County_flag.svg/128px-Panevezys_County_flag.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Panevezys_County_flag.svg"
             }
         }
     },
@@ -1867,9 +1943,211 @@
             }
         }
     },
+    "RS": {
+        "name": "Serbia",
+        "nativeName": "Србија",
+        "regions": {
+            "RS-00": {
+                "name": "City of Belgrade",
+                "nativeName": "Град Београд",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/df/Small_Coat_of_Arms_Belgrade.svg"
+            },
+            "RS-14": {
+                "name": "Bor Administrative District",
+                "nativeName": "Борски управни округ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Grb_Bora.png"
+            },
+            "RS-11": {
+                "name": "Branicevo Administrative District",
+                "nativeName": "Браничевски управни округ",
+                "flag": "https://static.wikia.nocookie.net/alternative-history/images/b/b1/SAO_Branicevo_-_grb.png/revision/latest?cb=20131013130618"
+            },
+            "RS-23": {
+                "name": "Jablanica Administrative District",
+                "nativeName": "Јабланички управни округ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flag_of_Bačka_Palanka.png"
+            },
+            "RS-06": {
+                "name": "South Backa Administrative District",
+                "nativeName": "Јужнобачки управни округ",
+                "flag": ""
+            },
+            "RS-04": {
+                "name": "South Banat Administrative District",
+                "nativeName": "Јужнобанатски управни округ",
+                "flag": ""
+            },
+            "RS-09": {
+                "name": "Kolubara Administrative District",
+                "nativeName": "Колубарски управни округ",
+                "flag": ""
+            },
+            "RS-08": {
+                "name": "Macva Administrative District",
+                "nativeName": "Мачвански управни округ",
+                "flag": ""
+            },
+            "RS-17": {
+                "name": "Moravica Administrative District",
+                "nativeName": "Моравички управни округ",
+                "flag": ""
+            },
+            "RS-20": {
+                "name": "Nisava Administrative District",
+                "nativeName": "Нишавски управни округ",
+                "flag": ""
+            },
+            "RS-24": {
+                "name": "Pcinja Administrative District",
+                "nativeName": "Пчињски управни округ",
+                "flag": ""
+            },
+            "RS-22": {
+                "name": "Pirot Administrative District",
+                "nativeName": "Пиротски управни округ",
+                "flag": ""
+            },
+            "RS-10": {
+                "name": "Podunavlje Administrative District",
+                "nativeName": "Подунавски управни округ",
+                "flag": ""
+            },
+            "RS-13": {
+                "name": "Pomoravlje Administrative District",
+                "nativeName": "Поморавски управни округ",
+                "flag": ""
+            },
+            "RS-19": {
+                "name": "Rasina Administrative District",
+                "nativeName": "Расински управни округ",
+                "flag": ""
+            },
+            "RS-18": {
+                "name": "Raska Administrative District",
+                "nativeName": "Рашки управни округ",
+                "flag": ""
+            },
+            "RS-01": {
+                "name": "North Backa Administrative District",
+                "nativeName": "Севернобачки управни округ",
+                "flag": ""
+            },
+            "RS-03": {
+                "name": "North Banat Administrative District",
+                "nativeName": "Севернобанатски управни округ",
+                "flag": ""
+            },
+            "RS-02": {
+                "name": "Central Banat Administrative District",
+                "nativeName": "Средњобанатски управни округ",
+                "flag": ""
+            },
+            "RS-07": {
+                "name": "Srem Administrative District",
+                "nativeName": "Сремски управни округ",
+                "flag": ""
+            },
+            "RS-12": {
+                "name": "Sumadija Administrative District",
+                "nativeName": "Шумадијски управни округ",
+                "flag": ""
+            },
+            "RS-21": {
+                "name": "Toplica Administrative District",
+                "nativeName": "Топлички управни округ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Big_crest_of_Zitoradja.jpg"
+            },
+            "RS-15": {
+                "name": "Zajecar Administrative District",
+                "nativeName": "Зајечарски управни округ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/COA_zajecar.png"
+            },
+            "RS-05": {
+                "name": "West Backa Administrative District",
+                "nativeName": "Западнобачки управни округ",
+                "flag": ""
+            },
+            "RS-16": {
+                "name": "Zlatibor Administrative District",
+                "nativeName": "Златиборски управни округ",
+                "flag": ""
+            }
+        }
+    },
     "RU": {
         "nativeName": "Россия",
         "regions": {}
+    },
+    "SA": {
+        "name": "Saudi Arabia",
+        "nativeName": "السعودية",
+        "regions": {
+            "SA-14": {
+                "name": "'Asir Province",
+                "nativeName": "منطقة عسير",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/28/Flag_of_'Asir_Province.svg/revision/latest?cb=20230124231733"
+            },
+            "SA-11": {
+                "name": "Al-Bahah Province",
+                "nativeName": "منطقة الباحة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9a/Flag_of_Al-Bahah_Province.svg/revision/latest?cb=20230124231600"
+            },
+            "SA-08": {
+                "name": "Northern Borders Province",
+                "nativeName": "منطقة الحدود الشمالية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/0c/Flag_of_Northern_Borders_Province.svg/revision/latest?cb=20230124231550"
+            },
+            "SA-12": {
+                "name": "Al Jawf Region",
+                "nativeName": "منطقة الجوف",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/42/Flag_of_Al-Jawf_Province.svg/revision/latest?cb=20230124231515"
+            },
+            "SA-03": {
+                "name": "Medina Province",
+                "nativeName": "منطقة المدينة المنورة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/17/Flag_of_Medina_Province_(Saudi_Arabia).svg/revision/latest?cb=20230124231615"
+            },
+            "SA-05": {
+                "name": "Al-Qassim Province",
+                "nativeName": "منطقة القصيم",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bd/Flag_of_Al-Qassim_Province.svg/revision/latest?cb=20230124231651"
+            },
+            "SA-01": {
+                "name": "Riyadh Region",
+                "nativeName": "منطقة الرياض",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/96/Flag_of_Riyadh_Province.svg/revision/latest?cb=20230124231742"
+            },
+            "SA-04": {
+                "name": "Eastern Province",
+                "nativeName": "المنطقة الشرقية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/cc/Flag_of_Eastern_Province,_Saudi_Arabia.svg/revision/latest?cb=20230124231526"
+            },
+            "SA-06": {
+                "name": "Ḥa'il Province",
+                "nativeName": "منطقة حائل",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bb/Flag_of_Ḥa'il_Province.svg/revision/latest?cb=20230124231638"
+            },
+            "SA-09": {
+                "name": "Jazan Province",
+                "nativeName": "منطقة جازان",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f4/Flag_of_Jazan_Province.svg/revision/latest?cb=20230124231539"
+            },
+            "SA-02": {
+                "name": "Makkah Region",
+                "nativeName": "منطقة مكة المكرمة",
+                "flag": ""
+            },
+            "SA-10": {
+                "name": "Najran Region",
+                "nativeName": "منطقة نجران",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3a/Flag_of_Najran_Province.svg/revision/latest?cb=20230124231703"
+            },
+            "SA-07": {
+                "name": "Tabuk Province",
+                "nativeName": "منطقة تبوك",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/90/Flag_of_Tabuk_Province.svg/revision/latest?cb=20230124231626"
+            }
+        }
     },
     "SG": {
         "regions": {
@@ -2076,6 +2354,13 @@
             "US-WADC": {
                 "nativeName": "Washington, D.C.",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
+            }
+        }
+    },
+    "VE": {
+        "regions": {
+            "VE-W": {
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Federal_dependencies_of_Venezuela's_Flag.svg"
             }
         }
     },
@@ -2332,6 +2617,57 @@
             "VN-45": {
                 "nativeName": "Tỉnh Đồng Tháp",
                 "flag": "https://upload.wikimedia.org/wikipedia/vi/7/71/Logo_tỉnh_Đồng_Tháp.svg"
+            }
+        }
+    },
+    "ZA": {
+        "name": "South Africa",
+        "nativeName": "Suid-Afrika",
+        "regions": {
+            "ZA-MP": {
+                "name": "Mpumalanga",
+                "nativeName": "Mpumalanga",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_Mpumalanga_Province.svg"
+            },
+            "ZA-EC": {
+                "name": "Eastern Cape",
+                "nativeName": "Eastern Cape",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Flag_of_the_Eastern_Cape_Province.png"
+            },
+            "ZA-FS": {
+                "name": "Free State",
+                "nativeName": "Free State",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_of_the_Free_State_Province.png"
+            },
+            "ZA-GP": {
+                "name": "Gauteng",
+                "nativeName": "Gauteng",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_the_Gauteng_Province.png"
+            },
+            "ZA-KZN": {
+                "name": "KwaZulu-Natal",
+                "nativeName": "KwaZulu-Natal",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_the_KwaZulu-Natal_Province.png"
+            },
+            "ZA-LP": {
+                "name": "Limpopo",
+                "nativeName": "Limpopo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_the_Limpopo_Province.png"
+            },
+            "ZA-NW": {
+                "name": "North West",
+                "nativeName": "North West",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_North_West_Province.png"
+            },
+            "ZA-NC": {
+                "name": "Northern Cape",
+                "nativeName": "Northern Cape",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_the_Northern_Cape_Province.png"
+            },
+            "ZA-WC": {
+                "name": "Western Cape",
+                "nativeName": "Western Cape",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_the_Western_Cape_Province.png"
             }
         }
     }
