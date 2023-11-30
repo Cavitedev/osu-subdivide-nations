@@ -214,5 +214,20 @@
     },
     "region_ie": {
         "message": "Province"
+    },
+    "region_ve": {
+        "message": "State"
+    },
+    "region_rs": {
+        "message": "Administrative District"
+    },
+    "region_za": {
+        "message": "Province"
+    },
+    "region_jm": {
+        "message": "Region"
+    },
+    "region_sa": {
+        "message": "Province"
     }
 }
