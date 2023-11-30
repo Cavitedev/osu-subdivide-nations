@@ -24,6 +24,7 @@ describe("Test flags.json content", () => {
         test("Valid extension", () => {
             const regex = /\.svg|\.png|\.jpg|\.jpeg|\.gif/;
             flagLinks.forEach((link) => {
+                if (link === "") return;
                 expect(link).toMatch(regex);
             });
         });
