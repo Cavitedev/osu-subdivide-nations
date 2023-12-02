@@ -1,4 +1,7 @@
 {
+    "appDesc": {
+        "message": "Додајте регионалне заставе на osu! веб-сајту.\n Док се такође ажурира osu! глобални резултати на профилима."
+    },
     "created_by": {
         "message": "креирао {{developer}}"
     },
@@ -7,5 +10,224 @@
     },
     "native_language": {
         "message": "Матерњи језик"
+    },
+    "clean_cache": {
+        "message": "Очисти кеш"
+    },
+    "cache_cleaned": {
+        "message": "Кеш је очишћен"
+    },
+    "region_language": {
+        "message": "Језик региона:"
+    },
+    "score_ranking": {
+        "message": "Ранг Резултата"
+    },
+    "region_ranking": {
+        "message": "Ранг Региона"
+    },
+    "highest_rank_profile": {
+        "message": "Највиши ранг: #{{rankHighest.rank}} на {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "Kudosu Ранг"
+    },
+    "last_rank_update": {
+        "message": "Последње ажурирање ранга нa {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Подешавање"
+    },
+    "website_settings": {
+        "message": "{{Website}} Подешавање"
+    },
+    "about": {
+        "message": "О проширењу"
+    },
+    "open_sidebar": {
+        "message": "Отворите бочну траку"
+    },
+    "score_ranking_desc": {
+        "message": "Приказује рангирање резултата од {{respektive_api}} на osu! профилима."
+    },
+    "respektive_api": {
+        "message": "API од Respektive-a"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Приказује Kudosu ранг од {{hiviexd_api}} на osu! профилима."
+    },
+    "hiviexd_api": {
+        "message": "API од Hiviexd-a"
+    },
+    "region": {
+        "message": "Регион"
+    },
+    "region_ru": {
+        "message": "Република / Област"
+    },
+    "region_ar": {
+        "message": "Провинција"
+    },
+    "region_at": {
+        "message": "Држава"
+    },
+    "region_au": {
+        "message": "Држава"
+    },
+    "region_be": {
+        "message": "Провинција"
+    },
+    "region_br": {
+        "message": "Држава"
+    },
+    "region_by": {
+        "message": "Област"
+    },
+    "region_ca": {
+        "message": "Провинција"
+    },
+    "region_cl": {
+        "message": "Регион"
+    },
+    "region_cn": {
+        "message": "Административни регион"
+    },
+    "region_co": {
+        "message": "Департман"
+    },
+    "region_cz": {
+        "message": "Регион"
+    },
+    "region_de": {
+        "message": "Држава"
+    },
+    "region_es": {
+        "message": "Аутономна заједница"
+    },
+    "region_fi": {
+        "message": "Регион"
+    },
+    "region_fr": {
+        "message": "Регион"
+    },
+    "region_hu": {
+        "message": "Округ"
+    },
+    "region_id": {
+        "message": "Провинција"
+    },
+    "region_it": {
+        "message": "Регион"
+    },
+    "region_jp": {
+        "message": "Префектура"
+    },
+    "region_kr": {
+        "message": "Провинција"
+    },
+    "region_kz": {
+        "message": "Регион"
+    },
+    "region_lv": {
+        "message": "Регион"
+    },
+    "region_mx": {
+        "message": "Држава"
+    },
+    "region_my": {
+        "message": "Држава"
+    },
+    "region_nl": {
+        "message": "Провинција"
+    },
+    "region_no": {
+        "message": "Округ"
+    },
+    "region_pe": {
+        "message": "Регион"
+    },
+    "region_ph": {
+        "message": "Регион"
+    },
+    "region_pl": {
+        "message": "Војводство"
+    },
+    "region_pt": {
+        "message": "Регион"
+    },
+    "region_ro": {
+        "message": "Округ"
+    },
+    "region_se": {
+        "message": "Округ"
+    },
+    "region_sg": {
+        "message": "Округ"
+    },
+    "region_th": {
+        "message": "Провинција"
+    },
+    "region_tr": {
+        "message": "Регион"
+    },
+    "region_tw": {
+        "message": "Провинција"
+    },
+    "region_ua": {
+        "message": "Област"
+    },
+    "region_us": {
+        "message": "Држава"
+    },
+    "region_vn": {
+        "message": "Провинција"
+    },
+    "region_dk": {
+        "message": "Регион"
+    },
+    "region_il": {
+        "message": "Округ"
+    },
+    "region_nz": {
+        "message": "Регион"
+    },
+    "region_lt": {
+        "message": "Округ"
+    },
+    "region_ch": {
+        "message": "Кантон"
+    },
+    "region_gr": {
+        "message": "Регион"
+    },
+    "region_ee": {
+        "message": "Округ"
+    },
+    "region_bg": {
+        "message": "Провинција"
+    },
+    "region_sk": {
+        "message": "Регион"
+    },
+    "region_gb": {
+        "message": "Округ"
+    },
+    "region_ie": {
+        "message": "Провинција"
+    },
+    "region_ve": {
+        "message": "Држава"
+    },
+    "region_rs": {
+        "message": "Административни Округ"
+    },
+    "region_za": {
+        "message": "Провинција"
+    },
+    "region_jm": {
+        "message": "Регион"
+    },
+    "region_sa": {
+        "message": "Провинција"
     }
 }
