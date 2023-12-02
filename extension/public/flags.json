@@ -231,6 +231,11 @@
                 "nativeName": "Брэсцкая вобласць",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Brest_Voblast,_Belarus.svg"
             },
+            "BY-HO": {
+                "name": "Gomel Region",
+                "nativeName": "Гомельская вобласць",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Homyel_Voblast.svg/128px-Flag_of_Homyel_Voblast.svg.png"
+            },
             "BY-HR": {
                 "name": "Grodno Region",
                 "nativeName": "Гродзенская вобласць",
@@ -250,11 +255,6 @@
                 "name": "Vitebsk Region",
                 "nativeName": "Віцебская вобласць",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_Vitsebsk_region.svg"
-            },
-            "BY-HO": {
-                "name": "Homyel Region",
-                "nativeName": "Гомельская вобласць",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Homyel_Voblast.svg/128px-Flag_of_Homyel_Voblast.svg.png"
             }
         }
     },
@@ -575,6 +575,11 @@
                 "nativeName": "Región de Los Ríos",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Los_Ríos,_Chile.svg"
             },
+            "CL-MA": {
+                "name": "Magallanes Region",
+                "nativeName": "Región de Magallanes y de la Antártica Chilena",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes,_Chile.svg"
+            },
             "CL-ML": {
                 "name": "Maule Region",
                 "nativeName": "Región del Maule",
@@ -609,11 +614,6 @@
                 "name": "Arica and Parinacota Region",
                 "nativeName": "Región de Arica y Parinacota",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Arica_y_Parinacota,_Chile.svg"
-            },
-            "CL-MA": {
-                "name": "Region of Magallanes and Chilean Antarctica",
-                "nativeName": "Región de Magallanes y de la Antártica Chilena",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes,_Chile.svg"
             }
         }
     },
@@ -2202,17 +2202,17 @@
         "regions": {
             "KR-11": {
                 "name": "Seoul",
-                "nativeName": "서울",
+                "nativeName": "서울특별시",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Seoul.svg"
             },
             "KR-26": {
                 "name": "Busan",
-                "nativeName": "부산",
+                "nativeName": "부산광역시",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Busan.svg"
             },
             "KR-27": {
                 "name": "Daegu",
-                "nativeName": "대구",
+                "nativeName": "대구광역시",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Daegu.svg"
             },
             "KR-30": {
@@ -2222,17 +2222,17 @@
             },
             "KR-29": {
                 "name": "Gwangju",
-                "nativeName": "광주",
+                "nativeName": "광주광역시",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Gwangju.svg"
             },
             "KR-28": {
                 "name": "Incheon",
-                "nativeName": "인천",
+                "nativeName": "인천광역시",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Incheon.svg"
             },
             "KR-31": {
                 "name": "Ulsan",
-                "nativeName": "울산",
+                "nativeName": "울산광역시",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Ulsan.svg"
             },
             "KR-43": {
@@ -2244,11 +2244,6 @@
                 "name": "South Chungcheong",
                 "nativeName": "충청남도",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_South_Chungcheong_Province.svg"
-            },
-            "KR-42": {
-                "name": "Gangwon",
-                "nativeName": "강원특별자치도",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Gangwon_Province.svg"
             },
             "KR-41": {
                 "name": "Gyeonggi",
@@ -2279,6 +2274,11 @@
                 "name": "Jeju",
                 "nativeName": "제주특별자치도",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Jeju_Province.svg"
+            },
+            "KR-42": {
+                "name": "Gangwon",
+                "nativeName": "강원특별자치도",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_Gangwon_State.svg"
             },
             "KR-50": {
                 "name": "Sejong",
@@ -2878,6 +2878,11 @@
                 "nativeName": "Callao",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bandera_del_Callao.svg//128px-Bandera_del_Callao.svg.png"
             },
+            "PE-CUS": {
+                "name": "Department of Cuzco",
+                "nativeName": "Cuzco",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_(2021).svg"
+            },
             "PE-HUV": {
                 "name": "Department of Huancavelica",
                 "nativeName": "Huancavelica",
@@ -2962,11 +2967,6 @@
                 "name": "Department of Ucayali",
                 "nativeName": "Ucayali",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Bandera_de_Ucayali.svg//128px-Bandera_de_Ucayali.svg.png"
-            },
-            "PE-CUS": {
-                "name": "Cusco",
-                "nativeName": "Cuzco",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Cusco_(2021).svg"
             }
         }
     },
@@ -3966,6 +3966,11 @@
                 "nativeName": "Galicia",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Galicia.svg"
             },
+            "ES-RI": {
+                "name": "La Rioja",
+                "nativeName": "La Rioja",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg/128px-Flag_of_La_Rioja_(with_coat_of_arms).svg.png"
+            },
             "ES-MD": {
                 "name": "Community of Madrid",
                 "nativeName": "Comunidad de Madrid",
@@ -4005,11 +4010,6 @@
                 "name": "Cantabria",
                 "nativeName": "Cantabria",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Cantabria_(Official).svg/128px-Flag_of_Cantabria_(Official).svg.png"
-            },
-            "ES-RI": {
-                "name": "La Rioja",
-                "nativeName": "La Rioja",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_La_Rioja_(with_coat_of_arms).svg/128px-Flag_of_La_Rioja_(with_coat_of_arms).svg.png"
             }
         }
     },
@@ -4220,7 +4220,7 @@
             },
             "CH-SG": {
                 "name": "St. Gallen",
-                "nativeName": "Sankt Gallen",
+                "nativeName": "St. Gallen",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_Canton_of_Sankt_Gallen.svg"
             },
             "CH-TG": {
@@ -5140,7 +5140,7 @@
             "US-GA": {
                 "name": "Georgia",
                 "nativeName": "Georgia",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Georgia_(U.S._state).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_the_State_of_Georgia.svg"
             },
             "US-HI": {
                 "name": "Hawaii",
@@ -5396,7 +5396,7 @@
             "VE-Y": {
                 "name": "Delta Amacuro",
                 "nativeName": "Delta Amacuro",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Delta_Amacuro_State.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Delta_Amacuro_State.svg//128px-Flag_of_Delta_Amacuro_State.svg.png"
             },
             "VE-I": {
                 "name": "Falcón",
@@ -5628,7 +5628,8 @@
     },
     "GR": {
         "name": "Greece",
-        "nativeName": "Ελλάδα",
+        "nativename": "Ελλάδα",
+        "nativeName": "Ελλάς",
         "regions": {
             "GR-A": {
                 "name": "Eastern Macedonia and Thrace",
@@ -5931,122 +5932,122 @@
             "RS-14": {
                 "name": "Bor Administrative District",
                 "nativeName": "Борски управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Grb_Bora.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/COA_Negotin.gif"
             },
             "RS-11": {
                 "name": "Branicevo Administrative District",
                 "nativeName": "Браничевски управни округ",
-                "flag": "https://static.wikia.nocookie.net/alternative-history/images/b/b1/SAO_Branicevo_-_grb.png/revision/latest?cb=20131013130618"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/43/COA_Petrovac.png"
             },
             "RS-23": {
                 "name": "Jablanica Administrative District",
                 "nativeName": "Јабланички управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flag_of_Bačka_Palanka.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/COA_Vlasotince.png"
             },
             "RS-06": {
                 "name": "South Backa Administrative District",
                 "nativeName": "Јужнобачки управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Backa-palanka-grb.png"
             },
             "RS-04": {
                 "name": "South Banat Administrative District",
                 "nativeName": "Јужнобанатски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kovin-grb.png"
             },
             "RS-09": {
                 "name": "Kolubara Administrative District",
                 "nativeName": "Колубарски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/COA_Ub.png"
             },
             "RS-08": {
                 "name": "Macva Administrative District",
                 "nativeName": "Мачвански управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Grb_Bogati%C4%87a.png/256px-Grb_Bogati%C4%87a.png"
             },
             "RS-17": {
                 "name": "Moravica Administrative District",
                 "nativeName": "Моравички управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Gornji-milanovac-grb.png"
             },
             "RS-20": {
                 "name": "Nisava Administrative District",
                 "nativeName": "Нишавски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Grb_Aleksinca.png"
             },
             "RS-24": {
                 "name": "Pcinja Administrative District",
                 "nativeName": "Пчињски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Grb_Vladi%C4%8Dinog_Hana.png"
             },
             "RS-22": {
                 "name": "Pirot Administrative District",
                 "nativeName": "Пиротски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Babusnica-grb.png"
             },
             "RS-10": {
                 "name": "Podunavlje Administrative District",
                 "nativeName": "Подунавски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/COA_Smederevska_Palanka.gif"
             },
             "RS-13": {
                 "name": "Pomoravlje Administrative District",
                 "nativeName": "Поморавски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/COA_Paracin.png"
             },
             "RS-19": {
                 "name": "Rasina Administrative District",
                 "nativeName": "Расински управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/COA_Trstenik.gif"
             },
             "RS-18": {
                 "name": "Raska Administrative District",
                 "nativeName": "Рашки управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/GrbTutina.jpg/256px-GrbTutina.jpg"
             },
             "RS-01": {
                 "name": "North Backa Administrative District",
                 "nativeName": "Севернобачки управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Backa-topola-grb.png"
             },
             "RS-03": {
                 "name": "North Banat Administrative District",
                 "nativeName": "Севернобанатски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kanjiza-grb.png"
             },
             "RS-02": {
                 "name": "Central Banat Administrative District",
                 "nativeName": "Средњобанатски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/COA_Zitiste.png"
             },
             "RS-07": {
                 "name": "Srem Administrative District",
                 "nativeName": "Сремски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Stara-pazova-grb.png"
             },
             "RS-12": {
                 "name": "Sumadija Administrative District",
                 "nativeName": "Шумадијски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/GrbOpsiteArandjelovac.gif"
             },
             "RS-21": {
                 "name": "Toplica Administrative District",
                 "nativeName": "Топлички управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Big_crest_of_Zitoradja.jpg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Grb_Kur%C5%A1umlije.png"
             },
             "RS-15": {
                 "name": "Zajecar Administrative District",
                 "nativeName": "Зајечарски управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/COA_zajecar.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Grb_Knja%C5%BEevca.png/240px-Grb_Knja%C5%BEevca.png"
             },
             "RS-05": {
                 "name": "West Backa Administrative District",
                 "nativeName": "Западнобачки управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/22/COA_Odzaci.png"
             },
             "RS-16": {
                 "name": "Zlatibor Administrative District",
                 "nativeName": "Златиборски управни округ",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Grb-Prijepolje_mali.gif"
             }
         },
         "nativeName": "Србија"
@@ -6107,7 +6108,7 @@
             "SA-02": {
                 "name": "Makkah Region",
                 "nativeName": "منطقة مكة المكرمة",
-                "flag": ""
+                "flag": "https://preview.redd.it/as6i9wohy9m81.png?width=3000&format=png&auto=webp&s=7fe38b71c7b6a67ed721777fe3b04f783bbf050b"
             },
             "SA-10": {
                 "name": "Najran Region",
