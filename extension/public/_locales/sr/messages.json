@@ -1,1 +1,11 @@
-{}
+{
+    "created_by": {
+        "message": "креирао {{developer}}"
+    },
+    "system_default": {
+        "message": "Подразумевани систем"
+    },
+    "native_language": {
+        "message": "Матерњи језик"
+    }
+}
