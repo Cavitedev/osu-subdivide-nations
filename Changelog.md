@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.5.4
+
+- Fix undefined name profile on new countries
+- Fixing some flags
+- Latest translations
+
 ## Version 3.5.3
 
 - New countries: Venezuela, Ecuador, Saudi Arabia, Serbia, Jamaica

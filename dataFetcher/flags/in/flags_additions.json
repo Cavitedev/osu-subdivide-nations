@@ -970,6 +970,7 @@
         }
     },
     "GR": {
+        "nativename": "Ελλάδα",
         "regions": {
             "GR-A": {
                 "flag": "https://upload.wikimedia.org/wikipedia/en/f/f8/Eastern_Macedonia_and_Thrace_logo.png"
@@ -1540,7 +1541,7 @@
     },
     "MX": {
         "name": "Mexico",
-        "nativeName": "Mēxihco",
+        "nativeName": "México",
         "regions": {
             "MX-CMX": {
                 "name": "Mexico",
@@ -1553,6 +1554,9 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_the_State_of_Mexico.svg/128px-Flag_of_the_State_of_Mexico.svg.png"
             }
         }
+    },
+    "MY":{
+        "nativeName": "Malaysia"
     },
     "NO": {
         "name": "Norway",
@@ -1718,7 +1722,7 @@
     },
     "PH": {
         "name": "Philippines",
-        "nativeName": "Philippines",
+        "nativeName": "Pilipinas",
         "regions": {
             "PH-14": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_Bangsamoro.svg"
@@ -2201,6 +2205,9 @@
             }
         }
     },
+    "TH":{
+        "nativeName": "ประเทศไทย"
+    },
     "TR": {
         "regions": {
             "TR-EGE": {
@@ -2343,6 +2350,7 @@
         }
     },
     "UA": {
+        "nativeName": "Україна",
         "regions": {
             "UA-23": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Flag_of_Zaporizhia_Oblast.svg/128px-Flag_of_Zaporizhia_Oblast.svg.png"
