@@ -214,5 +214,20 @@
     },
     "region_ie": {
         "message": "Провинция"
+    },
+    "region_ve": {
+        "message": "Штат"
+    },
+    "region_rs": {
+        "message": "Округ"
+    },
+    "region_za": {
+        "message": "Провинция"
+    },
+    "region_jm": {
+        "message": "Приход"
+    },
+    "region_sa": {
+        "message": "Округ"
     }
 }
