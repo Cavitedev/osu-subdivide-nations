@@ -1,1 +1,41 @@
-{}
+{
+    "appDesc": {
+        "message": "เพิ่มธงประจำท้องถิ่น (จังหวัด) ในหน้าเว็บ osu! ของคุณ\nและอัปเดตอันดับทั่วโลกบนหน้าโปรไฟล์"
+    },
+    "system_default": {
+        "message": "ค่าพื้นฐานของระบบ"
+    },
+    "native_language": {
+        "message": "ภาษาหลัก"
+    },
+    "clean_cache": {
+        "message": "ล้างแคช"
+    },
+    "cache_cleaned": {
+        "message": "ล้างแคชสำเร็จ"
+    },
+    "region_language": {
+        "message": "ภาษาที่ใช้แสดงชื่อจังหวัด/ท้องถิ่น"
+    },
+    "score_ranking": {
+        "message": "อันดับโดยคะแนน"
+    },
+    "region_ranking": {
+        "message": "อันดับในจังหวัด/ท้องถิ่น"
+    },
+    "highest_rank_profile": {
+        "message": "อันดับสูงสุด: #{{rankHighest.rank}} เมื่อวันที่ {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "อันดับ Kudosu"
+    },
+    "last_rank_update": {
+        "message": "อัปเดตอันดับล่าสุดเมื่อ {{formattedDate}}"
+    },
+    "settings": {
+        "message": "การตั้งค่า"
+    },
+    "website_settings": {
+        "message": "ตั้งค่า {{Website}}"
+    }
+}
