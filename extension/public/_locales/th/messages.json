@@ -1,6 +1,9 @@
 {
     "appDesc": {
-        "message": "เพิ่มธงประจำท้องถิ่น (จังหวัด) ในหน้าเว็บ osu! ของคุณ\nและอัปเดตอันดับทั่วโลกบนหน้าโปรไฟล์"
+        "message": "เพิ่มธงประจำท้องถิ่น (จังหวัด) ในหน้าเว็บ osu! ของคุณ\nและอัปเดตอันดับคะแนนทั่วโลกในโปรไฟล์"
+    },
+    "created_by": {
+        "message": "สร้างโดย {{developer}}"
     },
     "system_default": {
         "message": "ค่าพื้นฐานของระบบ"
@@ -24,7 +27,7 @@
         "message": "อันดับในจังหวัด/ท้องถิ่น"
     },
     "highest_rank_profile": {
-        "message": "อันดับสูงสุด: #{{rankHighest.rank}} เมื่อวันที่ {{formattedDate}}"
+        "message": "อันดับสูงสุด: #{{rankHighest.rank}} เมื่อ {{formattedDate}}"
     },
     "kudosu_ranking": {
         "message": "อันดับ Kudosu"
@@ -37,5 +40,35 @@
     },
     "website_settings": {
         "message": "ตั้งค่า {{Website}}"
+    },
+    "open_sidebar": {
+        "message": "เปิด Sidebar"
+    },
+    "score_ranking_desc": {
+        "message": "แสดงอันดับโดยคะแนนจาก {{respektive_api}} บนหน้าโปรไฟล์"
+    },
+    "respektive_api": {
+        "message": "Respektive's API"
+    },
+    "kudosu_ranking_desc": {
+        "message": "แสดงอันดับ Kudosu จาก {{hiviexd_api}} บนหน้าโปรไฟล์"
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd's API"
+    },
+    "region_ru": {
+        "message": "สาธารณรัฐ/มณฑล"
+    },
+    "region_au": {
+        "message": "มลรัฐ"
+    },
+    "region_cn": {
+        "message": "เขตปกครอง"
+    },
+    "region_jp": {
+        "message": "จังหวัด"
+    },
+    "region_my": {
+        "message": "รัฐ"
     }
 }
