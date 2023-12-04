@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.5.5
+
+- Fix Panevėžys County flag
+
 ## Version 3.5.4
 
 - Fix undefined name profile on new countries
