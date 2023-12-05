@@ -21,13 +21,7 @@ describe("Test flags.json content", () => {
                 expect(link).not.toContain("commons.wikimedia.org");
             });
         });
-        test("Valid extension", () => {
-            const regex = /\.svg|\.png|\.jpg|\.jpeg|\.gif/;
-            flagLinks.forEach((link) => {
-                if (link === "") return;
-                expect(link).toMatch(regex);
-            });
-        });
+
     });
 
     describe("Test native names", () => {

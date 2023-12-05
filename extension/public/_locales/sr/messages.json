@@ -90,7 +90,7 @@
         "message": "Регион"
     },
     "region_cn": {
-        "message": "Административни регион"
+        "message": "Управни Регион"
     },
     "region_co": {
         "message": "Департман"
@@ -219,7 +219,7 @@
         "message": "Држава"
     },
     "region_rs": {
-        "message": "Административни Округ"
+        "message": "Управни Округ"
     },
     "region_za": {
         "message": "Провинција"
