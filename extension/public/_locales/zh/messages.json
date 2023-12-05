@@ -208,5 +208,14 @@
     },
     "region_ie": {
         "message": "省份"
+    },
+    "region_ve": {
+        "message": "州份"
+    },
+    "region_za": {
+        "message": "省份"
+    },
+    "region_sa": {
+        "message": "省份"
     }
 }
