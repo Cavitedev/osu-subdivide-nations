@@ -212,8 +212,14 @@
     "region_ve": {
         "message": "州份"
     },
+    "region_rs": {
+        "message": "行政区"
+    },
     "region_za": {
         "message": "省份"
+    },
+    "region_jm": {
+        "message": "地区"
     },
     "region_sa": {
         "message": "省份"
