@@ -1555,7 +1555,7 @@
             }
         }
     },
-    "MY":{
+    "MY": {
         "nativeName": "Malaysia"
     },
     "NO": {
@@ -2154,26 +2154,33 @@
         }
     },
     "SG": {
+        "name": "Singapore",
+        "nativeName": "Singapura",
         "regions": {
             "SG-01": {
+                "name": "Central Singapore",
                 "nativeName": "Central Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c5/Flag_of_Central_Region,_Singapore.png"
+                "flag": "https://ue.s-ul.eu/JBioxeXx"
             },
             "SG-02": {
+                "name": "Northeast Singapore",
                 "nativeName": "Northeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b0/Flag_of_North-East_Region,_Singapore.png"
+                "flag": "https://ue.s-ul.eu/VpaZHtiC"
             },
             "SG-03": {
+                "name": "Northwest Singapore",
                 "nativeName": "Northwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6e/Flag_of_North_Region,_Singapore.png"
+                "flag": "https://ue.s-ul.eu/pH7Iup3O"
             },
             "SG-04": {
+                "name": "Southeast Singapore",
                 "nativeName": "Southeast Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b1/Flag_of_East_Region,_Singapore.png"
+                "flag": "https://ue.s-ul.eu/yeIsa6DQ"
             },
             "SG-05": {
+                "name": "Southwest Singapore",
                 "nativeName": "Southwest Singapore",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_West_Region,_Singapore.png"
+                "flag": "https://ue.s-ul.eu/aenZEe21"
             }
         }
     },
@@ -2205,7 +2212,7 @@
             }
         }
     },
-    "TH":{
+    "TH": {
         "nativeName": "ประเทศไทย"
     },
     "TR": {

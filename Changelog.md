@@ -1,5 +1,11 @@
 # Changelog
 
+
+## Version 3.5.6
+
+- Update Singapore flags. Thanks [ue](https://osu.ppy.sh/users/7537133)
+- Latest translations
+
 ## Version 3.5.5
 
 - Fix Panevėžys County flag
