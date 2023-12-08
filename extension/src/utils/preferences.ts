@@ -2,6 +2,7 @@ import browser from "webextension-polyfill";
 export type Tpreferences = {
     lang: string;
     darkMode: boolean;
+    regionRanking: boolean;
     scoreRanking: boolean;
     kudosuRanking: boolean;
 };
@@ -9,6 +10,7 @@ export type Tpreferences = {
 export let preferences: Tpreferences = {
     lang: "DEF",
     darkMode: true,
+    regionRanking: true,
     scoreRanking: true,
     kudosuRanking: false,
 };

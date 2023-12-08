@@ -92,6 +92,10 @@ const tagRanks = {
 
 const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank, tagRanks.kudosuRank];
 
+/**
+ * 
+ * @returns True if the rank is visisble. Same with other methods
+ */
 async function addRegionalRank(playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.regionalRank;
 
@@ -99,6 +103,9 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
 
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return true;
+
+    await waitPreferencesToLoad();
+    if (!preferences.regionRanking) return false;
 
     const osuWorldInfo = await osuWorldUser(playerId, mode);
     const playerData = osuWorldInfo.data;
@@ -115,11 +122,11 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
 
     const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
-    if (previousScoreSet) return false;
+    if (previousScoreSet) return true;
 
     const scoreRankInfo = await osuScoreRanking(playerId, mode);
     await waitPreferencesToLoad();
-    if (!preferences.scoreRanking) return true;
+    if (!preferences.scoreRanking) return false;
 
     // Abort after fetch to ensure it's cached
     if (!scoreRankInfo || signal?.aborted) return false;
