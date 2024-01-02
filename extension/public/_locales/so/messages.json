@@ -214,5 +214,20 @@
     },
     "region_ie": {
         "message": "Gobolka"
+    },
+    "region_ve": {
+        "message": "Gobolka"
+    },
+    "region_rs": {
+        "message": "Gobolka maamulka"
+    },
+    "region_za": {
+        "message": "Gobolka"
+    },
+    "region_jm": {
+        "message": "Gobolka"
+    },
+    "region_sa": {
+        "message": "Gobolka"
     }
 }

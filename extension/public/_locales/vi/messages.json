@@ -1,4 +1,10 @@
 {
+    "appDesc": {
+        "message": "Thêm cờ địa phương trên trang web osu!.\n Đồng thời cập nhật hạng điểm toàn cầu trên hồ sơ osu!."
+    },
+    "created_by": {
+        "message": "được tạo bởi {{developer}}"
+    },
     "system_default": {
         "message": "Mặc định hệ thống"
     },
@@ -17,7 +23,40 @@
     "score_ranking": {
         "message": "Xếp hạng điểm"
     },
+    "region_ranking": {
+        "message": "Hạng địa phương"
+    },
     "highest_rank_profile": {
         "message": "Hạng cao nhất: #{{rankHighest.rank}} vào {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "Hạng Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Cập nhật hạng lần cuối vào {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Cài đặt"
+    },
+    "website_settings": {
+        "message": "Cài đặt {{Website}}"
+    },
+    "about": {
+        "message": "Giới thiệu"
+    },
+    "open_sidebar": {
+        "message": "Mở thanh bên"
+    },
+    "score_ranking_desc": {
+        "message": "Hiển thị hạng điểm từ {{respektive_api}} trên hồ sơ osu!."
+    },
+    "respektive_api": {
+        "message": "API của Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Hiển thị hạng Kudosu từ {{hiviexd_api}} trên hồ sơ osu!."
+    },
+    "hiviexd_api": {
+        "message": "API của Hiviexd"
     }
 }
