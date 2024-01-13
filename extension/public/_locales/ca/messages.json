@@ -146,6 +146,9 @@
     "region_pe": {
         "message": "Regió"
     },
+    "region_ph": {
+        "message": "Regió"
+    },
     "region_pl": {
         "message": "Voivodat"
     },
@@ -210,6 +213,21 @@
         "message": "Comtat"
     },
     "region_ie": {
+        "message": "Província"
+    },
+    "region_ve": {
+        "message": "Estat"
+    },
+    "region_rs": {
+        "message": "Districte administratiu"
+    },
+    "region_za": {
+        "message": "Província"
+    },
+    "region_jm": {
+        "message": "Regió"
+    },
+    "region_sa": {
         "message": "Província"
     }
 }
