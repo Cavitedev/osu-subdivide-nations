@@ -147,7 +147,7 @@
         "message": "Región"
     },
     "region_ph": {
-        "message": "Regiones"
+        "message": "Región"
     },
     "region_pl": {
         "message": "Voivodato"
@@ -213,6 +213,21 @@
         "message": "Condado"
     },
     "region_ie": {
+        "message": "Provincia"
+    },
+    "region_ve": {
+        "message": "Estado"
+    },
+    "region_rs": {
+        "message": "Distrito administrativo"
+    },
+    "region_za": {
+        "message": "Provincia"
+    },
+    "region_jm": {
+        "message": "Región"
+    },
+    "region_sa": {
         "message": "Provincia"
     }
 }
