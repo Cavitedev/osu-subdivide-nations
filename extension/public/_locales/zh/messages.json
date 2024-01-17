@@ -18,7 +18,7 @@
         "message": "缓存已清理"
     },
     "region_language": {
-        "message": "地区语言"
+        "message": "地区语言："
     },
     "score_ranking": {
         "message": "分数排名"
@@ -50,8 +50,14 @@
     "score_ranking_desc": {
         "message": "在 osu! 个人资料上显示来自 {{respektive_api}} 的分数排名。"
     },
+    "respektive_api": {
+        "message": "Respektive 的 API"
+    },
     "kudosu_ranking_desc": {
         "message": "在 osu! 个人资料上显示来自 {{hiviexd_api}} 的Kudosu排名。"
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd 的 API"
     },
     "region": {
         "message": "地区"
@@ -207,6 +213,21 @@
         "message": "省"
     },
     "region_ie": {
+        "message": "省份"
+    },
+    "region_ve": {
+        "message": "州份"
+    },
+    "region_rs": {
+        "message": "行政区"
+    },
+    "region_za": {
+        "message": "省份"
+    },
+    "region_jm": {
+        "message": "地区"
+    },
+    "region_sa": {
         "message": "省份"
     }
 }

@@ -2,6 +2,9 @@
     "appDesc": {
         "message": "Menambahkan bendera regional pada halaman osu!\n Dan juga memperbarui skor global osu! pada profil."
     },
+    "created_by": {
+        "message": "dibuat oleh {{developer}}"
+    },
     "system_default": {
         "message": "Bawaan Sistem"
     },
@@ -19,6 +22,9 @@
     },
     "score_ranking": {
         "message": "Peringkat Skor"
+    },
+    "region_ranking": {
+        "message": "Peringkat Region"
     },
     "highest_rank_profile": {
         "message": "Peringkat tertinggi: #{{rankHighest.rank}} pada {{formattedDate}}"
