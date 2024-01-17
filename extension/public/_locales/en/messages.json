@@ -47,9 +47,6 @@
     "open_sidebar": {
         "message": "Open Sidebar"
     },
-    "region_ranking_desc": {
-        "message": "Displays region ranking from {{osu_world}} on osu! profiles."
-    },
     "score_ranking_desc": {
         "message": "Displays score ranking from {{respektive_api}} on osu! profiles."
     },
