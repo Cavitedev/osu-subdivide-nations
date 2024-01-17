@@ -1,6 +1,6 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 
-const path = require('path');
+import path from 'path';
 
 module.exports = {
   preset: 'ts-jest',
