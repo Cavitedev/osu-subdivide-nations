@@ -1519,7 +1519,7 @@
     "LT": {
         "regions": {
             "LT-PN": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Panevezys_County_flag.svg/290px-Panevezys_County_flag.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Panevezys_County_flag.svg"
             }
         }
     },
@@ -1587,20 +1587,35 @@
                 "nativeName": "Trøndelag",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Trøndelag_våpen.svg"
             },
-            "NO-38": {
-                "name": "Vestfold og Telemark",
-                "nativeName": "Vestfold og Telemark",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Vestfold_og_Telemark_våpen.svg"
+            "NO-31": {
+                "name": "Østfold",
+                "nativeName": "Østfold",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Østfold_våpen.svg"
             },
-            "NO-30": {
-                "name": "Viken",
-                "nativeName": "Viken",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_våpen.svg"
+            "NO-32": {
+                "name": "Akershus",
+                "nativeName": "Akershus",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Akershus_våpen.svg"
+            },
+            "NO-33": {
+                "name": "Buskerud",
+                "nativeName": "Buskerud",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Buskerud_våpen.svg"
             },
             "NO-34": {
                 "name": "Innlandet",
                 "nativeName": "Innlandet",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Innlandet_våpen.svg"
+            },
+            "NO-39": {
+                "name": "Vestfold",
+                "nativeName": "Vestfold",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Vestfold_våpen_2024.svg"
+            },
+            "NO-40": {
+                "name": "Telemark",
+                "nativeName": "Telemark",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Telemark_våpen_2024.svg"
             },
             "NO-42": {
                 "name": "Agder",
@@ -1611,6 +1626,26 @@
                 "name": "Vestland",
                 "nativeName": "Vestland",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vestland_våpen.svg"
+            },
+            "NO-55": {
+                "name": "Troms",
+                "nativeName": "Troms",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Troms_våpen.svg"
+            },
+            "NO-56": {
+                "name": "Finnmark",
+                "nativeName": "Finnmark",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/40/Finnmark_våpen.svg"
+            },
+            "NO-38": {
+                "name": "Vestfold og Telemark",
+                "nativeName": "Vestfold og Telemark",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Vestfold_og_Telemark_våpen.svg"
+            },
+            "NO-30": {
+                "name": "Viken",
+                "nativeName": "Viken",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Viken_våpen.svg"
             },
             "NO-54": {
                 "name": "Troms og Finnmark",
@@ -1989,7 +2024,7 @@
             "RS-08": {
                 "name": "Macva Administrative District",
                 "nativeName": "Мачвански управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Grb_Bogati%C4%87a.png/256px-Grb_Bogati%C4%87a.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Grb_Bogatića.png/256px-Grb_Bogatića.png"
             },
             "RS-17": {
                 "name": "Moravica Administrative District",
@@ -2004,7 +2039,7 @@
             "RS-24": {
                 "name": "Pcinja Administrative District",
                 "nativeName": "Пчињски управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Grb_Vladi%C4%8Dinog_Hana.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Grb_Vladičinog_Hana.png"
             },
             "RS-22": {
                 "name": "Pirot Administrative District",
@@ -2059,12 +2094,12 @@
             "RS-21": {
                 "name": "Toplica Administrative District",
                 "nativeName": "Топлички управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Grb_Kur%C5%A1umlije.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Grb_Kuršumlije.png"
             },
             "RS-15": {
                 "name": "Zajecar Administrative District",
                 "nativeName": "Зајечарски управни округ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Grb_Knja%C5%BEevca.png/240px-Grb_Knja%C5%BEevca.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Grb_Knjaževca.png/240px-Grb_Knjaževca.png"
             },
             "RS-05": {
                 "name": "West Backa Administrative District",
@@ -2366,6 +2401,11 @@
     },
     "US": {
         "regions": {
+            "US-MN": {
+                "name": "Minnesota",
+                "nativeName": "Minnesota",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Minnesota_(2023_redesign).svg"
+            },
             "US-WADC": {
                 "nativeName": "Washington, D.C.",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
@@ -2376,6 +2416,11 @@
         "regions": {
             "VE-W": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Federal_dependencies_of_Venezuela's_Flag.svg"
+            },
+            "VE-A": {
+                "name": "Capital District",
+                "nativeName": "Distrito Capital",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Bandera_del_Municipio_Libertador_de_Caracas_(desde_2022).png"
             }
         }
     },

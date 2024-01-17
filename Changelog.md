@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.6.0
+
+- Add option to filter regional ranking by country
+- Update flags such as Norway subdivision
+- Update dependencies
+- Latest translations
 
 ## Version 3.5.6
 
