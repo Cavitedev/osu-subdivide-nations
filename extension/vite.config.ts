@@ -2,8 +2,9 @@ import solidPlugin from "vite-plugin-solid";
 import { defineConfig } from "vite";
 import webExtension from "@samrum/vite-plugin-web-extension";
 import path from "path";
-import { TtargetBrowser, getManifest } from "./src/manifest";
+import { TtargetBrowser, getManifest } from "./src/manifest.js";
 import zipPack from "vite-plugin-zip-pack";
+
 
 // https://vitejs.dev/config/
 export default defineConfig(() => {

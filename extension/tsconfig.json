@@ -6,7 +6,7 @@
         "paths": {
             "@src/*": ["./src/*"]
         },
-        "moduleResolution": "node",
+        "moduleResolution": "Bundler",
         "lib": ["ES2022", "Dom", "DOM.Iterable"],
         "types": ["chrome"],
         "downlevelIteration": true,

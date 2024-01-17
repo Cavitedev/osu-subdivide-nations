@@ -68,7 +68,7 @@ const ManifestChromium = {
 
 export type TtargetBrowser = "chromium" | "firefox";
 
-export function getManifest(browserTarget: TtargetBrowser): chrome.runtime.ManifestV2 | chrome.runtime.ManifestV3 {
+export function getManifest(browserTarget: TtargetBrowser): any {
     const manifest = {
         author: pkg.author,
         description: pkg.description,
