@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "Abrir barra lateral"
     },
+    "region_ranking_desc": {
+        "message": "Muestra la clasificación por Kudosi de la {{osu_world}} en perfiles de osu!."
+    },
     "score_ranking_desc": {
         "message": "Muestra la clasificación por puntuación de la {{respektive_api}} en perfiles de osu!."
     },
