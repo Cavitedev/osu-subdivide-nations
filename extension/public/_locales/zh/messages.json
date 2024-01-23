@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "打开侧边栏"
     },
+    "region_ranking_desc": {
+        "message": "在 osu! 个人资料上显示来自 {{osu_world}} 的地区排名。"
+    },
     "score_ranking_desc": {
         "message": "在 osu! 个人资料上显示来自 {{respektive_api}} 的分数排名。"
     },
