@@ -41,8 +41,14 @@
     "website_settings": {
         "message": "ตั้งค่า {{Website}}"
     },
+    "about": {
+        "message": "เพิ่มเติม"
+    },
     "open_sidebar": {
         "message": "เปิด Sidebar"
+    },
+    "region_ranking_desc": {
+        "message": "แสดงอันดับพื้นที่จาก {{osu_world}} ในโปรไฟล์"
     },
     "score_ranking_desc": {
         "message": "แสดงอันดับโดยคะแนนจาก {{respektive_api}} บนหน้าโปรไฟล์"
@@ -56,11 +62,23 @@
     "hiviexd_api": {
         "message": "Hiviexd's API"
     },
+    "region": {
+        "message": "พื้นที่"
+    },
     "region_ru": {
         "message": "สาธารณรัฐ/มณฑล"
     },
+    "region_ar": {
+        "message": "จังหวัด"
+    },
+    "region_at": {
+        "message": "ที่อยู่"
+    },
     "region_au": {
         "message": "มลรัฐ"
+    },
+    "region_be": {
+        "message": "จังหวัด"
     },
     "region_cn": {
         "message": "เขตปกครอง"
