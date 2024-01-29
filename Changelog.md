@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.6.1
+
+- Update flags for latest version of osuworld where it adds 48 countries
+
 ## Version 3.6.0
 
 - Add option to filter regional ranking by country

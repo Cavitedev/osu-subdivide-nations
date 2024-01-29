@@ -1,4 +1,111 @@
 {
+    "AE": {
+        "name": "United Arab Emirates",
+        "nativeName": "Al-’Imārat Al-‘Arabiyyah Al-Muttaḥidah الإمارات العربيّة المتّحدة",
+        "regions": {
+            "AE-AZ": {
+                "name": "Emirate of Abu Dhabi",
+                "nativeName": "أبو ظبي",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_Abu_Dhabi.svg"
+            },
+            "AE-AJ": {
+                "name": "Emirate of Ajman",
+                "nativeName": "إمارة عجمان",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_of_Ajman.svg"
+            },
+            "AE-RK": {
+                "name": "Emirate of Ras Al Khaimah",
+                "nativeName": "رأس الخيمة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Flag_of_Sharjah_and_Ras_Al_Khaimah.svg"
+            },
+            "AE-SH": {
+                "name": "Emirate of Sharjah",
+                "nativeName": "الشارقة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Flag_of_Sharjah_and_Ras_Al_Khaimah.svg"
+            },
+            "AE-UQ": {
+                "name": "Emirate of Umm Al Quwain",
+                "nativeName": "أم القيوين",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Umm_al-Qaiwain.svg"
+            },
+            "AE-FU": {
+                "name": "Fujairah Emirate",
+                "nativeName": "فجيرة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"
+            },
+            "AE-DU": {
+                "name": "Dubai",
+                "nativeName": "دبي",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Dubai.svg"
+            }
+        }
+    },
+    "AL": {
+        "name": "Albania",
+        "nativeName": "Shqipëria",
+        "regions": {
+            "AL-01": {
+                "name": "Berat County",
+                "nativeName": "Qarku i Beratit",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Berat.svg"
+            },
+            "AL-02": {
+                "name": "Durrës County",
+                "nativeName": "Qarku i Durrësit",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_Durrës.svg"
+            },
+            "AL-03": {
+                "name": "Elbasan County",
+                "nativeName": "Qarku i Elbasanit",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Elbasan.svg"
+            },
+            "AL-06": {
+                "name": "Korçë County",
+                "nativeName": "Qarku i Korçës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_Korçë.svg"
+            },
+            "AL-07": {
+                "name": "Kukës County",
+                "nativeName": "Qarku i Kukësit",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Flag_of_Kukës.svg"
+            },
+            "AL-11": {
+                "name": "Tirana County",
+                "nativeName": "Qarku i Tiranës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Tiranë.svg"
+            },
+            "AL-12": {
+                "name": "Vlorë County",
+                "nativeName": "Qarku i Vlorës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Vlorë.svg"
+            },
+            "AL-09": {
+                "name": "Dibër County",
+                "nativeName": "Qarku i Dibrës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/69/ALB_Qarku_i_Dibrës_COA.png"
+            },
+            "AL-04": {
+                "name": "Fier County",
+                "nativeName": "Qarku i Fierit",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Stema_e_Qarkut_Fier.svg"
+            },
+            "AL-05": {
+                "name": "Gjirokastër County",
+                "nativeName": "Qarku i Gjirokastrës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Stema_e_Qarkut_Gjirokastër.svg"
+            },
+            "AL-08": {
+                "name": "Lezhë County",
+                "nativeName": "Qarku i Lezhës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Stema_e_Qarkut_Lezhë.svg"
+            },
+            "AL-10": {
+                "name": "Shkodër County",
+                "nativeName": "Qarku i Shkodrës",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Stema_e_Qarkut_Shkodër.svg/128px-Stema_e_Qarkut_Shkodër.svg.png"
+            }
+        }
+    },
     "AR": {
         "regions": {
             "AR-A": {
@@ -1349,6 +1456,52 @@
             }
         }
     },
+    "IS": {
+        "name": "Iceland",
+        "nativeName": "Ísland",
+        "regions": {
+            "IS-7": {
+                "name": "Eastern Region",
+                "nativeName": "Austurland",
+                "flag": "https://upload.wikimedia.org/wikipedia/is/9/94/Múlaþing.PNG"
+            },
+            "IS-1": {
+                "name": "Capital Region",
+                "nativeName": "Höfuðborgarsvæðið",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Flag_of_Reykjavik,_Iceland.svg"
+            },
+            "IS-6": {
+                "name": "Northeastern Region",
+                "nativeName": "Norðurland eystra",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Akureyri.gif"
+            },
+            "IS-5": {
+                "name": "Northwestern Region",
+                "nativeName": "Norðurland vestra",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Skagafjórður.gif"
+            },
+            "IS-8": {
+                "name": "Southern Region",
+                "nativeName": "Suðurland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Arborg.gif"
+            },
+            "IS-2": {
+                "name": "Southern Peninsula",
+                "nativeName": "Suðurnes",
+                "flag": "https://en.wikipedia.org/wiki/Reykjanesbær#/media/File:Reykjanesbær_Coat.svg"
+            },
+            "IS-4": {
+                "name": "Westfjords",
+                "nativeName": "Vestfirðir",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_Isafjarðarbær.gif"
+            },
+            "IS-3": {
+                "name": "Western Region",
+                "nativeName": "Vesturland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Akranes.gif"
+            }
+        }
+    },
     "IT": {
         "name": "Italy",
         "nativeName": "Italia",
@@ -2244,6 +2397,107 @@
             },
             "SK-ZI": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Zilinsky_vlajka.svg"
+            }
+        }
+    },
+    "SO": {
+        "name": "Somalia",
+        "nativeName": "Soomaaliya aş-Şūmāl",
+        "regions": {
+            "SO-BN": {
+                "name": "Banaadir",
+                "nativeName": "Banaadir بنادر",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_Mogadishu,_Somalia.svg"
+            },
+            "SO-AW": {
+                "name": "Awdal",
+                "nativeName": "عدل Awdal",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/72/Flag_of_Awdal.svg/revision/latest?cb=20230418220239"
+            },
+            "SO-BK": {
+                "name": "Bakool",
+                "nativeName": "Bakool باكول",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2c/Flag_of_Bakool.svg/revision/latest?cb=20230418233121"
+            },
+            "SO-BR": {
+                "name": "Bari",
+                "nativeName": "Bariباري",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6c/Flag_of_Bari,_Somalia.svg/revision/latest?cb=20230418234536"
+            },
+            "SO-BY": {
+                "name": "Bay",
+                "nativeName": "Bay باي",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/40/Flag_of_Bay,_Somalia.svg/revision/latest?cb=20230419071220"
+            },
+            "SO-GA": {
+                "name": "Galgaduud",
+                "nativeName": "Galgaduud جلجدود",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f9/Gedo_Flag.png/revision/latest?cb=20230419100359"
+            },
+            "SO-GE": {
+                "name": "Gedo",
+                "nativeName": "Gedo جدو",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f9/Gedo_Flag.png/revision/latest?cb=20230419100359"
+            },
+            "SO-HI": {
+                "name": "Hiiraan",
+                "nativeName": "Hiiraan هيران",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/09/Flag_of_Hiran,_Somalia.svg/revision/latest?cb=20230418220123"
+            },
+            "SO-JD": {
+                "name": "Middle Juba",
+                "nativeName": "Jubbada Dhexe جوبا الوسطى",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/04/Flag_of_Middle_Juba.svg/revision/latest?cb=20230419094837"
+            },
+            "SO-JH": {
+                "name": "Lower Juba",
+                "nativeName": "Jubbada Hoose جوبا السفلى",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Flag_of_Lower_Juba.svg/revision/latest?cb=20230419094854"
+            },
+            "SO-MU": {
+                "name": "Mudug",
+                "nativeName": "Mudug مدج",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/7d/Flag_of_Mudug.svg/revision/latest?cb=20230419071230"
+            },
+            "SO-NU": {
+                "name": "Nugaal",
+                "nativeName": "Nugaal نوجال",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/ca/Flag_of_Nugal,_Somalia.svg/revision/latest?cb=20230419094846"
+            },
+            "SO-SX": {
+                "name": "Sahil",
+                "nativeName": "Saaxil ساحل",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9d/Flag_of_Sahil,_Somaliland.svg/revision/latest?cb=20230418220250"
+            },
+            "SO-SA": {
+                "name": "Sanaag",
+                "nativeName": "سناج Sanaag",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bb/Flag_of_Sanaag.svg/revision/latest?cb=20230418220133"
+            },
+            "SO-SD": {
+                "name": "Middle Shebelle",
+                "nativeName": "Shabeellaha Dhexe شبيلي الوسطى",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Flag_of_Middle_Shabelle.svg/revision/latest?cb=20230419094827"
+            },
+            "SO-SH": {
+                "name": "Lower Shabelle",
+                "nativeName": "Shabeellaha Hoose شبيلي السفلى",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/5b/Flag_of_Lower_Shabelle.svg/revision/latest?cb=20230419064948"
+            },
+            "SO-SO": {
+                "name": "Sool",
+                "nativeName": "Sool سول",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/21/Flag_of_Togdheer.svg/revision/latest?cb=20230418220300"
+            },
+            "SO-TO": {
+                "name": "Togdheer",
+                "nativeName": "توجدير Togdheer",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/21/Flag_of_Togdheer.svg/revision/latest?cb=20230418220300"
+            },
+            "SO-WO": {
+                "name": "Woqooyi Galbeed",
+                "nativeName": "وقويي جالبيد Woqooyi Galbeed",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Flag_of_Somaliland.svg/revision/latest?cb=20200812174501"
             }
         }
     },
