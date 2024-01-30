@@ -343,5 +343,41 @@
     },
     "region_mk": {
         "message": "Статистический регион"
+    },
+    "region_om": {
+        "message": "Мухафаза"
+    },
+    "region_pk": {
+        "message": "Провинция"
+    },
+    "region_py": {
+        "message": "Департамент"
+    },
+    "region_qa": {
+        "message": "Муниципалитет"
+    },
+    "region_si": {
+        "message": "Статистический регион"
+    },
+    "region_so": {
+        "message": "Регион"
+    },
+    "region_lk": {
+        "message": "Провинция"
+    },
+    "region_tt": {
+        "message": "Регион / Боро / Город"
+    },
+    "region_tn": {
+        "message": "Вилайет"
+    },
+    "region_ae": {
+        "message": "Эмират"
+    },
+    "region_uy": {
+        "message": "Департамент"
+    },
+    "region_uz": {
+        "message": "Область"
     }
 }
