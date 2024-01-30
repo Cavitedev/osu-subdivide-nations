@@ -272,6 +272,9 @@
     "region_bf": {
         "message": "大区"
     },
+    "region_cv": {
+        "message": "岛屿"
+    },
     "region_kh": {
         "message": "省份"
     },
@@ -332,6 +335,9 @@
     "region_mm": {
         "message": "地区"
     },
+    "region_np": {
+        "message": "省份"
+    },
     "region_ni": {
         "message": "省份"
     },
@@ -358,6 +364,9 @@
     },
     "region_lk": {
         "message": "省份"
+    },
+    "region_tt": {
+        "message": "地区"
     },
     "region_tn": {
         "message": "省份"
