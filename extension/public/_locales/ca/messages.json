@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "Obrir barra lateral"
     },
+    "region_ranking_desc": {
+        "message": "Mostra la classificació regional de l'{{osu_world}} en els perfils d'osu!"
+    },
     "score_ranking_desc": {
         "message": "Mostra la classificació per puntuació de l'{{respektive_api}} en perfils d'osu!"
     },
@@ -229,5 +232,152 @@
     },
     "region_sa": {
         "message": "Província"
+    },
+    "region_af": {
+        "message": "Província"
+    },
+    "region_al": {
+        "message": "Comtat"
+    },
+    "region_dz": {
+        "message": "Província"
+    },
+    "region_ad": {
+        "message": "Parròquia"
+    },
+    "region_ao": {
+        "message": "Província"
+    },
+    "region_am": {
+        "message": "Marz"
+    },
+    "region_bh": {
+        "message": "Governació"
+    },
+    "region_bd": {
+        "message": "Divisió"
+    },
+    "region_bb": {
+        "message": "Parròquia"
+    },
+    "region_bo": {
+        "message": "Departament"
+    },
+    "region_ba": {
+        "message": "Regió"
+    },
+    "region_bn": {
+        "message": "Districte"
+    },
+    "region_bf": {
+        "message": "Regió"
+    },
+    "region_cv": {
+        "message": "Illa"
+    },
+    "region_kh": {
+        "message": "Província"
+    },
+    "region_cr": {
+        "message": "Província"
+    },
+    "region_hr": {
+        "message": "Comtat"
+    },
+    "region_do": {
+        "message": "Província"
+    },
+    "region_eg": {
+        "message": "Governació"
+    },
+    "region_sv": {
+        "message": "Departament"
+    },
+    "region_ge": {
+        "message": "Regió"
+    },
+    "region_gt": {
+        "message": "Departament"
+    },
+    "region_hn": {
+        "message": "Departament"
+    },
+    "region_is": {
+        "message": "Regió"
+    },
+    "region_iq": {
+        "message": "Governació"
+    },
+    "region_jo": {
+        "message": "Governació"
+    },
+    "region_kw": {
+        "message": "Governació"
+    },
+    "region_kg": {
+        "message": "Regió"
+    },
+    "region_la": {
+        "message": "Província"
+    },
+    "region_lb": {
+        "message": "Governació"
+    },
+    "region_lu": {
+        "message": "Cantó"
+    },
+    "region_mn": {
+        "message": "Província"
+    },
+    "region_ma": {
+        "message": "Regió"
+    },
+    "region_mm": {
+        "message": "Regió / Estat"
+    },
+    "region_np": {
+        "message": "Província"
+    },
+    "region_ni": {
+        "message": "Departament"
+    },
+    "region_mk": {
+        "message": "Regions estadístiques"
+    },
+    "region_om": {
+        "message": "Governació"
+    },
+    "region_pk": {
+        "message": "Província"
+    },
+    "region_py": {
+        "message": "Departament"
+    },
+    "region_qa": {
+        "message": "Municipi"
+    },
+    "region_si": {
+        "message": "Regions estadístiques"
+    },
+    "region_so": {
+        "message": "Regió"
+    },
+    "region_lk": {
+        "message": "Província"
+    },
+    "region_tt": {
+        "message": "Regió / Municipi"
+    },
+    "region_tn": {
+        "message": "Governació"
+    },
+    "region_ae": {
+        "message": "Emirat"
+    },
+    "region_uy": {
+        "message": "Departament"
+    },
+    "region_uz": {
+        "message": "Regió"
     }
 }
