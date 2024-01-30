@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "Apri Barra laterale"
     },
+    "region_ranking_desc": {
+        "message": "Mostra classifica regionale da {{osu_world}} sui profili osu!"
+    },
     "score_ranking_desc": {
         "message": "Mostra classifica dello score da {{respektive_api}} sui profili osu!"
     },
@@ -213,6 +216,21 @@
         "message": "Contea"
     },
     "region_ie": {
+        "message": "Provincia"
+    },
+    "region_ve": {
+        "message": "Stato"
+    },
+    "region_rs": {
+        "message": "Distretto Amministrativo"
+    },
+    "region_za": {
+        "message": "Provincia"
+    },
+    "region_jm": {
+        "message": "Regione"
+    },
+    "region_sa": {
         "message": "Provincia"
     }
 }

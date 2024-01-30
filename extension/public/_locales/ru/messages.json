@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "Открыть боковую панель"
     },
+    "region_ranking_desc": {
+        "message": "Отображение рейтинга в регионе в профиле osu! через сайт {{osu_world}}."
+    },
     "score_ranking_desc": {
         "message": "Отображение рейтинга по очкам в профиле osu!, используя {{respektive_api}}."
     },
