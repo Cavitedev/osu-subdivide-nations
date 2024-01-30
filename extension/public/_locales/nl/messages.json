@@ -108,12 +108,15 @@
         "message": "Staat"
     },
     "region_nl": {
-        "message": "Provincie"
+        "message": "Prefectuur"
     },
     "region_no": {
         "message": "Land"
     },
     "region_pe": {
+        "message": "Regio"
+    },
+    "region_ph": {
         "message": "Regio"
     },
     "region_pl": {
@@ -162,7 +165,7 @@
         "message": "Regio"
     },
     "region_ee": {
-        "message": "Maakond"
+        "message": "Moedertaal"
     },
     "region_bg": {
         "message": "Provincie"
@@ -171,9 +174,18 @@
         "message": "Regio"
     },
     "region_gb": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_ie": {
+        "message": "Land"
+    },
+    "region_za": {
+        "message": "Provincie"
+    },
+    "region_jm": {
+        "message": "Regio"
+    },
+    "region_sa": {
         "message": "Provincie"
     }
 }
