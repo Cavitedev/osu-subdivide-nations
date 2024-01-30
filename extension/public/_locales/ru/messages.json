@@ -232,5 +232,116 @@
     },
     "region_sa": {
         "message": "Округ"
+    },
+    "region_af": {
+        "message": "Провинция"
+    },
+    "region_al": {
+        "message": "Область"
+    },
+    "region_dz": {
+        "message": "Вилайя"
+    },
+    "region_ad": {
+        "message": "Паррокия"
+    },
+    "region_ao": {
+        "message": "Провинция"
+    },
+    "region_am": {
+        "message": "Область"
+    },
+    "region_bh": {
+        "message": "Мухафаза"
+    },
+    "region_bd": {
+        "message": "Область"
+    },
+    "region_bb": {
+        "message": "Приход"
+    },
+    "region_bo": {
+        "message": "Департамент"
+    },
+    "region_ba": {
+        "message": "Энтитет / Округ"
+    },
+    "region_bn": {
+        "message": "Округ"
+    },
+    "region_bf": {
+        "message": "Область"
+    },
+    "region_cv": {
+        "message": "Остров"
+    },
+    "region_kh": {
+        "message": "Провинция"
+    },
+    "region_cr": {
+        "message": "Провинция"
+    },
+    "region_hr": {
+        "message": "Жупания"
+    },
+    "region_do": {
+        "message": "Провинция"
+    },
+    "region_eg": {
+        "message": "Мухафаза"
+    },
+    "region_sv": {
+        "message": "Департамент"
+    },
+    "region_ge": {
+        "message": "Край"
+    },
+    "region_gt": {
+        "message": "Департамент"
+    },
+    "region_hn": {
+        "message": "Департамент"
+    },
+    "region_is": {
+        "message": "Регион"
+    },
+    "region_iq": {
+        "message": "Мухафаза"
+    },
+    "region_jo": {
+        "message": "Мухафаза"
+    },
+    "region_kw": {
+        "message": "Мухафаза"
+    },
+    "region_kg": {
+        "message": "Область / Город"
+    },
+    "region_la": {
+        "message": "Провинция"
+    },
+    "region_lb": {
+        "message": "Мухафаза"
+    },
+    "region_lu": {
+        "message": "Кантон"
+    },
+    "region_mn": {
+        "message": "Аймак"
+    },
+    "region_ma": {
+        "message": "Область"
+    },
+    "region_mm": {
+        "message": "Округ / Штат"
+    },
+    "region_np": {
+        "message": "Провинция"
+    },
+    "region_ni": {
+        "message": "Департамент"
+    },
+    "region_mk": {
+        "message": "Статистический регион"
     }
 }
