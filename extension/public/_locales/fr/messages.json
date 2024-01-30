@@ -80,6 +80,9 @@
     "region_pe": {
         "message": "Région"
     },
+    "region_ph": {
+        "message": "Région"
+    },
     "region_pt": {
         "message": "Région"
     },
@@ -102,6 +105,12 @@
         "message": "Région"
     },
     "region_sk": {
+        "message": "Région"
+    },
+    "region_ve": {
+        "message": "État"
+    },
+    "region_jm": {
         "message": "Région"
     }
 }
