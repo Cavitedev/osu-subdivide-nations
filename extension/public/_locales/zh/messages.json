@@ -150,7 +150,7 @@
         "message": "地区"
     },
     "region_ph": {
-        "message": "大区"
+        "message": "地区"
     },
     "region_pl": {
         "message": "省份"
@@ -189,7 +189,7 @@
         "message": "地区"
     },
     "region_il": {
-        "message": "区"
+        "message": "大区"
     },
     "region_nz": {
         "message": "地区"
@@ -213,13 +213,13 @@
         "message": "地区"
     },
     "region_gb": {
-        "message": "省"
+        "message": "县"
     },
     "region_ie": {
         "message": "省份"
     },
     "region_ve": {
-        "message": "州份"
+        "message": "州"
     },
     "region_rs": {
         "message": "行政区"
