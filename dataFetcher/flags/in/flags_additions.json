@@ -1,4 +1,45 @@
 {
+    "AD": {
+        "name": "Andorra",
+        "nativeName": "Andorra",
+        "regions": {
+            "AD-07": {
+                "name": "Andorra la Vella",
+                "nativeName": "Andorra la Vella",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Andorra_la_Vella.svg"
+            },
+            "AD-02": {
+                "name": "Canillo",
+                "nativeName": "Canillo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Canillo.svg"
+            },
+            "AD-03": {
+                "name": "Encamp",
+                "nativeName": "Encamp",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Encamp.svg"
+            },
+            "AD-08": {
+                "name": "Escaldes-Engordany",
+                "nativeName": "Escaldes-Engordany",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bandera_de_Escaldes-Engordany.svg//128px-Bandera_de_Escaldes-Engordany.svg.png"
+            },
+            "AD-04": {
+                "name": "La Massana",
+                "nativeName": "La Massana",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_La_Massana.svg//128px-Flag_of_La_Massana.svg.png"
+            },
+            "AD-05": {
+                "name": "Ordino",
+                "nativeName": "Ordino",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flag_of_Ordino.svg//128px-Flag_of_Ordino.svg.png"
+            },
+            "AD-06": {
+                "name": "Sant Julia de Loria",
+                "nativeName": "Sant Julià de Lòria",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bandera_de_San_Juli%C3%A1n_de_Loria.svg"
+            }
+        }
+    },
     "AE": {
         "name": "United Arab Emirates",
         "nativeName": "Al-’Imārat Al-‘Arabiyyah Al-Muttaḥidah الإمارات العربيّة المتّحدة",
@@ -161,6 +202,27 @@
             }
         }
     },
+    "BA": {
+        "name": "Bosnia and Herzegovina",
+        "nativeName": "Bosnia I Hercegovína",
+        "regions": {
+            "BA-SRP": {
+                "name": "Republika Srpska",
+                "nativeName": "Република Српска ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/61/Flag_of_the_Republika_Srpska.svg"
+            },
+            "BA-BRC": {
+                "name": "Brčko District",
+                "nativeName": "Brčko distrikt",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"
+            },
+            "BA-BIH": {
+                "name": "Federation of Bosnia and Herzegovina",
+                "nativeName": "Federacija Bosne i Hercegovine",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_the_Federation_of_Bosnia_and_Herzegovina_%281996%E2%80%932007%29.svg"
+            }
+        }
+    },
     "BG": {
         "name": "Bulgaria",
         "nativeName": "България",
@@ -253,6 +315,33 @@
             }
         }
     },
+    "BH": 
+    {
+            "name": "Bahrain",
+            "nativeName": "البحرينAl-Bahrayn",
+            "regions": {
+                "BH-13": {
+                    "name": "Capital",
+                    "nativeName": "محافظة العاصمة",
+                    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bahrain_Capital_Governorate_Flag.svg"
+                },
+                "BH-15": {
+                    "name": "Muharraq",
+                    "nativeName": "محافظة المحرق",
+                    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bahrain_Muharraq_Governorate_Flag.svg"
+                },
+                "BH-14": {
+                    "name": "Southern Governorate",
+                    "nativeName": "المحافظة الجنوبية",
+                    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bahrain_Southern_Governorate_Flag.svg"
+                },
+                "BH-17": {
+                    "name": "Northern Governorate",
+                    "nativeName": "المحافظة الشمالية",
+                    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Bahrain_Northern_Governorate_Flag.svg"
+                }
+            }
+        },
     "BR": {
         "regions": {
             "BR-RN": {
