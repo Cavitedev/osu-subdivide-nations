@@ -54,13 +54,13 @@
         "message": "Stan"
     },
     "region_by": {
-        "message": "Prowincja"
+        "message": "Komitat"
     },
     "region_cn": {
         "message": "Region Administracyjny"
     },
     "region_co": {
-        "message": "Departament"
+        "message": "Prowincja"
     },
     "region_de": {
         "message": "Stan"
@@ -75,7 +75,7 @@
         "message": "Prefektura"
     },
     "region_mx": {
-        "message": "Stan"
+        "message": "Język natywny"
     },
     "region_my": {
         "message": "Stan"
@@ -87,7 +87,7 @@
         "message": "Prowincja"
     },
     "region_ua": {
-        "message": "Prowincja"
+        "message": "Komitat"
     },
     "region_us": {
         "message": "Prowincja"
@@ -100,5 +100,29 @@
     },
     "region_rs": {
         "message": "Prowincja"
+    },
+    "region_bd": {
+        "message": "Prowincja"
+    },
+    "region_bo": {
+        "message": "Prowincja"
+    },
+    "region_bn": {
+        "message": "Prowincja"
+    },
+    "region_sv": {
+        "message": "Prowincja"
+    },
+    "region_gt": {
+        "message": "Prefektura"
+    },
+    "region_hn": {
+        "message": "Dystrykt"
+    },
+    "region_ni": {
+        "message": "Departament"
+    },
+    "region_uy": {
+        "message": "Prefektura"
     }
 }
