@@ -112,5 +112,20 @@
     },
     "region_jm": {
         "message": "Région"
+    },
+    "region_bo": {
+        "message": "Département"
+    },
+    "region_ge": {
+        "message": "Région"
+    },
+    "region_is": {
+        "message": "Région"
+    },
+    "region_so": {
+        "message": "Région"
+    },
+    "region_uz": {
+        "message": "Région"
     }
 }
