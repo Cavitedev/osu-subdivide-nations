@@ -88,5 +88,14 @@
     },
     "region_ie": {
         "message": "国"
+    },
+    "region_ve": {
+        "message": "州"
+    },
+    "region_za": {
+        "message": "国"
+    },
+    "region_sa": {
+        "message": "国"
     }
 }
