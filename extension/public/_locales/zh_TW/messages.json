@@ -50,6 +50,9 @@
     "region_cn": {
         "message": "行政區"
     },
+    "region_cz": {
+        "message": "系統預設"
+    },
     "region_es": {
         "message": "自治區"
     },
@@ -59,6 +62,9 @@
     "region_jp": {
         "message": "地區"
     },
+    "region_nl": {
+        "message": "地區"
+    },
     "region_sg": {
         "message": "打開側邊欄"
     },
@@ -66,6 +72,21 @@
         "message": "行政區"
     },
     "region_il": {
+        "message": "打開側邊欄"
+    },
+    "region_bg": {
+        "message": "行政區"
+    },
+    "region_ie": {
+        "message": "行政區"
+    },
+    "region_bn": {
         "message": "自治區"
+    },
+    "region_qa": {
+        "message": "自治區"
+    },
+    "region_uz": {
+        "message": "系統預設"
     }
 }
