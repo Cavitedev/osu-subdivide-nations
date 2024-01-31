@@ -70,5 +70,14 @@
     },
     "region_jm": {
         "message": "Bölge"
+    },
+    "region_bf": {
+        "message": "Bölge"
+    },
+    "region_so": {
+        "message": "Bölge"
+    },
+    "region_uz": {
+        "message": "Bölge"
     }
 }
