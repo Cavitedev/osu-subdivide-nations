@@ -232,5 +232,29 @@
     },
     "region_sa": {
         "message": "Provincia"
+    },
+    "region_bn": {
+        "message": "Distrito"
+    },
+    "region_hr": {
+        "message": "Condado"
+    },
+    "region_la": {
+        "message": "Provincia"
+    },
+    "region_np": {
+        "message": "Provincia"
+    },
+    "region_ni": {
+        "message": "Departamento"
+    },
+    "region_pk": {
+        "message": "Provincia"
+    },
+    "region_so": {
+        "message": "Región"
+    },
+    "region_uz": {
+        "message": "Región"
     }
 }
