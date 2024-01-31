@@ -78,15 +78,39 @@
         "message": "มลรัฐ"
     },
     "region_be": {
-        "message": "จังหวัด"
+        "message": "เพิ่มเติม"
     },
     "region_cn": {
         "message": "เขตปกครอง"
     },
+    "region_de": {
+        "message": "มลรัฐ"
+    },
     "region_jp": {
-        "message": "จังหวัด"
+        "message": "ที่อยู่"
     },
     "region_my": {
         "message": "รัฐ"
+    },
+    "region_th": {
+        "message": "ภาษาที่ใช้แสดงชื่อจังหวัด/ท้องถิ่น"
+    },
+    "region_bg": {
+        "message": "จังหวัด"
+    },
+    "region_ie": {
+        "message": "จังหวัด"
+    },
+    "region_ve": {
+        "message": "รัฐ"
+    },
+    "region_rs": {
+        "message": "เขตปกครอง"
+    },
+    "region_jm": {
+        "message": "พื้นที่"
+    },
+    "region_sa": {
+        "message": "จังหวัด"
     }
 }

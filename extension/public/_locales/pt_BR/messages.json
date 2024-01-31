@@ -84,13 +84,13 @@
         "message": "Prefeitura"
     },
     "region_id": {
-        "message": "Província"
+        "message": "Cantão"
     },
     "region_it": {
         "message": "Região"
     },
     "region_jp": {
-        "message": "Cantão"
+        "message": "Maakond"
     },
     "region_kr": {
         "message": "Província"
@@ -116,6 +116,9 @@
     "region_pe": {
         "message": "Região"
     },
+    "region_ph": {
+        "message": "Região"
+    },
     "region_pl": {
         "message": "Voivodia"
     },
@@ -123,10 +126,10 @@
         "message": "Região"
     },
     "region_ro": {
-        "message": "Condado"
+        "message": "Cantão"
     },
     "region_se": {
-        "message": "Condado"
+        "message": "Prefeitura"
     },
     "region_sg": {
         "message": "Distrito"
@@ -168,7 +171,7 @@
         "message": "Cantão"
     },
     "region_bg": {
-        "message": "Província"
+        "message": "Cantão"
     },
     "region_sk": {
         "message": "Região"
@@ -177,6 +180,18 @@
         "message": "Condado"
     },
     "region_ie": {
+        "message": "Província"
+    },
+    "region_ve": {
+        "message": "Estado"
+    },
+    "region_za": {
+        "message": "Província"
+    },
+    "region_jm": {
+        "message": "Região"
+    },
+    "region_sa": {
         "message": "Província"
     }
 }

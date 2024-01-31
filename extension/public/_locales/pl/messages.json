@@ -29,6 +29,12 @@
     "highest_rank_profile": {
         "message": "Najwyższa pozycja: #{{rankHighest.rank}} z {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Komitat"
+    },
+    "last_rank_update": {
+        "message": "Prefektura"
+    },
     "region": {
         "message": "Region"
     },
@@ -75,7 +81,7 @@
         "message": "Stan"
     },
     "region_pl": {
-        "message": "Prowincja"
+        "message": "Język natywny"
     },
     "region_sg": {
         "message": "Prowincja"
@@ -84,9 +90,15 @@
         "message": "Prowincja"
     },
     "region_us": {
-        "message": "Stan"
+        "message": "Prowincja"
     },
     "region_il": {
+        "message": "Prowincja"
+    },
+    "region_ve": {
+        "message": "Stan"
+    },
+    "region_rs": {
         "message": "Prowincja"
     }
 }
