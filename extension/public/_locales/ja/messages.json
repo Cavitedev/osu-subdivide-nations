@@ -97,5 +97,32 @@
     },
     "region_sa": {
         "message": "国"
+    },
+    "region_af": {
+        "message": "国"
+    },
+    "region_dz": {
+        "message": "国"
+    },
+    "region_ao": {
+        "message": "国"
+    },
+    "region_cr": {
+        "message": "国"
+    },
+    "region_do": {
+        "message": "国"
+    },
+    "region_la": {
+        "message": "国"
+    },
+    "region_mn": {
+        "message": "国"
+    },
+    "region_np": {
+        "message": "国"
+    },
+    "region_lk": {
+        "message": "国"
     }
 }
