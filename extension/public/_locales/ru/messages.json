@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "Открыть боковую панель"
     },
+    "region_ranking_desc": {
+        "message": "Отображение рейтинга в регионе в профиле osu! через сайт {{osu_world}}."
+    },
     "score_ranking_desc": {
         "message": "Отображение рейтинга по очкам в профиле osu!, используя {{respektive_api}}."
     },
@@ -229,5 +232,152 @@
     },
     "region_sa": {
         "message": "Округ"
+    },
+    "region_af": {
+        "message": "Провинция"
+    },
+    "region_al": {
+        "message": "Область"
+    },
+    "region_dz": {
+        "message": "Вилайя"
+    },
+    "region_ad": {
+        "message": "Паррокия"
+    },
+    "region_ao": {
+        "message": "Провинция"
+    },
+    "region_am": {
+        "message": "Область"
+    },
+    "region_bh": {
+        "message": "Мухафаза"
+    },
+    "region_bd": {
+        "message": "Область"
+    },
+    "region_bb": {
+        "message": "Приход"
+    },
+    "region_bo": {
+        "message": "Департамент"
+    },
+    "region_ba": {
+        "message": "Энтитет / Округ"
+    },
+    "region_bn": {
+        "message": "Округ"
+    },
+    "region_bf": {
+        "message": "Область"
+    },
+    "region_cv": {
+        "message": "Остров"
+    },
+    "region_kh": {
+        "message": "Провинция"
+    },
+    "region_cr": {
+        "message": "Провинция"
+    },
+    "region_hr": {
+        "message": "Жупания"
+    },
+    "region_do": {
+        "message": "Провинция"
+    },
+    "region_eg": {
+        "message": "Мухафаза"
+    },
+    "region_sv": {
+        "message": "Департамент"
+    },
+    "region_ge": {
+        "message": "Край"
+    },
+    "region_gt": {
+        "message": "Департамент"
+    },
+    "region_hn": {
+        "message": "Департамент"
+    },
+    "region_is": {
+        "message": "Регион"
+    },
+    "region_iq": {
+        "message": "Мухафаза"
+    },
+    "region_jo": {
+        "message": "Мухафаза"
+    },
+    "region_kw": {
+        "message": "Мухафаза"
+    },
+    "region_kg": {
+        "message": "Область / Город"
+    },
+    "region_la": {
+        "message": "Провинция"
+    },
+    "region_lb": {
+        "message": "Мухафаза"
+    },
+    "region_lu": {
+        "message": "Кантон"
+    },
+    "region_mn": {
+        "message": "Аймак"
+    },
+    "region_ma": {
+        "message": "Область"
+    },
+    "region_mm": {
+        "message": "Округ / Штат"
+    },
+    "region_np": {
+        "message": "Провинция"
+    },
+    "region_ni": {
+        "message": "Департамент"
+    },
+    "region_mk": {
+        "message": "Статистический регион"
+    },
+    "region_om": {
+        "message": "Мухафаза"
+    },
+    "region_pk": {
+        "message": "Провинция"
+    },
+    "region_py": {
+        "message": "Департамент"
+    },
+    "region_qa": {
+        "message": "Муниципалитет"
+    },
+    "region_si": {
+        "message": "Статистический регион"
+    },
+    "region_so": {
+        "message": "Регион"
+    },
+    "region_lk": {
+        "message": "Провинция"
+    },
+    "region_tt": {
+        "message": "Регион / Боро / Город"
+    },
+    "region_tn": {
+        "message": "Вилайет"
+    },
+    "region_ae": {
+        "message": "Эмират"
+    },
+    "region_uy": {
+        "message": "Департамент"
+    },
+    "region_uz": {
+        "message": "Область"
     }
 }

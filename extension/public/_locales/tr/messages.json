@@ -44,6 +44,9 @@
     "region_pe": {
         "message": "Bölge"
     },
+    "region_ph": {
+        "message": "Bölge"
+    },
     "region_pt": {
         "message": "Bölge"
     },
@@ -63,6 +66,9 @@
         "message": "Bölge"
     },
     "region_sk": {
+        "message": "Bölge"
+    },
+    "region_jm": {
         "message": "Bölge"
     }
 }

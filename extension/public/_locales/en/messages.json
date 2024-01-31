@@ -232,5 +232,152 @@
     },
     "region_sa": {
         "message": "Province"
+    },
+    "region_af": {
+        "message": "Province"
+    },
+    "region_al": {
+        "message": "County"
+    },
+    "region_dz": {
+        "message": "Province"
+    },
+    "region_ad": {
+        "message": "Parish"
+    },
+    "region_ao": {
+        "message": "Province"
+    },
+    "region_am": {
+        "message": "Marz"
+    },
+    "region_bh": {
+        "message": "Governorate"
+    },
+    "region_bd": {
+        "message": "Division"
+    },
+    "region_bb": {
+        "message": "Parish"
+    },
+    "region_bo": {
+        "message": "Department"
+    },
+    "region_ba": {
+        "message": "Entity / District"
+    },
+    "region_bn": {
+        "message": "District"
+    },
+    "region_bf": {
+        "message": "Region"
+    },
+    "region_cv": {
+        "message": "Island"
+    },
+    "region_kh": {
+        "message": "Province"
+    },
+    "region_cr": {
+        "message": "Province"
+    },
+    "region_hr": {
+        "message": "County"
+    },
+    "region_do": {
+        "message": "Province"
+    },
+    "region_eg": {
+        "message": "Governorate"
+    },
+    "region_sv": {
+        "message": "Department"
+    },
+    "region_ge": {
+        "message": "Region"
+    },
+    "region_gt": {
+        "message": "Department"
+    },
+    "region_hn": {
+        "message": "Department"
+    },
+    "region_is": {
+        "message": "Region"
+    },
+    "region_iq": {
+        "message": "Governorate"
+    },
+    "region_jo": {
+        "message": "Governorate"
+    },
+    "region_kw": {
+        "message": "Governorate"
+    },
+    "region_kg": {
+        "message": "Region"
+    },
+    "region_la": {
+        "message": "Province"
+    },
+    "region_lb": {
+        "message": "Governorate"
+    },
+    "region_lu": {
+        "message": "Canton"
+    },
+    "region_mn": {
+        "message": "Province"
+    },
+    "region_ma": {
+        "message": "Region"
+    },
+    "region_mm": {
+        "message": "Region / State"
+    },
+    "region_np": {
+        "message": "Province"
+    },
+    "region_ni": {
+        "message": "Department"
+    },
+    "region_mk": {
+        "message": "Statistical Region"
+    },
+    "region_om": {
+        "message": "Governorate"
+    },
+    "region_pk": {
+        "message": "Province"
+    },
+    "region_py": {
+        "message": "Department"
+    },
+    "region_qa": {
+        "message": "Municipality"
+    },
+    "region_si": {
+        "message": "Statistical Region"
+    },
+    "region_so": {
+        "message": "Region"
+    },
+    "region_lk": {
+        "message": "Province"
+    },
+    "region_tt": {
+        "message": "Region / Municipality"
+    },
+    "region_tn": {
+        "message": "Governorate"
+    },
+    "region_ae": {
+        "message": "Emirate"
+    },
+    "region_uy": {
+        "message": "Department"
+    },
+    "region_uz": {
+        "message": "Region"
     }
 }

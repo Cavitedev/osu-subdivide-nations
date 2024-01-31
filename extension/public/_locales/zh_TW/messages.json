@@ -52,5 +52,20 @@
     },
     "region_es": {
         "message": "自治區"
+    },
+    "region_fr": {
+        "message": "系統預設"
+    },
+    "region_jp": {
+        "message": "地區"
+    },
+    "region_sg": {
+        "message": "打開側邊欄"
+    },
+    "region_tw": {
+        "message": "行政區"
+    },
+    "region_il": {
+        "message": "自治區"
     }
 }
