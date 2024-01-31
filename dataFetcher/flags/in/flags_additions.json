@@ -21,22 +21,22 @@
             "AD-08": {
                 "name": "Escaldes-Engordany",
                 "nativeName": "Escaldes-Engordany",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bandera_de_Escaldes-Engordany.svg//128px-Bandera_de_Escaldes-Engordany.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bandera_de_Escaldes-Engordany.svg/128px-Bandera_de_Escaldes-Engordany.svg.png"
             },
             "AD-04": {
                 "name": "La Massana",
                 "nativeName": "La Massana",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_La_Massana.svg//128px-Flag_of_La_Massana.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_La_Massana.svg/128px-Flag_of_La_Massana.svg.png"
             },
             "AD-05": {
                 "name": "Ordino",
                 "nativeName": "Ordino",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flag_of_Ordino.svg//128px-Flag_of_Ordino.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Flag_of_Ordino.svg/128px-Flag_of_Ordino.svg.png"
             },
             "AD-06": {
                 "name": "Sant Julia de Loria",
                 "nativeName": "Sant Julià de Lòria",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bandera_de_San_Juli%C3%A1n_de_Loria.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandera_de_San_Julián_de_Loria.svg/128px-Bandera_de_San_Julián_de_Loria.svg.png"
             }
         }
     },
@@ -219,7 +219,68 @@
             "BA-BIH": {
                 "name": "Federation of Bosnia and Herzegovina",
                 "nativeName": "Federacija Bosne i Hercegovine",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_the_Federation_of_Bosnia_and_Herzegovina_%281996%E2%80%932007%29.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_the_Federation_of_Bosnia_and_Herzegovina_(1996–2007).svg"
+            }
+        }
+    },
+    "BB": {
+        "name": "Barbados",
+        "nativeName": "Barbados",
+        "regions": {
+            "BB-01": {
+                "name": "Christ Church",
+                "nativeName": "Christ Church",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/79/Christ-church.png/revision/latest?cb=20230805131732"
+            },
+            "BB-02": {
+                "name": "Saint Andrew",
+                "nativeName": "Saint Andrew",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/ee/Flag_of_Christ_Church,_Barbados.png/revision/latest?cb=20230505120400"
+            },
+            "BB-03": {
+                "name": "Saint George",
+                "nativeName": "Saint George",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/32/Saint_Andrew.png/revision/latest?cb=20230805131956"
+            },
+            "BB-04": {
+                "name": "Saint James",
+                "nativeName": "Saint James",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f7/St._george.png/revision/latest?cb=20230805132132"
+            },
+            "BB-05": {
+                "name": "Saint John",
+                "nativeName": "Saint John",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c3/Saint_John.png/revision/latest/scale-to-width-down/1000?cb=20240127160953"
+            },
+            "BB-06": {
+                "name": "Saint Joseph",
+                "nativeName": "Saint Joseph",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b4/Saint_Joseph.png/revision/latest/scale-to-width-down/1000?cb=20240127164135"
+            },
+            "BB-07": {
+                "name": "Saint Lucy",
+                "nativeName": "Saint Lucy",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6f/Saint_Lucy.png/revision/latest?cb=20240127164747"
+            },
+            "BB-08": {
+                "name": "Saint Michael",
+                "nativeName": "Saint Michael",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a1/Saint_Michael.png/revision/latest/scale-to-width-down/1000?cb=20240127165045"
+            },
+            "BB-09": {
+                "name": "Saint Peter",
+                "nativeName": "Saint Peter",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/17/Saint_Peter.png/revision/latest/scale-to-width-down/1000?cb=20240127165436"
+            },
+            "BB-10": {
+                "name": "Saint Philip",
+                "nativeName": "Saint Philip",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/db/Saint_Philip.png/revision/latest/scale-to-width-down/1000?cb=20240127170558"
+            },
+            "BB-11": {
+                "name": "Saint Thomas",
+                "nativeName": "Saint Thomas",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f2/Saint_Thomas.png/revision/latest/scale-to-width-down/1000?cb=20240127170618"
             }
         }
     },
@@ -315,33 +376,32 @@
             }
         }
     },
-    "BH": 
-    {
-            "name": "Bahrain",
-            "nativeName": "البحرينAl-Bahrayn",
-            "regions": {
-                "BH-13": {
-                    "name": "Capital",
-                    "nativeName": "محافظة العاصمة",
-                    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bahrain_Capital_Governorate_Flag.svg"
-                },
-                "BH-15": {
-                    "name": "Muharraq",
-                    "nativeName": "محافظة المحرق",
-                    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bahrain_Muharraq_Governorate_Flag.svg"
-                },
-                "BH-14": {
-                    "name": "Southern Governorate",
-                    "nativeName": "المحافظة الجنوبية",
-                    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bahrain_Southern_Governorate_Flag.svg"
-                },
-                "BH-17": {
-                    "name": "Northern Governorate",
-                    "nativeName": "المحافظة الشمالية",
-                    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Bahrain_Northern_Governorate_Flag.svg"
-                }
+    "BH": {
+        "name": "Bahrain",
+        "nativeName": "البحرينAl-Bahrayn",
+        "regions": {
+            "BH-13": {
+                "name": "Capital",
+                "nativeName": "محافظة العاصمة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bahrain_Capital_Governorate_Flag.svg/128px-Bahrain_Capital_Governorate_Flag.svg.png"
+            },
+            "BH-15": {
+                "name": "Muharraq",
+                "nativeName": "محافظة المحرق",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bahrain_Muharraq_Governorate_Flag.svg"
+            },
+            "BH-14": {
+                "name": "Southern Governorate",
+                "nativeName": "المحافظة الجنوبية",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bahrain_Southern_Governorate_Flag.svg"
+            },
+            "BH-17": {
+                "name": "Northern Governorate",
+                "nativeName": "المحافظة الشمالية",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Bahrain_Northern_Governorate_Flag.svg"
             }
-        },
+        }
+    },
     "BR": {
         "regions": {
             "BR-RN": {
@@ -712,6 +772,47 @@
             }
         }
     },
+    "CR": {
+        "name": "Costa Rica",
+        "nativeName": "Costa Rica",
+        "regions": {
+            "CR-A": {
+                "name": "Alajuela Province",
+                "nativeName": "Provincia Alajuela",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Bandera_de_la_Provincia_de_Alajuela.svg/128px-Bandera_de_la_Provincia_de_Alajuela.svg.png"
+            },
+            "CR-C": {
+                "name": "Cartago Province",
+                "nativeName": "Provincia Cartago",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bandera_de_la_Provincia_de_Cartago.svg"
+            },
+            "CR-H": {
+                "name": "Heredia Province",
+                "nativeName": "Provincia Heredia",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bandera_de_la_Provincia_de_Heredia.svg/128px-Bandera_de_la_Provincia_de_Heredia.svg.png"
+            },
+            "CR-L": {
+                "name": "Limón Province",
+                "nativeName": "Provincia Limón",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Bandera_de_la_Provincia_de_Limón.svg"
+            },
+            "CR-P": {
+                "name": "Puntarenas Province",
+                "nativeName": "Provincia Puntarenas",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandera_de_la_Provincia_de_Puntarenas.svg"
+            },
+            "CR-SJ": {
+                "name": "San José Province",
+                "nativeName": "Provincia San José",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Bandera_de_la_Provincia_de_San_José.svg"
+            },
+            "CR-G": {
+                "name": "Provincia Guanacaste",
+                "nativeName": "Provincia Guanacaste",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Bandera_de_la_Provincia_de_Guanacaste.svg"
+            }
+        }
+    },
     "CZ": {
         "nativeName": "Česko",
         "regions": {
@@ -758,6 +859,172 @@
         "regions": {
             "DE-BY": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Bavaria_(lozengy).svg"
+            }
+        }
+    },
+    "DO": {
+        "name": "Dominican Republic",
+        "nativeName": "República Dominicana",
+        "regions": {
+            "DO-01": {
+                "name": "Distrito Nacional",
+                "nativeName": "Distrito Nacional",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Escudo_del_Municipio_Santo_Domingo.svg/128px-Escudo_del_Municipio_Santo_Domingo.svg.png"
+            },
+            "DO-02": {
+                "name": "Azua",
+                "nativeName": "Azua",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_provincia_de_Azua_de_Compostela.jpg"
+            },
+            "DO-03": {
+                "name": "Baoruco",
+                "nativeName": "Baoruco",
+                "flag": ""
+            },
+            "DO-04": {
+                "name": "Barahona",
+                "nativeName": "Barahona",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/59/Escudo_de_la_Provincia_Barahona.svg"
+            },
+            "DO-05": {
+                "name": "Dajabón",
+                "nativeName": "Dajabón",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Escudo_de_la_Provincia_Dajabón.png"
+            },
+            "DO-06": {
+                "name": "Duarte",
+                "nativeName": "Duarte",
+                "flag": ""
+            },
+            "DO-08": {
+                "name": "El Seibo",
+                "nativeName": "El Seibo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Escudo_de_la_Provincia_El_Seibo.svg/128px-Escudo_de_la_Provincia_El_Seibo.svg.png"
+            },
+            "DO-09": {
+                "name": "Espaillat",
+                "nativeName": "Espaillat",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Escudo_de_la_Provincia_Espaillat.png"
+            },
+            "DO-30": {
+                "name": "Hato Mayor",
+                "nativeName": "Hato Mayor",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Escudo_de_la_Provincia_Hato_Mayor.png"
+            },
+            "DO-10": {
+                "name": "Independencia Province",
+                "nativeName": "Independencia",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_de_la_Provincia_Independencia.png"
+            },
+            "DO-11": {
+                "name": "La Altagracia",
+                "nativeName": "La Altagracia",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Escudo_de_la_Provincia_La_Altagracia.png"
+            },
+            "DO-07": {
+                "name": "Elías Piña",
+                "nativeName": "Elías Piña",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Escudo_de_la_Provincia_Elías_Piña.png"
+            },
+            "DO-12": {
+                "name": "La Romana",
+                "nativeName": "La Romana",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_Provincia_La_Romana.svg"
+            },
+            "DO-13": {
+                "name": "La Vega",
+                "nativeName": "La Vega",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Escudo_de_la_Provincia_La_Vega.png"
+            },
+            "DO-14": {
+                "name": "María Trinidad Sánchez",
+                "nativeName": "María Trinidad Sánchez",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Escudo_de_la_Provincia_María_Trinidad_Sánchez.png"
+            },
+            "DO-28": {
+                "name": "Monseñor Nouel",
+                "nativeName": "Monseñor Nouel",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Escudo_de_la_Provincia_Monseñor_Nouel.png"
+            },
+            "DO-15": {
+                "name": "Monte Cristi",
+                "nativeName": "Monte Cristi",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Escudo_de_la_Provincia_Monte_Cristi.png"
+            },
+            "DO-29": {
+                "name": "Monte Plata",
+                "nativeName": "Monte Plata",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Escudo_de_la_Provincia_Monte_Plata.png"
+            },
+            "DO-16": {
+                "name": "Pedernales",
+                "nativeName": "Pedernales",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Escudo_de_la_Provincia_Pedernales.png"
+            },
+            "DO-17": {
+                "name": "Peravia",
+                "nativeName": "Peravia",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/90/Escudo_de_la_Provincia_Peravia.png"
+            },
+            "DO-18": {
+                "name": "Puerto Plata",
+                "nativeName": "Puerto Plata",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Escudo_de_la_Provincia_Puerto_Plata.svg/128px-Escudo_de_la_Provincia_Puerto_Plata.svg.png"
+            },
+            "DO-19": {
+                "name": "Hermanas Mirabal",
+                "nativeName": "Hermanas Mirabal",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Escudo_de_la_Provincia_Hermanas_Mirabal.png"
+            },
+            "DO-20": {
+                "name": "Samaná",
+                "nativeName": "Samaná",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Escudo_de_la_Provincia_Samaná.svg/128px-Escudo_de_la_Provincia_Samaná.svg.png"
+            },
+            "DO-21": {
+                "name": "San Cristóbal",
+                "nativeName": "San Cristóbal",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Escudo_de_la_Provincia_San_Cristóbal.png"
+            },
+            "DO-31": {
+                "name": "San José de Ocoa",
+                "nativeName": "San José de Ocoa",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Escudo_de_la_Provincia_San_José_de_Ocoa.png"
+            },
+            "DO-22": {
+                "name": "San Juan",
+                "nativeName": "San Juan",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Escudo_de_la_Provincia_San_Juan.svg"
+            },
+            "DO-23": {
+                "name": "San Pedro de Macorís",
+                "nativeName": "San Pedro de Macorís",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/Escudo_de_la_Provincia_San_Pedro_de_Macorís.png"
+            },
+            "DO-24": {
+                "name": "Sánchez Ramírez",
+                "nativeName": "Sánchez Ramírez",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Escudo_de_la_Provincia_Sánchez_Ramírez.png"
+            },
+            "DO-25": {
+                "name": "Santiago",
+                "nativeName": "Santiago",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Escudo_de_la_Provincia_Santiago.svg/128px-Escudo_de_la_Provincia_Santiago.svg.png"
+            },
+            "DO-26": {
+                "name": "Santiago Rodríguez",
+                "nativeName": "Santiago Rodríguez",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Escudo_de_la_Provincia_Santiago_Rodríguez.png"
+            },
+            "DO-32": {
+                "name": "Santo Domingo",
+                "nativeName": "Santo Domingo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Escudo_de_la_Provincia_Santo_Domingo.png"
+            },
+            "DO-27": {
+                "name": "Valverde",
+                "nativeName": "Valverde",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Escudo_del_Municipio_Mao.svg/128px-Escudo_del_Municipio_Mao.svg.png"
             }
         }
     },
@@ -1212,6 +1479,122 @@
             }
         }
     },
+    "GT": {
+        "name": "Guatemala",
+        "nativeName": "Guatemala",
+        "regions": {
+            "GT-16": {
+                "name": "Alta Verapaz",
+                "nativeName": "Alta Verapaz",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Bandera_de_Alta_Verapaz.svg"
+            },
+            "GT-15": {
+                "name": "Baja Verapaz",
+                "nativeName": "Baja Verapaz",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Flag_of_Baja_Verapaz,_Guatemala.png/166px-Flag_of_Baja_Verapaz,_Guatemala.png"
+            },
+            "GT-04": {
+                "name": "Chimaltenango",
+                "nativeName": "Chimaltenango",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Vlagchimaltenango.gif/150px-Vlagchimaltenango.gif"
+            },
+            "GT-20": {
+                "name": "Chiquimula",
+                "nativeName": "Chiquimula",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/..Chiquimula_Flag(GUATEMALA).png/166px-..Chiquimula_Flag(GUATEMALA).png"
+            },
+            "GT-05": {
+                "name": "Escuintla",
+                "nativeName": "Escuintla",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Escuintla_Department.gif/150px-Flag_of_Escuintla_Department.gif"
+            },
+            "GT-13": {
+                "name": "Huehuetenango",
+                "nativeName": "Huehuetenango",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Huehuetenango.gif/158px-Flag_of_Huehuetenango.gif"
+            },
+            "GT-18": {
+                "name": "Izabal",
+                "nativeName": "Izabal",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Flag_of_Izabal_Department.gif/150px-Flag_of_Izabal_Department.gif"
+            },
+            "GT-21": {
+                "name": "Jalapa",
+                "nativeName": "Jalapa",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Jalapa_Department,_Guatemala.svg"
+            },
+            "GT-22": {
+                "name": "Jutiapa",
+                "nativeName": "Jutiapa",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Vlagjutiapa.gif/150px-Vlagjutiapa.gif"
+            },
+            "GT-17": {
+                "name": "Petén",
+                "nativeName": "Petén",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandera_del_Departamento_El_Petén.png/170px-Bandera_del_Departamento_El_Petén.png"
+            },
+            "GT-09": {
+                "name": "Quetzaltenango",
+                "nativeName": "Quetzaltenango",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Vlagquetzaltenango.gif/150px-Vlagquetzaltenango.gif"
+            },
+            "GT-14": {
+                "name": "Quiché",
+                "nativeName": "Quiché",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/..El_Quiché_Flag(GUATEMALA).png/172px-..El_Quiché_Flag(GUATEMALA).png"
+            },
+            "GT-11": {
+                "name": "Retalhuleu",
+                "nativeName": "Retalhuleu",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vlagretalhuleu.gif/150px-Vlagretalhuleu.gif"
+            },
+            "GT-03": {
+                "name": "Sacatepéquez",
+                "nativeName": "Sacatepéquez",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Bandera_de_Sacatepéquez.svg"
+            },
+            "GT-12": {
+                "name": "San Marcos",
+                "nativeName": "San Marcos",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Vlagsanmarcos.gif/150px-Vlagsanmarcos.gif"
+            },
+            "GT-06": {
+                "name": "Santa Rosa",
+                "nativeName": "Santa Rosa",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Flag_of_Santa_Rosa_Department.GIF/150px-Flag_of_Santa_Rosa_Department.GIF"
+            },
+            "GT-07": {
+                "name": "Sololá",
+                "nativeName": "Sololá",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Sololá_Department.svg"
+            },
+            "GT-10": {
+                "name": "Suchitepéquez",
+                "nativeName": "Suchitepéquez",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/..Suchitepéquez_Flag(GUATEMALA).png/159px-..Suchitepéquez_Flag(GUATEMALA).png"
+            },
+            "GT-08": {
+                "name": "Totonicapán",
+                "nativeName": "Totonicapán",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Bandera_Totonicapán.svg/128px-Bandera_Totonicapán.svg.png"
+            },
+            "GT-19": {
+                "name": "Zacapa",
+                "nativeName": "Zacapa",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Zacapa_Department.GIF/160px-Flag_of_Zacapa_Department.GIF"
+            },
+            "GT-01": {
+                "name": "Guatemala Department",
+                "nativeName": "Departamento de Guatemala",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bandera_del_Departamento_Guatemala.svg"
+            },
+            "GT-02": {
+                "name": "El Progreso",
+                "nativeName": "El Progreso",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Bandera_PRO.JPG"
+            }
+        }
+    },
     "HU": {
         "name": "Hungary",
         "nativeName": "Magyarország",
@@ -1545,6 +1928,107 @@
             }
         }
     },
+    "IQ": {
+        "name": "Iraq",
+        "nativeName": "Al-'Iraq العراق",
+        "regions": {
+            "IQ-AN": {
+                "name": "Al Anbar Governorate",
+                "nativeName": "محافظة الأنبار",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Al_Anbar_Governorate.png/158px-Flag_of_Al_Anbar_Governorate.png"
+            },
+            "IQ-BB": {
+                "name": "Babil Governorate",
+                "nativeName": "محافظة بابل",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Flag_of_Babil_Governorate.png/149px-Flag_of_Babil_Governorate.png"
+            },
+            "IQ-BA": {
+                "name": "Basra Governorate",
+                "nativeName": "محافظة البصرة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Basra_Governorate.svg"
+            },
+            "IQ-DI": {
+                "name": "Diyala Governorate",
+                "nativeName": "محافظة ديالى",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Flag_of_Diyala_Governorate.png/150px-Flag_of_Diyala_Governorate.png"
+            },
+            "IQ-KI": {
+                "name": "Kirkuk Governorate",
+                "nativeName": "محافظة كركوك",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_Kirkuk_Governorate.png/150px-Flag_of_Kirkuk_Governorate.png"
+            },
+            "IQ-NI": {
+                "name": "Nineveh Governorate",
+                "nativeName": "محافظة نینوى",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flag_of_Nineveh_Governorate.png/145px-Flag_of_Nineveh_Governorate.png"
+            },
+            "IQ-SD": {
+                "name": "Saladin Governorate",
+                "nativeName": "محافظة صلاح الدين",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Flag_of_Saladin_Governorate,_Iraq.svg"
+            },
+            "IQ-MU": {
+                "name": "Al-Muthanna Governorate",
+                "nativeName": "محافظة المثنى",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/e/e5/Flag_of_Muthanna_Governorate.png"
+            },
+            "IQ-QA": {
+                "name": "Al-Qadisiyah Governorate",
+                "nativeName": "محافظة القادسية",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/7c/Seal_of_Al-Qadisiyah_Governorate.png"
+            },
+            "IQ-NA": {
+                "name": "Al-Najaf Governorate",
+                "nativeName": "محافظة النجف",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/c/cc/Seal_of_Najaf_Governorate.png"
+            },
+            "IQ-AR": {
+                "name": "Erbil Governorate",
+                "nativeName": "پارێزگای ھەولێر",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/5/57/Seal_of_Erbil_Governorate.png"
+            },
+            "IQ-SU": {
+                "name": "Sulaymaniyah Governorate",
+                "nativeName": "پارێزگای سلێمانی",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/6/61/Sulaymaniyah_Governorate_logo.png"
+            },
+            "IQ-KA": {
+                "name": "Karbala",
+                "nativeName": "محافظة كربلاء",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/c/c9/Emblem_of_Karbala_Governorate.png"
+            },
+            "IQ-MA": {
+                "name": "Maysan Governorate",
+                "nativeName": "محافظة ميسان",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/12/Emblem_of_Maysan_Governorate.png"
+            },
+            "IQ-WA": {
+                "name": "Wasit Governorate",
+                "nativeName": "محافظة واسط",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/0/08/Flag_of_Wasit_Governorate.png"
+            },
+            "IQ-BG": {
+                "name": "Baghdad Governorate",
+                "nativeName": "محافظة بغداد",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/76/Flag_of_Baghdad_Governorate.png"
+            },
+            "IQ-DA": {
+                "name": "Duhok Governorate",
+                "nativeName": "پارێزگای دھۆک",
+                "flag": ""
+            },
+            "IQ-DQ": {
+                "name": "Dhi Qar Governorate",
+                "nativeName": "محافظة ذي قار",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/2/2b/Emblem_of_Dhi_Qar_Governorate.png"
+            },
+            "IQ-HA": {
+                "name": "Halabja Governorate",
+                "nativeName": "پارێزگای ھەڵەبجە",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/8/80/Emblem_of_Halabja_Governorate.png"
+            }
+        }
+    },
     "IS": {
         "name": "Iceland",
         "nativeName": "Ísland",
@@ -1686,6 +2170,137 @@
         "nativeName": "日本",
         "regions": {}
     },
+    "KH": {
+        "name": "Cambodia",
+        "nativeName": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+        "regions": {
+            "KH-12": {
+                "name": "Phnom Penh",
+                "nativeName": "រាជធានីភ្នំពេញ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Seal_of_Phnom_Penh.svg/128px-Seal_of_Phnom_Penh.svg.png"
+            },
+            "KH-2": {
+                "name": "Battambang",
+                "nativeName": "ខេត្តបាត់ដំបង",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/a/a8/Battambang_Province_seal.png"
+            },
+            "KH-1": {
+                "name": "Bantey Meanchey",
+                "nativeName": "ខេត្តបន្ទាយមានជ័យ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/14/Banteay_Meanchey_seal.png"
+            },
+            "KH-23": {
+                "name": "Kep",
+                "nativeName": "ខេត្តកែប",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/Seal_of_Kep_Provincial_Administration.png"
+            },
+            "KH-3": {
+                "name": "Kampong Cham",
+                "nativeName": "ខេត្តកំពង់ចាម",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/9/94/Kampong_Cham_seal.png"
+            },
+            "KH-4": {
+                "name": "Kampong Chhnang",
+                "nativeName": "ខេត្តកំពង់ឆ្នាំង",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/4/4c/Kampong_Chhnang_seal.png"
+            },
+            "KH-5": {
+                "name": "Kampong Speu",
+                "nativeName": "ខេត្តកំពង់ស្ពឺ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/c/cc/Kampong_Speu_seal.png"
+            },
+            "KH-6": {
+                "name": "Kampong Thom",
+                "nativeName": "ខេត្តកំពង់ធំ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/78/Kampong_Thom_seal.png"
+            },
+            "KH-7": {
+                "name": "Kampot",
+                "nativeName": "ខេត្តកំពត",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/4/47/Kampot_logo.png"
+            },
+            "KH-8": {
+                "name": "Kandal",
+                "nativeName": "ខេត្តកណ្ដាល",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/b/b4/Seal_of_Kandal.png"
+            },
+            "KH-9": {
+                "name": "Koh Kong",
+                "nativeName": "ខេត្តកោះកុង",
+                "flag": "https://en.wikipedia.org/wiki/Koh_Kong_Province#/media/File:Koh_Kong_seal.png"
+            },
+            "KH-10": {
+                "name": "Kratie",
+                "nativeName": "ខេត្តក្រចេះ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/2/2c/Kratié_Province_logo.png"
+            },
+            "KH-11": {
+                "name": "Mondulkiri",
+                "nativeName": "ខេត្តមណ្ឌលគិរី",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/5/55/Mondulkiri.png"
+            },
+            "KH-22": {
+                "name": "Oddar Meanchey",
+                "nativeName": "ខេត្តឧត្ដរមានជ័យ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/c/c9/Oddar_Meanchey_seal.png"
+            },
+            "KH-24": {
+                "name": "Pailin",
+                "nativeName": "ខេត្តប៉ៃលិន",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/8/8f/Seal_of_Pailin.png"
+            },
+            "KH-15": {
+                "name": "Pursat",
+                "nativeName": "ខេត្តពោធិ៍សាត់",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/6/6b/Pursat.png"
+            },
+            "KH-18": {
+                "name": "Khaet Preah Sihanouk",
+                "nativeName": "ខេត្តព្រះសីហនុ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/e/e3/Sihanoukville_seal.png"
+            },
+            "KH-13": {
+                "name": "Preah Vihear",
+                "nativeName": "ខេត្តព្រះវិហារ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/18/Preah_Vihear.png"
+            },
+            "KH-14": {
+                "name": "Prey Veng",
+                "nativeName": "ខេត្តព្រៃវែង",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/c/c8/Prey_Veng.png"
+            },
+            "KH-16": {
+                "name": "Ratanakiri",
+                "nativeName": "ខេត្តរតនគិរី",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/7b/Ratanakiri.png"
+            },
+            "KH-17": {
+                "name": "Siem Reap",
+                "nativeName": "ខេត្តសៀមរាប",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/0/0b/Siem_Reap_Province_seal.png"
+            },
+            "KH-19": {
+                "name": "Stung Treng",
+                "nativeName": "ខេត្តស្ទឹងត្រែង",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/f/fc/Stung_Treng_seal.png"
+            },
+            "KH-20": {
+                "name": "Svay Rieng",
+                "nativeName": "ខេត្តស្វាយរៀង",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/17/Svay_Rieng.png"
+            },
+            "KH-21": {
+                "name": "Takeo",
+                "nativeName": "ខេត្តតាកែវ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/16/Seal_of_Takeo.png"
+            },
+            "KH-25": {
+                "name": "Tbong Khmum",
+                "nativeName": "ខេត្តត្បូងឃ្មុំ",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/4/45/Tboung_Khmum_seal.png"
+            }
+        }
+    },
     "KZ": {
         "regions": {
             "KZ-10": {
@@ -1758,10 +2373,208 @@
             }
         }
     },
+    "KW": {
+        "name": "Kuwait",
+        "nativeName": "Dawlat ul-Kuwayt دولة الكويت",
+        "regions": {
+            "KW-AH": {
+                "name": "Ahmadi Governorate",
+                "nativeName": "الاحمدي",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_Ahmadi_Governorate.gif/133px-Flag_of_Ahmadi_Governorate.gif"
+            },
+            "KW-MU": {
+                "name": "Mubarak Al-Kabeer Governorate",
+                "nativeName": "مبارك الكبير",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_Of_Mubarak-Al-Kabeer_Governorate.gif/133px-Flag_Of_Mubarak-Al-Kabeer_Governorate.gif"
+            },
+            "KW-KU": {
+                "name": "Al Asimah",
+                "nativeName": "العاصمة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Flag_of_Capital_Governorate,_Kuwait.png/revision/latest/scale-to-width-down/1000?cb=20230501122836"
+            },
+            "KW-FA": {
+                "name": "Farwaniya",
+                "nativeName": "الفروانية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/df/Flag_of_Farwaniya_Governorate.png/revision/latest?cb=20230501122902"
+            },
+            "KW-HA": {
+                "name": "Hawalli",
+                "nativeName": "حولي",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_Hawalli_Governorate.png/revision/latest?cb=20230501123123"
+            },
+            "KW-JA": {
+                "name": "Jahra",
+                "nativeName": "الجهراء",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/cc/Flag_of_Jahra_Governorate.png/revision/latest/scale-to-width-down/1000?cb=20230501123143"
+            }
+        }
+    },
+    "LA": {
+        "name": "Laos",
+        "nativeName": "ປະເທດລາວ",
+        "regions": {
+            "LA-AT": {
+                "name": "Attapeu",
+                "nativeName": "ອັດຕະປື",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f6/Flag_for_Attapeu.png/revision/latest?cb=20240130052942"
+            },
+            "LA-BK": {
+                "name": "Bokeo Province",
+                "nativeName": "ບໍ່ແກ້ວ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/68/Bokeo_2.png/revision/latest?cb=20240130121053"
+            },
+            "LA-BL": {
+                "name": "Bolikhamsai",
+                "nativeName": "ບໍລິຄຳໄຊ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d0/Bolikhamsai.png/revision/latest?cb=20240130055248"
+            },
+            "LA-CH": {
+                "name": "Champasak Province",
+                "nativeName": "ຈຳປາສັກ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/ab/Flag_for_Champasak.png/revision/latest?cb=20240130060019"
+            },
+            "LA-HO": {
+                "name": "Houaphanh",
+                "nativeName": "ຫົວພັນ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/42/Flag_for_Houaphanh.png/revision/latest?cb=20240130064936"
+            },
+            "LA-KH": {
+                "name": "Khammouane",
+                "nativeName": "ຄໍາມ່ວນ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4a/Khammouane.png/revision/latest?cb=20240130070503"
+            },
+            "LA-LM": {
+                "name": "Luang Namtha",
+                "nativeName": "ຫລວງນໍ້າທາ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b8/Luang_Namtha.png/revision/latest?cb=20240130070522"
+            },
+            "LA-LP": {
+                "name": "Luang Prabang",
+                "nativeName": "ຫລວງພະບາງ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/eb/Luang_Prabang.png/revision/latest?cb=20240130070538"
+            },
+            "LA-OU": {
+                "name": "Oudomxay",
+                "nativeName": "ອຸດົມໄຊ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/17/Oudomxay.png/revision/latest?cb=20240130065634"
+            },
+            "LA-PH": {
+                "name": "Phongsaly",
+                "nativeName": "ຜົ້ງສາລີ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/94/Phongsaly.png/revision/latest?cb=20240130065802"
+            },
+            "LA-SL": {
+                "name": "Salavan Province",
+                "nativeName": "ສາລະວັນ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/1c/Salavan.png/revision/latest?cb=20240130062959"
+            },
+            "LA-SV": {
+                "name": "Savannakhet Province",
+                "nativeName": "ສະຫວັນນະເຂດ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/ed/Savannakhet.png/revision/latest?cb=20240130062029"
+            },
+            "LA-VI": {
+                "name": "Vientiane Province",
+                "nativeName": "ວຽງຈັນ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3b/Vientiane_Province.png/revision/latest?cb=20240130030418"
+            },
+            "LA-VT": {
+                "name": "Vientiane Prefecture",
+                "nativeName": "ນະຄອນຫຼວງວຽງຈັນ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/8f/Flag_of_Vientiane.svg/revision/latest?cb=20220618094440"
+            },
+            "LA-XA": {
+                "name": "Sainyabuli Province",
+                "nativeName": "ໄຊຍະບູລີ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/26/Sainyabuli.png/revision/latest?cb=20240130062134"
+            },
+            "LA-XE": {
+                "name": "Sekong Province",
+                "nativeName": "ເຊກອງ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Sekong.png/revision/latest?cb=20240130063023"
+            },
+            "LA-XI": {
+                "name": "Xiangkhouang Province",
+                "nativeName": "ຊຽງຂວາງ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/37/Xiangkhouang.png/revision/latest?cb=20240130060755"
+            },
+            "LA-XS": {
+                "name": "Xaisomboun Province",
+                "nativeName": "ໄຊສົມບູນ",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f6/Xaisomboun.png/revision/latest?cb=20240130055610"
+            }
+        }
+    },
     "LT": {
         "regions": {
             "LT-PN": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Panevezys_County_flag.svg"
+            }
+        }
+    },
+    "LU": {
+        "name": "Luxembourg",
+        "nativeName": "Luxembourg",
+        "regions": {
+            "LU-CA": {
+                "name": "Canton Capellen",
+                "nativeName": "Canton Capellen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Armoiries_de_Septfontaines_1.svg"
+            },
+            "LU-CL": {
+                "name": "Canton Clervaux",
+                "nativeName": "Canton Clervaux",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Armoiries_Clervaux_2.svg"
+            },
+            "LU-DI": {
+                "name": "Canton Diekirch",
+                "nativeName": "Canton Diekirch",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Blason_Diekirch.svg"
+            },
+            "LU-EC": {
+                "name": "Canton Echternach",
+                "nativeName": "Canton Echternach",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Coat_of_arms_echternach_luxbrg.svg/128px-Coat_of_arms_echternach_luxbrg.svg.png"
+            },
+            "LU-ES": {
+                "name": "Canton Esch-sur-Alzette",
+                "nativeName": "Canton Esch-sur-Alzette",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Coat_of_arms_esch_alzette_luxbrg.png"
+            },
+            "LU-GR": {
+                "name": "Canton Grevenmacher",
+                "nativeName": "Canton Grevenmacher",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Coat_of_arms_grevenmacher_luxbrg.png"
+            },
+            "LU-LU": {
+                "name": "Canton Luxembourg",
+                "nativeName": "Canton Luxembourg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Coat_of_arms_Luxembourg_City.png"
+            },
+            "LU-ME": {
+                "name": "Canton Mersch",
+                "nativeName": "Canton Mersch",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Armoiries_de_Mersch_1.svg"
+            },
+            "LU-RD": {
+                "name": "Canton Redange",
+                "nativeName": "Canton Redange",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Blason_Redange-Sur-Attert.svg"
+            },
+            "LU-RM": {
+                "name": "Canton Remich",
+                "nativeName": "Canton Remich",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Remich_(canton)_coat_of_arms.png"
+            },
+            "LU-VD": {
+                "name": "Canton Vianden",
+                "nativeName": "Canton Vianden",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Armoiries_de_Nassau_2.svg"
+            },
+            "LU-WI": {
+                "name": "Canton Wiltz",
+                "nativeName": "Canton Wiltz",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Armoiries_de_Wiltz_1.svg"
             }
         }
     },
@@ -1778,6 +2591,315 @@
             },
             "Z": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Coat_of_arms_of_Zemgale.svg"
+            }
+        }
+    },
+    "MA": {
+        "name": "Morocco",
+        "nativeName": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+        "regions": {
+            "MA-05": {
+                "name": "Béni Mellal-Khénifra",
+                "nativeName": "Béni Mellal-Khénifra ⴰⵢⵜ ⵎⵍⵍⴰⵍ-ⵅⵏⵉⴼⵕⴰ بني ملال-خنيفرة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Logo-conseil-benimellaljpg.jpg"
+            },
+            "MA-06": {
+                "name": "Casablanca-Settat",
+                "nativeName": "Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Casa-settat_logo.png"
+            },
+            "MA-12": {
+                "name": "Dakhla-Oued Ed-Dahab",
+                "nativeName": "Dakhla-Oued Ed-Dahab ⴷⴰⵅⵍⴰ-ⵡⴰⴷ ⴷⴰⵀⴰⴱ الداخلة-وادي الذهب",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/37/Dakhla-oued_eddahab.jpg"
+            },
+            "MA-08": {
+                "name": "Drâa-Tafilalet",
+                "nativeName": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Draa-tafilalet.png"
+            },
+            "MA-03": {
+                "name": "Fez-Meknes",
+                "nativeName": "Fès-Meknès ⴼⴰⵙ-ⵎⴽⵏⴰⵙ فاس-مكناس",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Logo_region_fes_meknes.jpg"
+            },
+            "MA-10": {
+                "name": "Guelmim-Oued Noun",
+                "nativeName": "Guelmim-Oued Noun ⵜⴰⵙⴳⴰ-ⵡⴰⴷ ⵏⵓⵏ كلميم وادي نون",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Guelmim-oued_noun.jpg"
+            },
+            "MA-02": {
+                "name": "Oriental",
+                "nativeName": "Oriental ⵜⴰⵏⴳⵎⵓⴹⵜ الشرقية",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Ro_ma_logo.png"
+            },
+            "MA-11": {
+                "name": "Laâyoune-Sakia El Hamra",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Logo-conseil-laayoune.jpg"
+            },
+            "MA-07": {
+                "name": "Marrakech-Safi",
+                "nativeName": "Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Logo-conseil-marrakech.jpg"
+            },
+            "MA-04": {
+                "name": "Rabat-Salé-Kénitra",
+                "nativeName": "Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Logo-conseil-rabat.jpg"
+            },
+            "MA-09": {
+                "name": "Souss-Massa",
+                "nativeName": "Souss-Massa ⵙⵓⵙⵙ-ⵎⴰⵙⵙⴰ سوس-ماسة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Souss_Massa.png"
+            },
+            "MA-01": {
+                "name": "Tangier-Tetouan-Al Hoceima",
+                "nativeName": "Tanger-Tétouan-Al Hoceïma ⵟⴰⵏⵊ-ⵟⵉⵜⴰⵡⵉⵏ-ⵍⵃⵓⵙⵉⵎⴰ طنجة تطوان الحسيمة",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/Rtta_logo.png"
+            }
+        }
+    },
+    "MK": {
+        "name": "North Macedonia",
+        "nativeName": "Северна Македонија",
+        "regions": {
+            "MK-MK001": {
+                "name": "Vardar Region",
+                "nativeName": "Вардарски СР",
+                "flag": "https://www.fotw.info/images/m/mk-vele.gif"
+            },
+            "MK-MK002": {
+                "name": "Eastern Region",
+                "nativeName": "Источен СР",
+                "flag": "https://www.fotw.info/images/m/mk-shti.gif"
+            },
+            "MK-MK003": {
+                "name": "Southwestern Region",
+                "nativeName": "Југозападен СР",
+                "flag": "https://www.fotw.info/images/m/mk-ohri.png"
+            },
+            "MK-MK004": {
+                "name": "Southeastern Region",
+                "nativeName": "Југоисточен СР",
+                "flag": "https://www.fotw.info/images/m/mk-strm.gif"
+            },
+            "MK-MK005": {
+                "name": "Pelagonia Region",
+                "nativeName": "Пелагониски СР",
+                "flag": "https://www.fotw.info/images/m/mk-pehc.gif"
+            },
+            "MK-MK006": {
+                "name": "Polog Region",
+                "nativeName": "Полошки СР",
+                "flag": "https://www.fotw.info/images/m/mk-teto.gif"
+            },
+            "MK-MK007": {
+                "name": "Northeastern Region",
+                "nativeName": "Североисточен СР",
+                "flag": "https://www.fotw.info/images/m/mk-kuma.gif"
+            },
+            "MK-MK008": {
+                "name": "Skopje Region",
+                "nativeName": "Скопски СР",
+                "flag": "https://www.fotw.info/images/m/mk-aero.gif"
+            }
+        }
+    },
+    "MM": {
+        "name": "Myanmar",
+        "nativeName": "Myanma မြန်မာ",
+        "regions": {
+            "MM-07": {
+                "name": "Ayeyarwady Region",
+                "nativeName": "ဧရာဝတီတိုင်းဒေသကြီး",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Ayeyarwady_Region.svg/128px-Flag_of_Ayeyarwady_Region.svg.png"
+            },
+            "MM-02": {
+                "name": "Bago Region",
+                "nativeName": "ပဲခူးတိုင်းဒေသကြီး",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Bago_Region.png/150px-Flag_of_Bago_Region.png"
+            },
+            "MM-03": {
+                "name": "Magway Region",
+                "nativeName": "မကွေးတိုင်းဒေသကြီး",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Magway_Region.svg"
+            },
+            "MM-04": {
+                "name": "Mandalay Region",
+                "nativeName": "မန္တလေးတိုင်း",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Mandalay_Region.svg"
+            },
+            "MM-01": {
+                "name": "Sagaing Region",
+                "nativeName": "စစ်ကိုင်းတိုင်း",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Sagaing_Region_(2019).svg/128px-Flag_of_Sagaing_Region_(2019).svg.png"
+            },
+            "MM-05": {
+                "name": "Tanintharyi Region",
+                "nativeName": "တနင်္သာရီတိုင်း",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Tanintharyi_Division.svg"
+            },
+            "MM-06": {
+                "name": "Yangon Region",
+                "nativeName": "ရန်ကုန်တိုင်းဒေသကြီး",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_Yangon_Region.svg/128px-Flag_of_Yangon_Region.svg.png"
+            },
+            "MM-14": {
+                "name": "Chin State",
+                "nativeName": "ချင်းပြည်နယ်",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flag_of_Chin_State.svg"
+            },
+            "MM-11": {
+                "name": "Kachin State",
+                "nativeName": "ကချင်ပြည်နယ်",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Flag_of_Kachin_State.svg/128px-Flag_of_Kachin_State.svg.png"
+            },
+            "MM-12": {
+                "name": "Kayah State",
+                "nativeName": "ကယားပြည်နယ်‌",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Kayah_State.svg"
+            },
+            "MM-13": {
+                "name": "Kayin State",
+                "nativeName": "ကရင်ပြည်နယ်",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Kayin_State.svg"
+            },
+            "MM-15": {
+                "name": "Mon State",
+                "nativeName": "မွန်ပြည်နယ်",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Mon_State_(2018).svg/128px-Flag_of_Mon_State_(2018).svg.png"
+            },
+            "MM-17": {
+                "name": "Shan State",
+                "nativeName": "ရှမ်းပြည်နယ်",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_the_Shan_State.svg"
+            },
+            "MM-18": {
+                "name": "Naypyidaw Union Territory",
+                "nativeName": "နေပြည်တော် ပြည်ထောင်စုနယ်မြ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Naypyidaw_Union_Territory.svg"
+            },
+            "MM-16": {
+                "name": "Rakhine",
+                "nativeName": "ရခိုင်ပြည်နယ်",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Rakhine.svg"
+            }
+        }
+    },
+    "MN": {
+        "name": "Mongolia",
+        "nativeName": "Mongol Uls Монгол Улс",
+        "regions": {
+            "MN-073": {
+                "name": "Arkhangai Province",
+                "nativeName": "Архангай ᠠᠷᠤᠬᠠᠩᠭ᠋ᠠᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Mn_flag_arkhangai_aimag_2014.png/200px-Mn_flag_arkhangai_aimag_2014.png"
+            },
+            "MN-071": {
+                "name": "Bayan-Ölgii Province",
+                "nativeName": "Баян-Өлгий ᠪᠠᠶ᠋ᠠᠨ ᠥᠯᠦᠭᠡᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/44/Mn_flag_bayan_olgiy_aymag.svg"
+            },
+            "MN-069": {
+                "name": "Bayankhongor Province",
+                "nativeName": "Баянхонгор ᠪᠠᠶᠠᠨᠬᠣᠩᠭᠣᠷ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Mn_flag_bayankhongor_aymag.png/175px-Mn_flag_bayankhongor_aymag.png"
+            },
+            "MN-067": {
+                "name": "Bulgan Province",
+                "nativeName": "Булган ᠪᠤᠯᠠᠭᠠᠨ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Mn_flag_bulgan_aimag.svg"
+            },
+            "MN-037": {
+                "name": "Darkhan-Uul Province",
+                "nativeName": "Дархан-Уул ᠳᠠᠷᠬᠠᠨ ᠠᠭᠤᠯᠠ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Mn_flag_darkhan_uul_aymag.svg"
+            },
+            "MN-061": {
+                "name": "Dornod Province",
+                "nativeName": "Дорнод ᠳᠣᠷᠤᠨᠠᠳᠤ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Mn_flag_dornod_aimag_2001.svg"
+            },
+            "MN-063": {
+                "name": "Dornogovi Province",
+                "nativeName": "Дорноговь ᠳᠣᠷᠤᠨᠠᠭᠣᠪᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Mn_flag_dornogovi_aimag_2011.svg"
+            },
+            "MN-059": {
+                "name": "Dundgobi Province",
+                "nativeName": "Дундговь ᠳᠤᠮᠳᠠᠭᠣᠪᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Mn_flag_dundgovi_aimag.svg"
+            },
+            "MN-065": {
+                "name": "Govi-Altai Province",
+                "nativeName": "Говь-Алтай ᠭᠣᠪᠢ ᠠᠯᠲᠠᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/51/Mn_flag_govi-altai_aimag_2011.svg"
+            },
+            "MN-064": {
+                "name": "Govisümber Province",
+                "nativeName": "Говьсүмбэр ᠭᠣᠪᠢ ᠰᠦᠮᠪᠦᠷ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Mn_flag_govisümber_aimag.svg"
+            },
+            "MN-039": {
+                "name": "Khentii Province",
+                "nativeName": "Хэнтий ᠬᠡᠨᠲᠡᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Khentii_aimag_Flag.svg"
+            },
+            "MN-043": {
+                "name": "Khovd Province",
+                "nativeName": "Ховд ᠬᠣᠪᠳᠤ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Khovd_Aimag_(since_2014).svg"
+            },
+            "MN-053": {
+                "name": "Ömnögovi Province",
+                "nativeName": "Өмнөговь ᠡᠮᠦᠨᠡᠭᠣᠪᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/97/Mn_flag_ömnögovi_aimag_2011.svg"
+            },
+            "MN-035": {
+                "name": "Orkhon Province",
+                "nativeName": "Орхон ᠣᠷᠬᠤᠨ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Orkhon_Aimag_Flag.svg"
+            },
+            "MN-055": {
+                "name": "Övörkhangai Province",
+                "nativeName": "Өвөрхангай ᠥᠪᠦᠷᠬᠠᠩᠭ᠋ᠠᠢ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Mn_flag_Ovurhangai_aymag.svg"
+            },
+            "MN-049": {
+                "name": "Selenge Province",
+                "nativeName": "Сэлэнгэ ᠰᠡᠯᠡᠩᠭᠡ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Mn_flag_selenge_aimag_1999.svg"
+            },
+            "MN-051": {
+                "name": "Sükhbaatar Province",
+                "nativeName": "Сүхбаатар ᠰᠦᠬᠡᠪᠠᠭᠠᠲᠤᠷ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Mn_flag_sükhbaatar_aimag.svg"
+            },
+            "MN-047": {
+                "name": "Töv Province",
+                "nativeName": "Төв ᠲᠥᠪ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Tov_aymag_flag.svg"
+            },
+            "MN-046": {
+                "name": "Uvs Province",
+                "nativeName": "Увс ᠤᠪᠰᠤ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Uvs_Aimag_Flag.svg"
+            },
+            "MN-057": {
+                "name": "Zavkhan Province",
+                "nativeName": "Завхан ᠵᠠᠪᠬᠠᠨ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mn_flag_zavkhan_aimag.svg"
+            },
+            "MN-1": {
+                "name": "Ulaanbaatar",
+                "nativeName": "Улаанбаатар ᠤᠯᠠᠭᠠᠨᠪᠠᠭᠠᠲᠤᠷ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_ulaanbaatar.svg"
+            },
+            "MN-041": {
+                "name": "Hovsgel",
+                "nativeName": "Хөвсгөл ᠬᠥᠪᠰᠦᠭᠦᠯ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Mn_flag_khövsgöl_aimag_2014.svg"
             }
         }
     },
@@ -1896,6 +3018,47 @@
             }
         }
     },
+    "NP": {
+        "name": "Nepal",
+        "nativeName": "नेपाल",
+        "regions": {
+            "NP-P1": {
+                "name": "Koshi Province",
+                "nativeName": "कोशी प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emblem_of_Koshi_Province_(alternative).svg/128px-Emblem_of_Koshi_Province_(alternative).svg.png"
+            },
+            "NP-P2": {
+                "name": "Madhesh Province",
+                "nativeName": "मधेश प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/75/Province_No_2_emblem.png"
+            },
+            "NP-P3": {
+                "name": "Bagmati Province",
+                "nativeName": "बाग्मती प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/8/83/Emblem_of_Bagmati_Province.jpg"
+            },
+            "NP-P4": {
+                "name": "Gandaki Province",
+                "nativeName": "गण्डकी प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Emblem_of_Gandaki_Province_(alternative).svg/128px-Emblem_of_Gandaki_Province_(alternative).svg.png"
+            },
+            "NP-P5": {
+                "name": "Lumbini Province",
+                "nativeName": "लुम्बिनी प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Emblem_of_Lumbini_Province_(alternative).svg/128px-Emblem_of_Lumbini_Province_(alternative).svg.png"
+            },
+            "NP-P6": {
+                "name": "Karnali Province",
+                "nativeName": "कर्णाली प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/3/35/Emblem_of_Karnali_Pradesh.png"
+            },
+            "NP-P7": {
+                "name": "Sudurpashchim Province",
+                "nativeName": "सुदूरपश्चिम प्रदेश",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Emblem_of_Sudurpaschim_Province_(adjustable).svg/128px-Emblem_of_Sudurpaschim_Province_(adjustable).svg.png"
+            }
+        }
+    },
     "NZ": {
         "name": "New Zealand",
         "nativeName": "New Zealand",
@@ -1987,6 +3150,67 @@
             }
         }
     },
+    "OM": {
+        "name": "Oman",
+        "nativeName": "عمان",
+        "regions": {
+            "OM-DA": {
+                "name": "Ad Dakhiliyah Governorate",
+                "nativeName": "محافظة الداخلية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/16/Flag_of_Ad_Dakhiliyah_Governorate.svg/revision/latest?cb=20230416121055"
+            },
+            "OM-ZA": {
+                "name": "Ad Dhahirah Governorate",
+                "nativeName": "محافظة الظاهرة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/51/Flag_of_Ad_Dhahirah_Governorate.svg/revision/latest?cb=20230416121120"
+            },
+            "OM-BS": {
+                "name": "Al Batinah North Governorate",
+                "nativeName": "محافظة شمال الباطنة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d3/Flag_of_Al_Batinah_North_Governorate.svg/revision/latest?cb=20230416121211"
+            },
+            "OM-BJ": {
+                "name": "Al Batinah South Governorate",
+                "nativeName": "محافظة جنوب الباطنة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/63/Flag_of_Al_Batinah_South_Governorate.svg/revision/latest?cb=20230416121238"
+            },
+            "OM-BU": {
+                "name": "Al Buraymi Governorate",
+                "nativeName": "محافظة البريمي",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/66/Flag_of_Al_Buraimi.png/revision/latest?cb=20230416122508"
+            },
+            "OM-WU": {
+                "name": "Al Wusta Governorate",
+                "nativeName": "محافظة الوسطى",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/ed/Flag_of_Al_Wusta.jpg/revision/latest?cb=20230416122639"
+            },
+            "OM-SS": {
+                "name": "Ash Sharqiyah North Governorate",
+                "nativeName": "شمال الشرقية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/81/Flag_of_Ash_Sharqiyah_North_Governorate.png/revision/latest?cb=20230416122839"
+            },
+            "OM-SJ": {
+                "name": "Ash Sharqiyah South Governorate",
+                "nativeName": "جنوب الشرقية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/57/Flag_of_Ash_Sharqiyah_South_Governorate.gif/revision/latest?cb=20230416122827"
+            },
+            "OM-ZU": {
+                "name": "Dhofar Governorate",
+                "nativeName": "محافظة ظفار",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bd/Flag_of_Dhofar.gif/revision/latest?cb=20230416122029"
+            },
+            "OM-MA": {
+                "name": "Muscat Governorate",
+                "nativeName": "مسقط",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/df/Flag_of_Musandam.jpg/revision/latest?cb=20230416121943"
+            },
+            "OM-MU": {
+                "name": "Musandam Governorate",
+                "nativeName": "محافظة مسندم",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/60/Flag_of_Muscat_Governorate.webp/revision/latest?cb=20230416122255"
+            }
+        }
+    },
     "PE": {
         "name": "Peru",
         "nativeName": "Piruw",
@@ -2051,6 +3275,47 @@
             },
             "PH-09": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Zamboanga_del_Sur_gov._Flag.png/256px-Zamboanga_del_Sur_gov._Flag.png"
+            }
+        }
+    },
+    "PK": {
+        "name": "Pakistan",
+        "nativeName": "Pākistān پاکستان",
+        "regions": {
+            "PK-JK": {
+                "name": "Azad Kashmir",
+                "nativeName": "آزاد کشمیر",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Azad_Kashmir.svg"
+            },
+            "PK-BA": {
+                "name": "Balochistan",
+                "nativeName": "بلوچستان",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Balochistan.svg"
+            },
+            "PK-IS": {
+                "name": "Islamabad",
+                "nativeName": "وفاقی دارالحکومت اسلام آباد",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Proposed_Flag_of_Islamabad_Capital_Territory.svg"
+            },
+            "PK-KP": {
+                "name": "Khyber Pakhtunkhwa",
+                "nativeName": "خیبر پختونخوا",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Khyber_Pakhtunkhwa.svg"
+            },
+            "PK-PB": {
+                "name": "Punjab",
+                "nativeName": "پنجاب",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Punjab.svg"
+            },
+            "PK-SD": {
+                "name": "Sindh",
+                "nativeName": "سندھ",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Sindh.svg"
+            },
+            "PK-GB": {
+                "name": "Gilgit-Baltistan",
+                "nativeName": "گلگت بلتستان",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Gilgit-Baltistan.png"
             }
         }
     },
@@ -2491,107 +3756,309 @@
     },
     "SO": {
         "name": "Somalia",
-        "nativeName": "Soomaaliya aş-Şūmāl",
+        "nativeName": "Soomaaliya",
         "regions": {
             "SO-BN": {
                 "name": "Banaadir",
-                "nativeName": "Banaadir بنادر",
+                "nativeName": "Banaadir",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_Mogadishu,_Somalia.svg"
             },
             "SO-AW": {
                 "name": "Awdal",
-                "nativeName": "عدل Awdal",
+                "nativeName": "Awdal",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/7/72/Flag_of_Awdal.svg/revision/latest?cb=20230418220239"
             },
             "SO-BK": {
                 "name": "Bakool",
-                "nativeName": "Bakool باكول",
+                "nativeName": "Bakool",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2c/Flag_of_Bakool.svg/revision/latest?cb=20230418233121"
             },
             "SO-BR": {
                 "name": "Bari",
-                "nativeName": "Bariباري",
+                "nativeName": "Bari",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6c/Flag_of_Bari,_Somalia.svg/revision/latest?cb=20230418234536"
             },
             "SO-BY": {
                 "name": "Bay",
-                "nativeName": "Bay باي",
+                "nativeName": "Bay",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/4/40/Flag_of_Bay,_Somalia.svg/revision/latest?cb=20230419071220"
             },
             "SO-GA": {
                 "name": "Galgaduud",
-                "nativeName": "Galgaduud جلجدود",
+                "nativeName": "Galgaduud",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f9/Gedo_Flag.png/revision/latest?cb=20230419100359"
             },
             "SO-GE": {
                 "name": "Gedo",
-                "nativeName": "Gedo جدو",
+                "nativeName": "Gedo",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f9/Gedo_Flag.png/revision/latest?cb=20230419100359"
             },
             "SO-HI": {
                 "name": "Hiiraan",
-                "nativeName": "Hiiraan هيران",
+                "nativeName": "Hiiraan",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/0/09/Flag_of_Hiran,_Somalia.svg/revision/latest?cb=20230418220123"
             },
             "SO-JD": {
                 "name": "Middle Juba",
-                "nativeName": "Jubbada Dhexe جوبا الوسطى",
+                "nativeName": "Jubbada Dhexe",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/0/04/Flag_of_Middle_Juba.svg/revision/latest?cb=20230419094837"
             },
             "SO-JH": {
                 "name": "Lower Juba",
-                "nativeName": "Jubbada Hoose جوبا السفلى",
+                "nativeName": "Jubbada Hoose",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Flag_of_Lower_Juba.svg/revision/latest?cb=20230419094854"
             },
             "SO-MU": {
                 "name": "Mudug",
-                "nativeName": "Mudug مدج",
+                "nativeName": "Mudug",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/7/7d/Flag_of_Mudug.svg/revision/latest?cb=20230419071230"
             },
             "SO-NU": {
                 "name": "Nugaal",
-                "nativeName": "Nugaal نوجال",
+                "nativeName": "Nugaal",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/c/ca/Flag_of_Nugal,_Somalia.svg/revision/latest?cb=20230419094846"
             },
             "SO-SX": {
                 "name": "Sahil",
-                "nativeName": "Saaxil ساحل",
+                "nativeName": "Saaxil",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9d/Flag_of_Sahil,_Somaliland.svg/revision/latest?cb=20230418220250"
             },
             "SO-SA": {
                 "name": "Sanaag",
-                "nativeName": "سناج Sanaag",
+                "nativeName": "Sanaag",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bb/Flag_of_Sanaag.svg/revision/latest?cb=20230418220133"
             },
             "SO-SD": {
                 "name": "Middle Shebelle",
-                "nativeName": "Shabeellaha Dhexe شبيلي الوسطى",
+                "nativeName": "Shabeellaha Dhexe",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Flag_of_Middle_Shabelle.svg/revision/latest?cb=20230419094827"
             },
             "SO-SH": {
                 "name": "Lower Shabelle",
-                "nativeName": "Shabeellaha Hoose شبيلي السفلى",
+                "nativeName": "Shabeellaha Hoose",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/5/5b/Flag_of_Lower_Shabelle.svg/revision/latest?cb=20230419064948"
             },
             "SO-SO": {
                 "name": "Sool",
-                "nativeName": "Sool سول",
+                "nativeName": "Sool",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/2/21/Flag_of_Togdheer.svg/revision/latest?cb=20230418220300"
             },
             "SO-TO": {
                 "name": "Togdheer",
-                "nativeName": "توجدير Togdheer",
+                "nativeName": "Togdheer",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/2/21/Flag_of_Togdheer.svg/revision/latest?cb=20230418220300"
             },
             "SO-WO": {
                 "name": "Woqooyi Galbeed",
-                "nativeName": "وقويي جالبيد Woqooyi Galbeed",
+                "nativeName": "Woqooyi Galbeed",
                 "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Flag_of_Somaliland.svg/revision/latest?cb=20200812174501"
+            }
+        }
+    },
+    "SV": {
+        "name": "El Salvador",
+        "nativeName": "El Salvador",
+        "regions": {
+            "SV-AH": {
+                "name": "Ahuachapán",
+                "nativeName": "Departamento de Ahuachapán",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandera_del_Departamento_de_Ahuachapán.PNG"
+            },
+            "SV-CA": {
+                "name": "Cabañas",
+                "nativeName": "Departamento de Cabañas",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_the_Cabañas_Department.svg"
+            },
+            "SV-CH": {
+                "name": "Chalatenango",
+                "nativeName": "Departamento de Chalatenango",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_Chalatenango.svg"
+            },
+            "SV-CU": {
+                "name": "Cuscatlán",
+                "nativeName": "Departamento de Cuscatlán",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bandera_del_Departamento_de_Cuscatlán.PNG"
+            },
+            "SV-MO": {
+                "name": "Morazán",
+                "nativeName": "Departamento de Morazán",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Morazán_Department.svg"
+            },
+            "SV-SO": {
+                "name": "Sonsonate",
+                "nativeName": "Departamento de Sonsonate",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bandera_Sonsonate_SV.png"
+            },
+            "SV-US": {
+                "name": "Usulután",
+                "nativeName": "Departamento de Usulután",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Usulatán_Department.svg"
+            },
+            "SV-LI": {
+                "name": "Departamento de La Libertad",
+                "nativeName": "Departamento de La Libertad",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_La_Libertad_Department_(El_Salvador).svg"
+            },
+            "SV-PA": {
+                "name": "Departamento de La Paz",
+                "nativeName": "Departamento de La Paz",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Bandera_del_Departamento_de_La_Paz.jpg"
+            },
+            "SV-UN": {
+                "name": "Departamento de La Unión",
+                "nativeName": "Departamento de La Unión",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bandera_del_Departamento_de_La_Union_ES.jpg"
+            },
+            "SV-SM": {
+                "name": "Departamento de San Miguel",
+                "nativeName": "Departamento de San Miguel",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_San_Miguel_Department.png"
+            },
+            "SV-SS": {
+                "name": "Departamento de San Salvador",
+                "nativeName": "Departamento de San Salvador",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/San_Salvador_Flag.png"
+            },
+            "SV-SV": {
+                "name": "Departamento de San Vicente",
+                "nativeName": "Departamento de San Vicente",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_San_Vicente_Department.svg"
+            },
+            "SV-SA": {
+                "name": "Departamento de Santa Ana",
+                "nativeName": "Departamento de Santa Ana",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Santa_Ana_(El_Salvador)_flag.jpg"
             }
         }
     },
     "TH": {
         "nativeName": "ประเทศไทย"
+    },
+    "TN": {
+        "name": "Tunisia",
+        "nativeName": "ولاية منوبة",
+        "regions": {
+            "TN-31": {
+                "name": "Béja",
+                "nativeName": "ولاية باجة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b3/B%C3%A9ja.png/revision/latest?cb=20240131051820"
+            },
+            "TN-13": {
+                "name": "Ben Arous",
+                "nativeName": "ولاية بن عروس",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/64/Ben_Arous.png/revision/latest?cb=20240131051851"
+            },
+            "TN-23": {
+                "name": "Bizerte",
+                "nativeName": "ولاية بنزرت",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Bizerte.png/revision/latest?cb=20240131052025"
+            },
+            "TN-81": {
+                "name": "Gabès",
+                "nativeName": "ولاية قابس",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/78/Gab%C3%A8s.png/revision/latest?cb=20240131052117"
+            },
+            "TN-71": {
+                "name": "Gafsa",
+                "nativeName": "ولاية قفصة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/8e/Gafsa_Flag.png/revision/latest?cb=20240131052310"
+            },
+            "TN-32": {
+                "name": "Jendouba",
+                "nativeName": "ولاية جندوبة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4f/Jendouba_Flag.png/revision/latest?cb=20240131052340"
+            },
+            "TN-41": {
+                "name": "Kairouan",
+                "nativeName": "ولاية القيروان",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9d/Kairouan_Flag.png/revision/latest?cb=20240131050358"
+            },
+            "TN-42": {
+                "name": "Kasserine",
+                "nativeName": "ولاية القصرين",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/41/Kasserine.png/revision/latest?cb=20240131050240"
+            },
+            "TN-73": {
+                "name": "Kébili",
+                "nativeName": "ولاية قبلي",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/1f/Kebili_2.png/revision/latest?cb=20240131050527"
+            },
+            "TN-12": {
+                "name": "Ariana",
+                "nativeName": "ولاية أريانة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/83/Ariana.png/revision/latest?cb=20240131050902"
+            },
+            "TN-14": {
+                "name": "Manouba",
+                "nativeName": "ولاية منوبة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Manouba.png/revision/latest?cb=20240131052915"
+            },
+            "TN-33": {
+                "name": "Al Kaf",
+                "nativeName": "ولاية الكاف",
+                "flag": ""
+            },
+            "TN-53": {
+                "name": "Mahdia",
+                "nativeName": "ولاية المهدية",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Mahdia.png/revision/latest?cb=20240131052851"
+            },
+            "TN-82": {
+                "name": "Médenine",
+                "nativeName": "ولاية مدنين",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f3/Medenine.png/revision/latest?cb=20240131053015"
+            },
+            "TN-52": {
+                "name": "Monastir",
+                "nativeName": "ولاية المنستير",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2e/Monastir.png/revision/latest?cb=20240131053036"
+            },
+            "TN-21": {
+                "name": "Nabeul",
+                "nativeName": "ولاية نابل",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/de/Nabeul.png/revision/latest?cb=20240131053055"
+            },
+            "TN-61": {
+                "name": "Sfax",
+                "nativeName": "ولاية صفاقس",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/07/Sfax.png/revision/latest?cb=20240131053332"
+            },
+            "TN-43": {
+                "name": "Sidi Bouzid",
+                "nativeName": "ولاية سيدي بوزيد",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9b/Sidi_Bouzid.png/revision/latest?cb=20240131053355"
+            },
+            "TN-34": {
+                "name": "Siliana",
+                "nativeName": "ولاية سليانة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Siliana.png/revision/latest?cb=20240131053413"
+            },
+            "TN-51": {
+                "name": "Sousse",
+                "nativeName": "ولاية سوسة",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/0b/Flag_for_Sousse.png/revision/latest?cb=20240131052540"
+            },
+            "TN-83": {
+                "name": "Tataouine",
+                "nativeName": "ولاية تطاوين",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/23/Tataouine.png/revision/latest?cb=20240131053603"
+            },
+            "TN-72": {
+                "name": "Tozeur",
+                "nativeName": "ولاية توزر",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6b/Tozeur.png/revision/latest?cb=20240131053623"
+            },
+            "TN-11": {
+                "name": "Tunis",
+                "nativeName": "ولاية تونس",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/fd/Flag_for_Tunis.png/revision/latest?cb=20240131052600"
+            },
+            "TN-22": {
+                "name": "Zaghouan Governorate",
+                "nativeName": "ولاية زغوان",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/57/Zaghouan.png/revision/latest?cb=20240131053641"
+            }
+        }
     },
     "TR": {
         "regions": {
@@ -2615,6 +4082,87 @@
             },
             "TR-GUA": {
                 "flag": "https://www.fotw.info/images/t/tr-63.gif"
+            }
+        }
+    },
+    "TT": {
+        "name": "Trinidad and Tobago",
+        "nativeName": "Trinidad and Tobago",
+        "regions": {
+            "TT-ARI": {
+                "name": "Arima",
+                "nativeName": "Arima",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-ar.gif"
+            },
+            "TT-CHA": {
+                "name": "Chaguanas",
+                "nativeName": "Chaguanas",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-ch.gif"
+            },
+            "TT-CTT": {
+                "name": "Couva-Tabaquite-Talparo",
+                "nativeName": "Couva-Tabaquite-Talparo",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-ct2.gif"
+            },
+            "TT-DMN": {
+                "name": "Diego Martin",
+                "nativeName": "Diego Martin",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-dmrc.gif"
+            },
+            "TT-MRC": {
+                "name": "Mayaro-Rio Claro",
+                "nativeName": "Mayaro-Rio Claro",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-mrcrc.gif"
+            },
+            "TT-PED": {
+                "name": "Penal-Debe",
+                "nativeName": "Penal-Debe",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-pdrc.gif"
+            },
+            "TT-POS": {
+                "name": "Port of Spain",
+                "nativeName": "Port of Spain",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-pos.gif"
+            },
+            "TT-PRT": {
+                "name": "Princes Town",
+                "nativeName": "Princes Town",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-pt.gif"
+            },
+            "TT-PTF": {
+                "name": "Point Fortin",
+                "nativeName": "Point Fortin",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-pf2.gif"
+            },
+            "TT-SFO": {
+                "name": "San Fernando",
+                "nativeName": "San Fernando",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-sf.gif"
+            },
+            "TT-SGE": {
+                "name": "Sangre Grande",
+                "nativeName": "Sangre Grande",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-sn.gif"
+            },
+            "TT-SIP": {
+                "name": "Siparia",
+                "nativeName": "Siparia",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-si.gif"
+            },
+            "TT-SJL": {
+                "name": "San Juan-Laventille",
+                "nativeName": "San Juan-Laventille",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt-sl.gif"
+            },
+            "TT-TOB": {
+                "name": "Tobago",
+                "nativeName": "Tobago",
+                "flag": "https://www.crwflags.com/fotw/images/t/tt.gif"
+            },
+            "TT-TUP": {
+                "name": "Tunapuna-Piarco",
+                "nativeName": "Tunapuna-Piarco",
+                "flag": "https://www.crwflags.com/fotw/flags/tt-tp.html"
             }
         }
     },
@@ -2752,6 +4300,107 @@
             "US-WADC": {
                 "nativeName": "Washington, D.C.",
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
+            }
+        }
+    },
+    "UY": {
+        "name": "Uruguay",
+        "nativeName": "Uruguay",
+        "regions": {
+            "UY-AR": {
+                "name": "Artigas",
+                "nativeName": "Artigas",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Artigas_Department.svg"
+            },
+            "UY-CA": {
+                "name": "Canelones",
+                "nativeName": "Canelones",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_Canelones_Department.svg"
+            },
+            "UY-CL": {
+                "name": "Cerro Largo",
+                "nativeName": "Cerro Largo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Cerro_Largo_Department.svg"
+            },
+            "UY-CO": {
+                "name": "Colonia",
+                "nativeName": "Colonia",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Colonia_Department.svg"
+            },
+            "UY-DU": {
+                "name": "Durazno",
+                "nativeName": "Durazno",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Durazno_Department.svg"
+            },
+            "UY-FS": {
+                "name": "Flores",
+                "nativeName": "Flores",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Flores_Department.png/150px-Flag_of_Flores_Department.png"
+            },
+            "UY-FD": {
+                "name": "Florida",
+                "nativeName": "Florida",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Flag_of_Florida_Department.png/150px-Flag_of_Florida_Department.png"
+            },
+            "UY-LA": {
+                "name": "Lavalleja",
+                "nativeName": "Lavalleja",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Lavalleja_Department.png/150px-Flag_of_Lavalleja_Department.png"
+            },
+            "UY-MA": {
+                "name": "Maldonado",
+                "nativeName": "Maldonado",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Flag_of_Maldonado_Department.png/150px-Flag_of_Maldonado_Department.png"
+            },
+            "UY-PA": {
+                "name": "Paysandú",
+                "nativeName": "Paysandú",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_Paysandú_Department.svg"
+            },
+            "UY-RN": {
+                "name": "Río Negro",
+                "nativeName": "Río Negro",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Rio_Negro_Department.png/150px-Flag_of_Rio_Negro_Department.png"
+            },
+            "UY-RV": {
+                "name": "Rivera",
+                "nativeName": "Rivera",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flag_of_Rivera_Department.png/150px-Flag_of_Rivera_Department.png"
+            },
+            "UY-RO": {
+                "name": "Rocha",
+                "nativeName": "Rocha",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_Rocha_Department.svg"
+            },
+            "UY-SA": {
+                "name": "Salto",
+                "nativeName": "Salto",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Salto_Department.svg/128px-Flag_of_Salto_Department.svg.png"
+            },
+            "UY-SJ": {
+                "name": "San José",
+                "nativeName": "San José",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_San_José_Department.svg"
+            },
+            "UY-SO": {
+                "name": "Soriano",
+                "nativeName": "Soriano",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Soriano_Department.svg"
+            },
+            "UY-TT": {
+                "name": "Treinta y Tres",
+                "nativeName": "Treinta y Tres",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Treinta_y_Tres_Department.svg"
+            },
+            "UY-MO": {
+                "name": "Montevideo",
+                "nativeName": "Montevideo",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Coat_of_arms_of_Montevideo_Department.svg/128px-Coat_of_arms_of_Montevideo_Department.svg.png"
+            },
+            "UY-TA": {
+                "name": "Tacuarembó",
+                "nativeName": "Tacuarembó",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Coat_of_arms_of_Tacuarembó_Department.png"
             }
         }
     },

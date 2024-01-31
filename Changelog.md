@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.6.2
+
+- Flag updates
+- Latest translations
+
 ## Version 3.6.1
 
 - Update flags for latest version of osuworld where it adds 48 countries
