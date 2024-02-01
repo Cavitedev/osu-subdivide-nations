@@ -263,6 +263,9 @@
     "region_bo": {
         "message": "Департамент"
     },
+    "region_ba": {
+        "message": "Энтитет / Округ"
+    },
     "region_bn": {
         "message": "Округ"
     },
