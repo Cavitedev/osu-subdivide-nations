@@ -233,14 +233,68 @@
     "region_sa": {
         "message": "Provincia"
     },
+    "region_af": {
+        "message": "Provincia"
+    },
+    "region_al": {
+        "message": "Condado"
+    },
+    "region_dz": {
+        "message": "Provincia"
+    },
+    "region_ad": {
+        "message": "Parroquia"
+    },
+    "region_ao": {
+        "message": "Provincia"
+    },
+    "region_am": {
+        "message": "Marz"
+    },
+    "region_bd": {
+        "message": "División"
+    },
+    "region_bb": {
+        "message": "Parroquia"
+    },
+    "region_bo": {
+        "message": "Departamento"
+    },
+    "region_ba": {
+        "message": "Entidad / Distrito"
+    },
     "region_bn": {
         "message": "Distrito"
+    },
+    "region_bf": {
+        "message": "Región"
+    },
+    "region_cv": {
+        "message": "Isla"
+    },
+    "region_kh": {
+        "message": "Provincia"
+    },
+    "region_cr": {
+        "message": "Provincia"
     },
     "region_hr": {
         "message": "Condado"
     },
+    "region_do": {
+        "message": "Provincia"
+    },
+    "region_ge": {
+        "message": "Región"
+    },
+    "region_kg": {
+        "message": "Región"
+    },
     "region_la": {
         "message": "Provincia"
+    },
+    "region_mm": {
+        "message": "Región / Estado"
     },
     "region_np": {
         "message": "Provincia"
@@ -250,6 +304,12 @@
     },
     "region_pk": {
         "message": "Provincia"
+    },
+    "region_py": {
+        "message": "Departamento"
+    },
+    "region_qa": {
+        "message": "Municipio"
     },
     "region_so": {
         "message": "Región"
