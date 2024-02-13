@@ -80,20 +80,32 @@
     "region_be": {
         "message": "เพิ่มเติม"
     },
+    "region_cl": {
+        "message": "พื้นที่"
+    },
     "region_cn": {
         "message": "เขตปกครอง"
     },
     "region_de": {
         "message": "มลรัฐ"
     },
+    "region_fi": {
+        "message": "พื้นที่"
+    },
     "region_jp": {
         "message": "ที่อยู่"
+    },
+    "region_mx": {
+        "message": "มลรัฐ"
     },
     "region_my": {
         "message": "รัฐ"
     },
+    "region_nl": {
+        "message": "จังหวัด"
+    },
     "region_th": {
-        "message": "ภาษาที่ใช้แสดงชื่อจังหวัด/ท้องถิ่น"
+        "message": "จังหวัด"
     },
     "region_bg": {
         "message": "จังหวัด"
@@ -112,5 +124,20 @@
     },
     "region_sa": {
         "message": "จังหวัด"
+    },
+    "region_ao": {
+        "message": "จังหวัด"
+    },
+    "region_bn": {
+        "message": "ที่อยู่"
+    },
+    "region_mm": {
+        "message": "ภาษาที่ใช้แสดงชื่อจังหวัด/ท้องถิ่น"
+    },
+    "region_qa": {
+        "message": "เพิ่มเติม"
+    },
+    "region_tt": {
+        "message": "ภาษาที่ใช้แสดงชื่อจังหวัด/ท้องถิ่น"
     }
 }

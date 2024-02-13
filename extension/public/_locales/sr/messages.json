@@ -47,6 +47,9 @@
     "open_sidebar": {
         "message": "Отворите бочну траку"
     },
+    "region_ranking_desc": {
+        "message": "Приказује рангирање региона од {{osu_world}} на osu! профилима."
+    },
     "score_ranking_desc": {
         "message": "Приказује рангирање резултата од {{respektive_api}} на osu! профилима."
     },
@@ -229,5 +232,122 @@
     },
     "region_sa": {
         "message": "Провинција"
+    },
+    "region_af": {
+        "message": "Провинција"
+    },
+    "region_al": {
+        "message": "Област"
+    },
+    "region_dz": {
+        "message": "Провинција"
+    },
+    "region_ad": {
+        "message": "Парохија"
+    },
+    "region_ao": {
+        "message": "Провинција"
+    },
+    "region_bf": {
+        "message": "Регион"
+    },
+    "region_hr": {
+        "message": "Област"
+    },
+    "region_do": {
+        "message": "Провинција"
+    },
+    "region_eg": {
+        "message": "Вилајет"
+    },
+    "region_sv": {
+        "message": "Департман"
+    },
+    "region_ge": {
+        "message": "Регион"
+    },
+    "region_gt": {
+        "message": "Департман"
+    },
+    "region_hn": {
+        "message": "Департман"
+    },
+    "region_is": {
+        "message": "Регион"
+    },
+    "region_iq": {
+        "message": "Вилајет"
+    },
+    "region_jo": {
+        "message": "Вилајет"
+    },
+    "region_kw": {
+        "message": "Вилајет"
+    },
+    "region_kg": {
+        "message": "Регион"
+    },
+    "region_la": {
+        "message": "Провинција"
+    },
+    "region_lb": {
+        "message": "Вилајет"
+    },
+    "region_lu": {
+        "message": "Кантон"
+    },
+    "region_mn": {
+        "message": "Провинција"
+    },
+    "region_ma": {
+        "message": "Регион"
+    },
+    "region_mm": {
+        "message": "Регион / Држава"
+    },
+    "region_np": {
+        "message": "Провинција"
+    },
+    "region_ni": {
+        "message": "Департман"
+    },
+    "region_mk": {
+        "message": "Статистички Регион"
+    },
+    "region_om": {
+        "message": "Вилајет"
+    },
+    "region_pk": {
+        "message": "Провинција"
+    },
+    "region_py": {
+        "message": "Департман"
+    },
+    "region_qa": {
+        "message": "Општина"
+    },
+    "region_si": {
+        "message": "Статистички Регион"
+    },
+    "region_so": {
+        "message": "Регион"
+    },
+    "region_lk": {
+        "message": "Провинција"
+    },
+    "region_tt": {
+        "message": "Регион / Општина"
+    },
+    "region_tn": {
+        "message": "Вилајет"
+    },
+    "region_ae": {
+        "message": "Емирати"
+    },
+    "region_uy": {
+        "message": "Департман"
+    },
+    "region_uz": {
+        "message": "Регион"
     }
 }

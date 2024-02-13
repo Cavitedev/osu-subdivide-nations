@@ -9,7 +9,7 @@
         "message": "Idioma padrão"
     },
     "native_language": {
-        "message": "Língua materna"
+        "message": "Idioma padrão"
     },
     "clean_cache": {
         "message": "Limpar o cache"
@@ -78,7 +78,7 @@
         "message": "Comunidade autónoma"
     },
     "region_fi": {
-        "message": "Região"
+        "message": "Idioma padrão"
     },
     "region_fr": {
         "message": "Região"
@@ -196,5 +196,41 @@
     },
     "region_sa": {
         "message": "Província"
+    },
+    "region_bo": {
+        "message": "Departamento"
+    },
+    "region_bn": {
+        "message": "Distrito"
+    },
+    "region_bf": {
+        "message": "Região"
+    },
+    "region_hr": {
+        "message": "Condado"
+    },
+    "region_ge": {
+        "message": "Região"
+    },
+    "region_is": {
+        "message": "Região"
+    },
+    "region_kg": {
+        "message": "Língua materna"
+    },
+    "region_la": {
+        "message": "Província"
+    },
+    "region_ma": {
+        "message": "Região"
+    },
+    "region_np": {
+        "message": "Província"
+    },
+    "region_pk": {
+        "message": "Província"
+    },
+    "region_uz": {
+        "message": "Região"
     }
 }

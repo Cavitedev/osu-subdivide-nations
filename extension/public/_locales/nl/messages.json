@@ -57,7 +57,7 @@
         "message": "Provincie"
     },
     "region_cl": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_cn": {
         "message": "Administratieve Regio"
@@ -66,7 +66,7 @@
         "message": "Ministerie"
     },
     "region_cz": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_de": {
         "message": "Staat"
@@ -78,7 +78,7 @@
         "message": "Regio"
     },
     "region_fr": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_hu": {
         "message": "Land"
@@ -96,10 +96,10 @@
         "message": "Provincie"
     },
     "region_kz": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_lv": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_mx": {
         "message": "Staat"
@@ -123,7 +123,7 @@
         "message": "Woiwodschap"
     },
     "region_pt": {
-        "message": "Regio"
+        "message": "Taal regio:"
     },
     "region_ro": {
         "message": "Land"
@@ -171,13 +171,16 @@
         "message": "Provincie"
     },
     "region_sk": {
-        "message": "Regio"
+        "message": "Land"
     },
     "region_gb": {
         "message": "Land"
     },
     "region_ie": {
         "message": "Land"
+    },
+    "region_ve": {
+        "message": "Staat"
     },
     "region_za": {
         "message": "Provincie"
@@ -187,5 +190,44 @@
     },
     "region_sa": {
         "message": "Provincie"
+    },
+    "region_bh": {
+        "message": "Prefectuur"
+    },
+    "region_bf": {
+        "message": "Regio"
+    },
+    "region_ge": {
+        "message": "Regio"
+    },
+    "region_is": {
+        "message": "Regio"
+    },
+    "region_kg": {
+        "message": "Regio"
+    },
+    "region_lb": {
+        "message": "Ministerie"
+    },
+    "region_mn": {
+        "message": "Provincie"
+    },
+    "region_ma": {
+        "message": "Regio"
+    },
+    "region_np": {
+        "message": "Land"
+    },
+    "region_pk": {
+        "message": "Provincie"
+    },
+    "region_qa": {
+        "message": "Moedertaal"
+    },
+    "region_so": {
+        "message": "Regio"
+    },
+    "region_uz": {
+        "message": "Regio"
     }
 }

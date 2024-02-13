@@ -216,9 +216,39 @@
         "message": "Provinz"
     },
     "region_za": {
-        "message": "Provinz"
+        "message": "Bundeslandrangliste"
     },
     "region_sa": {
+        "message": "Bundesland"
+    },
+    "region_af": {
+        "message": "Bundesland"
+    },
+    "region_bo": {
+        "message": "Abteilung"
+    },
+    "region_bn": {
+        "message": "Land"
+    },
+    "region_hr": {
+        "message": "Landkreis"
+    },
+    "region_la": {
+        "message": "Provinz"
+    },
+    "region_lu": {
+        "message": "Kanton"
+    },
+    "region_mn": {
+        "message": "Provinz"
+    },
+    "region_np": {
+        "message": "Provinz"
+    },
+    "region_pk": {
+        "message": "Provinz"
+    },
+    "region_lk": {
         "message": "Provinz"
     }
 }
