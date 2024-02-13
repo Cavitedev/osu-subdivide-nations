@@ -2505,6 +2505,57 @@
             }
         }
     },
+    "LB": {
+        "name": "Lebanon",
+        "nativeName": "لبنان",
+        "regions": {
+            "LB-AK": {
+                "name": "Akkar Governorate",
+                "nativeName": "محافظة عكار",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-bebni.gif"
+            },
+            "LB-BH": {
+                "name": "Baalbek-Hermel Governorate",
+                "nativeName": "محافظة بعلبك الهرمل",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-bh-ba.jpg"
+            },
+            "LB-BA": {
+                "name": "Beirut Governorate",
+                "nativeName": "محافظة بيروت",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-be-be.gif"
+            },
+            "LB-BI": {
+                "name": "Beqaa Governorate",
+                "nativeName": "محافظة البقاع",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-rasha.gif"
+            },
+            "LB-KJ": {
+                "name": "Keserwan-Jbeil Governorate",
+                "nativeName": "محافظة كسروان جبيل",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-jbeil.gif"
+            },
+            "LB-JL": {
+                "name": "Mount Lebanon Governorate",
+                "nativeName": "محافظة جبل لبنان",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-ml-al.gif"
+            },
+            "LB-NA": {
+                "name": "Nabatieh Governorate",
+                "nativeName": "محافظة النبطية",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-na-na.gif"
+            },
+            "LB-AS": {
+                "name": "North Governorate",
+                "nativeName": "محافظة الشمال",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-no-tr.gif"
+            },
+            "LB-JA": {
+                "name": "South Governorate",
+                "nativeName": "محافظة الجنوب",
+                "flag": "https://www.crwflags.com/fotw/images/l/lb-so-si.gif"
+            }
+        }
+    },
     "LT": {
         "regions": {
             "LT-PN": {

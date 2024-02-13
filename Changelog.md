@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.6.3
+
+- Add Lebanon
+- Latest translations
+
 ## Version 3.6.2
 
 - Flag updates
