@@ -232,5 +232,47 @@
     },
     "region_sa": {
         "message": "Provincia"
+    },
+    "region_af": {
+        "message": "Provincia"
+    },
+    "region_dz": {
+        "message": "Provincia"
+    },
+    "region_bd": {
+        "message": "Dipartimento"
+    },
+    "region_bo": {
+        "message": "Distretto"
+    },
+    "region_hr": {
+        "message": "Contea"
+    },
+    "region_sv": {
+        "message": "Riguardo"
+    },
+    "region_ge": {
+        "message": "Regione"
+    },
+    "region_hn": {
+        "message": "Dominio"
+    },
+    "region_la": {
+        "message": "Provincia"
+    },
+    "region_lu": {
+        "message": "Cantone"
+    },
+    "region_mn": {
+        "message": "Provincia"
+    },
+    "region_ma": {
+        "message": "Regione"
+    },
+    "region_py": {
+        "message": "Distretto"
+    },
+    "region_uz": {
+        "message": "Regione"
     }
 }

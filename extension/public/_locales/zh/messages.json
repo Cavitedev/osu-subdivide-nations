@@ -150,7 +150,7 @@
         "message": "地区"
     },
     "region_ph": {
-        "message": "地区"
+        "message": "省份"
     },
     "region_pl": {
         "message": "省份"
@@ -165,7 +165,7 @@
         "message": "省份"
     },
     "region_sg": {
-        "message": "地区"
+        "message": "大区"
     },
     "region_th": {
         "message": "省份"
@@ -237,13 +237,13 @@
         "message": "省份"
     },
     "region_al": {
-        "message": "州份"
+        "message": "省份"
     },
     "region_dz": {
         "message": "省份"
     },
     "region_ad": {
-        "message": "堂区"
+        "message": "教区"
     },
     "region_ao": {
         "message": "省份"
@@ -255,19 +255,19 @@
         "message": "省份"
     },
     "region_bd": {
-        "message": "专区"
+        "message": "大区"
     },
     "region_bb": {
-        "message": "教区"
+        "message": "堂区"
     },
     "region_bo": {
-        "message": "省份"
+        "message": "专区"
     },
     "region_bn": {
         "message": "大区"
     },
     "region_bf": {
-        "message": "大区"
+        "message": "地区"
     },
     "region_cv": {
         "message": "岛屿"
@@ -285,7 +285,7 @@
         "message": "省份"
     },
     "region_eg": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_sv": {
         "message": "省份"
@@ -303,13 +303,13 @@
         "message": "地区"
     },
     "region_iq": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_jo": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_kw": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_kg": {
         "message": "地区"
@@ -318,19 +318,19 @@
         "message": "省份"
     },
     "region_lb": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_lu": {
-        "message": "县"
+        "message": "郡"
     },
     "region_mn": {
         "message": "省份"
     },
     "region_ma": {
-        "message": "大区"
+        "message": "地区"
     },
     "region_mm": {
-        "message": "地区"
+        "message": "省份"
     },
     "region_np": {
         "message": "省份"
@@ -342,7 +342,7 @@
         "message": "统计区"
     },
     "region_om": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_pk": {
         "message": "省份"
@@ -357,16 +357,16 @@
         "message": "统计区"
     },
     "region_so": {
-        "message": "州份"
+        "message": "地区"
     },
     "region_lk": {
         "message": "省份"
     },
     "region_tt": {
-        "message": "地区"
+        "message": "自治区"
     },
     "region_tn": {
-        "message": "省份"
+        "message": "州份"
     },
     "region_ae": {
         "message": "酋长国"
@@ -375,6 +375,6 @@
         "message": "省份"
     },
     "region_uz": {
-        "message": "州份"
+        "message": "地区"
     }
 }
