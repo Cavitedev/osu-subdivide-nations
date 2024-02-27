@@ -29,6 +29,9 @@
     "highest_rank_profile": {
         "message": "Peringkat tertinggi: #{{rankHighest.rank}} pada {{formattedDate}}"
     },
+    "open_sidebar": {
+        "message": "Buka Bilah Samping"
+    },
     "region": {
         "message": "Wilayah"
     },
@@ -55,6 +58,9 @@
     },
     "region_hu": {
         "message": "Daerah"
+    },
+    "region_id": {
+        "message": "Provinsi"
     },
     "region_jp": {
         "message": "Prefektur"
