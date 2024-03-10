@@ -29,6 +29,39 @@
     "highest_rank_profile": {
         "message": "Peringkat tertinggi: #{{rankHighest.rank}} pada {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Peringkat Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Pembaruan peringkat terakhir pada {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Pengaturan"
+    },
+    "website_settings": {
+        "message": "Pengaturan {{Website}}"
+    },
+    "about": {
+        "message": "Tentang"
+    },
+    "open_sidebar": {
+        "message": "Buka Bilah Samping"
+    },
+    "region_ranking_desc": {
+        "message": "Menampilkan peringkat wilayah dari {{osu_world}} pada profil osu!"
+    },
+    "score_ranking_desc": {
+        "message": "Menampilkan peringkat skor dari {{respektive_api}} pada profil osu!"
+    },
+    "respektive_api": {
+        "message": "API Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Menampilkan peringkat Kudosu dari {{hiviexd_api}} pada profil osu!"
+    },
+    "hiviexd_api": {
+        "message": "API Hiviexd"
+    },
     "region": {
         "message": "Wilayah"
     },
@@ -55,6 +88,9 @@
     },
     "region_hu": {
         "message": "Daerah"
+    },
+    "region_id": {
+        "message": "Provinsi"
     },
     "region_jp": {
         "message": "Prefektur"
