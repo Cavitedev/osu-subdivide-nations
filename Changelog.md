@@ -1,8 +1,30 @@
 # Changelog
 
+## Version 3.6.4
+
+- Add India
+- Latest translations
+
+## Version 3.6.3
+
+- Add Lebanon
+- Latest translations
+
+## Version 3.6.2
+
+- Flag updates
+- Latest translations
+
+## Version 3.6.1
+
+- Update flags for latest version of osuworld where it adds 48 countries
+
 ## Version 3.6.0
 
-- 
+- Add option to filter regional ranking by country
+- Update flags such as Norway subdivision
+- Update dependencies
+- Latest translations
 
 ## Version 3.5.6
 
