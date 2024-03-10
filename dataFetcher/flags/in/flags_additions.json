@@ -284,6 +284,77 @@
             }
         }
     },
+    "BF": {
+        "name": "Burkina Faso",
+        "nativeName": "Burkina Faso",
+        "regions": {
+            "BF-01": {
+                "name": "Boucle du Mouhoun",
+                "nativeName": "Boucle du Mouhoun",
+                "flag": ""
+            },
+            "BF-02": {
+                "name": "Waterfalls",
+                "nativeName": "Cascades",
+                "flag": ""
+            },
+            "BF-03": {
+                "name": "Centre",
+                "nativeName": "Centre",
+                "flag": ""
+            },
+            "BF-04": {
+                "name": "Central-East",
+                "nativeName": "Centre-Est",
+                "flag": ""
+            },
+            "BF-05": {
+                "name": "Central-North",
+                "nativeName": "Centre-Nord",
+                "flag": ""
+            },
+            "BF-06": {
+                "name": "Central-West",
+                "nativeName": "Centre-Ouest",
+                "flag": ""
+            },
+            "BF-07": {
+                "name": "Central-South",
+                "nativeName": "Centre-Sud",
+                "flag": ""
+            },
+            "BF-08": {
+                "name": "East",
+                "nativeName": "Est",
+                "flag": ""
+            },
+            "BF-09": {
+                "name": "Upper-Basins",
+                "nativeName": "Hauts-Bassins",
+                "flag": ""
+            },
+            "BF-10": {
+                "name": "North",
+                "nativeName": "Nord",
+                "flag": ""
+            },
+            "BF-11": {
+                "name": "Central-Plateau",
+                "nativeName": "Plateau-Central",
+                "flag": ""
+            },
+            "BF-12": {
+                "name": "Sahel",
+                "nativeName": "Sahel",
+                "flag": ""
+            },
+            "BF-13": {
+                "name": "Southwest",
+                "nativeName": "Sud-Ouest",
+                "flag": ""
+            }
+        }
+    },
     "BG": {
         "name": "Bulgaria",
         "nativeName": "България",
