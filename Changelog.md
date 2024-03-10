@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.6.4
+
+- Add India
+- Latest translations
+
 ## Version 3.6.3
 
 - Add Lebanon

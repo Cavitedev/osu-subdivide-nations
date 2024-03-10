@@ -1928,6 +1928,186 @@
             }
         }
     },
+    "IN": {
+        "name": "India",
+        "regions": {
+            "IN-AN": {
+                "name": "Andaman and Nicobar Islands",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Andaman_and_Nicobar_Islands_emblem.png"
+            },
+            "IN-AP": {
+                "name": "Andhra Pradesh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/3/37/Emblem_of_Andhra_Pradesh.svg"
+            },
+            "IN-AR": {
+                "name": "Arunachal Pradesh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/d/d4/Arunachal_Pradesh_Seal.svg"
+            },
+            "IN-AS": {
+                "name": "Assam",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Seal_of_Assam.svg/128px-Seal_of_Assam.svg.png"
+            },
+            "IN-BR": {
+                "name": "Bihar",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Seal_of_Bihar.svg"
+            },
+            "IN-CH": {
+                "name": "Chandigarh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/a/a0/Emblem_of_Chandigarh.svg"
+            },
+            "IN-CG": {
+                "name": "Chhattisgarh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Coat_of_arms_of_Chhattisgarh.svg/128px-Coat_of_arms_of_Chhattisgarh.svg.png"
+            },
+            "IN-DH": {
+                "name": "Dadra and Nagar Haveli and Daman and Diu",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Seal_of_Dadra_and_Nagar_Haveli_and_Daman_and_Diu.svg/128px-Seal_of_Dadra_and_Nagar_Haveli_and_Daman_and_Diu.svg.png"
+            },
+            "IN-DL": {
+                "name": "Delhi",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seal_of_the_National_Capital_Territory_of_Delhi.svg/128px-Seal_of_the_National_Capital_Territory_of_Delhi.svg.png"
+            },
+            "IN-GA": {
+                "name": "Goa",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/2/26/Emblem_of_Goa.svg"
+            },
+            "IN-GJ": {
+                "name": "Gujarat",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Government_Of_Gujarat_Seal_In_All_Languages.svg/128px-Government_Of_Gujarat_Seal_In_All_Languages.svg.png"
+            },
+            "IN-HP": {
+                "name": "Himachal Pradesh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/b/be/Himachal_Pradesh_seal.svg"
+            },
+            "IN-HR": {
+                "name": "Haryana",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Emblem_of_Haryana.svg/128px-Emblem_of_Haryana.svg.png"
+            },
+            "IN-JH": {
+                "name": "Jharkhand",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jharkhand_Rajakiya_Chihna.svg/128px-Jharkhand_Rajakiya_Chihna.svg.png"
+            },
+            "IN-JK": {
+                "name": "Jammu and Kashmir",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Emblem_of_Jammu_and_Kashmir.png"
+            },
+            "IN-KA": {
+                "name": "Karnataka",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Seal_of_Karnataka.svg/128px-Seal_of_Karnataka.svg.png"
+            },
+            "IN-KL": {
+                "name": "Kerala",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Government_of_Kerala_Logo.svg/128px-Government_of_Kerala_Logo.svg.png"
+            },
+            "IN-LA": {
+                "name": "Ladakh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_Ladakh,_India.svg/128px-Flag_of_Ladakh,_India.svg.png"
+            },
+            "IN-LD": {
+                "name": "Lakshadweep",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/6/61/Lakshadweep_Banner.png"
+            },
+            "IN-MH": {
+                "name": "Maharashtra",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Seal_of_Maharashtra.svg"
+            },
+            "IN-ML": {
+                "name": "Meghalaya",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/d/df/Emblem_of_Meghalaya.svg"
+            },
+            "IN-MN": {
+                "name": "Manipur",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/3/3e/Manipur_emblem.svg"
+            },
+            "IN-MP": {
+                "name": "Madhya Pradesh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Emblem_of_Madhya_Pradesh.svg/128px-Emblem_of_Madhya_Pradesh.svg.png"
+            },
+            "IN-MZ": {
+                "name": "Mizoram",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Seal_of_Mizoram.svg/128px-Seal_of_Mizoram.svg.png"
+            },
+            "IN-NL": {
+                "name": "Nagaland",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/1e/Seal_of_Nagaland.svg"
+            },
+            "IN-OD": {
+                "name": "Odisha",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Seal_of_Odisha.svg/128px-Seal_of_Odisha.svg.png"
+            },
+            "IN-PB": {
+                "name": "Punjab",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Seal_of_Punjab.svg/128px-Seal_of_Punjab.svg.png"
+            },
+            "IN-RJ": {
+                "name": "Rajasthan",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Emblem_Rajasthan.png"
+            },
+            "IN-SK": {
+                "name": "Sikkim",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Seal_of_Sikkim.svg/128px-Seal_of_Sikkim.svg.png"
+            },
+            "IN-TS": {
+                "name": "Telangana",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/6/61/Emblem_of_Telangana.svg"
+            },
+            "IN-TN": {
+                "name": "Tamil Nadu",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/TamilNadu_Logo.svg/128px-TamilNadu_Logo.svg.png"
+            },
+            "IN-TR": {
+                "name": "Tripura",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Seal_of_Tripura.svg/128px-Seal_of_Tripura.svg.png"
+            },
+            "IN-UP": {
+                "name": "Uttar Pradesh",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Seal_of_Uttar_Pradesh.svg"
+            },
+            "IN-UK": {
+                "name": "Uttarakhand",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Seal_of_Uttarakhand.svg/128px-Seal_of_Uttarakhand.svg.png"
+            },
+            "IN-WB": {
+                "name": "West Bengal",
+                "nativeName": "",
+                "flag": "https://upload.wikimedia.org/wikipedia/en/6/62/Emblem_of_West_Bengal_(2018-present).png"
+            }
+        }
+    },
     "IQ": {
         "name": "Iraq",
         "nativeName": "Al-'Iraq العراق",
@@ -3992,7 +4172,7 @@
             "TN-31": {
                 "name": "Béja",
                 "nativeName": "ولاية باجة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b3/B%C3%A9ja.png/revision/latest?cb=20240131051820"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b3/Béja.png/revision/latest?cb=20240131051820"
             },
             "TN-13": {
                 "name": "Ben Arous",
@@ -4007,7 +4187,7 @@
             "TN-81": {
                 "name": "Gabès",
                 "nativeName": "ولاية قابس",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/78/Gab%C3%A8s.png/revision/latest?cb=20240131052117"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/78/Gabès.png/revision/latest?cb=20240131052117"
             },
             "TN-71": {
                 "name": "Gafsa",

@@ -379,5 +379,8 @@
     },
     "region_uz": {
         "message": "Region"
+    },
+    "region_in": {
+        "message": "State"
     }
 }
