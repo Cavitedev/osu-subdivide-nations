@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.6.5
+
+- Fix certain flags like Germany
+
 ## Version 3.6.4
 
 - Add India
