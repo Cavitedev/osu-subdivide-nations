@@ -305,8 +305,23 @@
     "region_is": {
         "message": "Regione"
     },
+    "region_iq": {
+        "message": "Governatorato"
+    },
+    "region_jo": {
+        "message": "Governatorato"
+    },
+    "region_kw": {
+        "message": "Governatorato"
+    },
+    "region_kg": {
+        "message": "Regione"
+    },
     "region_la": {
         "message": "Provincia"
+    },
+    "region_lb": {
+        "message": "Governatorato"
     },
     "region_lu": {
         "message": "Cantone"
@@ -317,10 +332,55 @@
     "region_ma": {
         "message": "Regione"
     },
+    "region_mm": {
+        "message": "Regione / Stato"
+    },
+    "region_np": {
+        "message": "Provincia"
+    },
+    "region_ni": {
+        "message": "Dipartimento"
+    },
+    "region_mk": {
+        "message": "Regione Statistica"
+    },
+    "region_om": {
+        "message": "Governatorato"
+    },
+    "region_pk": {
+        "message": "Provincia"
+    },
     "region_py": {
         "message": "Distretto"
     },
+    "region_qa": {
+        "message": "Comune"
+    },
+    "region_si": {
+        "message": "Regione Statistica"
+    },
+    "region_so": {
+        "message": "Regione"
+    },
+    "region_lk": {
+        "message": "Provincia"
+    },
+    "region_tt": {
+        "message": "Regione / Comune"
+    },
+    "region_tn": {
+        "message": "Governatorato"
+    },
+    "region_ae": {
+        "message": "Emirato"
+    },
+    "region_uy": {
+        "message": "Dipartimento"
+    },
     "region_uz": {
         "message": "Regione"
+    },
+    "region_in": {
+        "message": "Stato"
     }
 }
