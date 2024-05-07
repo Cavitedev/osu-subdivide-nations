@@ -251,8 +251,14 @@
     "region_bo": {
         "message": "Департман"
     },
+    "region_bn": {
+        "message": "Округ"
+    },
     "region_bf": {
         "message": "Регион"
+    },
+    "region_cv": {
+        "message": "Острво"
     },
     "region_kh": {
         "message": "Провинција"
