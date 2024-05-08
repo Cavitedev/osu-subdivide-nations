@@ -1,5 +1,185 @@
 {
     "appDesc": {
-        "message": "Προσθήκη περιφερειακών σημαιών στην ιστοσελίδα osu!.\nΕνώ επίσης ενημερώνονται τα παγκόσμια σκορ osu! στα προφίλ.\n"
+        "message": "Προσθήκη περιφερειακών σημαιών στην ιστοσελίδα osu!.\nΕνώ επίσης ενημερώνονται τα παγκόσμια σκορ osu! στα προφίλ."
+    },
+    "created_by": {
+        "message": "Δημιουργήθηκε από {{developer}}"
+    },
+    "system_default": {
+        "message": "Προεπιλογή Συστήματος"
+    },
+    "native_language": {
+        "message": "Μητρική Γλώσσα"
+    },
+    "clean_cache": {
+        "message": "Καθαρίστε την προσωρινή μνήμη"
+    },
+    "cache_cleaned": {
+        "message": "Η προσωρινή μνήμη καθαρίστηκε"
+    },
+    "region_language": {
+        "message": "Τοπική Γλώσσα"
+    },
+    "score_ranking": {
+        "message": "Κατάταξη Σκορ"
+    },
+    "region_ranking": {
+        "message": "Τοπική Κατάταξη"
+    },
+    "highest_rank_profile": {
+        "message": "Υψηλότερη θέση #{{rankHighest.rank}} στις {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "Κατάταξη Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Τελευταία ενημέρωση θέσης στις {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Ρυθμίσεις"
+    },
+    "website_settings": {
+        "message": "Ρυθμίσεις {{Website}}"
+    },
+    "about": {
+        "message": "Σχετικά με"
+    },
+    "respektive_api": {
+        "message": "API του Respektive"
+    },
+    "hiviexd_api": {
+        "message": "API του Hiviexd"
+    },
+    "region": {
+        "message": "Περιοχή"
+    },
+    "region_ru": {
+        "message": "Ομόσπονδη ενότητα / όμπλαστ"
+    },
+    "region_ar": {
+        "message": "Επαρχία"
+    },
+    "region_at": {
+        "message": "Ομόσπονδο κρατίδιο"
+    },
+    "region_au": {
+        "message": "Πολιτεία"
+    },
+    "region_be": {
+        "message": "Επαρχία"
+    },
+    "region_br": {
+        "message": "Πολιτεία"
+    },
+    "region_by": {
+        "message": "Περιφέρεια"
+    },
+    "region_ca": {
+        "message": "Επαρχία"
+    },
+    "region_de": {
+        "message": "Ομόσπονδο κρατίδιο"
+    },
+    "region_es": {
+        "message": "Αυτόνομη κοινότητα"
+    },
+    "region_fr": {
+        "message": "Περιοχή"
+    },
+    "region_hu": {
+        "message": "Κομητεία"
+    },
+    "region_it": {
+        "message": "Περιφέρεια"
+    },
+    "region_jp": {
+        "message": "Νομός"
+    },
+    "region_kz": {
+        "message": "Περιφέρεια"
+    },
+    "region_nl": {
+        "message": "Επαρχία"
+    },
+    "region_no": {
+        "message": "Κομητεία"
+    },
+    "region_pl": {
+        "message": "Βοεωοδάτο"
+    },
+    "region_am": {
+        "message": "Μαρζ"
+    },
+    "region_bh": {
+        "message": "Κυβερνείο"
+    },
+    "region_bd": {
+        "message": "Διαίρεση"
+    },
+    "region_bb": {
+        "message": "Ενορία"
+    },
+    "region_bo": {
+        "message": "Διαμέρισμα"
+    },
+    "region_cv": {
+        "message": "Νησί"
+    },
+    "region_cr": {
+        "message": "Επαρχία"
+    },
+    "region_hr": {
+        "message": "Κομητεία"
+    },
+    "region_do": {
+        "message": "Επαρχία"
+    },
+    "region_eg": {
+        "message": "Κυβερνείο"
+    },
+    "region_sv": {
+        "message": "Διαμέρισμα"
+    },
+    "region_gt": {
+        "message": "Διαμέρισμα"
+    },
+    "region_hn": {
+        "message": "Διαμέρισμα"
+    },
+    "region_is": {
+        "message": "Περιφέρεια"
+    },
+    "region_iq": {
+        "message": "Κυβερνείο"
+    },
+    "region_jo": {
+        "message": "Κυβερνείο"
+    },
+    "region_kw": {
+        "message": "Κυβερνείο"
+    },
+    "region_kg": {
+        "message": "Περιφέρεια"
+    },
+    "region_lb": {
+        "message": "Κυβερνείο"
+    },
+    "region_lu": {
+        "message": "Καντόνι"
+    },
+    "region_np": {
+        "message": "Επαρχία"
+    },
+    "region_ni": {
+        "message": "Διαμέρισμα"
+    },
+    "region_mk": {
+        "message": "Στατιστική περιφέρεια"
+    },
+    "region_tt": {
+        "message": "Περιφερειακή διοίκηση / δήμος"
+    },
+    "region_tn": {
+        "message": "Κυβερνείο"
     }
 }
