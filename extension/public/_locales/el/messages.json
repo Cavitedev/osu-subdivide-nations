@@ -107,6 +107,45 @@
     "region_pl": {
         "message": "Βοεωοδάτο"
     },
+    "region_se": {
+        "message": "Κομητεία"
+    },
+    "region_tr": {
+        "message": "Περιοχή"
+    },
+    "region_us": {
+        "message": "Πολιτεία"
+    },
+    "region_lt": {
+        "message": "Επαρχία"
+    },
+    "region_ch": {
+        "message": "Καντόνι"
+    },
+    "region_gr": {
+        "message": "Περιφέρεια"
+    },
+    "region_ee": {
+        "message": "Επαρχία"
+    },
+    "region_bg": {
+        "message": "Επαρχία"
+    },
+    "region_ie": {
+        "message": "Επαρχία"
+    },
+    "region_al": {
+        "message": "Νομός"
+    },
+    "region_dz": {
+        "message": "Επαρχία"
+    },
+    "region_ad": {
+        "message": "Ενορία"
+    },
+    "region_ao": {
+        "message": "Επαρχία"
+    },
     "region_am": {
         "message": "Μαρζ"
     },
