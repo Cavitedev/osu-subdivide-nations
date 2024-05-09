@@ -44,8 +44,17 @@
     "about": {
         "message": "Σχετικά με"
     },
+    "region_ranking_desc": {
+        "message": "Εμφάνιση κατάταξης περιοχής από το {{osu_world}} στα προφίλ osu!"
+    },
+    "score_ranking_desc": {
+        "message": "Εμφάνιση κατάταξης σκορ από το {{respektive_api}} στα προφίλ osu!"
+    },
     "respektive_api": {
         "message": "API του Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Εμφάνιση κατάταξης Kudosu από το {{hiviexd_api}} στα προφίλ osu!"
     },
     "hiviexd_api": {
         "message": "API του Hiviexd"
@@ -161,6 +170,9 @@
     "region_bo": {
         "message": "Διαμέρισμα"
     },
+    "region_bn": {
+        "message": "Επαρχία"
+    },
     "region_cv": {
         "message": "Νησί"
     },
@@ -213,6 +225,9 @@
         "message": "Διαμέρισμα"
     },
     "region_mk": {
+        "message": "Στατιστική περιφέρεια"
+    },
+    "region_si": {
         "message": "Στατιστική περιφέρεια"
     },
     "region_tt": {
