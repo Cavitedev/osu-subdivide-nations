@@ -263,6 +263,9 @@
     "region_bo": {
         "message": "专区"
     },
+    "region_ba": {
+        "message": "州 / 地区"
+    },
     "region_bn": {
         "message": "大区"
     },
@@ -376,5 +379,8 @@
     },
     "region_uz": {
         "message": "地区"
+    },
+    "region_in": {
+        "message": "邦"
     }
 }

@@ -248,8 +248,23 @@
     "region_ao": {
         "message": "Провинција"
     },
+    "region_bo": {
+        "message": "Департман"
+    },
+    "region_bn": {
+        "message": "Округ"
+    },
     "region_bf": {
         "message": "Регион"
+    },
+    "region_cv": {
+        "message": "Острво"
+    },
+    "region_kh": {
+        "message": "Провинција"
+    },
+    "region_cr": {
+        "message": "Провинција"
     },
     "region_hr": {
         "message": "Област"
@@ -349,5 +364,8 @@
     },
     "region_uz": {
         "message": "Регион"
+    },
+    "region_in": {
+        "message": "Држава"
     }
 }
