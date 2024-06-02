@@ -44,6 +44,8 @@ export const getCountryName = async (countryCode: string) => {
     const countryNamesLocale = await getCountryNamesLocale();
 
     const localeCountry = (await countryRegionsLocalData)[countryCode];
+    // No country, no translation
+    if(!localeCountry) return Promise.resolve(undefined);
 
     const defaultName = localeCountry.name;
     const nativeName = localeCountry.nativeName;

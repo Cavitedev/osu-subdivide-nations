@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.6.6
+
+- Fix not showing country name when the user changed country and its original country is not supported by osu!world
+
+
 ## Version 3.6.5
 
 - Fix certain flags like Germany

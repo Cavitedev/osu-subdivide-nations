@@ -264,7 +264,7 @@ const updateCountryNameFlag = async (item: HTMLElement) => {
     if (!countryCode) return;
 
     const countryName = await getCountryName(countryCode);
-    if (!countryName) return;
+    if (!countryName) return osuCountryName;
     flagElement.setAttribute("original-title", osuCountryName);
     flagElement.setAttribute("title", countryName);
     return countryName;

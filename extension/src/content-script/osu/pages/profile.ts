@@ -68,7 +68,7 @@ const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string
     if (!countryCode) return;
 
     const countryNameElement = flagElement.querySelector(".profile-info__flag-text")!;
-
+    
     let countryText = flagElement.querySelector("span.flag-country")?.getAttribute("original-title");
     const originalCountryCode = osuNameToCode(countryText!);
 
