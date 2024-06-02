@@ -27,7 +27,7 @@
         "message": "Classifica Regionale"
     },
     "highest_rank_profile": {
-        "message": "Rank più alto: #{{rankHighest.rank}} il {{formattedDate}}"
+        "message": "Grado più alto: #{{rankHighest.rank}} il {{formattedDate}}"
     },
     "kudosu_ranking": {
         "message": "Classifica Kudosu"
@@ -236,17 +236,59 @@
     "region_af": {
         "message": "Provincia"
     },
+    "region_al": {
+        "message": "Contea"
+    },
     "region_dz": {
         "message": "Provincia"
+    },
+    "region_ad": {
+        "message": "Comune"
+    },
+    "region_ao": {
+        "message": "Provincia"
+    },
+    "region_am": {
+        "message": "Divisione Amministrativa"
+    },
+    "region_bh": {
+        "message": "Governatorato"
     },
     "region_bd": {
         "message": "Dipartimento"
     },
+    "region_bb": {
+        "message": "Comune"
+    },
     "region_bo": {
         "message": "Distretto"
     },
+    "region_ba": {
+        "message": "Entità / Distretto"
+    },
+    "region_bn": {
+        "message": "Distretto"
+    },
+    "region_bf": {
+        "message": "Regione"
+    },
+    "region_cv": {
+        "message": "Isola"
+    },
+    "region_kh": {
+        "message": "Provincia"
+    },
+    "region_cr": {
+        "message": "Provincia"
+    },
     "region_hr": {
         "message": "Contea"
+    },
+    "region_do": {
+        "message": "Provincia"
+    },
+    "region_eg": {
+        "message": "Governatorato"
     },
     "region_sv": {
         "message": "Riguardo"
@@ -254,11 +296,32 @@
     "region_ge": {
         "message": "Regione"
     },
+    "region_gt": {
+        "message": "Dipartimento"
+    },
     "region_hn": {
         "message": "Dominio"
     },
+    "region_is": {
+        "message": "Regione"
+    },
+    "region_iq": {
+        "message": "Governatorato"
+    },
+    "region_jo": {
+        "message": "Governatorato"
+    },
+    "region_kw": {
+        "message": "Governatorato"
+    },
+    "region_kg": {
+        "message": "Regione"
+    },
     "region_la": {
         "message": "Provincia"
+    },
+    "region_lb": {
+        "message": "Governatorato"
     },
     "region_lu": {
         "message": "Cantone"
@@ -269,10 +332,55 @@
     "region_ma": {
         "message": "Regione"
     },
+    "region_mm": {
+        "message": "Regione / Stato"
+    },
+    "region_np": {
+        "message": "Provincia"
+    },
+    "region_ni": {
+        "message": "Dipartimento"
+    },
+    "region_mk": {
+        "message": "Regione Statistica"
+    },
+    "region_om": {
+        "message": "Governatorato"
+    },
+    "region_pk": {
+        "message": "Provincia"
+    },
     "region_py": {
         "message": "Distretto"
     },
+    "region_qa": {
+        "message": "Comune"
+    },
+    "region_si": {
+        "message": "Regione Statistica"
+    },
+    "region_so": {
+        "message": "Regione"
+    },
+    "region_lk": {
+        "message": "Provincia"
+    },
+    "region_tt": {
+        "message": "Regione / Comune"
+    },
+    "region_tn": {
+        "message": "Governatorato"
+    },
+    "region_ae": {
+        "message": "Emirato"
+    },
+    "region_uy": {
+        "message": "Dipartimento"
+    },
     "region_uz": {
         "message": "Regione"
+    },
+    "region_in": {
+        "message": "Stato"
     }
 }
