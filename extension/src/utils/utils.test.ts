@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import { convertToGroupsOf5, idFromOsuProfileUrl } from "./utils";
+import { convertToGroupsOf5, countryCodeFromRegion, idFromOsuProfileUrl } from "./utils";
 
 describe("convertToGroupsOfFive", () => {
     test("1st group", () => {
@@ -52,4 +52,15 @@ describe("idFromOsuProfileUrl", () => {
     test("Null if id is not a number", () => {
         expect(idFromOsuProfileUrl("https://osu.ppy.sh/users/x1")).toBe(null);
     });
+});
+
+describe("Country from region", () => {
+    test("Hyphen region", () =>  {
+        expect(countryCodeFromRegion("CN-BJ")).toBe("CN");
+    })
+
+    test("Number Region", () =>  {
+        expect(countryCodeFromRegion("PT16")).toBe("PT");
+    })
+
 });

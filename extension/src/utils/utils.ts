@@ -63,3 +63,16 @@ export const idFromOsuProfileUrl = (url: string | null | undefined): string | nu
     if (!isNumber(id)) return null;
     return id;
 };
+
+export const countryCodeFromRegion = (regionCode: string) => {
+    if(regionCode?.includes("-") ){
+        return regionCode.split("-")[0];
+    }
+    const numRegex = /\d+/;
+    const numberReg = numRegex.exec(regionCode);
+    if(numberReg){
+        return regionCode.split(numberReg[0])[0];
+    }
+
+    return null;
+} 

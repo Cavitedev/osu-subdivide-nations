@@ -1,7 +1,7 @@
 import { fetchErrorToText } from "../../utils/fetchUtils";
 import { countryRegionsLocalData, getCountryName, getRegionName } from "../../utils/flagsJsonUtils";
 import { osuWorldUser, osuWorldUsers } from "../../utils/external/osuWorld";
-import { addOrReplaceQueryParam } from "../../utils/utils";
+import { addOrReplaceQueryParam, countryCodeFromRegion } from "../../utils/utils";
 import { currentSignal } from "@src/utils/fetchUtils";
 import osuNameToCode from "./osuNameToCode";
 import { TFlagItems } from "@src/utils/html";
@@ -129,7 +129,10 @@ export const addRegionalFlag = async (
         topicFlag,
         wikiPage,
     } = options ?? {};
-
+    const countryCodeFromRegionCode = countryCodeFromRegion(regionCode);
+    if (countryCodeFromRegionCode) {
+        countryCode = countryCodeFromRegionCode;
+    }
     const countryRegionsData = (await countryRegionsLocalData)[countryCode];
 
     if (!countryRegionsData) return;
