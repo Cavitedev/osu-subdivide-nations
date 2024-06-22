@@ -379,5 +379,8 @@
     },
     "region_uz": {
         "message": "Область"
+    },
+    "region_in": {
+        "message": "Штат"
     }
 }
