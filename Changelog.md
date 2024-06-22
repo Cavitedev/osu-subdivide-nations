@@ -3,6 +3,7 @@
 ## Version 3.6.8
 
 - Fix broken links of some flags
+- Latest translations
 
 ## Version 3.6.7
 
