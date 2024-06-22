@@ -3240,7 +3240,7 @@
             },
             "KR-43": {
                 "name": "North Chungcheong",
-                "nativeName": "",
+                "nativeName": "충청북도",
                 "flag": ""
             }
         }
@@ -3773,7 +3773,7 @@
             "MN-1": {
                 "name": "Ulaanbaatar",
                 "nativeName": "Улаанбаатар ᠤᠯᠠᠭᠠᠨᠪᠠᠭᠠᠲᠤᠷ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_ulaanbaatar.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Ulaanbaatar.svg"
             },
             "MN-041": {
                 "name": "Hovsgel",
@@ -3814,7 +3814,7 @@
             "MM-05": {
                 "name": "Tanintharyi Region",
                 "nativeName": "တနင်္သာရီတိုင်း",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Tanintharyi_Division.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Tanintharyi_Region_(1974–2010).svg"
             },
             "MM-06": {
                 "name": "Yangon Region",
@@ -3849,7 +3849,7 @@
             "MM-17": {
                 "name": "Shan State",
                 "nativeName": "ရှမ်းပြည်နယ်",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_the_Shan_State.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Shan_State.svg"
             },
             "MM-18": {
                 "name": "Naypyidaw Union Territory",
@@ -6547,7 +6547,7 @@
             "GB-ERY": {
                 "name": "East Riding of Yorkshire",
                 "nativeName": "East Riding of Yorkshire",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/East_Riding_Of_Yorkshire.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/East_Riding_Of_Yorkshire_Council.svg"
             },
             "GB-ESX": {
                 "name": "East Sussex",
@@ -6903,7 +6903,7 @@
             "US-MN": {
                 "name": "Minnesota",
                 "nativeName": "Minnesota",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Minnesota_(2023_redesign).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Minnesota.svg"
             },
             "US-MS": {
                 "name": "Mississippi",
@@ -7043,7 +7043,7 @@
             "US-WADC": {
                 "name": "Washington, D.C.",
                 "nativeName": "Washington, D.C.",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_the_District_of_Columbia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Washington,_D.C.svg"
             }
         }
     },
@@ -7351,7 +7351,7 @@
             "VE-A": {
                 "name": "Capital District",
                 "nativeName": "Distrito Capital",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Bandera_del_Municipio_Libertador_de_Caracas_(desde_2022).png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Caracas_(2022).svg"
             }
         }
     },
@@ -7797,7 +7797,6 @@
     },
     "BF": {
         "name": "Burkina Faso",
-        "nativeName": "Burkina Faso",
         "regions": {
             "BF-01": {
                 "name": "Boucle du Mouhoun",
@@ -7864,7 +7863,8 @@
                 "nativeName": "Sud-Ouest",
                 "flag": ""
             }
-        }
+        },
+        "nativeName": "Burkina Faso"
     },
     "BG": {
         "name": "Bulgaria",
@@ -8790,7 +8790,7 @@
             "IN-WB": {
                 "name": "West Bengal",
                 "nativeName": "West Bengal",
-                "flag": "https://upload.wikimedia.org/wikipedia/en/6/62/Emblem_of_West_Bengal_(2018-present).png"
+                "flag": "https://upload.wikimedia.org/wikipedia/en/6/66/Emblem_of_West_Bengal_(2018-present).svg"
             }
         }
     },
@@ -9453,7 +9453,7 @@
             "MA-08": {
                 "name": "Drâa-Tafilalet",
                 "nativeName": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Draa-tafilalet.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Draa-tafilalet.jpg"
             },
             "MA-03": {
                 "name": "Fez-Meknes",
@@ -9550,7 +9550,7 @@
             "NP-P1": {
                 "name": "Koshi Province",
                 "nativeName": "कोशी प्रदेश",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Emblem_of_Koshi_Province_(alternative).svg/128px-Emblem_of_Koshi_Province_(alternative).svg.png"
+                "flag": ""
             },
             "NP-P2": {
                 "name": "Madhesh Province",
@@ -9565,12 +9565,12 @@
             "NP-P4": {
                 "name": "Gandaki Province",
                 "nativeName": "गण्डकी प्रदेश",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Emblem_of_Gandaki_Province_(alternative).svg/128px-Emblem_of_Gandaki_Province_(alternative).svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/en/1/13/Logo_of_Gandaki_Pradesh.png"
             },
             "NP-P5": {
                 "name": "Lumbini Province",
                 "nativeName": "लुम्बिनी प्रदेश",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Emblem_of_Lumbini_Province_(alternative).svg/128px-Emblem_of_Lumbini_Province_(alternative).svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/en/a/a3/Emblem_of_Lumbini_Pradesh.png"
             },
             "NP-P6": {
                 "name": "Karnali Province",
@@ -9580,7 +9580,7 @@
             "NP-P7": {
                 "name": "Sudurpashchim Province",
                 "nativeName": "सुदूरपश्चिम प्रदेश",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Emblem_of_Sudurpaschim_Province_(adjustable).svg/128px-Emblem_of_Sudurpaschim_Province_(adjustable).svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/en/0/0b/Emblem_of_Sudurpashchim_Province.png"
             }
         },
         "nativeName": "नेपाल"
@@ -10037,17 +10037,17 @@
             "TN-73": {
                 "name": "Kébili",
                 "nativeName": "ولاية قبلي",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/1f/Kebili_2.png/revision/latest?cb=20240131050527"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/98/Kebili.png/revision/latest"
             },
             "TN-12": {
                 "name": "Ariana",
                 "nativeName": "ولاية أريانة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/83/Ariana.png/revision/latest?cb=20240131050902"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/83/Ariana.png/revision/latest"
             },
             "TN-14": {
                 "name": "Manouba",
                 "nativeName": "ولاية منوبة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Manouba.png/revision/latest?cb=20240131052915"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Manouba.png/revision/latest"
             },
             "TN-33": {
                 "name": "Al Kaf",
@@ -10057,27 +10057,27 @@
             "TN-53": {
                 "name": "Mahdia",
                 "nativeName": "ولاية المهدية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Mahdia.png/revision/latest?cb=20240131052851"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Mahdia.png/revision/latest"
             },
             "TN-82": {
                 "name": "Médenine",
                 "nativeName": "ولاية مدنين",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f3/Medenine.png/revision/latest?cb=20240131053015"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f3/Medenine.png/revision/latest"
             },
             "TN-52": {
                 "name": "Monastir",
                 "nativeName": "ولاية المنستير",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2e/Monastir.png/revision/latest?cb=20240131053036"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2e/Monastir.png/revision/latest"
             },
             "TN-21": {
                 "name": "Nabeul",
                 "nativeName": "ولاية نابل",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/de/Nabeul.png/revision/latest?cb=20240131053055"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/de/Nabeul.png/revision/latest"
             },
             "TN-61": {
                 "name": "Sfax",
                 "nativeName": "ولاية صفاقس",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/07/Sfax.png/revision/latest?cb=20240131053332"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/07/Sfax.png/revision/latest"
             },
             "TN-43": {
                 "name": "Sidi Bouzid",
@@ -10087,7 +10087,7 @@
             "TN-34": {
                 "name": "Siliana",
                 "nativeName": "ولاية سليانة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Siliana.png/revision/latest?cb=20240131053413"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Siliana.png/revision/latest"
             },
             "TN-51": {
                 "name": "Sousse",
@@ -10102,7 +10102,7 @@
             "TN-72": {
                 "name": "Tozeur",
                 "nativeName": "ولاية توزر",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6b/Tozeur.png/revision/latest?cb=20240131053623"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6b/Tozeur.png/revision/latest"
             },
             "TN-11": {
                 "name": "Tunis",
@@ -10112,7 +10112,7 @@
             "TN-22": {
                 "name": "Zaghouan Governorate",
                 "nativeName": "ولاية زغوان",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/57/Zaghouan.png/revision/latest?cb=20240131053641"
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/57/Zaghouan.png/revision/latest"
             }
         },
         "nativeName": "ولاية منوبة"
@@ -10377,7 +10377,7 @@
             "VN-58": {
                 "name": "Bình Phước Province",
                 "nativeName": "Tỉnh Bình Phước",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/b/bd/Logo_tỉnh_Bình_Phước_(mới).png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4a/FNL_Flag.svg"
             },
             "VN-40": {
                 "name": "Bình Thuận Province",
@@ -10477,7 +10477,7 @@
             "VN-73": {
                 "name": "Hậu Giang Province",
                 "nativeName": "Tỉnh Hậu Giang",
-                "flag": "https://upload.wikimedia.org/wikipedia/vi/9/94/Logo_tỉnh_Hậu_Giang.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/en/7/70/Logo_tỉnh_Hậu_Giang.svg"
             },
             "VN-SG": {
                 "name": "Hồ Chí Minh City",
@@ -10567,7 +10567,7 @@
             "VN-29": {
                 "name": "Quảng Ngãi Province",
                 "nativeName": "Tỉnh Quảng Ngãi",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Emblem_of_Quangngai_Province.png"
+                "flag": ""
             },
             "VN-13": {
                 "name": "Quảng Ninh Province",
@@ -10597,7 +10597,7 @@
             "VN-20": {
                 "name": "Thái Bình Province",
                 "nativeName": "Tỉnh Thái Bình",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Emblem_of_Thaibinh_Province.png"
+                "flag": ""
             },
             "VN-69": {
                 "name": "Thái Nguyên Province",

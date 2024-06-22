@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.6.8
+
+- Fix broken links of some flags
+
 ## Version 3.6.7
 
 - Not showing some regions after changing country in osu world fixed
