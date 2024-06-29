@@ -1,8 +1,12 @@
 # Changelog
 
+## Version 3.6.12
+
+- Trying to actually fix the flags
+
 ## Version 3.6.11
 
-- Ficinf flags again
+- Rollback 3.6.9
 
 ## Version 3.6.10
 
