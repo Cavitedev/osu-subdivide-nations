@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.6.11
+
+- Ficinf flags again
+
+## Version 3.6.10
+
+- Fixing flags but it didn't work
+
 ## Version 3.6.9
 
 - Avoid SVG at Maharashtra due to Firefox incompability
