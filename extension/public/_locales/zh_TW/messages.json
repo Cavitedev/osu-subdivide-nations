@@ -1,4 +1,7 @@
 {
+    "appDesc": {
+        "message": "增加國旗至osu!官網\n同時更新osu!圖譜總分至玩家頁面"
+    },
     "created_by": {
         "message": "由 {{developer}} 創建"
     },
@@ -43,6 +46,15 @@
     },
     "open_sidebar": {
         "message": "打開側邊欄"
+    },
+    "region_ranking_desc": {
+        "message": "從{{osu_world}}提取國內排名並顯示至玩家頁面"
+    },
+    "score_ranking_desc": {
+        "message": "從{{respektive_api}}提取總分排名並顯示至玩家頁面"
+    },
+    "respektive_api": {
+        "message": "Respektive's 開發介面"
     },
     "region": {
         "message": "地區"
