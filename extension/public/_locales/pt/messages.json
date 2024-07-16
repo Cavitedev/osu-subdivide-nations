@@ -32,6 +32,21 @@
     "kudosu_ranking": {
         "message": "Idioma padrão"
     },
+    "last_rank_update": {
+        "message": "Última atualização de classificações a {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Definições"
+    },
+    "website_settings": {
+        "message": "Definições do {{Website}}"
+    },
+    "about": {
+        "message": "Sobre"
+    },
+    "open_sidebar": {
+        "message": "Abrir Barra Lateral"
+    },
     "region": {
         "message": "Região"
     },
@@ -200,14 +215,29 @@
     "region_bo": {
         "message": "Departamento"
     },
+    "region_ba": {
+        "message": "Entidade / Distrito"
+    },
     "region_bn": {
         "message": "Distrito"
     },
     "region_bf": {
         "message": "Região"
     },
+    "region_cv": {
+        "message": "Ilha"
+    },
+    "region_kh": {
+        "message": "Província"
+    },
+    "region_cr": {
+        "message": "Província"
+    },
     "region_hr": {
         "message": "Condado"
+    },
+    "region_do": {
+        "message": "Província"
     },
     "region_ge": {
         "message": "Região"
