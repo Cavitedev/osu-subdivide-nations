@@ -47,6 +47,21 @@
     "open_sidebar": {
         "message": "Abrir Barra Lateral"
     },
+    "region_ranking_desc": {
+        "message": "Mostra a classificação regional do {{osu_world}} em perfis do osu!"
+    },
+    "score_ranking_desc": {
+        "message": "Mostra a classificação de pontuação da {{respektive_api}} em perfis do osu!"
+    },
+    "respektive_api": {
+        "message": "API do Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Mostra a classificação de Kudosu da {{hiviexd_api}} em perfis do osu!"
+    },
+    "hiviexd_api": {
+        "message": "API do Hiviexd"
+    },
     "region": {
         "message": "Região"
     },
@@ -161,6 +176,9 @@
     "region_tw": {
         "message": "Província"
     },
+    "region_ua": {
+        "message": "Oblast"
+    },
     "region_us": {
         "message": "Estado"
     },
@@ -203,6 +221,9 @@
     "region_ve": {
         "message": "Estado"
     },
+    "region_rs": {
+        "message": "Distrito Administrativo"
+    },
     "region_za": {
         "message": "Província"
     },
@@ -211,6 +232,33 @@
     },
     "region_sa": {
         "message": "Província"
+    },
+    "region_af": {
+        "message": "Província"
+    },
+    "region_al": {
+        "message": "Condado"
+    },
+    "region_dz": {
+        "message": "Província"
+    },
+    "region_ad": {
+        "message": "Paróquia"
+    },
+    "region_ao": {
+        "message": "Província"
+    },
+    "region_am": {
+        "message": "Marz"
+    },
+    "region_bh": {
+        "message": "Governo geral"
+    },
+    "region_bd": {
+        "message": "Divisão"
+    },
+    "region_bb": {
+        "message": "Paróquia"
     },
     "region_bo": {
         "message": "Departamento"
@@ -239,11 +287,32 @@
     "region_do": {
         "message": "Província"
     },
+    "region_eg": {
+        "message": "Governo Geral"
+    },
+    "region_sv": {
+        "message": "Departamento"
+    },
     "region_ge": {
         "message": "Região"
     },
+    "region_gt": {
+        "message": "Departamento"
+    },
+    "region_hn": {
+        "message": "Departamento"
+    },
     "region_is": {
         "message": "Região"
+    },
+    "region_iq": {
+        "message": "Governo Geral"
+    },
+    "region_jo": {
+        "message": "Governo Geral"
+    },
+    "region_kw": {
+        "message": "Governo Geral"
     },
     "region_kg": {
         "message": "Língua materna"
@@ -251,16 +320,67 @@
     "region_la": {
         "message": "Província"
     },
+    "region_lb": {
+        "message": "Governo Geral"
+    },
+    "region_lu": {
+        "message": "Cantão"
+    },
+    "region_mn": {
+        "message": "Província"
+    },
     "region_ma": {
         "message": "Região"
+    },
+    "region_mm": {
+        "message": "Região / Estado"
     },
     "region_np": {
         "message": "Província"
     },
+    "region_ni": {
+        "message": "Departamento"
+    },
+    "region_mk": {
+        "message": "Região Estatística"
+    },
+    "region_om": {
+        "message": "Governo Geral"
+    },
     "region_pk": {
         "message": "Província"
     },
+    "region_py": {
+        "message": "Departamento"
+    },
+    "region_qa": {
+        "message": "Município"
+    },
+    "region_si": {
+        "message": "Região Estatística"
+    },
+    "region_so": {
+        "message": "Região"
+    },
+    "region_lk": {
+        "message": "Província"
+    },
+    "region_tt": {
+        "message": "Região / Município"
+    },
+    "region_tn": {
+        "message": "Governo Geral"
+    },
+    "region_ae": {
+        "message": "Emirado"
+    },
+    "region_uy": {
+        "message": "Departamento"
+    },
     "region_uz": {
         "message": "Região"
+    },
+    "region_in": {
+        "message": "Estado"
     }
 }
