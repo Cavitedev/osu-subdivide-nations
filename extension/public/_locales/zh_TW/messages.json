@@ -56,35 +56,146 @@
     "respektive_api": {
         "message": "Respektive's 開發介面"
     },
+    "kudosu_ranking_desc": {
+        "message": "在 osu! 個人資料上顯示來自 {{hiviexd_api}} 的Kudosu排名。"
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd 的 API"
+    },
     "region": {
+        "message": "地區"
+    },
+    "region_ru": {
+        "message": "共和國 / 州份"
+    },
+    "region_ar": {
+        "message": "省份"
+    },
+    "region_at": {
+        "message": "州份"
+    },
+    "region_au": {
+        "message": "州份"
+    },
+    "region_be": {
+        "message": "省份"
+    },
+    "region_br": {
+        "message": "州份"
+    },
+    "region_by": {
+        "message": "州份"
+    },
+    "region_ca": {
+        "message": "省份"
+    },
+    "region_cl": {
         "message": "地區"
     },
     "region_cn": {
         "message": "行政區"
     },
+    "region_co": {
+        "message": "省份"
+    },
     "region_cz": {
         "message": "系統預設"
+    },
+    "region_de": {
+        "message": "州份"
     },
     "region_es": {
         "message": "自治區"
     },
+    "region_fi": {
+        "message": "地區"
+    },
     "region_fr": {
         "message": "系統預設"
+    },
+    "region_hu": {
+        "message": "州份"
+    },
+    "region_id": {
+        "message": "省份"
+    },
+    "region_it": {
+        "message": "地區"
     },
     "region_jp": {
         "message": "地區"
     },
+    "region_kr": {
+        "message": "道"
+    },
+    "region_kz": {
+        "message": "地區"
+    },
+    "region_lv": {
+        "message": "地區"
+    },
+    "region_mx": {
+        "message": "州份"
+    },
+    "region_my": {
+        "message": "州份"
+    },
     "region_nl": {
         "message": "地區"
+    },
+    "region_no": {
+        "message": "郡"
+    },
+    "region_pe": {
+        "message": "地區"
+    },
+    "region_ph": {
+        "message": "省份"
+    },
+    "region_pl": {
+        "message": "省份"
+    },
+    "region_pt": {
+        "message": "地區"
+    },
+    "region_ro": {
+        "message": "縣份"
+    },
+    "region_se": {
+        "message": "省份"
     },
     "region_sg": {
         "message": "打開側邊欄"
     },
+    "region_th": {
+        "message": "省份"
+    },
+    "region_tr": {
+        "message": "地區"
+    },
     "region_tw": {
         "message": "行政區"
     },
+    "region_ua": {
+        "message": "州份"
+    },
+    "region_us": {
+        "message": "州份"
+    },
+    "region_vn": {
+        "message": "省份"
+    },
+    "region_dk": {
+        "message": "地區"
+    },
     "region_il": {
         "message": "打開側邊欄"
+    },
+    "region_nz": {
+        "message": "地區"
+    },
+    "region_lt": {
+        "message": "縣份"
     },
     "region_bg": {
         "message": "行政區"
