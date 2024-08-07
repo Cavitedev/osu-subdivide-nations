@@ -8,8 +8,23 @@
     "score_ranking": {
         "message": "スコアランキング"
     },
+    "region_ranking": {
+        "message": "地域ランキング"
+    },
     "highest_rank_profile": {
         "message": "最高ランク: #{{rankHighest.rank}} ({{formattedDate}}に取得)"
+    },
+    "kudosu_ranking": {
+        "message": "Kudosuランキング"
+    },
+    "region_ranking_desc": {
+        "message": "osu!プロフィールに {{osu_world}} の地域ランキングを表示"
+    },
+    "score_ranking_desc": {
+        "message": "osu!プロフィールに {{respektive_api}} の地域ランキングを表示"
+    },
+    "kudosu_ranking_desc": {
+        "message": "osu!プロフィールに {{hiviexd_api}} の地域ランキングを表示"
     },
     "region_ar": {
         "message": "国"

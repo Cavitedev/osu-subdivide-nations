@@ -1,6 +1,6 @@
 {
     "appDesc": {
-        "message": "Füge regionale Flaggen zur osu! Website hinzu.\nUpdate gleichzeitig osu! globalen score auf Profilen."
+        "message": "Füge regionale Flaggen zur osu! Website hinzu.\nAktualisiert gleichzeitig den globalen osu! score auf Profilen."
     },
     "created_by": {
         "message": "erstellt von {{developer}}"
@@ -45,13 +45,16 @@
         "message": "Über"
     },
     "open_sidebar": {
-        "message": "Offene Seitenleiste"
+        "message": "Seitenleiste öffnen"
+    },
+    "region_ranking_desc": {
+        "message": "Zeigt regionale Platzierungen von {{osu_world}} auf osu! Profilen an."
     },
     "score_ranking_desc": {
         "message": "Zeigt den score Rang von {{respektive_api}} auf osu! Profilen an."
     },
     "respektive_api": {
-        "message": "Respektive API"
+        "message": "Respektive's API"
     },
     "kudosu_ranking_desc": {
         "message": "Zeigt den Kudosu Rang von {{hiviexd_api}} auf osu! Profilen an."
@@ -66,7 +69,7 @@
         "message": "Republik / Oblast"
     },
     "region_ar": {
-        "message": "Bundesland"
+        "message": "Provinz"
     },
     "region_at": {
         "message": "Bundesstaat"
@@ -99,7 +102,7 @@
         "message": "Region"
     },
     "region_de": {
-        "message": "Bundesland"
+        "message": "Bundesstaat"
     },
     "region_es": {
         "message": "Autonome Gemeinschaft"
@@ -156,7 +159,7 @@
         "message": "Region"
     },
     "region_ro": {
-        "message": "Land"
+        "message": "Bundesland"
     },
     "region_se": {
         "message": "Bundesland"
@@ -215,8 +218,17 @@
     "region_ie": {
         "message": "Provinz"
     },
+    "region_ve": {
+        "message": "Bundesstaat"
+    },
+    "region_rs": {
+        "message": "Verwaltungsbezirk"
+    },
     "region_za": {
-        "message": "Bundeslandrangliste"
+        "message": "Provinz"
+    },
+    "region_jm": {
+        "message": "Region"
     },
     "region_sa": {
         "message": "Bundesland"
@@ -224,14 +236,68 @@
     "region_af": {
         "message": "Bundesland"
     },
+    "region_al": {
+        "message": "Bundesland"
+    },
+    "region_dz": {
+        "message": "Provinz"
+    },
+    "region_ad": {
+        "message": "Gemeinde"
+    },
+    "region_ao": {
+        "message": "Provinz"
+    },
+    "region_bd": {
+        "message": "Abteil"
+    },
+    "region_bb": {
+        "message": "Gemeinde"
+    },
     "region_bo": {
         "message": "Abteilung"
+    },
+    "region_ba": {
+        "message": "Dasein / Bezirk"
     },
     "region_bn": {
         "message": "Land"
     },
+    "region_bf": {
+        "message": "Region"
+    },
+    "region_cv": {
+        "message": "Insel"
+    },
+    "region_kh": {
+        "message": "Provinz"
+    },
+    "region_cr": {
+        "message": "Provinz"
+    },
     "region_hr": {
         "message": "Landkreis"
+    },
+    "region_do": {
+        "message": "Provinz"
+    },
+    "region_sv": {
+        "message": "Abteilung"
+    },
+    "region_ge": {
+        "message": "Region"
+    },
+    "region_gt": {
+        "message": "Abteilung"
+    },
+    "region_hn": {
+        "message": "Abteilung"
+    },
+    "region_is": {
+        "message": "Region"
+    },
+    "region_kg": {
+        "message": "Region"
     },
     "region_la": {
         "message": "Provinz"
@@ -242,13 +308,52 @@
     "region_mn": {
         "message": "Provinz"
     },
+    "region_ma": {
+        "message": "Region"
+    },
+    "region_mm": {
+        "message": "Region / Bundesstaat"
+    },
     "region_np": {
         "message": "Provinz"
+    },
+    "region_ni": {
+        "message": "Abteilung"
+    },
+    "region_mk": {
+        "message": "Statistische Region"
     },
     "region_pk": {
         "message": "Provinz"
     },
+    "region_py": {
+        "message": "Abteilung"
+    },
+    "region_qa": {
+        "message": "Gemeinde"
+    },
+    "region_si": {
+        "message": "Statistische Region"
+    },
+    "region_so": {
+        "message": "Region"
+    },
     "region_lk": {
         "message": "Provinz"
+    },
+    "region_tt": {
+        "message": "Region / Gemeinde"
+    },
+    "region_ae": {
+        "message": "Emirate"
+    },
+    "region_uy": {
+        "message": "Abteilung"
+    },
+    "region_uz": {
+        "message": "Region"
+    },
+    "region_in": {
+        "message": "Bundesstaat"
     }
 }
