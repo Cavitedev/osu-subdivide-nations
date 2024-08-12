@@ -1,1 +1,95 @@
-{}
+{
+    "appDesc": {
+        "message": "מוסיף דגלים אזוריים לאתר !osu. בנוסף מוסיף דירוג ציון עולמי בפרופיל !osu."
+    },
+    "created_by": {
+        "message": "נוצר על ידי {{developer}}"
+    },
+    "system_default": {
+        "message": "מערכת ברירת מחדל"
+    },
+    "native_language": {
+        "message": "שפת אם"
+    },
+    "clean_cache": {
+        "message": "נקה מטמון"
+    },
+    "cache_cleaned": {
+        "message": "המטמון נוקה"
+    },
+    "region_language": {
+        "message": "שפת אזור:"
+    },
+    "score_ranking": {
+        "message": "דירוג ציון"
+    },
+    "region_ranking": {
+        "message": "דירוג אזורי"
+    },
+    "highest_rank_profile": {
+        "message": "דירוג שיא: {{rankHighest.rank}}# בתאריך {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "דירוג Kudosu"
+    },
+    "last_rank_update": {
+        "message": "עדכון דירוג אחרון בתאריך {{formattedDate}}"
+    },
+    "settings": {
+        "message": "הגדרות"
+    },
+    "website_settings": {
+        "message": "הגדרות {{Website}}"
+    },
+    "open_sidebar": {
+        "message": "פתח את סרגל הצד"
+    },
+    "region_ranking_desc": {
+        "message": "מציג דירוג אזורי מ{{osu_world}} בפרופיל !osu."
+    },
+    "score_ranking_desc": {
+        "message": "מציג דירוג ציון מ{{respektive_api}} בפרופיל !osu."
+    },
+    "respektive_api": {
+        "message": "API של Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "מציג דירוג Kudosu מ{{hiviexd_api}} בפרופיל !osu."
+    },
+    "hiviexd_api": {
+        "message": "API של Hiviexd"
+    },
+    "region": {
+        "message": "אזור"
+    },
+    "region_ru": {
+        "message": "רפובליקה / מחוז"
+    },
+    "region_ar": {
+        "message": "מחוז"
+    },
+    "region_at": {
+        "message": "מדינה"
+    },
+    "region_au": {
+        "message": "מדינה"
+    },
+    "region_be": {
+        "message": "מחוז"
+    },
+    "region_br": {
+        "message": "מדינה"
+    },
+    "region_by": {
+        "message": "מחוז"
+    },
+    "region_ca": {
+        "message": "מחוז"
+    },
+    "region_cl": {
+        "message": "אזור"
+    },
+    "region_cn": {
+        "message": "אזור מנהלי"
+    }
+}
