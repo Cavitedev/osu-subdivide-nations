@@ -1,5 +1,9 @@
 # Changelog
 
+
+## Version 3.6.13
+
+- Add flags Georgia
 ## Version 3.6.12
 
 - Trying to actually fix the flags

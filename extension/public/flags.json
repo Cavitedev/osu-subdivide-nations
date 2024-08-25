@@ -2026,32 +2026,32 @@
             "GE-TB": {
                 "name": "Tbilisi",
                 "nativeName": "თბილისი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Tbilisi.svg"
             },
             "GE-GU": {
                 "name": "Guria",
                 "nativeName": "გურია",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ozurgebti_district_flag.jpg"
             },
             "GE-IM": {
                 "name": "Imereti",
                 "nativeName": "იმერეთი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kutaisi%2C_Georgia.svg"
             },
             "GE-KA": {
                 "name": "Kakheti",
                 "nativeName": "კახეთი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Telavi_%28City%29.svg"
             },
             "GE-KK": {
                 "name": "Lower Kartli",
                 "nativeName": "ქვემო ქართლი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Rustavi.svg"
             },
             "GE-MM": {
                 "name": "Mtskheta-Mtianeti",
                 "nativeName": "მცხეთა-მთიანეთი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_Mtskheta_Municipality.svg"
             },
             "GE-RL": {
                 "name": "Racha-Lechkhumi and Lower Svaneti",
@@ -2061,22 +2061,22 @@
             "GE-SZ": {
                 "name": "Samegrelo-Upper Svaneti",
                 "nativeName": "სამეგრელო-ზემო სვანეთი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_The_Principality_of_Mingrelia_%28Portolan_1560%29.svg"
             },
             "GE-SJ": {
                 "name": "Samtskhe-Javakheti",
                 "nativeName": "სამცხე-ჯავახეთი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Ambrolauri_%28City%29.svg"
             },
             "GE-SK": {
                 "name": "Inner Kartli",
                 "nativeName": "შიდა ქართლი",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Gori%2C_Georgia.svg"
             },
             "GE-SO": {
                 "name": "South Ossetia",
                 "nativeName": "Хуссар Ирыстон - Южная Осетия",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_South_Ossetia.svg"
             }
         }
     },
