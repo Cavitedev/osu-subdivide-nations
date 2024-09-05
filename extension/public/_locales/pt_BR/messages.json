@@ -29,6 +29,39 @@
     "highest_rank_profile": {
         "message": "Maior classificação: #{{rankHighest.rank}} em {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Classificação Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Ultima atualização das classificações no {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Configurações"
+    },
+    "website_settings": {
+        "message": "{{Website}} Configurações"
+    },
+    "about": {
+        "message": "Sobre"
+    },
+    "open_sidebar": {
+        "message": "Mostrar barra lateral"
+    },
+    "region_ranking_desc": {
+        "message": "Mostrar classificação regional de {{osu_world}} nos perfis osu!"
+    },
+    "score_ranking_desc": {
+        "message": "Mostrar classificação de pontuação de {{respektive_api}} nos perfis osu!"
+    },
+    "respektive_api": {
+        "message": "API do Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Mostrar classificação Kudosu de {{hiviexd_api}} nos perfis osu!"
+    },
+    "hiviexd_api": {
+        "message": "API do Hiviexd"
+    },
     "region": {
         "message": "Região"
     },
@@ -143,6 +176,9 @@
     "region_tw": {
         "message": "Província"
     },
+    "region_ua": {
+        "message": "Região"
+    },
     "region_us": {
         "message": "Estado"
     },
@@ -185,6 +221,9 @@
     "region_ve": {
         "message": "Estado"
     },
+    "region_rs": {
+        "message": "Distrito administrativo"
+    },
     "region_za": {
         "message": "Província"
     },
@@ -194,11 +233,38 @@
     "region_sa": {
         "message": "Província"
     },
+    "region_af": {
+        "message": "Província"
+    },
     "region_al": {
         "message": "Cantão"
     },
+    "region_dz": {
+        "message": "Província"
+    },
+    "region_ad": {
+        "message": "Paróquia"
+    },
+    "region_ao": {
+        "message": "Província"
+    },
     "region_am": {
         "message": "Maakond"
+    },
+    "region_bh": {
+        "message": "Governatorato"
+    },
+    "region_bd": {
+        "message": "Divisão"
+    },
+    "region_bb": {
+        "message": "Paróquia"
+    },
+    "region_bo": {
+        "message": "Departamento"
+    },
+    "region_ba": {
+        "message": "Entidade/Distrito"
     },
     "region_bn": {
         "message": "Distrito"
@@ -206,10 +272,34 @@
     "region_bf": {
         "message": "Região"
     },
+    "region_cv": {
+        "message": "Ilha"
+    },
+    "region_kh": {
+        "message": "Província"
+    },
+    "region_cr": {
+        "message": "Província"
+    },
     "region_hr": {
         "message": "Cantão"
     },
+    "region_do": {
+        "message": "Província"
+    },
+    "region_eg": {
+        "message": "Governatorato"
+    },
     "region_sv": {
+        "message": "Departamento"
+    },
+    "region_ge": {
+        "message": "Região"
+    },
+    "region_gt": {
+        "message": "Departamento"
+    },
+    "region_hn": {
         "message": "Departamento"
     },
     "region_is": {
@@ -218,11 +308,23 @@
     "region_iq": {
         "message": "Prefeitura"
     },
+    "region_jo": {
+        "message": "Governatorato"
+    },
     "region_kw": {
         "message": "Prefeitura"
     },
+    "region_kg": {
+        "message": "Região"
+    },
     "region_la": {
         "message": "Província"
+    },
+    "region_lb": {
+        "message": "Governatorato"
+    },
+    "region_lu": {
+        "message": "Cantão"
     },
     "region_mn": {
         "message": "Província"
@@ -230,16 +332,55 @@
     "region_ma": {
         "message": "Região"
     },
+    "region_mm": {
+        "message": "Região/Estado"
+    },
+    "region_np": {
+        "message": "Província"
+    },
+    "region_ni": {
+        "message": "Departamento"
+    },
+    "region_mk": {
+        "message": "Região Estatística"
+    },
+    "region_om": {
+        "message": "Governatorato"
+    },
     "region_pk": {
         "message": "Província"
+    },
+    "region_py": {
+        "message": "Departamento"
     },
     "region_qa": {
         "message": "Prefeitura"
     },
+    "region_si": {
+        "message": "Região Estatística"
+    },
+    "region_so": {
+        "message": "Região"
+    },
     "region_lk": {
         "message": "Província"
     },
+    "region_tt": {
+        "message": "Região/Município"
+    },
+    "region_tn": {
+        "message": "Governatorato"
+    },
+    "region_ae": {
+        "message": "Emirado"
+    },
+    "region_uy": {
+        "message": "Departamento"
+    },
     "region_uz": {
         "message": "Região"
+    },
+    "region_in": {
+        "message": "Estado"
     }
 }
