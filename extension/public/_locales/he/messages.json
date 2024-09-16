@@ -1,1 +1,386 @@
-{}
+{
+    "appDesc": {
+        "message": "מוסיף דגלים אזוריים לאתר !osu. בנוסף מוסיף דירוג ציון עולמי בפרופיל !osu."
+    },
+    "created_by": {
+        "message": "נוצר על ידי {{developer}}"
+    },
+    "system_default": {
+        "message": "מערכת ברירת מחדל"
+    },
+    "native_language": {
+        "message": "שפת אם"
+    },
+    "clean_cache": {
+        "message": "נקה מטמון"
+    },
+    "cache_cleaned": {
+        "message": "המטמון נוקה"
+    },
+    "region_language": {
+        "message": "שפת אזור:"
+    },
+    "score_ranking": {
+        "message": "דירוג ציון"
+    },
+    "region_ranking": {
+        "message": "דירוג אזורי"
+    },
+    "highest_rank_profile": {
+        "message": "דירוג שיא: {{rankHighest.rank}}# בתאריך {{formattedDate}}"
+    },
+    "kudosu_ranking": {
+        "message": "דירוג Kudosu"
+    },
+    "last_rank_update": {
+        "message": "עדכון דירוג אחרון בתאריך {{formattedDate}}"
+    },
+    "settings": {
+        "message": "הגדרות"
+    },
+    "website_settings": {
+        "message": "הגדרות {{Website}}"
+    },
+    "about": {
+        "message": "אודות"
+    },
+    "open_sidebar": {
+        "message": "פתח את סרגל הצד"
+    },
+    "region_ranking_desc": {
+        "message": "מציג דירוג אזורי מ{{osu_world}} בפרופיל !osu."
+    },
+    "score_ranking_desc": {
+        "message": "מציג דירוג ציון מ{{respektive_api}} בפרופיל !osu."
+    },
+    "respektive_api": {
+        "message": "API של Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "מציג דירוג Kudosu מ{{hiviexd_api}} בפרופיל !osu."
+    },
+    "hiviexd_api": {
+        "message": "API של Hiviexd"
+    },
+    "region": {
+        "message": "אזור"
+    },
+    "region_ru": {
+        "message": "רפובליקה / מחוז"
+    },
+    "region_ar": {
+        "message": "מחוז"
+    },
+    "region_at": {
+        "message": "מדינה"
+    },
+    "region_au": {
+        "message": "מדינה"
+    },
+    "region_be": {
+        "message": "מחוז"
+    },
+    "region_br": {
+        "message": "מדינה"
+    },
+    "region_by": {
+        "message": "מחוז"
+    },
+    "region_ca": {
+        "message": "מחוז"
+    },
+    "region_cl": {
+        "message": "אזור"
+    },
+    "region_cn": {
+        "message": "אזור מנהלי"
+    },
+    "region_co": {
+        "message": "מחוז"
+    },
+    "region_cz": {
+        "message": "אזור"
+    },
+    "region_de": {
+        "message": "מדינה"
+    },
+    "region_es": {
+        "message": "קהילה אוטונומית"
+    },
+    "region_fi": {
+        "message": "אזור"
+    },
+    "region_fr": {
+        "message": "אזור"
+    },
+    "region_hu": {
+        "message": "מחוז"
+    },
+    "region_id": {
+        "message": "מחוז"
+    },
+    "region_it": {
+        "message": "אזור"
+    },
+    "region_jp": {
+        "message": "מחוז"
+    },
+    "region_kr": {
+        "message": "מחוז"
+    },
+    "region_kz": {
+        "message": "אזור"
+    },
+    "region_lv": {
+        "message": "אזור"
+    },
+    "region_mx": {
+        "message": "מדינה"
+    },
+    "region_my": {
+        "message": "מדינה"
+    },
+    "region_nl": {
+        "message": "מחוז"
+    },
+    "region_no": {
+        "message": "מחוז"
+    },
+    "region_pe": {
+        "message": "אזור"
+    },
+    "region_ph": {
+        "message": "אזור"
+    },
+    "region_pl": {
+        "message": "מחוז"
+    },
+    "region_pt": {
+        "message": "אזור"
+    },
+    "region_ro": {
+        "message": "מחוז"
+    },
+    "region_se": {
+        "message": "מחוז"
+    },
+    "region_sg": {
+        "message": "מחוז"
+    },
+    "region_th": {
+        "message": "מחוז"
+    },
+    "region_tr": {
+        "message": "אזור"
+    },
+    "region_tw": {
+        "message": "מחוז"
+    },
+    "region_ua": {
+        "message": "מחוז"
+    },
+    "region_us": {
+        "message": "מדינה"
+    },
+    "region_vn": {
+        "message": "מחוז"
+    },
+    "region_dk": {
+        "message": "אזור"
+    },
+    "region_il": {
+        "message": "מחוז"
+    },
+    "region_nz": {
+        "message": "אזור"
+    },
+    "region_lt": {
+        "message": "מחוז"
+    },
+    "region_ch": {
+        "message": "קנטון"
+    },
+    "region_gr": {
+        "message": "אזור"
+    },
+    "region_ee": {
+        "message": "מחוז"
+    },
+    "region_bg": {
+        "message": "מחוז"
+    },
+    "region_sk": {
+        "message": "אזור"
+    },
+    "region_gb": {
+        "message": "מחוז"
+    },
+    "region_ie": {
+        "message": "מחוז"
+    },
+    "region_ve": {
+        "message": "מדינה"
+    },
+    "region_rs": {
+        "message": "מחוז מנהלי"
+    },
+    "region_za": {
+        "message": "מחוז"
+    },
+    "region_jm": {
+        "message": "אזור"
+    },
+    "region_sa": {
+        "message": "מחוז"
+    },
+    "region_af": {
+        "message": "מחוז"
+    },
+    "region_al": {
+        "message": "מחוז"
+    },
+    "region_dz": {
+        "message": "מחוז"
+    },
+    "region_ad": {
+        "message": "מחוז"
+    },
+    "region_ao": {
+        "message": "מחוז"
+    },
+    "region_am": {
+        "message": "מחוז"
+    },
+    "region_bh": {
+        "message": "מחוז"
+    },
+    "region_bd": {
+        "message": "מחוז"
+    },
+    "region_bb": {
+        "message": "מחוז"
+    },
+    "region_bo": {
+        "message": "מחוז"
+    },
+    "region_ba": {
+        "message": "ישות / מחוז"
+    },
+    "region_bn": {
+        "message": "מחוז"
+    },
+    "region_bf": {
+        "message": "אזור"
+    },
+    "region_cv": {
+        "message": "מחוז"
+    },
+    "region_kh": {
+        "message": "מחוז"
+    },
+    "region_cr": {
+        "message": "מחוז"
+    },
+    "region_hr": {
+        "message": "מחוז"
+    },
+    "region_do": {
+        "message": "מחוז"
+    },
+    "region_eg": {
+        "message": "מחוז"
+    },
+    "region_sv": {
+        "message": "מחוז"
+    },
+    "region_ge": {
+        "message": "אזור"
+    },
+    "region_gt": {
+        "message": "מחוז"
+    },
+    "region_hn": {
+        "message": "מחוז"
+    },
+    "region_is": {
+        "message": "אזור"
+    },
+    "region_iq": {
+        "message": "מחוז"
+    },
+    "region_jo": {
+        "message": "מחוז"
+    },
+    "region_kw": {
+        "message": "מחוז"
+    },
+    "region_kg": {
+        "message": "אזור"
+    },
+    "region_la": {
+        "message": "מחוז"
+    },
+    "region_lb": {
+        "message": "מחוז"
+    },
+    "region_lu": {
+        "message": "קנטון"
+    },
+    "region_mn": {
+        "message": "מחוז"
+    },
+    "region_ma": {
+        "message": "אזור"
+    },
+    "region_mm": {
+        "message": "אזור / מדינה"
+    },
+    "region_np": {
+        "message": "מחוז"
+    },
+    "region_ni": {
+        "message": "מחוז"
+    },
+    "region_mk": {
+        "message": "אזור סטטיסטי"
+    },
+    "region_om": {
+        "message": "מחוז"
+    },
+    "region_pk": {
+        "message": "מחוז"
+    },
+    "region_py": {
+        "message": "מחוז"
+    },
+    "region_qa": {
+        "message": "מחוז"
+    },
+    "region_si": {
+        "message": "אזור סטטיסטי"
+    },
+    "region_so": {
+        "message": "אזור"
+    },
+    "region_lk": {
+        "message": "מחוז"
+    },
+    "region_tt": {
+        "message": "אזור / מחוז"
+    },
+    "region_tn": {
+        "message": "מחוז"
+    },
+    "region_ae": {
+        "message": "אמירות"
+    },
+    "region_uy": {
+        "message": "מחוז"
+    },
+    "region_uz": {
+        "message": "אזור"
+    },
+    "region_in": {
+        "message": "מדינה"
+    }
+}

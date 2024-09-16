@@ -1,30 +1,111 @@
 {
+    "appDesc": {
+        "message": "osu!'nun Websitesinde bölgelere özel bayraklar ekler.\nAyrıca osu! profillerinde ki küresel sıralamayı günceller."
+    },
+    "created_by": {
+        "message": "{{developer}} tarafından geliştirildi"
+    },
     "system_default": {
         "message": "Sistem Varsayılanı"
     },
     "native_language": {
-        "message": "Ana dil"
+        "message": "Ana Dili"
+    },
+    "clean_cache": {
+        "message": "Önbelleği Temizle"
+    },
+    "cache_cleaned": {
+        "message": "Önbellek Temizlendi."
     },
     "region_language": {
-        "message": "Bölge dili:"
+        "message": "Bölge Dili:"
     },
     "score_ranking": {
         "message": "Skor Sıralaması"
     },
+    "region_ranking": {
+        "message": "Bölgesel Sıralama"
+    },
     "highest_rank_profile": {
-        "message": "{{formattedDate}} tarihinde en yüksek rank: #{{rankHighest.rank}}"
+        "message": "{{formattedDate}} tarihinde en yüksek sıralaması: #{{rankHighest.rank}}"
+    },
+    "kudosu_ranking": {
+        "message": "Kudosu Sıralaması"
+    },
+    "last_rank_update": {
+        "message": "En son sıralama {{formattedDate}} tarihinde güncellendi"
+    },
+    "settings": {
+        "message": "Ayarlar"
+    },
+    "website_settings": {
+        "message": "{{Website}} ayarları"
+    },
+    "about": {
+        "message": "Hakkında"
+    },
+    "open_sidebar": {
+        "message": "Kenar Çubuğunu Aç"
+    },
+    "region_ranking_desc": {
+        "message": "Bölge sıralamasını {{osu_world}} üzerinden görüntüler."
+    },
+    "score_ranking_desc": {
+        "message": "Skor sıralamasını {{respektive_api}} kullanarak osu! profellerinde görüntüler."
+    },
+    "respektive_api": {
+        "message": "Respektive API"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Kudosu sıralamasını {{hiviexd_api}} kullanarak osu! profillerinde görüntüler."
+    },
+    "hiviexd_api": {
+        "message": "Hiviexd API"
     },
     "region": {
         "message": "Bölge"
     },
+    "region_ru": {
+        "message": "Cumhuriyet / Oblast"
+    },
+    "region_ar": {
+        "message": "Eyalet"
+    },
+    "region_at": {
+        "message": "Eyalet"
+    },
+    "region_au": {
+        "message": "Eyalet"
+    },
+    "region_be": {
+        "message": "Eyalet"
+    },
+    "region_br": {
+        "message": "Eyalet"
+    },
     "region_by": {
-        "message": "Bölge"
+        "message": "Oblast"
+    },
+    "region_ca": {
+        "message": "Vilayet"
     },
     "region_cl": {
         "message": "Bölge"
     },
+    "region_cn": {
+        "message": "İdarî Bölge"
+    },
+    "region_co": {
+        "message": "Departman"
+    },
     "region_cz": {
         "message": "Bölge"
+    },
+    "region_de": {
+        "message": "Eyalet"
+    },
+    "region_es": {
+        "message": "Özerk Bölge"
     },
     "region_fi": {
         "message": "Bölge"
@@ -32,8 +113,20 @@
     "region_fr": {
         "message": "Bölge"
     },
+    "region_hu": {
+        "message": "İlçe"
+    },
+    "region_id": {
+        "message": "İl"
+    },
     "region_it": {
         "message": "Bölge"
+    },
+    "region_jp": {
+        "message": "İl"
+    },
+    "region_kr": {
+        "message": "Vilayet"
     },
     "region_kz": {
         "message": "Bölge"
@@ -41,43 +134,253 @@
     "region_lv": {
         "message": "Bölge"
     },
+    "region_mx": {
+        "message": "Eyalet"
+    },
+    "region_my": {
+        "message": "Eyalet"
+    },
+    "region_nl": {
+        "message": "Vilayet"
+    },
+    "region_no": {
+        "message": "İlçe"
+    },
     "region_pe": {
         "message": "Bölge"
     },
     "region_ph": {
         "message": "Bölge"
     },
+    "region_pl": {
+        "message": "Voyvodalık"
+    },
     "region_pt": {
         "message": "Bölge"
+    },
+    "region_ro": {
+        "message": "İlçe"
+    },
+    "region_se": {
+        "message": "İlçe"
+    },
+    "region_sg": {
+        "message": "Bölge"
+    },
+    "region_th": {
+        "message": "Vilayet"
     },
     "region_tr": {
         "message": "Bölge"
     },
+    "region_tw": {
+        "message": "Vilayet"
+    },
     "region_ua": {
-        "message": "Bölge"
+        "message": "Oblast"
+    },
+    "region_us": {
+        "message": "Eyalet"
+    },
+    "region_vn": {
+        "message": "Vilayet"
     },
     "region_dk": {
+        "message": "Bölge"
+    },
+    "region_il": {
         "message": "Bölge"
     },
     "region_nz": {
         "message": "Bölge"
     },
+    "region_lt": {
+        "message": "İlçe"
+    },
+    "region_ch": {
+        "message": "Kanton"
+    },
     "region_gr": {
         "message": "Bölge"
+    },
+    "region_ee": {
+        "message": "İlçe"
+    },
+    "region_bg": {
+        "message": "Vilayet"
     },
     "region_sk": {
         "message": "Bölge"
     },
+    "region_gb": {
+        "message": "İlçe"
+    },
+    "region_ie": {
+        "message": "Vilayet"
+    },
+    "region_ve": {
+        "message": "Eyalet"
+    },
+    "region_rs": {
+        "message": "İdarî Bölge"
+    },
+    "region_za": {
+        "message": "Vilayet"
+    },
     "region_jm": {
         "message": "Bölge"
+    },
+    "region_sa": {
+        "message": "Vilayet"
+    },
+    "region_af": {
+        "message": "Vilayet"
+    },
+    "region_al": {
+        "message": "İlçe"
+    },
+    "region_dz": {
+        "message": "Vilayet"
+    },
+    "region_ad": {
+        "message": "Pariş"
+    },
+    "region_ao": {
+        "message": "Vilayet"
+    },
+    "region_am": {
+        "message": "Marz"
+    },
+    "region_bh": {
+        "message": "Valilik"
+    },
+    "region_bd": {
+        "message": "Semt"
+    },
+    "region_bb": {
+        "message": "Pariş"
+    },
+    "region_bo": {
+        "message": "Departman"
+    },
+    "region_ba": {
+        "message": "Bölge"
+    },
+    "region_bn": {
+        "message": "İdarî Bölge"
     },
     "region_bf": {
         "message": "Bölge"
     },
+    "region_cv": {
+        "message": "Ada"
+    },
+    "region_kh": {
+        "message": "Özerk Bölge"
+    },
+    "region_cr": {
+        "message": "Vilayet"
+    },
+    "region_hr": {
+        "message": "İlçe"
+    },
+    "region_do": {
+        "message": "Vilayet"
+    },
+    "region_eg": {
+        "message": "Valilik"
+    },
+    "region_sv": {
+        "message": "Departman"
+    },
+    "region_ge": {
+        "message": "Bölge"
+    },
+    "region_gt": {
+        "message": "Departman"
+    },
+    "region_hn": {
+        "message": "Departman"
+    },
+    "region_is": {
+        "message": "Bölge"
+    },
+    "region_iq": {
+        "message": "Valilik"
+    },
+    "region_jo": {
+        "message": "Valilik"
+    },
+    "region_kw": {
+        "message": "Valilik"
+    },
+    "region_kg": {
+        "message": "Bölge"
+    },
+    "region_la": {
+        "message": "Vilayet"
+    },
+    "region_lb": {
+        "message": "Valilik"
+    },
+    "region_lu": {
+        "message": "Kanton"
+    },
+    "region_mn": {
+        "message": "Vilayet"
+    },
+    "region_ma": {
+        "message": "Bölge"
+    },
+    "region_mm": {
+        "message": "Bölge / Eyalet"
+    },
+    "region_np": {
+        "message": "Vilayet"
+    },
+    "region_ni": {
+        "message": "Departman"
+    },
+    "region_mk": {
+        "message": "İstatiksel Bölge"
+    },
+    "region_om": {
+        "message": "Valilik"
+    },
+    "region_pk": {
+        "message": "Vilayet"
+    },
+    "region_py": {
+        "message": "Departman"
+    },
+    "region_qa": {
+        "message": "Belediye"
+    },
+    "region_si": {
+        "message": "İstatiksel Bölge"
+    },
     "region_so": {
         "message": "Bölge"
     },
+    "region_lk": {
+        "message": "Vilayet"
+    },
+    "region_tt": {
+        "message": "Bölge / Belediye"
+    },
+    "region_tn": {
+        "message": "Valilik"
+    },
+    "region_ae": {
+        "message": "Emirlik"
+    },
+    "region_uy": {
+        "message": "Departman"
+    },
     "region_uz": {
         "message": "Bölge"
+    },
+    "region_in": {
+        "message": "Eyalet"
     }
 }
