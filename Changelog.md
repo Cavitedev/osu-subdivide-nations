@@ -3,6 +3,7 @@
 
 - Add Russia Kirov Region
 - Fix daily challenge flags
+- Lagtest translations
 
 ## Version 3.6.13
 
