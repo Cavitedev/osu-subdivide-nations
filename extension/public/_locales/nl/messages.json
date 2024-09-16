@@ -29,6 +29,12 @@
     "highest_rank_profile": {
         "message": "Hoogste rank: #{{rankHighest.rank}} op {{formattedDate}}"
     },
+    "about": {
+        "message": "Over"
+    },
+    "open_sidebar": {
+        "message": "Open Zijbalk"
+    },
     "region": {
         "message": "Regio"
     },

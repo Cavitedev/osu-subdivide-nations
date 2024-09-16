@@ -24,7 +24,7 @@
         "message": "分数排名"
     },
     "region_ranking": {
-        "message": "地区排名"
+        "message": "行政区内排名"
     },
     "highest_rank_profile": {
         "message": "{{formattedDate}} 达成生涯最高排名 #{{rankHighest.rank}}"
@@ -144,7 +144,7 @@
         "message": "省份"
     },
     "region_no": {
-        "message": "州"
+        "message": "郡"
     },
     "region_pe": {
         "message": "地区"
