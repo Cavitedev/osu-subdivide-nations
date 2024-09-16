@@ -28,6 +28,7 @@ export const addFlagsRankings = async () => {
     if (
         url.includes("osu.ppy.sh/multiplayer/rooms") ||
         url.includes("osu.ppy.sh/rankings/kudosu") ||
+        url.includes("osu.ppy.sh/rankings/daily-challenge") ||
         (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
     ) {
         for (const item of listItems) {

@@ -2,6 +2,7 @@
 ## Version 3.6.14
 
 - Add Russia Kirov Region
+- Fix daily challenge flags
 
 ## Version 3.6.13
 
