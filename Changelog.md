@@ -1,5 +1,7 @@
 # Changelog
+## Version 3.6.14
 
+- Add Russia Kirov Region
 
 ## Version 3.6.13
 
