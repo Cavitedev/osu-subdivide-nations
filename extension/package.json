@@ -1,7 +1,7 @@
 {
   "name": "osu_subdivide_nations",
   "displayName": "osu! subdivide nations",
-  "version": "3.6.14",
+  "version": "3.7.0",
   "description": "Updates national flags into regional flags in Osu! website.",
   "main": "index.js",
   "type": "module",
@@ -41,10 +41,10 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@playwright/test": "^1.41.0",
-    "@samrum/vite-plugin-web-extension": "^5.1.0",
-    "@types/chrome": "^0.0.258",
+    "@samrum/vite-plugin-web-extension": "^5.1.1",
+    "@types/chrome": "^0.0.278",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "20.11.5",
+    "@types/node": "20.11.6",
     "@types/webextension-polyfill": "^0.10.7",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "archiver": "^6.0.1",

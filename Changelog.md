@@ -1,4 +1,9 @@
 # Changelog
+
+## Version 3.7.0
+
+- Update Content Security Policy v4 fix on Chrome 130
+
 ## Version 3.6.14
 
 - Add Russia Kirov Region
