@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.7.1
+
+- Fix broken links of 8 flags
+
 ## Version 3.7.0
 
 - Update Content Security Policy v4 fix on Chrome 130

@@ -1264,7 +1264,7 @@
             "GB-ERY": {
                 "name": "East Riding of Yorkshire",
                 "nativeName": "East Riding of Yorkshire",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a2/East_Riding_Of_Yorkshire_Council.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Arms_of_East_Riding_of_Yorkshire_Council.svg"
             },
             "GB-ESX": {
                 "name": "East Sussex",
@@ -1590,7 +1590,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_the_Autonomous_Republic_of_Northern_Epirus.svg"
             },
             "GR-E": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_the_Region_of_Thessaly.svg"
+                "flag": ""
             },
             "GR-F": {
                 "flag": "https://upload.wikimedia.org/wikipedia/en/9/9f/Logo_of_the_Ionian_Islands_Region.png"
@@ -2206,7 +2206,7 @@
             "IN-PB": {
                 "name": "Punjab",
                 "nativeName": "",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Seal_of_Punjab.svg/128px-Seal_of_Punjab.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_Punjab.svg"
             },
             "IN-RJ": {
                 "name": "Rajasthan",
@@ -3267,7 +3267,7 @@
             "MN-1": {
                 "name": "Ulaanbaatar",
                 "nativeName": "Улаанбаатар ᠤᠯᠠᠭᠠᠨᠪᠠᠭᠠᠲᠤᠷ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Ulaanbaatar.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Ulaanbaatar%2C_Mongolia.svg"
             },
             "MN-041": {
                 "name": "Hovsgel",
