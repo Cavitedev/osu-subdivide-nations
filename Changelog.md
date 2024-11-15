@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.7.2
+
+- Fix flags not showing on redirection on osu website
+
 ## Version 3.7.1
 
 - Fix broken links of 8 flags

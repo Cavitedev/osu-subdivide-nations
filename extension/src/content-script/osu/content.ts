@@ -118,7 +118,14 @@ const updateSearchCards = async (cards: NodeListOf<HTMLElement>) => {
     await addFlagUsers(flagItems, { addDiv: true, addMargin: true });
 };
 
-const reloadMutationObserver = new MutationObserver((m) => {
+const preReloadMutationObserver = new MutationObserver(() => {
+    reloadMutationObserver.observe(document.querySelector("title")!, {
+        childList: true,
+    });
+});
+
+const reloadMutationObserver = new MutationObserver(() => {
+    reloadMutationObserver.disconnect();
     exec();
 });
 
@@ -184,9 +191,10 @@ const addGlobalObservers = () => {
 };
 
 export const exec = async () => {
-    reloadMutationObserver.observe(document.querySelector("title")!, {
+    preReloadMutationObserver.observe(document.querySelector("head")!, {
         childList: true,
     });
+
     updateLanguageToOsuLanguage();
     //Invalidate previous executions
     const signal = nextAbortControllerSignal();
