@@ -3,6 +3,7 @@
 ## Version 3.7.2
 
 - Fix flags not showing on redirection on osu website
+- Add Brunei flags
 
 ## Version 3.7.1
 

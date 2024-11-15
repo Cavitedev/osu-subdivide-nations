@@ -710,6 +710,32 @@
             }
         }
     },
+    "BN": {
+        "name": "Brunei",
+        "nativeName": "Brunei",
+        "regions": {
+            "BN-BE": {
+                "name": "Belait District",
+                "nativeName": "Belait",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a5/Flag_of_Belait.png"
+            },
+            "BN-BM": {
+                "name": "Brunei-Muara District",
+                "nativeName": "Brunei-Muara",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c4/Flag_of_Brunei_and_Muara.png"
+            },
+            "BN-TE": {
+                "name": "Temburong District",
+                "nativeName": "Temburong",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c4/Flag_of_Brunei_and_Muara.png"
+            },
+            "BN-TU": {
+                "name": "Tutong District",
+                "nativeName": "Tutong",
+                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/0e/Flag_of_Tutong.png"
+            }
+        }
+    },
     "CA": {
         "name": "Canada",
         "nativeName": "Canada",
