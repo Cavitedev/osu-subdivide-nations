@@ -180,7 +180,6 @@ export const addRegionalFlag = async (
 
     // Check again if flag is already added
     flagElements = item.querySelectorAll(`.${flagClass}`);
-    console.log(flagElements);
     if (flagElements.length > 1) {
         // Update
         flagElements[1].replaceWith(flagElementClone);

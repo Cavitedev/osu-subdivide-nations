@@ -4,6 +4,7 @@
 
 - Fix flags on osu! profile being displayed incorrectly
 - Remove flags gap performance ranking
+- Fix Beatmap rankings
 
 ## Version 3.7.2
 

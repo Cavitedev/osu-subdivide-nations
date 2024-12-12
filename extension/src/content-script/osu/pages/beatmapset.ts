@@ -78,7 +78,6 @@ export const addFlagsBeatmapsets = async () => {
 
 const updateTopLeaderboard = async (leaderboardParent: HTMLElement, signal: AbortSignal) => {
     //beatmap-scoreboard-top
-
     const topScoreElements = leaderboardParent.querySelectorAll(".beatmap-score-top__user-box");
     if (!topScoreElements) {
         return;
@@ -127,7 +126,8 @@ const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => 
     const flagItems: TFlagItems = [];
     for (const item of items) {
         const playerNameElement = item.querySelector(".beatmap-scoreboard-table__cell-content--user-link");
-        const playerId = playerNameElement?.getAttribute("data-user-id");
+        console.log("id");
+        const playerId = playerNameElement?.children[0].getAttribute("data-user-id");
         if (playerId) {
             flagItems.push({ item: item as HTMLElement, id: playerId });
         }
