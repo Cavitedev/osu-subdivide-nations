@@ -149,6 +149,11 @@ export const addRegionalFlag = async (
     const flagElement = flagElements[0];
     const flagParent = flagElement.parentElement!;
     let flagParentClone = flagParent.cloneNode(true) as HTMLElement;
+    const countryTextToRemove = flagParentClone.querySelector('.profile-info__flag-text');
+    if (countryTextToRemove) {
+        flagParentClone.removeChild(countryTextToRemove);
+    }
+
     const flagElementClone = flagParentClone.querySelector(`.${flagClass}`)!;
 
     let flag = regionData["flag"];
@@ -175,6 +180,7 @@ export const addRegionalFlag = async (
 
     // Check again if flag is already added
     flagElements = item.querySelectorAll(`.${flagClass}`);
+    console.log(flagElements);
     if (flagElements.length > 1) {
         // Update
         flagElements[1].replaceWith(flagElementClone);
@@ -225,8 +231,9 @@ export const addRegionalFlag = async (
             insertParent = insertParent.parentElement!;
             // insertParent.insertBefore(flagParentClone, flagParent.nextSibling);
         }
-
-        insertParent.insertBefore(flagParentClone, sibling);
+        const flagInsert = insertParent.querySelector(`.profile-info__flag`) ?? insertParent;
+        sibling = flagInsert.querySelector(".profile-info__flag-text") ?? sibling;
+        flagInsert.insertBefore(flagParentClone, sibling);
     }
 
     const countryName = await updateCountryNameFlag(item);

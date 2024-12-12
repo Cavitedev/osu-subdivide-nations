@@ -61,7 +61,7 @@ export const enhanceProfile = async (signal?: AbortSignal) => {
 };
 
 const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string, signal?: AbortSignal) => {
-    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: true, signal: signal });
+    const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: false, signal: signal });
 
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;

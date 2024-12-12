@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.8.0
+
+- Fix flags on osu! profile being displayed incorrectly
+
 ## Version 3.7.2
 
 - Fix flags not showing on redirection on osu website
