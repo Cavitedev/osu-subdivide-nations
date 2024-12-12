@@ -3,6 +3,7 @@
 ## Version 3.8.0
 
 - Fix flags on osu! profile being displayed incorrectly
+- Remove flags gap performance ranking
 
 ## Version 3.7.2
 

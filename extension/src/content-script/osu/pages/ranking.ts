@@ -52,7 +52,7 @@ export const addFlagsRankings = async () => {
 
     await addFlagUsers(flagItems, {
         addDiv: true,
-        addMargin: true,
+        addMargin: false,
         signal: signal,
     });
 };
