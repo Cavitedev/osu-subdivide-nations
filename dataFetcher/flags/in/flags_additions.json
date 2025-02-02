@@ -497,7 +497,7 @@
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Arica_y_Parinacota,_Chile.svg"
             },
             "CL-MA": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Magallanes_y_la_Ant%C3%A1rtica_Chilena%2C_Chile.svg"
             }
         }
     },
@@ -694,7 +694,7 @@
             },
             "BE-WLX": {
                 "nativeName": "Luxembourg",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Official_flag_of_the_Province_of_Luxembourg.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Unofficial_flag_of_the_Province_of_Luxembourg.svg"
             },
             "BE-WNA": {
                 "nativeName": "BE-WNA",
@@ -953,9 +953,88 @@
         }
     },
     "DE": {
+        "name": "Germany",
+        "nativeName": "Deutschland",
         "regions": {
+            "DE-BW": {
+                "name": "Baden-Württemberg",
+                "nativeName": "Baden-Württemberg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Baden-W%C3%BCrttemberg_%28state%2C_greater_arms%29_2020.svg"
+            },
+            "DE-BE": {
+                "name": "Berlin",
+                "nativeName": "Berlin",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Berlin.svg"
+            },
+            "DE-BB": {
+                "name": "Brandenburg",
+                "nativeName": "Brandenburg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Brandenburg.svg"
+            },
+            "DE-HB": {
+                "name": "Bremen",
+                "nativeName": "Bremen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5a/State_flag_of_Bremen.svg"
+            },
+            "DE-HH": {
+                "name": "Hamburg",
+                "nativeName": "Hamburg",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Hamburg.svg"
+            },
+            "DE-HE": {
+                "name": "Hesse",
+                "nativeName": "Hessen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_Hesse_%28state%29.svg"
+            },
+            "DE-NI": {
+                "name": "Lower Saxony",
+                "nativeName": "Niedersachsen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/81/Flag_of_Lower_Saxony.svg"
+            },
+            "DE-MV": {
+                "name": "Mecklenburg-Vorpommern",
+                "nativeName": "Mecklenburg-Vorpommern",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Mecklenburg-Western_Pomerania_%28state%29.svg"
+            },
+            "DE-NW": {
+                "name": "North Rhine-Westphalia",
+                "nativeName": "Nordrhein-Westfalen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_North_Rhine-Westphalia_%28state%29.svg"
+            },
+            "DE-RP": {
+                "name": "Rhineland-Palatinate",
+                "nativeName": "Rheinland-Pfalz",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Rhineland-Palatinate.svg"
+            },
+            "DE-SL": {
+                "name": "Saarland",
+                "nativeName": "Saarland",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Saarland.svg//128px-Flag_of_Saarland.svg.png"
+            },
+            "DE-SN": {
+                "name": "Saxony",
+                "nativeName": "Sachsen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Saxony_%28state%29.svg"
+            },
+            "DE-ST": {
+                "name": "Saxony-Anhalt",
+                "nativeName": "Sachsen-Anhalt",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Flag_of_Saxony-Anhalt_(state).svg"
+            },
+            "DE-SH": {
+                "name": "Schleswig-Holstein",
+                "nativeName": "Schleswig-Holstein",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_Schleswig-Holstein_%28state%29.svg"
+            },
+            "DE-TH": {
+                "name": "Thuringia",
+                "nativeName": "Thüringen",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Thuringia_%28state%29.svg"
+            },
             "DE-BY": {
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Bavaria_(lozengy).svg"
+                "name": "Bavaria",
+                "nativeName": "Bayern",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Bavaria_%28state%29.png"
             }
         }
     },
@@ -1220,6 +1299,17 @@
             },
             "FI-19": {
                 "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Varsinais-Suomen.vaakuna.svg"
+            }
+        }
+    },
+    "FR": {
+        "name": "France",
+        "nativeName": "France",
+        "regions": {
+            "FR-PDL": {
+                "name": "Pays de la Loire",
+                "nativeName": "Pays de la Loire",
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/24/Cultural_flag_of_Pays-de-la-Loire.svg"
             }
         }
     },

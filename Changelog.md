@@ -1,6 +1,11 @@
 # Changelog
 
-## Version 3.8.0
+## Version 3.7.4
+
+- Germany flags
+- Mantain broken links
+
+## Version 3.7.3
 
 - Fix flags on osu! profile being displayed incorrectly
 - Remove flags gap performance ranking

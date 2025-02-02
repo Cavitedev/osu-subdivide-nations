@@ -433,7 +433,7 @@
             "BE-WLX": {
                 "name": "Luxembourg",
                 "nativeName": "Luxembourg",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Official_flag_of_the_Province_of_Luxembourg.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Unofficial_flag_of_the_Province_of_Luxembourg.svg"
             },
             "BE-WNA": {
                 "name": "Namur",
@@ -783,7 +783,7 @@
             "CL-MA": {
                 "name": "Magallanes Region",
                 "nativeName": "Región de Magallanes y de la Antártica Chilena",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Magallanes,_Chile.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Magallanes_y_la_Ant%C3%A1rtica_Chilena%2C_Chile.svg"
             },
             "CL-ML": {
                 "name": "Maule Region",
@@ -2000,7 +2000,7 @@
             "FR-PDL": {
                 "name": "Pays de la Loire",
                 "nativeName": "Pays de la Loire",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Unofficial_flag_of_Pays-de-la-Loire.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/24/Cultural_flag_of_Pays-de-la-Loire.svg"
             },
             "FR-PAC": {
                 "name": "Provence-Alpes-Côte d'Azur",
@@ -2087,7 +2087,7 @@
             "DE-BW": {
                 "name": "Baden-Württemberg",
                 "nativeName": "Baden-Württemberg",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Baden-Württemberg.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Baden-W%C3%BCrttemberg_%28state%2C_greater_arms%29_2020.svg"
             },
             "DE-BE": {
                 "name": "Berlin",
@@ -2102,7 +2102,7 @@
             "DE-HB": {
                 "name": "Bremen",
                 "nativeName": "Bremen",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Flag_of_Bremen.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5a/State_flag_of_Bremen.svg"
             },
             "DE-HH": {
                 "name": "Hamburg",
@@ -2112,7 +2112,7 @@
             "DE-HE": {
                 "name": "Hesse",
                 "nativeName": "Hessen",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Hesse.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_Hesse_%28state%29.svg"
             },
             "DE-NI": {
                 "name": "Lower Saxony",
@@ -2122,12 +2122,12 @@
             "DE-MV": {
                 "name": "Mecklenburg-Vorpommern",
                 "nativeName": "Mecklenburg-Vorpommern",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Mecklenburg-Western_Pomerania.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Mecklenburg-Western_Pomerania_%28state%29.svg"
             },
             "DE-NW": {
                 "name": "North Rhine-Westphalia",
                 "nativeName": "Nordrhein-Westfalen",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_North_Rhine-Westphalia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_North_Rhine-Westphalia_%28state%29.svg"
             },
             "DE-RP": {
                 "name": "Rhineland-Palatinate",
@@ -2142,7 +2142,7 @@
             "DE-SN": {
                 "name": "Saxony",
                 "nativeName": "Sachsen",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Saxony.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Saxony_%28state%29.svg"
             },
             "DE-ST": {
                 "name": "Saxony-Anhalt",
@@ -2152,17 +2152,17 @@
             "DE-SH": {
                 "name": "Schleswig-Holstein",
                 "nativeName": "Schleswig-Holstein",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Schleswig-Holstein.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Flag_of_Schleswig-Holstein_%28state%29.svg"
             },
             "DE-TH": {
                 "name": "Thuringia",
                 "nativeName": "Thüringen",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Thuringia.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Thuringia_%28state%29.svg"
             },
             "DE-BY": {
                 "name": "Bavaria",
                 "nativeName": "Bayern",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Bavaria_(lozengy).svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Bavaria_%28state%29.png"
             }
         }
     },
@@ -2829,7 +2829,7 @@
             "IT-82": {
                 "name": "Sicily",
                 "nativeName": "Sicilia",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Sicilian_Flag.svg//128px-Sicilian_Flag.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Sicily.svg"
             },
             "IT-32": {
                 "name": "Trentino-Alto Adige/Südtirol",
@@ -3323,7 +3323,7 @@
             "KG-GB": {
                 "name": "Bishkek",
                 "nativeName": "Бишкек шаары",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Bishkek_Kyrgyzstan.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Bishkek.svg"
             },
             "KG-GO": {
                 "name": "Osh",
@@ -6279,7 +6279,7 @@
             "TH-34": {
                 "name": "Ubon Ratchathani province",
                 "nativeName": "จังหวัดอุบลราชธานี",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ubon_Ratchathani_Province_Flags.svg//128px-Ubon_Ratchathani_Province_Flags.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Ubon_Ratchathani_Province.svg"
             },
             "TH-41": {
                 "name": "Udon Thani province",
@@ -8528,7 +8528,7 @@
             "GR-E": {
                 "name": "Thessaly",
                 "nativeName": "Περιφέρεια Θεσσαλίας",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_the_Region_of_Thessaly.svg"
+                "flag": ""
             },
             "GR-F": {
                 "name": "Ioanian Islands",
