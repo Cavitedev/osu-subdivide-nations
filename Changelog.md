@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.7.4
+
+- Germany flags
+- Mantain broken links
+
 ## Version 3.7.3
 
 - Fix flags on osu! profile being displayed incorrectly
