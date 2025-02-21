@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.8.0
+
+- Remove team flags on region ranking
+
 ## Version 3.7.4
 
 - Germany flags

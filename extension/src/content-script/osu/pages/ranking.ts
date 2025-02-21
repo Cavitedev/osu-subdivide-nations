@@ -255,8 +255,9 @@ const removeColsRegionalRanking = [7, 6, 5, 3];
 const cleanRankingColumns = (listItems: NodeListOf<Element>) => {
     for (const tr of listItems) {
         const cells = tr.children;
+        cells[1].querySelector(".flag-team")?.remove();
         for (const index of removeColsRegionalRanking) {
-            cells[index].remove();
+            cells[index]?.remove();
         }
     }
 };
