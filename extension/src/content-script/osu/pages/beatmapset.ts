@@ -126,8 +126,7 @@ const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => 
     const flagItems: TFlagItems = [];
     for (const item of items) {
         const playerNameElement = item.querySelector(".beatmap-scoreboard-table__cell-content--user-link");
-        console.log("id");
-        const playerId = playerNameElement?.children[0].getAttribute("data-user-id");
+        const playerId = playerNameElement?.querySelector(".beatmap-scoreboard-table__user-link")?.getAttribute("data-user-id");
         if (playerId) {
             flagItems.push({ item: item as HTMLElement, id: playerId });
         }

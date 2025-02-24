@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.8.1
+
+- Fix regional flags not showing on team players on leaderboards
+
 ## Version 3.8.0
 
 - Remove team flags on region ranking
