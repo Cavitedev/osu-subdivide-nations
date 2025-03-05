@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.8.2
+
+- Fix column profile. 2 to 3 columns for flags 
+
 ## Version 3.8.1
 
 - Fix regional flags not showing on team players on leaderboards

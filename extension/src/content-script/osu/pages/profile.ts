@@ -81,6 +81,10 @@ const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string
         replaceText = `${countryName} | ${regionCountryName} / ${regionName}`;
     }
 
+    //Changes CSS for 3 columns
+    let anchorElement = flagElement.querySelector(".profile-info__flag")!
+    anchorElement.classList.add("profile-info__flag-region");
+
     countryNameElement.textContent = replaceText;
 };
 
