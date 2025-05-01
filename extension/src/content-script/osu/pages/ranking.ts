@@ -71,15 +71,17 @@ const addLinkToFlag = (item: HTMLElement) => {
 };
 
 const regionsInRanking = async (signal: AbortSignal): Promise<boolean> => {
+    console.log("regions");
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
     const regionUrlParam = urlParams.get("region");
     const countryUrlParam = urlParams.get("country");
 
     const rankingType = location.pathname.split("/")[3];
+    const subRankingType = location.pathname.split("/")[4];
     const filter = urlParams.get("filter");
 
-    if (rankingType === "performance" && (!filter || filter === "all") && countryUrlParam) {
+    if (rankingType === "global" && (!subRankingType || subRankingType == 'performance') && (!filter || filter === "all") && countryUrlParam) {
         addRegionsDropdown(countryUrlParam, regionUrlParam);
         if (!regionUrlParam) return false;
         const regionData = (await countryRegionsLocalData)[countryUrlParam]?.["regions"]?.[regionUrlParam];
@@ -108,6 +110,7 @@ export const updateRegionsDropdown = async () => {
 
 const addRegionsDropdown = async (countryCode: string, regionCode: string | null, replace = false) => {
     const addedDropdown = document.querySelector("#cavitedev_region_dropdown");
+    console.log("Add");
     let regionNames = await getRegionNames(countryCode);
     const regionNamesKeys = Object.entries(regionNames).sort(([key1, value1], [key2, value2]) =>
         value1.localeCompare(value2),

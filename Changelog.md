@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.8.3
+
+- Fix region ranking dropdown
+
 ## Version 3.8.2
 
 - Fix column profile. 2 to 3 columns for flags 
