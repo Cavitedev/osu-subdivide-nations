@@ -3,6 +3,7 @@
 ## Version 3.9.0
 
 - Add tooltip wiki page
+- Fix space friends list
 
 ## Version 3.8.4
 

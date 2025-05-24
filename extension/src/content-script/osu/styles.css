@@ -25,3 +25,7 @@
 .profile-info__flag.profile-info__flag-region{
     grid-template-columns: auto auto 1fr !important;
 }
+
+.user-cards{
+    grid-template-columns: repeat(auto-fill, minmax(316px, 1fr)) !important;
+}
