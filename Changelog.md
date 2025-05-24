@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.8.4
+
+- Update flag Bavaria
+
 ## Version 3.8.3
 
 - Fix region ranking dropdown
