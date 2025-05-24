@@ -147,9 +147,14 @@ export const addRegionalFlag = async (
     let flagElements = item.querySelectorAll(`.${flagClass}`);
 
     const flagElement = flagElements[0];
-    const flagParent = flagElement.parentElement!;
+    let flagParent = flagElement.parentElement!;
+
+    if (flagParent.nodeName !== "A" && flagParent.parentElement?.nodeName === "A") {
+        flagParent = flagParent.parentElement;
+    }
+
     let flagParentClone = flagParent.cloneNode(true) as HTMLElement;
-    const countryTextToRemove = flagParentClone.querySelector('.profile-info__flag-text');
+    const countryTextToRemove = flagParentClone.querySelector(".profile-info__flag-text");
     if (countryTextToRemove) {
         flagParentClone.removeChild(countryTextToRemove);
     }
