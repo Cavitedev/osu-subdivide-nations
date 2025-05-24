@@ -260,7 +260,7 @@ const addWikiPageFlag = async (item: HTMLElement, regionData: IregionData) => {
     }
 
     flagElement.setAttribute("style", flagStyle.replace("$flag", flag) + ";margin-right: 4px;border-radius: 2px;");
-
+    flagElement.setAttribute("title", regionData.name);
     const parent = item.parentElement!;
     parent.insertBefore(flagElement, item);
 

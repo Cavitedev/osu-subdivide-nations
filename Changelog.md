@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.0
+
+- Add tooltip wiki page
+
 ## Version 3.8.4
 
 - Fix beatmap ranking having no flags
