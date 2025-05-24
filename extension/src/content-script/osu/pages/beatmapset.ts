@@ -125,15 +125,14 @@ const updateTableRanks = async (tableBody: HTMLElement, signal: AbortSignal) => 
 
     const flagItems: TFlagItems = [];
     for (const item of items) {
-        const playerNameElement = item.querySelector(".beatmap-scoreboard-table__cell-content--user-link");
-        const playerId = playerNameElement?.querySelector(".beatmap-scoreboard-table__user-link")?.getAttribute("data-user-id");
+        const playerId = item?.querySelector(".beatmap-scoreboard-table__user-link")?.getAttribute("data-user-id");
         if (playerId) {
             flagItems.push({ item: item as HTMLElement, id: playerId });
         }
     }
     await addFlagUsers(flagItems, {
         addDiv: false,
-        addMargin: true,
+        addMargin: false,
         addSuperParentClone: false,
         insertInsideOriginalElement: true,
         signal: signal,

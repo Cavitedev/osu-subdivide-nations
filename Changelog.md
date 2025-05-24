@@ -2,8 +2,9 @@
 
 ## Version 3.8.4
 
-- Update flag Bavaria
-- Fix space 
+- Fix beatmap ranking having no flags
+- Fix space daily challenge ranking 
+- Fix flag Bavaria
 
 ## Version 3.8.3
 
