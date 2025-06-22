@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.1
+
+- Fix Nothern Ireland flag
+
 ## Version 3.9.0
 
 - Add tooltip wiki page
