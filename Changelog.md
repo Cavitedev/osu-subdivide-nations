@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.2
+
+- Maintenance broken flag links
+
 ## Version 3.9.1
 
 - Fix Nothern Ireland flag

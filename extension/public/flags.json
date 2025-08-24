@@ -128,7 +128,7 @@
             "AR-Q": {
                 "name": "Neuquén Province",
                 "nativeName": "Neuquén",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bandera_de_la_Provincia_de_Neuquén.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bandera_de_la_Provincia_del_Neuquen.svg"
             },
             "AR-R": {
                 "name": "Río Negro Province",
@@ -433,7 +433,7 @@
             "BE-WLX": {
                 "name": "Luxembourg",
                 "nativeName": "Luxembourg",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Unofficial_flag_of_the_Province_of_Luxembourg.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/9/98/Official_flag_of_the_Arelerland.svg"
             },
             "BE-WNA": {
                 "name": "Namur",
@@ -1440,7 +1440,7 @@
             "EC-H": {
                 "name": "Chimborazo",
                 "nativeName": "Chimborazo",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Flag_of_Chimborazo.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bandera_Provincia_Chimborazo.svg"
             },
             "EC-X": {
                 "name": "Cotopaxi",
@@ -3298,7 +3298,7 @@
             "KG-Y": {
                 "name": "Issyk-Kul Region",
                 "nativeName": "Ысык-Көл облусу",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Issyk_kul_obl_flag.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Issyk-Kul_Region.svg"
             },
             "KG-J": {
                 "name": "Jalal-Abad Region",
@@ -5171,7 +5171,7 @@
             "RU-NVS": {
                 "name": "Novosibirsk Oblast",
                 "nativeName": "Новосибирская область",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Novosibirsk_oblast.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Novosibirsk_Oblast.svg"
             },
             "RU-OMS": {
                 "name": "Omsk Oblast",
@@ -5661,7 +5661,7 @@
             "LK-8": {
                 "name": "Uva Province",
                 "nativeName": "Uva Province",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_the_Uva_Province_(Sri_Lanka)_SVG.svg//128px-Flag_of_the_Uva_Province_(Sri_Lanka)_SVG.svg.png"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_the_Uva_Province_%28Sri_Lanka%29.svg"
             },
             "LK-1": {
                 "name": "Western Province",
@@ -6682,12 +6682,12 @@
             "GB-SRY": {
                 "name": "Surrey",
                 "nativeName": "Surrey",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Surrey.svg"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_the_County_of_Surrey.svg"
             },
             "GB-TYW": {
                 "name": "Tyne and Wear",
                 "nativeName": "Tyne and Wear",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/County_Flag_of_Tyne_&_Wear.svg"
+                "flag": "https://www.crwflags.com/fotw/images/g/gb-e-tyw.gif"
             },
             "GB-WAR": {
                 "name": "Warwickshire",
@@ -8059,7 +8059,7 @@
             "DO-04": {
                 "name": "Barahona",
                 "nativeName": "Barahona",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/5/59/Escudo_de_la_Provincia_Barahona.svg"
+                "flag": ""
             },
             "DO-05": {
                 "name": "Dajabón",
@@ -8074,7 +8074,7 @@
             "DO-08": {
                 "name": "El Seibo",
                 "nativeName": "El Seibo",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Escudo_de_la_Provincia_El_Seibo.svg/128px-Escudo_de_la_Provincia_El_Seibo.svg.png"
+                "flag": ""
             },
             "DO-09": {
                 "name": "Espaillat",
@@ -8104,7 +8104,7 @@
             "DO-12": {
                 "name": "La Romana",
                 "nativeName": "La Romana",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_Provincia_La_Romana.svg"
+                "flag": ""
             },
             "DO-13": {
                 "name": "La Vega",
@@ -8144,7 +8144,7 @@
             "DO-18": {
                 "name": "Puerto Plata",
                 "nativeName": "Puerto Plata",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Escudo_de_la_Provincia_Puerto_Plata.svg/128px-Escudo_de_la_Provincia_Puerto_Plata.svg.png"
+                "flag": ""
             },
             "DO-19": {
                 "name": "Hermanas Mirabal",
@@ -8154,7 +8154,7 @@
             "DO-20": {
                 "name": "Samaná",
                 "nativeName": "Samaná",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Escudo_de_la_Provincia_Samaná.svg/128px-Escudo_de_la_Provincia_Samaná.svg.png"
+                "flag": ""
             },
             "DO-21": {
                 "name": "San Cristóbal",
@@ -8169,7 +8169,7 @@
             "DO-22": {
                 "name": "San Juan",
                 "nativeName": "San Juan",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Escudo_de_la_Provincia_San_Juan.svg"
+                "flag": ""
             },
             "DO-23": {
                 "name": "San Pedro de Macorís",
@@ -8184,7 +8184,7 @@
             "DO-25": {
                 "name": "Santiago",
                 "nativeName": "Santiago",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Escudo_de_la_Provincia_Santiago.svg/128px-Escudo_de_la_Provincia_Santiago.svg.png"
+                "flag": ""
             },
             "DO-26": {
                 "name": "Santiago Rodríguez",
@@ -8988,7 +8988,7 @@
             "KH-12": {
                 "name": "Phnom Penh",
                 "nativeName": "រាជធានីភ្នំពេញ",
-                "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Seal_of_Phnom_Penh.svg/128px-Seal_of_Phnom_Penh.svg.png"
+                "flag": "https://www.crwflags.com/fotw/images/k/kh.gif"
             },
             "KH-2": {
                 "name": "Battambang",
