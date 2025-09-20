@@ -3262,22 +3262,22 @@
             "KW-KU": {
                 "name": "Al Asimah",
                 "nativeName": "العاصمة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Flag_of_Capital_Governorate,_Kuwait.png/revision/latest/scale-to-width-down/1000?cb=20230501122836"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/KW/KW-KU.png"
             },
             "KW-FA": {
                 "name": "Farwaniya",
                 "nativeName": "الفروانية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/df/Flag_of_Farwaniya_Governorate.png/revision/latest?cb=20230501122902"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/KW/KW-FA.png"
             },
             "KW-HA": {
                 "name": "Hawalli",
                 "nativeName": "حولي",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d9/Flag_of_Hawalli_Governorate.png/revision/latest?cb=20230501123123"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/KW/KW-HA.png"
             },
             "KW-JA": {
                 "name": "Jahra",
                 "nativeName": "الجهراء",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/cc/Flag_of_Jahra_Governorate.png/revision/latest/scale-to-width-down/1000?cb=20230501123143"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/KW/KW-JA.png"
             }
         }
     },
@@ -3941,37 +3941,37 @@
             "NZ-AUK": {
                 "name": "Auckland",
                 "nativeName": "Auckland",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Flag_of_Auckland_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-AUK.svg"
             },
             "NZ-BOP": {
                 "name": "Bay of Plenty",
                 "nativeName": "Bay of Plenty",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Flag_of_Bay_of_Plenty_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-BOP.svg"
             },
             "NZ-CAN": {
                 "name": "Canterbury",
                 "nativeName": "Canterbury",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/e3/Flag_of_Canterbury_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-CAN.svg"
             },
             "NZ-GIS": {
                 "name": "Gisborne",
                 "nativeName": "Gisborne",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/e4/Flag_of_Gisborne_District.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-GIS.svg"
             },
             "NZ-HKB": {
                 "name": "Hawke's Bay",
                 "nativeName": "Hawke's Bay",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c0/Flag_of_Hawke's_Bay.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-HKB.svg"
             },
             "NZ-MBH": {
                 "name": "Marlborough",
                 "nativeName": "Marlborough",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a1/Flag_of_Marlborough_District.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-MBH.svg"
             },
             "NZ-MWT": {
                 "name": "Manawatū-Whanganui",
                 "nativeName": "Manawatū-Whanganui",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/8a/Flag_of_Manawatū-Whanganui.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-MWT.svg"
             },
             "NZ-NSN": {
                 "name": "Nelson",
@@ -3981,7 +3981,7 @@
             "NZ-NTL": {
                 "name": "Northland",
                 "nativeName": "Northland",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c3/Flag_of_Northland_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-NTL.svg"
             },
             "NZ-OTA": {
                 "name": "Otago",
@@ -3991,32 +3991,32 @@
             "NZ-STL": {
                 "name": "Southland",
                 "nativeName": "Southland",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a1/Flag_of_Southland_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-STL.svg"
             },
             "NZ-TAS": {
                 "name": "Tasman",
                 "nativeName": "Tasman",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/ba/Flag_of_Tasman_District.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-TAS.svg"
             },
             "NZ-TKI": {
                 "name": "Taranaki",
                 "nativeName": "Taranaki",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/db/Flag_of_Taranaki.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-TKI.svg"
             },
             "NZ-WGN": {
                 "name": "Wellington",
                 "nativeName": "Wellington",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/42/Flag_of_Wellington_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-WGN.svg"
             },
             "NZ-WKO": {
                 "name": "Waikato",
                 "nativeName": "Waikato",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/12/Flag_of_Waikato.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-WKO.svg"
             },
             "NZ-WTC": {
                 "name": "West Coast",
                 "nativeName": "West Coast",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6b/Flag_of_West_Coast_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/NZ/NZ-WTC.svg"
             }
         }
     },
@@ -5373,12 +5373,12 @@
             "SO-AW": {
                 "name": "Awdal",
                 "nativeName": "Awdal",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/72/Flag_of_Awdal.svg/revision/latest?cb=20230418220239"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-AW.png"
             },
             "SO-BK": {
                 "name": "Bakool",
                 "nativeName": "Bakool",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2c/Flag_of_Bakool.svg/revision/latest?cb=20230418233121"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BK.png"
             },
             "SO-BN": {
                 "name": "Banaadir",
@@ -5388,82 +5388,82 @@
             "SO-BR": {
                 "name": "Bari",
                 "nativeName": "Bari",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6c/Flag_of_Bari,_Somalia.svg/revision/latest?cb=20230418234536"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BR.png"
             },
             "SO-BY": {
                 "name": "Bay",
                 "nativeName": "Bay",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/40/Flag_of_Bay,_Somalia.svg/revision/latest?cb=20230419071220"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BY.png"
             },
             "SO-GA": {
                 "name": "Galgaduud",
                 "nativeName": "Galgaduud",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f9/Gedo_Flag.png/revision/latest?cb=20230419100359"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-GA.png"
             },
             "SO-GE": {
                 "name": "Gedo",
                 "nativeName": "Gedo",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f9/Gedo_Flag.png/revision/latest?cb=20230419100359"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-GE.png"
             },
             "SO-HI": {
                 "name": "Hiiraan",
                 "nativeName": "Hiiraan",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/09/Flag_of_Hiran,_Somalia.svg/revision/latest?cb=20230418220123"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-HI.png"
             },
             "SO-JD": {
                 "name": "Middle Juba",
                 "nativeName": "Jubbada Dhexe",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/04/Flag_of_Middle_Juba.svg/revision/latest?cb=20230419094837"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-JD.png"
             },
             "SO-JH": {
                 "name": "Lower Juba",
                 "nativeName": "Jubbada Hoose",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Flag_of_Lower_Juba.svg/revision/latest?cb=20230419094854"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-JH.png"
             },
             "SO-MU": {
                 "name": "Mudug",
                 "nativeName": "Mudug",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/7d/Flag_of_Mudug.svg/revision/latest?cb=20230419071230"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-MU.png"
             },
             "SO-NU": {
                 "name": "Nugaal",
                 "nativeName": "Nugaal",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/ca/Flag_of_Nugal,_Somalia.svg/revision/latest?cb=20230419094846"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-NU.png"
             },
             "SO-SX": {
                 "name": "Sahil",
                 "nativeName": "Saaxil",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9d/Flag_of_Sahil,_Somaliland.svg/revision/latest?cb=20230418220250"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SX.png"
             },
             "SO-SA": {
                 "name": "Sanaag",
                 "nativeName": "Sanaag",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bb/Flag_of_Sanaag.svg/revision/latest?cb=20230418220133"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SA.png"
             },
             "SO-SD": {
                 "name": "Middle Shebelle",
                 "nativeName": "Shabeellaha Dhexe",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Flag_of_Middle_Shabelle.svg/revision/latest?cb=20230419094827"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SD.png"
             },
             "SO-SH": {
                 "name": "Lower Shabelle",
                 "nativeName": "Shabeellaha Hoose",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/5b/Flag_of_Lower_Shabelle.svg/revision/latest?cb=20230419064948"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SH.png"
             },
             "SO-SO": {
                 "name": "Sool",
                 "nativeName": "Sool",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/21/Flag_of_Togdheer.svg/revision/latest?cb=20230418220300"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SO.png"
             },
             "SO-TO": {
                 "name": "Togdheer",
                 "nativeName": "Togdheer",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/21/Flag_of_Togdheer.svg/revision/latest?cb=20230418220300"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-TO.png"
             },
             "SO-WO": {
                 "name": "Woqooyi Galbeed",
                 "nativeName": "Woqooyi Galbeed",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Flag_of_Somaliland.svg/revision/latest?cb=20200812174501"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-WO.png"
             }
         }
     },
@@ -7694,57 +7694,57 @@
             "BB-01": {
                 "name": "Christ Church",
                 "nativeName": "Christ Church",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/79/Christ-church.png/revision/latest?cb=20230805131732"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-01.png"
             },
             "BB-02": {
                 "name": "Saint Andrew",
                 "nativeName": "Saint Andrew",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/ee/Flag_of_Christ_Church,_Barbados.png/revision/latest?cb=20230505120400"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-02.png"
             },
             "BB-03": {
                 "name": "Saint George",
                 "nativeName": "Saint George",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/32/Saint_Andrew.png/revision/latest?cb=20230805131956"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-03.png"
             },
             "BB-04": {
                 "name": "Saint James",
                 "nativeName": "Saint James",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f7/St._george.png/revision/latest?cb=20230805132132"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-04.png"
             },
             "BB-05": {
                 "name": "Saint John",
                 "nativeName": "Saint John",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c3/Saint_John.png/revision/latest/scale-to-width-down/1000?cb=20240127160953"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-05.png"
             },
             "BB-06": {
                 "name": "Saint Joseph",
                 "nativeName": "Saint Joseph",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b4/Saint_Joseph.png/revision/latest/scale-to-width-down/1000?cb=20240127164135"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-06.png"
             },
             "BB-07": {
                 "name": "Saint Lucy",
                 "nativeName": "Saint Lucy",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6f/Saint_Lucy.png/revision/latest?cb=20240127164747"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-07.png"
             },
             "BB-08": {
                 "name": "Saint Michael",
                 "nativeName": "Saint Michael",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a1/Saint_Michael.png/revision/latest/scale-to-width-down/1000?cb=20240127165045"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-08.png"
             },
             "BB-09": {
                 "name": "Saint Peter",
                 "nativeName": "Saint Peter",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/17/Saint_Peter.png/revision/latest/scale-to-width-down/1000?cb=20240127165436"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-09.png"
             },
             "BB-10": {
                 "name": "Saint Philip",
                 "nativeName": "Saint Philip",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/db/Saint_Philip.png/revision/latest/scale-to-width-down/1000?cb=20240127170558"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-10.png"
             },
             "BB-11": {
                 "name": "Saint Thomas",
                 "nativeName": "Saint Thomas",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f2/Saint_Thomas.png/revision/latest/scale-to-width-down/1000?cb=20240127170618"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BB/BB-11.png"
             }
         },
         "nativeName": "Barbados"
@@ -8019,22 +8019,22 @@
             "BN-BE": {
                 "name": "Belait District",
                 "nativeName": "Belait",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a5/Flag_of_Belait.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BN/BN-BE.png"
             },
             "BN-BM": {
                 "name": "Brunei-Muara District",
                 "nativeName": "Brunei-Muara",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c4/Flag_of_Brunei_and_Muara.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BN/BN-BM.png"
             },
             "BN-TE": {
                 "name": "Temburong District",
                 "nativeName": "Temburong",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/c4/Flag_of_Brunei_and_Muara.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BN/BN-TE.png"
             },
             "BN-TU": {
                 "name": "Tutong District",
                 "nativeName": "Tutong",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/0e/Flag_of_Tutong.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/BN/BN-TU.png"
             }
         }
     },
@@ -8846,72 +8846,72 @@
             "JM-01": {
                 "name": "Kingston",
                 "nativeName": "Kingston",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/99/Flag_of_Kingston_Parish.png/revision/latest?cb=20230516011030"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-01.png"
             },
             "JM-02": {
                 "name": "Saint Andrew",
                 "nativeName": "Saint Andrew",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/81/Saint_Andrew_Parish,_Jamaica.jpeg/revision/latest?cb=20230516014126"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-02.png"
             },
             "JM-03": {
                 "name": "Saint Thomas",
                 "nativeName": "Saint Thomas",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/56/Flag_of_Saint_Thomas_Parish,_Jamaica.jpeg/revision/latest?cb=20230516015041"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-03.png"
             },
             "JM-04": {
                 "name": "Portland",
                 "nativeName": "Portland",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6a/Flag_of_Portland_Parish.jpeg/revision/latest?cb=20230516012045"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-04.png"
             },
             "JM-05": {
                 "name": "Saint Mary",
                 "nativeName": "Saint Mary",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/a8/Flag_of_Saint_Mary_Parish,_Jamaica.png/revision/latest?cb=20230516010117"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-05.png"
             },
             "JM-06": {
                 "name": "Saint Ann",
                 "nativeName": "Saint Ann",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/89/Flag_of_Saint_Ann_Parish.png/revision/latest?cb=20230422025415"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-06.png"
             },
             "JM-07": {
                 "name": "Trelawny",
                 "nativeName": "Trelawny",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/95/Flag_of_Trelawny_Parish.png/revision/latest?cb=20230516120258"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-07.png"
             },
             "JM-08": {
                 "name": "Saint James",
                 "nativeName": "Saint James",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/ff/Flag_of_Saint_James_Parish,_Jamaica.png/revision/latest?cb=20230422021342"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-08.png"
             },
             "JM-09": {
                 "name": "Hanover",
                 "nativeName": "Hanover",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b7/Proposed_flag_of_Hanover_Parish.png/revision/latest?cb=20230411001746"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-09.png"
             },
             "JM-10": {
                 "name": "Westmoreland",
                 "nativeName": "Westmoreland",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/de/Flag_of_Westmoreland_Parish.png/revision/latest?cb=20230422024137"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-10.png"
             },
             "JM-11": {
                 "name": "Saint Elizabeth",
                 "nativeName": "Saint Elizabeth",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2b/Flag_of_Saint_Elizabeth_Parish.png/revision/latest?cb=20230412002449"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-11.png"
             },
             "JM-12": {
                 "name": "Manchester",
                 "nativeName": "Manchester",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3a/Flag_of_Manchester_Parish.png/revision/latest?cb=20230422024732"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-12.png"
             },
             "JM-13": {
                 "name": "Clarendon",
                 "nativeName": "Clarendon",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Flag_of_Clarendon_Parish,_Jamaica.png/revision/latest?cb=20230417124811"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-13.png"
             },
             "JM-14": {
                 "name": "Saint Catherine",
                 "nativeName": "Saint Catherine",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/40/Flag_of_Saint_Catherine_Parish.png/revision/latest?cb=20230516002708"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/JM/JM-14.png"
             }
         },
         "nativeName": "Jamaica"
@@ -9120,7 +9120,7 @@
             "KZ-10": {
                 "name": "Abay Region",
                 "nativeName": "Абай облысы",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3e/Flag_of_Abai_Region.svg"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/KZ/KZ-10.svg"
             },
             "KZ-11": {
                 "name": "Akmola Region",
@@ -9225,92 +9225,92 @@
             "LA-AT": {
                 "name": "Attapeu",
                 "nativeName": "ອັດຕະປື",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f6/Flag_for_Attapeu.png/revision/latest?cb=20240130052942"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-AT.png"
             },
             "LA-BK": {
                 "name": "Bokeo Province",
                 "nativeName": "ບໍ່ແກ້ວ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/68/Bokeo_2.png/revision/latest?cb=20240130121053"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-BK.png"
             },
             "LA-BL": {
                 "name": "Bolikhamsai",
                 "nativeName": "ບໍລິຄຳໄຊ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d0/Bolikhamsai.png/revision/latest?cb=20240130055248"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-BL.png"
             },
             "LA-CH": {
                 "name": "Champasak Province",
                 "nativeName": "ຈຳປາສັກ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/a/ab/Flag_for_Champasak.png/revision/latest?cb=20240130060019"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-CH.png"
             },
             "LA-HO": {
                 "name": "Houaphanh",
                 "nativeName": "ຫົວພັນ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/42/Flag_for_Houaphanh.png/revision/latest?cb=20240130064936"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-HO.png"
             },
             "LA-KH": {
                 "name": "Khammouane",
                 "nativeName": "ຄໍາມ່ວນ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4a/Khammouane.png/revision/latest?cb=20240130070503"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-KH.png"
             },
             "LA-LM": {
                 "name": "Luang Namtha",
                 "nativeName": "ຫລວງນໍ້າທາ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b8/Luang_Namtha.png/revision/latest?cb=20240130070522"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-LM.png"
             },
             "LA-LP": {
                 "name": "Luang Prabang",
                 "nativeName": "ຫລວງພະບາງ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/eb/Luang_Prabang.png/revision/latest?cb=20240130070538"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-LP.png"
             },
             "LA-OU": {
                 "name": "Oudomxay",
                 "nativeName": "ອຸດົມໄຊ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/17/Oudomxay.png/revision/latest?cb=20240130065634"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-OU.png"
             },
             "LA-PH": {
                 "name": "Phongsaly",
                 "nativeName": "ຜົ້ງສາລີ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/94/Phongsaly.png/revision/latest?cb=20240130065802"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-PH.png"
             },
             "LA-SL": {
                 "name": "Salavan Province",
                 "nativeName": "ສາລະວັນ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/1c/Salavan.png/revision/latest?cb=20240130062959"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-SL.png"
             },
             "LA-SV": {
                 "name": "Savannakhet Province",
                 "nativeName": "ສະຫວັນນະເຂດ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/ed/Savannakhet.png/revision/latest?cb=20240130062029"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-SV.png"
             },
             "LA-VI": {
                 "name": "Vientiane Province",
                 "nativeName": "ວຽງຈັນ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3b/Vientiane_Province.png/revision/latest?cb=20240130030418"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-VI.png"
             },
             "LA-VT": {
                 "name": "Vientiane Prefecture",
                 "nativeName": "ນະຄອນຫຼວງວຽງຈັນ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/8f/Flag_of_Vientiane.svg/revision/latest?cb=20220618094440"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-VT.png"
             },
             "LA-XA": {
                 "name": "Sainyabuli Province",
                 "nativeName": "ໄຊຍະບູລີ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/26/Sainyabuli.png/revision/latest?cb=20240130062134"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-XA.png"
             },
             "LA-XE": {
                 "name": "Sekong Province",
                 "nativeName": "ເຊກອງ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4d/Sekong.png/revision/latest?cb=20240130063023"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-XE.png"
             },
             "LA-XI": {
                 "name": "Xiangkhouang Province",
                 "nativeName": "ຊຽງຂວາງ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/37/Xiangkhouang.png/revision/latest?cb=20240130060755"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-XI.png"
             },
             "LA-XS": {
                 "name": "Xaisomboun Province",
                 "nativeName": "ໄຊສົມບູນ",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f6/Xaisomboun.png/revision/latest?cb=20240130055610"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-XS.png"
             }
         },
         "nativeName": "ປະເທດລາວ"
@@ -9591,57 +9591,57 @@
             "OM-DA": {
                 "name": "Ad Dakhiliyah Governorate",
                 "nativeName": "محافظة الداخلية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/16/Flag_of_Ad_Dakhiliyah_Governorate.svg/revision/latest?cb=20230416121055"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-DA.png"
             },
             "OM-ZA": {
                 "name": "Ad Dhahirah Governorate",
                 "nativeName": "محافظة الظاهرة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/51/Flag_of_Ad_Dhahirah_Governorate.svg/revision/latest?cb=20230416121120"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-ZA.png"
             },
             "OM-BS": {
                 "name": "Al Batinah North Governorate",
                 "nativeName": "محافظة شمال الباطنة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/d3/Flag_of_Al_Batinah_North_Governorate.svg/revision/latest?cb=20230416121211"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BS.png"
             },
             "OM-BJ": {
                 "name": "Al Batinah South Governorate",
                 "nativeName": "محافظة جنوب الباطنة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/63/Flag_of_Al_Batinah_South_Governorate.svg/revision/latest?cb=20230416121238"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BJ.png"
             },
             "OM-BU": {
                 "name": "Al Buraymi Governorate",
                 "nativeName": "محافظة البريمي",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/66/Flag_of_Al_Buraimi.png/revision/latest?cb=20230416122508"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BU.png"
             },
             "OM-WU": {
                 "name": "Al Wusta Governorate",
                 "nativeName": "محافظة الوسطى",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/e/ed/Flag_of_Al_Wusta.jpg/revision/latest?cb=20230416122639"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-WU.png"
             },
             "OM-SS": {
                 "name": "Ash Sharqiyah North Governorate",
                 "nativeName": "شمال الشرقية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/81/Flag_of_Ash_Sharqiyah_North_Governorate.png/revision/latest?cb=20230416122839"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-SS.png"
             },
             "OM-SJ": {
                 "name": "Ash Sharqiyah South Governorate",
                 "nativeName": "جنوب الشرقية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/57/Flag_of_Ash_Sharqiyah_South_Governorate.gif/revision/latest?cb=20230416122827"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-SJ.png"
             },
             "OM-ZU": {
                 "name": "Dhofar Governorate",
                 "nativeName": "محافظة ظفار",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bd/Flag_of_Dhofar.gif/revision/latest?cb=20230416122029"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-ZU.png"
             },
             "OM-MA": {
                 "name": "Muscat Governorate",
                 "nativeName": "مسقط",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/df/Flag_of_Musandam.jpg/revision/latest?cb=20230416121943"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-MA.png"
             },
             "OM-MU": {
                 "name": "Musandam Governorate",
                 "nativeName": "محافظة مسندم",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/60/Flag_of_Muscat_Governorate.webp/revision/latest?cb=20230416122255"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-MU.png"
             }
         },
         "nativeName": "عمان"
@@ -9828,52 +9828,52 @@
             "SA-14": {
                 "name": "'Asir Province",
                 "nativeName": "منطقة عسير",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/28/Flag_of_'Asir_Province.svg/revision/latest?cb=20230124231733"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-14.png"
             },
             "SA-11": {
                 "name": "Al-Bahah Province",
                 "nativeName": "منطقة الباحة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9a/Flag_of_Al-Bahah_Province.svg/revision/latest?cb=20230124231600"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-11.png"
             },
             "SA-08": {
                 "name": "Northern Borders Province",
                 "nativeName": "منطقة الحدود الشمالية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/0c/Flag_of_Northern_Borders_Province.svg/revision/latest?cb=20230124231550"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-08.png"
             },
             "SA-12": {
                 "name": "Al Jawf Region",
                 "nativeName": "منطقة الجوف",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/42/Flag_of_Al-Jawf_Province.svg/revision/latest?cb=20230124231515"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-12.png"
             },
             "SA-03": {
                 "name": "Medina Province",
                 "nativeName": "منطقة المدينة المنورة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/1/17/Flag_of_Medina_Province_(Saudi_Arabia).svg/revision/latest?cb=20230124231615"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-03.png"
             },
             "SA-05": {
                 "name": "Al-Qassim Province",
                 "nativeName": "منطقة القصيم",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bd/Flag_of_Al-Qassim_Province.svg/revision/latest?cb=20230124231651"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-05.png"
             },
             "SA-01": {
                 "name": "Riyadh Region",
                 "nativeName": "منطقة الرياض",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/96/Flag_of_Riyadh_Province.svg/revision/latest?cb=20230124231742"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-01.png"
             },
             "SA-04": {
                 "name": "Eastern Province",
                 "nativeName": "المنطقة الشرقية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/c/cc/Flag_of_Eastern_Province,_Saudi_Arabia.svg/revision/latest?cb=20230124231526"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-04.png"
             },
             "SA-06": {
                 "name": "Ḥa'il Province",
                 "nativeName": "منطقة حائل",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/bb/Flag_of_Ḥa'il_Province.svg/revision/latest?cb=20230124231638"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-06.png"
             },
             "SA-09": {
                 "name": "Jazan Province",
                 "nativeName": "منطقة جازان",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f4/Flag_of_Jazan_Province.svg/revision/latest?cb=20230124231539"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-09.png"
             },
             "SA-02": {
                 "name": "Makkah Region",
@@ -9883,12 +9883,12 @@
             "SA-10": {
                 "name": "Najran Region",
                 "nativeName": "منطقة نجران",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/3/3a/Flag_of_Najran_Province.svg/revision/latest?cb=20230124231703"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-10.png"
             },
             "SA-07": {
                 "name": "Tabuk Province",
                 "nativeName": "منطقة تبوك",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/90/Flag_of_Tabuk_Province.svg/revision/latest?cb=20230124231626"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-07.png"
             }
         },
         "nativeName": "السعودية"
@@ -9995,57 +9995,57 @@
             "TN-31": {
                 "name": "Béja",
                 "nativeName": "ولاية باجة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/b/b3/Béja.png/revision/latest?cb=20240131051820"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-31.png"
             },
             "TN-13": {
                 "name": "Ben Arous",
                 "nativeName": "ولاية بن عروس",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/64/Ben_Arous.png/revision/latest?cb=20240131051851"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-13.png"
             },
             "TN-23": {
                 "name": "Bizerte",
                 "nativeName": "ولاية بنزرت",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Bizerte.png/revision/latest?cb=20240131052025"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-23.png"
             },
             "TN-81": {
                 "name": "Gabès",
                 "nativeName": "ولاية قابس",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/7/78/Gabès.png/revision/latest?cb=20240131052117"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-81.png"
             },
             "TN-71": {
                 "name": "Gafsa",
                 "nativeName": "ولاية قفصة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/8e/Gafsa_Flag.png/revision/latest?cb=20240131052310"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-71.png"
             },
             "TN-32": {
                 "name": "Jendouba",
                 "nativeName": "ولاية جندوبة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/4f/Jendouba_Flag.png/revision/latest?cb=20240131052340"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-32.png"
             },
             "TN-41": {
                 "name": "Kairouan",
                 "nativeName": "ولاية القيروان",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9d/Kairouan_Flag.png/revision/latest?cb=20240131050358"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-41.png"
             },
             "TN-42": {
                 "name": "Kasserine",
                 "nativeName": "ولاية القصرين",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/4/41/Kasserine.png/revision/latest?cb=20240131050240"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-42.png"
             },
             "TN-73": {
                 "name": "Kébili",
                 "nativeName": "ولاية قبلي",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/98/Kebili.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-73.png"
             },
             "TN-12": {
                 "name": "Ariana",
                 "nativeName": "ولاية أريانة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/83/Ariana.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-12.png"
             },
             "TN-14": {
                 "name": "Manouba",
                 "nativeName": "ولاية منوبة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/08/Manouba.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-14.png"
             },
             "TN-33": {
                 "name": "Al Kaf",
@@ -10055,62 +10055,62 @@
             "TN-53": {
                 "name": "Mahdia",
                 "nativeName": "ولاية المهدية",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/29/Mahdia.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-53.png"
             },
             "TN-82": {
                 "name": "Médenine",
                 "nativeName": "ولاية مدنين",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/f3/Medenine.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-82.png"
             },
             "TN-52": {
                 "name": "Monastir",
                 "nativeName": "ولاية المنستير",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/2e/Monastir.png/revision/latest"
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Armoiries_Monastir.svg"
             },
             "TN-21": {
                 "name": "Nabeul",
                 "nativeName": "ولاية نابل",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/d/de/Nabeul.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-21.png"
             },
             "TN-61": {
                 "name": "Sfax",
                 "nativeName": "ولاية صفاقس",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/07/Sfax.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-61.png"
             },
             "TN-43": {
                 "name": "Sidi Bouzid",
                 "nativeName": "ولاية سيدي بوزيد",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/9/9b/Sidi_Bouzid.png/revision/latest?cb=20240131053355"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-43.png"
             },
             "TN-34": {
                 "name": "Siliana",
                 "nativeName": "ولاية سليانة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/8/80/Siliana.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-34.png"
             },
             "TN-51": {
                 "name": "Sousse",
                 "nativeName": "ولاية سوسة",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/0/0b/Flag_for_Sousse.png/revision/latest?cb=20240131052540"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-51.png"
             },
             "TN-83": {
                 "name": "Tataouine",
                 "nativeName": "ولاية تطاوين",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/2/23/Tataouine.png/revision/latest?cb=20240131053603"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-83.png"
             },
             "TN-72": {
                 "name": "Tozeur",
                 "nativeName": "ولاية توزر",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/6/6b/Tozeur.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-72.png"
             },
             "TN-11": {
                 "name": "Tunis",
                 "nativeName": "ولاية تونس",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/f/fd/Flag_for_Tunis.png/revision/latest?cb=20240131052600"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-11.png"
             },
             "TN-22": {
                 "name": "Zaghouan Governorate",
                 "nativeName": "ولاية زغوان",
-                "flag": "https://static.wikia.nocookie.net/vexillology/images/5/57/Zaghouan.png/revision/latest"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/TN/TN-22.png"
             }
         },
         "nativeName": "ولاية منوبة"

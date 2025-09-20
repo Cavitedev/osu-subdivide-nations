@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.9.3
+
+- Use Github rather than vexiollogy links for flags
+- Use the latest translations submitted long time ago
+
 ## Version 3.9.2
 
 - Maintenance broken flag links
