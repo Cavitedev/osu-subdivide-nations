@@ -1,4 +1,7 @@
 {
+    "appDesc": {
+        "message": "Ajoute des drapeaux régionaux au site d'osu!.\nAffiche également le classement global de score classé sur les profils."
+    },
     "created_by": {
         "message": "créé par {{developer}}"
     },
@@ -20,11 +23,50 @@
     "score_ranking": {
         "message": "Classement"
     },
+    "region_ranking": {
+        "message": "Classement Régional"
+    },
     "highest_rank_profile": {
         "message": "Rang le plus haut : {{rankHighest.rank}} le {{formattedDate}}"
     },
+    "kudosu_ranking": {
+        "message": "Classement de Kudosu"
+    },
+    "last_rank_update": {
+        "message": "Dernière mise à jour le {{formattedDate}}"
+    },
+    "settings": {
+        "message": "Options"
+    },
+    "website_settings": {
+        "message": "Options de {{Website}}"
+    },
+    "about": {
+        "message": "À Propos"
+    },
+    "open_sidebar": {
+        "message": "Ouvrir la barre latérale"
+    },
+    "region_ranking_desc": {
+        "message": "Affiche le classement régional d'{{osu_world}} sur les profils osu!."
+    },
+    "score_ranking_desc": {
+        "message": "Affiche le classement de score fourni par {{respektive_api}} sur les profils osu!."
+    },
+    "respektive_api": {
+        "message": "l'API de Respektive"
+    },
+    "kudosu_ranking_desc": {
+        "message": "Affiche le classement de Kudosu fourni pas {{hiviexd_api}} sur les profils osu!."
+    },
+    "hiviexd_api": {
+        "message": "l'API de Hiviexd"
+    },
     "region": {
         "message": "Région"
+    },
+    "region_ru": {
+        "message": "République / Oblast"
     },
     "region_ar": {
         "message": "Province"
@@ -35,11 +77,17 @@
     "region_au": {
         "message": "État"
     },
+    "region_be": {
+        "message": "Province"
+    },
     "region_br": {
         "message": "État"
     },
     "region_by": {
         "message": "Région"
+    },
+    "region_ca": {
+        "message": "Province"
     },
     "region_cl": {
         "message": "Région"
@@ -56,14 +104,29 @@
     "region_de": {
         "message": "État"
     },
+    "region_es": {
+        "message": "Communauté Autonome"
+    },
     "region_fi": {
         "message": "Région"
     },
     "region_fr": {
         "message": "Région"
     },
+    "region_hu": {
+        "message": "Comté"
+    },
+    "region_id": {
+        "message": "Province"
+    },
     "region_it": {
         "message": "Région"
+    },
+    "region_jp": {
+        "message": "Préfecture"
+    },
+    "region_kr": {
+        "message": "Province"
     },
     "region_kz": {
         "message": "Région"
@@ -77,17 +140,41 @@
     "region_my": {
         "message": "État"
     },
+    "region_nl": {
+        "message": "Province"
+    },
+    "region_no": {
+        "message": "Comté"
+    },
     "region_pe": {
         "message": "Région"
     },
     "region_ph": {
         "message": "Région"
     },
+    "region_pl": {
+        "message": "Voïvodie"
+    },
     "region_pt": {
         "message": "Région"
     },
+    "region_ro": {
+        "message": "Comté"
+    },
+    "region_se": {
+        "message": "Comté"
+    },
+    "region_sg": {
+        "message": "District"
+    },
+    "region_th": {
+        "message": "Province"
+    },
     "region_tr": {
         "message": "Région"
+    },
+    "region_tw": {
+        "message": "Province"
     },
     "region_ua": {
         "message": "Région"
@@ -95,37 +182,205 @@
     "region_us": {
         "message": "État"
     },
+    "region_vn": {
+        "message": "Province"
+    },
     "region_dk": {
         "message": "Région"
+    },
+    "region_il": {
+        "message": "District"
     },
     "region_nz": {
         "message": "Région"
     },
+    "region_lt": {
+        "message": "Comté"
+    },
+    "region_ch": {
+        "message": "Canton"
+    },
     "region_gr": {
         "message": "Région"
+    },
+    "region_ee": {
+        "message": "Comté"
+    },
+    "region_bg": {
+        "message": "Province"
     },
     "region_sk": {
         "message": "Région"
     },
+    "region_gb": {
+        "message": "Comté"
+    },
+    "region_ie": {
+        "message": "Province"
+    },
     "region_ve": {
         "message": "État"
+    },
+    "region_rs": {
+        "message": "District administratif"
+    },
+    "region_za": {
+        "message": "Province"
     },
     "region_jm": {
         "message": "Région"
     },
+    "region_sa": {
+        "message": "Province"
+    },
+    "region_af": {
+        "message": "Province"
+    },
+    "region_al": {
+        "message": "Comté"
+    },
+    "region_dz": {
+        "message": "Province"
+    },
+    "region_ad": {
+        "message": "Paroisse"
+    },
+    "region_ao": {
+        "message": "Province"
+    },
+    "region_am": {
+        "message": "Marz"
+    },
+    "region_bh": {
+        "message": "Gouvernorat"
+    },
+    "region_bd": {
+        "message": "Division"
+    },
+    "region_bb": {
+        "message": "Paroisse"
+    },
     "region_bo": {
+        "message": "Département"
+    },
+    "region_ba": {
+        "message": "Entité / District"
+    },
+    "region_bn": {
+        "message": "District"
+    },
+    "region_bf": {
+        "message": "Région"
+    },
+    "region_cv": {
+        "message": "île"
+    },
+    "region_kh": {
+        "message": "Province"
+    },
+    "region_cr": {
+        "message": "Province"
+    },
+    "region_hr": {
+        "message": "Comté"
+    },
+    "region_do": {
+        "message": "Province"
+    },
+    "region_eg": {
+        "message": "Gouvernorat"
+    },
+    "region_sv": {
         "message": "Département"
     },
     "region_ge": {
         "message": "Région"
     },
+    "region_gt": {
+        "message": "Département"
+    },
+    "region_hn": {
+        "message": "Département"
+    },
     "region_is": {
         "message": "Région"
+    },
+    "region_iq": {
+        "message": "Gouvernorat"
+    },
+    "region_jo": {
+        "message": "Gouvernorat"
+    },
+    "region_kw": {
+        "message": "Gouvernorat"
+    },
+    "region_kg": {
+        "message": "Région"
+    },
+    "region_la": {
+        "message": "Province"
+    },
+    "region_lb": {
+        "message": "Gouvernorat"
+    },
+    "region_lu": {
+        "message": "Canton"
+    },
+    "region_mn": {
+        "message": "Province"
+    },
+    "region_ma": {
+        "message": "Région"
+    },
+    "region_mm": {
+        "message": "Région / État"
+    },
+    "region_np": {
+        "message": "Province"
+    },
+    "region_ni": {
+        "message": "Département"
+    },
+    "region_mk": {
+        "message": "Région Statistique"
+    },
+    "region_om": {
+        "message": "Gouvernorat"
+    },
+    "region_pk": {
+        "message": "Province"
+    },
+    "region_py": {
+        "message": "Département"
+    },
+    "region_qa": {
+        "message": "Municipalité"
+    },
+    "region_si": {
+        "message": "Région Statistique"
     },
     "region_so": {
         "message": "Région"
     },
+    "region_lk": {
+        "message": "Province"
+    },
+    "region_tt": {
+        "message": "Région / Municipalité"
+    },
+    "region_tn": {
+        "message": "Gouvernorat"
+    },
+    "region_ae": {
+        "message": "Émirat"
+    },
+    "region_uy": {
+        "message": "Département"
+    },
     "region_uz": {
         "message": "Région"
+    },
+    "region_in": {
+        "message": "État"
     }
 }
