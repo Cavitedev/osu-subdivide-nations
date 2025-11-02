@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.4
+
+- Update broken flags links for Vietnam subdivisions 
+
 ## Version 3.9.3
 
 - Use Github rather than vexiollogy links for flags
