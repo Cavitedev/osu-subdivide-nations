@@ -6,6 +6,10 @@
     .cavitedev-topic-flag {
         margin-left: 4px !important;
     }
+    .profile-detail__values:nth-child(2) {
+        display: grid;
+        gap: 10px !important;
+    }
 }
 
 @media (max-width: 899px) {
