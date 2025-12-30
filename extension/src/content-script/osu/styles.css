@@ -6,6 +6,13 @@
     .cavitedev-topic-flag {
         margin-left: 4px !important;
     }
+    .profile-detail__chart-numbers--top {
+        flex-wrap: wrap;
+    }
+    .profile-detail__values:nth-child(2) {
+        flex-direction: column;
+        gap: 10px !important;
+    }
 }
 
 @media (max-width: 899px) {
