@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.5
+
+- Fix some broken flags due to wikimedia changes. Thanks @ChlodAlejandro
+
 ## Version 3.9.4
 
 - Update broken flags links for Vietnam subdivisions 
