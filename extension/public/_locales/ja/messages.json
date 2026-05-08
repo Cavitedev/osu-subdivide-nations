@@ -1,9 +1,24 @@
 {
+    "appDesc": {
+        "message": "osu! ウェブサイトに地域フラグを追加します。\n また、プロフィールのosu! グローバルスコアも更新します。"
+    },
     "created_by": {
-        "message": "{{developer}}によって作成された"
+        "message": "{{developer}} により作成"
+    },
+    "system_default": {
+        "message": "システムデフォルト"
+    },
+    "native_language": {
+        "message": "母国語"
     },
     "clean_cache": {
-        "message": "キャッシュクリア"
+        "message": "キャッシュをクリア"
+    },
+    "cache_cleaned": {
+        "message": "キャッシュがクリアされました"
+    },
+    "region_language": {
+        "message": "地域の言語："
     },
     "score_ranking": {
         "message": "スコアランキング"
@@ -12,132 +27,360 @@
         "message": "地域ランキング"
     },
     "highest_rank_profile": {
-        "message": "最高ランク: #{{rankHighest.rank}} ({{formattedDate}}に取得)"
+        "message": "最高ランク: {{rankHighest.rank}}位 （{{formattedDate}}）"
     },
     "kudosu_ranking": {
         "message": "Kudosuランキング"
     },
+    "last_rank_update": {
+        "message": "最終ランク更新日: {{formattedDate}}"
+    },
+    "settings": {
+        "message": "設定"
+    },
+    "website_settings": {
+        "message": "{{Website}} の設定"
+    },
+    "about": {
+        "message": "概要"
+    },
+    "open_sidebar": {
+        "message": "サイドバーを開く"
+    },
     "region_ranking_desc": {
-        "message": "osu!プロフィールに {{osu_world}} の地域ランキングを表示"
+        "message": "osu! プロフィールに{{osu_world}}からの地域ランキングを表示します。"
     },
     "score_ranking_desc": {
-        "message": "osu!プロフィールに {{respektive_api}} の地域ランキングを表示"
+        "message": "osu! プロフィールに{{respektive_api}}からのスコアランキングを表示します。"
+    },
+    "respektive_api": {
+        "message": "RespektiveのAPI"
     },
     "kudosu_ranking_desc": {
-        "message": "osu!プロフィールに {{hiviexd_api}} の地域ランキングを表示"
+        "message": "osu! プロフィールに{{hiviexd_api}}からのKudosuランキングを表示します。"
+    },
+    "hiviexd_api": {
+        "message": "HiviexdのAPI"
+    },
+    "region": {
+        "message": "地域"
+    },
+    "region_ru": {
+        "message": "共和国 / 州"
     },
     "region_ar": {
-        "message": "国"
+        "message": "州"
     },
     "region_at": {
-        "message": "国"
+        "message": "州"
     },
     "region_au": {
-        "message": "国"
+        "message": "州"
     },
     "region_be": {
-        "message": "国"
+        "message": "州"
     },
     "region_br": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_by": {
+        "message": "州"
     },
     "region_ca": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_cl": {
+        "message": "地域"
+    },
+    "region_cn": {
+        "message": "行政区"
+    },
+    "region_co": {
+        "message": "県"
+    },
+    "region_cz": {
+        "message": "地域"
     },
     "region_de": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_es": {
+        "message": "自治州"
+    },
+    "region_fi": {
+        "message": "地域"
+    },
+    "region_fr": {
+        "message": "地域"
     },
     "region_hu": {
-        "message": "州"
+        "message": "県"
     },
     "region_id": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_it": {
+        "message": "州"
     },
     "region_jp": {
-        "message": "県内"
+        "message": "県"
     },
     "region_kr": {
-        "message": "国"
+        "message": "道"
+    },
+    "region_kz": {
+        "message": "地域"
+    },
+    "region_lv": {
+        "message": "地域"
     },
     "region_mx": {
-        "message": "国"
+        "message": "州"
     },
     "region_my": {
-        "message": "国"
+        "message": "州"
     },
     "region_nl": {
-        "message": "国"
+        "message": "州"
     },
     "region_no": {
-        "message": "州"
+        "message": "県"
+    },
+    "region_pe": {
+        "message": "地域"
+    },
+    "region_ph": {
+        "message": "地域"
+    },
+    "region_pl": {
+        "message": "県"
+    },
+    "region_pt": {
+        "message": "地域"
     },
     "region_ro": {
-        "message": "州"
+        "message": "県"
     },
     "region_se": {
-        "message": "州"
+        "message": "県"
+    },
+    "region_sg": {
+        "message": "地区"
     },
     "region_th": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_tr": {
+        "message": "地域"
     },
     "region_tw": {
-        "message": "国"
+        "message": "省"
+    },
+    "region_ua": {
+        "message": "州"
     },
     "region_us": {
-        "message": "国"
+        "message": "州"
     },
     "region_vn": {
-        "message": "国"
+        "message": "省"
+    },
+    "region_dk": {
+        "message": "地域"
+    },
+    "region_il": {
+        "message": "地区"
+    },
+    "region_nz": {
+        "message": "地域"
     },
     "region_lt": {
+        "message": "県"
+    },
+    "region_ch": {
         "message": "州"
+    },
+    "region_gr": {
+        "message": "地域"
     },
     "region_ee": {
-        "message": "州"
+        "message": "県"
     },
     "region_bg": {
-        "message": "国"
-    },
-    "region_gb": {
         "message": "州"
     },
+    "region_sk": {
+        "message": "地域"
+    },
+    "region_gb": {
+        "message": "県"
+    },
     "region_ie": {
-        "message": "国"
+        "message": "州"
     },
     "region_ve": {
         "message": "州"
     },
+    "region_rs": {
+        "message": "行政区"
+    },
     "region_za": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_jm": {
+        "message": "地域"
     },
     "region_sa": {
-        "message": "国"
+        "message": "州"
     },
     "region_af": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_al": {
+        "message": "県"
     },
     "region_dz": {
-        "message": "国"
+        "message": "県"
+    },
+    "region_ad": {
+        "message": "教区"
     },
     "region_ao": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_am": {
+        "message": "マルズ"
+    },
+    "region_bh": {
+        "message": "県"
+    },
+    "region_bd": {
+        "message": "管区"
+    },
+    "region_bb": {
+        "message": "教区"
+    },
+    "region_bo": {
+        "message": "県"
+    },
+    "region_ba": {
+        "message": "主体 / 地区"
+    },
+    "region_bn": {
+        "message": "地区"
+    },
+    "region_bf": {
+        "message": "地域"
+    },
+    "region_cv": {
+        "message": "島"
+    },
+    "region_kh": {
+        "message": "州"
     },
     "region_cr": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_hr": {
+        "message": "県"
     },
     "region_do": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_eg": {
+        "message": "県"
+    },
+    "region_sv": {
+        "message": "県"
+    },
+    "region_ge": {
+        "message": "地域"
+    },
+    "region_gt": {
+        "message": "県"
+    },
+    "region_hn": {
+        "message": "県"
+    },
+    "region_is": {
+        "message": "地域"
+    },
+    "region_iq": {
+        "message": "県"
+    },
+    "region_jo": {
+        "message": "県"
+    },
+    "region_kw": {
+        "message": "県"
+    },
+    "region_kg": {
+        "message": "地域"
     },
     "region_la": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_lb": {
+        "message": "県"
+    },
+    "region_lu": {
+        "message": "カントン"
     },
     "region_mn": {
-        "message": "国"
+        "message": "県"
+    },
+    "region_ma": {
+        "message": "地域"
+    },
+    "region_mm": {
+        "message": "地域 / 州"
     },
     "region_np": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_ni": {
+        "message": "県"
+    },
+    "region_mk": {
+        "message": "統計地域"
+    },
+    "region_om": {
+        "message": "県"
+    },
+    "region_pk": {
+        "message": "州"
+    },
+    "region_py": {
+        "message": "県"
+    },
+    "region_qa": {
+        "message": "自治体"
+    },
+    "region_si": {
+        "message": "統計地域"
+    },
+    "region_so": {
+        "message": "地域"
     },
     "region_lk": {
-        "message": "国"
+        "message": "州"
+    },
+    "region_tt": {
+        "message": "地域 / 自治体"
+    },
+    "region_tn": {
+        "message": "県"
+    },
+    "region_ae": {
+        "message": "首長国"
+    },
+    "region_uy": {
+        "message": "県"
+    },
+    "region_uz": {
+        "message": "地域"
+    },
+    "region_in": {
+        "message": "州"
     }
 }
