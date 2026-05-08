@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.9.6
+
+- Update Japanse translations by lkse
+- 
+
 ## Version 3.9.5
 
 - Fix some broken flags due to wikimedia changes. Thanks @ChlodAlejandro
