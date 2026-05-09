@@ -3,7 +3,7 @@
 ## Version 3.9.6
 
 - Update Japanse translations by lkse
-- 
+- Added 4 flags for Uzbekistan subdivisions. Thanks @Shoukko
 
 ## Version 3.9.5
 

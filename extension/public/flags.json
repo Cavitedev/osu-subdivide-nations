@@ -7175,7 +7175,7 @@
             "UZ-JI": {
                 "name": "Jizzakh Region",
                 "nativeName": "Jizzax Viloyati",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Jizzakh_region_logo.svg"
             },
             "UZ-NG": {
                 "name": "Namangan Region",
@@ -7190,12 +7190,12 @@
             "UZ-QA": {
                 "name": "Qashqadaryo Region",
                 "nativeName": "Qashqadaryo Viloyati",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Logo_of_Karshi_City.png"
             },
             "UZ-SA": {
                 "name": "Samarqand Region",
                 "nativeName": "Samarqand Viloyati",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Emblem_of_Samarkand.svg"
             },
             "UZ-SI": {
                 "name": "Sirdaryo Region",
@@ -7210,7 +7210,7 @@
             "UZ-TK": {
                 "name": "Tashkent",
                 "nativeName": "Toshkent",
-                "flag": ""
+                "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Tashkent.svg"
             },
             "UZ-XO": {
                 "name": "Xorazm Region",
