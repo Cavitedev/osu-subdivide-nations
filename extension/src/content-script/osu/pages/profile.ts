@@ -62,7 +62,6 @@ export const enhanceProfile = async (signal?: AbortSignal) => {
 
 const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string, signal?: AbortSignal) => {
     const flagResult = await addFlagUser(flagElement as HTMLElement, playerId, { addMargin: false, signal: signal });
-
     if (!flagResult) return;
     const { countryCode, countryName, regionName } = flagResult;
     if (!countryCode) return;
@@ -103,7 +102,7 @@ const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank, tagRanks.kudosuRan
 async function addRegionalRank(playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.regionalRank;
 
-    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+    const ranksElement = document.querySelector(".profile-detail-stats__values") as HTMLElement;
 
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return true;
@@ -117,14 +116,13 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
 
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return false;
-
     return addRank(ranksElement, rankValue, "region_ranking", tagRank);
 }
 
 async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.scoreRank;
 
-    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+    const ranksElement = document.querySelector(".profile-detail-stats__values") as HTMLElement;
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return true;
 
@@ -144,14 +142,13 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     }
 
     const date = new Date(rankHighest["updated_at"]);
-
     return await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
 }
 
 async function addKudosuRanking(playerId: string, signal?: AbortSignal) {
     const tagRank = tagRanks.kudosuRank;
 
-    const ranksElement = document.querySelector(".profile-detail__values") as HTMLElement;
+    const ranksElement = document.querySelector(".profile-detail-stats__values") as HTMLElement;
     const previousKudosuSet = ranksElement.querySelector("." + tagRank);
     if (previousKudosuSet) return true;
 
