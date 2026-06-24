@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.7
+
+- Fix score ranks
+
 ## Version 3.9.6
 
 - Update Japanse translations by lkse
