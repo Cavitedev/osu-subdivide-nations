@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.9.8
+
+- Fix broken flag links
+- Fix Ranking page not removing 1 column on region ranking
+
 ## Version 3.9.7
 
 - Fix score ranks

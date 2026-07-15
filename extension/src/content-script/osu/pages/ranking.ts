@@ -1,7 +1,11 @@
 import { flagClass, addRegionalFlag, addFlagUsers } from "@src/content-script/osu/flagHtml";
 import { TFlagItems } from "@src/utils/html";
 import { countryRegionsLocalData, getRegionNames } from "@src/utils/flagsJsonUtils";
-import { osuWorldCountryRegionRanking, IosuWorldRegionalPlayerData, buildProfileUrl } from "@src/utils/external/osuWorld";
+import {
+    osuWorldCountryRegionRanking,
+    IosuWorldRegionalPlayerData,
+    buildProfileUrl,
+} from "@src/utils/external/osuWorld";
 import { addOrReplaceQueryParam, removeQueryParam, convertToGroupsOf5 } from "@src/utils/utils";
 import { nextAbortControllerSignal } from "@src/utils/fetchUtils";
 import { getLocMsg, waitLastLanguageIsLoaded } from "@src/utils/languageChrome";
@@ -79,7 +83,12 @@ const regionsInRanking = async (signal: AbortSignal): Promise<boolean> => {
     const subRankingType = location.pathname.split("/")[4];
     const filter = urlParams.get("filter");
 
-    if (rankingType === "global" && (!subRankingType || subRankingType == 'performance') && (!filter || filter === "all") && countryUrlParam) {
+    if (
+        rankingType === "global" &&
+        (!subRankingType || subRankingType == "performance") &&
+        (!filter || filter === "all") &&
+        countryUrlParam
+    ) {
         addRegionsDropdown(countryUrlParam, regionUrlParam);
         if (!regionUrlParam) return false;
         const regionData = (await countryRegionsLocalData)[countryUrlParam]?.["regions"]?.[regionUrlParam];
@@ -250,7 +259,7 @@ const regionalRanking = async (
     }
 };
 
-const removeColsRegionalRanking = [7, 6, 5, 3];
+const removeColsRegionalRanking = [8, 7, 6, 4, 3];
 
 const cleanRankingColumns = (listItems: NodeListOf<Element>) => {
     for (const tr of listItems) {
