@@ -1,6 +1,12 @@
 # Changelog
 
+## Version 3.9.10
+
+- Check other flags
+- Downscale some flags from 250px to 120px
+
 ## Version 3.9.9
+
 - Undo some unnecessary flag changes due to optimizer
 
 ## Version 3.9.8
