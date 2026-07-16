@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3.9.9
+- Undo some unnecessary flag changes due to optimizer
+
 ## Version 3.9.8
 
 - Fix broken flag links
