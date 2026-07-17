@@ -1,5 +1,10 @@
 # Changelog
 
+
+## Version 3.9.11
+
+- Fix Thailand flags
+
 ## Version 3.9.10
 
 - Check other flags
