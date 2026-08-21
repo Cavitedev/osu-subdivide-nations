@@ -3,15 +3,12 @@
 }
 
 @media (min-width: 900px) {
-    .cavitedev-topic-flag {
-        margin-left: 4px !important;
-    }
-    .profile-detail__chart-numbers--top {
+    .profile-detail-stats__chart-numbers--top .profile-detail-stats__values:first-child {
         flex-wrap: wrap;
+        row-gap: 6px;
     }
-    .profile-detail__values:nth-child(2) {
-        flex-direction: column;
-        gap: 10px !important;
+    .profile-detail-stats__chart-numbers--top .profile-detail-stats__values:first-child .value-display__label {
+        white-space: nowrap;
     }
 }
 
