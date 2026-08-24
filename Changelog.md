@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3.9.12
+
+- Improve visuals in profile detail. Thanks @f1Lthz4
 
 ## Version 3.9.11
 
