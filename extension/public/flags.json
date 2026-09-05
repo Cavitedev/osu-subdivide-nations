@@ -5373,12 +5373,12 @@
             "SO-AW": {
                 "name": "Awdal",
                 "nativeName": "Awdal",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-AW.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-AW.svg"
             },
             "SO-BK": {
                 "name": "Bakool",
                 "nativeName": "Bakool",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BK.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BK.svg"
             },
             "SO-BN": {
                 "name": "Banaadir",
@@ -5388,12 +5388,12 @@
             "SO-BR": {
                 "name": "Bari",
                 "nativeName": "Bari",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BR.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BR.svg"
             },
             "SO-BY": {
                 "name": "Bay",
                 "nativeName": "Bay",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BY.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-BY.svg"
             },
             "SO-GA": {
                 "name": "Galgaduud",
@@ -5408,62 +5408,62 @@
             "SO-HI": {
                 "name": "Hiiraan",
                 "nativeName": "Hiiraan",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-HI.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-HI.svg"
             },
             "SO-JD": {
                 "name": "Middle Juba",
                 "nativeName": "Jubbada Dhexe",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-JD.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-JD.svg"
             },
             "SO-JH": {
                 "name": "Lower Juba",
                 "nativeName": "Jubbada Hoose",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-JH.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-JH.svg"
             },
             "SO-MU": {
                 "name": "Mudug",
                 "nativeName": "Mudug",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-MU.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-MU.svg"
             },
             "SO-NU": {
                 "name": "Nugaal",
                 "nativeName": "Nugaal",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-NU.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-NU.svg"
             },
             "SO-SX": {
                 "name": "Sahil",
                 "nativeName": "Saaxil",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SX.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SX.svg"
             },
             "SO-SA": {
                 "name": "Sanaag",
                 "nativeName": "Sanaag",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SA.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SA.svg"
             },
             "SO-SD": {
                 "name": "Middle Shebelle",
                 "nativeName": "Shabeellaha Dhexe",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SD.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SD.svg"
             },
             "SO-SH": {
                 "name": "Lower Shabelle",
                 "nativeName": "Shabeellaha Hoose",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SH.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SH.svg"
             },
             "SO-SO": {
                 "name": "Sool",
                 "nativeName": "Sool",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SO.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-SO.svg"
             },
             "SO-TO": {
                 "name": "Togdheer",
                 "nativeName": "Togdheer",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-TO.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-TO.svg"
             },
             "SO-WO": {
                 "name": "Woqooyi Galbeed",
                 "nativeName": "Woqooyi Galbeed",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-WO.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SO/SO-WO.svg"
             }
         }
     },
@@ -9290,7 +9290,7 @@
             "LA-VT": {
                 "name": "Vientiane Prefecture",
                 "nativeName": "ນະຄອນຫຼວງວຽງຈັນ",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-VT.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/LA/LA-VT.svg"
             },
             "LA-XA": {
                 "name": "Sainyabuli Province",
@@ -9591,22 +9591,22 @@
             "OM-DA": {
                 "name": "Ad Dakhiliyah Governorate",
                 "nativeName": "محافظة الداخلية",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-DA.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-DA.svg"
             },
             "OM-ZA": {
                 "name": "Ad Dhahirah Governorate",
                 "nativeName": "محافظة الظاهرة",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-ZA.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-ZA.svg"
             },
             "OM-BS": {
                 "name": "Al Batinah North Governorate",
                 "nativeName": "محافظة شمال الباطنة",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BS.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BS.svg"
             },
             "OM-BJ": {
                 "name": "Al Batinah South Governorate",
                 "nativeName": "محافظة جنوب الباطنة",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BJ.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/OM/OM-BJ.svg"
             },
             "OM-BU": {
                 "name": "Al Buraymi Governorate",
@@ -9828,52 +9828,52 @@
             "SA-14": {
                 "name": "'Asir Province",
                 "nativeName": "منطقة عسير",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-14.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-14.svg"
             },
             "SA-11": {
                 "name": "Al-Bahah Province",
                 "nativeName": "منطقة الباحة",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-11.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-11.svg"
             },
             "SA-08": {
                 "name": "Northern Borders Province",
                 "nativeName": "منطقة الحدود الشمالية",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-08.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-08.svg"
             },
             "SA-12": {
                 "name": "Al Jawf Region",
                 "nativeName": "منطقة الجوف",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-12.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-12.svg"
             },
             "SA-03": {
                 "name": "Medina Province",
                 "nativeName": "منطقة المدينة المنورة",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-03.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-03.svg"
             },
             "SA-05": {
                 "name": "Al-Qassim Province",
                 "nativeName": "منطقة القصيم",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-05.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-05.svg"
             },
             "SA-01": {
                 "name": "Riyadh Region",
                 "nativeName": "منطقة الرياض",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-01.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-01.svg"
             },
             "SA-04": {
                 "name": "Eastern Province",
                 "nativeName": "المنطقة الشرقية",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-04.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-04.svg"
             },
             "SA-06": {
                 "name": "Ḥa'il Province",
                 "nativeName": "منطقة حائل",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-06.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-06.svg"
             },
             "SA-09": {
                 "name": "Jazan Province",
                 "nativeName": "منطقة جازان",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-09.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-09.svg"
             },
             "SA-02": {
                 "name": "Makkah Region",
@@ -9883,12 +9883,12 @@
             "SA-10": {
                 "name": "Najran Region",
                 "nativeName": "منطقة نجران",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-10.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-10.svg"
             },
             "SA-07": {
                 "name": "Tabuk Province",
                 "nativeName": "منطقة تبوك",
-                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-07.png"
+                "flag": "https://raw.githubusercontent.com/Cavitedev/osn-custom-flag/main/SA/SA-07.svg"
             }
         },
         "nativeName": "السعودية"

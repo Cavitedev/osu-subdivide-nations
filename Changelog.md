@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.9.13
+
+- Fix svg flags being png
+
 ## Version 3.9.12
 
 - Improve visuals in profile detail. Thanks @f1Lthz4
