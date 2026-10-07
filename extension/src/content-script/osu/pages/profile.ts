@@ -15,7 +15,6 @@ import osuNameToCode from "../osuNameToCode";
 import { getCountryName } from "@src/utils/flagsJsonUtils";
 import { TosuWorldIdSuccess, osuWorldUser } from "@src/utils/external/osuWorld";
 import { preferences, waitPreferencesToLoad } from "@src/utils/preferences";
-import { osuKudosuRanking } from "@src/utils/external/kudosuRanking";
 
 // Executed when opening a tab or going back and forth so this runs too early
 export const profileMutationObserverInit = new MutationObserver((_) => {
@@ -49,7 +48,6 @@ export const enhanceProfile = async (signal?: AbortSignal) => {
     if (currentMod) {
         rankingsPromise.push(addRegionalRank(playerId, currentMod, signal));
         rankingsPromise.push(addScoreRank(playerId, currentMod, signal));
-        rankingsPromise.push(addKudosuRanking(playerId, signal));
     }
     addRegionalFlagProfile(flagElement as HTMLElement, playerId);
 
@@ -90,10 +88,9 @@ const addRegionalFlagProfile = async (flagElement: HTMLElement, playerId: string
 const tagRanks = {
     scoreRank: "respektiveScore",
     regionalRank: "cavitedevRegionalRank",
-    kudosuRank: "hiviexdKudosuRank",
 };
 
-const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank, tagRanks.kudosuRank];
+const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
 
 /**
  * 
@@ -143,29 +140,6 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
 
     const date = new Date(rankHighest["updated_at"]);
     return await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
-}
-
-async function addKudosuRanking(playerId: string, signal?: AbortSignal) {
-    const tagRank = tagRanks.kudosuRank;
-
-    const ranksElement = document.querySelector(".profile-detail-stats__values") as HTMLElement;
-    const previousKudosuSet = ranksElement.querySelector("." + tagRank);
-    if (previousKudosuSet) return true;
-
-    const kudosuRankInfo = await osuKudosuRanking(playerId);
-
-    if (!kudosuRankInfo) return false;
-    const kudosuRank = kudosuRankInfo?.rank;
-    if (!kudosuRankInfo) return false;
-
-    await waitPreferencesToLoad();
-    if (!preferences.kudosuRanking) return false;
-    // Abort after fetch to ensure it's cached
-    if (signal?.aborted) return false;
-
-    const date = new Date(kudosuRankInfo.updatedAt);
-
-    return await addRank(ranksElement, kudosuRank, "kudosu_ranking", tagRank, undefined, date);
 }
 
 const addRank = async (

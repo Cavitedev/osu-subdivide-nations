@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Classificació més alta: #{{rankHighest.rank}} el {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Clasificació per Kudosu"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Última actualització de classificació el {{formattedDate}}"
     },
     "settings": {
@@ -56,13 +53,7 @@
     "respektive_api": {
         "message": "API de Respektive"
     },
-    "kudosu_ranking_desc": {
-        "message": "Mostra la classificació per Kudosu de l'{{hiviexd_api}} en perfils d'osu!"
-    },
-    "hiviexd_api": {
-        "message": "API de Hiviexd"
-    },
-    "region": {
+            "region": {
         "message": "Regió"
     },
     "region_ru": {

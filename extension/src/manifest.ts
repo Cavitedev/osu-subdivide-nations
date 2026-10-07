@@ -51,7 +51,6 @@ const ManifestFirefox = {
         ...sharedManifest.permissions,
         "https://osuworld.octo.moe/api/*",
         "https://score.pekkie.de/*",
-        "https://kudosu-api.vercel.app/*",
     ],
 };
 

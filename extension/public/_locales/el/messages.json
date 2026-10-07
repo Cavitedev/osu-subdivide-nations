@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Υψηλότερη θέση #{{rankHighest.rank}} στις {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Κατάταξη Kudosu"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Τελευταία ενημέρωση θέσης στις {{formattedDate}}"
     },
     "settings": {
@@ -53,13 +50,7 @@
     "respektive_api": {
         "message": "API του Respektive"
     },
-    "kudosu_ranking_desc": {
-        "message": "Εμφάνιση κατάταξης Kudosu από το {{hiviexd_api}} στα προφίλ osu!"
-    },
-    "hiviexd_api": {
-        "message": "API του Hiviexd"
-    },
-    "region": {
+            "region": {
         "message": "Περιοχή"
     },
     "region_ru": {

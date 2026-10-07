@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "{{formattedDate}} tarihinde en yüksek sıralaması: #{{rankHighest.rank}}"
     },
-    "kudosu_ranking": {
-        "message": "Kudosu Sıralaması"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "En son sıralama {{formattedDate}} tarihinde güncellendi"
     },
     "settings": {
@@ -56,13 +53,7 @@
     "respektive_api": {
         "message": "Respektive API"
     },
-    "kudosu_ranking_desc": {
-        "message": "Kudosu sıralamasını {{hiviexd_api}} kullanarak osu! profillerinde görüntüler."
-    },
-    "hiviexd_api": {
-        "message": "Hiviexd API"
-    },
-    "region": {
+            "region": {
         "message": "Bölge"
     },
     "region_ru": {

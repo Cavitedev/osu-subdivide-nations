@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "דירוג שיא: {{rankHighest.rank}}# בתאריך {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "דירוג Kudosu"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "עדכון דירוג אחרון בתאריך {{formattedDate}}"
     },
     "settings": {
@@ -56,13 +53,7 @@
     "respektive_api": {
         "message": "API של Respektive"
     },
-    "kudosu_ranking_desc": {
-        "message": "מציג דירוג Kudosu מ{{hiviexd_api}} בפרופיל !osu."
-    },
-    "hiviexd_api": {
-        "message": "API של Hiviexd"
-    },
-    "region": {
+            "region": {
         "message": "אזור"
     },
     "region_ru": {

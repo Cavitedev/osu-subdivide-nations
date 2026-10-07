@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Највиши ранг: #{{rankHighest.rank}} на {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Kudosu Ранг"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Последње ажурирање ранга нa {{formattedDate}}"
     },
     "settings": {
@@ -56,13 +53,7 @@
     "respektive_api": {
         "message": "API од Respektive-a"
     },
-    "kudosu_ranking_desc": {
-        "message": "Приказује Kudosu ранг од {{hiviexd_api}} на osu! профилима."
-    },
-    "hiviexd_api": {
-        "message": "API од Hiviexd-a"
-    },
-    "region": {
+            "region": {
         "message": "Регион"
     },
     "region_ru": {

@@ -17,8 +17,7 @@ export const addFlagsRankings = async () => {
     const url = location.href;
     if (
         (!url.includes("osu.ppy.sh/rankings") &&
-            !url.includes("osu.ppy.sh/multiplayer/rooms") &&
-            !url.includes("osu.ppy.sh/rankings/kudosu")) ||
+            !url.includes("osu.ppy.sh/multiplayer/rooms")) ||
         url.includes("/country")
     )
         return;
@@ -31,7 +30,6 @@ export const addFlagsRankings = async () => {
 
     if (
         url.includes("osu.ppy.sh/multiplayer/rooms") ||
-        url.includes("osu.ppy.sh/rankings/kudosu") ||
         url.includes("osu.ppy.sh/rankings/daily-challenge") ||
         (url.includes("osu.ppy.sh/rankings") && url.includes("charts"))
     ) {

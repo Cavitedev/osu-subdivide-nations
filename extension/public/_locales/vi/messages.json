@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Hạng cao nhất: #{{rankHighest.rank}} vào {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Hạng Kudosu"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Cập nhật hạng lần cuối vào {{formattedDate}}"
     },
     "settings": {
@@ -53,10 +50,4 @@
     "respektive_api": {
         "message": "API của Respektive"
     },
-    "kudosu_ranking_desc": {
-        "message": "Hiển thị hạng Kudosu từ {{hiviexd_api}} trên hồ sơ osu!."
-    },
-    "hiviexd_api": {
-        "message": "API của Hiviexd"
-    }
-}
+        }

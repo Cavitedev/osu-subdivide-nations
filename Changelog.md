@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.10.0
+
+- Remove Kudosu Ranking from profile. [Endpoint](https://github.com/Hiviexd/kudosu-api) deprecated
+- Fix Morocco Casablanca flag
+
 ## Version 3.9.13
 
 - Fix svg flags being png

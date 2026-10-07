@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "อันดับสูงสุด: #{{rankHighest.rank}} เมื่อ {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "อันดับ Kudosu"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "อัปเดตอันดับล่าสุดเมื่อ {{formattedDate}}"
     },
     "settings": {
@@ -56,13 +53,7 @@
     "respektive_api": {
         "message": "Respektive's API"
     },
-    "kudosu_ranking_desc": {
-        "message": "แสดงอันดับ Kudosu จาก {{hiviexd_api}} บนหน้าโปรไฟล์"
-    },
-    "hiviexd_api": {
-        "message": "Hiviexd's API"
-    },
-    "region": {
+            "region": {
         "message": "พื้นที่"
     },
     "region_ru": {

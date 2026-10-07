@@ -4,7 +4,6 @@ export type Tpreferences = {
     darkMode: boolean;
     regionRanking: boolean;
     scoreRanking: boolean;
-    kudosuRanking: boolean;
 };
 
 export let preferences: Tpreferences = {
@@ -12,7 +11,6 @@ export let preferences: Tpreferences = {
     darkMode: true,
     regionRanking: true,
     scoreRanking: true,
-    kudosuRanking: false,
 };
 let preferencesPromise: Promise<Tpreferences>;
 

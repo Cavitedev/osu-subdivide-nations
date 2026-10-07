@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Najwyższa pozycja: #{{rankHighest.rank}} z {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Komitat"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Prefektura"
     },
     "region": {

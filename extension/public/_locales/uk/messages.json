@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Найвищий ранг: #{{rankHighest.rank}} був {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Рейтинг Кудосу"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Оновлено {{formattedDate}}"
     },
     "settings": {
@@ -53,13 +50,7 @@
     "respektive_api": {
         "message": "API від Respektive"
     },
-    "kudosu_ranking_desc": {
-        "message": "Відображення рейтингу Кудосу за профілем osu!, за допомогою {{hiviexd_api}}."
-    },
-    "hiviexd_api": {
-        "message": "API від Hiviexd"
-    },
-    "region": {
+            "region": {
         "message": "Регіон"
     },
     "region_ru": {

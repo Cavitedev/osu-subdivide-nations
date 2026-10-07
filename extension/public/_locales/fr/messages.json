@@ -29,10 +29,7 @@
     "highest_rank_profile": {
         "message": "Rang le plus haut : {{rankHighest.rank}} le {{formattedDate}}"
     },
-    "kudosu_ranking": {
-        "message": "Classement de Kudosu"
-    },
-    "last_rank_update": {
+        "last_rank_update": {
         "message": "Dernière mise à jour le {{formattedDate}}"
     },
     "settings": {
@@ -56,13 +53,7 @@
     "respektive_api": {
         "message": "l'API de Respektive"
     },
-    "kudosu_ranking_desc": {
-        "message": "Affiche le classement de Kudosu fourni pas {{hiviexd_api}} sur les profils osu!."
-    },
-    "hiviexd_api": {
-        "message": "l'API de Hiviexd"
-    },
-    "region": {
+            "region": {
         "message": "Région"
     },
     "region_ru": {

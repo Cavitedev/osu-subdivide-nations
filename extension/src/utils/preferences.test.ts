@@ -13,6 +13,5 @@ describe("Load preferences", () => {
 
         const preferences = await loadPreferences();
         expect(preferences.scoreRanking).toEqual(true);
-        expect(preferences.kudosuRanking).toEqual(false);
     });
 });
