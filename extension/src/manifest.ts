@@ -41,6 +41,7 @@ const ManifestFirefox = {
     browser_specific_settings: {
         gecko: {
             id: "cavitedev@gmail.com",
+            data_collection_permissions: [],
         },
         gecko_android: {
             strict_min_version: "113.0",
