@@ -80,6 +80,7 @@ const regionsInRanking = async (signal: AbortSignal): Promise<boolean> => {
     const rankingType = location.pathname.split("/")[3];
     const subRankingType = location.pathname.split("/")[4];
     const filter = urlParams.get("filter");
+    console.log("hola");
 
     if (
         rankingType === "global" &&
@@ -157,30 +158,56 @@ const addRegionsDropdown = async (countryCode: string, regionCode: string | null
     });
 
     // Options
-    const optionsParent = cloneDropdown.querySelector(".select-options__selector")!;
-    const templateOption = optionsParent!.firstChild!.cloneNode(true) as HTMLElement;
+    const optionsParent = cloneDropdown.querySelector(".select-options__options")!;
+    const templateOption = optionsParent.querySelector(".select-options__option")!.cloneNode(true) as HTMLElement;
 
-    while (optionsParent!.firstChild) {
-        optionsParent!.removeChild(optionsParent!.firstChild);
+    while (optionsParent.firstChild) {
+        optionsParent.removeChild(optionsParent.firstChild);
     }
 
-    // All
-    const baseRanking = addOrReplaceQueryParam(templateOption.getAttribute("href")!, "country", countryCode);
+    const resetOption = (option: HTMLElement) => {
+        option.classList.remove("select-options__option--selected");
+        const bgLink = option.querySelector(".select-options__bg-link")!;
+        bgLink.classList.remove("select-options__bg-link--selected");
+        const content = option.querySelector(".select-options__content")!;
+        content.classList.remove("select-options__content--selected");
+    };
 
+    const setOption = (option: HTMLElement, href: string, text: string, dataId: string, selected: boolean) => {
+        resetOption(option);
+
+        const bgLink = option.querySelector(".select-options__bg-link") as HTMLElement;
+        bgLink.setAttribute("href", href);
+        if (dataId) {
+            bgLink.setAttribute("data-id", dataId);
+        } else {
+            bgLink.removeAttribute("data-id");
+        }
+
+        const content = option.querySelector(".select-options__content")!;
+        content.querySelector(".u-ellipsis-overflow")!.textContent = text;
+
+        if (selected) {
+            option.classList.add("select-options__option--selected");
+            bgLink.classList.add("select-options__bg-link--selected");
+            content.classList.add("select-options__content--selected");
+        }
+    };
+
+    const templateBgLink = templateOption.querySelector(".select-options__bg-link")!;
+    const baseRanking = addOrReplaceQueryParam(templateBgLink.getAttribute("href")!, "country", countryCode);
     const allLink = removeQueryParam(baseRanking, "region");
-    templateOption.setAttribute("href", allLink);
+    const allText = templateOption.querySelector(".u-ellipsis-overflow")!.textContent || "";
 
-    const allText = templateOption.textContent;
-
-    const allOption = templateOption.cloneNode(true);
+    const allOption = templateOption.cloneNode(true) as HTMLElement;
+    setOption(allOption, allLink, allText, "", regionCode == null);
     optionsParent.appendChild(allOption);
 
     for (const key in regionNames) {
         const value = regionNames[key];
         const updatedRanking = addOrReplaceQueryParam(baseRanking, "region", key);
         const clonedOption = templateOption.cloneNode(true) as HTMLElement;
-        clonedOption.setAttribute("href", updatedRanking);
-        clonedOption.textContent = value;
+        setOption(clonedOption, updatedRanking, value, key, regionCode === key);
         optionsParent.appendChild(clonedOption);
     }
 

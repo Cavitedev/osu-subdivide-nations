@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.11.0
+
+- Fixed: Regional dropdown on performance ranking was not added to the website.
+
 ## Version 3.10.0
 
 - Remove Kudosu Ranking from profile. [Endpoint](https://github.com/Hiviexd/kudosu-api) deprecated
