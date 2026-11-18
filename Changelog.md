@@ -3,6 +3,7 @@
 ## Version 3.11.0
 
 - Fixed: Regional dropdown on performance ranking was not added to the website.
+- Fixed: Ranking on profile disappearing when toggling v1 and v2
 
 ## Version 3.10.0
 

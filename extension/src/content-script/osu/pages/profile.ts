@@ -22,6 +22,11 @@ export const profileMutationObserverInit = new MutationObserver((_) => {
     enhanceProfile();
 });
 
+const profileStatsSelector = ".profile-detail-stats-v2, .profile-detail-stats";
+const profileStatsValuesSelector = ".profile-detail-stats__values, .profile-detail-stats-v2__values";
+let profileStatsObserver: MutationObserver | undefined;
+const ranksBeingAdded = new WeakSet<HTMLElement>();
+
 export const enhanceProfile = async (signal?: AbortSignal) => {
     const url = location.href;
     if (!location.href.includes("osu.ppy.sh/users")) {
@@ -43,18 +48,75 @@ export const enhanceProfile = async (signal?: AbortSignal) => {
     if (!flagElement) {
         return;
     }
+
     const currentMod = getCurrentMod();
-    const rankingsPromise = [];
-    if (currentMod) {
-        rankingsPromise.push(addRegionalRank(playerId, currentMod, signal));
-        rankingsPromise.push(addScoreRank(playerId, currentMod, signal));
+    const profileDetail = document.querySelector(".profile-detail");
+    profileStatsObserver?.disconnect();
+
+    const addRanksToCurrentStats = () => {
+        if (!profileDetail || !currentMod) return Promise.resolve([]);
+
+        const statsV2 = profileDetail.querySelector(".profile-detail-stats-v2");
+        const ranksElement =
+            statsV2?.querySelector<HTMLElement>(profileStatsValuesSelector) ??
+            profileDetail
+                .querySelector(".profile-detail-stats")
+                ?.querySelector<HTMLElement>(profileStatsValuesSelector);
+        if (!ranksElement) return Promise.resolve([]);
+
+        profileDetail
+            .querySelectorAll<HTMLElement>(profileStatsValuesSelector)
+            .forEach((element) => {
+                if (element === ranksElement) return;
+                element.querySelectorAll(`.${tagRanks.regionalRank}, .${tagRanks.scoreRank}`).forEach((rank) => {
+                    rank.remove();
+                });
+            });
+
+        return addRanksToElement(ranksElement, playerId, currentMod, signal);
+    };
+
+    if (profileDetail) {
+        profileStatsObserver = new MutationObserver((mutations) => {
+            const statsChanged = mutations.some((mutation) =>
+                [...mutation.addedNodes, ...mutation.removedNodes].some(
+                    (node) =>
+                        node instanceof HTMLElement &&
+                        (node.matches(profileStatsSelector) ||
+                            node.querySelector(profileStatsSelector) !== null ||
+                            node.matches(profileStatsValuesSelector)),
+                ),
+            );
+            if (statsChanged) void addRanksToCurrentStats();
+        });
+        profileStatsObserver.observe(profileDetail, { childList: true, subtree: true });
     }
+
     addRegionalFlagProfile(flagElement as HTMLElement, playerId);
 
-    const results = await Promise.all(rankingsPromise);
+    const results = await addRanksToCurrentStats();
     if (results.filter(Boolean).length >= 3) {
         // There's no space so force 2 rows to avoid visual glitches
         forceStatsInAnotherRow();
+    }
+};
+
+const addRanksToElement = async (
+    ranksElement: HTMLElement,
+    playerId: string,
+    mode: string,
+    signal?: AbortSignal,
+) => {
+    if (ranksBeingAdded.has(ranksElement)) return [];
+    ranksBeingAdded.add(ranksElement);
+
+    try {
+        return await Promise.all([
+            addRegionalRank(ranksElement, playerId, mode, signal),
+            addScoreRank(ranksElement, playerId, mode, signal),
+        ]);
+    } finally {
+        ranksBeingAdded.delete(ranksElement);
     }
 };
 
@@ -96,10 +158,8 @@ const tagsOrder = [tagRanks.regionalRank, tagRanks.scoreRank];
  * 
  * @returns True if the rank is visisble. Same with other methods
  */
-async function addRegionalRank(playerId: string, mode: string, signal?: AbortSignal) {
+async function addRegionalRank(ranksElement: HTMLElement, playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.regionalRank;
-
-    const ranksElement = document.querySelector(".profile-detail-stats__values") as HTMLElement;
 
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return true;
@@ -113,13 +173,13 @@ async function addRegionalRank(playerId: string, mode: string, signal?: AbortSig
 
     const rankValue = (playerData as TosuWorldIdSuccess).placement;
     if (!rankValue) return false;
+    if (!ranksElement.isConnected) return false;
     return addRank(ranksElement, rankValue, "region_ranking", tagRank);
 }
 
-async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal) {
+async function addScoreRank(ranksElement: HTMLElement, playerId: string, mode: string, signal?: AbortSignal) {
     const tagRank = tagRanks.scoreRank;
 
-    const ranksElement = document.querySelector(".profile-detail-stats__values") as HTMLElement;
     const previousScoreSet = ranksElement.querySelector("." + tagRank);
     if (previousScoreSet) return true;
 
@@ -137,6 +197,7 @@ async function addScoreRank(playerId: string, mode: string, signal?: AbortSignal
     if (!highestRank && scoreRank === 0) {
         return false;
     }
+    if (!ranksElement.isConnected) return false;
 
     const date = new Date(rankHighest["updated_at"]);
     return await addRank(ranksElement, scoreRank, "score_ranking", tagRank, highestRank, date);
@@ -164,6 +225,8 @@ const addRank = async (
     scoreRankValue.classList.add("value-display__value");
     scoreRankElement.append(scoreRankValue);
     const rank = document.createElement("div");
+
+    if (!ranksElement.isConnected) return false;
 
     if (date) {
         const tooltip = highestRank ? highestRankTip(highestRank, date) : lastUpdateTip(date);
